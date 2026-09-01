@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, RotateCcw, Target, X } from "lucide-react";
+import { Check, RotateCcw, ShieldAlert, Target, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -45,7 +45,7 @@ export function ResultScreen({
   });
 
   return (
-    <main className="mx-auto my-11 w-[min(920px,calc(100%-2.25rem))]">
+    <main className="mx-auto my-11 w-[min(920px,calc(100%-2.25rem))] select-none">
       <section className="rounded-2xl border border-border bg-card p-7 text-center shadow-lg sm:p-11">
         <span className="mx-auto mb-4 grid size-14 place-items-center rounded-2xl bg-primary/10 text-primary">
           <Target size={28} />
@@ -99,6 +99,16 @@ export function ResultScreen({
             </p>
           </>
         )}
+
+        {/* Strikes notification if any */}
+        {result.strikes && result.strikes > 0 ? (
+          <div className="mx-auto mt-4 inline-flex items-center gap-2 rounded-xl border border-destructive/30 bg-destructive/10 px-4 py-2 text-xs font-semibold text-destructive">
+            <ShieldAlert size={16} />
+            <span>
+              Hệ thống Anti-Cheat ghi nhận {result.strikes} lần rời màn hình thi trong phiên làm bài.
+            </span>
+          </div>
+        ) : null}
 
         <div className="mx-auto my-7.5 grid max-w-[600px] grid-cols-1 gap-3 rounded-xl bg-muted/40 py-4.5 sm:grid-cols-3 sm:gap-0">
           <div className="border-t border-border pt-3 sm:border-t-0 sm:border-l sm:pt-0 sm:first:border-l-0 sm:first:border-t-0">

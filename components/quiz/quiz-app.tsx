@@ -18,6 +18,9 @@ import {
   STORAGE,
   Topic,
 } from "@/lib/quiz";
+import { decryptPayload } from "@/lib/crypto";
+import { useAntiCheat } from "@/hooks/use-anticheat";
+import { AntiCheatModal } from "@/components/quiz/anticheat-modal";
 import { HomeScreen } from "@/components/quiz/home-screen";
 import { QuizScreen } from "@/components/quiz/quiz-screen";
 import { ResultScreen } from "@/components/quiz/result-screen";
@@ -25,6 +28,11 @@ import { LoadingScreen } from "@/components/quiz/loading-screen";
 
 type Screen = "home" | "quiz" | "result";
 type TheoryLearningProgress = Partial<Record<Topic, { visited: number[]; last: number }>>;
+type KeybookEntry = {
+  correctAnswer: unknown;
+  summaryText: string;
+  explanation: string;
+};
 
 const safeRead = <T,>(key: string, fallback: T): T => {
   if (typeof window === "undefined") return fallback;
@@ -35,8 +43,19 @@ const safeRead = <T,>(key: string, fallback: T): T => {
   }
 };
 
+async function loadChunkQuestions(file: string): Promise<Question[]> {
+  const response = await fetch(file);
+  if (!response.ok) throw new Error("Không thể tải tệp dữ liệu: " + file);
+  if (file.endsWith(".enc")) {
+    const cipherBase64 = await response.text();
+    return await decryptPayload<Question[]>(cipherBase64);
+  }
+  return (await response.json()) as Question[];
+}
+
 export function QuizApp() {
   const [manifest, setManifest] = useState<Manifest | null>(null);
+  const [keybook, setKeybook] = useState<Record<string, KeybookEntry> | null>(null);
   const [screen, setScreen] = useState<Screen>("home");
   const [mode, setMode] = useState<"practice" | "exam">("practice");
   const [homeMode, setHomeMode] = useState<"practice" | "exam" | "theory">("practice");
@@ -62,19 +81,52 @@ export function QuizApp() {
   const [savedSession, setSavedSession] = useState<ActiveSession | null>(null);
   const importRef = useRef<HTMLInputElement>(null);
 
+  // Anti-Cheat Engine integration.
+  // Chỉ bật lớp chặn thao tác khi đang làm bài; màn hình Trang chủ / Lý thuyết
+  // vẫn dùng được chuột phải, copy, Ctrl+P, Ctrl+S như bình thường.
+  const isQuizActive = screen === "quiz";
+  const isExamActive = isQuizActive && mode === "exam";
+  const {
+    strikes,
+    maxStrikes,
+    isWarningOpen,
+    warningReason,
+    isAutomated,
+    automationReason,
+    showWarning,
+    dismissWarning,
+    resetStrikes,
+    restoreStrikes,
+    requestFullscreen,
+    exitFullscreen,
+  } = useAntiCheat({
+    enabled: isQuizActive,
+    isExamMode: isExamActive,
+    maxStrikes: 3,
+    // Nhận số vi phạm cuối từ hook: state `strikes` chưa commit tại thời điểm này.
+    onMaxStrikesReached: (finalStrikes) => submitQuiz(finalStrikes),
+  });
+
   useEffect(() => {
-    fetch("/data/manifest.json")
-      .then((response) =>
-        response.ok ? (response.json() as Promise<Manifest>) : Promise.reject(new Error("Không tải được dữ liệu")),
-      )
-      .then((data) => {
-        setManifest(data);
+    Promise.all([
+      fetch("/data/manifest.json").then((r) =>
+        r.ok ? (r.json() as Promise<Manifest>) : Promise.reject(new Error("Không tải được dữ liệu"))
+      ),
+      fetch("/data/keybook.enc")
+        .then((r) => (r.ok ? r.text() : ""))
+        .then((cipher) => (cipher ? decryptPayload<Record<string, KeybookEntry>>(cipher) : null))
+        .catch(() => null),
+    ])
+      .then(([manifestData, keybookData]) => {
+        setManifest(manifestData);
+        if (keybookData) setKeybook(keybookData);
+
         setAttempts(safeRead(STORAGE.attempts, []));
         setProgress(safeRead(STORAGE.progress, {}));
         setLearned(safeRead(STORAGE.learned, {}));
         setTheoryProgress(safeRead(STORAGE.theory, {}));
         const storedSession = safeRead<ActiveSession | null>(STORAGE.active, null);
-        const availableFiles = new Set(data.chunks.map((chunk) => chunk.file));
+        const availableFiles = new Set(manifestData.chunks.map((chunk) => chunk.file));
         const currentExamFormat =
           !storedSession || storedSession.mode !== "exam" || storedSession.count === EXAM_QUESTION_COUNT;
         if (storedSession && currentExamFormat && storedSession.chunkFiles.every((file) => availableFiles.has(file))) {
@@ -83,7 +135,7 @@ export function QuizApp() {
           localStorage.removeItem(STORAGE.active);
         }
       })
-      .catch(() => setError("Không thể tải danh mục câu hỏi."))
+      .catch(() => setError("Không thể tải danh mục câu hỏi đã mã hóa."))
       .finally(() => setLoading(false));
   }, []);
 
@@ -135,13 +187,14 @@ export function QuizApp() {
         checked,
         index,
         elapsed: Math.max(0, Math.floor((Date.now() - startedAt) / 1000)),
+        strikes,
       };
       localStorage.setItem(STORAGE.active, JSON.stringify(session));
     };
     save();
     const timer = window.setInterval(save, 5000);
     return () => window.clearInterval(timer);
-  }, [screen, questions, activeChunks, answers, checked, index, mode, difficulty, topic, startedAt]);
+  }, [screen, questions, activeChunks, answers, checked, index, mode, difficulty, topic, startedAt, strikes]);
 
   const stats = useMemo(() => {
     const values = Object.values(progress);
@@ -176,6 +229,8 @@ export function QuizApp() {
 
     setLoading(true);
     setError("");
+    resetStrikes();
+
     try {
       let selected: Question[] = [];
       let chunkFiles: string[] = [];
@@ -183,7 +238,7 @@ export function QuizApp() {
       if (specificIds && specificIds.length > 0) {
         const allChunkFiles = manifest.chunks.map((c) => c.file);
         const loaded = (
-          await Promise.all(allChunkFiles.map((file) => fetch(file).then((response) => response.json() as Promise<Question[]>)))
+          await Promise.all(allChunkFiles.map((file) => loadChunkQuestions(file)))
         ).flat();
         const idSet = new Set(specificIds);
         selected = loaded.filter((q) => idSet.has(q.id));
@@ -191,7 +246,7 @@ export function QuizApp() {
       } else {
         const levels: Difficulty[] = quizDifficulty === "all" ? ["easy", "medium", "hard"] : [quizDifficulty];
         const eligible = manifest.chunks.filter(
-          (chunk) => levels.includes(chunk.difficulty) && (quizTopic === "all" || chunk.topic === quizTopic),
+          (chunk) => levels.includes(chunk.difficulty) && (quizTopic === "all" || chunk.topic === quizTopic)
         );
         const picked =
           quizMode === "exam"
@@ -205,10 +260,23 @@ export function QuizApp() {
           totalAvailable += next.count;
         }
         const loaded = (
-          await Promise.all(picked.map((chunk) => fetch(chunk.file).then((response) => response.json() as Promise<Question[]>)))
+          await Promise.all(picked.map((chunk) => loadChunkQuestions(chunk.file)))
         ).flat();
         selected = shuffle(loaded).slice(0, Math.min(quizCount, loaded.length));
         chunkFiles = picked.map((chunk) => chunk.file);
+      }
+
+      // Attach explanations if in practice mode from keybook
+      if (keybook) {
+        selected = selected.map((q) => {
+          const kb = keybook[q.id];
+          return kb
+            ? {
+                ...q,
+                explanation: kb.explanation,
+              }
+            : q;
+        });
       }
 
       setMode(quizMode);
@@ -237,11 +305,12 @@ export function QuizApp() {
         checked: {},
         index: 0,
         elapsed: 0,
+        strikes: 0,
       };
       localStorage.setItem(STORAGE.active, JSON.stringify(session));
       setSavedSession(session);
     } catch {
-      setError("Không thể tải gói câu hỏi. Vui lòng thử lại.");
+      setError("Không thể tải và giải mã gói câu hỏi. Vui lòng thử lại.");
     } finally {
       setLoading(false);
     }
@@ -249,17 +318,27 @@ export function QuizApp() {
 
   async function resumeQuiz() {
     if (!savedSession) return;
+    // Gọi đồng bộ trong cú click, trước mọi await, nếu không trình duyệt sẽ từ chối.
+    if (savedSession.mode === "exam") requestFullscreen();
     setLoading(true);
     setError("");
     try {
       const loaded = (
-        await Promise.all(
-          savedSession.chunkFiles.map((file) => fetch(file).then((response) => response.json() as Promise<Question[]>)),
-        )
+        await Promise.all(savedSession.chunkFiles.map((file) => loadChunkQuestions(file)))
       ).flat();
       const byId = new Map(loaded.map((question) => [question.id, question]));
-      const restored = savedSession.questionIds.map((id) => byId.get(id)).filter((question): question is Question => Boolean(question));
+      let restored = savedSession.questionIds
+        .map((id) => byId.get(id))
+        .filter((question): question is Question => Boolean(question));
       if (!restored.length) throw new Error("Empty session");
+
+      if (keybook) {
+        restored = restored.map((q) => {
+          const kb = keybook[q.id];
+          return kb ? { ...q, explanation: kb.explanation } : q;
+        });
+      }
+
       setMode(savedSession.mode);
       setDifficulty(savedSession.difficulty);
       setTopic(savedSession.topic || "all");
@@ -271,6 +350,8 @@ export function QuizApp() {
       setIndex(Math.min(savedSession.index, restored.length - 1));
       setElapsed(savedSession.elapsed);
       setStartedAt(Date.now() - savedSession.elapsed * 1000);
+      // Khôi phục số vi phạm đã ghi nhận: tải lại trang không xóa được lịch sử vi phạm.
+      restoreStrikes(savedSession.strikes ?? 0);
       setScreen("quiz");
     } catch {
       setError("Không thể khôi phục phiên học trước.");
@@ -300,25 +381,49 @@ export function QuizApp() {
   }
 
   function exitQuiz() {
+    exitFullscreen();
     const session = safeRead<ActiveSession | null>(STORAGE.active, null);
     setSavedSession(session);
     setScreen("home");
   }
 
+  // onFinish được nối trực tiếp vào onClick nên finishQuiz phải không nhận tham số
+  // (nếu không MouseEvent sẽ bị truyền vào chỗ strikeCount).
   function finishQuiz() {
-    const correct = questions.filter((question) => isCorrect(question, answers[question.id])).length;
-    const wrongQuestions = questions.filter((question) => !isCorrect(question, answers[question.id]));
+    submitQuiz(strikes);
+  }
+
+  function submitQuiz(strikeCount: number) {
+    exitFullscreen();
+    // Populate full explanations and summaries from keybook for the review screen
+    let finalQuestions = questions;
+    if (keybook) {
+      finalQuestions = questions.map((q) => {
+        const kb = keybook[q.id];
+        return kb
+          ? {
+              ...q,
+              explanation: kb.explanation,
+            }
+          : q;
+      });
+      setQuestions(finalQuestions);
+    }
+
+    const correct = finalQuestions.filter((question) => isCorrect(question, answers[question.id])).length;
+    const wrongQuestions = finalQuestions.filter((question) => !isCorrect(question, answers[question.id]));
     const finished: Attempt = {
       id: crypto.randomUUID(),
       date: new Date().toISOString(),
       mode,
       difficulty,
       topic,
-      total: questions.length,
+      total: finalQuestions.length,
       correct,
-      percent: Math.round((correct / questions.length) * 100),
+      percent: Math.round((correct / finalQuestions.length) * 100),
       duration: Math.max(1, Math.floor((Date.now() - startedAt) / 1000)),
       wrongIds: wrongQuestions.map((question) => question.id),
+      strikes: strikeCount,
       ...(mode === "exam"
         ? {
             pointsPerQuestion: EXAM_POINTS_PER_QUESTION,
@@ -327,7 +432,7 @@ export function QuizApp() {
         : {}),
     };
     const nextProgress = { ...progress };
-    questions.forEach((question) => {
+    finalQuestions.forEach((question) => {
       const previous = nextProgress[question.id] || { seen: 0, correct: 0, lastAt: "" };
       nextProgress[question.id] = {
         seen: previous.seen + 1,
@@ -343,7 +448,7 @@ export function QuizApp() {
     setProgress(nextProgress);
     setSavedSession(null);
     setResult(finished);
-    setChecked(Object.fromEntries(questions.map((q) => [q.id, true])));
+    setChecked(Object.fromEntries(finalQuestions.map((q) => [q.id, true])));
     setScreen("result");
   }
 
@@ -371,10 +476,10 @@ export function QuizApp() {
             theoryProgress,
           },
           null,
-          2,
+          2
         ),
       ],
-      { type: "application/json" },
+      { type: "application/json" }
     );
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
@@ -416,53 +521,14 @@ export function QuizApp() {
     );
   }
 
-  if (screen === "quiz") {
-    return (
-      <QuizScreen
-        questions={questions}
-        index={index}
-        answers={answers}
-        checked={checked}
-        learned={learned}
-        mode={mode}
-        elapsed={elapsed}
-        onAnswer={updateAnswer}
-        onCheck={markCurrentQuestionLearned}
-        onIndex={setIndex}
-        onFinish={finishQuiz}
-        onExit={exitQuiz}
-      />
-    );
-  }
-
-  if (screen === "result" && result) {
-    return (
-      <ResultScreen
-        result={result}
-        questions={questions}
-        answers={answers}
-        onReview={() => {
-          setIndex(0);
-          setScreen("quiz");
-        }}
-        onRetryWrong={() => {
-          if (result.wrongIds && result.wrongIds.length > 0) {
-            void startQuiz({ mode: "practice", specificQuestionIds: result.wrongIds });
-          }
-        }}
-        onHome={() => setScreen("home")}
-      />
-    );
-  }
-
   const topicCount = (selectedTopic: Topic | "all") =>
     selectedTopic === "all"
       ? difficulty === "all"
         ? manifest.total
         : manifest.counts[difficulty]
       : difficulty === "all"
-      ? manifest.topicCounts[selectedTopic].total
-      : manifest.topicCounts[selectedTopic].counts[difficulty];
+        ? manifest.topicCounts[selectedTopic].total
+        : manifest.topicCounts[selectedTopic].counts[difficulty];
 
   const difficultyCount = (selectedDifficulty: Difficulty | "all") =>
     topic === "all"
@@ -470,46 +536,107 @@ export function QuizApp() {
         ? manifest.total
         : manifest.counts[selectedDifficulty]
       : selectedDifficulty === "all"
-      ? manifest.topicCounts[topic].total
-      : manifest.topicCounts[topic].counts[selectedDifficulty];
+        ? manifest.topicCounts[topic].total
+        : manifest.topicCounts[topic].counts[selectedDifficulty];
 
   const practiceTotal = topicCount(topic);
 
   return (
-    <HomeScreen
-      manifest={manifest}
-      stats={stats}
-      homeMode={homeMode}
-      onHomeMode={selectHomeMode}
-      savedSession={savedSession}
-      onResume={resumeQuiz}
-      topic={topic}
-      onTopic={setTopic}
-      difficulty={difficulty}
-      onDifficulty={setDifficulty}
-      topicCount={topicCount}
-      difficultyCount={difficultyCount}
-      practiceTotal={practiceTotal}
-      error={error}
-      loading={loading}
-      onStartPractice={() => startQuiz({ mode: "practice", topic, count: practiceTotal })}
-      onStartExam={() => startQuiz({ mode: "exam", difficulty: "all", topic: "all", count: EXAM_QUESTION_COUNT })}
-      theoryTopic={theoryTopic}
-      theorySlide={theorySlide}
-      theoryProgress={theoryProgress}
-      onTheoryTopic={(nextTopic) => openTheorySlide(nextTopic, theoryProgress[nextTopic]?.last || 0)}
-      onTheorySlide={(nextSlide) => openTheorySlide(theoryTopic, nextSlide)}
-      onTheoryPractice={() => {
-        setTopic(theoryTopic);
-        setDifficulty("all");
-        setHomeMode("practice");
-      }}
-      attempts={attempts}
-      onExport={exportData}
-      onImportClick={() => importRef.current?.click()}
-      onReset={resetData}
-      importRef={importRef}
-      onImportFile={importData}
-    />
+    <>
+      <AntiCheatModal
+        isOpen={isWarningOpen}
+        strikes={strikes}
+        maxStrikes={maxStrikes}
+        reason={warningReason}
+        onDismiss={dismissWarning}
+      />
+
+      {screen === "quiz" && (
+        <QuizScreen
+          questions={questions}
+          keybook={keybook}
+          index={index}
+          answers={answers}
+          checked={checked}
+          learned={learned}
+          mode={mode}
+          elapsed={elapsed}
+          strikes={strikes}
+          onAnswer={updateAnswer}
+          onCheck={markCurrentQuestionLearned}
+          onIndex={setIndex}
+          onFinish={finishQuiz}
+          onExit={exitQuiz}
+        />
+      )}
+
+      {screen === "result" && result && (
+        <ResultScreen
+          result={result}
+          questions={questions}
+          answers={answers}
+          onReview={() => {
+            setIndex(0);
+            setScreen("quiz");
+          }}
+          onRetryWrong={() => {
+            if (result.wrongIds && result.wrongIds.length > 0) {
+              void startQuiz({ mode: "practice", specificQuestionIds: result.wrongIds });
+            }
+          }}
+          onHome={() => setScreen("home")}
+        />
+      )}
+
+      {screen === "home" && (
+        <HomeScreen
+          manifest={manifest}
+          stats={stats}
+          homeMode={homeMode}
+          onHomeMode={selectHomeMode}
+          savedSession={savedSession}
+          onResume={resumeQuiz}
+          topic={topic}
+          onTopic={setTopic}
+          difficulty={difficulty}
+          onDifficulty={setDifficulty}
+          topicCount={topicCount}
+          difficultyCount={difficultyCount}
+          practiceTotal={practiceTotal}
+          error={error}
+          loading={loading}
+          onStartPractice={() =>
+            startQuiz({ mode: "practice", topic, count: practiceTotal })
+          }
+          onStartExam={() => {
+            // Phải nằm trong handler của cú click, trước await, để giữ user activation.
+            requestFullscreen();
+            if (isAutomated) showWarning(automationReason);
+            void startQuiz({
+              mode: "exam",
+              difficulty: "all",
+              topic: "all",
+              count: EXAM_QUESTION_COUNT,
+            });
+          }}
+          theoryTopic={theoryTopic}
+          theorySlide={theorySlide}
+          theoryProgress={theoryProgress}
+          onTheoryTopic={(nextTopic) => openTheorySlide(nextTopic, theoryProgress[nextTopic]?.last || 0)}
+          onTheorySlide={(nextSlide) => openTheorySlide(theoryTopic, nextSlide)}
+          onTheoryPractice={() => {
+            setTopic(theoryTopic);
+            setDifficulty("all");
+            setHomeMode("practice");
+          }}
+          attempts={attempts}
+          onExport={exportData}
+          onImportClick={() => importRef.current?.click()}
+          onReset={resetData}
+          importRef={importRef}
+          onImportFile={importData}
+        />
+      )}
+    </>
   );
 }

@@ -125,3 +125,31 @@
   background-size: 22px 22px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 55%, transparent 100%);
 }
+
+/* Anti-Cheat & Content Protection */
+.select-none,
+article,
+header,
+aside,
+main {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input,
+textarea {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+

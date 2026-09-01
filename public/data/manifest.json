@@ -1,1 +1,164 @@
-{"version":2,"title":"Bộ câu hỏi ôn luyện GenAI","total":175,"counts":{"easy":60,"medium":71,"hard":44},"topicCounts":{"methods":{"total":28,"counts":{"easy":7,"medium":17,"hard":4}},"prompting":{"total":72,"counts":{"easy":30,"medium":25,"hard":17}},"verification":{"total":41,"counts":{"easy":16,"medium":19,"hard":6}},"responsible":{"total":34,"counts":{"easy":7,"medium":10,"hard":17}}},"sources":[{"name":"GenAI","count":79},{"name":"Câu hỏi Ôn luyện Gmetrix","count":96}],"chunks":[{"id":"methods-easy-01","topic":"methods","difficulty":"easy","count":7,"file":"/data/chunks/methods-easy-01.json"},{"id":"methods-medium-01","topic":"methods","difficulty":"medium","count":17,"file":"/data/chunks/methods-medium-01.json"},{"id":"methods-hard-01","topic":"methods","difficulty":"hard","count":4,"file":"/data/chunks/methods-hard-01.json"},{"id":"prompting-easy-01","topic":"prompting","difficulty":"easy","count":18,"file":"/data/chunks/prompting-easy-01.json"},{"id":"prompting-easy-02","topic":"prompting","difficulty":"easy","count":12,"file":"/data/chunks/prompting-easy-02.json"},{"id":"prompting-medium-01","topic":"prompting","difficulty":"medium","count":18,"file":"/data/chunks/prompting-medium-01.json"},{"id":"prompting-medium-02","topic":"prompting","difficulty":"medium","count":7,"file":"/data/chunks/prompting-medium-02.json"},{"id":"prompting-hard-01","topic":"prompting","difficulty":"hard","count":17,"file":"/data/chunks/prompting-hard-01.json"},{"id":"verification-easy-01","topic":"verification","difficulty":"easy","count":16,"file":"/data/chunks/verification-easy-01.json"},{"id":"verification-medium-01","topic":"verification","difficulty":"medium","count":18,"file":"/data/chunks/verification-medium-01.json"},{"id":"verification-medium-02","topic":"verification","difficulty":"medium","count":1,"file":"/data/chunks/verification-medium-02.json"},{"id":"verification-hard-01","topic":"verification","difficulty":"hard","count":6,"file":"/data/chunks/verification-hard-01.json"},{"id":"responsible-easy-01","topic":"responsible","difficulty":"easy","count":7,"file":"/data/chunks/responsible-easy-01.json"},{"id":"responsible-medium-01","topic":"responsible","difficulty":"medium","count":10,"file":"/data/chunks/responsible-medium-01.json"},{"id":"responsible-hard-01","topic":"responsible","difficulty":"hard","count":17,"file":"/data/chunks/responsible-hard-01.json"}],"generatedAt":"2026-08-31T01:45:22.891Z"}
+{
+  "version": 2,
+  "title": "Bộ câu hỏi ôn luyện GenAI",
+  "total": 175,
+  "counts": {
+    "easy": 60,
+    "medium": 71,
+    "hard": 44
+  },
+  "topicCounts": {
+    "methods": {
+      "total": 28,
+      "counts": {
+        "easy": 7,
+        "medium": 17,
+        "hard": 4
+      }
+    },
+    "prompting": {
+      "total": 72,
+      "counts": {
+        "easy": 30,
+        "medium": 25,
+        "hard": 17
+      }
+    },
+    "verification": {
+      "total": 41,
+      "counts": {
+        "easy": 16,
+        "medium": 19,
+        "hard": 6
+      }
+    },
+    "responsible": {
+      "total": 34,
+      "counts": {
+        "easy": 7,
+        "medium": 10,
+        "hard": 17
+      }
+    }
+  },
+  "sources": [
+    {
+      "name": "GenAI",
+      "count": 79
+    },
+    {
+      "name": "Câu hỏi Ôn luyện Gmetrix",
+      "count": 96
+    }
+  ],
+  "chunks": [
+    {
+      "id": "methods-easy-01",
+      "topic": "methods",
+      "difficulty": "easy",
+      "count": 7,
+      "file": "/data/chunks/methods-easy-01.enc"
+    },
+    {
+      "id": "methods-medium-01",
+      "topic": "methods",
+      "difficulty": "medium",
+      "count": 17,
+      "file": "/data/chunks/methods-medium-01.enc"
+    },
+    {
+      "id": "methods-hard-01",
+      "topic": "methods",
+      "difficulty": "hard",
+      "count": 4,
+      "file": "/data/chunks/methods-hard-01.enc"
+    },
+    {
+      "id": "prompting-easy-01",
+      "topic": "prompting",
+      "difficulty": "easy",
+      "count": 18,
+      "file": "/data/chunks/prompting-easy-01.enc"
+    },
+    {
+      "id": "prompting-easy-02",
+      "topic": "prompting",
+      "difficulty": "easy",
+      "count": 12,
+      "file": "/data/chunks/prompting-easy-02.enc"
+    },
+    {
+      "id": "prompting-medium-01",
+      "topic": "prompting",
+      "difficulty": "medium",
+      "count": 18,
+      "file": "/data/chunks/prompting-medium-01.enc"
+    },
+    {
+      "id": "prompting-medium-02",
+      "topic": "prompting",
+      "difficulty": "medium",
+      "count": 7,
+      "file": "/data/chunks/prompting-medium-02.enc"
+    },
+    {
+      "id": "prompting-hard-01",
+      "topic": "prompting",
+      "difficulty": "hard",
+      "count": 17,
+      "file": "/data/chunks/prompting-hard-01.enc"
+    },
+    {
+      "id": "verification-easy-01",
+      "topic": "verification",
+      "difficulty": "easy",
+      "count": 16,
+      "file": "/data/chunks/verification-easy-01.enc"
+    },
+    {
+      "id": "verification-medium-01",
+      "topic": "verification",
+      "difficulty": "medium",
+      "count": 18,
+      "file": "/data/chunks/verification-medium-01.enc"
+    },
+    {
+      "id": "verification-medium-02",
+      "topic": "verification",
+      "difficulty": "medium",
+      "count": 1,
+      "file": "/data/chunks/verification-medium-02.enc"
+    },
+    {
+      "id": "verification-hard-01",
+      "topic": "verification",
+      "difficulty": "hard",
+      "count": 6,
+      "file": "/data/chunks/verification-hard-01.enc"
+    },
+    {
+      "id": "responsible-easy-01",
+      "topic": "responsible",
+      "difficulty": "easy",
+      "count": 7,
+      "file": "/data/chunks/responsible-easy-01.enc"
+    },
+    {
+      "id": "responsible-medium-01",
+      "topic": "responsible",
+      "difficulty": "medium",
+      "count": 10,
+      "file": "/data/chunks/responsible-medium-01.enc"
+    },
+    {
+      "id": "responsible-hard-01",
+      "topic": "responsible",
+      "difficulty": "hard",
+      "count": 17,
+      "file": "/data/chunks/responsible-hard-01.enc"
+    }
+  ],
+  "generatedAt": "2026-08-31T01:45:22.891Z",
+  "isEncrypted": true,
+  "encryptedAt": "2026-09-01T10:36:53.659Z"
+}

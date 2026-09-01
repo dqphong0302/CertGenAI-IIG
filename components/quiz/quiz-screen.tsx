@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, Check, Clock3, Flag, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Clock3, Flag, ShieldCheck, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -21,14 +21,22 @@ import {
 import { QuestionInteraction } from "@/components/quiz/question-interaction";
 import { ExamSummary } from "@/components/quiz/exam-summary";
 
+interface KeybookEntry {
+  correctAnswer: unknown;
+  summaryText: string;
+  explanation: string;
+}
+
 export function QuizScreen({
   questions,
+  keybook,
   index,
   answers,
   checked,
   learned,
   mode,
   elapsed,
+  strikes = 0,
   onAnswer,
   onCheck,
   onIndex,
@@ -36,12 +44,14 @@ export function QuizScreen({
   onExit,
 }: {
   questions: Question[];
+  keybook?: Record<string, KeybookEntry> | null;
   index: number;
   answers: Record<string, Answer>;
   checked: Record<string, boolean>;
   learned: Learned;
   mode: "practice" | "exam";
   elapsed: number;
+  strikes?: number;
   onAnswer: (answer: Answer) => void;
   onCheck: () => void;
   onIndex: (index: number) => void;
@@ -57,6 +67,10 @@ export function QuizScreen({
   const revealed = checked[question.id];
   const correct = revealed && isCorrect(question, answer);
   const answered = isAnswered(question, answer);
+
+  const kbEntry = keybook ? keybook[question.id] : null;
+  const explanationText = kbEntry?.explanation || question.explanation || "";
+  const correctSummary = kbEntry?.summaryText || correctAnswerText(question);
 
   const shownSeconds = mode === "exam" ? Math.max(0, 3000 - elapsed) : elapsed;
   const isTimeLow = mode === "exam" && shownSeconds < 300;
@@ -127,7 +141,7 @@ export function QuizScreen({
     });
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background select-none">
       <header className="sticky top-0 z-50 grid h-16 grid-cols-[auto_1fr_auto] items-center gap-3 border-b border-border bg-background/90 px-4 shadow-sm backdrop-blur-md sm:h-19 sm:gap-6 sm:px-[max(1.5rem,calc((100vw-1180px)/2))]">
         <button
           id="exit-quiz"
@@ -136,16 +150,35 @@ export function QuizScreen({
         >
           <ArrowLeft size={16} /> <span className="hidden sm:inline">Thoát</span>
         </button>
+
         <div className="hidden min-w-0 grid-cols-[auto_1fr] items-center gap-3.5 text-xs font-bold text-foreground sm:grid">
           <span className="truncate">
             Câu {index + 1} / {questions.length} · {mode === "practice" ? "Tập luyện có giải thích" : "Mô phỏng 50 phút"}
           </span>
           <ProgressBar value={(answeredCount / questions.length) * 100} />
         </div>
+
         <span className="min-w-0 truncate text-xs font-bold text-foreground sm:hidden">
           Câu {index + 1}/{questions.length}
         </span>
+
         <div className="flex items-center gap-2">
+          {/* Anti-cheat shield badge */}
+          <div
+            title={mode === "exam" ? `Hệ thống Anti-Cheat đang bảo vệ bài thi (${strikes} cảnh báo)` : "Dữ liệu được mã hóa Zero-Cleartext"}
+            className={cn(
+              "hidden md:flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-bold border transition-colors",
+              mode === "exam"
+                ? strikes > 0
+                  ? "border-destructive/30 bg-destructive/10 text-destructive animate-pulse"
+                  : "border-primary/30 bg-primary/10 text-primary"
+                : "border-border bg-muted/60 text-muted-foreground"
+            )}
+          >
+            <ShieldCheck size={14} className={strikes > 0 ? "text-destructive" : "text-primary"} />
+            <span>{mode === "exam" ? (strikes > 0 ? `Cảnh báo: ${strikes}/3` : "Anti-Cheat Bật") : "Bảo vệ"}</span>
+          </div>
+
           <div
             className={cn(
               "flex items-center gap-2 rounded-full px-3 py-1.5 font-mono text-sm font-extrabold tabular-nums sm:px-3.5",
@@ -255,7 +288,7 @@ export function QuizScreen({
             </button>
           </div>
 
-          <h1 className="my-5.5 text-[clamp(20px,2.2vw,26px)] leading-[1.45] font-bold tracking-tight whitespace-pre-line text-foreground">
+          <h1 className="my-5.5 text-[clamp(20px,2.2vw,26px)] leading-[1.45] font-bold tracking-tight whitespace-pre-line text-foreground select-none">
             {question.prompt}
           </h1>
 
@@ -267,7 +300,8 @@ export function QuizScreen({
               width={900}
               height={600}
               loading="lazy"
-              className="mx-auto mb-6 block max-h-[420px] max-w-full rounded-xl border border-border object-contain shadow-sm"
+              draggable={false}
+              className="mx-auto mb-6 block max-h-[420px] max-w-full rounded-xl border border-border object-contain shadow-sm pointer-events-none select-none"
             />
           ))}
 
@@ -291,12 +325,12 @@ export function QuizScreen({
                   </>
                 )}
               </div>
-              {!correct && (
+              {!correct && correctSummary && (
                 <p className="mt-2.5">
-                  <b>Đáp án đúng:</b> {correctAnswerText(question)}
+                  <b>Đáp án đúng:</b> {correctSummary}
                 </p>
               )}
-              <p className="mt-2.5 text-foreground/80">{question.explanation}</p>
+              {explanationText && <p className="mt-2.5 text-foreground/80">{explanationText}</p>}
             </div>
           )}
 

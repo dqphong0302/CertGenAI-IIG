@@ -1,3 +1,5 @@
+import { computeAnswerSignatureSync } from "@/lib/crypto";
+
 export type Difficulty = "easy" | "medium" | "hard";
 export type Topic = "methods" | "prompting" | "verification" | "responsible";
 export type Answer = string | string[] | Record<string, string>;
@@ -12,13 +14,14 @@ export type Question = {
   images: string[];
   difficulty: Difficulty;
   topic: Topic;
-  explanation: string;
+  explanation?: string;
   interaction:
     | { kind: "single"; options: Option[] }
     | { kind: "multiple"; options: Option[] }
     | { kind: "matrix"; rows: Array<{ id: string; text: string; options: Option[] }> }
-    | { kind: "matching"; rows: Array<{ id: string; text: string; answerId: string }>; options: Option[] }
-    | { kind: "sequence"; items: Array<Option & { order: number }> };
+    | { kind: "matching"; rows: Array<{ id: string; text: string; answerId?: string }>; options: Option[] }
+    | { kind: "sequence"; items: Array<Option & { order?: number }> };
+  answerSignature?: string;
 };
 
 export type Manifest = {
@@ -28,6 +31,8 @@ export type Manifest = {
   counts: Record<Difficulty, number>;
   topicCounts: Record<Topic, { total: number; counts: Record<Difficulty, number> }>;
   chunks: Array<{ id: string; topic: Topic; difficulty: Difficulty; count: number; file: string }>;
+  isEncrypted?: boolean;
+  encryptedAt?: string;
 };
 
 export type Attempt = {
@@ -43,6 +48,7 @@ export type Attempt = {
   wrongIds: string[];
   pointsPerQuestion?: number;
   estimatedScore?: number;
+  strikes?: number;
 };
 
 export const EXAM_QUESTION_COUNT = 50;
@@ -65,6 +71,7 @@ export type ActiveSession = {
   checked: Record<string, boolean>;
   index: number;
   elapsed: number;
+  strikes?: number;
 };
 
 export const STORAGE = {
@@ -88,14 +95,29 @@ export function isAnswered(question: Question, answer: Answer | undefined) {
   if (typeof answer === "string") return Boolean(answer);
   if (Array.isArray(answer)) return answer.length > 0;
   if (!answer) return false;
-  const needed = question.interaction.kind === "sequence" ? question.interaction.items.length : "rows" in question.interaction ? question.interaction.rows.length : 1;
+  const needed =
+    question.interaction.kind === "sequence"
+      ? question.interaction.items.length
+      : "rows" in question.interaction
+        ? question.interaction.rows.length
+        : 1;
   return Object.keys(answer).length === needed && Object.values(answer).every(Boolean);
 }
 
-export function isCorrect(question: Question, answer: Answer | undefined) {
+export function isCorrect(question: Question, answer: Answer | undefined): boolean {
   if (!isAnswered(question, answer)) return false;
+
+  // Zero-Cleartext Cryptographic Verification
+  if (question.answerSignature) {
+    const computedSig = computeAnswerSignatureSync(question.id, answer);
+    return computedSig === question.answerSignature;
+  }
+
+  // Legacy fallback if unencrypted question object is provided
   const interaction = question.interaction;
-  if (interaction.kind === "single") return answer === interaction.options.find((item) => item.correct)?.id;
+  if (interaction.kind === "single") {
+    return answer === interaction.options.find((item) => item.correct)?.id;
+  }
   if (interaction.kind === "multiple") {
     const expected = interaction.options.filter((item) => item.correct).map((item) => item.id).sort();
     return JSON.stringify([...(answer as string[])].sort()) === JSON.stringify(expected);
@@ -115,12 +137,36 @@ export function isCorrect(question: Question, answer: Answer | undefined) {
   return false;
 }
 
-export function correctAnswerText(question: Question) {
+export function correctAnswerText(question: Question, decryptedSummary?: string): string {
+  if (decryptedSummary) return decryptedSummary;
   const interaction = question.interaction;
-  if (interaction.kind === "single" || interaction.kind === "multiple") return interaction.options.filter((item) => item.correct).map((item) => item.text).join("; ");
-  if (interaction.kind === "matrix") return interaction.rows.map((row) => `${row.text}: ${row.options.find((item) => item.correct)?.text}`).join(" • ");
-  if (interaction.kind === "matching") return interaction.rows.map((row) => `${row.text}: ${interaction.options.find((item) => item.id === row.answerId)?.text}`).join(" • ");
-  return interaction.kind === "sequence" ? interaction.items.map((item) => `${item.order}. ${item.text}`).join(" • ") : "";
+  if (interaction.kind === "single" || interaction.kind === "multiple") {
+    const correctOptions = interaction.options.filter((item) => item.correct);
+    if (correctOptions.length) return correctOptions.map((item) => item.text).join("; ");
+  }
+  if (interaction.kind === "matrix") {
+    const rowsWithCorrect = interaction.rows.filter((r) => r.options.some((o) => o.correct));
+    if (rowsWithCorrect.length) {
+      return rowsWithCorrect
+        .map((row) => `${row.text}: ${row.options.find((item) => item.correct)?.text}`)
+        .join(" • ");
+    }
+  }
+  if (interaction.kind === "matching") {
+    const validRows = interaction.rows.filter((r) => r.answerId);
+    if (validRows.length) {
+      return validRows
+        .map((row) => `${row.text}: ${interaction.options.find((item) => item.id === row.answerId)?.text}`)
+        .join(" • ");
+    }
+  }
+  if (interaction.kind === "sequence") {
+    const ordered = interaction.items.filter((i) => i.order != null);
+    if (ordered.length) {
+      return ordered.map((item) => `${item.order}. ${item.text}`).join(" • ");
+    }
+  }
+  return "";
 }
 
 export const difficultyLabel: Record<Difficulty | "all", string> = {

@@ -38,3 +38,6 @@ next-env.d.ts
 /work/
 *.tsbuildinfo
 .playwright-mcp/
+
+# claude code local preview config
+.claude/
