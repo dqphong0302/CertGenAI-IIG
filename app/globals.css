@@ -126,12 +126,12 @@
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 55%, transparent 100%);
 }
 
-/* Anti-Cheat & Content Protection */
-.select-none,
-article,
-header,
-aside,
-main {
+/* Anti-Cheat & Content Protection
+   Chỉ khoá trong vùng được đánh dấu .select-none — màn hình làm bài, tổng quan
+   bài thi và màn hình kết quả. Trang chủ và Lý thuyết vẫn bôi đen / copy được
+   để người học ghi chú, đúng với phạm vi của lớp chặn bằng JS trong
+   hooks/use-anticheat.ts (chỉ bật khi đang làm bài). */
+.select-none {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -139,15 +139,20 @@ main {
   -webkit-touch-callout: none;
 }
 
-input,
-textarea {
+/* Ô nhập liệu nằm trong vùng khoá vẫn phải gõ và sửa được. */
+.select-none input,
+.select-none textarea,
+.select-none [contenteditable="true"] {
   -webkit-user-select: auto;
   -moz-user-select: auto;
   -ms-user-select: auto;
   user-select: auto;
+  -webkit-touch-callout: default;
 }
 
-img {
+/* Chặn kéo-thả và lưu ảnh đề bài. Giới hạn trong vùng khoá để ảnh ở
+   Lý thuyết (nếu bổ sung sau) vẫn bấm và phóng to được. */
+.select-none img {
   -webkit-user-drag: none;
   user-select: none;
   pointer-events: none;

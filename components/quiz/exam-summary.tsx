@@ -30,7 +30,7 @@ export function ExamSummary({
   onFinish: () => void;
 }) {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background select-none">
       <header className="sticky top-0 z-50 grid h-16 grid-cols-[auto_1fr_auto] items-center gap-3 border-b border-border bg-background/90 px-4 shadow-sm backdrop-blur-md sm:h-19 sm:gap-6 sm:px-6">
         <button
           id="summary-back-home"
