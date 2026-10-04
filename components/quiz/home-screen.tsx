@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { BookOpenCheck, BookOpenText, ChevronRight, Clock3, RotateCcw, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -21,6 +22,7 @@ import { THEORY_TOTAL } from "@/lib/theory";
 import { PracticePanel } from "@/components/quiz/practice-panel";
 import { ExamPanel } from "@/components/quiz/exam-panel";
 import { TheoryWorkspace } from "@/components/quiz/theory-workspace";
+import { QuestionReview, ReviewKeybook } from "@/components/quiz/question-review";
 import { SidebarPanels } from "@/components/quiz/sidebar-panels";
 import { HistoryPanel } from "@/components/quiz/history-panel";
 
@@ -29,6 +31,7 @@ type TheoryLearningProgress = Partial<Record<Topic, { visited: number[]; last: n
 
 export function HomeScreen({
   manifest,
+  keybook,
   stats,
   homeMode,
   onHomeMode,
@@ -59,6 +62,7 @@ export function HomeScreen({
   onImportFile,
 }: {
   manifest: Manifest;
+  keybook: ReviewKeybook | null;
   stats: { seen: number; accuracy: number; sessions: number };
   homeMode: HomeMode;
   onHomeMode: (mode: HomeMode) => void;
@@ -88,9 +92,11 @@ export function HomeScreen({
   importRef: React.RefObject<HTMLInputElement | null>;
   onImportFile: (file?: File) => void;
 }) {
+  const [theoryView, setTheoryView] = useState<"questions" | "slides">("questions");
+
   return (
     <main className="mx-auto w-[min(1180px,calc(100%-2.25rem))] pb-14">
-      <header className="sticky top-0 z-40 -mx-5 flex h-20 items-center justify-between border-b border-border/70 bg-background/85 px-5 backdrop-blur-md">
+      <header className="sticky top-0 z-40 -mx-4.5 flex h-20 items-center justify-between border-b border-border/70 bg-background/85 px-4.5 backdrop-blur-md">
         <a className="flex items-center gap-3 text-xl font-extrabold tracking-tight text-foreground no-underline" href="#top" aria-label="CertGenAI - Trang chủ">
           <span className="grid size-10 place-items-center rounded-xl bg-gradient-to-br from-teal-400 to-teal-700 text-white shadow-lg shadow-primary/25 dark:from-teal-300 dark:to-teal-600">
             <Sparkles size={20} />
@@ -122,8 +128,8 @@ export function HomeScreen({
             <span className="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent">đúng chuẩn.</span>
           </h1>
           <p className="max-w-[620px] text-[15px] leading-relaxed text-muted-foreground">
-            Hệ thống {THEORY_TOTAL} slide lý thuyết chuyên sâu và ngân hàng 175 câu hỏi thi chuẩn hóa IIG Certiport. Tập luyện
-            giải thích tức thì hoặc thi thử áp lực thời gian 50 phút.
+            Lướt nhanh {manifest.total} câu hỏi kèm đáp án và giải thích, học {THEORY_TOTAL} slide lý thuyết,
+            tập luyện hoặc thi thử trong 50 phút.
           </p>
         </div>
         <Card className="p-5.5 text-left shadow-md">
@@ -188,9 +194,9 @@ export function HomeScreen({
           <BookOpenText className="size-6.5 shrink-0" />
           <span>
             <b className={cn("block text-[15px] font-bold tracking-tight", homeMode === "theory" ? "text-info" : "text-foreground")}>
-              Lý thuyết vi mô
+              Lý thuyết tự học
             </b>
-            <small className="mt-0.5 block text-[11px] text-muted-foreground">{THEORY_TOTAL} slide · 4 nhóm kiến thức</small>
+            <small className="mt-0.5 block text-[11px] text-muted-foreground">Lướt {manifest.total} câu · Đáp án & giải thích</small>
           </span>
         </button>
       </nav>
@@ -235,15 +241,29 @@ export function HomeScreen({
           ) : homeMode === "exam" ? (
             <ExamPanel error={error} loading={loading} onStart={onStartExam} />
           ) : (
-            <TheoryWorkspace
-              key={`${theoryTopic}-${theorySlide}`}
-              topic={theoryTopic}
-              slideIndex={theorySlide}
-              progress={theoryProgress}
-              onTopic={onTheoryTopic}
-              onSlide={onTheorySlide}
-              onPractice={onTheoryPractice}
-            />
+            <>
+              <nav className="mb-6 flex flex-wrap gap-2" aria-label="Chọn nội dung tự học">
+                <Button id="theory-questions-tab" variant={theoryView === "questions" ? "default" : "outline"} aria-pressed={theoryView === "questions"} onClick={() => setTheoryView("questions")}>
+                  Lướt {manifest.total} câu
+                </Button>
+                <Button id="theory-slides-tab" variant={theoryView === "slides" ? "default" : "outline"} aria-pressed={theoryView === "slides"} onClick={() => { setTheoryView("slides"); onTheorySlide(theorySlide); }}>
+                  {THEORY_TOTAL} slide khái niệm
+                </Button>
+              </nav>
+              {theoryView === "questions" ? (
+                <QuestionReview manifest={manifest} keybook={keybook} />
+              ) : (
+                <TheoryWorkspace
+                  key={`${theoryTopic}-${theorySlide}`}
+                  topic={theoryTopic}
+                  slideIndex={theorySlide}
+                  progress={theoryProgress}
+                  onTopic={onTheoryTopic}
+                  onSlide={onTheorySlide}
+                  onPractice={onTheoryPractice}
+                />
+              )}
+            </>
           )}
         </Card>
 

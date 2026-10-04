@@ -163,7 +163,6 @@ export function QuizApp() {
 
   function selectHomeMode(nextMode: "practice" | "exam" | "theory") {
     setHomeMode(nextMode);
-    if (nextMode === "theory") recordTheoryView(theoryTopic, theorySlide);
   }
 
   useEffect(() => {
@@ -591,6 +590,7 @@ export function QuizApp() {
       {screen === "home" && (
         <HomeScreen
           manifest={manifest}
+          keybook={keybook}
           stats={stats}
           homeMode={homeMode}
           onHomeMode={selectHomeMode}
