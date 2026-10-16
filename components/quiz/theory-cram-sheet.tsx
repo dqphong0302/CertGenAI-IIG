@@ -6,6 +6,7 @@ import {
   ArrowRight,
   CheckCircle2,
   Copy,
+  Download,
   Flame,
   Layers,
   Printer,
@@ -538,11 +539,20 @@ export function TheoryCramSheet({
               size="sm"
               onClick={handlePrint}
               className="text-xs gap-1.5"
-              title="In trang hoặc lưu PDF"
+              title="In trang web"
             >
               <Printer size={14} />
-              In / Lưu PDF
+              In trang
             </Button>
+            <a
+              href="/Tai_Lieu_On_Thi_Cap_Toc_GenAI_IIG.pdf"
+              download="Tai_Lieu_On_Thi_Cap_Toc_GenAI_IIG.pdf"
+              className="inline-flex items-center justify-center rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-8 px-2.5 text-xs font-medium gap-1.5 transition-colors"
+              title="Tải về file PDF 19 trang được biên soạn chuẩn thi IIG"
+            >
+              <Download size={14} className="text-amber-600" />
+              Tải PDF (19 trang)
+            </a>
             {onStartExam && (
               <Button
                 size="sm"
