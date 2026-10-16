@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BookOpenCheck, BookOpenText, ChevronRight, Clock3, RotateCcw, Sparkles } from "lucide-react";
+import { BookOpenCheck, BookOpenText, ChevronRight, Clock3, RotateCcw, Sparkles, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -23,6 +23,7 @@ import { PracticePanel } from "@/components/quiz/practice-panel";
 import { ExamPanel } from "@/components/quiz/exam-panel";
 import { TheoryWorkspace } from "@/components/quiz/theory-workspace";
 import { QuestionReview, ReviewKeybook } from "@/components/quiz/question-review";
+import { TheoryCramSheet } from "@/components/quiz/theory-cram-sheet";
 import { SidebarPanels } from "@/components/quiz/sidebar-panels";
 import { HistoryPanel } from "@/components/quiz/history-panel";
 
@@ -92,7 +93,7 @@ export function HomeScreen({
   importRef: React.RefObject<HTMLInputElement | null>;
   onImportFile: (file?: File) => void;
 }) {
-  const [theoryView, setTheoryView] = useState<"questions" | "slides">("questions");
+  const [theoryView, setTheoryView] = useState<"cram" | "questions" | "slides">("cram");
 
   return (
     <main className="mx-auto w-[min(1180px,calc(100%-2.25rem))] pb-14">
@@ -128,9 +129,23 @@ export function HomeScreen({
             <span className="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent">đúng chuẩn.</span>
           </h1>
           <p className="max-w-[620px] text-[15px] leading-relaxed text-muted-foreground">
-            Lướt nhanh {manifest.total} câu hỏi kèm đáp án và giải thích, học {THEORY_TOTAL} slide lý thuyết,
-            tập luyện hoặc thi thử trong 50 phút.
+            Lướt nhanh {manifest.total} câu hỏi kèm đáp án và giải thích, cẩm nang tóm tắt 1 trang học cấp tốc,
+            {THEORY_TOTAL} slide lý thuyết vi mô, hoặc thi thử trong 50 phút.
           </p>
+          <div className="mt-4 flex flex-wrap gap-2.5">
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={() => {
+                onHomeMode("theory");
+                setTheoryView("cram");
+              }}
+              className="border-amber-500/30 bg-amber-500/10 text-amber-700 hover:bg-amber-500/20 dark:text-amber-300 font-semibold text-xs shadow-xs"
+            >
+              <Zap size={13} className="mr-1 fill-amber-500 text-amber-500" />
+              ⚡ Học cấp tốc 1 trang trước giờ thi
+            </Button>
+          </div>
         </div>
         <Card className="p-5.5 text-left shadow-md">
           <span className="block text-[11px] font-bold tracking-wide text-muted-foreground uppercase">MỨC SẴN SÀNG THI</span>
@@ -196,7 +211,7 @@ export function HomeScreen({
             <b className={cn("block text-[15px] font-bold tracking-tight", homeMode === "theory" ? "text-info" : "text-foreground")}>
               Lý thuyết tự học
             </b>
-            <small className="mt-0.5 block text-[11px] text-muted-foreground">Lướt {manifest.total} câu · Đáp án & giải thích</small>
+            <small className="mt-0.5 block text-[11px] text-muted-foreground">Cấp tốc 1 trang · Lướt {manifest.total} câu · 85 slide</small>
           </span>
         </button>
       </nav>
@@ -243,6 +258,19 @@ export function HomeScreen({
           ) : (
             <>
               <nav className="mb-6 flex flex-wrap gap-2" aria-label="Chọn nội dung tự học">
+                <Button
+                  id="theory-cram-tab"
+                  variant={theoryView === "cram" ? "default" : "outline"}
+                  aria-pressed={theoryView === "cram"}
+                  onClick={() => setTheoryView("cram")}
+                  className={cn(
+                    theoryView === "cram" &&
+                      "bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-stone-950 font-bold shadow-xs",
+                  )}
+                >
+                  <Zap size={14} className="mr-1.5" />
+                  Học cấp tốc 1 trang
+                </Button>
                 <Button id="theory-questions-tab" variant={theoryView === "questions" ? "default" : "outline"} aria-pressed={theoryView === "questions"} onClick={() => setTheoryView("questions")}>
                   Lướt {manifest.total} câu
                 </Button>
@@ -250,7 +278,9 @@ export function HomeScreen({
                   {THEORY_TOTAL} slide khái niệm
                 </Button>
               </nav>
-              {theoryView === "questions" ? (
+              {theoryView === "cram" ? (
+                <TheoryCramSheet onStartExam={onStartExam} onStartPractice={onTheoryPractice} />
+              ) : theoryView === "questions" ? (
                 <QuestionReview manifest={manifest} keybook={keybook} />
               ) : (
                 <TheoryWorkspace
