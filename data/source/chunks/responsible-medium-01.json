@@ -1,1 +1,575 @@
-[{"id":"n2gdhpbmkldi-l87upxf3be8t","number":51,"source":"GenAI","type":"MultipleChoiceText","prompt":"Bạn muốn dùng công cụ AI để lên kế hoạch leo núi Kilimanjaro ở Tanzania, một trong những ngọn núi lớn nhất châu Phi.\nBạn ít kinh nghiệm leo núi và có ngân sách nhỏ.\nChỉ một số tuyến đường lên Kilimanjaro phù hợp cho người mới bắt đầu.\nKhách du lịch phải có hướng dẫn viên đi cùng khi leo núi.\nMùa khô là thời điểm an toàn nhất để leo Kilimanjaro.\nBạn cần hoàn thành lời nhắc (AI prompt) bằng cách chọn đáp án đúng từ các lựa chọn.","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText40","text":"Tôi muốn","options":[{"id":"0","text":"bay đến Châu Phi","correct":false},{"id":"1","text":"tham quan Tanzania","correct":false},{"id":"2","text":"leo núi Kilimanjaro","correct":true}]},{"id":"qmMultipleChoiceText41","text":"Tìm kiếm","options":[{"id":"0","text":"chuyến bay đến châu Phi rẻ nhất","correct":false},{"id":"1","text":"tuyến đường phù hợp nhất cho người mới bắt đầu","correct":true},{"id":"2","text":"tuyến đường rẻ nhất","correct":false}]},{"id":"qmMultipleChoiceText42","text":"Hạn chế kết quả trong","options":[{"id":"0","text":"các chuyến bay thẳng đến Tanzania","correct":false},{"id":"1","text":"các chuyến bay rẻ nhất đến châu Phi","correct":false},{"id":"2","text":"mùa khô của châu Phi","correct":true},{"id":"3","text":"chỉ những ngày không có mưa","correct":false}]},{"id":"qmMultipleChoiceText43","text":"Lựa chọn","options":[{"id":"0","text":"tất cả các hướng dẫn viên du lịch giá rẻ ở Tanzania","correct":true},{"id":"1","text":"tất cả các hướng dẫn viên du lịch giá rẻ ở châu Phi","correct":false},{"id":"2","text":"tất cả các dịch vụ giá rẻ chuyên về leo núi Kilimanjaro","correct":false},{"id":"3","text":"tất cả các dịch vụ giá rẻ hoạt động trong mùa khô","correct":false}]}]},"explanation":"Câu lệnh AI hoàn chỉnh được ghép từ 4 phần, mỗi phần bám sát đúng một dữ kiện đã cho: bạn ít kinh nghiệm leo núi (→ tuyến đường phù hợp cho người mới bắt đầu), mùa khô là thời điểm an toàn nhất (→ giới hạn kết quả trong mùa khô của châu Phi), và ngân sách nhỏ (→ tìm hướng dẫn viên giá rẻ, cụ thể tại Tanzania — nơi có Kilimanjaro — chứ không phải toàn châu Phi hay chỉ chuyên về Kilimanjaro nói chung). Ghép lại: 'Tôi muốn leo núi Kilimanjaro. Tìm kiếm tuyến đường phù hợp nhất cho người mới bắt đầu. Hạn chế kết quả trong mùa khô của châu Phi. Lựa chọn tất cả các hướng dẫn viên du lịch giá rẻ ở Tanzania.'"},{"id":"nbcgpvow2uyh-i781hyv2lzn","number":53,"source":"GenAI","type":"MultipleChoiceText","prompt":"Bạn nhập lời nhắc trong Microsoft Copilot:\n“Sư nóng lên toàn câu có thật không?\"\nVới mỗi nhận định về kết quả đầu ra, hãy chọn Đúng hoặc Sai.","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText44","text":"Bạn có thể tin tưởng rằng kết quả đầu ra không có thiên kiến.","options":[{"id":"0","text":"Đúng","correct":false},{"id":"1","text":"Sai","correct":true}]},{"id":"qmMultipleChoiceText45","text":"Bạn nên xác minh thông tin từ các nguồn khoa học có thẩm quyền.","options":[{"id":"0","text":"Đúng","correct":true},{"id":"1","text":"Sai","correct":false}]},{"id":"qmMultipleChoiceText46","text":"Chỉ các nhà khoa học mới có khả năng nhập loại dữ liệu này.","options":[{"id":"0","text":"Đúng","correct":false},{"id":"1","text":"Sai","correct":true}]}]},"explanation":"Không có công cụ AI nào đảm bảo đầu ra hoàn toàn không thiên kiến, nên phát biểu 1 Sai. Với các chủ đề khoa học nhạy cảm như biến đổi khí hậu, luôn cần đối chiếu với nguồn khoa học đáng tin cậy — phát biểu 2 Đúng. Và bất kỳ ai, không riêng nhà khoa học, đều có thể đặt câu hỏi này cho AI — phát biểu 3 Sai."},{"id":"73saqva3ddpm-3x2sbuisbyee","number":112,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Những loại nội dung nào được tạo bằng AI tạo sinh có thể dẫn đến các hệ quả dân sự (bị kiện) hoặc hình sự (bị truy tố)? (Chọn hai)","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"2g6gzadwcx1w-f6nresx6s5at","text":"Bắt nạt","correct":true},{"id":"eauitj855v0p-ex3yj1qab995","text":"Rình rập","correct":true},{"id":"w620ljti12mn-c30ioc3okchp","text":"Cô lập","correct":false},{"id":"qyhqjs4l6bct-ql8c3gcdebh5","text":"Nói chuyện phiếm","correct":false},{"id":"oltreq2kxr99-zdc14eu6tfq8","text":"Cảm xúc tiêu cực","correct":false}]},"explanation":"Bắt nạt, tội ác thù ghét, gian lận, rình rập và gian lận đều có thể dẫn đến các hệ quả dân sự hoặc hình sự.\nCảm xúc tiêu cực không dẫn đến các hệ quả dân sự hoặc hình sự.\nLoại trừ và tin đồn, mặc dù có khả năng gây hại, nhưng không dẫn đến các hệ quả dân sự hoặc hình sự."},{"id":"d64db4npjiw4-an4j6ylpsvnb","number":120,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Những vấn đề nào với dữ liệu gây ra thiên lệch (bias) trong tập dữ liệu và trong đầu ra của AI tạo sinh? (Chọn hai)","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"o9iec6y6ssy-1586nnfjslsq","text":"Thiếu dữ liệu","correct":true},{"id":"djblosugreos-v0779d91flmb","text":"Sự bất thường trong dữ liệu","correct":false},{"id":"11j326eqd3ix-lknfd6kpid9l","text":"Tâm lý tiêu cực bất thường do một sự kiện","correct":false},{"id":"uhn0fad428b2-lkvkomueen0","text":"Thiếu sự đa dạng","correct":true}]},"explanation":"Đáp án đúng: A. Thiếu dữ liệu và D. Thiếu sự đa dạng\nGiải thích:\nA. Thiếu dữ liệu: Khi một nhóm, ngôn ngữ hoặc bối cảnh bị thiếu đại diện trong dữ liệu huấn luyện, mô hình sẽ thiên về các nhóm xuất hiện thường xuyên hơn → tạo ra bias.\nD. Thiếu sự đa dạng: Nếu dữ liệu chỉ phản ánh một quan điểm, vùng văn hóa, hoặc nhóm người nhất định, mô hình sẽ thiên vị trong phản hồi.\nB. Sự bất thường trong dữ liệu: Có thể gây lỗi, nhưng không phải nguyên nhân chính của bias.\nC. Tâm lý tiêu cực do một sự kiện: Là hiện tượng tạm thời, không phải đặc điểm cấu trúc gây thiên kiến dữ liệu."},{"id":"ewn8x8yy9gpq-z3lrvz6afejm","number":123,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Những loại dữ liệu nào nên tránh sử dụng khi thu thập dữ liệu để đào tạo mô hình AI tạo sinh? (Chọn hai)","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"owau4emgvgec-4fbw21w24dn2","text":"Thông tin cá nhân","correct":true},{"id":"eej7cqg1g1by-whww1t75r19s","text":"Dữ liệu lịch sử","correct":false},{"id":"xakih27csgzg-4kzkxuxfxpez","text":"Dữ liệu cá nhân của công ty","correct":true},{"id":"ivemrqc0s36g-y6kc05iv92xl","text":"KPI","correct":false}]},"explanation":"Đáp án đúng: ✅ A. Thông tin cá nhân và ✅ C. Dữ liệu cá nhân của công ty\nGiải thích:\nA. Thông tin cá nhân: Bao gồm dữ liệu nhạy cảm như tên, địa chỉ, số CMND, thông tin tài chính, sức khỏe,... Việc sử dụng loại dữ liệu này vi phạm quyền riêng tư và các quy định như GDPR → phải tránh.\nC. Dữ liệu cá nhân của công ty: Bao gồm thông tin bảo mật nội bộ, chiến lược kinh doanh, dữ liệu khách hàng,... Nếu dùng để huấn luyện AI mà không bảo vệ đúng cách, có thể làm rò rỉ bí mật doanh nghiệp → cần tránh.\nB. Dữ liệu lịch sử: có thể dùng, miễn là được xử lý và ẩn danh phù hợp.\nD. KPI: là dữ liệu hiệu suất, không nhạy cảm nếu ẩn danh, nên có thể sử dụng."},{"id":"5d531rbykuvy-mgkn6xtg7qit","number":133,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Đối với mỗi tuyên bố liên quan đến các giả định trong việc lấy nội dung từ đầu vào vào AI tạo sinh, hãy cho biết Yes nếu tuyên bố đó đúng và No nếu nó sai.","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText104","text":"Thêm ngữ cảnh vào lời nhắc AI sẽ giúp tạo ra đầu ra tốt hơn.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText105","text":"Có thể an toàn khi cho rằng một công cụ AI sẽ biết bạn đang nói về điều gì.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]},{"id":"qmMultipleChoiceText106","text":"Cung cấp cho lời nhắc AI một tính cách không ảnh hưởng đến đầu ra.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]}]},"explanation":"Đáp án:\nA. Thêm ngữ cảnh vào lời nhắc AI sẽ giúp tạo ra đầu ra tốt hơn → Yes Giải thích: Khi bạn thêm chi tiết và ngữ cảnh, AI sẽ hiểu rõ mục tiêu hơn, từ đó tạo ra kết quả chính xác và phù hợp hơn.\nB. Có thể an toàn khi cho rằng một công cụ AI sẽ biết bạn đang nói về điều gì → No Giải thích: AI không có trí nhớ ngữ cảnh ngoài cuộc trò chuyện hiện tại (trừ khi được cung cấp rõ), nên không nên giả định rằng nó “biết” bạn đang nói đến điều gì.\nC. Cung cấp cho lời nhắc AI một tính cách không ảnh hưởng đến đầu ra → No Giải thích: Khi bạn gán tính cách hoặc phong cách (ví dụ: “hãy viết như một giáo viên”, “giọng thân thiện”), AI sẽ điều chỉnh cách diễn đạt và nội dung theo đó → ảnh hưởng trực tiếp đến đầu ra."},{"id":"tcdw08fkvolv-smb9ylotxnp0","number":146,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Với mỗi câu dưới đây, hãy chọn Yes (Đúng) nếu phát biểu đúng, và No (Sai) nếu phát biểu sai.","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText117","text":"Dữ liệu có bản quyền thường được dùng để huấn luyện các mô hình AI.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText118","text":"Quy trình sử dụng AI trong môi trường chuyên nghiệp của công ty nên được ghi chép và minh bạch.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText119","text":"Công ty nên tuân theo các quy định của cơ quan quản lý ngành về việc sử dụng dữ liệu có bản quyền trong AI.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]}]},"explanation":"Dữ liệu có bản quyền thường được dùng để huấn luyện các mô hình AI.\nNhiều mô hình AI hiện nay được huấn luyện từ dữ liệu thu thập trên Internet, trong đó có cả nội dung có bản quyền (như bài viết, hình ảnh, âm nhạc).\nQuy trình sử dụng AI trong môi trường chuyên nghiệp của công ty nên được ghi chép và minh bạch.\nCông ty cần minh bạch về cách sử dụng AI, để tránh rủi ro vi phạm bản quyền hoặc bị hiểu lầm về nguồn dữ liệu.\nCông ty nên tuân theo các quy định của cơ quan quản lý ngành về việc sử dụng dữ liệu có bản quyền trong AI.\nHiện chưa có cơ quan quản lý chính thức nào đặt ra quy định cụ thể về việc AI dùng dữ liệu có bản quyền. Vì vậy, công ty nên xin phép chủ sở hữu dữ liệu và tuân thủ quy trình đạo đức nội bộ thay vì dựa vào “quy định ngành”."},{"id":"2b7ftnio7zoz-1bwui54inr5e","number":150,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Đối với mỗi tuyên bố liên quan đến AI và tác động của AI tạo sinh đối với thị trường việc làm, hãy cho biết Yes nếu tuyên bố đó đúng và No nếu sai.","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText127","text":"Có nỗi sợ rằng AI sẽ tiếp quản việc làm và nhân loại.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText128","text":"AI có thể đóng vai trò như một công cụ tạo việc làm.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText129","text":"Mọi công việc cuối cùng sẽ được điều hành bởi AI.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]}]},"explanation":"Đáp án:\nA. Có nỗi sợ rằng AI sẽ tiếp quản việc làm và nhân loại → Yes Giải thích: Đúng — có mối lo ngại xã hội phổ biến rằng AI có thể thay thế con người trong nhiều công việc, thậm chí đe dọa vai trò của con người trong tương lai.\nB. AI có thể đóng vai trò như một công cụ tạo việc làm → Yes Giải thích: Đúng — AI không chỉ thay thế mà còn tạo ra các công việc mới, như quản lý dữ liệu, huấn luyện mô hình, kỹ sư AI, chuyên viên đạo đức AI, v.v.\nC. Mọi công việc cuối cùng sẽ được điều hành bởi AI → No Giải thích: Sai — nhiều công việc vẫn cần con người, đặc biệt là các lĩnh vực sáng tạo, giao tiếp, lãnh đạo, và cảm xúc; AI chỉ hỗ trợ chứ không thể thay thế hoàn toàn."},{"id":"7di53adbd7i-ysi4ogq00ke","number":157,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Sử dụng các mũi tên thả xuống để hoàn thành câu nhận định về cách tránh lan truyền thông tin sai lệch qua AI tạo sinh và hậu quả của việc này.","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText142","text":"Trong một công ty, ___ là cần thiết để tránh việc lan truyền thông tin sai lệch qua AI tạo sinh.","options":[{"id":"0","text":"Sự giám sát của con người","correct":true},{"id":"1","text":"Quy định bên ngoài","correct":false},{"id":"2","text":"Bảo vệ dữ liệu","correct":false}]},{"id":"qmMultipleChoiceText143","text":"Làm như vậy sẽ giúp công ty tránh được các hậu quả tài chính và ___.","options":[{"id":"0","text":"Pháp lý","correct":true},{"id":"1","text":"Vận hành","correct":false},{"id":"2","text":"Quy định","correct":false}]}]},"explanation":"Trong một công ty, sự giám sát của con người (human oversight) là cần thiết để tránh lan truyền thông tin sai. Làm như vậy sẽ giúp công ty tránh được các hậu quả về tài chính và pháp lý (financial and legal repercussions)."},{"id":"jfa18p7xv8xz-3ww9ramlygsf","number":167,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Một công ty xây dựng mô hình AI để dự đoán nhu cầu nhân sự cho một trung tâm giải trí muốn đảm bảo dữ liệu cá nhân không được đưa vào mô hình để loại bỏ nguy cơ trộm cắp danh tính. Loại hành động nào có thể được theo đuổi nếu một mô hình AI gây ra hành vi trộm cắp danh tính? (Chọn hai)","images":[],"difficulty":"medium","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"im50tnwszdoj-so6ukx1e1817","text":"Ẩn danh","correct":false},{"id":"oxt148hymdu4-tlon1g2472vr","text":"Hình sự","correct":true},{"id":"qf8yylyqnw84-agtl79bz0pxd","text":"Dân sự","correct":true},{"id":"q9p6wn7lme2o-m00g6tpzprbj","text":"Thiên vị","correct":false}]},"explanation":"Đáp án đúng: B. Hình sự và C. Dân sự\nGiải thích:\nB. Hình sự (Criminal): Nếu mô hình AI vô tình hoặc cố ý tiết lộ hoặc lạm dụng dữ liệu cá nhân, dẫn đến trộm cắp danh tính, hành vi đó có thể bị truy tố hình sự theo luật bảo vệ dữ liệu và quyền riêng tư (ví dụ: GDPR, luật an ninh mạng, luật hình sự quốc gia).\nC. Dân sự (Civil): Nạn nhân của hành vi mất dữ liệu cá nhân hoặc bị đánh cắp danh tính có thể khởi kiện đòi bồi thường thiệt hại đối với công ty hoặc cá nhân chịu trách nhiệm về mô hình AI.\nCác lựa chọn sai:\nA. Ẩn danh (Anonymization): là biện pháp phòng ngừa, không phải hành động pháp lý sau khi vi phạm xảy ra.\nD. Thiên vị (Bias): liên quan đến đạo đức và công bằng trong dữ liệu, không liên quan đến trộm cắp danh tính."}]
+[
+  {
+    "id": "n2gdhpbmkldi-l87upxf3be8t",
+    "number": 50,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Bạn muốn dùng công cụ AI để lên kế hoạch leo núi Kilimanjaro ở Tanzania, một trong những ngọn núi lớn nhất châu Phi.\nBạn ít kinh nghiệm leo núi và có ngân sách nhỏ.\nChỉ một số tuyến đường lên Kilimanjaro phù hợp cho người mới bắt đầu.\nKhách du lịch phải có hướng dẫn viên đi cùng khi leo núi.\nMùa khô là thời điểm an toàn nhất để leo Kilimanjaro.\nBạn cần hoàn thành lời nhắc (AI prompt) bằng cách chọn đáp án đúng từ các lựa chọn.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText40",
+          "text": "Tôi muốn",
+          "options": [
+            {
+              "id": "0",
+              "text": "bay đến Châu Phi",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "tham quan Tanzania",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "leo núi Kilimanjaro",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText41",
+          "text": "Tìm kiếm",
+          "options": [
+            {
+              "id": "0",
+              "text": "chuyến bay đến châu Phi rẻ nhất",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "tuyến đường phù hợp nhất cho người mới bắt đầu",
+              "correct": true
+            },
+            {
+              "id": "2",
+              "text": "tuyến đường rẻ nhất",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText42",
+          "text": "Hạn chế kết quả trong",
+          "options": [
+            {
+              "id": "0",
+              "text": "các chuyến bay thẳng đến Tanzania",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "các chuyến bay rẻ nhất đến châu Phi",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "mùa khô của châu Phi",
+              "correct": true
+            },
+            {
+              "id": "3",
+              "text": "chỉ những ngày không có mưa",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText43",
+          "text": "Lựa chọn",
+          "options": [
+            {
+              "id": "0",
+              "text": "tất cả các hướng dẫn viên du lịch giá rẻ ở Tanzania",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "tất cả các hướng dẫn viên du lịch giá rẻ ở châu Phi",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "tất cả các dịch vụ giá rẻ chuyên về leo núi Kilimanjaro",
+              "correct": false
+            },
+            {
+              "id": "3",
+              "text": "tất cả các dịch vụ giá rẻ hoạt động trong mùa khô",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Câu lệnh AI hoàn chỉnh được ghép từ 4 phần, mỗi phần bám sát đúng một dữ kiện đã cho: bạn ít kinh nghiệm leo núi (→ tuyến đường phù hợp cho người mới bắt đầu), mùa khô là thời điểm an toàn nhất (→ giới hạn kết quả trong mùa khô của châu Phi), và ngân sách nhỏ (→ tìm hướng dẫn viên giá rẻ, cụ thể tại Tanzania — nơi có Kilimanjaro — chứ không phải toàn châu Phi hay chỉ chuyên về Kilimanjaro nói chung). Ghép lại: 'Tôi muốn leo núi Kilimanjaro. Tìm kiếm tuyến đường phù hợp nhất cho người mới bắt đầu. Hạn chế kết quả trong mùa khô của châu Phi. Lựa chọn tất cả các hướng dẫn viên du lịch giá rẻ ở Tanzania.'"
+  },
+  {
+    "id": "nbcgpvow2uyh-i781hyv2lzn",
+    "number": 52,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Bạn nhập lời nhắc trong Microsoft Copilot:\n“Sư nóng lên toàn câu có thật không?\"\nVới mỗi nhận định về kết quả đầu ra, hãy chọn Đúng hoặc Sai.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText44",
+          "text": "Bạn có thể tin tưởng rằng kết quả đầu ra không có thiên kiến.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText45",
+          "text": "Bạn nên xác minh thông tin từ các nguồn khoa học có thẩm quyền.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText46",
+          "text": "Chỉ các nhà khoa học mới có khả năng nhập loại dữ liệu này.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Không có công cụ AI nào đảm bảo đầu ra hoàn toàn không thiên kiến, nên phát biểu 1 Sai. Với các chủ đề khoa học nhạy cảm như biến đổi khí hậu, luôn cần đối chiếu với nguồn khoa học đáng tin cậy — phát biểu 2 Đúng. Và bất kỳ ai, không riêng nhà khoa học, đều có thể đặt câu hỏi này cho AI — phát biểu 3 Sai."
+  },
+  {
+    "id": "73saqva3ddpm-3x2sbuisbyee",
+    "number": 108,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Những loại nội dung nào được tạo bằng AI tạo sinh có thể dẫn đến các hệ quả dân sự (bị kiện) hoặc hình sự (bị truy tố)? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "2g6gzadwcx1w-f6nresx6s5at",
+          "text": "Bắt nạt",
+          "correct": true
+        },
+        {
+          "id": "eauitj855v0p-ex3yj1qab995",
+          "text": "Rình rập",
+          "correct": true
+        },
+        {
+          "id": "w620ljti12mn-c30ioc3okchp",
+          "text": "Cô lập",
+          "correct": false
+        },
+        {
+          "id": "qyhqjs4l6bct-ql8c3gcdebh5",
+          "text": "Nói chuyện phiếm",
+          "correct": false
+        },
+        {
+          "id": "oltreq2kxr99-zdc14eu6tfq8",
+          "text": "Cảm xúc tiêu cực",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Bắt nạt, tội ác thù ghét, gian lận, rình rập và gian lận đều có thể dẫn đến các hệ quả dân sự hoặc hình sự.\nCảm xúc tiêu cực không dẫn đến các hệ quả dân sự hoặc hình sự.\nLoại trừ và tin đồn, mặc dù có khả năng gây hại, nhưng không dẫn đến các hệ quả dân sự hoặc hình sự."
+  },
+  {
+    "id": "d64db4npjiw4-an4j6ylpsvnb",
+    "number": 116,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Những vấn đề nào với dữ liệu gây ra thiên lệch (bias) trong tập dữ liệu và trong đầu ra của AI tạo sinh? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "o9iec6y6ssy-1586nnfjslsq",
+          "text": "Thiếu dữ liệu",
+          "correct": true
+        },
+        {
+          "id": "djblosugreos-v0779d91flmb",
+          "text": "Sự bất thường trong dữ liệu",
+          "correct": false
+        },
+        {
+          "id": "11j326eqd3ix-lknfd6kpid9l",
+          "text": "Tâm lý tiêu cực bất thường do một sự kiện",
+          "correct": false
+        },
+        {
+          "id": "uhn0fad428b2-lkvkomueen0",
+          "text": "Thiếu sự đa dạng",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: A. Thiếu dữ liệu và D. Thiếu sự đa dạng\nGiải thích:\nA. Thiếu dữ liệu: Khi một nhóm, ngôn ngữ hoặc bối cảnh bị thiếu đại diện trong dữ liệu huấn luyện, mô hình sẽ thiên về các nhóm xuất hiện thường xuyên hơn → tạo ra bias.\nD. Thiếu sự đa dạng: Nếu dữ liệu chỉ phản ánh một quan điểm, vùng văn hóa, hoặc nhóm người nhất định, mô hình sẽ thiên vị trong phản hồi.\nB. Sự bất thường trong dữ liệu: Có thể gây lỗi, nhưng không phải nguyên nhân chính của bias.\nC. Tâm lý tiêu cực do một sự kiện: Là hiện tượng tạm thời, không phải đặc điểm cấu trúc gây thiên kiến dữ liệu."
+  },
+  {
+    "id": "ewn8x8yy9gpq-z3lrvz6afejm",
+    "number": 119,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Những loại dữ liệu nào nên tránh sử dụng khi thu thập dữ liệu để đào tạo mô hình AI tạo sinh? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "owau4emgvgec-4fbw21w24dn2",
+          "text": "Thông tin cá nhân",
+          "correct": true
+        },
+        {
+          "id": "eej7cqg1g1by-whww1t75r19s",
+          "text": "Dữ liệu lịch sử",
+          "correct": false
+        },
+        {
+          "id": "xakih27csgzg-4kzkxuxfxpez",
+          "text": "Dữ liệu cá nhân của công ty",
+          "correct": true
+        },
+        {
+          "id": "ivemrqc0s36g-y6kc05iv92xl",
+          "text": "KPI",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: ✅ A. Thông tin cá nhân và ✅ C. Dữ liệu cá nhân của công ty\nGiải thích:\nA. Thông tin cá nhân: Bao gồm dữ liệu nhạy cảm như tên, địa chỉ, số CMND, thông tin tài chính, sức khỏe,... Việc sử dụng loại dữ liệu này vi phạm quyền riêng tư và các quy định như GDPR → phải tránh.\nC. Dữ liệu cá nhân của công ty: Bao gồm thông tin bảo mật nội bộ, chiến lược kinh doanh, dữ liệu khách hàng,... Nếu dùng để huấn luyện AI mà không bảo vệ đúng cách, có thể làm rò rỉ bí mật doanh nghiệp → cần tránh.\nB. Dữ liệu lịch sử: có thể dùng, miễn là được xử lý và ẩn danh phù hợp.\nD. KPI: là dữ liệu hiệu suất, không nhạy cảm nếu ẩn danh, nên có thể sử dụng."
+  },
+  {
+    "id": "5d531rbykuvy-mgkn6xtg7qit",
+    "number": 128,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi tuyên bố liên quan đến các giả định trong việc lấy nội dung từ đầu vào vào AI tạo sinh, hãy cho biết Yes nếu tuyên bố đó đúng và No nếu nó sai.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText104",
+          "text": "Thêm ngữ cảnh vào lời nhắc AI sẽ giúp tạo ra đầu ra tốt hơn.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText105",
+          "text": "Có thể an toàn khi cho rằng một công cụ AI sẽ biết bạn đang nói về điều gì.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText106",
+          "text": "Cung cấp cho lời nhắc AI một tính cách không ảnh hưởng đến đầu ra.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đáp án:\nA. Thêm ngữ cảnh vào lời nhắc AI sẽ giúp tạo ra đầu ra tốt hơn → Yes Giải thích: Khi bạn thêm chi tiết và ngữ cảnh, AI sẽ hiểu rõ mục tiêu hơn, từ đó tạo ra kết quả chính xác và phù hợp hơn.\nB. Có thể an toàn khi cho rằng một công cụ AI sẽ biết bạn đang nói về điều gì → No Giải thích: AI không có trí nhớ ngữ cảnh ngoài cuộc trò chuyện hiện tại (trừ khi được cung cấp rõ), nên không nên giả định rằng nó “biết” bạn đang nói đến điều gì.\nC. Cung cấp cho lời nhắc AI một tính cách không ảnh hưởng đến đầu ra → No Giải thích: Khi bạn gán tính cách hoặc phong cách (ví dụ: “hãy viết như một giáo viên”, “giọng thân thiện”), AI sẽ điều chỉnh cách diễn đạt và nội dung theo đó → ảnh hưởng trực tiếp đến đầu ra."
+  },
+  {
+    "id": "tcdw08fkvolv-smb9ylotxnp0",
+    "number": 139,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Với mỗi câu dưới đây, hãy chọn Yes (Đúng) nếu phát biểu đúng, và No (Sai) nếu phát biểu sai.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText117",
+          "text": "Dữ liệu có bản quyền thường được dùng để huấn luyện các mô hình AI.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText118",
+          "text": "Quy trình sử dụng AI trong môi trường chuyên nghiệp của công ty nên được ghi chép và minh bạch.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText119",
+          "text": "Công ty nên tuân theo các quy định của cơ quan quản lý ngành về việc sử dụng dữ liệu có bản quyền trong AI.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Dữ liệu có bản quyền thường được dùng để huấn luyện các mô hình AI.\nNhiều mô hình AI hiện nay được huấn luyện từ dữ liệu thu thập trên Internet, trong đó có cả nội dung có bản quyền (như bài viết, hình ảnh, âm nhạc).\nQuy trình sử dụng AI trong môi trường chuyên nghiệp của công ty nên được ghi chép và minh bạch.\nCông ty cần minh bạch về cách sử dụng AI, để tránh rủi ro vi phạm bản quyền hoặc bị hiểu lầm về nguồn dữ liệu.\nCông ty nên tuân theo các quy định của cơ quan quản lý ngành về việc sử dụng dữ liệu có bản quyền trong AI.\nHiện chưa có cơ quan quản lý chính thức nào đặt ra quy định cụ thể về việc AI dùng dữ liệu có bản quyền. Vì vậy, công ty nên xin phép chủ sở hữu dữ liệu và tuân thủ quy trình đạo đức nội bộ thay vì dựa vào “quy định ngành”."
+  },
+  {
+    "id": "2b7ftnio7zoz-1bwui54inr5e",
+    "number": 141,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi tuyên bố liên quan đến AI và tác động của AI tạo sinh đối với thị trường việc làm, hãy cho biết Yes nếu tuyên bố đó đúng và No nếu sai.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText127",
+          "text": "Có nỗi sợ rằng AI sẽ tiếp quản việc làm và nhân loại.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText128",
+          "text": "AI có thể đóng vai trò như một công cụ tạo việc làm.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText129",
+          "text": "Mọi công việc cuối cùng sẽ được điều hành bởi AI.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đáp án:\nA. Có nỗi sợ rằng AI sẽ tiếp quản việc làm và nhân loại → Yes Giải thích: Đúng — có mối lo ngại xã hội phổ biến rằng AI có thể thay thế con người trong nhiều công việc, thậm chí đe dọa vai trò của con người trong tương lai.\nB. AI có thể đóng vai trò như một công cụ tạo việc làm → Yes Giải thích: Đúng — AI không chỉ thay thế mà còn tạo ra các công việc mới, như quản lý dữ liệu, huấn luyện mô hình, kỹ sư AI, chuyên viên đạo đức AI, v.v.\nC. Mọi công việc cuối cùng sẽ được điều hành bởi AI → No Giải thích: Sai — nhiều công việc vẫn cần con người, đặc biệt là các lĩnh vực sáng tạo, giao tiếp, lãnh đạo, và cảm xúc; AI chỉ hỗ trợ chứ không thể thay thế hoàn toàn."
+  },
+  {
+    "id": "7di53adbd7i-ysi4ogq00ke",
+    "number": 148,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Sử dụng các mũi tên thả xuống để hoàn thành câu nhận định về cách tránh lan truyền thông tin sai lệch qua AI tạo sinh và hậu quả của việc này.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText142",
+          "text": "Trong một công ty, ___ là cần thiết để tránh việc lan truyền thông tin sai lệch qua AI tạo sinh.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Sự giám sát của con người",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Quy định bên ngoài",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "Bảo vệ dữ liệu",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText143",
+          "text": "Làm như vậy sẽ giúp công ty tránh được các hậu quả tài chính và ___.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Pháp lý",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Vận hành",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "Quy định",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Trong một công ty, sự giám sát của con người (human oversight) là cần thiết để tránh lan truyền thông tin sai. Làm như vậy sẽ giúp công ty tránh được các hậu quả về tài chính và pháp lý (financial and legal repercussions)."
+  },
+  {
+    "id": "jfa18p7xv8xz-3ww9ramlygsf",
+    "number": 156,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Một công ty xây dựng mô hình AI để dự đoán nhu cầu nhân sự cho một trung tâm giải trí muốn đảm bảo dữ liệu cá nhân không được đưa vào mô hình để loại bỏ nguy cơ trộm cắp danh tính. Loại hành động nào có thể được theo đuổi nếu một mô hình AI gây ra hành vi trộm cắp danh tính? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "im50tnwszdoj-so6ukx1e1817",
+          "text": "Ẩn danh",
+          "correct": false
+        },
+        {
+          "id": "oxt148hymdu4-tlon1g2472vr",
+          "text": "Hình sự",
+          "correct": true
+        },
+        {
+          "id": "qf8yylyqnw84-agtl79bz0pxd",
+          "text": "Dân sự",
+          "correct": true
+        },
+        {
+          "id": "q9p6wn7lme2o-m00g6tpzprbj",
+          "text": "Thiên vị",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: B. Hình sự và C. Dân sự\nGiải thích:\nB. Hình sự (Criminal): Nếu mô hình AI vô tình hoặc cố ý tiết lộ hoặc lạm dụng dữ liệu cá nhân, dẫn đến trộm cắp danh tính, hành vi đó có thể bị truy tố hình sự theo luật bảo vệ dữ liệu và quyền riêng tư (ví dụ: GDPR, luật an ninh mạng, luật hình sự quốc gia).\nC. Dân sự (Civil): Nạn nhân của hành vi mất dữ liệu cá nhân hoặc bị đánh cắp danh tính có thể khởi kiện đòi bồi thường thiệt hại đối với công ty hoặc cá nhân chịu trách nhiệm về mô hình AI.\nCác lựa chọn sai:\nA. Ẩn danh (Anonymization): là biện pháp phòng ngừa, không phải hành động pháp lý sau khi vi phạm xảy ra.\nD. Thiên vị (Bias): liên quan đến đạo đức và công bằng trong dữ liệu, không liên quan đến trộm cắp danh tính."
+  }
+]

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'CertGenAI — Luyện thi IIG Certiport GenAI Foundations',
-  description: 'Luyện tập 175 câu hỏi GenAI, xem giải thích và theo dõi tiến độ ngay trên thiết bị.',
+  description: 'Luyện tập 164 câu hỏi GenAI chuẩn hóa, xem giải thích và theo dõi tiến độ ngay trên thiết bị.',
 };
 
 export default function RootLayout({

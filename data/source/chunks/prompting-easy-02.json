@@ -1,1 +1,434 @@
-[{"id":"vkyw79s9lda4-pmh0iaynnstv","number":80,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Câu lệnh AI tạo sinh nào đang sử dụng kỹ thuật khai thác kiến thức (generate knowledge prompt)?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"k8962cyv948a-c3y5nxdk8cyb","text":"Định nghĩa về thổi thủy tinh. Sau đó cho tôi biết nó được sử dụng như thế nào để làm chai coca.","correct":true},{"id":"e6qpg3ly9015-2v3jb51tq5l6","text":"Nếu một căn phòng là 10 feet x 8 feet, diện tích của căn phòng là bao nhiêu? Nhân hai bên để có kết quả.","correct":false},{"id":"nrbz2nntmavw-pubfbyklsaot","text":"Định nghĩa về thổi thủy tinh.","correct":false},{"id":"dlneahkt7w6x-u9igtxx6cggl","text":"Một chiếc sedan được sử dụng để lái xe trong thành phố. Một chiếc SUV được sử dụng để lái xe ngoài trời. Vai trò của crossover là gì?","correct":false}]},"explanation":"Câu lệnh khai thác kiến thức yêu cầu kiến thức chung về một chủ đề và sau đó là một kiến thức cụ thể về chủ đề đó. Do đó, \"Định nghĩa về thổi thủy tinh. Sau đó cho tôi biết nó được sử dụng như thế nào để làm chai coca.\" là một ví dụ về câu lệnh khai thác kiến thức.\nChia nhỏ các bước là một ví dụ về câu lệnh Tư duy chuỗi (chain of thought prompting).\nChỉ cần yêu cầu một cái gì đó mà không có bất kỳ bối cảnh nào là một ví dụ về zero-shot prompting.\nYêu cầu nội dung với một số hướng dẫn là một ví dụ về few-shot prompting."},{"id":"t0r983lxh0nj-sm4bnigsg1v1","number":81,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Câu lệnh AI tạo sinh nào là phù hợp nhất để biến một hình ảnh tĩnh thành video?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"k8962cyv948a-c3y5nxdk8cyb","text":"Tạo hoạt ảnh cho hình ảnh những ngọn núi từ trái sang phải.","correct":true},{"id":"e6qpg3ly9015-2v3jb51tq5l6","text":"Tạo một video với hai ngọn núi như thể máy ảnh đang lia qua chúng từ trái sang phải.","correct":false},{"id":"nrbz2nntmavw-pubfbyklsaot","text":"Tạo một video sử dụng hình ảnh những ngọn núi phủ tuyết và hình ảnh những ngọn núi không có tuyết.","correct":false},{"id":"dlneahkt7w6x-u9igtxx6cggl","text":"Thêm tuyết vào những ngọn núi trong video đã tải lên.","correct":false}]},"explanation":"Một câu lệnh yêu cầu một hình ảnh chuyển động hoặc tạo hoạt ảnh là phù hợp để biến một hình ảnh thành video.\nMột câu lệnh yêu cầu một công cụ AI tạo sinh tạo video không giống với việc biến một hình ảnh thành video.\nSử dụng hai hình ảnh để tạo video là một ví dụ về nội suy giữa các hình ảnh.\nThêm một đối tượng vào một video hiện có không giống với việc biến một hình ảnh thành video."},{"id":"6ec1oklsdgyk-dc51ce3rmmgq","number":83,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Bạn được giao nhiệm vụ chuyển đổi một video hướng dẫn sao cho người xem không thể sử dụng âm thanh vẫn có thể tiếp cận được.\nBạn nên sử dụng câu lệnh AI nào?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"k8962cyv948a-c3y5nxdk8cyb","text":"Dịch video đã tải lên sang tiếng Tây Ban Nha.","correct":false},{"id":"e6qpg3ly9015-2v3jb51tq5l6","text":"Thêm phụ đề vào video đã tải lên.","correct":true},{"id":"nrbz2nntmavw-pubfbyklsaot","text":"Tắt âm thanh của video này và thêm phụ đề.","correct":false},{"id":"dlneahkt7w6x-u9igtxx6cggl","text":"Chuyển video này thành một bài thuyết trình dạng slide.","correct":false}]},"explanation":"Để chuyển đổi một video hướng dẫn thành nội dung có thể tiếp cận được với người xem không dùng được âm thanh, hãy ra lệnh cho AI thêm phụ đề vào video đã tải lên."},{"id":"n77j69ni9ra5-iruv0rh75eky","number":84,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Các học sinh ở trường mới của bạn được mời nộp tác phẩm nghệ thuật về một linh vật. Tên linh vật là Tornados.\nBạn nên sử dụng câu lệnh AI nào?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"k8962cyv948a-c3y5nxdk8cyb","text":"Tạo một hình ảnh học sinh đang cưỡi trên lốc xoáy.","correct":false},{"id":"e6qpg3ly9015-2v3jb51tq5l6","text":"Tạo một hình ảnh ghép cảnh lốc xoáy quét qua trường học.","correct":false},{"id":"nrbz2nntmavw-pubfbyklsaot","text":"Tạo một hình ảnh động (GIF) về lốc xoáy sử dụng màu sắc của trường.","correct":false},{"id":"dlneahkt7w6x-u9igtxx6cggl","text":"Tạo một hình ảnh hoạt hình biến hình (animorphic) của một cơn lốc xoáy đang ôm quả bóng bầu dục và đội mũ bảo hiểm bóng bầu dục","correct":true}]},"explanation":"Câu lệnh AI tốt nhất là:\nTạo một hình ảnh hoạt hình biến hình (animorphic) của một cơn lốc xoáy đang ôm quả bóng bầu dục và đội mũ bảo hiểm bóng bầu dục."},{"id":"k33ev5kgpqdd-rwlhw6r9uacf","number":119,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Hướng dẫn nào cho lời nhắc cho tờ rơi tiếp thị quảng cáo kinh doanh chải lông chó là một ví dụ về few-shot prompt?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"ptcudb1qt4w1-xrh16t2wusvh","text":"Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Bao gồm từ tỏa sáng (shine).","correct":false},{"id":"hzphpz5ef6gi-corcd0kk6o0v","text":"Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó (dog grooming).","correct":false},{"id":"ndlursexuueo-9quezph5ow9q","text":"Dưới đây là một số câu cửa miệng tiếp thị: \"Groom to bloom\", \"Goggie waggie\", \"a fine canine\".","correct":false},{"id":"bapxv2pdf520-fvv01a4urpfn","text":"Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Ví dụ bao gồm \"groom to bloom\" và \"doggie waggie\"","correct":true}]},"explanation":"Đáp án đúng: D. Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Ví dụ bao gồm \"groom to bloom\" và \"doggie waggie\".\nGiải thích:\nFew-shot prompt = lời nhắc có một vài ví dụ mẫu giúp AI hiểu phong cách hoặc cách thể hiện mong muốn.\nCâu D cung cấp hai ví dụ (\"groom to bloom\", \"doggie waggie\"), nên mô hình có thể học theo phong cách đó để tạo nội dung mới.\nCác lựa chọn A, B, C:\nA/B: không có ví dụ → zero-shot.\nC: chỉ đưa ví dụ, không có yêu cầu tạo nội dung → không phải few-shot prompt hoàn chỉnh."},{"id":"p7ohrmn9ukmj-iiqyfxmyqk4u","number":135,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Vấn đề gì với lời nhắc \"Hãy cho tôi biết về con báo.\"?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"79373b10fre6-som7msidpf72","text":"Lời nhắc cần một tính cách.","correct":false},{"id":"aqmb3x9rlax0-txutby4ki7g6","text":"Lời nhắc cần bối cảnh.","correct":true},{"id":"s93vaakt6w90-ewq4nosskfm","text":"Lời nhắc cần một phong cách.","correct":false},{"id":"mvk9abrmpuxf-k17wj6yivmga","text":"Lời nhắc cần một vai trò.","correct":false}]},"explanation":"Đáp án đúng: B. Lời nhắc cần bối cảnh.\nGiải thích: Lời nhắc “Hãy cho tôi biết về con báo.” quá chung chung — AI không biết bạn muốn nói đến:\nCon báo (động vật)\nHay Lamborghini Aventador (biệt danh: Báo)\nHoặc biểu tượng đội thể thao / thương hiệu có tên “Leopard”  → Do đó, thiếu bối cảnh khiến AI khó tạo ra câu trả lời phù hợp.\nA. Tính cách, C. Phong cách, và D. Vai trò chỉ giúp định hình cách diễn đạt, chứ không làm rõ nội dung mà AI cần nói."},{"id":"35bhrht7vh3n-z7fhogyyumy3","number":138,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Một quản trị viên trang web không thành công khi cố gắng tạo ra phần mô tả cho một trung tâm võ thuật. Một đồng nghiệp gợi ý rằng nên thêm một “persona” (nhân vật hoặc vai trò) vào câu lệnh để có kết quả tốt hơn.\nCâu lệnh nào dưới đây thể hiện việc thêm persona như đồng nghiệp đã gợi ý?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"79373b10fre6-som7msidpf72","text":"Là một huấn luyện viên võ thuật tràn đầy năng lượng, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.","correct":true},{"id":"aqmb3x9rlax0-txutby4ki7g6","text":"Là một huấn luyện viên võ thuật, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.","correct":false},{"id":"s93vaakt6w90-ewq4nosskfm","text":"Hãy mô tả, với giọng điệu tràn đầy năng lượng, những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.","correct":false},{"id":"mvk9abrmpuxf-k17wj6yivmga","text":"Hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.","correct":false}]},"explanation":"Thêm một persona (tính cách nhân vật) nghĩa là đặt kết quả đầu ra trong góc nhìn của một người cụ thể, chẳng hạn như một huấn luyện viên võ thuật, và thêm cảm xúc hoặc phong cách đặc trưng của người đó vào câu lệnh.\nVì vậy, câu lệnh:\n“Là một huấn luyện viên võ thuật tràn đầy năng lượng, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.”\nlà ví dụ đúng nhất về việc thêm persona.\nCâu có cụm “huấn luyện viên võ thuật tràn đầy năng lượng” vừa xác định vai trò (role) vừa thể hiện cảm xúc và phong cách (energy), nên được xem là một persona hoàn chỉnh.\nCác câu khác chỉ thêm vai trò hoặc chỉ thêm cảm xúc, chưa đủ để hình thành persona."},{"id":"hib1ttrcc41f-lmb9rkt2rkhp","number":141,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Câu lệnh nào dưới đây có thể gây ra sự thiên lệch (bias) trong kết quả mà Trí tuệ nhân tạo tạo ra?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"mmxnsy8xo4a8-jfwvs3p0uul3","text":"Hãy cho tôi biết tất cả những lợi ích của MySQL trong việc lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.","correct":true},{"id":"3mgdze2ooth4-uupgn4r8x6x3","text":"Hãy cho tôi thấy tất cả lợi ích của việc sử dụng một hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) và đưa ra ví dụ về những công cụ mà chúng ta có thể sử dụng để lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.","correct":false},{"id":"tqw4bv7o8wx1-4xsgksplc10x","text":"Hãy cho tôi biết các ưu điểm và nhược điểm của việc sử dụng MySQL để lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.","correct":false},{"id":"nixc44yjgjex-p1cvr7de3gzc","text":"Hãy cho tôi biết giới hạn về kích thước của một cơ sở dữ liệu MySQL.","correct":false}]},"explanation":"“Hãy cho tôi biết tất cả những lợi ích của MySQL trong việc lưu trữ dữ liệu về tình trạng sức khỏe và thể lực\"\nCâu lệnh trên có thể gây ra sự thiên lệch (bias) trong kết quả vì:\nNgười dùng chỉ yêu cầu AI liệt kê các lợi ích (tức là mặt tích cực) của MySQL.\nKhông có yêu cầu về nhược điểm, hạn chế hoặc so sánh với các công cụ khác.\nĐiều này khiến câu trả lời của AI thiếu cân bằng, chỉ nghiêng về một chiều - chiều tích cực.\nKết quả tạo ra sẽ là thông tin thiên lệch, vì AI chỉ tập trung nói “MySQL tốt như thế nào” mà không đề cập đến “khi nào MySQL có thể không phù hợp”.\n “Hãy cho tôi biết các ưu điểm và nhược điểm của việc sử dụng MySQL…” Đây là câu lệnh cân bằng, vì yêu cầu cả mặt tích cực và mặt tiêu cực, nên không gây ra thiên lệch.\n “Hãy cho tôi thấy tất cả lợi ích của việc sử dụng RDBMS…” Mặc dù cũng yêu cầu nói về lợi ích, nhưng đề cập đến nhiều công cụ khác nhau, không chỉ MySQL, Vì vậy ít khả năng gây ra thiên lệch.\n “Hãy cho tôi biết giới hạn về kích thước của một cơ sở dữ liệu MySQL.” Đây là câu hỏi kỹ thuật, chỉ yêu cầu thông tin cụ thể, khách quan, không thiên về quan điểm hay cảm xúc. Không có thiên lệch"},{"id":"4ntsei9j65hx-2ohsw96oqgad","number":160,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Nếu bạn nhập câu lệnh sau vào một AI tạo hình ảnh, thì bạn đang muốn AI tạo ra điều gì?\n“Hãy tạo một logo có hình cây thông nằm giữa hai chữ D và C. Hãy làm nổi bật hai màu xanh dương và xanh lá cây.”","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"tomfo21znydv-38p7jzy9nazm","text":"Biến đổi một hình ảnh có sẵn.","correct":false},{"id":"dnh15ml1ck13-5bpsi6do090u","text":"Khám phá một ý tưởng nghệ thuật.","correct":false},{"id":"41nh6x1x0d0w-q8iooecfe5ll","text":"Tóm tắt nội dung của một hình ảnh.","correct":false},{"id":"aw5srd9smndw-s0cgsnp3ya5i","text":"Tạo ra một hình ảnh phục vụ cho một mục đích cụ thể.","correct":true}]},"explanation":"Câu lệnh này yêu cầu AI tạo ra một logo theo mô tả rõ ràng (có cây thông, chữ D và C, màu xanh dương và xanh lá cây)."},{"id":"zeuu3jei0bow-cswtv5py5okp","number":161,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Bạn đang viết một câu chuyện về một căn nhà gỗ bên hồ nước. Bạn có sẵn vài bức ảnh về những căn nhà gỗ ven hồ, nhưng bạn muốn có một tấm ảnh trông như được chụp vào cuối những năm 1800.\nVậy bạn nên dùng câu lệnh (prompt) nào cho AI?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"tomfo21znydv-38p7jzy9nazm","text":"Sử dụng các bức ảnh đã tải lên, hãy tạo một phiên bản cổ điển (vintage).","correct":true},{"id":"dnh15ml1ck13-5bpsi6do090u","text":"Tạo một bức ảnh gốc về căn nhà gỗ bên hồ.","correct":false},{"id":"41nh6x1x0d0w-q8iooecfe5ll","text":"Tạo một bức ảnh về một căn nhà gỗ kiểu xưa.","correct":false},{"id":"aw5srd9smndw-s0cgsnp3ya5i","text":"Vẽ một bức tranh về hồ nước trên núi có căn nhà gỗ.","correct":false}]},"explanation":"Vì bạn đã có sẵn ảnh mẫu, nên bạn sẽ tải các ảnh đó lên AI và yêu cầu AI chỉnh lại theo phong cách cổ điển. Từ “vintage” hay “sepia” (màu nâu đỏ ấm) thường được dùng để làm cho ảnh trông giống ảnh cũ xưa, như chụp bằng máy ảnh thời 1800s.\n→ Do đó, prompt đúng là: “Using the uploaded photos, create a vintage version.” (Dùng các ảnh đã tải lên, hãy tạo một phiên bản cổ điển.)"},{"id":"b2kc96snltur-qmpi8wojzrhz","number":162,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Reverse Prompting là gì?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"tomfo21znydv-38p7jzy9nazm","text":"Dựa vào những dự đoán trong tương lai để tạo câu hỏi và nhận lại thông tin về quá khứ.","correct":false},{"id":"dnh15ml1ck13-5bpsi6do090u","text":"Nhập vào AI toàn những dữ liệu mang ý nghĩa tiêu cực.","correct":false},{"id":"41nh6x1x0d0w-q8iooecfe5ll","text":"Dùng thông tin trái ngược với điều mình muốn AI tạo ra.","correct":false},{"id":"aw5srd9smndw-s0cgsnp3ya5i","text":"Dùng kết quả AI tạo ra để đoán lại câu hỏi gốc ban đầu.","correct":true}]},"explanation":"Reverse prompting (tạm dịch là “đặt câu hỏi ngược”) có nghĩa là dùng câu trả lời của AI để đoán ra xem ban đầu người ta đã hỏi AI điều gì."},{"id":"rnechcptm3n2-o9ny421axr46","number":163,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Bạn đang tạo một bài học khoa học cho học sinh tiểu học về phát minh ra ô tô. Bạn nhập vào AI câu lệnh:\n“Giải thích cách hoạt động của động cơ đốt trong.”\nKết quả AI tạo ra lại quá phức tạp so với học sinh nhỏ tuổi.\nVậy bạn nên thêm phần hướng dẫn nào để AI tạo ra câu trả lời phù hợp với học sinh tiểu học hơn?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"tomfo21znydv-38p7jzy9nazm","text":"Tránh dùng từ ngữ phức tạp và cho ví dụ cụ thể.","correct":false},{"id":"dnh15ml1ck13-5bpsi6do090u","text":"Làm cho câu trả lời đơn giản hơn.","correct":false},{"id":"41nh6x1x0d0w-q8iooecfe5ll","text":"Rút ngắn phần giải thích.","correct":false},{"id":"aw5srd9smndw-s0cgsnp3ya5i","text":"Hãy viết lại sao cho học sinh tiểu học có thể hiểu.","correct":true}]},"explanation":"Khi muốn AI viết cho người nhỏ tuổi hãy nói rõ đối tượng, ví dụ:\n“Hãy viết lại sao cho học sinh tiểu học có thể hiểu.”"}]
+[
+  {
+    "id": "vkyw79s9lda4-pmh0iaynnstv",
+    "number": 78,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Câu lệnh AI tạo sinh nào đang sử dụng kỹ thuật khai thác kiến thức (generate knowledge prompt)?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "k8962cyv948a-c3y5nxdk8cyb",
+          "text": "Định nghĩa về thổi thủy tinh. Sau đó cho tôi biết nó được sử dụng như thế nào để làm chai coca.",
+          "correct": true
+        },
+        {
+          "id": "e6qpg3ly9015-2v3jb51tq5l6",
+          "text": "Nếu một căn phòng là 10 feet x 8 feet, diện tích của căn phòng là bao nhiêu? Nhân hai bên để có kết quả.",
+          "correct": false
+        },
+        {
+          "id": "nrbz2nntmavw-pubfbyklsaot",
+          "text": "Định nghĩa về thổi thủy tinh.",
+          "correct": false
+        },
+        {
+          "id": "dlneahkt7w6x-u9igtxx6cggl",
+          "text": "Một chiếc sedan được sử dụng để lái xe trong thành phố. Một chiếc SUV được sử dụng để lái xe ngoài trời. Vai trò của crossover là gì?",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Câu lệnh khai thác kiến thức yêu cầu kiến thức chung về một chủ đề và sau đó là một kiến thức cụ thể về chủ đề đó. Do đó, \"Định nghĩa về thổi thủy tinh. Sau đó cho tôi biết nó được sử dụng như thế nào để làm chai coca.\" là một ví dụ về câu lệnh khai thác kiến thức.\nChia nhỏ các bước là một ví dụ về câu lệnh Tư duy chuỗi (chain of thought prompting).\nChỉ cần yêu cầu một cái gì đó mà không có bất kỳ bối cảnh nào là một ví dụ về zero-shot prompting.\nYêu cầu nội dung với một số hướng dẫn là một ví dụ về few-shot prompting."
+  },
+  {
+    "id": "t0r983lxh0nj-sm4bnigsg1v1",
+    "number": 79,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Câu lệnh AI tạo sinh nào là phù hợp nhất để biến một hình ảnh tĩnh thành video?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "k8962cyv948a-c3y5nxdk8cyb",
+          "text": "Tạo hoạt ảnh cho hình ảnh những ngọn núi từ trái sang phải.",
+          "correct": true
+        },
+        {
+          "id": "e6qpg3ly9015-2v3jb51tq5l6",
+          "text": "Tạo một video với hai ngọn núi như thể máy ảnh đang lia qua chúng từ trái sang phải.",
+          "correct": false
+        },
+        {
+          "id": "nrbz2nntmavw-pubfbyklsaot",
+          "text": "Tạo một video sử dụng hình ảnh những ngọn núi phủ tuyết và hình ảnh những ngọn núi không có tuyết.",
+          "correct": false
+        },
+        {
+          "id": "dlneahkt7w6x-u9igtxx6cggl",
+          "text": "Thêm tuyết vào những ngọn núi trong video đã tải lên.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Một câu lệnh yêu cầu một hình ảnh chuyển động hoặc tạo hoạt ảnh là phù hợp để biến một hình ảnh thành video.\nMột câu lệnh yêu cầu một công cụ AI tạo sinh tạo video không giống với việc biến một hình ảnh thành video.\nSử dụng hai hình ảnh để tạo video là một ví dụ về nội suy giữa các hình ảnh.\nThêm một đối tượng vào một video hiện có không giống với việc biến một hình ảnh thành video."
+  },
+  {
+    "id": "6ec1oklsdgyk-dc51ce3rmmgq",
+    "number": 81,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Bạn được giao nhiệm vụ chuyển đổi một video hướng dẫn sao cho người xem không thể sử dụng âm thanh vẫn có thể tiếp cận được.\nBạn nên sử dụng câu lệnh AI nào?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "k8962cyv948a-c3y5nxdk8cyb",
+          "text": "Dịch video đã tải lên sang tiếng Tây Ban Nha.",
+          "correct": false
+        },
+        {
+          "id": "e6qpg3ly9015-2v3jb51tq5l6",
+          "text": "Thêm phụ đề vào video đã tải lên.",
+          "correct": true
+        },
+        {
+          "id": "nrbz2nntmavw-pubfbyklsaot",
+          "text": "Tắt âm thanh của video này và thêm phụ đề.",
+          "correct": false
+        },
+        {
+          "id": "dlneahkt7w6x-u9igtxx6cggl",
+          "text": "Chuyển video này thành một bài thuyết trình dạng slide.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Để chuyển đổi một video hướng dẫn thành nội dung có thể tiếp cận được với người xem không dùng được âm thanh, hãy ra lệnh cho AI thêm phụ đề vào video đã tải lên."
+  },
+  {
+    "id": "n77j69ni9ra5-iruv0rh75eky",
+    "number": 82,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Các học sinh ở trường mới của bạn được mời nộp tác phẩm nghệ thuật về một linh vật. Tên linh vật là Tornados.\nBạn nên sử dụng câu lệnh AI nào?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "k8962cyv948a-c3y5nxdk8cyb",
+          "text": "Tạo một hình ảnh học sinh đang cưỡi trên lốc xoáy.",
+          "correct": false
+        },
+        {
+          "id": "e6qpg3ly9015-2v3jb51tq5l6",
+          "text": "Tạo một hình ảnh ghép cảnh lốc xoáy quét qua trường học.",
+          "correct": false
+        },
+        {
+          "id": "nrbz2nntmavw-pubfbyklsaot",
+          "text": "Tạo một hình ảnh động (GIF) về lốc xoáy sử dụng màu sắc của trường.",
+          "correct": false
+        },
+        {
+          "id": "dlneahkt7w6x-u9igtxx6cggl",
+          "text": "Tạo một hình ảnh hoạt hình biến hình (animorphic) của một cơn lốc xoáy đang ôm quả bóng bầu dục và đội mũ bảo hiểm bóng bầu dục",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Câu lệnh AI tốt nhất là:\nTạo một hình ảnh hoạt hình biến hình (animorphic) của một cơn lốc xoáy đang ôm quả bóng bầu dục và đội mũ bảo hiểm bóng bầu dục."
+  },
+  {
+    "id": "k33ev5kgpqdd-rwlhw6r9uacf",
+    "number": 115,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Hướng dẫn nào cho lời nhắc cho tờ rơi tiếp thị quảng cáo kinh doanh chải lông chó là một ví dụ về few-shot prompt?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "ptcudb1qt4w1-xrh16t2wusvh",
+          "text": "Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Bao gồm từ tỏa sáng (shine).",
+          "correct": false
+        },
+        {
+          "id": "hzphpz5ef6gi-corcd0kk6o0v",
+          "text": "Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó (dog grooming).",
+          "correct": false
+        },
+        {
+          "id": "ndlursexuueo-9quezph5ow9q",
+          "text": "Dưới đây là một số câu cửa miệng tiếp thị: \"Groom to bloom\", \"Goggie waggie\", \"a fine canine\".",
+          "correct": false
+        },
+        {
+          "id": "bapxv2pdf520-fvv01a4urpfn",
+          "text": "Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Ví dụ bao gồm \"groom to bloom\" và \"doggie waggie\"",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: D. Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Ví dụ bao gồm \"groom to bloom\" và \"doggie waggie\".\nGiải thích:\nFew-shot prompt = lời nhắc có một vài ví dụ mẫu giúp AI hiểu phong cách hoặc cách thể hiện mong muốn.\nCâu D cung cấp hai ví dụ (\"groom to bloom\", \"doggie waggie\"), nên mô hình có thể học theo phong cách đó để tạo nội dung mới.\nCác lựa chọn A, B, C:\nA/B: không có ví dụ → zero-shot.\nC: chỉ đưa ví dụ, không có yêu cầu tạo nội dung → không phải few-shot prompt hoàn chỉnh."
+  },
+  {
+    "id": "p7ohrmn9ukmj-iiqyfxmyqk4u",
+    "number": 130,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Vấn đề gì với lời nhắc \"Hãy cho tôi biết về con báo.\"?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "79373b10fre6-som7msidpf72",
+          "text": "Lời nhắc cần một tính cách.",
+          "correct": false
+        },
+        {
+          "id": "aqmb3x9rlax0-txutby4ki7g6",
+          "text": "Lời nhắc cần bối cảnh.",
+          "correct": true
+        },
+        {
+          "id": "s93vaakt6w90-ewq4nosskfm",
+          "text": "Lời nhắc cần một phong cách.",
+          "correct": false
+        },
+        {
+          "id": "mvk9abrmpuxf-k17wj6yivmga",
+          "text": "Lời nhắc cần một vai trò.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: B. Lời nhắc cần bối cảnh.\nGiải thích: Lời nhắc “Hãy cho tôi biết về con báo.” quá chung chung — AI không biết bạn muốn nói đến:\nCon báo (động vật)\nHay Lamborghini Aventador (biệt danh: Báo)\nHoặc biểu tượng đội thể thao / thương hiệu có tên “Leopard”  → Do đó, thiếu bối cảnh khiến AI khó tạo ra câu trả lời phù hợp.\nA. Tính cách, C. Phong cách, và D. Vai trò chỉ giúp định hình cách diễn đạt, chứ không làm rõ nội dung mà AI cần nói."
+  },
+  {
+    "id": "35bhrht7vh3n-z7fhogyyumy3",
+    "number": 132,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Một quản trị viên trang web không thành công khi cố gắng tạo ra phần mô tả cho một trung tâm võ thuật. Một đồng nghiệp gợi ý rằng nên thêm một “persona” (nhân vật hoặc vai trò) vào câu lệnh để có kết quả tốt hơn.\nCâu lệnh nào dưới đây thể hiện việc thêm persona như đồng nghiệp đã gợi ý?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "79373b10fre6-som7msidpf72",
+          "text": "Là một huấn luyện viên võ thuật tràn đầy năng lượng, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.",
+          "correct": true
+        },
+        {
+          "id": "aqmb3x9rlax0-txutby4ki7g6",
+          "text": "Là một huấn luyện viên võ thuật, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.",
+          "correct": false
+        },
+        {
+          "id": "s93vaakt6w90-ewq4nosskfm",
+          "text": "Hãy mô tả, với giọng điệu tràn đầy năng lượng, những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.",
+          "correct": false
+        },
+        {
+          "id": "mvk9abrmpuxf-k17wj6yivmga",
+          "text": "Hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Thêm một persona (tính cách nhân vật) nghĩa là đặt kết quả đầu ra trong góc nhìn của một người cụ thể, chẳng hạn như một huấn luyện viên võ thuật, và thêm cảm xúc hoặc phong cách đặc trưng của người đó vào câu lệnh.\nVì vậy, câu lệnh:\n“Là một huấn luyện viên võ thuật tràn đầy năng lượng, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.”\nlà ví dụ đúng nhất về việc thêm persona.\nCâu có cụm “huấn luyện viên võ thuật tràn đầy năng lượng” vừa xác định vai trò (role) vừa thể hiện cảm xúc và phong cách (energy), nên được xem là một persona hoàn chỉnh.\nCác câu khác chỉ thêm vai trò hoặc chỉ thêm cảm xúc, chưa đủ để hình thành persona."
+  },
+  {
+    "id": "hib1ttrcc41f-lmb9rkt2rkhp",
+    "number": 135,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Câu lệnh nào dưới đây có thể gây ra sự thiên lệch (bias) trong kết quả mà Trí tuệ nhân tạo tạo ra?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "mmxnsy8xo4a8-jfwvs3p0uul3",
+          "text": "Hãy cho tôi biết tất cả những lợi ích của MySQL trong việc lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.",
+          "correct": true
+        },
+        {
+          "id": "3mgdze2ooth4-uupgn4r8x6x3",
+          "text": "Hãy cho tôi thấy tất cả lợi ích của việc sử dụng một hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) và đưa ra ví dụ về những công cụ mà chúng ta có thể sử dụng để lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.",
+          "correct": false
+        },
+        {
+          "id": "tqw4bv7o8wx1-4xsgksplc10x",
+          "text": "Hãy cho tôi biết các ưu điểm và nhược điểm của việc sử dụng MySQL để lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.",
+          "correct": false
+        },
+        {
+          "id": "nixc44yjgjex-p1cvr7de3gzc",
+          "text": "Hãy cho tôi biết giới hạn về kích thước của một cơ sở dữ liệu MySQL.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "“Hãy cho tôi biết tất cả những lợi ích của MySQL trong việc lưu trữ dữ liệu về tình trạng sức khỏe và thể lực\"\nCâu lệnh trên có thể gây ra sự thiên lệch (bias) trong kết quả vì:\nNgười dùng chỉ yêu cầu AI liệt kê các lợi ích (tức là mặt tích cực) của MySQL.\nKhông có yêu cầu về nhược điểm, hạn chế hoặc so sánh với các công cụ khác.\nĐiều này khiến câu trả lời của AI thiếu cân bằng, chỉ nghiêng về một chiều - chiều tích cực.\nKết quả tạo ra sẽ là thông tin thiên lệch, vì AI chỉ tập trung nói “MySQL tốt như thế nào” mà không đề cập đến “khi nào MySQL có thể không phù hợp”.\n “Hãy cho tôi biết các ưu điểm và nhược điểm của việc sử dụng MySQL…” Đây là câu lệnh cân bằng, vì yêu cầu cả mặt tích cực và mặt tiêu cực, nên không gây ra thiên lệch.\n “Hãy cho tôi thấy tất cả lợi ích của việc sử dụng RDBMS…” Mặc dù cũng yêu cầu nói về lợi ích, nhưng đề cập đến nhiều công cụ khác nhau, không chỉ MySQL, Vì vậy ít khả năng gây ra thiên lệch.\n “Hãy cho tôi biết giới hạn về kích thước của một cơ sở dữ liệu MySQL.” Đây là câu hỏi kỹ thuật, chỉ yêu cầu thông tin cụ thể, khách quan, không thiên về quan điểm hay cảm xúc. Không có thiên lệch"
+  },
+  {
+    "id": "4ntsei9j65hx-2ohsw96oqgad",
+    "number": 151,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Nếu bạn nhập câu lệnh sau vào một AI tạo hình ảnh, thì bạn đang muốn AI tạo ra điều gì?\n“Hãy tạo một logo có hình cây thông nằm giữa hai chữ D và C. Hãy làm nổi bật hai màu xanh dương và xanh lá cây.”",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "tomfo21znydv-38p7jzy9nazm",
+          "text": "Biến đổi một hình ảnh có sẵn.",
+          "correct": false
+        },
+        {
+          "id": "dnh15ml1ck13-5bpsi6do090u",
+          "text": "Khám phá một ý tưởng nghệ thuật.",
+          "correct": false
+        },
+        {
+          "id": "41nh6x1x0d0w-q8iooecfe5ll",
+          "text": "Tóm tắt nội dung của một hình ảnh.",
+          "correct": false
+        },
+        {
+          "id": "aw5srd9smndw-s0cgsnp3ya5i",
+          "text": "Tạo ra một hình ảnh phục vụ cho một mục đích cụ thể.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Câu lệnh này yêu cầu AI tạo ra một logo theo mô tả rõ ràng (có cây thông, chữ D và C, màu xanh dương và xanh lá cây)."
+  },
+  {
+    "id": "zeuu3jei0bow-cswtv5py5okp",
+    "number": 152,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Bạn đang viết một câu chuyện về một căn nhà gỗ bên hồ nước. Bạn có sẵn vài bức ảnh về những căn nhà gỗ ven hồ, nhưng bạn muốn có một tấm ảnh trông như được chụp vào cuối những năm 1800.\nVậy bạn nên dùng câu lệnh (prompt) nào cho AI?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "tomfo21znydv-38p7jzy9nazm",
+          "text": "Sử dụng các bức ảnh đã tải lên, hãy tạo một phiên bản cổ điển (vintage).",
+          "correct": true
+        },
+        {
+          "id": "dnh15ml1ck13-5bpsi6do090u",
+          "text": "Tạo một bức ảnh gốc về căn nhà gỗ bên hồ.",
+          "correct": false
+        },
+        {
+          "id": "41nh6x1x0d0w-q8iooecfe5ll",
+          "text": "Tạo một bức ảnh về một căn nhà gỗ kiểu xưa.",
+          "correct": false
+        },
+        {
+          "id": "aw5srd9smndw-s0cgsnp3ya5i",
+          "text": "Vẽ một bức tranh về hồ nước trên núi có căn nhà gỗ.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Vì bạn đã có sẵn ảnh mẫu, nên bạn sẽ tải các ảnh đó lên AI và yêu cầu AI chỉnh lại theo phong cách cổ điển. Từ “vintage” hay “sepia” (màu nâu đỏ ấm) thường được dùng để làm cho ảnh trông giống ảnh cũ xưa, như chụp bằng máy ảnh thời 1800s.\n→ Do đó, prompt đúng là: “Using the uploaded photos, create a vintage version.” (Dùng các ảnh đã tải lên, hãy tạo một phiên bản cổ điển.)"
+  },
+  {
+    "id": "b2kc96snltur-qmpi8wojzrhz",
+    "number": 153,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Reverse Prompting là gì?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "tomfo21znydv-38p7jzy9nazm",
+          "text": "Dựa vào những dự đoán trong tương lai để tạo câu hỏi và nhận lại thông tin về quá khứ.",
+          "correct": false
+        },
+        {
+          "id": "dnh15ml1ck13-5bpsi6do090u",
+          "text": "Nhập vào AI toàn những dữ liệu mang ý nghĩa tiêu cực.",
+          "correct": false
+        },
+        {
+          "id": "41nh6x1x0d0w-q8iooecfe5ll",
+          "text": "Dùng thông tin trái ngược với điều mình muốn AI tạo ra.",
+          "correct": false
+        },
+        {
+          "id": "aw5srd9smndw-s0cgsnp3ya5i",
+          "text": "Dùng kết quả AI tạo ra để đoán lại câu hỏi gốc ban đầu.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Reverse prompting (tạm dịch là “đặt câu hỏi ngược”) có nghĩa là dùng câu trả lời của AI để đoán ra xem ban đầu người ta đã hỏi AI điều gì."
+  },
+  {
+    "id": "rnechcptm3n2-o9ny421axr46",
+    "number": 154,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Bạn đang tạo một bài học khoa học cho học sinh tiểu học về phát minh ra ô tô. Bạn nhập vào AI câu lệnh:\n“Giải thích cách hoạt động của động cơ đốt trong.”\nKết quả AI tạo ra lại quá phức tạp so với học sinh nhỏ tuổi.\nVậy bạn nên thêm phần hướng dẫn nào để AI tạo ra câu trả lời phù hợp với học sinh tiểu học hơn?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "tomfo21znydv-38p7jzy9nazm",
+          "text": "Tránh dùng từ ngữ phức tạp và cho ví dụ cụ thể.",
+          "correct": false
+        },
+        {
+          "id": "dnh15ml1ck13-5bpsi6do090u",
+          "text": "Làm cho câu trả lời đơn giản hơn.",
+          "correct": false
+        },
+        {
+          "id": "41nh6x1x0d0w-q8iooecfe5ll",
+          "text": "Rút ngắn phần giải thích.",
+          "correct": false
+        },
+        {
+          "id": "aw5srd9smndw-s0cgsnp3ya5i",
+          "text": "Hãy viết lại sao cho học sinh tiểu học có thể hiểu.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Khi muốn AI viết cho người nhỏ tuổi hãy nói rõ đối tượng, ví dụ:\n“Hãy viết lại sao cho học sinh tiểu học có thể hiểu.”"
+  }
+]

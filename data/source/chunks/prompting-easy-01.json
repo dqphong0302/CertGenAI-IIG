@@ -1,1 +1,652 @@
-[{"id":"9vmtd0smcsnu-c0nw7nesej9s","number":9,"source":"GenAI","type":"MultipleChoice","prompt":"Thomas muốn cho phép khách hàng tạo ra các thiết kế áo phông mới dựa trên câu trả lời của họ cho 3 câu hỏi sau:\n1. Con vật yêu thích của bạn là gì?\n2. Màu sắc yêu thích của bạn là gì?\n3. Cỡ áo của bạn là bao nhiêu?\nCác thiết kế phải được tự động gửi đến Thomas sau khi tạo.\nThomas có thể sử dụng trí tuệ nhân tạo (AI) để thực hiện điều này như thế nào?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"n15stqpg9y2s-soc6mp6gsujs","text":"Đăng liên kết đến Adobe trước tiên trên trang web của mình.","correct":false},{"id":"nbockdplh66-c935om3b4wue","text":"Đưa ra lời nhắc xây dựng một trang web không tương tác.","correct":false},{"id":"78980lbj04x0-a2763u8ke09b","text":"Tạo một GPT tùy chỉnh.","correct":true},{"id":"6ucw1e63f876-2qfamydf1et6","text":"Đăng liên kết đến DALL-E trên trang web của mình.","correct":false}]},"explanation":"Một GPT tùy chỉnh (Custom GPT) có thể được cấu hình sẵn để tự động hỏi khách hàng 3 câu (con vật, màu sắc, cỡ áo), tạo thiết kế dựa trên câu trả lời và gửi kết quả cho Thomas mà không cần viết code — đúng quy trình lặp lại, tự động hoá cần thiết. Đăng liên kết đến DALL-E/Adobe chỉ là chia sẻ công cụ, không tạo ra luồng hỏi-đáp tự động; còn 'trang web không tương tác' thì không thể thu thập câu trả lời của khách hàng."},{"id":"oj5ilbb6tozv-qzgt1gd9a3k3","number":11,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn đang viết một tiểu thuyết khoa học viễn tưởng có tên Fierce và đã chọn một ví dụ minh họa mang tính sáng tạo để gửi cho người phụ trách quảng cáo của mình, người sẽ tìm kiếm một họa sĩ để tạo ra một tác phẩm nghệ thuật mới, độc đáo dựa trên những hình ảnh và trích dẫn này từ trong sách. Danh sách nào nên được đưa vào lời nhắc của bạn để có được kết quả hữu ích nhất?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"mh46eamgzig6-p6jz3abqev0r","text":"Tên nhân vật, tên sách, tên tác giả và tên họa sĩ.","correct":false},{"id":"osz7uinozcaj-m8h34bcniyns","text":"Ví dụ minh họa của họa sĩ, tên sách và số trang.","correct":false},{"id":"uknhu61e3dz9-t7vxfzu3pv6y","text":"Kích thước của tác phẩm nghệ thuật, tên sách, nội dung sách và tên họa sĩ gốc.","correct":false},{"id":"4idmyi3wjn7x-h9278p7qax9i","text":"Tên sách, chủ đề, bối cảnh, phong cách nghệ thuật mong muốn và phác thảo nội dung bìa sách.","correct":true}]},"explanation":"Để họa sĩ vẽ một tác phẩm mới lấy cảm hứng từ sách (không sao chép nguyên hình ảnh cũ), câu lệnh cần mô tả nội dung sáng tạo: tên sách, chủ đề, bối cảnh, phong cách nghệ thuật mong muốn và phác thảo bìa. Các lựa chọn khác chỉ liệt kê thông tin hành chính (tên tác giả, họa sĩ, số trang, kích thước) — không giúp ích cho việc hình dung ra một tác phẩm nghệ thuật mới."},{"id":"hrletoewagdj-qxnyebbxafxe","number":12,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn muốn sử dụng trí tuệ nhân tạo (AI) để chuyển đổi sổ tay nhân viên mới thành bài thuyết trình. Câu lệnh nào có khả năng tạo ra một bài thuyết trình được thiết kế để khuyến khích học tập nhất?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"w5obpvd8dq5b-vme21wse95x1","text":"Tạo một sổ tay nhân viên mới kết hợp hình ảnh, biểu đồ và đồ thị liên quan để minh họa các điểm chính.","correct":false},{"id":"voitv2qvj168-9lcl6j31eip4","text":"Tạo một bài thuyết trình chuyển đổi nội dung sang định dạng hấp dẫn và dễ hiểu.","correct":true},{"id":"zgvjthdnizi3-1e2rij481cr3","text":"Tạo một bài thuyết trình từ sổ tay nhân viên mới tập trung vào các giá trị của công ty.","correct":false},{"id":"tdnei94is1cn-myq8fh1dwlz7","text":"Định dạng lại sổ tay nhân viên mới để tạo một bài thuyết trình với bố cục slide nhất quán.","correct":false}]},"explanation":"Mục tiêu là 'khuyến khích học tập', nên câu lệnh cần yêu cầu chuyển nội dung sổ tay sang một định dạng hấp dẫn và dễ hiểu — đúng trọng tâm sư phạm. Các lựa chọn khác chỉ tập trung vào hình ảnh minh họa, giá trị công ty hay bố cục slide, không nhắm thẳng vào việc giúp người học dễ tiếp thu."},{"id":"6w7lvumch3xi-bfw9a1f2nl3x","number":13,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn làm việc trong một nhóm phần mềm, đang triển khai một ứng dụng để tự động hóa quy trình đăng ký vay:\nSau khi thu thập dữ liệu của người nộp đơn, ứng dụng của bạn sẽ thực hiện 3 tác vụ riêng lẻ liên quan đến lịch sử tín dụng của người nộp đơn\n1. Nhập lịch sử tín dụng của người nộp đơn\n2. Áp dụng điểm tín dụng dựa trên lịch sử tín dụng\n3. Gửi tin nhắn văn bản cho biết khoản vay đã được chấp thuận hay chưa\nCông cụ AI nào sẽ phù hợp để hỗ trợ quá trình phát triển ứng dụng một cách hợp tác bằng cách đảm nhận các vai trò?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"1tyebwfagtvh-i18w7by5e9","text":"Meta GPT","correct":false},{"id":"qrl6vjbexeox-86lzq1ny0wu","text":"Microsoft Copilot","correct":true},{"id":"d2ubkzxlfe3g-cxa5xar1meak","text":"Stable Diffusion","correct":false},{"id":"qz1i7f21b5m1-vtt5wrcxmtq","text":"Adobe Firefly","correct":false}]},"explanation":"Microsoft Copilot là trợ lý AI được tích hợp sẵn trong các công cụ phát triển và làm việc (Visual Studio, Teams, Office), có thể hỗ trợ nhóm thực hiện từng bước của quy trình (nhập dữ liệu, tính điểm, gửi tin nhắn) và cộng tác cùng con người theo vai trò trong dự án thực tế. Stable Diffusion và Adobe Firefly là công cụ tạo hình ảnh, không phù hợp cho việc phát triển ứng dụng phần mềm."},{"id":"vqp0g13lxkhs-a8zz4iium7cf","number":34,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn được yêu cầu tạo một bài trình chiếu bán hàng nhằm khám phá mối liên hệ giữa hai biến số. Một phần dữ liệu được hiển thị dưới đây:","images":["/questions/img-7c09c3125b68b8238f77f5ff46af96ac5c651432.png"],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"iyykt59ye0aw-ay915fkf0lkd","text":"Tạo biểu đồ (chart) thể hiện tổng doanh số đã đạt được cho một sản phẩm cụ thể.","correct":false},{"id":"y8p5b162d5v2-c97ybyhxtjzq","text":"Những lợi ích của việc sử dụng biểu đồ Histogram để trực quan hóa dữ liệu bán hàng so với việc sử dụng biểu đồ thanh (bar graph) là gì?","correct":false},{"id":"atpg8gb5tua1-475r3t4vieoa","text":"Tạo biểu đồ phân tán (scatter plot) để thể hiện mối quan hệ giữa doanh số của một sản phẩm cụ thể và độ tuổi người tiêu dùng.","correct":true},{"id":"gppuyngcpvzz-p0fitwgvk6ax","text":"Thiết kế biểu đồ tròn (pie chart) để hiển thị sản phẩm phổ biến nhất mà công ty tôi đã bán được trong năm vừa rồi.","correct":false}]},"explanation":"Dữ liệu đính kèm thể hiện hai biến số liên tục: độ tuổi khách hàng và số sản phẩm đã mua. Biểu đồ phân tán (scatter plot) là loại biểu đồ phù hợp nhất để khám phá mối quan hệ/tương quan giữa hai biến số liên tục như vậy. Biểu đồ cột, biểu đồ tròn hay Histogram phù hợp hơn để so sánh tổng hay tỉ lệ giữa các nhóm, không thể hiện rõ mối tương quan giữa hai biến."},{"id":"jatf1jfike0s-5xe9v4o0eze6","number":37,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn đang làm việc cho một công ty quảng cáo. Một khách hàng gọi điện và yêu cầu lời bài hát (lyrics) cho một bài hát trong quảng cáo của họ. Khách hàng đề nghị gửi một tài liệu (document) chứa thông số sản phẩm. Bạn cũng yêu cầu một hình ảnh của sản phẩm để để có ý tưởng về chi tiết bổ sung. Bạn có thể gõ (type) vào để tạo bài hát. Loại đầu vào nào có thể được sử dụng với ChatGPT để tạo ra lời bài hát.","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"5ulbfrvljgzw-fkl4y08yoqgh","text":"Chỉ văn bản.","correct":false},{"id":"uxjgidptlo3d-xcj7eohlhmfn","text":"Tài liệu, văn bản và hình ảnh.","correct":true},{"id":"t1y394j956g7-g2s4jofj5eih","text":"Chỉ tài liệu và văn bản.","correct":false},{"id":"rdjl7jh2ko0f-aauhbzlxuobj","text":"Chỉ văn bản và hình ảnh.","correct":false}]},"explanation":"ChatGPT hỗ trợ đầu vào đa phương thức (multimodal): người dùng có thể gõ văn bản, đồng thời tải lên tài liệu (thông số sản phẩm) và hình ảnh (ảnh sản phẩm) trong cùng một cuộc trò chuyện để AI tham khảo khi sáng tác lời bài hát. Các lựa chọn khác chỉ liệt kê một phần trong số các loại đầu vào mà khách hàng đã thực sự cung cấp."},{"id":"rlx7x8ok7jjc-amt01w4knrd0","number":38,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn muốn sử dụng reverse prompting để AI tạo sơ yếu lý lịch (resume) của bạn với mức độ chi tiết phù hợp. Câu lệnh (prompt) nào sau đây sẽ đạt được mục tiêu đó tốt nhất?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"9phpz5t30kvz-4jzsavu92rpa","text":"Hỏi tôi về từng chi tiết chính cần thiết cho resume của tôi, sau đó sử dụng thông tin đó để tạo resume.","correct":true},{"id":"k1wf3mdohgoj-6wtc4ndnzohe","text":"Tạo resume của tôi với các chi tiết đáng tin cậy bằng cách sử dụng mẫu resume chuẩn.","correct":false},{"id":"3fvg43o7l8by-xz5fdby24ade","text":"Tôi đã làm việc trong ngành công nghệ máy tính được bốn năm, viết lập trình Python cho ngành tài chính. Hãy viết cho tôi một resume cho vị trí cấp cao hơn.","correct":false},{"id":"h6066k79ewr-gyp1dteqnylk","text":"Viết cho tôi một resume để ứng tuyển vào công việc giảng dạy với tư cách là một giáo viên tiếng Anh có 5 năm kinh nghiệm giảng dạy.","correct":false}]},"explanation":"Reverse prompting là kỹ thuật để AI chủ động đặt câu hỏi ngược lại nhằm thu thập thông tin còn thiếu, trước khi tạo kết quả. Yêu cầu AI 'hỏi tôi về từng chi tiết chính' chính là áp dụng đúng kỹ thuật này để đảm bảo resume có đủ mức độ chi tiết cần thiết. Các lựa chọn khác đều là AI tự soạn resume ngay lập tức dựa trên thông tin có sẵn hoặc mẫu chuẩn, không có bước hỏi ngược để làm rõ."},{"id":"wwhka9f534k9-3mtj2aqezw48","number":40,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn đang sử dụng AI tạo sinh (Generative AI) để chuyển đổi bản trình chiếu (slideshow) của mình thành một video.Bạn đã cung cấp và đang làm việc với một câu lệnh (prompt) sẽ sử dụng nội dung của các slide để tạo ra một video mang tính chuyên nghiệp và giáo dục về củ dền (beets).Câu lệnh (prompt) nào được thiết kế để đạt được kết quả mong muốn?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"6fax15139vbb-13013sl4w4rd","text":"Xem lại (review) các slide và xác định thông tin tốt nhất về củ dền. Sử dụng thông tin đó để tạo ra một chuỗi hình ảnh mới mà tôi có thể dùng trong bài trình chiếu.","correct":false},{"id":"h12iqavkud02-7ue9g57mkmze","text":"Dùng các slide đã cung cấp làm cơ sở và tạo một video dài 2 phút về củ dền. Video nên vui nhộn và có bao gồm ảnh động (GIFs) và biểu tượng cảm xúc (emojis).","correct":false},{"id":"du5ihl64roz9-w11geofsxxru","text":"Sử dụng các slide đã cung cấp, tạo một video dài 2 phút (2-minute video) về củ dền. Giọng điệu (tone) nên mang tính chuyên nghiệp / nghiêm túc. Các hiệu ứng hoạt hình (animations) nên được điều chỉnh sao cho người xem có đủ thời gian để đọc nội dung văn bản được cung cấp.","correct":true},{"id":"yp0d7l8x7dhh-mkwmrr99wsh","text":"Bạn là một phát thanh viên tin tức. Hãy dùng thông tin trong các slide để tìm một bản tin gần về củ dền và làm thành một video.","correct":false}]},"explanation":"Yêu cầu ban đầu nêu rõ video cần 'mang tính chuyên nghiệp và giáo dục', nên câu lệnh cần chỉ định rõ tông giọng nghiêm túc và thời gian đọc phù hợp — đây là câu lệnh duy nhất bám sát cả hai tiêu chí đó. Các lựa chọn khác hoặc chỉ tạo hình ảnh tĩnh (không phải video), hoặc dùng giọng điệu vui nhộn/phi chính thức (GIF, emoji, phát thanh viên tin tức) — trái với yêu cầu 'chuyên nghiệp'."},{"id":"jb9cv7mnmkt3-ozviv1lj098c","number":43,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn cần tạo một bài tập rèn luyện sức mạnh kéo dài 30 phút.\nBạn đã gửi cho AI lời nhắc (prompt) sau:\n\"Hãy tạo một bài tập luyện nhanh.\"\nKết quả AI tạo ra là:\nGiãn cơ: 2 phút\nNhảy jumping jack: 1 phút\nChạy tại chỗ nâng cao gối (high knees): 1 phút\nSquat: 1 phút\nChống đẩy: 2 hiệp, mỗi hiệp 10 cái\nGập bụng: 2 hiệp, mỗi hiệp 10 cái\nBạn muốn bài tập này phù hợp hơn với mục tiêu “30 phút rèn luyện sức mạnh”.\nBạn nên dùng prompt nào tiếp theo?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"nu6l7crelg2-98m8g4yshq7l","text":"Điều chỉnh để phù hợp với 30 phút tập rèn luyện sức mạnh","correct":true},{"id":"fdgkokwf4lrv-uawu1ds5apx3","text":"Thêm nhiều đầu ra hơn","correct":false},{"id":"4mpth8qdqxg3-t7mlpomuidcg","text":"Làm cho bài tập hoành tráng hơn","correct":false},{"id":"5kib5j5kcvd9-6mjhl1g6ec81","text":"Giải thích lợi ích của việc tập sức mạnh 30 phút đối với hiệu suất","correct":false}]},"explanation":"Bài tập ban đầu quá ngắn và thiên về cardio hơn là rèn sức mạnh, nên cách hiệu quả nhất là tinh chỉnh trực tiếp câu lệnh trước đó — yêu cầu AI điều chỉnh lại đúng mục tiêu ban đầu (30 phút, rèn sức mạnh). Các lựa chọn khác (thêm đầu ra, làm hoành tráng hơn, giải thích lợi ích) không sửa được vấn đề cốt lõi về thời lượng và trọng tâm bài tập."},{"id":"4lyr3zwcb072-5xyu10mldvdz","number":55,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn muốn tạo logo doanh nghiệp, kế hoạch kinh doanh và tuyên bố sứ mệnh, và muốn dùng một giải pháp sẵn có (out-of-box solution) thay vì tự xây dựng. Nền tảng AI nào phù hợp nhất để thực hiện công việc này?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"q7exukyc9lg-sj5gss254fvn","text":"Stable Diffusion","correct":false},{"id":"60xoamud4hva-trr1jpr3y8v6","text":"ChatGPT","correct":true},{"id":"5qwu4pozwog4-8vf15pwem74i","text":"Adobe Firefly","correct":false},{"id":"rcziqdz6sfkh-nwgs8hnfgdva","text":"Azure Al Studio","correct":false}]},"explanation":"ChatGPT là giải pháp AI đa năng, có sẵn (out-of-box), có thể tạo cả văn bản (kế hoạch kinh doanh, tuyên bố sứ mệnh) lẫn hỗ trợ ý tưởng logo trong cùng một nền tảng hội thoại — phù hợp với yêu cầu 'giải pháp sẵn có' hơn các công cụ chuyên biệt chỉ tạo hình ảnh (Stable Diffusion, Adobe Firefly) hay nền tảng cần cấu hình kỹ thuật (Azure AI Studio)."},{"id":"jaad4hx3idzc-vdc86uo40kte","number":56,"source":"GenAI","type":"MultipleChoice","prompt":"Tòa án Tối cao Vương quốc Anh đã phán quyết rằng AI không thể là người phát minh duy nhất trong các đơn xin cấp bằng sáng chế. Vậy việc sử dụng AI tạo sinh (Generative AI) theo cách nào dưới đây sẽ cho phép bạn nộp đơn xin cấp bằng sáng chế?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"fyxojs5kfn4b-7vx84pya7mq","text":"Sử dụng AI để tạo bản kế hoạch cho một sản phẩm bằng mẫu trống có sẵn.","correct":false},{"id":"tojok7m773gq-kqcxjhan5kv1","text":"Sử dụng AI để thiết kế lại sản phẩm hiện có nhằm tạo ra sản phẩm mới.","correct":true},{"id":"625e4cri9nm7-5hm13vg3rfxs","text":"Sử dụng AI để sửa lỗi trong bản thiết kế hiện tại của bạn.","correct":false},{"id":"v3me9lai21r-4my0xy320ypi","text":"Sử dụng AI để tạo bản kế hoạch cho một sản phẩm mới chưa từng được sản xuất.","correct":false}]},"explanation":"Theo phán quyết, AI không được công nhận là người phát minh duy nhất — để nộp đơn sáng chế hợp lệ, cần có sự đóng góp trí tuệ của con người. Dùng AI để thiết kế lại (cải tiến) một sản phẩm đã có nghĩa là con người đưa ra ý tưởng nền tảng, AI chỉ là công cụ hỗ trợ — con người vẫn có thể được công nhận là nhà phát minh. Ngược lại, để AI tự tạo toàn bộ ý tưởng từ mẫu trống hoặc từ một sản phẩm chưa từng có nghĩa là AI là nguồn phát minh chính, không đáp ứng yêu cầu về người phát minh là con người."},{"id":"flkvqg28zxz7-4ub7dsqokr8n","number":59,"source":"GenAI","type":"MultipleChoice","prompt":"Trong một đoạn clip dài 30 giây, có một học sinh mặc áo len màu xanh lá sáng đi ngang qua khung hình từ trái sang phải. Không thể quay lại cảnh này, và bạn cần loại bỏ học sinh khỏi video nhưng giữ lại càng nhiều nội dung gốc càng tốt. Vậy, bạn nên dùng lệnh AI (prompt) nào sau đây?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"9e2xzd3ygqy1-i1zzivqzmyg2","text":"Thêm lớp chữ mô tả (text overlay) trên vị trí học sinh đang di chuyển.","correct":false},{"id":"smifcsadbwhn-l3t7ksqufw4k","text":"Thay đổi màu nền của video, trừ học sinh ở tiền cảnh.","correct":false},{"id":"idv4nad30w9l-mqkswm255yi0","text":"Cắt bỏ phần học sinh mặc áo xanh lá ở cả bên trái và bên phải màn hình.","correct":false},{"id":"tgswckg7jga0-s5dctaa1mx6","text":"Thay thế học sinh mặc áo xanh lá trong đoạn phim bằng phần nền gốc của video.","correct":true}]},"explanation":"Để loại bỏ hoàn toàn một đối tượng khỏi khung hình mà vẫn giữ nguyên nội dung gốc, cách đúng là dùng AI 'lấp đầy' vùng đó bằng chính nền gốc phía sau (inpainting) — kỹ thuật loại bỏ đối tượng và tái tạo nền. Thêm chữ đè lên, đổi màu nền, hay cắt hai bên khung hình đều làm mất/biến dạng nội dung gốc thay vì chỉ xóa đúng đối tượng cần loại bỏ."},{"id":"2rsbir24jbc6-uvzgrrbz0vmw","number":60,"source":"GenAI","type":"MultipleChoice","prompt":"Kenneth muốn sử dụng AI tạo sinh (Generative AI) để lên kế hoạch cho kỳ nghỉ của mình.\nChuyến đi cần bao gồm:\n10 ngày ở khu vực phía tây nước Mỹ\nTham quan nhiều địa điểm thiên nhiên ngoài trời\nBay đến một sân bay trung tâm\nThuê xe ô tô để di chuyển đến các địa điểm muốn tham quan\nVậy lời nhắc (prompt) nào dưới đây có khả năng cao nhất tạo ra lịch trình phù hợp cho chuyến đi của Kenneth?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"1pqdyb1y6knz-dn1ycrjag8j","text":"Tạo lịch trình du lịch 10 ngày bao gồm việc bay đến sân bay gần một trong các địa điểm tham quan và thuê xe để tham quan nhiều công viên quốc gia ở miền tây nước Mỹ.","correct":true},{"id":"a88ra2g39u9j-wh1dsfga5h5f","text":"Tạo lịch trình du lịch bao gồm việc bay đến một sân bay gần đó và thuê xe để khám phá miền tây nước Mỹ.","correct":false},{"id":"ylhuqpixxpc2-qpjpmva1zsp8","text":"Tạo lịch trình du lịch 10 ngày bao gồm việc thuê xe để tham quan 5 điểm du lịch ngoài trời ở Mỹ và bay đến một sân bay thường không quá đông vào tháng Bảy.","correct":false},{"id":"rbrwcljwuzys-ll3yqvx8ejzt","text":"Tạo lịch trình du lịch bao gồm việc bay và tham quan các địa điểm ở miền tây nước Mỹ.","correct":false}]},"explanation":"Câu lệnh đúng cụ thể hoá đầy đủ các yêu cầu đã nêu: bay đến sân bay trung tâm gần điểm tham quan, thuê xe, và tập trung vào các công viên quốc gia (địa điểm thiên nhiên ngoài trời) ở miền tây nước Mỹ trong 10 ngày. Các lựa chọn khác thiếu chi tiết cụ thể hoặc thêm điều kiện không được yêu cầu, khiến AI khó tạo đúng lịch trình mong muốn."},{"id":"vayhr96nh7go-sdequb6y06ob","number":64,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn đang nghiên cứu một chuỗi dữ liệu và muốn ước tính nhiệt độ trung bình của trái đất vào năm 2200.","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"fs71w3hsatmc-e3qkco5ux4r","text":"AI phân biệt (Discriminative AI)","correct":false},{"id":"lvynpdeg7ypd-c1ukvc3fqy6i","text":"AI dự đoán (Predictive AI)","correct":true},{"id":"r8pxt98u97fn-4bhao36qlr4n","text":"AI tự mã hóa biến phân (Variational Autoencoder – VAE AI)","correct":false},{"id":"ogt222stkv5u-m8yofvrmuaqy","text":"AI khuếch tán (Diffusion AI)","correct":false}]},"explanation":"Ước tính một giá trị số trong tương lai (nhiệt độ trung bình năm 2200) dựa trên chuỗi dữ liệu lịch sử là bài toán dự báo — đúng chức năng của AI dự đoán (Predictive AI). AI phân biệt dùng để phân loại, còn VAE và AI khuếch tán dùng để tạo sinh nội dung mới (hình ảnh...), không phải để dự báo xu hướng số liệu."},{"id":"blnr2kh4tu12-aq0slp4kolln","number":66,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn có một biểu đồ cột minh họa mối quan hệ giữa việc tăng tiêu thụ thực phẩm nhiều chất béo và việc tăng sử dụng thuốc. Câu lệnh nào sau đây sẽ giúp bạn tạo ra một câu chuyện hấp dẫn trong khi vẫn giữ được bản chất của dữ liệu gốc?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"f3skpkm6kqob-om57ji4uqyrt","text":"Soạn một bài hát rap gồm ba đoạn và một điệp khúc, minh họa ý nghĩa của việc ăn uống lành mạnh và tác động của nó đối với sức khỏe.","correct":false},{"id":"uwixev8ar270-p70vgg7x0zh3","text":"Phát triển một câu chuyện về một người thợ làm bánh phát hiện ra một điều mới. Bao gồm dữ liệu từ biểu đồ và gợi ý mối liên hệ giữa thực phẩm nhiều chất béo và việc sử dụng thuốc.","correct":false},{"id":"ioyfe6eioqm3-z1mn0fz04s83","text":"Viết một bản tóm tắt của biểu đồ cột, bao gồm tất cả các thuật ngữ kỹ thuật và điều gì có thể xảy ra với loài người nếu họ tiếp tục duy trì thói quen hiện tại.","correct":false},{"id":"jnsq5wflargc-1z10qmbz91ye","text":"Tạo một tờ rơi đặt trong phòng chờ của bác sĩ, giải thích bằng ngôn ngữ đơn giản dữ liệu được trình bày trong biểu đồ cột, đồng thời cung cấp ví dụ minh họa.","correct":true}]},"explanation":"Yêu cầu là 'giữ được bản chất dữ liệu gốc' nhưng vẫn hấp dẫn — tờ rơi dùng ngôn ngữ đơn giản kèm ví dụ minh họa vừa truyền tải đúng thông điệp dữ liệu (mối liên hệ chất béo–thuốc) vừa dễ tiếp cận với đúng đối tượng (bệnh nhân ở phòng chờ). Các lựa chọn khác (bài rap, câu chuyện hư cấu, bản tóm tắt đầy thuật ngữ kỹ thuật) làm sai lệch hoặc che khuất bản chất dữ liệu."},{"id":"7d4hjnn2d3ua-nymy6sphg2mt","number":76,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn cần tạo một phiên bản tùy chỉnh của Microsoft Copilot để thực hiện một nhiệm vụ cụ thể. Việc tùy chỉnh này được thực hiện như thế nào?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"o1llvtrpk1p3-wsosutvx6hxp","text":"Toàn bộ mô hình ngôn ngữ lớn (LLM) phải được huấn luyện lại cho nhiệm vụ cụ thể đó.","correct":false},{"id":"n9cghrzbtk6l-x7lp5p71mj2t","text":"Bạn viết một chương trình máy tính hướng dẫn chatbot thực hiện nhiệm vụ.","correct":false},{"id":"x7l7ukbkjp7n-ufsmwjgdc3o3","text":"Bạn nhập vào chatbot một tập hợp các hướng dẫn và thông tin, giúp nó được định hướng cho một nhiệm vụ cụ thể.","correct":true},{"id":"3rzbho5q1m1h-q2ypk8ftuaob","text":"Các chatbot tùy chỉnh chỉ có thể được tạo ra bởi các công ty đã xây dựng chatbot đó.","correct":false}]},"explanation":"Tùy chỉnh một chatbot như Copilot (tương tự tạo GPT tùy chỉnh) được thực hiện bằng cách cung cấp hướng dẫn, ngữ cảnh và dữ liệu bổ sung qua giao diện trò chuyện — không cần huấn luyện lại toàn bộ mô hình ngôn ngữ lớn hay viết chương trình riêng, và việc này không bị giới hạn chỉ dành cho nhà phát triển gốc."},{"id":"acsy948rl6hn-ri9aj5bedyw9","number":77,"source":"GenAI","type":"MultipleChoice","prompt":"Brianna đang sử dụng AI tạo sinh (Generative AI) để tạo một lịch tập thể dục cá nhân hóa. Cô ấy nhập câu lệnh sau:\n“Tạo một lịch tập luyện hàng tuần\"\nCông cụ AI tạo sinh đã tạo ra một lịch tập gồm các bài tập mà Brianna không thể thực hiện được về mặt thể chất và rơi vào những thời điểm cô ấy đang làm việc. Làm thế nào Brianna có thể cải thiện câu lệnh để nhận được kết quả như mong muốn?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"xmkc7j4qkbf7-5wwyspymian1","text":"Brianna nên yêu cầu AI tạo sinh đưa ra các gợi ý về bài tập và chế độ ăn uống.","correct":false},{"id":"ar14o525s628-rxe1xn23ku8s","text":"Brianna nên cung cấp lịch trình và giới hạn thể chất của mình.","correct":true},{"id":"3b97iujo1xu5-2i2cvplm0u8o","text":"Brianna nên cố gắng sử dụng lịch tập mà AI đã cung cấp khi có thể.","correct":false},{"id":"8yodn9h78wpd-80les28u8kya","text":"Brianna nên yêu cầu AI tạo một lịch tập thể dục khác.","correct":false}]},"explanation":"Vấn đề là AI không biết giới hạn thể chất và lịch làm việc của Brianna, nên câu lệnh ban đầu thiếu ngữ cảnh cá nhân hoá. Bổ sung thông tin đó trực tiếp vào câu lệnh sẽ giúp AI tạo lịch tập phù hợp — trong khi cố dùng lịch cũ, yêu cầu tạo lại ngẫu nhiên, hay hỏi thêm về chế độ ăn đều không giải quyết đúng nguyên nhân gốc (thiếu thông tin cá nhân)."},{"id":"tfz3ru3jxonn-2itnl761hip0","number":78,"source":"GenAI","type":"MultipleChoice","prompt":"Bạn nhận được một kịch bản phim từ một nhà biên kịch. Bạn muốn khám phá cách đoạn hội thoại trong một cảnh cụ thể sẽ nghe như thế nào với nhiều giọng nói khác nhau. Bạn nên sử dụng loại AI nào?","images":[],"difficulty":"easy","topic":"prompting","interaction":{"kind":"single","options":[{"id":"y6dvjk6iz2m4-asf2b7wme4rw","text":"Text-to-Audio","correct":true},{"id":"ytly9kxb345n-5f6mzuqpzz1t","text":"Audio-to-Text","correct":false},{"id":"ru8r466iojb4-cp79jyklnuny","text":"Audio-to-Video","correct":false},{"id":"q1oc4gm2ly7c-l2e3vigaiobu","text":"Text-to-Text","correct":false}]},"explanation":"Chuyển văn bản (kịch bản) thành âm thanh (giọng đọc thoại) là chức năng của AI Text-to-Audio. Audio-to-Text làm ngược lại (phiên âm giọng nói thành chữ), còn Audio-to-Video và Text-to-Text không tạo ra âm thanh giọng nói từ văn bản."}]
+[
+  {
+    "id": "9vmtd0smcsnu-c0nw7nesej9s",
+    "number": 9,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Thomas muốn cho phép khách hàng tạo ra các thiết kế áo phông mới dựa trên câu trả lời của họ cho 3 câu hỏi sau:\n1. Con vật yêu thích của bạn là gì?\n2. Màu sắc yêu thích của bạn là gì?\n3. Cỡ áo của bạn là bao nhiêu?\nCác thiết kế phải được tự động gửi đến Thomas sau khi tạo.\nThomas có thể sử dụng trí tuệ nhân tạo (AI) để thực hiện điều này như thế nào?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "n15stqpg9y2s-soc6mp6gsujs",
+          "text": "Đăng liên kết đến Adobe trước tiên trên trang web của mình.",
+          "correct": false
+        },
+        {
+          "id": "nbockdplh66-c935om3b4wue",
+          "text": "Đưa ra lời nhắc xây dựng một trang web không tương tác.",
+          "correct": false
+        },
+        {
+          "id": "78980lbj04x0-a2763u8ke09b",
+          "text": "Tạo một GPT tùy chỉnh.",
+          "correct": true
+        },
+        {
+          "id": "6ucw1e63f876-2qfamydf1et6",
+          "text": "Đăng liên kết đến DALL-E trên trang web của mình.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Một GPT tùy chỉnh (Custom GPT) có thể được cấu hình sẵn để tự động hỏi khách hàng 3 câu (con vật, màu sắc, cỡ áo), tạo thiết kế dựa trên câu trả lời và gửi kết quả cho Thomas mà không cần viết code — đúng quy trình lặp lại, tự động hoá cần thiết. Đăng liên kết đến DALL-E/Adobe chỉ là chia sẻ công cụ, không tạo ra luồng hỏi-đáp tự động; còn 'trang web không tương tác' thì không thể thu thập câu trả lời của khách hàng."
+  },
+  {
+    "id": "oj5ilbb6tozv-qzgt1gd9a3k3",
+    "number": 11,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn đang viết một tiểu thuyết khoa học viễn tưởng có tên Fierce và đã chọn một ví dụ minh họa mang tính sáng tạo để gửi cho người phụ trách quảng cáo của mình, người sẽ tìm kiếm một họa sĩ để tạo ra một tác phẩm nghệ thuật mới, độc đáo dựa trên những hình ảnh và trích dẫn này từ trong sách. Danh sách nào nên được đưa vào lời nhắc của bạn để có được kết quả hữu ích nhất?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "mh46eamgzig6-p6jz3abqev0r",
+          "text": "Tên nhân vật, tên sách, tên tác giả và tên họa sĩ.",
+          "correct": false
+        },
+        {
+          "id": "osz7uinozcaj-m8h34bcniyns",
+          "text": "Ví dụ minh họa của họa sĩ, tên sách và số trang.",
+          "correct": false
+        },
+        {
+          "id": "uknhu61e3dz9-t7vxfzu3pv6y",
+          "text": "Kích thước của tác phẩm nghệ thuật, tên sách, nội dung sách và tên họa sĩ gốc.",
+          "correct": false
+        },
+        {
+          "id": "4idmyi3wjn7x-h9278p7qax9i",
+          "text": "Tên sách, chủ đề, bối cảnh, phong cách nghệ thuật mong muốn và phác thảo nội dung bìa sách.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Để họa sĩ vẽ một tác phẩm mới lấy cảm hứng từ sách (không sao chép nguyên hình ảnh cũ), câu lệnh cần mô tả nội dung sáng tạo: tên sách, chủ đề, bối cảnh, phong cách nghệ thuật mong muốn và phác thảo bìa. Các lựa chọn khác chỉ liệt kê thông tin hành chính (tên tác giả, họa sĩ, số trang, kích thước) — không giúp ích cho việc hình dung ra một tác phẩm nghệ thuật mới."
+  },
+  {
+    "id": "hrletoewagdj-qxnyebbxafxe",
+    "number": 12,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn muốn sử dụng trí tuệ nhân tạo (AI) để chuyển đổi sổ tay nhân viên mới thành bài thuyết trình. Câu lệnh nào có khả năng tạo ra một bài thuyết trình được thiết kế để khuyến khích học tập nhất?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "w5obpvd8dq5b-vme21wse95x1",
+          "text": "Tạo một sổ tay nhân viên mới kết hợp hình ảnh, biểu đồ và đồ thị liên quan để minh họa các điểm chính.",
+          "correct": false
+        },
+        {
+          "id": "voitv2qvj168-9lcl6j31eip4",
+          "text": "Tạo một bài thuyết trình chuyển đổi nội dung sang định dạng hấp dẫn và dễ hiểu.",
+          "correct": true
+        },
+        {
+          "id": "zgvjthdnizi3-1e2rij481cr3",
+          "text": "Tạo một bài thuyết trình từ sổ tay nhân viên mới tập trung vào các giá trị của công ty.",
+          "correct": false
+        },
+        {
+          "id": "tdnei94is1cn-myq8fh1dwlz7",
+          "text": "Định dạng lại sổ tay nhân viên mới để tạo một bài thuyết trình với bố cục slide nhất quán.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Mục tiêu là 'khuyến khích học tập', nên câu lệnh cần yêu cầu chuyển nội dung sổ tay sang một định dạng hấp dẫn và dễ hiểu — đúng trọng tâm sư phạm. Các lựa chọn khác chỉ tập trung vào hình ảnh minh họa, giá trị công ty hay bố cục slide, không nhắm thẳng vào việc giúp người học dễ tiếp thu."
+  },
+  {
+    "id": "6w7lvumch3xi-bfw9a1f2nl3x",
+    "number": 13,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn làm việc trong một nhóm phần mềm, đang triển khai một ứng dụng để tự động hóa quy trình đăng ký vay:\nSau khi thu thập dữ liệu của người nộp đơn, ứng dụng của bạn sẽ thực hiện 3 tác vụ riêng lẻ liên quan đến lịch sử tín dụng của người nộp đơn\n1. Nhập lịch sử tín dụng của người nộp đơn\n2. Áp dụng điểm tín dụng dựa trên lịch sử tín dụng\n3. Gửi tin nhắn văn bản cho biết khoản vay đã được chấp thuận hay chưa\nCông cụ AI nào sẽ phù hợp để hỗ trợ quá trình phát triển ứng dụng một cách hợp tác bằng cách đảm nhận các vai trò?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "1tyebwfagtvh-i18w7by5e9",
+          "text": "Meta GPT",
+          "correct": false
+        },
+        {
+          "id": "qrl6vjbexeox-86lzq1ny0wu",
+          "text": "Microsoft Copilot",
+          "correct": true
+        },
+        {
+          "id": "d2ubkzxlfe3g-cxa5xar1meak",
+          "text": "Stable Diffusion",
+          "correct": false
+        },
+        {
+          "id": "qz1i7f21b5m1-vtt5wrcxmtq",
+          "text": "Adobe Firefly",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Microsoft Copilot là trợ lý AI được tích hợp sẵn trong các công cụ phát triển và làm việc (Visual Studio, Teams, Office), có thể hỗ trợ nhóm thực hiện từng bước của quy trình (nhập dữ liệu, tính điểm, gửi tin nhắn) và cộng tác cùng con người theo vai trò trong dự án thực tế. Stable Diffusion và Adobe Firefly là công cụ tạo hình ảnh, không phù hợp cho việc phát triển ứng dụng phần mềm."
+  },
+  {
+    "id": "vqp0g13lxkhs-a8zz4iium7cf",
+    "number": 34,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn được yêu cầu tạo một bài trình chiếu bán hàng nhằm khám phá mối liên hệ giữa hai biến số. Một phần dữ liệu được hiển thị dưới đây:",
+    "images": [
+      "/questions/img-7c09c3125b68b8238f77f5ff46af96ac5c651432.png"
+    ],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "iyykt59ye0aw-ay915fkf0lkd",
+          "text": "Tạo biểu đồ (chart) thể hiện tổng doanh số đã đạt được cho một sản phẩm cụ thể.",
+          "correct": false
+        },
+        {
+          "id": "y8p5b162d5v2-c97ybyhxtjzq",
+          "text": "Những lợi ích của việc sử dụng biểu đồ Histogram để trực quan hóa dữ liệu bán hàng so với việc sử dụng biểu đồ thanh (bar graph) là gì?",
+          "correct": false
+        },
+        {
+          "id": "atpg8gb5tua1-475r3t4vieoa",
+          "text": "Tạo biểu đồ phân tán (scatter plot) để thể hiện mối quan hệ giữa doanh số của một sản phẩm cụ thể và độ tuổi người tiêu dùng.",
+          "correct": true
+        },
+        {
+          "id": "gppuyngcpvzz-p0fitwgvk6ax",
+          "text": "Thiết kế biểu đồ tròn (pie chart) để hiển thị sản phẩm phổ biến nhất mà công ty tôi đã bán được trong năm vừa rồi.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Dữ liệu đính kèm thể hiện hai biến số liên tục: độ tuổi khách hàng và số sản phẩm đã mua. Biểu đồ phân tán (scatter plot) là loại biểu đồ phù hợp nhất để khám phá mối quan hệ/tương quan giữa hai biến số liên tục như vậy. Biểu đồ cột, biểu đồ tròn hay Histogram phù hợp hơn để so sánh tổng hay tỉ lệ giữa các nhóm, không thể hiện rõ mối tương quan giữa hai biến."
+  },
+  {
+    "id": "jatf1jfike0s-5xe9v4o0eze6",
+    "number": 37,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn đang làm việc cho một công ty quảng cáo. Một khách hàng gọi điện và yêu cầu lời bài hát (lyrics) cho một bài hát trong quảng cáo của họ. Khách hàng đề nghị gửi một tài liệu (document) chứa thông số sản phẩm. Bạn cũng yêu cầu một hình ảnh của sản phẩm để để có ý tưởng về chi tiết bổ sung. Bạn có thể gõ (type) vào để tạo bài hát. Loại đầu vào nào có thể được sử dụng với ChatGPT để tạo ra lời bài hát.",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "5ulbfrvljgzw-fkl4y08yoqgh",
+          "text": "Chỉ văn bản.",
+          "correct": false
+        },
+        {
+          "id": "uxjgidptlo3d-xcj7eohlhmfn",
+          "text": "Tài liệu, văn bản và hình ảnh.",
+          "correct": true
+        },
+        {
+          "id": "t1y394j956g7-g2s4jofj5eih",
+          "text": "Chỉ tài liệu và văn bản.",
+          "correct": false
+        },
+        {
+          "id": "rdjl7jh2ko0f-aauhbzlxuobj",
+          "text": "Chỉ văn bản và hình ảnh.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "ChatGPT hỗ trợ đầu vào đa phương thức (multimodal): người dùng có thể gõ văn bản, đồng thời tải lên tài liệu (thông số sản phẩm) và hình ảnh (ảnh sản phẩm) trong cùng một cuộc trò chuyện để AI tham khảo khi sáng tác lời bài hát. Các lựa chọn khác chỉ liệt kê một phần trong số các loại đầu vào mà khách hàng đã thực sự cung cấp."
+  },
+  {
+    "id": "rlx7x8ok7jjc-amt01w4knrd0",
+    "number": 38,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn muốn sử dụng reverse prompting để AI tạo sơ yếu lý lịch (resume) của bạn với mức độ chi tiết phù hợp. Câu lệnh (prompt) nào sau đây sẽ đạt được mục tiêu đó tốt nhất?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "9phpz5t30kvz-4jzsavu92rpa",
+          "text": "Hỏi tôi về từng chi tiết chính cần thiết cho resume của tôi, sau đó sử dụng thông tin đó để tạo resume.",
+          "correct": true
+        },
+        {
+          "id": "k1wf3mdohgoj-6wtc4ndnzohe",
+          "text": "Tạo resume của tôi với các chi tiết đáng tin cậy bằng cách sử dụng mẫu resume chuẩn.",
+          "correct": false
+        },
+        {
+          "id": "3fvg43o7l8by-xz5fdby24ade",
+          "text": "Tôi đã làm việc trong ngành công nghệ máy tính được bốn năm, viết lập trình Python cho ngành tài chính. Hãy viết cho tôi một resume cho vị trí cấp cao hơn.",
+          "correct": false
+        },
+        {
+          "id": "h6066k79ewr-gyp1dteqnylk",
+          "text": "Viết cho tôi một resume để ứng tuyển vào công việc giảng dạy với tư cách là một giáo viên tiếng Anh có 5 năm kinh nghiệm giảng dạy.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Reverse prompting là kỹ thuật để AI chủ động đặt câu hỏi ngược lại nhằm thu thập thông tin còn thiếu, trước khi tạo kết quả. Yêu cầu AI 'hỏi tôi về từng chi tiết chính' chính là áp dụng đúng kỹ thuật này để đảm bảo resume có đủ mức độ chi tiết cần thiết. Các lựa chọn khác đều là AI tự soạn resume ngay lập tức dựa trên thông tin có sẵn hoặc mẫu chuẩn, không có bước hỏi ngược để làm rõ."
+  },
+  {
+    "id": "wwhka9f534k9-3mtj2aqezw48",
+    "number": 40,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn đang sử dụng AI tạo sinh (Generative AI) để chuyển đổi bản trình chiếu (slideshow) của mình thành một video.Bạn đã cung cấp và đang làm việc với một câu lệnh (prompt) sẽ sử dụng nội dung của các slide để tạo ra một video mang tính chuyên nghiệp và giáo dục về củ dền (beets).Câu lệnh (prompt) nào được thiết kế để đạt được kết quả mong muốn?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "6fax15139vbb-13013sl4w4rd",
+          "text": "Xem lại (review) các slide và xác định thông tin tốt nhất về củ dền. Sử dụng thông tin đó để tạo ra một chuỗi hình ảnh mới mà tôi có thể dùng trong bài trình chiếu.",
+          "correct": false
+        },
+        {
+          "id": "h12iqavkud02-7ue9g57mkmze",
+          "text": "Dùng các slide đã cung cấp làm cơ sở và tạo một video dài 2 phút về củ dền. Video nên vui nhộn và có bao gồm ảnh động (GIFs) và biểu tượng cảm xúc (emojis).",
+          "correct": false
+        },
+        {
+          "id": "du5ihl64roz9-w11geofsxxru",
+          "text": "Sử dụng các slide đã cung cấp, tạo một video dài 2 phút (2-minute video) về củ dền. Giọng điệu (tone) nên mang tính chuyên nghiệp / nghiêm túc. Các hiệu ứng hoạt hình (animations) nên được điều chỉnh sao cho người xem có đủ thời gian để đọc nội dung văn bản được cung cấp.",
+          "correct": true
+        },
+        {
+          "id": "yp0d7l8x7dhh-mkwmrr99wsh",
+          "text": "Bạn là một phát thanh viên tin tức. Hãy dùng thông tin trong các slide để tìm một bản tin gần về củ dền và làm thành một video.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Yêu cầu ban đầu nêu rõ video cần 'mang tính chuyên nghiệp và giáo dục', nên câu lệnh cần chỉ định rõ tông giọng nghiêm túc và thời gian đọc phù hợp — đây là câu lệnh duy nhất bám sát cả hai tiêu chí đó. Các lựa chọn khác hoặc chỉ tạo hình ảnh tĩnh (không phải video), hoặc dùng giọng điệu vui nhộn/phi chính thức (GIF, emoji, phát thanh viên tin tức) — trái với yêu cầu 'chuyên nghiệp'."
+  },
+  {
+    "id": "jb9cv7mnmkt3-ozviv1lj098c",
+    "number": 43,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn cần tạo một bài tập rèn luyện sức mạnh kéo dài 30 phút.\nBạn đã gửi cho AI lời nhắc (prompt) sau:\n\"Hãy tạo một bài tập luyện nhanh.\"\nKết quả AI tạo ra là:\nGiãn cơ: 2 phút\nNhảy jumping jack: 1 phút\nChạy tại chỗ nâng cao gối (high knees): 1 phút\nSquat: 1 phút\nChống đẩy: 2 hiệp, mỗi hiệp 10 cái\nGập bụng: 2 hiệp, mỗi hiệp 10 cái\nBạn muốn bài tập này phù hợp hơn với mục tiêu “30 phút rèn luyện sức mạnh”.\nBạn nên dùng prompt nào tiếp theo?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "nu6l7crelg2-98m8g4yshq7l",
+          "text": "Điều chỉnh để phù hợp với 30 phút tập rèn luyện sức mạnh",
+          "correct": true
+        },
+        {
+          "id": "fdgkokwf4lrv-uawu1ds5apx3",
+          "text": "Thêm nhiều đầu ra hơn",
+          "correct": false
+        },
+        {
+          "id": "4mpth8qdqxg3-t7mlpomuidcg",
+          "text": "Làm cho bài tập hoành tráng hơn",
+          "correct": false
+        },
+        {
+          "id": "5kib5j5kcvd9-6mjhl1g6ec81",
+          "text": "Giải thích lợi ích của việc tập sức mạnh 30 phút đối với hiệu suất",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Bài tập ban đầu quá ngắn và thiên về cardio hơn là rèn sức mạnh, nên cách hiệu quả nhất là tinh chỉnh trực tiếp câu lệnh trước đó — yêu cầu AI điều chỉnh lại đúng mục tiêu ban đầu (30 phút, rèn sức mạnh). Các lựa chọn khác (thêm đầu ra, làm hoành tráng hơn, giải thích lợi ích) không sửa được vấn đề cốt lõi về thời lượng và trọng tâm bài tập."
+  },
+  {
+    "id": "4lyr3zwcb072-5xyu10mldvdz",
+    "number": 53,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn muốn tạo logo doanh nghiệp, kế hoạch kinh doanh và tuyên bố sứ mệnh, và muốn dùng một giải pháp sẵn có (out-of-box solution) thay vì tự xây dựng. Nền tảng AI nào phù hợp nhất để thực hiện công việc này?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "q7exukyc9lg-sj5gss254fvn",
+          "text": "Stable Diffusion",
+          "correct": false
+        },
+        {
+          "id": "60xoamud4hva-trr1jpr3y8v6",
+          "text": "ChatGPT",
+          "correct": true
+        },
+        {
+          "id": "5qwu4pozwog4-8vf15pwem74i",
+          "text": "Adobe Firefly",
+          "correct": false
+        },
+        {
+          "id": "rcziqdz6sfkh-nwgs8hnfgdva",
+          "text": "Azure Al Studio",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "ChatGPT là giải pháp AI đa năng, có sẵn (out-of-box), có thể tạo cả văn bản (kế hoạch kinh doanh, tuyên bố sứ mệnh) lẫn hỗ trợ ý tưởng logo trong cùng một nền tảng hội thoại — phù hợp với yêu cầu 'giải pháp sẵn có' hơn các công cụ chuyên biệt chỉ tạo hình ảnh (Stable Diffusion, Adobe Firefly) hay nền tảng cần cấu hình kỹ thuật (Azure AI Studio)."
+  },
+  {
+    "id": "jaad4hx3idzc-vdc86uo40kte",
+    "number": 54,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Tòa án Tối cao Vương quốc Anh đã phán quyết rằng AI không thể là người phát minh duy nhất trong các đơn xin cấp bằng sáng chế. Vậy việc sử dụng AI tạo sinh (Generative AI) theo cách nào dưới đây sẽ cho phép bạn nộp đơn xin cấp bằng sáng chế?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "fyxojs5kfn4b-7vx84pya7mq",
+          "text": "Sử dụng AI để tạo bản kế hoạch cho một sản phẩm bằng mẫu trống có sẵn.",
+          "correct": false
+        },
+        {
+          "id": "tojok7m773gq-kqcxjhan5kv1",
+          "text": "Sử dụng AI để thiết kế lại sản phẩm hiện có nhằm tạo ra sản phẩm mới.",
+          "correct": true
+        },
+        {
+          "id": "625e4cri9nm7-5hm13vg3rfxs",
+          "text": "Sử dụng AI để sửa lỗi trong bản thiết kế hiện tại của bạn.",
+          "correct": false
+        },
+        {
+          "id": "v3me9lai21r-4my0xy320ypi",
+          "text": "Sử dụng AI để tạo bản kế hoạch cho một sản phẩm mới chưa từng được sản xuất.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Theo phán quyết, AI không được công nhận là người phát minh duy nhất — để nộp đơn sáng chế hợp lệ, cần có sự đóng góp trí tuệ của con người. Dùng AI để thiết kế lại (cải tiến) một sản phẩm đã có nghĩa là con người đưa ra ý tưởng nền tảng, AI chỉ là công cụ hỗ trợ — con người vẫn có thể được công nhận là nhà phát minh. Ngược lại, để AI tự tạo toàn bộ ý tưởng từ mẫu trống hoặc từ một sản phẩm chưa từng có nghĩa là AI là nguồn phát minh chính, không đáp ứng yêu cầu về người phát minh là con người."
+  },
+  {
+    "id": "flkvqg28zxz7-4ub7dsqokr8n",
+    "number": 57,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Trong một đoạn clip dài 30 giây, có một học sinh mặc áo len màu xanh lá sáng đi ngang qua khung hình từ trái sang phải. Không thể quay lại cảnh này, và bạn cần loại bỏ học sinh khỏi video nhưng giữ lại càng nhiều nội dung gốc càng tốt. Vậy, bạn nên dùng lệnh AI (prompt) nào sau đây?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "9e2xzd3ygqy1-i1zzivqzmyg2",
+          "text": "Thêm lớp chữ mô tả (text overlay) trên vị trí học sinh đang di chuyển.",
+          "correct": false
+        },
+        {
+          "id": "smifcsadbwhn-l3t7ksqufw4k",
+          "text": "Thay đổi màu nền của video, trừ học sinh ở tiền cảnh.",
+          "correct": false
+        },
+        {
+          "id": "idv4nad30w9l-mqkswm255yi0",
+          "text": "Cắt bỏ phần học sinh mặc áo xanh lá ở cả bên trái và bên phải màn hình.",
+          "correct": false
+        },
+        {
+          "id": "tgswckg7jga0-s5dctaa1mx6",
+          "text": "Thay thế học sinh mặc áo xanh lá trong đoạn phim bằng phần nền gốc của video.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Để loại bỏ hoàn toàn một đối tượng khỏi khung hình mà vẫn giữ nguyên nội dung gốc, cách đúng là dùng AI 'lấp đầy' vùng đó bằng chính nền gốc phía sau (inpainting) — kỹ thuật loại bỏ đối tượng và tái tạo nền. Thêm chữ đè lên, đổi màu nền, hay cắt hai bên khung hình đều làm mất/biến dạng nội dung gốc thay vì chỉ xóa đúng đối tượng cần loại bỏ."
+  },
+  {
+    "id": "2rsbir24jbc6-uvzgrrbz0vmw",
+    "number": 58,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Kenneth muốn sử dụng AI tạo sinh (Generative AI) để lên kế hoạch cho kỳ nghỉ của mình.\nChuyến đi cần bao gồm:\n10 ngày ở khu vực phía tây nước Mỹ\nTham quan nhiều địa điểm thiên nhiên ngoài trời\nBay đến một sân bay trung tâm\nThuê xe ô tô để di chuyển đến các địa điểm muốn tham quan\nVậy lời nhắc (prompt) nào dưới đây có khả năng cao nhất tạo ra lịch trình phù hợp cho chuyến đi của Kenneth?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "1pqdyb1y6knz-dn1ycrjag8j",
+          "text": "Tạo lịch trình du lịch 10 ngày bao gồm việc bay đến sân bay gần một trong các địa điểm tham quan và thuê xe để tham quan nhiều công viên quốc gia ở miền tây nước Mỹ.",
+          "correct": true
+        },
+        {
+          "id": "a88ra2g39u9j-wh1dsfga5h5f",
+          "text": "Tạo lịch trình du lịch bao gồm việc bay đến một sân bay gần đó và thuê xe để khám phá miền tây nước Mỹ.",
+          "correct": false
+        },
+        {
+          "id": "ylhuqpixxpc2-qpjpmva1zsp8",
+          "text": "Tạo lịch trình du lịch 10 ngày bao gồm việc thuê xe để tham quan 5 điểm du lịch ngoài trời ở Mỹ và bay đến một sân bay thường không quá đông vào tháng Bảy.",
+          "correct": false
+        },
+        {
+          "id": "rbrwcljwuzys-ll3yqvx8ejzt",
+          "text": "Tạo lịch trình du lịch bao gồm việc bay và tham quan các địa điểm ở miền tây nước Mỹ.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Câu lệnh đúng cụ thể hoá đầy đủ các yêu cầu đã nêu: bay đến sân bay trung tâm gần điểm tham quan, thuê xe, và tập trung vào các công viên quốc gia (địa điểm thiên nhiên ngoài trời) ở miền tây nước Mỹ trong 10 ngày. Các lựa chọn khác thiếu chi tiết cụ thể hoặc thêm điều kiện không được yêu cầu, khiến AI khó tạo đúng lịch trình mong muốn."
+  },
+  {
+    "id": "vayhr96nh7go-sdequb6y06ob",
+    "number": 62,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn đang nghiên cứu một chuỗi dữ liệu và muốn ước tính nhiệt độ trung bình của trái đất vào năm 2200.",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "fs71w3hsatmc-e3qkco5ux4r",
+          "text": "AI phân biệt (Discriminative AI)",
+          "correct": false
+        },
+        {
+          "id": "lvynpdeg7ypd-c1ukvc3fqy6i",
+          "text": "AI dự đoán (Predictive AI)",
+          "correct": true
+        },
+        {
+          "id": "r8pxt98u97fn-4bhao36qlr4n",
+          "text": "AI tự mã hóa biến phân (Variational Autoencoder – VAE AI)",
+          "correct": false
+        },
+        {
+          "id": "ogt222stkv5u-m8yofvrmuaqy",
+          "text": "AI khuếch tán (Diffusion AI)",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Ước tính một giá trị số trong tương lai (nhiệt độ trung bình năm 2200) dựa trên chuỗi dữ liệu lịch sử là bài toán dự báo — đúng chức năng của AI dự đoán (Predictive AI). AI phân biệt dùng để phân loại, còn VAE và AI khuếch tán dùng để tạo sinh nội dung mới (hình ảnh...), không phải để dự báo xu hướng số liệu."
+  },
+  {
+    "id": "blnr2kh4tu12-aq0slp4kolln",
+    "number": 64,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn có một biểu đồ cột minh họa mối quan hệ giữa việc tăng tiêu thụ thực phẩm nhiều chất béo và việc tăng sử dụng thuốc. Câu lệnh nào sau đây sẽ giúp bạn tạo ra một câu chuyện hấp dẫn trong khi vẫn giữ được bản chất của dữ liệu gốc?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "f3skpkm6kqob-om57ji4uqyrt",
+          "text": "Soạn một bài hát rap gồm ba đoạn và một điệp khúc, minh họa ý nghĩa của việc ăn uống lành mạnh và tác động của nó đối với sức khỏe.",
+          "correct": false
+        },
+        {
+          "id": "uwixev8ar270-p70vgg7x0zh3",
+          "text": "Phát triển một câu chuyện về một người thợ làm bánh phát hiện ra một điều mới. Bao gồm dữ liệu từ biểu đồ và gợi ý mối liên hệ giữa thực phẩm nhiều chất béo và việc sử dụng thuốc.",
+          "correct": false
+        },
+        {
+          "id": "ioyfe6eioqm3-z1mn0fz04s83",
+          "text": "Viết một bản tóm tắt của biểu đồ cột, bao gồm tất cả các thuật ngữ kỹ thuật và điều gì có thể xảy ra với loài người nếu họ tiếp tục duy trì thói quen hiện tại.",
+          "correct": false
+        },
+        {
+          "id": "jnsq5wflargc-1z10qmbz91ye",
+          "text": "Tạo một tờ rơi đặt trong phòng chờ của bác sĩ, giải thích bằng ngôn ngữ đơn giản dữ liệu được trình bày trong biểu đồ cột, đồng thời cung cấp ví dụ minh họa.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Yêu cầu là 'giữ được bản chất dữ liệu gốc' nhưng vẫn hấp dẫn — tờ rơi dùng ngôn ngữ đơn giản kèm ví dụ minh họa vừa truyền tải đúng thông điệp dữ liệu (mối liên hệ chất béo–thuốc) vừa dễ tiếp cận với đúng đối tượng (bệnh nhân ở phòng chờ). Các lựa chọn khác (bài rap, câu chuyện hư cấu, bản tóm tắt đầy thuật ngữ kỹ thuật) làm sai lệch hoặc che khuất bản chất dữ liệu."
+  },
+  {
+    "id": "7d4hjnn2d3ua-nymy6sphg2mt",
+    "number": 74,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn cần tạo một phiên bản tùy chỉnh của Microsoft Copilot để thực hiện một nhiệm vụ cụ thể. Việc tùy chỉnh này được thực hiện như thế nào?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "o1llvtrpk1p3-wsosutvx6hxp",
+          "text": "Toàn bộ mô hình ngôn ngữ lớn (LLM) phải được huấn luyện lại cho nhiệm vụ cụ thể đó.",
+          "correct": false
+        },
+        {
+          "id": "n9cghrzbtk6l-x7lp5p71mj2t",
+          "text": "Bạn viết một chương trình máy tính hướng dẫn chatbot thực hiện nhiệm vụ.",
+          "correct": false
+        },
+        {
+          "id": "x7l7ukbkjp7n-ufsmwjgdc3o3",
+          "text": "Bạn nhập vào chatbot một tập hợp các hướng dẫn và thông tin, giúp nó được định hướng cho một nhiệm vụ cụ thể.",
+          "correct": true
+        },
+        {
+          "id": "3rzbho5q1m1h-q2ypk8ftuaob",
+          "text": "Các chatbot tùy chỉnh chỉ có thể được tạo ra bởi các công ty đã xây dựng chatbot đó.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Tùy chỉnh một chatbot như Copilot (tương tự tạo GPT tùy chỉnh) được thực hiện bằng cách cung cấp hướng dẫn, ngữ cảnh và dữ liệu bổ sung qua giao diện trò chuyện — không cần huấn luyện lại toàn bộ mô hình ngôn ngữ lớn hay viết chương trình riêng, và việc này không bị giới hạn chỉ dành cho nhà phát triển gốc."
+  },
+  {
+    "id": "acsy948rl6hn-ri9aj5bedyw9",
+    "number": 75,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Brianna đang sử dụng AI tạo sinh (Generative AI) để tạo một lịch tập thể dục cá nhân hóa. Cô ấy nhập câu lệnh sau:\n“Tạo một lịch tập luyện hàng tuần\"\nCông cụ AI tạo sinh đã tạo ra một lịch tập gồm các bài tập mà Brianna không thể thực hiện được về mặt thể chất và rơi vào những thời điểm cô ấy đang làm việc. Làm thế nào Brianna có thể cải thiện câu lệnh để nhận được kết quả như mong muốn?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "xmkc7j4qkbf7-5wwyspymian1",
+          "text": "Brianna nên yêu cầu AI tạo sinh đưa ra các gợi ý về bài tập và chế độ ăn uống.",
+          "correct": false
+        },
+        {
+          "id": "ar14o525s628-rxe1xn23ku8s",
+          "text": "Brianna nên cung cấp lịch trình và giới hạn thể chất của mình.",
+          "correct": true
+        },
+        {
+          "id": "3b97iujo1xu5-2i2cvplm0u8o",
+          "text": "Brianna nên cố gắng sử dụng lịch tập mà AI đã cung cấp khi có thể.",
+          "correct": false
+        },
+        {
+          "id": "8yodn9h78wpd-80les28u8kya",
+          "text": "Brianna nên yêu cầu AI tạo một lịch tập thể dục khác.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Vấn đề là AI không biết giới hạn thể chất và lịch làm việc của Brianna, nên câu lệnh ban đầu thiếu ngữ cảnh cá nhân hoá. Bổ sung thông tin đó trực tiếp vào câu lệnh sẽ giúp AI tạo lịch tập phù hợp — trong khi cố dùng lịch cũ, yêu cầu tạo lại ngẫu nhiên, hay hỏi thêm về chế độ ăn đều không giải quyết đúng nguyên nhân gốc (thiếu thông tin cá nhân)."
+  },
+  {
+    "id": "tfz3ru3jxonn-2itnl761hip0",
+    "number": 76,
+    "source": "GenAI",
+    "type": "MultipleChoice",
+    "prompt": "Bạn nhận được một kịch bản phim từ một nhà biên kịch. Bạn muốn khám phá cách đoạn hội thoại trong một cảnh cụ thể sẽ nghe như thế nào với nhiều giọng nói khác nhau. Bạn nên sử dụng loại AI nào?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "y6dvjk6iz2m4-asf2b7wme4rw",
+          "text": "Text-to-Audio",
+          "correct": true
+        },
+        {
+          "id": "ytly9kxb345n-5f6mzuqpzz1t",
+          "text": "Audio-to-Text",
+          "correct": false
+        },
+        {
+          "id": "ru8r466iojb4-cp79jyklnuny",
+          "text": "Audio-to-Video",
+          "correct": false
+        },
+        {
+          "id": "q1oc4gm2ly7c-l2e3vigaiobu",
+          "text": "Text-to-Text",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Chuyển văn bản (kịch bản) thành âm thanh (giọng đọc thoại) là chức năng của AI Text-to-Audio. Audio-to-Text làm ngược lại (phiên âm giọng nói thành chữ), còn Audio-to-Video và Text-to-Text không tạo ra âm thanh giọng nói từ văn bản."
+  }
+]

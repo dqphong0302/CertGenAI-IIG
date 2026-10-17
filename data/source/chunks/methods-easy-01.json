@@ -1,1 +1,220 @@
-[{"id":"wvm5z6rovthy-hizi73in40gy","number":92,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Một chuyên gia tiếp thị đang tham dự một hội nghị quốc tế và muốn gọi một ly Latte nhưng không nói được ngôn ngữ mẹ đẻ của địa điểm đó. Người gõ \"Một mocha latte, làm ơn.\" và cho nhân viên pha chế xem \"Einen Mokka Latte, bitte\". Loại AI nào đang được sử dụng?","images":[],"difficulty":"easy","topic":"methods","interaction":{"kind":"single","options":[{"id":"j53m74r825c-klutf84jqjjy","text":"Âm thanh thành âm thanh","correct":false},{"id":"vk0mhd4pvsju-viuutk43k3w2","text":"Chuyển âm thanh thành văn bản","correct":false},{"id":"skyitetl0c6r-9fm5nknlp6so","text":"Chuyển văn bản thành văn bản","correct":true},{"id":"k1invqn0nfdq-hczqntgbpiic","text":"Chuyển văn bản thành âm thanh","correct":false}]},"explanation":"Đáp án: C. Chuyển văn bản thành văn bản\nGiải thích:\nNgười chuyên gia nhập văn bản (\"A mocha latte, làm ơn.\") và nhận lại văn bản dịch (\"Einen Mokka Latte, bitte.\") → đây là chuyển đổi từ văn bản ở ngôn ngữ này sang văn bản ở ngôn ngữ khác.\nKhông có âm thanh được tạo ra hay nhận vào, nên các lựa chọn A, B, D đều không đúng."},{"id":"pq6c0chifdd4-t3ek1h9vi7kn","number":93,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Một công ty nghiên cứu đang tìm hiểu về AI và các mô hình khác nhau của nó.\nMô hình nào sử dụng lượng lớn dữ liệu huấn luyện để hình thành nội dung do AI tạo ra?","images":[],"difficulty":"easy","topic":"methods","interaction":{"kind":"single","options":[{"id":"j53m74r825c-klutf84jqjjy","text":"Mô hình Ngôn ngữ Lớn (LLM)","correct":true},{"id":"vk0mhd4pvsju-viuutk43k3w2","text":"Biểu diễn Mã hóa Hai chiều từ Bộ biến đổi (BERT)","correct":false},{"id":"skyitetl0c6r-9fm5nknlp6so","text":"Bộ biến đổi Chuyển đổi Văn bản sang Văn bản (T5)","correct":false},{"id":"k1invqn0nfdq-hczqntgbpiic","text":"OpenAI Codex","correct":false}]},"explanation":"Các Mô hình Ngôn ngữ Lớn (LLMs) sử dụng lượng lớn dữ liệu huấn luyện để hình thành nội dung do AI tạo ra.\nBiểu diễn Mã hóa Hai chiều từ Bộ biến đổi (BERT) được sử dụng để hiểu ngữ cảnh của từ trong chuỗi tìm kiếm.\nBộ biến đổi Chuyển đổi Văn bản sang Văn bản (T5) làm cho tất cả các nhiệm vụ xử lý ngôn ngữ tự nhiên (NLP) trở thành văn bản sang văn bản.\nOpenAI Codex được sử dụng để tạo ra mã lập trình."},{"id":"vv19bhhgwpi6-tz1r5roakrpj","number":99,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Một lập trình viên đã có kinh nghiệm đang học Python và muốn biết cách sử dụng nó để tạo ra một số ngẫu nhiên. Lời nhắc nào sẽ hiển thị mã mà họ muốn xem?","images":[],"difficulty":"easy","topic":"methods","interaction":{"kind":"single","options":[{"id":"1kztmaoxgeu7-hcwpn0t3s941","text":"Viết mã sẽ tạo ra một số ngẫu nhiên.","correct":false},{"id":"wzppys2eubna-lj3dh7cmmvz6","text":"Viết mã Python sẽ cung cấp cho tôi một số ngẫu nhiên từ 1 đến 10.","correct":false},{"id":"hch19dlp1095-ud2pb6alkry5","text":"Làm cách nào để lấy một số ngẫu nhiên trong Python?","correct":false},{"id":"6dg6lwppm6os-yk9h6ht86t42","text":"Viết mã Python sẽ tạo ra một số ngẫu nhiên.","correct":true}]},"explanation":"Đáp án đúng: D. Viết mã Python sẽ tạo ra một số ngẫu nhiên.\nGiải thích:\nCâu D yêu cầu rõ ràng: “Viết mã Python sẽ tạo ra một số ngẫu nhiên” → chỉ định ngôn ngữ lập trình (Python) và nhiệm vụ cụ thể (tạo số ngẫu nhiên) → phù hợp nhất để AI hiển thị mã nguồn cụ thể.\nCâu A quá chung chung — không chỉ rõ ngôn ngữ.\nCâu B có phạm vi cụ thể hơn nhưng chưa cần thiết nếu người học chỉ muốn biết cách tạo số ngẫu nhiên cơ bản.\nCâu C là câu hỏi lý thuyết, không yêu cầu mã."},{"id":"soh5r2udkukb-6chp44k4yu3c","number":101,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Việc sử dụng dữ liệu thay đổi nhanh chóng để tạo ra đầu ra khi sử dụng AI tạo sinh có ảnh hưởng gì?","images":[],"difficulty":"easy","topic":"methods","interaction":{"kind":"single","options":[{"id":"1kztmaoxgeu7-hcwpn0t3s941","text":"Dữ liệu hiện tại trở nên lỗi thời","correct":true},{"id":"wzppys2eubna-lj3dh7cmmvz6","text":"Dữ liệu luôn luôn mới nhất","correct":false},{"id":"hch19dlp1095-ud2pb6alkry5","text":"Kết quả đầu ra đã tạo từ trước đó bị thay đổi.","correct":false},{"id":"6dg6lwppm6os-yk9h6ht86t42","text":"Quá trình tạo ra đầu ra bị làm chậm.","correct":false}]},"explanation":"Dữ liệu thay đổi nhanh chóng được sử dụng để tạo ra đầu ra bằng AI tạo sinh có thể làm cho dữ liệu hiện tại trở nên lỗi thời.\nDữ liệu thay đổi nhanh chóng không có nghĩa là dữ liệu đó luôn luôn mới nhất vì một Mô hình Ngôn ngữ Lớn (LLM) cần được huấn luyện lại trước khi tập dữ liệu được cập nhật.\nDữ liệu thay đổi nhanh chóng không làm thay đổi đầu ra đã được tạo ra trước đó.\nDữ liệu thay đổi nhanh chóng không nhất thiết làm chậm quá trình tạo ra đầu ra."},{"id":"mlqx9i1ncm2l-q2069fm9dir3","number":125,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Hãy xem xét hình ảnh sau đây.\nPhần nào của hình ảnh do AI tạo ra đã tạo ra sự không nhất quán với đầu ra của AI tạo sinh?","images":["/questions/img-964df737a0756189794342b809a13a380dd39973.png"],"difficulty":"easy","topic":"methods","interaction":{"kind":"single","options":[{"id":"kuu6gej2al4b-g4qpc9xm0ap","text":"Các tủ hồ sơ không giống nhau.","correct":false},{"id":"7ku8kd856boj-ucsn2oftlmi9","text":"Những chiếc ghế có những đặc điểm khác nhau.","correct":false},{"id":"30laoqaj4p41-ck0wfqg9vt1s","text":"Các màn hình không giống nhau.","correct":false},{"id":"qcmj1oytru7l-ca58jdk78uoq","text":"Đồng hồ hiển thị các thời gian khác nhau.","correct":true}]},"explanation":"Đáp án đúng: ✅ D. Đồng hồ hiển thị các thời gian khác nhau.\nGiải thích:\nTrong hình, hai chiếc đồng hồ treo tường hiển thị hai thời gian khác nhau, mặc dù chúng cùng nằm trong một căn phòng — điều này không nhất quán và thường là dấu hiệu của hình ảnh do Generative AI tạo ra.\nCác yếu tố khác như tủ hồ sơ, ghế, và màn hình trông đồng nhất và hợp lý, không có lỗi rõ ràng."},{"id":"g5o5ueswdhml-7df9eaxb2630","number":136,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Hãy xác định yếu tố không nhất quán trong bức hình sau đây (là kết quả đầu ra của AI tạo sinh)?","images":["/questions/img-c20f384ba27a21bfc1eb367c6272f5810ca81ded.jpg"],"difficulty":"easy","topic":"methods","interaction":{"kind":"single","options":[{"id":"79373b10fre6-som7msidpf72","text":"Đồng hồ hiển thị các thời gian khác nhau.","correct":true},{"id":"aqmb3x9rlax0-txutby4ki7g6","text":"Những chiếc ghế có những đặc điểm khác nhau.","correct":false},{"id":"s93vaakt6w90-ewq4nosskfm","text":"Các màn hình không giống nhau.","correct":false},{"id":"mvk9abrmpuxf-k17wj6yivmga","text":"Các tủ hồ sơ không giống nhau.","correct":false}]},"explanation":"Đồng hồ hiển thị thời gian khác nhau mặc dù chúng ở trong cùng một phòng, đây là sự không nhất quán trong kết quả đầu ra của AI tạo sinh này.\nHai chiếc ghế có đặc điểm khác nhau có vẻ thực tế.\nHai màn hình không cần phải giống nhau, hai tủ hồ sơ cũng vậy."},{"id":"7jk6lytcadvr-uqmz7fkh12ox","number":154,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoice","prompt":"Một nhà phát triển muốn xây dựng một mô hình AI và đang tìm cách sử dụng Azure Open AI để xây dựng mô hình. Nhà phát triển nhận thấy rằng Microsoft có các rào chắn cho bất kỳ dữ liệu nào trong mô hình AI. Làm thế nào những rào chắn đó có thể gây ra sự sai lệch trong dữ liệu được sử dụng cho mô hình?","images":[],"difficulty":"easy","topic":"methods","interaction":{"kind":"single","options":[{"id":"k6v1a644t97a-y3nuutvillbc","text":"Lượng dữ liệu trong mô hình bị hạn chế.","correct":false},{"id":"lfsjk7nffc6y-cvqdybtoivh1","text":"Lan can chỉ gây thiên vị nếu chúng bị tắt.","correct":false},{"id":"blfqpzq6fpjk-jnruh1eejvbo","text":"Một thực thể xác định nội dung nào là và không phải là nội dung có hại.","correct":true},{"id":"r75q3ui71u1v-ca20kaxturh0","text":"Thiên vị được giới thiệu trong lời nhắc mọi người sử dụng để tạo nội dung.","correct":false}]},"explanation":"Đáp án đúng: C. Một thực thể xác định nội dung nào là và không phải là nội dung có hại.\nGiải thích:\nMicrosoft thiết lập các “rào chắn” (guardrails) trong Azure OpenAI để ngăn chặn việc sử dụng hoặc huấn luyện trên nội dung có hại, nhạy cảm hoặc không phù hợp. Tuy nhiên, việc một thực thể (ở đây là Microsoft) quyết định nội dung nào được xem là “có hại” hay “chấp nhận được” có thể tạo ra sự thiên lệch (bias), vì tiêu chuẩn này phản ánh quan điểm hoặc chính sách của tổ chức đó, chứ không phải luôn trung lập về mặt văn hóa hay xã hội.\nCác lựa chọn khác:\nA. Lượng dữ liệu trong mô hình bị hạn chế: đúng là bị hạn chế, nhưng không phải nguyên nhân trực tiếp của thiên lệch, mà chỉ giới hạn phạm vi huấn luyện.\nB. Lan can chỉ gây thiên vị nếu chúng bị tắt: sai — thiên vị có thể phát sinh ngay cả khi lan can được bật, do chính quy tắc lọc nội dung.\nD. Thiên vị được giới thiệu trong lời nhắc...: liên quan đến bias của người dùng, không phải do rào chắn hệ thống."}]
+[
+  {
+    "id": "wvm5z6rovthy-hizi73in40gy",
+    "number": 90,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Một chuyên gia tiếp thị đang tham dự một hội nghị quốc tế và muốn gọi một ly Latte nhưng không nói được ngôn ngữ mẹ đẻ của địa điểm đó. Người gõ \"Một mocha latte, làm ơn.\" và cho nhân viên pha chế xem \"Einen Mokka Latte, bitte\". Loại AI nào đang được sử dụng?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "methods",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "j53m74r825c-klutf84jqjjy",
+          "text": "Âm thanh thành âm thanh",
+          "correct": false
+        },
+        {
+          "id": "vk0mhd4pvsju-viuutk43k3w2",
+          "text": "Chuyển âm thanh thành văn bản",
+          "correct": false
+        },
+        {
+          "id": "skyitetl0c6r-9fm5nknlp6so",
+          "text": "Chuyển văn bản thành văn bản",
+          "correct": true
+        },
+        {
+          "id": "k1invqn0nfdq-hczqntgbpiic",
+          "text": "Chuyển văn bản thành âm thanh",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Đáp án: C. Chuyển văn bản thành văn bản\nGiải thích:\nNgười chuyên gia nhập văn bản (\"A mocha latte, làm ơn.\") và nhận lại văn bản dịch (\"Einen Mokka Latte, bitte.\") → đây là chuyển đổi từ văn bản ở ngôn ngữ này sang văn bản ở ngôn ngữ khác.\nKhông có âm thanh được tạo ra hay nhận vào, nên các lựa chọn A, B, D đều không đúng."
+  },
+  {
+    "id": "pq6c0chifdd4-t3ek1h9vi7kn",
+    "number": 91,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Một công ty nghiên cứu đang tìm hiểu về AI và các mô hình khác nhau của nó.\nMô hình nào sử dụng lượng lớn dữ liệu huấn luyện để hình thành nội dung do AI tạo ra?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "methods",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "j53m74r825c-klutf84jqjjy",
+          "text": "Mô hình Ngôn ngữ Lớn (LLM)",
+          "correct": true
+        },
+        {
+          "id": "vk0mhd4pvsju-viuutk43k3w2",
+          "text": "Biểu diễn Mã hóa Hai chiều từ Bộ biến đổi (BERT)",
+          "correct": false
+        },
+        {
+          "id": "skyitetl0c6r-9fm5nknlp6so",
+          "text": "Bộ biến đổi Chuyển đổi Văn bản sang Văn bản (T5)",
+          "correct": false
+        },
+        {
+          "id": "k1invqn0nfdq-hczqntgbpiic",
+          "text": "OpenAI Codex",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Các Mô hình Ngôn ngữ Lớn (LLMs) sử dụng lượng lớn dữ liệu huấn luyện để hình thành nội dung do AI tạo ra.\nBiểu diễn Mã hóa Hai chiều từ Bộ biến đổi (BERT) được sử dụng để hiểu ngữ cảnh của từ trong chuỗi tìm kiếm.\nBộ biến đổi Chuyển đổi Văn bản sang Văn bản (T5) làm cho tất cả các nhiệm vụ xử lý ngôn ngữ tự nhiên (NLP) trở thành văn bản sang văn bản.\nOpenAI Codex được sử dụng để tạo ra mã lập trình."
+  },
+  {
+    "id": "vv19bhhgwpi6-tz1r5roakrpj",
+    "number": 97,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Một lập trình viên đã có kinh nghiệm đang học Python và muốn biết cách sử dụng nó để tạo ra một số ngẫu nhiên. Lời nhắc nào sẽ hiển thị mã mà họ muốn xem?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "methods",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "1kztmaoxgeu7-hcwpn0t3s941",
+          "text": "Viết mã sẽ tạo ra một số ngẫu nhiên.",
+          "correct": false
+        },
+        {
+          "id": "wzppys2eubna-lj3dh7cmmvz6",
+          "text": "Viết mã Python sẽ cung cấp cho tôi một số ngẫu nhiên từ 1 đến 10.",
+          "correct": false
+        },
+        {
+          "id": "hch19dlp1095-ud2pb6alkry5",
+          "text": "Làm cách nào để lấy một số ngẫu nhiên trong Python?",
+          "correct": false
+        },
+        {
+          "id": "6dg6lwppm6os-yk9h6ht86t42",
+          "text": "Viết mã Python sẽ tạo ra một số ngẫu nhiên.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: D. Viết mã Python sẽ tạo ra một số ngẫu nhiên.\nGiải thích:\nCâu D yêu cầu rõ ràng: “Viết mã Python sẽ tạo ra một số ngẫu nhiên” → chỉ định ngôn ngữ lập trình (Python) và nhiệm vụ cụ thể (tạo số ngẫu nhiên) → phù hợp nhất để AI hiển thị mã nguồn cụ thể.\nCâu A quá chung chung — không chỉ rõ ngôn ngữ.\nCâu B có phạm vi cụ thể hơn nhưng chưa cần thiết nếu người học chỉ muốn biết cách tạo số ngẫu nhiên cơ bản.\nCâu C là câu hỏi lý thuyết, không yêu cầu mã."
+  },
+  {
+    "id": "soh5r2udkukb-6chp44k4yu3c",
+    "number": 99,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Việc sử dụng dữ liệu thay đổi nhanh chóng để tạo ra đầu ra khi sử dụng AI tạo sinh có ảnh hưởng gì?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "methods",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "1kztmaoxgeu7-hcwpn0t3s941",
+          "text": "Dữ liệu hiện tại trở nên lỗi thời",
+          "correct": true
+        },
+        {
+          "id": "wzppys2eubna-lj3dh7cmmvz6",
+          "text": "Dữ liệu luôn luôn mới nhất",
+          "correct": false
+        },
+        {
+          "id": "hch19dlp1095-ud2pb6alkry5",
+          "text": "Kết quả đầu ra đã tạo từ trước đó bị thay đổi.",
+          "correct": false
+        },
+        {
+          "id": "6dg6lwppm6os-yk9h6ht86t42",
+          "text": "Quá trình tạo ra đầu ra bị làm chậm.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Dữ liệu thay đổi nhanh chóng được sử dụng để tạo ra đầu ra bằng AI tạo sinh có thể làm cho dữ liệu hiện tại trở nên lỗi thời.\nDữ liệu thay đổi nhanh chóng không có nghĩa là dữ liệu đó luôn luôn mới nhất vì một Mô hình Ngôn ngữ Lớn (LLM) cần được huấn luyện lại trước khi tập dữ liệu được cập nhật.\nDữ liệu thay đổi nhanh chóng không làm thay đổi đầu ra đã được tạo ra trước đó.\nDữ liệu thay đổi nhanh chóng không nhất thiết làm chậm quá trình tạo ra đầu ra."
+  },
+  {
+    "id": "mlqx9i1ncm2l-q2069fm9dir3",
+    "number": 121,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Hãy xem xét hình ảnh sau đây.\nPhần nào của hình ảnh do AI tạo ra đã tạo ra sự không nhất quán với đầu ra của AI tạo sinh?",
+    "images": [
+      "/questions/img-964df737a0756189794342b809a13a380dd39973.png"
+    ],
+    "difficulty": "easy",
+    "topic": "methods",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "kuu6gej2al4b-g4qpc9xm0ap",
+          "text": "Các tủ hồ sơ không giống nhau.",
+          "correct": false
+        },
+        {
+          "id": "7ku8kd856boj-ucsn2oftlmi9",
+          "text": "Những chiếc ghế có những đặc điểm khác nhau.",
+          "correct": false
+        },
+        {
+          "id": "30laoqaj4p41-ck0wfqg9vt1s",
+          "text": "Các màn hình không giống nhau.",
+          "correct": false
+        },
+        {
+          "id": "qcmj1oytru7l-ca58jdk78uoq",
+          "text": "Đồng hồ hiển thị các thời gian khác nhau.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: ✅ D. Đồng hồ hiển thị các thời gian khác nhau.\nGiải thích:\nTrong hình, hai chiếc đồng hồ treo tường hiển thị hai thời gian khác nhau, mặc dù chúng cùng nằm trong một căn phòng — điều này không nhất quán và thường là dấu hiệu của hình ảnh do Generative AI tạo ra.\nCác yếu tố khác như tủ hồ sơ, ghế, và màn hình trông đồng nhất và hợp lý, không có lỗi rõ ràng."
+  },
+  {
+    "id": "7jk6lytcadvr-uqmz7fkh12ox",
+    "number": 145,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoice",
+    "prompt": "Một nhà phát triển muốn xây dựng một mô hình AI và đang tìm cách sử dụng Azure Open AI để xây dựng mô hình. Nhà phát triển nhận thấy rằng Microsoft có các rào chắn cho bất kỳ dữ liệu nào trong mô hình AI. Làm thế nào những rào chắn đó có thể gây ra sự sai lệch trong dữ liệu được sử dụng cho mô hình?",
+    "images": [],
+    "difficulty": "easy",
+    "topic": "methods",
+    "interaction": {
+      "kind": "single",
+      "options": [
+        {
+          "id": "k6v1a644t97a-y3nuutvillbc",
+          "text": "Lượng dữ liệu trong mô hình bị hạn chế.",
+          "correct": false
+        },
+        {
+          "id": "lfsjk7nffc6y-cvqdybtoivh1",
+          "text": "Lan can chỉ gây thiên vị nếu chúng bị tắt.",
+          "correct": false
+        },
+        {
+          "id": "blfqpzq6fpjk-jnruh1eejvbo",
+          "text": "Một thực thể xác định nội dung nào là và không phải là nội dung có hại.",
+          "correct": true
+        },
+        {
+          "id": "r75q3ui71u1v-ca20kaxturh0",
+          "text": "Thiên vị được giới thiệu trong lời nhắc mọi người sử dụng để tạo nội dung.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: C. Một thực thể xác định nội dung nào là và không phải là nội dung có hại.\nGiải thích:\nMicrosoft thiết lập các “rào chắn” (guardrails) trong Azure OpenAI để ngăn chặn việc sử dụng hoặc huấn luyện trên nội dung có hại, nhạy cảm hoặc không phù hợp. Tuy nhiên, việc một thực thể (ở đây là Microsoft) quyết định nội dung nào được xem là “có hại” hay “chấp nhận được” có thể tạo ra sự thiên lệch (bias), vì tiêu chuẩn này phản ánh quan điểm hoặc chính sách của tổ chức đó, chứ không phải luôn trung lập về mặt văn hóa hay xã hội.\nCác lựa chọn khác:\nA. Lượng dữ liệu trong mô hình bị hạn chế: đúng là bị hạn chế, nhưng không phải nguyên nhân trực tiếp của thiên lệch, mà chỉ giới hạn phạm vi huấn luyện.\nB. Lan can chỉ gây thiên vị nếu chúng bị tắt: sai — thiên vị có thể phát sinh ngay cả khi lan can được bật, do chính quy tắc lọc nội dung.\nD. Thiên vị được giới thiệu trong lời nhắc...: liên quan đến bias của người dùng, không phải do rào chắn hệ thống."
+  }
+]

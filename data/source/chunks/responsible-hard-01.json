@@ -1,1 +1,747 @@
-[{"id":"9kml14xnnna-74cb1ekjxtgn","number":17,"source":"GenAI","type":"MultipleResponse","prompt":"Trong giờ khoa học, các em được yêu cầu viết một câu trả lời ngắn cho câu hỏi sau:\n\"Chức năng của hệ thần kinh là gì?\"\nCác em sao chép và dán câu hỏi vào ChatGPT.\nĐiều các em không biết là giáo viên đã gõ \"Abraham Lincoln\" và \"pumpkin pie\" bằng phông chữ trắng ở cuối câu hỏi để học sinh không nhìn thấy các từ. Hai lý do để giáo viên làm như vậy là gì? (Chọn 2)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"349fupd2hsrl-35mz42l39ioh","text":"Để đảm bảo học sinh có trách nhiệm tạo ra bài làm chân thực.","correct":true},{"id":"kx5wg1mgawzi-f2ieb0cilhn8","text":"Để nhắc nhở học sinh đọc lại bài làm và sửa lỗi chính tả cũng như lỗi ngữ pháp.","correct":false},{"id":"qpdepumid9ta-kg6xfhql08tg","text":"Để kiểm tra xem học sinh có sử dụng AI để tạo ra câu trả lời ngắn hay không, điều này sẽ dẫn đến gian lận.","correct":true},{"id":"6w9hs4f5z7fq-i4ujharwq2nl","text":"Để giúp học sinh sáng tạo trong các câu trả lời ngắn.","correct":false}]},"explanation":"Đây là một cách phát hiện gian lận: nếu học sinh sao chép nguyên câu hỏi vào ChatGPT mà không đọc kỹ, AI có thể vô tình đưa các từ ẩn (Abraham Lincoln, pumpkin pie) vào câu trả lời — giúp giáo viên phát hiện ai đã dùng AI thay vì tự làm bài, qua đó khuyến khích tính chính trực học thuật. Đây không liên quan đến việc sửa lỗi chính tả hay khơi gợi sáng tạo."},{"id":"qcbiftgbesmn-d1bbpoplmk6m","number":24,"source":"GenAI","type":"Matching","prompt":"Hãy di chuyển từng loại hành vi vi phạm pháp lý (legal infringement) từ danh sách bên trái sang kết quả đầu ra do AI tạo ra (AI-generated output) ở bên phải. Bạn có thể sử dụng mỗi loại hành vi vi phạm một lần, nhiều hơn một lần, hoặc không sử dụng.","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"matching","rows":[{"id":"nzprklgiqzjf-9lsaykfhlpky","text":"Vi phạm bản quyền (Copyright infringement)","answerId":"7mrvqethm34k-1rnfqae58rw7"},{"id":"xy0y8a6j6f1n-byns07n7k6g","text":"Vi phạm quyền sáng chế (Patent right infringement)","answerId":"fgr34o7zz9jv-jvm373s3m9u"},{"id":"19jillbtpyzg-xt2ejpz2hbep","text":"Vi phạm quyền nhãn hiệu (Trademark right infringement)","answerId":"n0op0md9zb0e-mnlpy7880zkg"}],"options":[{"id":"7mrvqethm34k-1rnfqae58rw7","text":"Một bản nhạc giống hệt với bản do một nhà soạn nhạc khác tạo ra."},{"id":"fgr34o7zz9jv-jvm373s3m9u","text":"Các bản vẽ chi tiết và quy trình cho một loại máy ảnh 3D mới, rất giống với những bản được nhóm Hiệp hội Máy ảnh tạo ra."},{"id":"n0op0md9zb0e-mnlpy7880zkg","text":"Một biểu tượng logo giống hệt với logo đã được đăng ký bởi Tập đoàn Thể thao Mùa Đông."}]},"explanation":"Mỗi loại vi phạm tương ứng với một loại tài sản trí tuệ khác nhau: bản quyền (copyright) bảo vệ tác phẩm sáng tạo như âm nhạc; bằng sáng chế (patent) bảo vệ quy trình/thiết kế kỹ thuật như bản vẽ máy ảnh; và nhãn hiệu (trademark) bảo vệ biểu tượng nhận diện thương hiệu như logo. AI tạo ra nội dung trùng lặp với các tài sản đã được bảo hộ này sẽ tương ứng vi phạm đúng loại quyền đó."},{"id":"q3cka8nay5dh-6p5y19t6vw89","number":29,"source":"GenAI","type":"MultipleChoiceText","prompt":"Bạn đang đánh giá các câu lệnh (prompts) sau đây để xác định xem chúng có chứa thiên vị tiềm ẩn hay không. Đối với mỗi ví dụ về câu lệnh (prompt), hãy chọn Thiên kiến nếu câu lệnh có chứa thiên vị, hoặc Không thiên kiến nếu đó là một yêu cầu trung lập.","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText24","text":"Nhấn mạnh hiệu suất (performance) và độ tin cậy (reliability) tốt hơn của các nguồn năng lượng tái tạo khác nhau (năng lượng mặt trời – Solar, gió – Wind, thủy điện – Hydro, và địa nhiệt – Geothermal) so với nhiên liệu hóa thạch (fossil fuels) trong môi trường đô thị. Cân nhắc các yếu tố như sản lượng năng lượng (energy output), tác động môi trường (environmental impact), và khả năng mở rộng (scalability). Cung cấp một bản phân tích cân bằng mà không ưu tiên bất kỳ nguồn năng lượng tái tạo cụ thể nào.","options":[{"id":"0","text":"Thiên kiến","correct":true},{"id":"1","text":"Không thiên kiến","correct":false}]},{"id":"qmMultipleChoiceText25","text":"Phân tích các ưu điểm và nhược điểm của các nguồn năng lượng tái tạo khác nhau (mặt trời, gió, thủy điện và địa nhiệt) trong môi trường đô thị. Tập trung vào các chỉ số như sản lượng năng lượng, chi phí, tác động môi trường, và khả năng mở rộng. Trình bày kết quả một cách khách quan.","options":[{"id":"0","text":"Thiên kiến","correct":false},{"id":"1","text":"Không thiên kiến","correct":true}]},{"id":"qmMultipleChoiceText26","text":"So sánh tiềm năng của năng lượng mặt trời và năng lượng gió trong việc cách mạng hóa hệ thống cung cấp điện đô thị. Nhấn mạnh lợi ích môi trường vượt trội và tiết kiệm chi phí dài hạn của năng lượng mặt trời, đồng thời đề cập đến những thách thức mà các công trình năng lượng gió phải đối mặt trong các khu vực có mật độ dân cư cao.","options":[{"id":"0","text":"Thiên kiến","correct":true},{"id":"1","text":"Không thiên kiến","correct":false}]}]},"explanation":"Một prompt thiên kiến thường đã định hướng sẵn kết quả nghiêng về một phía ngay trong cách đặt câu hỏi. Câu lệnh 1 yêu cầu 'nhấn mạnh hiệu suất TỐT HƠN' của năng lượng tái tạo dù có thêm câu 'không ưu tiên' ở cuối — về bản chất vẫn đã định hướng kết quả. Câu lệnh 3 công khai nhấn mạnh lợi ích của năng lượng mặt trời trong khi chỉ nêu thách thức của năng lượng gió — rõ ràng thiên kiến. Chỉ câu lệnh 2, yêu cầu phân tích ưu/nhược điểm của tất cả các nguồn một cách khách quan mà không nhấn mạnh nguồn nào, mới thực sự trung lập."},{"id":"20uz6rlsk94z-dlrqhhiq14vf","number":31,"source":"GenAI","type":"MultipleResponse","prompt":"Công ty Healthy Eats sử dụng AI để thu thập tên, địa chỉ, số điện thoại và thông tin chi tiết về sức khỏe của khách hàng mua các sản phẩm giảm cân của họ. Ba hậu quả nào sau đây có thể xảy ra nếu tập đoàn này không thực hiện các biện pháp phòng ngừa cần thiết để ngăn mô hình AI Tạo Sinh (Generative AI) được huấn luyện trên dữ liệu này? (Chọn 3)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"ekmgzan9ahnr-psdrsg216ki6","text":"Kiện tụng về quyền riêng tư dữ liệu","correct":true},{"id":"pljzew9xmgz-a0naj7qquzfr","text":"Thông tin công khai của công ty có thể bị lộ","correct":false},{"id":"sbt9i8rfhvyx-2iqgkxzeagis","text":"Sự mất lòng tin của khách hàng","correct":true},{"id":"xzmqpdpwj1pc-tk3kqxsljk91","text":"Trộm cắp danh tính của khách hàng","correct":true}]},"explanation":"Khi dữ liệu cá nhân nhạy cảm (sức khoẻ, liên hệ) bị đưa vào huấn luyện AI mà không có biện pháp bảo vệ, hậu quả trực tiếp có thể là bị kiện vì vi phạm quyền riêng tư dữ liệu, khách hàng mất lòng tin vào công ty, và rủi ro thông tin bị rò rỉ dẫn đến trộm cắp danh tính. Rủi ro này liên quan đến dữ liệu KHÁCH HÀNG chứ không phải thông tin công khai của chính công ty."},{"id":"hgiud7iv8xqx-2q796ktwm6qr","number":39,"source":"GenAI","type":"MultipleResponse","prompt":"Hai phát biểu nào xác định các rủi ro liên quan đến AI tạo sinh (Generative AI) và việc sử dụng nó? (Chọn 2)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"nxqqa9freyk0-hufgr9khcqlj","text":"AI tạo sinh có thể dễ dàng xác định (identify) và chặn (block) nội dung có hại ngay cả khi không có sự can thiệp của con người.","correct":false},{"id":"zccvh0o5e4jz-6mtr032ejezo","text":"AI tạo sinh hoạt động tốt mà không cần sự giám sát của con người (human oversight) để đảm bảo rằng nội dung mà nó tạo ra là chính xác.","correct":false},{"id":"gdmcck7nzghy-u6cjed9yonsz","text":"Bạn chịu trách nhiệm về nội dung mà bạn tạo ra bằng AI tạo sinh.","correct":true},{"id":"zging9d1qrdo-qk40d9gqrad9","text":"Việc tạo ra nội dung gây hại bằng AI tạo sinh có thể dẫn đến vụ kiện dân sự (civil actions) hoặc truy tố hình sự (criminal actions) chống lại bạn.","correct":true}]},"explanation":"Người dùng luôn chịu trách nhiệm pháp lý về nội dung mình tạo ra bằng AI tạo sinh, kể cả khi công cụ tự động sinh ra nội dung đó — nếu nội dung gây hại, người dùng có thể bị kiện dân sự hoặc truy tố hình sự. Hai phát biểu còn lại phóng đại khả năng của AI (tự phát hiện/chặn nội dung có hại, hoặc hoạt động chính xác mà không cần giám sát con người) — trên thực tế AI tạo sinh luôn cần sự giám sát của con người."},{"id":"2gkg0qepvj5v-2jods758tsaa","number":42,"source":"GenAI","type":"MultipleResponse","prompt":"Bạn là một thực tập sinh làm việc cho một hãng luật lớn tại khu tài chính ở San Francisco. Một đối tác giao cho bạn một hồ sơ và yêu cầu bạn nghiên cứu để tư vấn cho một khách hàng doanh nghiệp về các luật cụ thể cần xem xét trong kế hoạch sử dụng AI tạo sinh (Generative AI) cho quy trình tuyển dụng của công ty. Ba loại luật nào liên quan đến nghiên cứu này? (Chọn 3)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"j286odwvbsv-alhygab035","text":"Luật bất động sản (Real property laws)","correct":false},{"id":"2x2a71d8cvuy-myc0epvlgbhf","text":"Luật sở hữu trí tuệ (Intellectual property laws)","correct":true},{"id":"928q7ny3vtrj-q0z6bh75ujeb","text":"Luật bảo mật dữ liệu (Data privacy laws)","correct":true},{"id":"nsugbl7p9c81-hen59455i8tq","text":"Luật lao động/việc làm (Employment laws)","correct":true}]},"explanation":"Sử dụng AI tạo sinh trong quy trình tuyển dụng liên quan trực tiếp đến: luật sở hữu trí tuệ (dữ liệu/mô hình AI dùng để huấn luyện), luật bảo mật dữ liệu (thông tin cá nhân ứng viên), và luật lao động (quy định công bằng trong tuyển dụng, chống phân biệt đối xử). Luật bất động sản không liên quan đến quy trình tuyển dụng nhân sự."},{"id":"isqutes6lb11-a6m0riuhhly","number":44,"source":"GenAI","type":"MultipleResponse","prompt":"Hai phát biểu nào xác định đúng rủi ro liên quan đến việc sử dụng AI tạo sinh (Generative AI)? (Chọn 2)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"lu0yta4yc787-ql9o0tla58b3","text":"AI tạo sinh hoạt động tốt mà không cần con người giám sát để đảm bảo nội dung mà nó tạo ra là chính xác.","correct":false},{"id":"osa37h6453l7-d0okidh7rrkb","text":"Tạo ra nội dung gây hại bằng AI tạo sinh có thể dẫn đến hành động dân sự hoặc hình sự chống lại bạn.","correct":true},{"id":"c63imruf6ioj-5jxebuvmq8ik","text":"Bạn chịu trách nhiệm về nội dung mà bạn tạo ra bằng AI tạo sinh.","correct":true},{"id":"90id613bj0ka-g5qe2aikuv3j","text":"AI tạo sinh có thể dễ dàng phát hiện và chặn nội dung có hại ngay cả khi không có sự can thiệp của con người.","correct":false}]},"explanation":"Người dùng luôn chịu trách nhiệm pháp lý về nội dung mình tạo ra bằng AI tạo sinh; nếu nội dung gây hại, có thể dẫn đến hành động dân sự hoặc hình sự chống lại người đó. Hai phát biểu còn lại phóng đại khả năng của AI (tự phát hiện/chặn nội dung có hại, hoặc hoạt động chính xác mà không cần giám sát con người) — trên thực tế AI tạo sinh luôn cần sự giám sát của con người."},{"id":"e8vo8hokw8a0-k6d8rnmezhy8","number":45,"source":"GenAI","type":"MultipleChoiceText","prompt":"Bạn cần tạo một bản tóm tắt không thiên kiến (unbiased) về dự án dỡ bỏ đập gần sông Smith.\nVới từng câu lệnh (prompt) dưới đây, hãy chọn Thiên kiến nếu lời nhắc thể hiện sự thiên lệch, hoặc Không thiên kiến nếu lời nhắc mang tính cân bằng, trung lập.","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText31","text":"Hãy tạo bản tóm tắt về tác động của việc dỡ bỏ đập tiềm năng gần sông Smith và đề xuất phục hồi hệ sinh thái như đã nêu bởi công ty tiện ích (utility company).","options":[{"id":"0","text":"Thiên kiến","correct":true},{"id":"1","text":"Không thiên kiến","correct":false}]},{"id":"qmMultipleChoiceText32","text":"Tạo bản tóm tắt về các khuyến nghị rút ra từ nghiên cứu độc lập của bên thứ ba về việc dỡ bỏ đập, nhấn mạnh các bước hành động và chiến lược khả thi có thể áp dụng cho sông Smith.","options":[{"id":"0","text":"Thiên kiến","correct":false},{"id":"1","text":"Không thiên kiến","correct":true}]},{"id":"qmMultipleChoiceText33","text":"Tạo bản tóm tắt dài 150 từ về các phát hiện chính liên quan đến việc dỡ bỏ đập, làm nổi bật các tác động đáng kể nhất đối với hệ sinh thái gần sông Smith.","options":[{"id":"0","text":"Thiên kiến","correct":false},{"id":"1","text":"Không thiên kiến","correct":true}]}]},"explanation":"Một bản tóm tắt thiên kiến khi nó chỉ dựa vào quan điểm của MỘT bên có lợi ích liên quan — như 'công ty tiện ích' (đơn vị có thể hưởng lợi từ việc dỡ đập). Ngược lại, dựa trên nghiên cứu độc lập của bên thứ ba, hoặc chỉ tổng hợp phát hiện chính một cách trung lập mà không thiên về nguồn nào, đều là cách tiếp cận cân bằng, không thiên kiến."},{"id":"u8lypka8ws0g-hddomcoqa1kz","number":47,"source":"GenAI","type":"MultipleChoiceText","prompt":"Với mỗi phát biểu sau đây về thiên kiến (bias) trong AI, hãy chọn Đúng hoặc Sai.","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText34","text":"Mô hình tạo hình ảnh bằng AI được huấn luyện trên dữ liệu có thiên lệch có thể tạo ra hình ảnh bị thiên lệch.","options":[{"id":"0","text":"Đúng","correct":true},{"id":"1","text":"Sai","correct":false}]},{"id":"qmMultipleChoiceText35","text":"ChatGPT luôn loại bỏ hoàn toàn thiên lệch trong các câu trả lời của mình.","options":[{"id":"0","text":"Đúng","correct":false},{"id":"1","text":"Sai","correct":true}]},{"id":"qmMultipleChoiceText36","text":"Con người nên xem xét nội dung do AI tạo ra để phát hiện và kiểm tra thiên lệch.","options":[{"id":"0","text":"Đúng","correct":true},{"id":"1","text":"Sai","correct":false}]}]},"explanation":"Thiên kiến trong dữ liệu huấn luyện sẽ phản ánh trực tiếp vào đầu ra của mô hình — đây là nguyên lý cơ bản của bias trong AI, nên phát biểu 1 Đúng. Không có mô hình AI nào (kể cả ChatGPT) loại bỏ HOÀN TOÀN thiên lệch, nên phát biểu 2 Sai. Vì vậy, con người luôn cần rà soát nội dung AI tạo ra để phát hiện thiên lệch — phát biểu 3 Đúng."},{"id":"s728a3ex65f-yyzodgc2d5zv","number":49,"source":"GenAI","type":"MultipleChoiceText","prompt":"Lớp bạn đang thảo luận về AI và những đóng góp của nó cho thế giới.\nHơn một nửa lớp cho rằng AI có tác động tích cực, trong khi phần còn lại cho rằng AI gây tác động tiêu cực.\nCả lớp lập danh sách các tình huống minh họa cho hai loại tác động này. Với mỗi tình huống dưới đây, hãy chọn Tích cực hoặc Tiêu cực.","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText37","text":"Sara và bạn thân Jane cãi nhau ở trường. Về nhà, Sara dùng AI để hiểu rõ hơn về quan điểm của Jane.","options":[{"id":"0","text":"Tích cực","correct":true},{"id":"1","text":"Tiêu cực","correct":false}]},{"id":"qmMultipleChoiceText38","text":"Trong cuộc tranh cử, một ứng viên dùng deepfake để khiến đối thủ trông như đang nói những điều họ chưa từng nói.","options":[{"id":"0","text":"Tích cực","correct":false},{"id":"1","text":"Tiêu cực","correct":true}]},{"id":"qmMultipleChoiceText39","text":"Sara dùng AI tạo sinh để xem chủ đề đang thịnh hành và lên danh sách ý tưởng bài viết blog.","options":[{"id":"0","text":"Tích cực","correct":true},{"id":"1","text":"Tiêu cực","correct":false}]}]},"explanation":"Tác động tích cực hay tiêu cực phụ thuộc vào MỤC ĐÍCH sử dụng AI: dùng AI để thấu hiểu người khác hoặc hỗ trợ lên ý tưởng sáng tạo là tích cực; nhưng dùng deepfake để tạo thông tin sai lệch nhằm thao túng nhận thức công chúng (như trong bầu cử) là tiêu cực, vì gây hại đến sự thật và niềm tin xã hội."},{"id":"o25ejdeiwwra-poqgaxkkzo5x","number":68,"source":"GenAI","type":"Matching","prompt":"Công ty Pro phát triển các phương tiện tự hành. Công ty muốn những phương tiện này sử dụng AI tạo sinh để dẫn đường. Bạn cần xác định các tình huống nơi thiên kiến (bias) có thể xảy ra và giai đoạn mà chúng xảy ra. Hãy ghép từng giai đoạn ở danh sách bên trái với tình huống tương ứng ở bên phải.","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"matching","rows":[{"id":"2888q9g7tj8s-30dtq2qu696l","text":"Gán nhãn dữ liệu (Data labeling)","answerId":"rt4pz2gazfro-7ccmshkduwpd"},{"id":"9ffuo5uv58mn-kvlr2iai0gm","text":"Huấn luyện mô hình (Model training)","answerId":"oagc5sjm0u3h-cxpkyz9dgtbt"},{"id":"9y63yg2s93k0-3tnjbup6gxgw","text":"Triển khai (Deployment)","answerId":"5qj0evt3nwcp-d1w2w7tht6lj"},{"id":"kmauryn4r7il-blcccnfg7j1r","text":"Thu thập dữ liệu (Data collection)","answerId":"ptsno1cd5wzy-y30pg15e5nl"}],"options":[{"id":"rt4pz2gazfro-7ccmshkduwpd","text":"Dữ liệu bao gồm người đi bộ được gán trọng số khác nhau dựa trên chiều cao."},{"id":"oagc5sjm0u3h-cxpkyz9dgtbt","text":"Chỉ hình ảnh biển báo dừng và đèn giao thông được mã hóa (tokenized)."},{"id":"5qj0evt3nwcp-d1w2w7tht6lj","text":"Phương tiện được bán khắp nơi nhưng chỉ được thử nghiệm trong thành phố của bạn."},{"id":"ptsno1cd5wzy-y30pg15e5nl","text":"Camera và cảm biến chỉ ghi lại hình ảnh và âm thanh vào ban ngày."}]},"explanation":"Mỗi giai đoạn của vòng đời AI có một dạng thiên kiến đặc trưng: thu thập dữ liệu thiếu đại diện (chỉ ghi hình ban ngày) xảy ra ở bước Thu thập dữ liệu; gán trọng số không công bằng cho người đi bộ xảy ra khi Gán nhãn dữ liệu; chỉ mã hoá một phần loại vật thể (biển báo, đèn) khiến mô hình thiếu toàn diện xảy ra ở bước Huấn luyện mô hình; và việc bán xe ở nơi chưa được thử nghiệm thực tế là rủi ro thiên kiến khi Triển khai."},{"id":"c62be993xope-2st8bc3r3q69","number":107,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Một số hệ quả pháp lý khi sử dụng nội dung được tạo ra bởi AI tạo sinh một cách không phù hợp là gì? (Chọn hai)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"2g6gzadwcx1w-f6nresx6s5at","text":"Khiếu nại về tội xúc phạm danh dự.","correct":true},{"id":"eauitj855v0p-ex3yj1qab995","text":"Vi phạm bản quyền.","correct":true},{"id":"w620ljti12mn-c30ioc3okchp","text":"Thiên vị.","correct":false},{"id":"qyhqjs4l6bct-ql8c3gcdebh5","text":"Mã hóa.","correct":false}]},"explanation":"Các hệ quả pháp lý của việc sử dụng nội dung được tạo một cách không phù hợp bao gồm các khiếu nại về tội xúc phạm danh dự và vi phạm bản quyền.\nSự thiên vị dẫn đến việc có thể sử dụng nội dung được tạo ra không phù hợp.\nMã hóa dữ liệu sẽ xóa thông tin cá nhân khỏi dữ liệu để không dẫn đến việc sử dụng dữ liệu được tạo ra không phù hợp."},{"id":"zgop1jyhqgwy-b9c22y47fu9k","number":124,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Ba tác động tích cực nào mà AI Tạo sinh mang lại cho xã hội? (chọn 3)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"owau4emgvgec-4fbw21w24dn2","text":"Giúp vượt qua rào cản ngôn ngữ.","correct":true},{"id":"eej7cqg1g1by-whww1t75r19s","text":"Khơi nguồn sáng tạo.","correct":true},{"id":"xakih27csgzg-4kzkxuxfxpez","text":"Giúp thực hiện các nhiệm vụ cuộc sống hàng ngày hiệu quả hơn.","correct":true},{"id":"ivemrqc0s36g-y6kc05iv92xl","text":"Xây dựng an toàn tài chính.","correct":false},{"id":"vxsrxggfveyb-nua4iflwyo9n","text":"Mang lại sự bình đẳng trong giáo dục.","correct":false}]},"explanation":"Các tác động tích cực của Trí tuệ Nhân tạo Tạo sinh (Generative AI) mang lại cho xã hội:\nTrí tuệ Nhân tạo Tạo sinh có thể giúp chúng ta thực hiện công việc hiệu quả hơn.\nGiúp chúng ta giao tiếp tốt hơn, đặc biệt là qua các ngôn ngữ khác nhau.\nGiúp chúng ta học tập hiệu quả hơn.\nTạo ra các ý tưởng để khơi nguồn sáng tạo; động não.\nGiúp chúng ta thực hiện các nhiệm vụ cuộc sống hàng ngày hiệu quả hơn như: thực đơn, công thức nấu ăn, danh sách mua sắm, tóm tắt các tin nhắn dài từ bạn bè và gia đình.\nPhân tích các mô hình và trình bày chúng dưới dạng cơ hội.\nTạo ra việc làm - chúng chỉ là những công việc khác đi."},{"id":"wtkryqv862u9-g5berjhpahy6","number":128,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Đối với mỗi nhận định liên quan đến Dữ liệu định danh cá nhân (PII) và quyền riêng tư dữ liệu trong AI tạo sinh, hãy chỉ ra Yes nếu nhận định đó là đúng và No nếu nhận định đó là sai.","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText98","text":"Che dấu dữ liệu tĩnh (Static data masks) thay đổi vĩnh viễn dữ liệu được sử dụng trong một mô hình AI.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText99","text":"Dữ liệu định danh cá nhân (PII) bị để lại trong AI tạo sinh có thể gây ra hành vi trộm cắp danh tính.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText100","text":"Mã hóa bằng token sử dụng tên giả để che giấu dữ liệu.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]}]},"explanation":"Đúng:\nChe dấu dữ liệu tĩnh (Static data masks) thay đổi vĩnh viễn dữ liệu được sử dụng trong một mô hình AI.\nDữ liệu định danh cá nhân (PII) bị để lại trong AI tạo sinh có thể gây ra hành vi trộm cắp danh tính.\nSai:\nMã hóa bằng token sử dụng tên giả để che giấu dữ liệu.\nGiải thích:\nMã hóa bằng token sử dụng ký hiệu để che giấu dữ liệu. Giả danh sử dụng tên giả để che giấu dữ liệu."},{"id":"rt1idpqw1hss-8nxzjtxi72z6","number":158,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Đối với mỗi tuyên bố sau đây liên quan đến quyền riêng tư dữ liệu và AI tạo sinh, hãy chọn Yes nếu tuyên bố đó đúng và No nếu nó sai.","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText144","text":"Nội dung do con người tạo có thể được sử dụng để đào tạo mô hình AI.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText145","text":"Mọi người có thể chọn không sử dụng dữ liệu của họ trong mô hình AI.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText146","text":"Các công cụ AI tạo sinh trả về dữ liệu cá nhân giống như các trang web có về mọi người.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]}]},"explanation":"Yes:\nNội dung do con người tạo có thể được sử dụng để đào tạo mô hình AI.\nMọi người có thể chọn không sử dụng dữ liệu của họ trong mô hình AI.\nNo:\nCác công cụ AI tạo sinh trả về dữ liệu cá nhân giống như các trang web có về mọi người.\nGiải thích:\nCác công cụ AI tạo sinh không trả về dữ liệu cá nhân của mọi người trừ khi dữ liệu đó được nhập vào mô hình AI."},{"id":"6ynbkrm9uw69-s3xs2ya3ql9g","number":165,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Một số tác động pháp lý của việc sử dụng nội dung được tạo không phù hợp khi sử dụng AI tạo sinh là gì? (Chọn hai)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"syo3fnkbo43c-gpdqy5uanijr","text":"Mã hóa.","correct":false},{"id":"fmbs9l49n9vf-u1f12sdgwlx5","text":"Khiếu nại về tội phỉ báng.","correct":true},{"id":"uoe3wp5bg0zl-xx3ippsrw48y","text":"Vi phạm bản quyền.","correct":true},{"id":"tow99h9sgckq-x9hm53vudzx2","text":"Thiên vị.","correct":false}]},"explanation":"Đáp án đúng: B. Khiếu nại về tội phỉ báng; C. Vi phạm bản quyền\nGiải thích:\nB. Khiếu nại về tội phỉ báng (Defamation): Nếu Generative AI tạo ra nội dung sai lệch hoặc bôi nhọ cá nhân/tổ chức, người sử dụng hoặc nhà phát triển có thể chịu trách nhiệm pháp lý về phỉ báng hoặc xúc phạm danh dự.\nC. Vi phạm bản quyền (Copyright infringement): Khi AI tạo hoặc sử dụng nội dung dựa trên tác phẩm có bản quyền mà không được phép, điều đó có thể vi phạm luật sở hữu trí tuệ.\nCác lựa chọn sai:\nA. Mã hóa: liên quan đến bảo mật dữ liệu, không phải tác động pháp lý từ nội dung tạo ra.\nD. Thiên vị: là vấn đề đạo đức hoặc kỹ thuật, không phải vấn đề pháp lý trực tiếp (trừ khi dẫn đến phân biệt đối xử rõ ràng trong thực tế)."},{"id":"fvnqlu9fe5dv-5anz1mqcruv3","number":175,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Khi chọn một công cụ AI, bạn cần xem xét những yếu tố nào? (Chọn 3 yếu tố)","images":[],"difficulty":"hard","topic":"responsible","interaction":{"kind":"multiple","options":[{"id":"im50tnwszdoj-so6ukx1e1817","text":"Dễ sử dụng","correct":true},{"id":"oxt148hymdu4-tlon1g2472vr","text":"Chi phí","correct":true},{"id":"qf8yylyqnw84-agtl79bz0pxd","text":"Khả năng tùy chỉnh (Customizability)","correct":true},{"id":"4setdhaax8wa-t2l6cqn6i1mj","text":"Tốc độ","correct":false},{"id":"43ai873joded-qhn5p84ol2f2","text":"Phong cách","correct":false}]},"explanation":"Những yếu tố cần cân nhắc khi chọn công cụ bao gồm:\nMục đích và tính năng\nTính dễ sử dụng\nChi phí\nCập nhật và hỗ trợ\nQuyền riêng tư dữ liệu\nBảo mật\nChất lượng\nKhả năng tùy chỉnh\nCác tham số có sẵn để kiểm soát đầu ra."}]
+[
+  {
+    "id": "9kml14xnnna-74cb1ekjxtgn",
+    "number": 17,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Trong giờ khoa học, các em được yêu cầu viết một câu trả lời ngắn cho câu hỏi sau:\n\"Chức năng của hệ thần kinh là gì?\"\nCác em sao chép và dán câu hỏi vào ChatGPT.\nĐiều các em không biết là giáo viên đã gõ \"Abraham Lincoln\" và \"pumpkin pie\" bằng phông chữ trắng ở cuối câu hỏi để học sinh không nhìn thấy các từ. Hai lý do để giáo viên làm như vậy là gì? (Chọn 2)",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "349fupd2hsrl-35mz42l39ioh",
+          "text": "Để đảm bảo học sinh có trách nhiệm tạo ra bài làm chân thực.",
+          "correct": true
+        },
+        {
+          "id": "kx5wg1mgawzi-f2ieb0cilhn8",
+          "text": "Để nhắc nhở học sinh đọc lại bài làm và sửa lỗi chính tả cũng như lỗi ngữ pháp.",
+          "correct": false
+        },
+        {
+          "id": "qpdepumid9ta-kg6xfhql08tg",
+          "text": "Để kiểm tra xem học sinh có sử dụng AI để tạo ra câu trả lời ngắn hay không, điều này sẽ dẫn đến gian lận.",
+          "correct": true
+        },
+        {
+          "id": "6w9hs4f5z7fq-i4ujharwq2nl",
+          "text": "Để giúp học sinh sáng tạo trong các câu trả lời ngắn.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Đây là một cách phát hiện gian lận: nếu học sinh sao chép nguyên câu hỏi vào ChatGPT mà không đọc kỹ, AI có thể vô tình đưa các từ ẩn (Abraham Lincoln, pumpkin pie) vào câu trả lời — giúp giáo viên phát hiện ai đã dùng AI thay vì tự làm bài, qua đó khuyến khích tính chính trực học thuật. Đây không liên quan đến việc sửa lỗi chính tả hay khơi gợi sáng tạo."
+  },
+  {
+    "id": "qcbiftgbesmn-d1bbpoplmk6m",
+    "number": 24,
+    "source": "GenAI",
+    "type": "Matching",
+    "prompt": "Hãy di chuyển từng loại hành vi vi phạm pháp lý (legal infringement) từ danh sách bên trái sang kết quả đầu ra do AI tạo ra (AI-generated output) ở bên phải. Bạn có thể sử dụng mỗi loại hành vi vi phạm một lần, nhiều hơn một lần, hoặc không sử dụng.",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matching",
+      "rows": [
+        {
+          "id": "nzprklgiqzjf-9lsaykfhlpky",
+          "text": "Vi phạm bản quyền (Copyright infringement)",
+          "answerId": "7mrvqethm34k-1rnfqae58rw7"
+        },
+        {
+          "id": "xy0y8a6j6f1n-byns07n7k6g",
+          "text": "Vi phạm quyền sáng chế (Patent right infringement)",
+          "answerId": "fgr34o7zz9jv-jvm373s3m9u"
+        },
+        {
+          "id": "19jillbtpyzg-xt2ejpz2hbep",
+          "text": "Vi phạm quyền nhãn hiệu (Trademark right infringement)",
+          "answerId": "n0op0md9zb0e-mnlpy7880zkg"
+        }
+      ],
+      "options": [
+        {
+          "id": "7mrvqethm34k-1rnfqae58rw7",
+          "text": "Một bản nhạc giống hệt với bản do một nhà soạn nhạc khác tạo ra."
+        },
+        {
+          "id": "fgr34o7zz9jv-jvm373s3m9u",
+          "text": "Các bản vẽ chi tiết và quy trình cho một loại máy ảnh 3D mới, rất giống với những bản được nhóm Hiệp hội Máy ảnh tạo ra."
+        },
+        {
+          "id": "n0op0md9zb0e-mnlpy7880zkg",
+          "text": "Một biểu tượng logo giống hệt với logo đã được đăng ký bởi Tập đoàn Thể thao Mùa Đông."
+        }
+      ]
+    },
+    "explanation": "Mỗi loại vi phạm tương ứng với một loại tài sản trí tuệ khác nhau: bản quyền (copyright) bảo vệ tác phẩm sáng tạo như âm nhạc; bằng sáng chế (patent) bảo vệ quy trình/thiết kế kỹ thuật như bản vẽ máy ảnh; và nhãn hiệu (trademark) bảo vệ biểu tượng nhận diện thương hiệu như logo. AI tạo ra nội dung trùng lặp với các tài sản đã được bảo hộ này sẽ tương ứng vi phạm đúng loại quyền đó."
+  },
+  {
+    "id": "q3cka8nay5dh-6p5y19t6vw89",
+    "number": 29,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Bạn đang đánh giá các câu lệnh (prompts) sau đây để xác định xem chúng có chứa thiên vị tiềm ẩn hay không. Đối với mỗi ví dụ về câu lệnh (prompt), hãy chọn Thiên kiến nếu câu lệnh có chứa thiên vị, hoặc Không thiên kiến nếu đó là một yêu cầu trung lập.",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText24",
+          "text": "Nhấn mạnh hiệu suất (performance) và độ tin cậy (reliability) tốt hơn của các nguồn năng lượng tái tạo khác nhau (năng lượng mặt trời – Solar, gió – Wind, thủy điện – Hydro, và địa nhiệt – Geothermal) so với nhiên liệu hóa thạch (fossil fuels) trong môi trường đô thị. Cân nhắc các yếu tố như sản lượng năng lượng (energy output), tác động môi trường (environmental impact), và khả năng mở rộng (scalability). Cung cấp một bản phân tích cân bằng mà không ưu tiên bất kỳ nguồn năng lượng tái tạo cụ thể nào.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Thiên kiến",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không thiên kiến",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText25",
+          "text": "Phân tích các ưu điểm và nhược điểm của các nguồn năng lượng tái tạo khác nhau (mặt trời, gió, thủy điện và địa nhiệt) trong môi trường đô thị. Tập trung vào các chỉ số như sản lượng năng lượng, chi phí, tác động môi trường, và khả năng mở rộng. Trình bày kết quả một cách khách quan.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Thiên kiến",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Không thiên kiến",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText26",
+          "text": "So sánh tiềm năng của năng lượng mặt trời và năng lượng gió trong việc cách mạng hóa hệ thống cung cấp điện đô thị. Nhấn mạnh lợi ích môi trường vượt trội và tiết kiệm chi phí dài hạn của năng lượng mặt trời, đồng thời đề cập đến những thách thức mà các công trình năng lượng gió phải đối mặt trong các khu vực có mật độ dân cư cao.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Thiên kiến",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không thiên kiến",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Một prompt thiên kiến thường đã định hướng sẵn kết quả nghiêng về một phía ngay trong cách đặt câu hỏi. Câu lệnh 1 yêu cầu 'nhấn mạnh hiệu suất TỐT HƠN' của năng lượng tái tạo dù có thêm câu 'không ưu tiên' ở cuối — về bản chất vẫn đã định hướng kết quả. Câu lệnh 3 công khai nhấn mạnh lợi ích của năng lượng mặt trời trong khi chỉ nêu thách thức của năng lượng gió — rõ ràng thiên kiến. Chỉ câu lệnh 2, yêu cầu phân tích ưu/nhược điểm của tất cả các nguồn một cách khách quan mà không nhấn mạnh nguồn nào, mới thực sự trung lập."
+  },
+  {
+    "id": "20uz6rlsk94z-dlrqhhiq14vf",
+    "number": 31,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Công ty Healthy Eats sử dụng AI để thu thập tên, địa chỉ, số điện thoại và thông tin chi tiết về sức khỏe của khách hàng mua các sản phẩm giảm cân của họ. Ba hậu quả nào sau đây có thể xảy ra nếu tập đoàn này không thực hiện các biện pháp phòng ngừa cần thiết để ngăn mô hình AI Tạo Sinh (Generative AI) được huấn luyện trên dữ liệu này? (Chọn 3)",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "ekmgzan9ahnr-psdrsg216ki6",
+          "text": "Kiện tụng về quyền riêng tư dữ liệu",
+          "correct": true
+        },
+        {
+          "id": "pljzew9xmgz-a0naj7qquzfr",
+          "text": "Thông tin công khai của công ty có thể bị lộ",
+          "correct": false
+        },
+        {
+          "id": "sbt9i8rfhvyx-2iqgkxzeagis",
+          "text": "Sự mất lòng tin của khách hàng",
+          "correct": true
+        },
+        {
+          "id": "xzmqpdpwj1pc-tk3kqxsljk91",
+          "text": "Trộm cắp danh tính của khách hàng",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Khi dữ liệu cá nhân nhạy cảm (sức khoẻ, liên hệ) bị đưa vào huấn luyện AI mà không có biện pháp bảo vệ, hậu quả trực tiếp có thể là bị kiện vì vi phạm quyền riêng tư dữ liệu, khách hàng mất lòng tin vào công ty, và rủi ro thông tin bị rò rỉ dẫn đến trộm cắp danh tính. Rủi ro này liên quan đến dữ liệu KHÁCH HÀNG chứ không phải thông tin công khai của chính công ty."
+  },
+  {
+    "id": "hgiud7iv8xqx-2q796ktwm6qr",
+    "number": 39,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Hai phát biểu nào xác định các rủi ro liên quan đến AI tạo sinh (Generative AI) và việc sử dụng nó? (Chọn 2)",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "nxqqa9freyk0-hufgr9khcqlj",
+          "text": "AI tạo sinh có thể dễ dàng xác định (identify) và chặn (block) nội dung có hại ngay cả khi không có sự can thiệp của con người.",
+          "correct": false
+        },
+        {
+          "id": "zccvh0o5e4jz-6mtr032ejezo",
+          "text": "AI tạo sinh hoạt động tốt mà không cần sự giám sát của con người (human oversight) để đảm bảo rằng nội dung mà nó tạo ra là chính xác.",
+          "correct": false
+        },
+        {
+          "id": "gdmcck7nzghy-u6cjed9yonsz",
+          "text": "Bạn chịu trách nhiệm về nội dung mà bạn tạo ra bằng AI tạo sinh.",
+          "correct": true
+        },
+        {
+          "id": "zging9d1qrdo-qk40d9gqrad9",
+          "text": "Việc tạo ra nội dung gây hại bằng AI tạo sinh có thể dẫn đến vụ kiện dân sự (civil actions) hoặc truy tố hình sự (criminal actions) chống lại bạn.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Người dùng luôn chịu trách nhiệm pháp lý về nội dung mình tạo ra bằng AI tạo sinh, kể cả khi công cụ tự động sinh ra nội dung đó — nếu nội dung gây hại, người dùng có thể bị kiện dân sự hoặc truy tố hình sự. Hai phát biểu còn lại phóng đại khả năng của AI (tự phát hiện/chặn nội dung có hại, hoặc hoạt động chính xác mà không cần giám sát con người) — trên thực tế AI tạo sinh luôn cần sự giám sát của con người."
+  },
+  {
+    "id": "2gkg0qepvj5v-2jods758tsaa",
+    "number": 42,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Bạn là một thực tập sinh làm việc cho một hãng luật lớn tại khu tài chính ở San Francisco. Một đối tác giao cho bạn một hồ sơ và yêu cầu bạn nghiên cứu để tư vấn cho một khách hàng doanh nghiệp về các luật cụ thể cần xem xét trong kế hoạch sử dụng AI tạo sinh (Generative AI) cho quy trình tuyển dụng của công ty. Ba loại luật nào liên quan đến nghiên cứu này? (Chọn 3)",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "j286odwvbsv-alhygab035",
+          "text": "Luật bất động sản (Real property laws)",
+          "correct": false
+        },
+        {
+          "id": "2x2a71d8cvuy-myc0epvlgbhf",
+          "text": "Luật sở hữu trí tuệ (Intellectual property laws)",
+          "correct": true
+        },
+        {
+          "id": "928q7ny3vtrj-q0z6bh75ujeb",
+          "text": "Luật bảo mật dữ liệu (Data privacy laws)",
+          "correct": true
+        },
+        {
+          "id": "nsugbl7p9c81-hen59455i8tq",
+          "text": "Luật lao động/việc làm (Employment laws)",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Sử dụng AI tạo sinh trong quy trình tuyển dụng liên quan trực tiếp đến: luật sở hữu trí tuệ (dữ liệu/mô hình AI dùng để huấn luyện), luật bảo mật dữ liệu (thông tin cá nhân ứng viên), và luật lao động (quy định công bằng trong tuyển dụng, chống phân biệt đối xử). Luật bất động sản không liên quan đến quy trình tuyển dụng nhân sự."
+  },
+  {
+    "id": "e8vo8hokw8a0-k6d8rnmezhy8",
+    "number": 44,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Bạn cần tạo một bản tóm tắt không thiên kiến (unbiased) về dự án dỡ bỏ đập gần sông Smith.\nVới từng câu lệnh (prompt) dưới đây, hãy chọn Thiên kiến nếu lời nhắc thể hiện sự thiên lệch, hoặc Không thiên kiến nếu lời nhắc mang tính cân bằng, trung lập.",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText31",
+          "text": "Hãy tạo bản tóm tắt về tác động của việc dỡ bỏ đập tiềm năng gần sông Smith và đề xuất phục hồi hệ sinh thái như đã nêu bởi công ty tiện ích (utility company).",
+          "options": [
+            {
+              "id": "0",
+              "text": "Thiên kiến",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không thiên kiến",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText32",
+          "text": "Tạo bản tóm tắt về các khuyến nghị rút ra từ nghiên cứu độc lập của bên thứ ba về việc dỡ bỏ đập, nhấn mạnh các bước hành động và chiến lược khả thi có thể áp dụng cho sông Smith.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Thiên kiến",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Không thiên kiến",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText33",
+          "text": "Tạo bản tóm tắt dài 150 từ về các phát hiện chính liên quan đến việc dỡ bỏ đập, làm nổi bật các tác động đáng kể nhất đối với hệ sinh thái gần sông Smith.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Thiên kiến",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Không thiên kiến",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Một bản tóm tắt thiên kiến khi nó chỉ dựa vào quan điểm của MỘT bên có lợi ích liên quan — như 'công ty tiện ích' (đơn vị có thể hưởng lợi từ việc dỡ đập). Ngược lại, dựa trên nghiên cứu độc lập của bên thứ ba, hoặc chỉ tổng hợp phát hiện chính một cách trung lập mà không thiên về nguồn nào, đều là cách tiếp cận cân bằng, không thiên kiến."
+  },
+  {
+    "id": "u8lypka8ws0g-hddomcoqa1kz",
+    "number": 46,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Với mỗi phát biểu sau đây về thiên kiến (bias) trong AI, hãy chọn Đúng hoặc Sai.",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText34",
+          "text": "Mô hình tạo hình ảnh bằng AI được huấn luyện trên dữ liệu có thiên lệch có thể tạo ra hình ảnh bị thiên lệch.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText35",
+          "text": "ChatGPT luôn loại bỏ hoàn toàn thiên lệch trong các câu trả lời của mình.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText36",
+          "text": "Con người nên xem xét nội dung do AI tạo ra để phát hiện và kiểm tra thiên lệch.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Thiên kiến trong dữ liệu huấn luyện sẽ phản ánh trực tiếp vào đầu ra của mô hình — đây là nguyên lý cơ bản của bias trong AI, nên phát biểu 1 Đúng. Không có mô hình AI nào (kể cả ChatGPT) loại bỏ HOÀN TOÀN thiên lệch, nên phát biểu 2 Sai. Vì vậy, con người luôn cần rà soát nội dung AI tạo ra để phát hiện thiên lệch — phát biểu 3 Đúng."
+  },
+  {
+    "id": "s728a3ex65f-yyzodgc2d5zv",
+    "number": 48,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Lớp bạn đang thảo luận về AI và những đóng góp của nó cho thế giới.\nHơn một nửa lớp cho rằng AI có tác động tích cực, trong khi phần còn lại cho rằng AI gây tác động tiêu cực.\nCả lớp lập danh sách các tình huống minh họa cho hai loại tác động này. Với mỗi tình huống dưới đây, hãy chọn Tích cực hoặc Tiêu cực.",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText37",
+          "text": "Sara và bạn thân Jane cãi nhau ở trường. Về nhà, Sara dùng AI để hiểu rõ hơn về quan điểm của Jane.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Tích cực",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Tiêu cực",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText38",
+          "text": "Trong cuộc tranh cử, một ứng viên dùng deepfake để khiến đối thủ trông như đang nói những điều họ chưa từng nói.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Tích cực",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Tiêu cực",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText39",
+          "text": "Sara dùng AI tạo sinh để xem chủ đề đang thịnh hành và lên danh sách ý tưởng bài viết blog.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Tích cực",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Tiêu cực",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Tác động tích cực hay tiêu cực phụ thuộc vào MỤC ĐÍCH sử dụng AI: dùng AI để thấu hiểu người khác hoặc hỗ trợ lên ý tưởng sáng tạo là tích cực; nhưng dùng deepfake để tạo thông tin sai lệch nhằm thao túng nhận thức công chúng (như trong bầu cử) là tiêu cực, vì gây hại đến sự thật và niềm tin xã hội."
+  },
+  {
+    "id": "o25ejdeiwwra-poqgaxkkzo5x",
+    "number": 66,
+    "source": "GenAI",
+    "type": "Matching",
+    "prompt": "Công ty Pro phát triển các phương tiện tự hành. Công ty muốn những phương tiện này sử dụng AI tạo sinh để dẫn đường. Bạn cần xác định các tình huống nơi thiên kiến (bias) có thể xảy ra và giai đoạn mà chúng xảy ra. Hãy ghép từng giai đoạn ở danh sách bên trái với tình huống tương ứng ở bên phải.",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matching",
+      "rows": [
+        {
+          "id": "2888q9g7tj8s-30dtq2qu696l",
+          "text": "Gán nhãn dữ liệu (Data labeling)",
+          "answerId": "rt4pz2gazfro-7ccmshkduwpd"
+        },
+        {
+          "id": "9ffuo5uv58mn-kvlr2iai0gm",
+          "text": "Huấn luyện mô hình (Model training)",
+          "answerId": "oagc5sjm0u3h-cxpkyz9dgtbt"
+        },
+        {
+          "id": "9y63yg2s93k0-3tnjbup6gxgw",
+          "text": "Triển khai (Deployment)",
+          "answerId": "5qj0evt3nwcp-d1w2w7tht6lj"
+        },
+        {
+          "id": "kmauryn4r7il-blcccnfg7j1r",
+          "text": "Thu thập dữ liệu (Data collection)",
+          "answerId": "ptsno1cd5wzy-y30pg15e5nl"
+        }
+      ],
+      "options": [
+        {
+          "id": "rt4pz2gazfro-7ccmshkduwpd",
+          "text": "Dữ liệu bao gồm người đi bộ được gán trọng số khác nhau dựa trên chiều cao."
+        },
+        {
+          "id": "oagc5sjm0u3h-cxpkyz9dgtbt",
+          "text": "Chỉ hình ảnh biển báo dừng và đèn giao thông được mã hóa (tokenized)."
+        },
+        {
+          "id": "5qj0evt3nwcp-d1w2w7tht6lj",
+          "text": "Phương tiện được bán khắp nơi nhưng chỉ được thử nghiệm trong thành phố của bạn."
+        },
+        {
+          "id": "ptsno1cd5wzy-y30pg15e5nl",
+          "text": "Camera và cảm biến chỉ ghi lại hình ảnh và âm thanh vào ban ngày."
+        }
+      ]
+    },
+    "explanation": "Mỗi giai đoạn của vòng đời AI có một dạng thiên kiến đặc trưng: thu thập dữ liệu thiếu đại diện (chỉ ghi hình ban ngày) xảy ra ở bước Thu thập dữ liệu; gán trọng số không công bằng cho người đi bộ xảy ra khi Gán nhãn dữ liệu; chỉ mã hoá một phần loại vật thể (biển báo, đèn) khiến mô hình thiếu toàn diện xảy ra ở bước Huấn luyện mô hình; và việc bán xe ở nơi chưa được thử nghiệm thực tế là rủi ro thiên kiến khi Triển khai."
+  },
+  {
+    "id": "c62be993xope-2st8bc3r3q69",
+    "number": 103,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Một số hệ quả pháp lý khi sử dụng nội dung được tạo ra bởi AI tạo sinh một cách không phù hợp là gì? (Chọn hai)",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "2g6gzadwcx1w-f6nresx6s5at",
+          "text": "Khiếu nại về tội phỉ báng / xúc phạm danh dự.",
+          "correct": true
+        },
+        {
+          "id": "eauitj855v0p-ex3yj1qab995",
+          "text": "Vi phạm bản quyền.",
+          "correct": true
+        },
+        {
+          "id": "w620ljti12mn-c30ioc3okchp",
+          "text": "Thiên vị.",
+          "correct": false
+        },
+        {
+          "id": "qyhqjs4l6bct-ql8c3gcdebh5",
+          "text": "Mã hóa.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Các hệ quả pháp lý của việc sử dụng nội dung được tạo một cách không phù hợp bao gồm các khiếu nại về tội xúc phạm danh dự và vi phạm bản quyền.\nSự thiên vị dẫn đến việc có thể sử dụng nội dung được tạo ra không phù hợp.\nMã hóa dữ liệu sẽ xóa thông tin cá nhân khỏi dữ liệu để không dẫn đến việc sử dụng dữ liệu được tạo ra không phù hợp."
+  },
+  {
+    "id": "zgop1jyhqgwy-b9c22y47fu9k",
+    "number": 120,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Ba tác động tích cực nào mà AI Tạo sinh mang lại cho xã hội? (chọn 3)",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "owau4emgvgec-4fbw21w24dn2",
+          "text": "Giúp vượt qua rào cản ngôn ngữ.",
+          "correct": true
+        },
+        {
+          "id": "eej7cqg1g1by-whww1t75r19s",
+          "text": "Khơi nguồn sáng tạo.",
+          "correct": true
+        },
+        {
+          "id": "xakih27csgzg-4kzkxuxfxpez",
+          "text": "Giúp thực hiện các nhiệm vụ cuộc sống hàng ngày hiệu quả hơn.",
+          "correct": true
+        },
+        {
+          "id": "ivemrqc0s36g-y6kc05iv92xl",
+          "text": "Xây dựng an toàn tài chính.",
+          "correct": false
+        },
+        {
+          "id": "vxsrxggfveyb-nua4iflwyo9n",
+          "text": "Mang lại sự bình đẳng trong giáo dục.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Các tác động tích cực của Trí tuệ Nhân tạo Tạo sinh (Generative AI) mang lại cho xã hội:\nTrí tuệ Nhân tạo Tạo sinh có thể giúp chúng ta thực hiện công việc hiệu quả hơn.\nGiúp chúng ta giao tiếp tốt hơn, đặc biệt là qua các ngôn ngữ khác nhau.\nGiúp chúng ta học tập hiệu quả hơn.\nTạo ra các ý tưởng để khơi nguồn sáng tạo; động não.\nGiúp chúng ta thực hiện các nhiệm vụ cuộc sống hàng ngày hiệu quả hơn như: thực đơn, công thức nấu ăn, danh sách mua sắm, tóm tắt các tin nhắn dài từ bạn bè và gia đình.\nPhân tích các mô hình và trình bày chúng dưới dạng cơ hội.\nTạo ra việc làm - chúng chỉ là những công việc khác đi."
+  },
+  {
+    "id": "wtkryqv862u9-g5berjhpahy6",
+    "number": 124,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi nhận định liên quan đến Dữ liệu định danh cá nhân (PII) và quyền riêng tư dữ liệu trong AI tạo sinh, hãy chỉ ra Yes nếu nhận định đó là đúng và No nếu nhận định đó là sai.",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText98",
+          "text": "Che dấu dữ liệu tĩnh (Static data masks) thay đổi vĩnh viễn dữ liệu được sử dụng trong một mô hình AI.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText99",
+          "text": "Dữ liệu định danh cá nhân (PII) bị để lại trong AI tạo sinh có thể gây ra hành vi trộm cắp danh tính.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText100",
+          "text": "Mã hóa bằng token sử dụng tên giả để che giấu dữ liệu.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đúng:\nChe dấu dữ liệu tĩnh (Static data masks) thay đổi vĩnh viễn dữ liệu được sử dụng trong một mô hình AI.\nDữ liệu định danh cá nhân (PII) bị để lại trong AI tạo sinh có thể gây ra hành vi trộm cắp danh tính.\nSai:\nMã hóa bằng token sử dụng tên giả để che giấu dữ liệu.\nGiải thích:\nMã hóa bằng token sử dụng ký hiệu để che giấu dữ liệu. Giả danh sử dụng tên giả để che giấu dữ liệu."
+  },
+  {
+    "id": "rt1idpqw1hss-8nxzjtxi72z6",
+    "number": 149,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi tuyên bố sau đây liên quan đến quyền riêng tư dữ liệu và AI tạo sinh, hãy chọn Yes nếu tuyên bố đó đúng và No nếu nó sai.",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText144",
+          "text": "Nội dung do con người tạo có thể được sử dụng để đào tạo mô hình AI.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText145",
+          "text": "Mọi người có thể chọn không sử dụng dữ liệu của họ trong mô hình AI.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText146",
+          "text": "Các công cụ AI tạo sinh trả về dữ liệu cá nhân giống như các trang web có về mọi người.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Yes:\nNội dung do con người tạo có thể được sử dụng để đào tạo mô hình AI.\nMọi người có thể chọn không sử dụng dữ liệu của họ trong mô hình AI.\nNo:\nCác công cụ AI tạo sinh trả về dữ liệu cá nhân giống như các trang web có về mọi người.\nGiải thích:\nCác công cụ AI tạo sinh không trả về dữ liệu cá nhân của mọi người trừ khi dữ liệu đó được nhập vào mô hình AI."
+  },
+  {
+    "id": "fvnqlu9fe5dv-5anz1mqcruv3",
+    "number": 164,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Khi chọn một công cụ AI, bạn cần xem xét những yếu tố nào? (Chọn 3 yếu tố)",
+    "images": [],
+    "difficulty": "hard",
+    "topic": "responsible",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "im50tnwszdoj-so6ukx1e1817",
+          "text": "Dễ sử dụng",
+          "correct": true
+        },
+        {
+          "id": "oxt148hymdu4-tlon1g2472vr",
+          "text": "Chi phí",
+          "correct": true
+        },
+        {
+          "id": "qf8yylyqnw84-agtl79bz0pxd",
+          "text": "Khả năng tùy chỉnh (Customizability)",
+          "correct": true
+        },
+        {
+          "id": "4setdhaax8wa-t2l6cqn6i1mj",
+          "text": "Tốc độ",
+          "correct": false
+        },
+        {
+          "id": "43ai873joded-qhn5p84ol2f2",
+          "text": "Phong cách",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Những yếu tố cần cân nhắc khi chọn công cụ bao gồm:\nMục đích và tính năng\nTính dễ sử dụng\nChi phí\nCập nhật và hỗ trợ\nQuyền riêng tư dữ liệu\nBảo mật\nChất lượng\nKhả năng tùy chỉnh\nCác tham số có sẵn để kiểm soát đầu ra."
+  }
+]

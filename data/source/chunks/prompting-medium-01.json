@@ -1,1 +1,975 @@
-[{"id":"ephrzp30jarb-lm26s52ivryw","number":3,"source":"GenAI","type":"MultipleChoiceText","prompt":"Với mỗi câu lệnh được đưa ra cho AI tạo sinh, hãy chọn Có nếu AI đang thực hiện chuyển đổi hình ảnh hoặc Không nếu không.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText1","text":"Khám phá định dạng tập tin của logo.","options":[{"id":"0","text":"Có","correct":false},{"id":"1","text":"Không","correct":true}]},{"id":"qmMultipleChoiceText2","text":"Chuyển đổi bản phác thảo ngôi nhà thành hình ảnh thực tế.","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]},{"id":"qmMultipleChoiceText3","text":"Thay đổi siêu dữ liệu của ảnh kỳ nghỉ để thay đổi vị trí và ngày chụp.","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]}]},"explanation":"Chuyển đổi hình ảnh là khi AI thao tác hoặc biến đổi một hình ảnh có sẵn — biến bản phác thảo thành ảnh thực tế, hay chỉnh sửa siêu dữ liệu của ảnh, đều là các hình thức chuyển đổi ảnh. Ngược lại, chỉ hỏi thông tin về định dạng tệp của logo không làm thay đổi hay tạo ra hình ảnh nào, nên không phải là chuyển đổi hình ảnh."},{"id":"nwo5u8ci4u6a-82ssriqau4h5","number":6,"source":"GenAI","type":"MultipleChoiceText","prompt":"Bạn cần sử dụng AI để tạo video đánh giá sản phẩm tích cực cho máy đánh trứng (kitchen mixer) Healthy Eats mới và đăng lên kênh nền tảng video theo chủ đề của mình. Với mỗi câu, hãy chọn Đúng nếu đó là câu lệnh hiệu quả hoặc Sai nếu đó là câu lệnh không hiệu quả.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText4","text":"Tạo video chi tiết dài 5 phút về máy đánh trứng Healthy Eats mới. Video nên bao gồm phần giới thiệu, đề cập đến tính dễ sử dụng và vệ sinh, và phần kết luận khuyến khích người xem mua thiết bị nhà bếp.","options":[{"id":"0","text":"Đúng","correct":true},{"id":"1","text":"Sai","correct":false}]},{"id":"qmMultipleChoiceText5","text":"Tạo video về máy đánh trứng mới. Video nên thảo luận về các công dụng tiềm năng và khuyến khích người mua tiềm năng mua máy đánh trứng.","options":[{"id":"0","text":"Đúng","correct":false},{"id":"1","text":"Sai","correct":true}]},{"id":"qmMultipleChoiceText6","text":"Tạo video đánh giá khách quan về máy đánh trứng.","options":[{"id":"0","text":"Đúng","correct":false},{"id":"1","text":"Sai","correct":true}]}]},"explanation":"Mục tiêu là một video ĐÁNH GIÁ TÍCH CỰC nhằm quảng bá sản phẩm, nên câu lệnh hiệu quả cần có cấu trúc rõ ràng (giới thiệu – nội dung cụ thể như dễ dùng/vệ sinh – kêu gọi mua hàng). Câu lệnh chỉ nói chung chung 'thảo luận công dụng' thiếu chi tiết định hướng nội dung, còn yêu cầu một đánh giá 'khách quan' lại đi ngược mục tiêu quảng cáo tích cực đã đề ra."},{"id":"5wnr89bxao6y-w8xnxc5l70rq","number":8,"source":"GenAI","type":"MultipleResponse","prompt":"Bạn vừa tham dự một cuộc họp tại nơi làm việc với nhóm của mình. Bây giờ bạn cần tạo một bản tóm tắt ngắn gọn, tóm tắt từng điểm chính đã được thảo luận. Bạn cần đảm bảo rằng tất cả thông tin quan trọng đều được đưa vào. Bạn nên sử dụng hai gợi ý nào để tạo bản tóm tắt này? (Chọn 2)","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"multiple","options":[{"id":"joji5uf4a1g4-2rb4y3we71qb","text":"Liệt kê tất cả các mục hành động và nhiệm vụ tiếp theo từ cuộc họp trước của tôi.","correct":false},{"id":"7nucx7xta8rf-nl2kx18s3a7w","text":"Tóm tắt ngắn gọn mục đích của cuộc họp.","correct":true},{"id":"5pdveuyniart-c74wj0ifn6yu","text":"Chỉ trích xuất thông tin và quyết định thiết yếu từ cuộc họp này.","correct":true},{"id":"rq0ijytyo2g4-yv6mali502f0","text":"Định dạng biên bản cuộc họp này.","correct":false}]},"explanation":"Yêu cầu là một bản tóm tắt ngắn gọn nhưng đầy đủ thông tin quan trọng — nên cần nêu mục đích cuộc họp và trích xuất đúng các quyết định/thông tin thiết yếu. Liệt kê mục hành động 'từ cuộc họp trước' là sai chủ thể (cuộc họp khác), còn 'định dạng biên bản' chỉ là trình bày hình thức, không đảm bảo nội dung được tóm tắt đầy đủ."},{"id":"3jxlusm2fw33-96w4m9jpopoq","number":14,"source":"GenAI","type":"MultipleChoiceText","prompt":"Với tư cách là quản trị viên trung tâm khảo thí, bạn đã được hỏi về những nguy hiểm khi tải cơ sở dữ liệu lên ChatGPT để phân tích. Dữ liệu này bao gồm số tài khoản, tên, mã PIN và điểm số. Chọn câu trả lời đúng cho mỗi câu hỏi.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText7","text":"ChatGPT sẽ ghi nhớ tài khoản và mã PIN của thành viên trong bao lâu?","options":[{"id":"0","text":"Nó ghi nhớ trong toàn bộ phiên của bạn.","correct":true},{"id":"1","text":"Nó bỏ qua dữ liệu cá nhân như số tài khoản và mã PIN.","correct":false},{"id":"2","text":"Nó ghi nhớ chúng mãi mãi.","correct":false}]},{"id":"qmMultipleChoiceText8","text":"ChatGPT có thể liên kết địa chỉ IP của bạn với dữ liệu này trong phiên sau không?","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]},{"id":"qmMultipleChoiceText9","text":"Điều gì sẽ xảy ra nếu mã PIN của người dự thi bị xâm phạm do tấn công mạng trong phiên ChatGPT?","options":[{"id":"0","text":"Chat GPT phải chịu trách nhiệm.","correct":false},{"id":"1","text":"Bạn và công ty của bạn phải chịu trách nhiệm.","correct":true}]}]},"explanation":"ChatGPT chỉ ghi nhớ thông tin trong phạm vi một phiên trò chuyện và vẫn có thể liên kết dữ liệu đó với địa chỉ IP của bạn trong phiên — nghĩa là dữ liệu nhạy cảm (số tài khoản, mã PIN) vẫn tồn tại và có nguy cơ bị lộ suốt phiên làm việc, dù không được ghi nhớ vĩnh viễn. Quan trọng nhất: nếu xảy ra sự cố bảo mật với dữ liệu bạn chủ động tải lên, chính bạn và tổ chức của bạn phải chịu trách nhiệm — không phải nhà cung cấp công cụ AI."},{"id":"sjcalyc7eoly-duni8u4h5qe1","number":18,"source":"GenAI","type":"MultipleChoiceText","prompt":"Với mỗi kịch bản của câu lệnh, hãy chọn Có thể nếu kết quả khả thi hoặc Không thể nếu kết quả không khả thi.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText13","text":"Bạn đưa ra lời nhắc tạo hình ảnh bao gồm hướng dẫn loại bỏ màu đỏ. AI tạo ra một hình ảnh đen trắng.","options":[{"id":"0","text":"Có thể","correct":true},{"id":"1","text":"Không thể","correct":false}]},{"id":"qmMultipleChoiceText14","text":"Bạn đưa ra lời nhắc có cấu trúc tốt, bao gồm thông tin công khai về sản phẩm, để tạo bài thuyết trình bán hàng. Kết quả bao gồm thông tin bí mật chưa được công bố của công ty.","options":[{"id":"0","text":"Có thể","correct":false},{"id":"1","text":"Không thể","correct":true}]},{"id":"qmMultipleChoiceText15","text":"Bạn tạo lời nhắc để tạo mặt đồng hồ và chỉ định thời gian đồng hồ sẽ hiển thị. Bạn đưa ra lời nhắc nhiều lần, nhưng thời gian hiển thị trên đồng hồ không phải lúc nào cũng giống nhau.","options":[{"id":"0","text":"Có thể","correct":true},{"id":"1","text":"Không thể","correct":false}]}]},"explanation":"Xét tính khả thi của từng kết quả: AI hiểu 'loại bỏ màu đỏ' có thể suy diễn thành loại bỏ toàn bộ màu sắc (ra ảnh đen trắng) — có thể xảy ra. Việc AI tự tạo ra thông tin bí mật chưa từng công bố trong khi prompt chỉ chứa dữ liệu công khai là không khả thi về mặt logic (AI không có thông tin đó để đưa vào). Còn việc AI tạo hình ảnh mặt đồng hồ với giờ hiển thị không nhất quán giữa các lần chạy là hạn chế được biết đến của AI tạo sinh (khó tái tạo chính xác chi tiết như số/giờ) — hoàn toàn có thể xảy ra."},{"id":"3ho6fqlok17q-d65etl5obx3b","number":19,"source":"GenAI","type":"MultipleResponse","prompt":"Bạn đang tạo một blog ẩm thực để giới thiệu kỹ năng nấu ăn của mình. Bạn muốn sử dụng AI để tạo bài đăng đầu tiên cho blog. Hai câu lệnh nào sau đây sẽ tạo ra nội dung có thể được dùng để tạo blog của bạn? (Chọn 2)","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"multiple","options":[{"id":"h6szcayz93ip-tsbqnu2nzo55","text":"Chia sẻ mẹo chụp ảnh món ăn hấp dẫn. Thảo luận về ánh sáng, góc chụp và đạo cụ giúp tăng tính thẩm mỹ cho món ăn.","correct":false},{"id":"2qa68fghma84-oaslik7678b6","text":"Viết một bài đăng giới thiệu cho blog mô tả niềm đam mê ẩm thực của tôi và điều đã truyền cảm hứng cho tôi bắt đầu blog này. Bao gồm món ăn và phong cách nấu ăn yêu thích của tôi.","correct":true},{"id":"ekxdjd2d8lgl-8qezbfntgfyh","text":"Chia sẻ một công thức chi tiết với hướng dẫn từng bước và hình ảnh sinh động làm nổi bật bất kỳ nguyên liệu hoặc kỹ thuật nấu ăn độc đáo nào được sử dụng.","correct":true},{"id":"gbfdk6lyr04d-fne1kcb1dfh1","text":"Ghi lại một chuyến tham quan ẩm thực mà mọi người có thể thực hiện ở thành phố của tôi. Mô tả các món đặc sản vùng miền và hương vị mà thành phố nổi tiếng.","correct":false}]},"explanation":"Bài đăng ĐẦU TIÊN cho một blog ẩm thực cần giới thiệu bản thân/blog hoặc cung cấp nội dung cốt lõi có giá trị như công thức nấu ăn chi tiết — hai lựa chọn này trực tiếp tạo ra nội dung bài viết hoàn chỉnh. 'Mẹo chụp ảnh món ăn' và 'ghi lại tour ẩm thực thành phố' là các ý tưởng chủ đề phụ, không phải yêu cầu tạo ra bài đăng cụ thể."},{"id":"87la5flbly24-w4ovyq1plndv","number":27,"source":"GenAI","type":"MultipleChoiceText","prompt":"Bạn đang tạo một thông báo dịch vụ công cộng cho trường trung học của mình nhằm khuyến khích việc rửa tay thường xuyên.\nVới mỗi phát biểu dưới đây, chọn Có nếu bạn nên thực hiện khi tạo câu lệnh (prompt) của bạn, hoặc Không nếu bạn không nên.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText19","text":"Khi cần đến các cảnh, nhân vật hoặc hành động cụ thể, hãy cung cấp mô tả toàn diện về cả mặt hình ảnh và nội dung tường thuật (narrative).","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]},{"id":"qmMultipleChoiceText20","text":"Xác định rõ các yêu cầu (requirements) của bạn, chẳng hạn như loại video, đối tượng mục tiêu và các điểm chính (key points).","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]},{"id":"qmMultipleChoiceText21","text":"Bao gồm thông tin nền chi tiết (background information), dữ liệu (data), giọng điệu (tone) và phong cách (style) liên quan đến video.","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]},{"id":"qmMultipleChoiceText22","text":"Giả định rằng hệ thống AI hiểu được bối cảnh điển hình của dự án, từ đó giảm nhu cầu cung cấp lời giải thích chi tiết.","options":[{"id":"0","text":"Có","correct":false},{"id":"1","text":"Không","correct":true}]},{"id":"qmMultipleChoiceText23","text":"Sử dụng ngôn ngữ đơn giản và rõ ràng để giảm thiểu hiểu nhầm.","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]}]},"explanation":"Một prompt chất lượng cao cần càng cụ thể càng tốt: mô tả đầy đủ cảnh/nhân vật, nêu rõ yêu cầu (đối tượng, loại video), cung cấp bối cảnh/giọng điệu/phong cách, và dùng ngôn ngữ đơn giản dễ hiểu — đây đều là thực hành NÊN làm. Ngược lại, giả định AI 'tự hiểu' bối cảnh mà không cần giải thích là một sai lầm phổ biến, dễ khiến kết quả lệch khỏi mong muốn — vì vậy đây là điều KHÔNG nên làm."},{"id":"pblc49miu4c1-9o4kn9ci3woc","number":48,"source":"GenAI","type":"MultipleResponse","prompt":"Hai phát biểu nào sau đây về tác động của AI tạo sinh (Generative AI) trong thực tế? (Chọn 2)","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"multiple","options":[{"id":"mn1javow1eem-rr6wfeb11ogb","text":"AI tạo sinh hỗ trợ tư duy phân kỳ (divergent thinking — tức là giúp tạo ra nhiều ý tưởng mới, đa hướng).","correct":true},{"id":"89ek90o77atp-wu8efa2zq5m2","text":"AI tạo sinh giúp nhân viên tiết kiệm thời gian và tăng năng suất làm việc.","correct":true},{"id":"slplnv1n8gei-we7u2v436m1u","text":"AI tạo sinh đã làm giảm nhu cầu sáng tạo của con người trong các lĩnh vực nghệ thuật.","correct":false},{"id":"y6krw5l7l3su-y8tww4dippp4","text":"AI tạo sinh đã làm tăng thời gian sử dụng màn hình trung bình của mỗi người thêm 5 giờ mỗi ngày.","correct":false}]},"explanation":"Hai tác động thực tế được ghi nhận của AI tạo sinh là: giúp tạo ra nhiều ý tưởng đa dạng (tư duy phân kỳ) và giúp con người tiết kiệm thời gian, tăng năng suất công việc. Ngược lại, không có bằng chứng cho thấy AI tạo sinh làm giảm nhu cầu sáng tạo nghệ thuật của con người hay khiến thời gian dùng màn hình tăng thêm chính xác 5 giờ/ngày — đây là các phát biểu cường điệu, không có cơ sở."},{"id":"522j61hdta48-19jc1vybcopy","number":52,"source":"GenAI","type":"MultipleResponse","prompt":"Hai câu lệnh (prompts) nào sau đây yêu cầu AI tóm tắt nội dung có sẵn?","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"multiple","options":[{"id":"x2ss6wzavucu-cla9kxnjuycp","text":"Những điều thú vị nào bạn có thể làm trong kỳ nghỉ hai tuần ở Miami?","correct":true},{"id":"j6gojxh1ltqg-v6ezd0aot9yz","text":"Tóm tắt cốt truyện của tác phẩm \"Chúa tể những chiếc nhẫn\" của Tolkien trong 500 từ.","correct":true},{"id":"mjqdc2tznx76-hedh7zys11p1","text":"Viết một bài thơ về chú thỏ phép thuật mặc áo gi-lê đỏ.","correct":false},{"id":"k3zc8qkjljsl-f4trs1k60zez","text":"Tạo chương trình Python hỏi ngày sinh của bạn và cho biết bạn bao nhiêu tuổi.","correct":false}]},"explanation":"Tóm tắt cốt truyện 'Chúa tể những chiếc nhẫn' trong 500 từ là yêu cầu rút gọn một nội dung đã có sẵn — đúng nghĩa tóm tắt. Ngược lại, viết một bài thơ hay tạo chương trình Python đều là yêu cầu AI sáng tác nội dung hoàn toàn mới, không phải tóm tắt nội dung có sẵn."},{"id":"x876uokkyxw7-s8152wjviu79","number":54,"source":"GenAI","type":"MultipleResponse","prompt":"(trùng câu 48) Hai phát biểu nào sau đây về tác động của AI tạo sinh (Generative AI) trong thực tế? (Chọn 2)","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"multiple","options":[{"id":"mn1javow1eem-rr6wfeb11ogb","text":"AI tạo sinh hỗ trợ tư duy phân kỳ (divergent thinking — tức là giúp tạo ra nhiều ý tưởng mới, đa hướng).","correct":true},{"id":"89ek90o77atp-wu8efa2zq5m2","text":"AI tạo sinh giúp nhân viên tiết kiệm thời gian và tăng năng suất làm việc.","correct":true},{"id":"slplnv1n8gei-we7u2v436m1u","text":"AI tạo sinh đã làm giảm nhu cầu sáng tạo của con người trong các lĩnh vực nghệ thuật.","correct":false},{"id":"y6krw5l7l3su-y8tww4dippp4","text":"AI tạo sinh đã làm tăng thời gian sử dụng màn hình trung bình của mỗi người thêm 5 giờ mỗi ngày.","correct":false}]},"explanation":"Hai tác động thực tế được ghi nhận của AI tạo sinh là: giúp tạo ra nhiều ý tưởng đa dạng (tư duy phân kỳ) và giúp con người tiết kiệm thời gian, tăng năng suất công việc. Ngược lại, không có bằng chứng cho thấy AI tạo sinh làm giảm nhu cầu sáng tạo nghệ thuật của con người hay khiến thời gian dùng màn hình tăng thêm chính xác 5 giờ/ngày — đây là các phát biểu cường điệu, không có cơ sở."},{"id":"oubhw1wmxoq3-k56dt4ftsk9e","number":58,"source":"GenAI","type":"MultipleChoiceText","prompt":"Với mỗi phát biểu sau đây về hạn chế của AI tạo sinh (Generative AI), hãy chọn Đúng hoặc Sai","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText47","text":"Bạn có thể cho rằng mọi thông tin mật mà bạn nhập vào GPT hoặc Copilot sẽ được loại trừ khỏi dữ liệu huấn luyện.","options":[{"id":"0","text":"Đúng","correct":false},{"id":"1","text":"Sai","correct":true}]},{"id":"qmMultipleChoiceText48","text":"Hiện đã có các tiêu chuẩn được công nhận về cách sử dụng đầu ra của AI tạo sinh trong ngành công nghiệp.","options":[{"id":"0","text":"Đúng","correct":false},{"id":"1","text":"Sai","correct":true}]},{"id":"qmMultipleChoiceText49","text":"Kết quả do AI tạo sinh cung cấp cần được kiểm tra cẩn thận vì các công cụ này thường \"bịa ra\" thông tin.","options":[{"id":"0","text":"Đúng","correct":true},{"id":"1","text":"Sai","correct":false}]}]},"explanation":"Trên thực tế, không có gì đảm bảo thông tin mật bạn nhập vào công cụ AI (như GPT, Copilot) sẽ luôn được loại trừ khỏi dữ liệu huấn luyện — nên phát biểu ngược lại là Sai. Ngành công nghiệp cũng chưa có bộ tiêu chuẩn thống nhất, được công nhận rộng rãi về việc sử dụng đầu ra AI tạo sinh — nên phát biểu đó cũng Sai. Trong khi đó, AI tạo sinh có thể 'bịa' ra thông tin sai (hallucination) là hạn chế đã được ghi nhận rộng rãi, nên luôn cần kiểm tra lại kết quả — phát biểu này Đúng."},{"id":"zcjft5yuv06l-sbrbqjcwk50h","number":61,"source":"GenAI","type":"MultipleChoiceText","prompt":"Bạn cần tạo một video có hình đại diện khỉ hoạt hình thể hiện một kịch bản được cung cấp sẵn.\nĐối với mỗi phát biểu dưới đây, hãy chọn Có nếu lời nhắc đó sẽ giúp bạn đạt được mục tiêu, hoặc Không nếu nó sẽ không giúp.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText50","text":"Tạo một video dài 45 giây, trong đó một con khỉ trong không gian giải thích một khái niệm về không gian phức tạp dựa trên kịch bản đã cho.","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]},{"id":"qmMultipleChoiceText51","text":"Tạo một video dài 45 giây, sử dụng công nghệ hoạt hình để làm cho một con khỉ đọc kịch bản trong không gian.","options":[{"id":"0","text":"Có","correct":true},{"id":"1","text":"Không","correct":false}]},{"id":"qmMultipleChoiceText52","text":"Tạo một video dài 45 giây, sử dụng phần mềm chuyển văn bản thành giọng nói tiên tiến để đọc một kịch bản về không gian, với những con khỉ đóng vai phi hành gia.","options":[{"id":"0","text":"Có","correct":false},{"id":"1","text":"Không","correct":true}]}]},"explanation":"Mục tiêu là tạo video có nhân vật khỉ hoạt hình trình bày ĐÚNG kịch bản đã được cung cấp sẵn. Hai lời nhắc đầu đều giữ nguyên bối cảnh và nội dung kịch bản, chỉ khác cách diễn đạt (giải thích khái niệm / đọc kịch bản) — đều đạt mục tiêu. Lời nhắc thứ ba lại thêm chi tiết mới không có trong kịch bản gốc (khỉ đóng vai phi hành gia), làm sai lệch nội dung ban đầu, nên không đạt mục tiêu."},{"id":"oxqmrbdqdawf-xh5dwauz3t9w","number":74,"source":"GenAI","type":"MultipleResponse","prompt":"Bạn đang sử dụng nhiều công cụ AI để thu thập thông tin về các ứng cử viên trong cuộc bầu cử sắp tới. Những hai hạn chế nào sau đây bạn có thể gặp phải khi sử dụng các công cụ AI để thực hiện tìm kiếm? (Chọn 2)","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"multiple","options":[{"id":"tccm60b8hnn7-4akp4t52fu07","text":"Bạn nhận thấy công cụ AI cung cấp cho bạn rất nhiều thông tin về mỗi ứng cử viên.","correct":false},{"id":"p94et5ho6u36-j7avs9kjc9kh","text":"Bạn nhận thấy thông tin được trình bày theo thứ tự thời gian.","correct":false},{"id":"lzk2gcxdl0jn-mjqejzwpo9r6","text":"Bạn nhận thấy một số thông tin có vẻ thiên vị.","correct":true},{"id":"ka3kk4g2ztw6-n3ae8xron0gz","text":"Bạn nhận thấy thông tin không đáng tin cậy.","correct":true}]},"explanation":"Hai hạn chế thực sự khi dùng công cụ AI để tìm kiếm thông tin là nguy cơ thông tin bị thiên vị (do dữ liệu huấn luyện) và thiếu độ tin cậy (do AI có thể tạo ra thông tin sai/bịa). Việc AI cung cấp 'nhiều thông tin' hay trình bày 'theo thứ tự thời gian' không phải là hạn chế — đó chỉ là đặc điểm trung tính của kết quả trả về."},{"id":"7dta6ntb0y2z-uo863limsirc","number":75,"source":"GenAI","type":"MultipleChoiceText","prompt":"Đối với mỗi phát biểu sau về AI tạo sinh (Generative AI), hãy chọn Đúng hoặc Sai.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText62","text":"AI tạo sinh chỉ cung cấp danh sách kết quả dựa trên tiêu chí tìm kiếm.","options":[{"id":"0","text":"Đúng","correct":false},{"id":"1","text":"Sai","correct":true}]},{"id":"qmMultipleChoiceText63","text":"AI tạo sinh sử dụng mạng nơ-ron để tạo ra đầu ra.","options":[{"id":"0","text":"Đúng","correct":true},{"id":"1","text":"Sai","correct":false}]},{"id":"qmMultipleChoiceText64","text":"AI tạo sinh tạo ra nội dung mới như văn bản, hình ảnh và âm thanh.","options":[{"id":"0","text":"Đúng","correct":true},{"id":"1","text":"Sai","correct":false}]}]},"explanation":"AI tạo sinh khác công cụ tìm kiếm ở chỗ nó không chỉ liệt kê kết quả có sẵn mà tạo RA nội dung mới — nên phát biểu 'chỉ cung cấp danh sách kết quả' là Sai (đó là mô tả công cụ tìm kiếm). Về mặt kỹ thuật, AI tạo sinh vận hành dựa trên mạng nơ-ron (Đúng) và có khả năng tạo ra nhiều loại nội dung mới như văn bản, hình ảnh, âm thanh (Đúng)."},{"id":"vzybrxhhi7fv-fvbspk65m88","number":87,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Phân loại xem mỗi ví dụ sẽ được thực hiện bằng cách sử dụng AI tạo sinh hay Công cụ tìm kiếm.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText65","text":"Một câu trả lời được tạo cho mỗi yêu cầu.","options":[{"id":"0","text":"AI tạo sinh","correct":true},{"id":"1","text":"Công cụ tìm kiếm","correct":false}]},{"id":"qmMultipleChoiceText66","text":"Mọi người đặt câu hỏi để có câu trả lời.","options":[{"id":"0","text":"AI tạo sinh","correct":true},{"id":"1","text":"Công cụ tìm kiếm","correct":false}]},{"id":"qmMultipleChoiceText67","text":"Mọi người sử dụng cụm từ để có câu trả lời.","options":[{"id":"0","text":"AI tạo sinh","correct":false},{"id":"1","text":"Công cụ tìm kiếm","correct":true}]},{"id":"qmMultipleChoiceText68","text":"Nhiều câu trả lời được tạo ra cho mỗi yêu cầu.","options":[{"id":"0","text":"AI tạo sinh","correct":false},{"id":"1","text":"Công cụ tìm kiếm","correct":true}]}]},"explanation":"Đáp án và giải thích:\nAI tạo sinh Giải thích: AI tạo sinh (Generative AI) tạo một câu trả lời duy nhất, được sinh ra mới cho từng yêu cầu dựa trên dữ liệu học được.\nCông cụ tìm kiếm Giải thích: Người dùng đặt câu hỏi để nhận lại liên kết hoặc thông tin có sẵn từ các trang web.\nCông cụ tìm kiếm Giải thích: Công cụ tìm kiếm hoạt động dựa trên từ khóa/cụm từ, không phải sinh nội dung mới.\nAI tạo sinh Giải thích: AI tạo sinh có thể tạo ra nhiều phiên bản hoặc cách trả lời khác nhau cho cùng một yêu cầu."},{"id":"9jdllsmc4hx8-2hgdalgffh2g","number":89,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Đối với mỗi đặc điểm được liệt kê sau đây để xây dựng một câu lệnh AI tạo sinh nhằm tạo ra một hình đại diện đọc một kịch bản, hãy chỉ ra Yes nếu đặc điểm đó nên được liệt kê và No nếu không","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText72","text":"Nhân vật nên được đồng bộ khẩu hình miệng với văn bản.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText73","text":"Nhân vật nên có cử chỉ theo kịch bản.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText74","text":"Nhân vật nên thể hiện cảm xúc đa dạng trong suốt video.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]}]},"explanation":"Đúng:\nNhân vật nên được đồng bộ khẩu hình miệng với văn bản.\nNhân vật nên có cử chỉ theo kịch bản.\nSai:\nNhân vật nên thể hiện cảm xúc đa dạng trong suốt video.\nGiải thích:\nMột câu lệnh mô tả quá phức tạp hoặc quá mơ hồ sẽ không tạo ra một video tốt về hình đại diện đọc một kịch bản."},{"id":"5zqzj0ixt64w-9jih3ywy1nqb","number":91,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Đối với mỗi tuyên bố về cách các mô hình hình ảnh được đào tạo trong AI tạo sinh, hãy cho biết Yes nếu câu lệnh đó đúng và No nếu nó sai.","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText79","text":"Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ thủ công.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText80","text":"Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ tự động bằng cách sử dụng máy học.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]},{"id":"qmMultipleChoiceText81","text":"Các mô hình hình ảnh được đào tạo chỉ bằng cách sử dụng bộ dữ liệu lớn của các hình ảnh khác để tìm hiểu các quy tắc.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]}]},"explanation":"Đúng:\nCác mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ thủ công.\nSai:\nCác mô hình hình ảnh được đào tạo chỉ bằng cách sử dụng bộ dữ liệu lớn của các hình ảnh khác để tìm hiểu các quy tắc.\nCác mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ tự động bằng cách sử dụng máy học.\nGiải thích: Các mô hình hình ảnh được đào tạo bằng cách sử dụng các bộ dữ liệu lớn và văn bản liên quan để học các quy tắc."},{"id":"gvxxqs4nsv93-ukd9mq6yeddt","number":104,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Một công ty đang chuyển sang sử dụng AI tạo sinh để tạo ra hình ảnh dùng trong các quảng cáo tạp chí.\nHai tính năng máy tính nào là quan trọng nhất trên một máy chủ sẽ chạy các mô hình hình ảnh này? (Chọn hai)","images":[],"difficulty":"medium","topic":"prompting","interaction":{"kind":"multiple","options":[{"id":"2g6gzadwcx1w-f6nresx6s5at","text":"Một bộ nguồn mạnh mẽ.","correct":true},{"id":"eauitj855v0p-ex3yj1qab995","text":"Một bộ xử lý trung tâm (CPU) mạnh mẽ.","correct":false},{"id":"w620ljti12mn-c30ioc3okchp","text":"Một bộ xử lý đồ họa (GPU) mạnh mẽ.","correct":true},{"id":"qyhqjs4l6bct-ql8c3gcdebh5","text":"Một lượng RAM đáng kể.","correct":false}]},"explanation":"Một máy chủ đảm nhận vai trò chạy các mô hình AI tạo sinh hình ảnh cần phải có một bộ nguồn mạnh mẽ và một bộ xử lý đồ họa (GPU) mạnh mẽ vì hai thành phần máy tính này rất quan trọng để huấn luyện một mô hình. CPU và lượng RAM của máy chủ không quan trọng bằng, bởi vì với các mô hình hình ảnh, GPU đảm nhận hầu hết công việc mô hình hóa."}]
+[
+  {
+    "id": "ephrzp30jarb-lm26s52ivryw",
+    "number": 3,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Với mỗi câu lệnh được đưa ra cho AI tạo sinh, hãy chọn Có nếu AI đang thực hiện chuyển đổi hình ảnh hoặc Không nếu không.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText1",
+          "text": "Khám phá định dạng tập tin của logo.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText2",
+          "text": "Chuyển đổi bản phác thảo ngôi nhà thành hình ảnh thực tế.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText3",
+          "text": "Thay đổi siêu dữ liệu của ảnh kỳ nghỉ để thay đổi vị trí và ngày chụp.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Chuyển đổi hình ảnh là khi AI thao tác hoặc biến đổi một hình ảnh có sẵn — biến bản phác thảo thành ảnh thực tế, hay chỉnh sửa siêu dữ liệu của ảnh, đều là các hình thức chuyển đổi ảnh. Ngược lại, chỉ hỏi thông tin về định dạng tệp của logo không làm thay đổi hay tạo ra hình ảnh nào, nên không phải là chuyển đổi hình ảnh."
+  },
+  {
+    "id": "nwo5u8ci4u6a-82ssriqau4h5",
+    "number": 6,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Bạn cần sử dụng AI để tạo video đánh giá sản phẩm tích cực cho máy đánh trứng (kitchen mixer) Healthy Eats mới và đăng lên kênh nền tảng video theo chủ đề của mình. Với mỗi câu, hãy chọn Đúng nếu đó là câu lệnh hiệu quả hoặc Sai nếu đó là câu lệnh không hiệu quả.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText4",
+          "text": "Tạo video chi tiết dài 5 phút về máy đánh trứng Healthy Eats mới. Video nên bao gồm phần giới thiệu, đề cập đến tính dễ sử dụng và vệ sinh, và phần kết luận khuyến khích người xem mua thiết bị nhà bếp.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText5",
+          "text": "Tạo video về máy đánh trứng mới. Video nên thảo luận về các công dụng tiềm năng và khuyến khích người mua tiềm năng mua máy đánh trứng.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText6",
+          "text": "Tạo video đánh giá khách quan về máy đánh trứng.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Mục tiêu là một video ĐÁNH GIÁ TÍCH CỰC nhằm quảng bá sản phẩm, nên câu lệnh hiệu quả cần có cấu trúc rõ ràng (giới thiệu – nội dung cụ thể như dễ dùng/vệ sinh – kêu gọi mua hàng). Câu lệnh chỉ nói chung chung 'thảo luận công dụng' thiếu chi tiết định hướng nội dung, còn yêu cầu một đánh giá 'khách quan' lại đi ngược mục tiêu quảng cáo tích cực đã đề ra."
+  },
+  {
+    "id": "5wnr89bxao6y-w8xnxc5l70rq",
+    "number": 8,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Bạn vừa tham dự một cuộc họp tại nơi làm việc với nhóm của mình. Bây giờ bạn cần tạo một bản tóm tắt ngắn gọn, tóm tắt từng điểm chính đã được thảo luận. Bạn cần đảm bảo rằng tất cả thông tin quan trọng đều được đưa vào. Bạn nên sử dụng hai gợi ý nào để tạo bản tóm tắt này? (Chọn 2)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "joji5uf4a1g4-2rb4y3we71qb",
+          "text": "Liệt kê tất cả các mục hành động và nhiệm vụ tiếp theo từ cuộc họp trước của tôi.",
+          "correct": false
+        },
+        {
+          "id": "7nucx7xta8rf-nl2kx18s3a7w",
+          "text": "Tóm tắt ngắn gọn mục đích của cuộc họp.",
+          "correct": true
+        },
+        {
+          "id": "5pdveuyniart-c74wj0ifn6yu",
+          "text": "Chỉ trích xuất thông tin và quyết định thiết yếu từ cuộc họp này.",
+          "correct": true
+        },
+        {
+          "id": "rq0ijytyo2g4-yv6mali502f0",
+          "text": "Định dạng biên bản cuộc họp này.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Yêu cầu là một bản tóm tắt ngắn gọn nhưng đầy đủ thông tin quan trọng — nên cần nêu mục đích cuộc họp và trích xuất đúng các quyết định/thông tin thiết yếu. Liệt kê mục hành động 'từ cuộc họp trước' là sai chủ thể (cuộc họp khác), còn 'định dạng biên bản' chỉ là trình bày hình thức, không đảm bảo nội dung được tóm tắt đầy đủ."
+  },
+  {
+    "id": "3jxlusm2fw33-96w4m9jpopoq",
+    "number": 14,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Với tư cách là quản trị viên trung tâm khảo thí, bạn đã được hỏi về những nguy hiểm khi tải cơ sở dữ liệu lên ChatGPT để phân tích. Dữ liệu này bao gồm số tài khoản, tên, mã PIN và điểm số. Chọn câu trả lời đúng cho mỗi câu hỏi.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText7",
+          "text": "ChatGPT sẽ ghi nhớ tài khoản và mã PIN của thành viên trong bao lâu?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Nó ghi nhớ trong toàn bộ phiên của bạn.",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Nó bỏ qua dữ liệu cá nhân như số tài khoản và mã PIN.",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "Nó ghi nhớ chúng mãi mãi.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText8",
+          "text": "ChatGPT có thể liên kết địa chỉ IP của bạn với dữ liệu này trong phiên sau không?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText9",
+          "text": "Điều gì sẽ xảy ra nếu mã PIN của người dự thi bị xâm phạm do tấn công mạng trong phiên ChatGPT?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Chat GPT phải chịu trách nhiệm.",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Bạn và công ty của bạn phải chịu trách nhiệm.",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "ChatGPT chỉ ghi nhớ thông tin trong phạm vi một phiên trò chuyện và vẫn có thể liên kết dữ liệu đó với địa chỉ IP của bạn trong phiên — nghĩa là dữ liệu nhạy cảm (số tài khoản, mã PIN) vẫn tồn tại và có nguy cơ bị lộ suốt phiên làm việc, dù không được ghi nhớ vĩnh viễn. Quan trọng nhất: nếu xảy ra sự cố bảo mật với dữ liệu bạn chủ động tải lên, chính bạn và tổ chức của bạn phải chịu trách nhiệm — không phải nhà cung cấp công cụ AI."
+  },
+  {
+    "id": "sjcalyc7eoly-duni8u4h5qe1",
+    "number": 18,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Với mỗi kịch bản của câu lệnh, hãy chọn Có thể nếu kết quả khả thi hoặc Không thể nếu kết quả không khả thi.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText13",
+          "text": "Bạn đưa ra lời nhắc tạo hình ảnh bao gồm hướng dẫn loại bỏ màu đỏ. AI tạo ra một hình ảnh đen trắng.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có thể",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không thể",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText14",
+          "text": "Bạn đưa ra lời nhắc có cấu trúc tốt, bao gồm thông tin công khai về sản phẩm, để tạo bài thuyết trình bán hàng. Kết quả bao gồm thông tin bí mật chưa được công bố của công ty.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có thể",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Không thể",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText15",
+          "text": "Bạn tạo lời nhắc để tạo mặt đồng hồ và chỉ định thời gian đồng hồ sẽ hiển thị. Bạn đưa ra lời nhắc nhiều lần, nhưng thời gian hiển thị trên đồng hồ không phải lúc nào cũng giống nhau.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có thể",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không thể",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Xét tính khả thi của từng kết quả: AI hiểu 'loại bỏ màu đỏ' có thể suy diễn thành loại bỏ toàn bộ màu sắc (ra ảnh đen trắng) — có thể xảy ra. Việc AI tự tạo ra thông tin bí mật chưa từng công bố trong khi prompt chỉ chứa dữ liệu công khai là không khả thi về mặt logic (AI không có thông tin đó để đưa vào). Còn việc AI tạo hình ảnh mặt đồng hồ với giờ hiển thị không nhất quán giữa các lần chạy là hạn chế được biết đến của AI tạo sinh (khó tái tạo chính xác chi tiết như số/giờ) — hoàn toàn có thể xảy ra."
+  },
+  {
+    "id": "3ho6fqlok17q-d65etl5obx3b",
+    "number": 19,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Bạn đang tạo một blog ẩm thực để giới thiệu kỹ năng nấu ăn của mình. Bạn muốn sử dụng AI để tạo bài đăng đầu tiên cho blog. Hai câu lệnh nào sau đây sẽ tạo ra nội dung có thể được dùng để tạo blog của bạn? (Chọn 2)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "h6szcayz93ip-tsbqnu2nzo55",
+          "text": "Chia sẻ mẹo chụp ảnh món ăn hấp dẫn. Thảo luận về ánh sáng, góc chụp và đạo cụ giúp tăng tính thẩm mỹ cho món ăn.",
+          "correct": false
+        },
+        {
+          "id": "2qa68fghma84-oaslik7678b6",
+          "text": "Viết một bài đăng giới thiệu cho blog mô tả niềm đam mê ẩm thực của tôi và điều đã truyền cảm hứng cho tôi bắt đầu blog này. Bao gồm món ăn và phong cách nấu ăn yêu thích của tôi.",
+          "correct": true
+        },
+        {
+          "id": "ekxdjd2d8lgl-8qezbfntgfyh",
+          "text": "Chia sẻ một công thức chi tiết với hướng dẫn từng bước và hình ảnh sinh động làm nổi bật bất kỳ nguyên liệu hoặc kỹ thuật nấu ăn độc đáo nào được sử dụng.",
+          "correct": true
+        },
+        {
+          "id": "gbfdk6lyr04d-fne1kcb1dfh1",
+          "text": "Ghi lại một chuyến tham quan ẩm thực mà mọi người có thể thực hiện ở thành phố của tôi. Mô tả các món đặc sản vùng miền và hương vị mà thành phố nổi tiếng.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Bài đăng ĐẦU TIÊN cho một blog ẩm thực cần giới thiệu bản thân/blog hoặc cung cấp nội dung cốt lõi có giá trị như công thức nấu ăn chi tiết — hai lựa chọn này trực tiếp tạo ra nội dung bài viết hoàn chỉnh. 'Mẹo chụp ảnh món ăn' và 'ghi lại tour ẩm thực thành phố' là các ý tưởng chủ đề phụ, không phải yêu cầu tạo ra bài đăng cụ thể."
+  },
+  {
+    "id": "87la5flbly24-w4ovyq1plndv",
+    "number": 27,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Bạn đang tạo một thông báo dịch vụ công cộng cho trường trung học của mình nhằm khuyến khích việc rửa tay thường xuyên.\nVới mỗi phát biểu dưới đây, chọn Có nếu bạn nên thực hiện khi tạo câu lệnh (prompt) của bạn, hoặc Không nếu bạn không nên.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText19",
+          "text": "Khi cần đến các cảnh, nhân vật hoặc hành động cụ thể, hãy cung cấp mô tả toàn diện về cả mặt hình ảnh và nội dung tường thuật (narrative).",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText20",
+          "text": "Xác định rõ các yêu cầu (requirements) của bạn, chẳng hạn như loại video, đối tượng mục tiêu và các điểm chính (key points).",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText21",
+          "text": "Bao gồm thông tin nền chi tiết (background information), dữ liệu (data), giọng điệu (tone) và phong cách (style) liên quan đến video.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText22",
+          "text": "Giả định rằng hệ thống AI hiểu được bối cảnh điển hình của dự án, từ đó giảm nhu cầu cung cấp lời giải thích chi tiết.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText23",
+          "text": "Sử dụng ngôn ngữ đơn giản và rõ ràng để giảm thiểu hiểu nhầm.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Một prompt chất lượng cao cần càng cụ thể càng tốt: mô tả đầy đủ cảnh/nhân vật, nêu rõ yêu cầu (đối tượng, loại video), cung cấp bối cảnh/giọng điệu/phong cách, và dùng ngôn ngữ đơn giản dễ hiểu — đây đều là thực hành NÊN làm. Ngược lại, giả định AI 'tự hiểu' bối cảnh mà không cần giải thích là một sai lầm phổ biến, dễ khiến kết quả lệch khỏi mong muốn — vì vậy đây là điều KHÔNG nên làm."
+  },
+  {
+    "id": "pblc49miu4c1-9o4kn9ci3woc",
+    "number": 47,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Hai phát biểu nào sau đây về tác động của AI tạo sinh (Generative AI) trong thực tế? (Chọn 2)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "mn1javow1eem-rr6wfeb11ogb",
+          "text": "AI tạo sinh hỗ trợ tư duy phân kỳ (divergent thinking — tức là giúp tạo ra nhiều ý tưởng mới, đa hướng).",
+          "correct": true
+        },
+        {
+          "id": "89ek90o77atp-wu8efa2zq5m2",
+          "text": "AI tạo sinh giúp nhân viên tiết kiệm thời gian và tăng năng suất làm việc.",
+          "correct": true
+        },
+        {
+          "id": "slplnv1n8gei-we7u2v436m1u",
+          "text": "AI tạo sinh đã làm giảm nhu cầu sáng tạo của con người trong các lĩnh vực nghệ thuật.",
+          "correct": false
+        },
+        {
+          "id": "y6krw5l7l3su-y8tww4dippp4",
+          "text": "AI tạo sinh đã làm tăng thời gian sử dụng màn hình trung bình của mỗi người thêm 5 giờ mỗi ngày.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Hai tác động thực tế được ghi nhận của AI tạo sinh là: giúp tạo ra nhiều ý tưởng đa dạng (tư duy phân kỳ) và giúp con người tiết kiệm thời gian, tăng năng suất công việc. Ngược lại, không có bằng chứng cho thấy AI tạo sinh làm giảm nhu cầu sáng tạo nghệ thuật của con người hay khiến thời gian dùng màn hình tăng thêm chính xác 5 giờ/ngày — đây là các phát biểu cường điệu, không có cơ sở."
+  },
+  {
+    "id": "522j61hdta48-19jc1vybcopy",
+    "number": 51,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Hai câu lệnh (prompts) nào sau đây yêu cầu AI tóm tắt nội dung có sẵn?",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "x2ss6wzavucu-cla9kxnjuycp",
+          "text": "Những điều thú vị nào bạn có thể làm trong kỳ nghỉ hai tuần ở Miami?",
+          "correct": true
+        },
+        {
+          "id": "j6gojxh1ltqg-v6ezd0aot9yz",
+          "text": "Tóm tắt cốt truyện của tác phẩm \"Chúa tể những chiếc nhẫn\" của Tolkien trong 500 từ.",
+          "correct": true
+        },
+        {
+          "id": "mjqdc2tznx76-hedh7zys11p1",
+          "text": "Viết một bài thơ về chú thỏ phép thuật mặc áo gi-lê đỏ.",
+          "correct": false
+        },
+        {
+          "id": "k3zc8qkjljsl-f4trs1k60zez",
+          "text": "Tạo chương trình Python hỏi ngày sinh của bạn và cho biết bạn bao nhiêu tuổi.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Tóm tắt cốt truyện 'Chúa tể những chiếc nhẫn' trong 500 từ là yêu cầu rút gọn một nội dung đã có sẵn — đúng nghĩa tóm tắt. Ngược lại, viết một bài thơ hay tạo chương trình Python đều là yêu cầu AI sáng tác nội dung hoàn toàn mới, không phải tóm tắt nội dung có sẵn."
+  },
+  {
+    "id": "oubhw1wmxoq3-k56dt4ftsk9e",
+    "number": 56,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Với mỗi phát biểu sau đây về hạn chế của AI tạo sinh (Generative AI), hãy chọn Đúng hoặc Sai",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText47",
+          "text": "Bạn có thể cho rằng mọi thông tin mật mà bạn nhập vào GPT hoặc Copilot sẽ được loại trừ khỏi dữ liệu huấn luyện.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText48",
+          "text": "Hiện đã có các tiêu chuẩn được công nhận về cách sử dụng đầu ra của AI tạo sinh trong ngành công nghiệp.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText49",
+          "text": "Kết quả do AI tạo sinh cung cấp cần được kiểm tra cẩn thận vì các công cụ này thường \"bịa ra\" thông tin.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Trên thực tế, không có gì đảm bảo thông tin mật bạn nhập vào công cụ AI (như GPT, Copilot) sẽ luôn được loại trừ khỏi dữ liệu huấn luyện — nên phát biểu ngược lại là Sai. Ngành công nghiệp cũng chưa có bộ tiêu chuẩn thống nhất, được công nhận rộng rãi về việc sử dụng đầu ra AI tạo sinh — nên phát biểu đó cũng Sai. Trong khi đó, AI tạo sinh có thể 'bịa' ra thông tin sai (hallucination) là hạn chế đã được ghi nhận rộng rãi, nên luôn cần kiểm tra lại kết quả — phát biểu này Đúng."
+  },
+  {
+    "id": "zcjft5yuv06l-sbrbqjcwk50h",
+    "number": 59,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Bạn cần tạo một video có hình đại diện khỉ hoạt hình thể hiện một kịch bản được cung cấp sẵn.\nĐối với mỗi phát biểu dưới đây, hãy chọn Có nếu lời nhắc đó sẽ giúp bạn đạt được mục tiêu, hoặc Không nếu nó sẽ không giúp.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText50",
+          "text": "Tạo một video dài 45 giây, trong đó một con khỉ trong không gian giải thích một khái niệm về không gian phức tạp dựa trên kịch bản đã cho.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText51",
+          "text": "Tạo một video dài 45 giây, sử dụng công nghệ hoạt hình để làm cho một con khỉ đọc kịch bản trong không gian.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText52",
+          "text": "Tạo một video dài 45 giây, sử dụng phần mềm chuyển văn bản thành giọng nói tiên tiến để đọc một kịch bản về không gian, với những con khỉ đóng vai phi hành gia.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Có",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Không",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Mục tiêu là tạo video có nhân vật khỉ hoạt hình trình bày ĐÚNG kịch bản đã được cung cấp sẵn. Hai lời nhắc đầu đều giữ nguyên bối cảnh và nội dung kịch bản, chỉ khác cách diễn đạt (giải thích khái niệm / đọc kịch bản) — đều đạt mục tiêu. Lời nhắc thứ ba lại thêm chi tiết mới không có trong kịch bản gốc (khỉ đóng vai phi hành gia), làm sai lệch nội dung ban đầu, nên không đạt mục tiêu."
+  },
+  {
+    "id": "oxqmrbdqdawf-xh5dwauz3t9w",
+    "number": 72,
+    "source": "GenAI",
+    "type": "MultipleResponse",
+    "prompt": "Bạn đang sử dụng nhiều công cụ AI để thu thập thông tin về các ứng cử viên trong cuộc bầu cử sắp tới. Những hai hạn chế nào sau đây bạn có thể gặp phải khi sử dụng các công cụ AI để thực hiện tìm kiếm? (Chọn 2)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "tccm60b8hnn7-4akp4t52fu07",
+          "text": "Bạn nhận thấy công cụ AI cung cấp cho bạn rất nhiều thông tin về mỗi ứng cử viên.",
+          "correct": false
+        },
+        {
+          "id": "p94et5ho6u36-j7avs9kjc9kh",
+          "text": "Bạn nhận thấy thông tin được trình bày theo thứ tự thời gian.",
+          "correct": false
+        },
+        {
+          "id": "lzk2gcxdl0jn-mjqejzwpo9r6",
+          "text": "Bạn nhận thấy một số thông tin có vẻ thiên vị.",
+          "correct": true
+        },
+        {
+          "id": "ka3kk4g2ztw6-n3ae8xron0gz",
+          "text": "Bạn nhận thấy thông tin không đáng tin cậy.",
+          "correct": true
+        }
+      ]
+    },
+    "explanation": "Hai hạn chế thực sự khi dùng công cụ AI để tìm kiếm thông tin là nguy cơ thông tin bị thiên vị (do dữ liệu huấn luyện) và thiếu độ tin cậy (do AI có thể tạo ra thông tin sai/bịa). Việc AI cung cấp 'nhiều thông tin' hay trình bày 'theo thứ tự thời gian' không phải là hạn chế — đó chỉ là đặc điểm trung tính của kết quả trả về."
+  },
+  {
+    "id": "7dta6ntb0y2z-uo863limsirc",
+    "number": 73,
+    "source": "GenAI",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi phát biểu sau về AI tạo sinh (Generative AI), hãy chọn Đúng hoặc Sai.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText62",
+          "text": "AI tạo sinh chỉ cung cấp danh sách kết quả dựa trên tiêu chí tìm kiếm.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText63",
+          "text": "AI tạo sinh sử dụng mạng nơ-ron để tạo ra đầu ra.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText64",
+          "text": "AI tạo sinh tạo ra nội dung mới như văn bản, hình ảnh và âm thanh.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Đúng",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Sai",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "AI tạo sinh khác công cụ tìm kiếm ở chỗ nó không chỉ liệt kê kết quả có sẵn mà tạo RA nội dung mới — nên phát biểu 'chỉ cung cấp danh sách kết quả' là Sai (đó là mô tả công cụ tìm kiếm). Về mặt kỹ thuật, AI tạo sinh vận hành dựa trên mạng nơ-ron (Đúng) và có khả năng tạo ra nhiều loại nội dung mới như văn bản, hình ảnh, âm thanh (Đúng)."
+  },
+  {
+    "id": "vzybrxhhi7fv-fvbspk65m88",
+    "number": 85,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Phân loại xem mỗi ví dụ sẽ được thực hiện bằng cách sử dụng AI tạo sinh hay Công cụ tìm kiếm.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText65",
+          "text": "Một câu trả lời được tạo cho mỗi yêu cầu.",
+          "options": [
+            {
+              "id": "0",
+              "text": "AI tạo sinh",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Công cụ tìm kiếm",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText66",
+          "text": "Mọi người đặt câu hỏi để có câu trả lời.",
+          "options": [
+            {
+              "id": "0",
+              "text": "AI tạo sinh",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Công cụ tìm kiếm",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText67",
+          "text": "Mọi người sử dụng cụm từ để có câu trả lời.",
+          "options": [
+            {
+              "id": "0",
+              "text": "AI tạo sinh",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Công cụ tìm kiếm",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText68",
+          "text": "Nhiều câu trả lời được tạo ra cho mỗi yêu cầu.",
+          "options": [
+            {
+              "id": "0",
+              "text": "AI tạo sinh",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Công cụ tìm kiếm",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đáp án và giải thích:\nAI tạo sinh Giải thích: AI tạo sinh (Generative AI) tạo một câu trả lời duy nhất, được sinh ra mới cho từng yêu cầu dựa trên dữ liệu học được.\nCông cụ tìm kiếm Giải thích: Người dùng đặt câu hỏi để nhận lại liên kết hoặc thông tin có sẵn từ các trang web.\nCông cụ tìm kiếm Giải thích: Công cụ tìm kiếm hoạt động dựa trên từ khóa/cụm từ, không phải sinh nội dung mới.\nAI tạo sinh Giải thích: AI tạo sinh có thể tạo ra nhiều phiên bản hoặc cách trả lời khác nhau cho cùng một yêu cầu."
+  },
+  {
+    "id": "9jdllsmc4hx8-2hgdalgffh2g",
+    "number": 87,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi đặc điểm được liệt kê sau đây để xây dựng một câu lệnh AI tạo sinh nhằm tạo ra một hình đại diện đọc một kịch bản, hãy chỉ ra Yes nếu đặc điểm đó nên được liệt kê và No nếu không",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText72",
+          "text": "Nhân vật nên được đồng bộ khẩu hình miệng với văn bản.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText73",
+          "text": "Nhân vật nên có cử chỉ theo kịch bản.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText74",
+          "text": "Nhân vật nên thể hiện cảm xúc đa dạng trong suốt video.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đúng:\nNhân vật nên được đồng bộ khẩu hình miệng với văn bản.\nNhân vật nên có cử chỉ theo kịch bản.\nSai:\nNhân vật nên thể hiện cảm xúc đa dạng trong suốt video.\nGiải thích:\nMột câu lệnh mô tả quá phức tạp hoặc quá mơ hồ sẽ không tạo ra một video tốt về hình đại diện đọc một kịch bản."
+  },
+  {
+    "id": "5zqzj0ixt64w-9jih3ywy1nqb",
+    "number": 89,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi tuyên bố về cách các mô hình hình ảnh được đào tạo trong AI tạo sinh, hãy cho biết Yes nếu câu lệnh đó đúng và No nếu nó sai.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText79",
+          "text": "Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ thủ công.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText80",
+          "text": "Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ tự động bằng cách sử dụng máy học.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText81",
+          "text": "Các mô hình hình ảnh được đào tạo chỉ bằng cách sử dụng bộ dữ liệu lớn của các hình ảnh khác để tìm hiểu các quy tắc.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đúng:\nCác mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ thủ công.\nSai:\nCác mô hình hình ảnh được đào tạo chỉ bằng cách sử dụng bộ dữ liệu lớn của các hình ảnh khác để tìm hiểu các quy tắc.\nCác mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ tự động bằng cách sử dụng máy học.\nGiải thích: Các mô hình hình ảnh được đào tạo bằng cách sử dụng các bộ dữ liệu lớn và văn bản liên quan để học các quy tắc."
+  },
+  {
+    "id": "gvxxqs4nsv93-ukd9mq6yeddt",
+    "number": 101,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Một công ty đang chuyển sang sử dụng AI tạo sinh để tạo ra hình ảnh dùng trong các quảng cáo tạp chí.\nHai tính năng máy tính nào là quan trọng nhất trên một máy chủ sẽ chạy các mô hình hình ảnh này? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "prompting",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "2g6gzadwcx1w-f6nresx6s5at",
+          "text": "Một bộ nguồn mạnh mẽ.",
+          "correct": true
+        },
+        {
+          "id": "eauitj855v0p-ex3yj1qab995",
+          "text": "Một bộ xử lý trung tâm (CPU) mạnh mẽ.",
+          "correct": false
+        },
+        {
+          "id": "w620ljti12mn-c30ioc3okchp",
+          "text": "Một bộ xử lý đồ họa (GPU) mạnh mẽ.",
+          "correct": true
+        },
+        {
+          "id": "qyhqjs4l6bct-ql8c3gcdebh5",
+          "text": "Một lượng RAM đáng kể.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Một máy chủ đảm nhận vai trò chạy các mô hình AI tạo sinh hình ảnh cần phải có một bộ nguồn mạnh mẽ và một bộ xử lý đồ họa (GPU) mạnh mẽ vì hai thành phần máy tính này rất quan trọng để huấn luyện một mô hình. CPU và lượng RAM của máy chủ không quan trọng bằng, bởi vì với các mô hình hình ảnh, GPU đảm nhận hầu hết công việc mô hình hóa."
+  }
+]

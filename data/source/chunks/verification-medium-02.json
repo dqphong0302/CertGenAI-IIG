@@ -1,1 +1,38 @@
-[{"id":"acxp4cv307ud-frlze1nk7mtc","number":170,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Một trợ lý nghiên cứu đang thực hiện một số nghiên cứu lịch sử bằng cách sử dụng Trí tuệ nhân tạo tạo sinh (Generative AI).\nTrợ lý này có thể làm gì để kiểm chứng thông tin được trình bày trong kết quả đầu ra của AI? (Chọn 2 cách)","images":[],"difficulty":"medium","topic":"verification","interaction":{"kind":"multiple","options":[{"id":"im50tnwszdoj-so6ukx1e1817","text":"Đối chiếu chéo kết quả đầu ra.","correct":true},{"id":"oxt148hymdu4-tlon1g2472vr","text":"Hỏi ý kiến của chuyên gia về chủ đề đó.","correct":true},{"id":"qf8yylyqnw84-agtl79bz0pxd","text":"Chạy lại câu lệnh (prompt).","correct":false},{"id":"q9p6wn7lme2o-m00g6tpzprbj","text":"Cho rằng kết quả là chính xác và không cần kiểm chứng.","correct":false}]},"explanation":"Hai cách hiệu quả nhất để xác minh thông tin lịch sử là:\nĐối chiếu chéo kết quả đầu ra với các nguồn đáng tin cậy khác.\nHỏi ý kiến chuyên gia trong lĩnh vực liên quan để xác nhận độ chính xác.\nViệc chạy lại câu lệnh và thấy kết quả tương tự không chứng minh được tính chính xác của thông tin.\nTrí tuệ nhân tạo chỉ là công cụ hỗ trợ, không phải nguồn cung cấp sự thật tuyệt đối, nên luôn cần kiểm chứng lại các dữ liệu mà AI đưa ra."}]
+[
+  {
+    "id": "acxp4cv307ud-frlze1nk7mtc",
+    "number": 159,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Một trợ lý nghiên cứu đang thực hiện một số nghiên cứu lịch sử bằng cách sử dụng Trí tuệ nhân tạo tạo sinh (Generative AI).\nTrợ lý này có thể làm gì để kiểm chứng thông tin được trình bày trong kết quả đầu ra của AI? (Chọn 2 cách)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "verification",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "im50tnwszdoj-so6ukx1e1817",
+          "text": "Đối chiếu chéo kết quả đầu ra.",
+          "correct": true
+        },
+        {
+          "id": "oxt148hymdu4-tlon1g2472vr",
+          "text": "Hỏi ý kiến của chuyên gia về chủ đề đó.",
+          "correct": true
+        },
+        {
+          "id": "qf8yylyqnw84-agtl79bz0pxd",
+          "text": "Chạy lại câu lệnh (prompt).",
+          "correct": false
+        },
+        {
+          "id": "q9p6wn7lme2o-m00g6tpzprbj",
+          "text": "Cho rằng kết quả là chính xác và không cần kiểm chứng.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Hai cách hiệu quả nhất để xác minh thông tin lịch sử là:\nĐối chiếu chéo kết quả đầu ra với các nguồn đáng tin cậy khác.\nHỏi ý kiến chuyên gia trong lĩnh vực liên quan để xác nhận độ chính xác.\nViệc chạy lại câu lệnh và thấy kết quả tương tự không chứng minh được tính chính xác của thông tin.\nTrí tuệ nhân tạo chỉ là công cụ hỗ trợ, không phải nguồn cung cấp sự thật tuyệt đối, nên luôn cần kiểm chứng lại các dữ liệu mà AI đưa ra."
+  }
+]

@@ -1,54 +1,54 @@
 {
   "version": 2,
   "title": "Bộ câu hỏi ôn luyện GenAI",
-  "total": 175,
+  "total": 164,
   "counts": {
-    "easy": 60,
-    "medium": 71,
-    "hard": 44
+    "easy": 59,
+    "medium": 63,
+    "hard": 42
   },
   "topicCounts": {
     "methods": {
-      "total": 28,
+      "total": 25,
       "counts": {
-        "easy": 7,
-        "medium": 17,
+        "easy": 6,
+        "medium": 15,
         "hard": 4
       }
     },
     "prompting": {
-      "total": 72,
+      "total": 69,
       "counts": {
         "easy": 30,
-        "medium": 25,
+        "medium": 22,
         "hard": 17
       }
     },
     "verification": {
-      "total": 41,
+      "total": 38,
       "counts": {
         "easy": 16,
-        "medium": 19,
+        "medium": 16,
         "hard": 6
       }
     },
     "responsible": {
-      "total": 34,
+      "total": 32,
       "counts": {
         "easy": 7,
         "medium": 10,
-        "hard": 17
+        "hard": 15
       }
     }
   },
   "sources": [
     {
-      "name": "GenAI",
-      "count": 79
+      "name": "Câu hỏi Ôn luyện Gmetrix",
+      "count": 87
     },
     {
-      "name": "Câu hỏi Ôn luyện Gmetrix",
-      "count": 96
+      "name": "GenAI",
+      "count": 77
     }
   ],
   "chunks": [
@@ -56,14 +56,14 @@
       "id": "methods-easy-01",
       "topic": "methods",
       "difficulty": "easy",
-      "count": 7,
+      "count": 6,
       "file": "/data/chunks/methods-easy-01.enc"
     },
     {
       "id": "methods-medium-01",
       "topic": "methods",
       "difficulty": "medium",
-      "count": 17,
+      "count": 15,
       "file": "/data/chunks/methods-medium-01.enc"
     },
     {
@@ -91,14 +91,14 @@
       "id": "prompting-medium-01",
       "topic": "prompting",
       "difficulty": "medium",
-      "count": 18,
+      "count": 17,
       "file": "/data/chunks/prompting-medium-01.enc"
     },
     {
       "id": "prompting-medium-02",
       "topic": "prompting",
       "difficulty": "medium",
-      "count": 7,
+      "count": 5,
       "file": "/data/chunks/prompting-medium-02.enc"
     },
     {
@@ -119,7 +119,7 @@
       "id": "verification-medium-01",
       "topic": "verification",
       "difficulty": "medium",
-      "count": 18,
+      "count": 15,
       "file": "/data/chunks/verification-medium-01.enc"
     },
     {
@@ -154,11 +154,11 @@
       "id": "responsible-hard-01",
       "topic": "responsible",
       "difficulty": "hard",
-      "count": 17,
+      "count": 15,
       "file": "/data/chunks/responsible-hard-01.enc"
     }
   ],
   "generatedAt": "2026-08-31T01:45:22.891Z",
   "isEncrypted": true,
-  "encryptedAt": "2026-09-01T10:36:53.659Z"
+  "encryptedAt": "2026-10-17T01:09:24.165Z"
 }

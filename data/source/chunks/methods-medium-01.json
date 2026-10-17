@@ -1,1 +1,766 @@
-[{"id":"j27tnq1x88-jz0mxczfsywj","number":95,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Sử dụng danh sách thả xuống, cung cấp đầu vào cần thiết và đầu ra được tạo ra với từng loại dữ liệu.","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText82","text":"Nhận dạng ký tự quang học (OCR) – Đầu vào:","options":[{"id":"0","text":"Hình ảnh","correct":true},{"id":"1","text":"Âm thanh","correct":false},{"id":"2","text":"Văn bản","correct":false}]},{"id":"qmMultipleChoiceText83","text":"Nhận dạng ký tự quang học (OCR) – Đầu ra:","options":[{"id":"0","text":"Hình ảnh","correct":false},{"id":"1","text":"Âm thanh","correct":false},{"id":"2","text":"Văn bản","correct":true},{"id":"3","text":"Video","correct":false}]},{"id":"qmMultipleChoiceText84","text":"Khuôn mặt người đang nói (Talking-head) – Đầu vào:","options":[{"id":"0","text":"Hình ảnh","correct":false},{"id":"1","text":"Âm thanh","correct":true},{"id":"2","text":"Văn bản","correct":false}]},{"id":"qmMultipleChoiceText85","text":"Khuôn mặt người đang nói (Talking-head) – Đầu ra:","options":[{"id":"0","text":"Hình ảnh","correct":false},{"id":"1","text":"Âm thanh","correct":false},{"id":"2","text":"Văn bản","correct":false},{"id":"3","text":"Video","correct":true}]}]},"explanation":"Đáp án:\nA. OCR – Đầu vào:  Hình ảnh Giải thích: OCR (Optical Character Recognition) nhận hình ảnh chứa chữ để nhận dạng ký tự.\nB. OCR – Đầu ra: Văn bản Giải thích: Kết quả của OCR là chữ được trích xuất từ hình ảnh.\nC. Talking-head – Đầu vào: Âm thanh hoặc Văn bản (thông thường là Âm thanh nếu dùng giọng nói) Giải thích: Mô hình Talking-head sử dụng âm thanh hoặc lời nói (đôi khi cả văn bản được chuyển thành giọng) để điều khiển khuôn mặt nhân vật.\nD. Talking-head – Đầu ra: Video Giải thích: Kết quả là video có khuôn mặt nhân vật chuyển động, nói chuyện theo giọng hoặc nội dung đầu vào."},{"id":"2tvhydreswab-cxbuxwq2j3nh","number":96,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Sử dụng danh sách thả xuống để xác định các loại tóm tắt của một báo cáo hoặc một cuốn sách.","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText86","text":"Loại tóm tắt này lấy ra các câu quan trọng nhất từ một báo cáo hoặc một cuốn sách.","options":[{"id":"0","text":"Abstractive: Tóm tắt Trừu tượng","correct":false},{"id":"1","text":"Extractive: Tóm tắt Trích xuất","correct":true},{"id":"2","text":"Query-based: Tóm tắt Dựa trên Truy vấn","correct":false}]},{"id":"qmMultipleChoiceText87","text":"Loại tóm tắt này diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt.","options":[{"id":"0","text":"Abstractive: Tóm tắt Trừu tượng","correct":true},{"id":"1","text":"Extractive: Tóm tắt Trích xuất","correct":false},{"id":"2","text":"Query-based: Tóm tắt Dựa trên Truy vấn","correct":false}]}]},"explanation":"Tóm tắt Trích xuất kéo các câu quan trọng nhất trực tiếp từ một báo cáo hoặc một cuốn sách.\nTóm tắt Trừu tượng diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt.\nTóm tắt Dựa trên Truy vấn cung cấp câu trả lời cho các câu hỏi cụ thể về một báo cáo hoặc một cuốn sách."},{"id":"2pq8nx7gok6q-5wjrvjye2ws","number":103,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Những tình huống nào là ví dụ về mô hình AI tạo sinh thực hiện các nhiệm vụ cho con người trong các ứng dụng độc lập? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"2g6gzadwcx1w-f6nresx6s5at","text":"Gửi lời nhắc cho ai đó dựa trên lịch cá nhân trong Outlook.","correct":true},{"id":"eauitj855v0p-ex3yj1qab995","text":"Nhận được câu trả lời cho câu hỏi nghiên cứu bằng cách sử dụng Siri.","correct":true},{"id":"w620ljti12mn-c30ioc3okchp","text":"Hiển thị nhu cầu nhân sự dựa trên xu hướng lưu lượng khách ghé thăm.","correct":false},{"id":"qyhqjs4l6bct-ql8c3gcdebh5","text":"Đề xuất một đơn thuốc cho ai đó dựa trên kết quả xét nghiệm.","correct":false}]},"explanation":"Gửi lời nhắc cho ai đó dựa trên lịch cá nhân trong Outlook là một ví dụ về AI tạo sinh.\nNhận được câu trả lời cho câu hỏi nghiên cứu bằng cách sử dụng Siri là một ví dụ về AI tạo sinh.\nHiển thị nhu cầu nhân sự dựa trên xu hướng lưu lượng khách ghé thăm một cửa hàng là một ví dụ về AI dự đoán.\nĐề xuất một đơn thuốc cho ai đó dựa trên kết quả xét nghiệm là một ví dụ về AI đề xuất."},{"id":"av51q2djr5c8-eicnmvns5y3i","number":105,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Một đội thể thao chuyên nghiệp đang tìm cách sử dụng AI tạo sinh cho mục đích tiếp thị muốn biết những hạn chế của AI tạo sinh.\nMột số hạn chế của AI tạo sinh là gì? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"2g6gzadwcx1w-f6nresx6s5at","text":"Đầu ra không phải lúc nào cũng đáng tin cậy.","correct":true},{"id":"eauitj855v0p-ex3yj1qab995","text":"Có sự thiếu hụt các tiêu chuẩn chung về cách thức sử dụng AI.","correct":true},{"id":"w620ljti12mn-c30ioc3okchp","text":"Lượng dữ liệu được nhập vào một mô hình có giới hạn trần.","correct":false},{"id":"qyhqjs4l6bct-ql8c3gcdebh5","text":"Lượng dữ liệu được xuất ra từ một mô hình có giới hạn trần.","correct":false}]},"explanation":"Các hạn chế của AI tạo sinh bao gồm việc đầu ra không đáng tin cậy và việc không có các tiêu chuẩn chung về cách thức sử dụng AI.\nLượng dữ liệu được nhập vào một mô hình AI và lượng dữ liệu được tạo ra bởi một mô hình AI không bị giới hạn ở bất kỳ số lượng bản ghi nào."},{"id":"hnjsxn87e7ag-7vgi9oq88g90","number":106,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Một đội thể thao chuyên nghiệp đang tìm cách sử dụng AI tạo sinh cho mục đích tiếp thị muốn biết những hạn chế của AI tạo sinh.\nMột số hạn chế của AI tạo sinh là gì? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"2g6gzadwcx1w-f6nresx6s5at","text":"Đầu ra không phải lúc nào cũng đáng tin cậy.","correct":true},{"id":"eauitj855v0p-ex3yj1qab995","text":"Có sự thiếu hụt các tiêu chuẩn chung về cách thức sử dụng AI.","correct":true},{"id":"w620ljti12mn-c30ioc3okchp","text":"Lượng dữ liệu được nhập vào một mô hình có giới hạn trần.","correct":false},{"id":"qyhqjs4l6bct-ql8c3gcdebh5","text":"Lượng dữ liệu được xuất ra từ một mô hình có giới hạn trần.","correct":false}]},"explanation":"Các hạn chế của AI tạo sinh bao gồm việc đầu ra không đáng tin cậy và việc không có các tiêu chuẩn chung về cách thức sử dụng AI.\nLượng dữ liệu được nhập vào một mô hình AI và lượng dữ liệu được tạo ra bởi một mô hình AI không bị giới hạn ở bất kỳ số lượng bản ghi nào."},{"id":"7g9asz2nem88-vjb1154oap24","number":108,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Đối với những nhiệm vụ nào trong cuộc sống mà người ta có thể tận dụng AI tạo sinh để thực hiện chúng hiệu quả hơn? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"2g6gzadwcx1w-f6nresx6s5at","text":"Lập danh sách thực phẩm cần mua từ một công thức nấu ăn.","correct":true},{"id":"eauitj855v0p-ex3yj1qab995","text":"Tạo một bản tóm tắt của một lượng lớn văn bản.","correct":true},{"id":"w620ljti12mn-c30ioc3okchp","text":"Giúp hỗ trợ tinh thần.","correct":false},{"id":"qyhqjs4l6bct-ql8c3gcdebh5","text":"Giúp tạo ra một tác phẩm nghệ thuật gốc.","correct":false}]},"explanation":"AI tạo sinh có thể giúp thực hiện các nhiệm vụ trong cuộc sống như lập danh sách thực phẩm cần mua từ một công thức nấu ăn hoặc tạo bản tóm tắt một lượng lớn văn bản.\nAI tạo sinh không giúp tạo nội dung gốc, chẳng hạn như một dự án nghệ thuật sáng tạo, vì kết quả luôn đến từ dữ liệu hiện có.\nAI tạo sinh cũng không nhằm hỗ trợ tinh thần."},{"id":"p3itpzreq298-hra8b517avzc","number":118,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Một công ty giải trí đang tìm cách sử dụng AI tạo sinh để phát triển các chiến dịch tiếp thị. Những yếu tố nào là những yếu tố cần cân nhắc khi lựa chọn công cụ cho các chiến dịch tiếp thị này? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"3qnbyma60nfs-gs4yckj059lo","text":"Phân tích cạnh tranh","correct":false},{"id":"uvzjo4iz698n-owodq3ry9w4j","text":"Chi phí","correct":true},{"id":"inb5lbpyj0rx-iii39svftjs6","text":"Dễ sử dụng","correct":true},{"id":"agsx2oj2pd17-31bslpgz8qsi","text":"Nhu cầu tiếp thị","correct":false}]},"explanation":"Đáp án đúng: ✅ B. Chi phí và ✅ C. Dễ sử dụng\nGiải thích:\nChi phí (B): Là yếu tố quan trọng khi chọn công cụ AI — công ty cần đảm bảo ngân sách phù hợp với quy mô chiến dịch và lợi nhuận kỳ vọng.\nDễ sử dụng (C): Công cụ AI phải thân thiện, dễ triển khai và tích hợp để đội ngũ tiếp thị có thể sử dụng hiệu quả mà không cần chuyên môn kỹ thuật cao.\nPhân tích cạnh tranh (A): Là một ứng dụng của AI, không phải yếu tố để lựa chọn công cụ.\nNhu cầu tiếp thị (D): Là mục tiêu kinh doanh, chứ không phải tiêu chí đánh giá công cụ."},{"id":"88f102m5n4fl-3m5it1gtna4g","number":121,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Danh mục nào sau đây khi được sử dụng để thu thập dữ liệu có thể tạo ra sự thiên lệch (hay thành kiến) trong đầu ra của AI tạo sinh? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"o9iec6y6ssy-1586nnfjslsq","text":"Giới tính","correct":true},{"id":"djblosugreos-v0779d91flmb","text":"Chủng tộc","correct":true},{"id":"11j326eqd3ix-lknfd6kpid9l","text":"Vị trí địa lý","correct":false},{"id":"uhn0fad428b2-lkvkomueen0","text":"Dữ liệu thống kê","correct":false}]},"explanation":"Thiên lệch trong AI tạo sinh tập trung vào thành kiến cá nhân, chẳng hạn như giới tính hoặc chủng tộc của một người.\nVị trí địa lý không gây ra sự thiên lệch.\nDữ liệu thống kê không phải là nguồn gây ra sự thiên lệch."},{"id":"fen4hfr1yeej-eyai1yvk7hca","number":127,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Một công ty tiếp thị đang tìm hiểu về các mô hình AI và cố gắng tìm ra mô hình AI nào nên sử dụng để nâng cao hoạt động kinh doanh của mình.\nPhân loại mỗi mô hình AI tạo sinh là mô hình văn bản hoặc mô hình hình ảnh.","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText94","text":"Open AI GPTx","options":[{"id":"0","text":"Mô hình Văn bản","correct":true},{"id":"1","text":"Mô hình Hình ảnh","correct":false}]},{"id":"qmMultipleChoiceText95","text":"Google Gemini","options":[{"id":"0","text":"Mô hình Văn bản","correct":true},{"id":"1","text":"Mô hình Hình ảnh","correct":false}]},{"id":"qmMultipleChoiceText96","text":"DALL-E","options":[{"id":"0","text":"Mô hình Văn bản","correct":false},{"id":"1","text":"Mô hình Hình ảnh","correct":true}]},{"id":"qmMultipleChoiceText97","text":"Adobe Firefly","options":[{"id":"0","text":"Mô hình Văn bản","correct":false},{"id":"1","text":"Mô hình Hình ảnh","correct":true}]}]},"explanation":"Mô hình Văn bản\nOpen AI GPTx\nGoogle Gemini\nMô hình Hình ảnh\nDALL-E\nAdobe Firefly"},{"id":"4usnijdzhcrr-my2zs1hsca8p","number":131,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Đối với mỗi lời nhắc AI tạo sinh, hãy cho biết Yes nếu lời nhắc có hiệu quả trong việc mô tả nội dung của hình ảnh và No nếu không.","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText101","text":"Nền của hình ảnh này là gì?","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]},{"id":"qmMultipleChoiceText102","text":"Tạo nền màu xanh lá cây cho hình ảnh của máy ảnh.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText103","text":"Xây dựng một hình ảnh tương tự bằng cách sử dụng nền của hình ảnh này.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]}]},"explanation":"Đáp án:\nA. Nền của hình ảnh này là gì? → No  Giải thích: Đây là câu hỏi phân tích hình ảnh, không mô tả nội dung hình ảnh trong lời nhắc cho Generative AI.\nB. Tạo nền màu xanh lá cây cho hình ảnh của máy ảnh. → Yes Giải thích: Câu này mô tả rõ nội dung cần tạo (một hình ảnh có máy ảnh với nền màu xanh lá cây) → là lời nhắc hiệu quả cho Generative AI.\nC. Xây dựng một hình ảnh tương tự bằng cách sử dụng nền của hình ảnh này. → No Giải thích: Câu này không mô tả cụ thể nội dung hình ảnh — chỉ nói “tương tự” và “nền của hình này” mà không nêu chi tiết, nên không đủ hiệu quả."},{"id":"mxte1r8zhtbn-8856qxsyeed6","number":145,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Với mỗi câu dưới đây, hãy chọn Yes (Đúng) nếu phát biểu đúng, và No (Sai) nếu phát biểu sai.","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText114","text":"Generative AI có thể được sử dụng để lan truyền sự thiên lệch (bias).","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText115","text":"Không tính đến các ngày lễ tôn giáo khi lập lịch làm việc là một ví dụ về sự thiên lệch.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText116","text":"Tình trạng kinh tế có thể là một nguồn gây thiên lệch.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]}]},"explanation":"True (Đúng):\nGenerative AI có thể được sử dụng để lan truyền sự thiên lệch (bias): AI học từ dữ liệu con người tạo ra, nên nếu dữ liệu có thành kiến (ví dụ về giới tính, chủng tộc, tôn giáo…), thì AI cũng có thể tái tạo hoặc khuếch đại những thành kiến đó.\nKhông tính đến các ngày lễ tôn giáo khi lập lịch làm việc là một ví dụ về sự thiên lệch: Nếu bỏ qua ngày lễ của một nhóm tôn giáo, điều đó có thể khiến hệ thống hoặc tổ chức thiên vị và không công bằng với họ.\nTình trạng kinh tế có thể là một nguồn gây thiên lệch: Nếu dữ liệu huấn luyện chủ yếu đến từ người có cùng mức thu nhập hoặc tầng lớp xã hội, AI có thể thiên vị về cách hiểu, ngôn ngữ, hoặc cách gợi ý nội dung."},{"id":"pm27cz1y31yc-hr1zbugy4gq0","number":156,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleChoiceText","prompt":"Đối với mỗi tuyên bố liên quan đến tác động xã hội của AI tạo sinh, hãy cho biết Yes nếu tác động tích cực và No nếu không.","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"matrix","rows":[{"id":"qmMultipleChoiceText139","text":"AI tạo sinh giúp mọi người học tập hiệu quả hơn.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText140","text":"AI tạo sinh giúp mọi người thực hiện công việc của họ hiệu quả hơn.","options":[{"id":"0","text":"Yes","correct":true},{"id":"1","text":"No","correct":false}]},{"id":"qmMultipleChoiceText141","text":"AI tạo sinh có thể làm giảm tương tác của con người.","options":[{"id":"0","text":"Yes","correct":false},{"id":"1","text":"No","correct":true}]}]},"explanation":"Đáp án:\nA. Generative AI giúp mọi người học tập hiệu quả hơn → Yes Giải thích: AI có thể cá nhân hóa việc học, giải thích khái niệm phức tạp, và hỗ trợ luyện tập, giúp người học tiếp thu nhanh và hiệu quả hơn.\nB. AI tổng quát giúp mọi người thực hiện công việc của họ hiệu quả hơn → Yes Giải thích: Generative AI hỗ trợ tự động hóa, viết, phân tích dữ liệu, sáng tạo nội dung, giúp tăng năng suất và giảm thời gian làm việc.\nC. AI tổng quát có thể làm giảm tương tác của con người → No Giải thích: Đây là tác động tiêu cực, vì việc phụ thuộc vào AI quá mức có thể khiến giảm giao tiếp và hợp tác giữa con người."},{"id":"uzte1z4qvsoh-yyvybvjdtx0n","number":164,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Đối với những nhiệm vụ nào trong cuộc sống, người ta có thể tranh thủ AI tạo sinh để thực hiện những nhiệm vụ đó hiệu quả hơn? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"l7qpmzszgjjr-yrp3z16lppfj","text":"Giúp tạo ra một tác phẩm nghệ thuật gốc.","correct":true},{"id":"5i2n5lz4q6o0-ir05dap7k5qt","text":"Tạo một bản tóm tắt của một lượng lớn văn bản.","correct":true},{"id":"xzzs50sivfr6-5es7mewpfaoi","text":"Tạo danh sách tạp hóa từ một công thức.","correct":false},{"id":"m6rn68nik923-8lzaom1qkui2","text":"Giúp hỗ trợ tinh thần.","correct":false}]},"explanation":"Đáp án đúng: A. Giúp tạo ra một tác phẩm nghệ thuật gốc; B. Tạo một bản tóm tắt của một lượng lớn văn bản\nGiải thích:\nA. Giúp tạo ra một tác phẩm nghệ thuật gốc: Generative AI có thể tạo hình ảnh, nhạc, thơ, hoặc thiết kế nghệ thuật dựa trên ý tưởng của người dùng → hỗ trợ sáng tạo nội dung nhanh và độc đáo.\nB. Tạo một bản tóm tắt của một lượng lớn văn bản: AI có thể phân tích, rút gọn và tóm tắt thông tin trong tài liệu dài (báo cáo, bài nghiên cứu, email, v.v.) → giúp tiết kiệm thời gian và tăng hiệu quả làm việc.\nCác lựa chọn khác:\nC. Tạo danh sách tạp hóa từ một công thức: việc này đơn giản và có thể làm bằng công cụ lập danh sách, không cần đến Generative AI.\nD. Giúp hỗ trợ tinh thần: Generative AI không nên được dùng như một công cụ hỗ trợ tâm lý chuyên nghiệp, vì không thay thế con người trong lĩnh vực nhạy cảm này."},{"id":"cln1uvdqj7oh-o2epqkywfscq","number":168,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"AI tạo sinh giúp con người giao tiếp hiệu quả hơn giữa các ngôn ngữ khác nhau bằng cách nào? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"im50tnwszdoj-so6ukx1e1817","text":"Dịch ngôn ngữ theo thời gian thực","correct":true},{"id":"oxt148hymdu4-tlon1g2472vr","text":"Cung cấp các bài học để học ngôn ngữ","correct":true},{"id":"qf8yylyqnw84-agtl79bz0pxd","text":"Sửa ngữ pháp","correct":false},{"id":"q9p6wn7lme2o-m00g6tpzprbj","text":"Viết theo nhiều phong cách khác nhau","correct":false}]},"explanation":"Dịch ngôn ngữ theo thời gian thực: AI có thể dịch tức thì khi bạn nói hoặc gõ, giúp hai người nói hai ngôn ngữ khác nhau hiểu nhau dễ dàng hơn (ví dụ như Google Translate hoặc ChatGPT với tính năng dịch song ngữ).\nCung cấp các bài học để học ngôn ngữ: Một số công cụ AI có thể hướng dẫn học ngôn ngữ mới, gợi ý cách phát âm, ngữ pháp, hoặc hội thoại mẫu.\nHai lựa chọn còn lại (sửa ngữ pháp và viết theo phong cách) chỉ giúp cải thiện ngôn ngữ trong cùng một tiếng, chứ không trực tiếp giúp giao tiếp giữa các ngôn ngữ khác nhau."},{"id":"ro738uwyg9lo-wcbo75qa0tpu","number":171,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Hai nhận định sai lầm phổ biến về AI tạo sinh? (Chọn hai)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"im50tnwszdoj-so6ukx1e1817","text":"AI sẽ thay thế sự giao tiếp giữa con người.","correct":true},{"id":"oxt148hymdu4-tlon1g2472vr","text":"AI được mọi người trên thế giới sử dụng như nhau.","correct":true},{"id":"qf8yylyqnw84-agtl79bz0pxd","text":"AI sẽ làm thay đổi thị trường việc làm.","correct":false},{"id":"q9p6wn7lme2o-m00g6tpzprbj","text":"AI phân tích các mẫu dữ liệu và biến chúng thành cơ hội.","correct":false}]},"explanation":"Hiểu lầm 1: “AI sẽ thay thế con người trong giao tiếp.”\nAI có thể giúp con người giao tiếp tốt hơn, nhưng không thể thay thế cảm xúc và sự kết nối thật.\nHiểu lầm 2: “Ai cũng dùng được AI như nhau.”\nThực tế, không phải ai cũng có đủ thiết bị, internet hay kỹ năng để dùng AI, nên điều này cũng là hiểu lầm.\nHai lựa chọn còn lại (AI làm thay đổi công việc và AI phân tích dữ liệu) là đúng, không phải hiểu lầm."},{"id":"lfynr4o3diqw-1dsrankvcm2","number":172,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Những đặc điểm nào của dữ liệu có thể khiến mô hình AI tạo sinh bị thiên lệch (bias)? (Chọn 2)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"im50tnwszdoj-so6ukx1e1817","text":"Độ tuổi","correct":true},{"id":"oxt148hymdu4-tlon1g2472vr","text":"Quốc tịch","correct":true},{"id":"qf8yylyqnw84-agtl79bz0pxd","text":"Khả năng sử dụng công nghệ","correct":false},{"id":"q9p6wn7lme2o-m00g6tpzprbj","text":"Dữ liệu không đầy đủ","correct":false}]},"explanation":"Độ tuổi và quốc tịch là những yếu tố dễ làm AI bị “thiên lệch.”\nVí dụ: nếu AI được huấn luyện chủ yếu bằng dữ liệu từ người lớn tuổi hoặc chỉ từ một quốc gia, nó có thể hiểu sai hoặc đánh giá lệch khi gặp người trẻ hoặc đến từ quốc gia khác.\nKhả năng sử dụng công nghệ không phải là yếu tố gây thiên lệch dữ liệu.\nDữ liệu không đầy đủ không phải là yếu tố gây thiên lệch dữ liệu."},{"id":"5xrp2ux66win-a0g4mvdxwjx6","number":174,"source":"Câu hỏi Ôn luyện Gmetrix","type":"MultipleResponse","prompt":"Trong các lựa chọn dưới đây, hai loại nào là dữ liệu đầu vào mà bạn có thể dùng với AI tạo sinh? (Chọn 2)","images":[],"difficulty":"medium","topic":"methods","interaction":{"kind":"multiple","options":[{"id":"im50tnwszdoj-so6ukx1e1817","text":"Văn bản","correct":true},{"id":"oxt148hymdu4-tlon1g2472vr","text":"Âm thanh","correct":true},{"id":"qf8yylyqnw84-agtl79bz0pxd","text":"Mạng nơ-ron","correct":false},{"id":"4setdhaax8wa-t2l6cqn6i1mj","text":"Công thức thống kê","correct":false}]},"explanation":"AI tạo sinh có thể nhận nhiều loại đầu vào khác nhau, như:\nVăn bản\nÂm thanh\nHình ảnh\nVideo"}]
+[
+  {
+    "id": "j27tnq1x88-jz0mxczfsywj",
+    "number": 93,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Sử dụng danh sách thả xuống, cung cấp đầu vào cần thiết và đầu ra được tạo ra với từng loại dữ liệu.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText82",
+          "text": "Nhận dạng ký tự quang học (OCR) – Đầu vào:",
+          "options": [
+            {
+              "id": "0",
+              "text": "Hình ảnh",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Âm thanh",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "Văn bản",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText83",
+          "text": "Nhận dạng ký tự quang học (OCR) – Đầu ra:",
+          "options": [
+            {
+              "id": "0",
+              "text": "Hình ảnh",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Âm thanh",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "Văn bản",
+              "correct": true
+            },
+            {
+              "id": "3",
+              "text": "Video",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText84",
+          "text": "Khuôn mặt người đang nói (Talking-head) – Đầu vào:",
+          "options": [
+            {
+              "id": "0",
+              "text": "Hình ảnh",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Âm thanh",
+              "correct": true
+            },
+            {
+              "id": "2",
+              "text": "Văn bản",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText85",
+          "text": "Khuôn mặt người đang nói (Talking-head) – Đầu ra:",
+          "options": [
+            {
+              "id": "0",
+              "text": "Hình ảnh",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Âm thanh",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "Văn bản",
+              "correct": false
+            },
+            {
+              "id": "3",
+              "text": "Video",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đáp án:\nA. OCR – Đầu vào:  Hình ảnh Giải thích: OCR (Optical Character Recognition) nhận hình ảnh chứa chữ để nhận dạng ký tự.\nB. OCR – Đầu ra: Văn bản Giải thích: Kết quả của OCR là chữ được trích xuất từ hình ảnh.\nC. Talking-head – Đầu vào: Âm thanh hoặc Văn bản (thông thường là Âm thanh nếu dùng giọng nói) Giải thích: Mô hình Talking-head sử dụng âm thanh hoặc lời nói (đôi khi cả văn bản được chuyển thành giọng) để điều khiển khuôn mặt nhân vật.\nD. Talking-head – Đầu ra: Video Giải thích: Kết quả là video có khuôn mặt nhân vật chuyển động, nói chuyện theo giọng hoặc nội dung đầu vào."
+  },
+  {
+    "id": "2tvhydreswab-cxbuxwq2j3nh",
+    "number": 94,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Sử dụng danh sách thả xuống để xác định các loại tóm tắt của một báo cáo hoặc một cuốn sách.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText86",
+          "text": "Loại tóm tắt này lấy ra các câu quan trọng nhất từ một báo cáo hoặc một cuốn sách.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Abstractive: Tóm tắt Trừu tượng",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Extractive: Tóm tắt Trích xuất",
+              "correct": true
+            },
+            {
+              "id": "2",
+              "text": "Query-based: Tóm tắt Dựa trên Truy vấn",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText87",
+          "text": "Loại tóm tắt này diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Abstractive: Tóm tắt Trừu tượng",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Extractive: Tóm tắt Trích xuất",
+              "correct": false
+            },
+            {
+              "id": "2",
+              "text": "Query-based: Tóm tắt Dựa trên Truy vấn",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Tóm tắt Trích xuất kéo các câu quan trọng nhất trực tiếp từ một báo cáo hoặc một cuốn sách.\nTóm tắt Trừu tượng diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt.\nTóm tắt Dựa trên Truy vấn cung cấp câu trả lời cho các câu hỏi cụ thể về một báo cáo hoặc một cuốn sách."
+  },
+  {
+    "id": "2pq8nx7gok6q-5wjrvjye2ws",
+    "number": 100,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Những tình huống nào là ví dụ về mô hình AI tạo sinh thực hiện các nhiệm vụ cho con người trong các ứng dụng độc lập? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "2g6gzadwcx1w-f6nresx6s5at",
+          "text": "Gửi lời nhắc cho ai đó dựa trên lịch cá nhân trong Outlook.",
+          "correct": true
+        },
+        {
+          "id": "eauitj855v0p-ex3yj1qab995",
+          "text": "Nhận được câu trả lời cho câu hỏi nghiên cứu bằng cách sử dụng Siri.",
+          "correct": true
+        },
+        {
+          "id": "w620ljti12mn-c30ioc3okchp",
+          "text": "Hiển thị nhu cầu nhân sự dựa trên xu hướng lưu lượng khách ghé thăm.",
+          "correct": false
+        },
+        {
+          "id": "qyhqjs4l6bct-ql8c3gcdebh5",
+          "text": "Đề xuất một đơn thuốc cho ai đó dựa trên kết quả xét nghiệm.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Gửi lời nhắc cho ai đó dựa trên lịch cá nhân trong Outlook là một ví dụ về AI tạo sinh.\nNhận được câu trả lời cho câu hỏi nghiên cứu bằng cách sử dụng Siri là một ví dụ về AI tạo sinh.\nHiển thị nhu cầu nhân sự dựa trên xu hướng lưu lượng khách ghé thăm một cửa hàng là một ví dụ về AI dự đoán.\nĐề xuất một đơn thuốc cho ai đó dựa trên kết quả xét nghiệm là một ví dụ về AI đề xuất."
+  },
+  {
+    "id": "av51q2djr5c8-eicnmvns5y3i",
+    "number": 102,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Một đội thể thao chuyên nghiệp đang tìm cách sử dụng AI tạo sinh cho mục đích tiếp thị muốn biết những hạn chế của AI tạo sinh.\nMột số hạn chế của AI tạo sinh là gì? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "2g6gzadwcx1w-f6nresx6s5at",
+          "text": "Đầu ra không phải lúc nào cũng đáng tin cậy.",
+          "correct": true
+        },
+        {
+          "id": "eauitj855v0p-ex3yj1qab995",
+          "text": "Có sự thiếu hụt các tiêu chuẩn chung về cách thức sử dụng AI.",
+          "correct": true
+        },
+        {
+          "id": "w620ljti12mn-c30ioc3okchp",
+          "text": "Lượng dữ liệu được nhập vào một mô hình có giới hạn trần.",
+          "correct": false
+        },
+        {
+          "id": "qyhqjs4l6bct-ql8c3gcdebh5",
+          "text": "Lượng dữ liệu được xuất ra từ một mô hình có giới hạn trần.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Các hạn chế của AI tạo sinh bao gồm việc đầu ra không đáng tin cậy và việc không có các tiêu chuẩn chung về cách thức sử dụng AI.\nLượng dữ liệu được nhập vào một mô hình AI và lượng dữ liệu được tạo ra bởi một mô hình AI không bị giới hạn ở bất kỳ số lượng bản ghi nào."
+  },
+  {
+    "id": "7g9asz2nem88-vjb1154oap24",
+    "number": 104,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Đối với những nhiệm vụ nào trong cuộc sống mà người ta có thể tận dụng AI tạo sinh để thực hiện chúng hiệu quả hơn? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "2g6gzadwcx1w-f6nresx6s5at",
+          "text": "Lập danh sách thực phẩm cần mua từ một công thức nấu ăn.",
+          "correct": true
+        },
+        {
+          "id": "eauitj855v0p-ex3yj1qab995",
+          "text": "Tạo một bản tóm tắt của một lượng lớn văn bản.",
+          "correct": true
+        },
+        {
+          "id": "w620ljti12mn-c30ioc3okchp",
+          "text": "Giúp hỗ trợ tinh thần.",
+          "correct": false
+        },
+        {
+          "id": "qyhqjs4l6bct-ql8c3gcdebh5",
+          "text": "Giúp tạo ra một tác phẩm nghệ thuật gốc.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "AI tạo sinh có thể giúp thực hiện các nhiệm vụ trong cuộc sống như lập danh sách thực phẩm cần mua từ một công thức nấu ăn hoặc tạo bản tóm tắt một lượng lớn văn bản.\nAI tạo sinh không giúp tạo nội dung gốc, chẳng hạn như một dự án nghệ thuật sáng tạo, vì kết quả luôn đến từ dữ liệu hiện có.\nAI tạo sinh cũng không nhằm hỗ trợ tinh thần."
+  },
+  {
+    "id": "p3itpzreq298-hra8b517avzc",
+    "number": 114,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Một công ty giải trí đang tìm cách sử dụng AI tạo sinh để phát triển các chiến dịch tiếp thị. Những yếu tố nào là những yếu tố cần cân nhắc khi lựa chọn công cụ cho các chiến dịch tiếp thị này? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "3qnbyma60nfs-gs4yckj059lo",
+          "text": "Phân tích cạnh tranh",
+          "correct": false
+        },
+        {
+          "id": "uvzjo4iz698n-owodq3ry9w4j",
+          "text": "Chi phí",
+          "correct": true
+        },
+        {
+          "id": "inb5lbpyj0rx-iii39svftjs6",
+          "text": "Dễ sử dụng",
+          "correct": true
+        },
+        {
+          "id": "agsx2oj2pd17-31bslpgz8qsi",
+          "text": "Nhu cầu tiếp thị",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Đáp án đúng: ✅ B. Chi phí và ✅ C. Dễ sử dụng\nGiải thích:\nChi phí (B): Là yếu tố quan trọng khi chọn công cụ AI — công ty cần đảm bảo ngân sách phù hợp với quy mô chiến dịch và lợi nhuận kỳ vọng.\nDễ sử dụng (C): Công cụ AI phải thân thiện, dễ triển khai và tích hợp để đội ngũ tiếp thị có thể sử dụng hiệu quả mà không cần chuyên môn kỹ thuật cao.\nPhân tích cạnh tranh (A): Là một ứng dụng của AI, không phải yếu tố để lựa chọn công cụ.\nNhu cầu tiếp thị (D): Là mục tiêu kinh doanh, chứ không phải tiêu chí đánh giá công cụ."
+  },
+  {
+    "id": "88f102m5n4fl-3m5it1gtna4g",
+    "number": 117,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Danh mục nào sau đây khi được sử dụng để thu thập dữ liệu có thể tạo ra sự thiên lệch (hay thành kiến) trong đầu ra của AI tạo sinh? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "o9iec6y6ssy-1586nnfjslsq",
+          "text": "Giới tính",
+          "correct": true
+        },
+        {
+          "id": "djblosugreos-v0779d91flmb",
+          "text": "Chủng tộc",
+          "correct": true
+        },
+        {
+          "id": "11j326eqd3ix-lknfd6kpid9l",
+          "text": "Vị trí địa lý",
+          "correct": false
+        },
+        {
+          "id": "uhn0fad428b2-lkvkomueen0",
+          "text": "Dữ liệu thống kê",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Thiên lệch trong AI tạo sinh tập trung vào thành kiến cá nhân, chẳng hạn như giới tính hoặc chủng tộc của một người.\nVị trí địa lý không gây ra sự thiên lệch.\nDữ liệu thống kê không phải là nguồn gây ra sự thiên lệch."
+  },
+  {
+    "id": "fen4hfr1yeej-eyai1yvk7hca",
+    "number": 123,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Một công ty tiếp thị đang tìm hiểu về các mô hình AI và cố gắng tìm ra mô hình AI nào nên sử dụng để nâng cao hoạt động kinh doanh của mình.\nPhân loại mỗi mô hình AI tạo sinh là mô hình văn bản hoặc mô hình hình ảnh.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText94",
+          "text": "Open AI GPTx",
+          "options": [
+            {
+              "id": "0",
+              "text": "Mô hình Văn bản",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Mô hình Hình ảnh",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText95",
+          "text": "Google Gemini",
+          "options": [
+            {
+              "id": "0",
+              "text": "Mô hình Văn bản",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "Mô hình Hình ảnh",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText96",
+          "text": "DALL-E",
+          "options": [
+            {
+              "id": "0",
+              "text": "Mô hình Văn bản",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Mô hình Hình ảnh",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText97",
+          "text": "Adobe Firefly",
+          "options": [
+            {
+              "id": "0",
+              "text": "Mô hình Văn bản",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "Mô hình Hình ảnh",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Mô hình Văn bản\nOpen AI GPTx\nGoogle Gemini\nMô hình Hình ảnh\nDALL-E\nAdobe Firefly"
+  },
+  {
+    "id": "4usnijdzhcrr-my2zs1hsca8p",
+    "number": 126,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi lời nhắc AI tạo sinh, hãy cho biết Yes nếu lời nhắc có hiệu quả trong việc mô tả nội dung của hình ảnh và No nếu không.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText101",
+          "text": "Nền của hình ảnh này là gì?",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText102",
+          "text": "Tạo nền màu xanh lá cây cho hình ảnh của máy ảnh.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText103",
+          "text": "Xây dựng một hình ảnh tương tự bằng cách sử dụng nền của hình ảnh này.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đáp án:\nA. Nền của hình ảnh này là gì? → No  Giải thích: Đây là câu hỏi phân tích hình ảnh, không mô tả nội dung hình ảnh trong lời nhắc cho Generative AI.\nB. Tạo nền màu xanh lá cây cho hình ảnh của máy ảnh. → Yes Giải thích: Câu này mô tả rõ nội dung cần tạo (một hình ảnh có máy ảnh với nền màu xanh lá cây) → là lời nhắc hiệu quả cho Generative AI.\nC. Xây dựng một hình ảnh tương tự bằng cách sử dụng nền của hình ảnh này. → No Giải thích: Câu này không mô tả cụ thể nội dung hình ảnh — chỉ nói “tương tự” và “nền của hình này” mà không nêu chi tiết, nên không đủ hiệu quả."
+  },
+  {
+    "id": "mxte1r8zhtbn-8856qxsyeed6",
+    "number": 138,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Với mỗi câu dưới đây, hãy chọn Yes (Đúng) nếu phát biểu đúng, và No (Sai) nếu phát biểu sai.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText114",
+          "text": "Generative AI có thể được sử dụng để lan truyền sự thiên lệch (bias).",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText115",
+          "text": "Không tính đến các ngày lễ tôn giáo khi lập lịch làm việc là một ví dụ về sự thiên lệch.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText116",
+          "text": "Tình trạng kinh tế có thể là một nguồn gây thiên lệch.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "True (Đúng):\nGenerative AI có thể được sử dụng để lan truyền sự thiên lệch (bias): AI học từ dữ liệu con người tạo ra, nên nếu dữ liệu có thành kiến (ví dụ về giới tính, chủng tộc, tôn giáo…), thì AI cũng có thể tái tạo hoặc khuếch đại những thành kiến đó.\nKhông tính đến các ngày lễ tôn giáo khi lập lịch làm việc là một ví dụ về sự thiên lệch: Nếu bỏ qua ngày lễ của một nhóm tôn giáo, điều đó có thể khiến hệ thống hoặc tổ chức thiên vị và không công bằng với họ.\nTình trạng kinh tế có thể là một nguồn gây thiên lệch: Nếu dữ liệu huấn luyện chủ yếu đến từ người có cùng mức thu nhập hoặc tầng lớp xã hội, AI có thể thiên vị về cách hiểu, ngôn ngữ, hoặc cách gợi ý nội dung."
+  },
+  {
+    "id": "pm27cz1y31yc-hr1zbugy4gq0",
+    "number": 147,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleChoiceText",
+    "prompt": "Đối với mỗi tuyên bố liên quan đến tác động xã hội của AI tạo sinh, hãy cho biết Yes nếu tác động tích cực và No nếu không.",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "matrix",
+      "rows": [
+        {
+          "id": "qmMultipleChoiceText139",
+          "text": "AI tạo sinh giúp mọi người học tập hiệu quả hơn.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText140",
+          "text": "AI tạo sinh giúp mọi người thực hiện công việc của họ hiệu quả hơn.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qmMultipleChoiceText141",
+          "text": "AI tạo sinh có thể làm giảm tương tác của con người.",
+          "options": [
+            {
+              "id": "0",
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "id": "1",
+              "text": "No",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    "explanation": "Đáp án:\nA. Generative AI giúp mọi người học tập hiệu quả hơn → Yes Giải thích: AI có thể cá nhân hóa việc học, giải thích khái niệm phức tạp, và hỗ trợ luyện tập, giúp người học tiếp thu nhanh và hiệu quả hơn.\nB. AI tổng quát giúp mọi người thực hiện công việc của họ hiệu quả hơn → Yes Giải thích: Generative AI hỗ trợ tự động hóa, viết, phân tích dữ liệu, sáng tạo nội dung, giúp tăng năng suất và giảm thời gian làm việc.\nC. AI tổng quát có thể làm giảm tương tác của con người → No Giải thích: Đây là tác động tiêu cực, vì việc phụ thuộc vào AI quá mức có thể khiến giảm giao tiếp và hợp tác giữa con người."
+  },
+  {
+    "id": "cln1uvdqj7oh-o2epqkywfscq",
+    "number": 157,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "AI tạo sinh giúp con người giao tiếp hiệu quả hơn giữa các ngôn ngữ khác nhau bằng cách nào? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "im50tnwszdoj-so6ukx1e1817",
+          "text": "Dịch ngôn ngữ theo thời gian thực",
+          "correct": true
+        },
+        {
+          "id": "oxt148hymdu4-tlon1g2472vr",
+          "text": "Cung cấp các bài học để học ngôn ngữ",
+          "correct": true
+        },
+        {
+          "id": "qf8yylyqnw84-agtl79bz0pxd",
+          "text": "Sửa ngữ pháp",
+          "correct": false
+        },
+        {
+          "id": "q9p6wn7lme2o-m00g6tpzprbj",
+          "text": "Viết theo nhiều phong cách khác nhau",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Dịch ngôn ngữ theo thời gian thực: AI có thể dịch tức thì khi bạn nói hoặc gõ, giúp hai người nói hai ngôn ngữ khác nhau hiểu nhau dễ dàng hơn (ví dụ như Google Translate hoặc ChatGPT với tính năng dịch song ngữ).\nCung cấp các bài học để học ngôn ngữ: Một số công cụ AI có thể hướng dẫn học ngôn ngữ mới, gợi ý cách phát âm, ngữ pháp, hoặc hội thoại mẫu.\nHai lựa chọn còn lại (sửa ngữ pháp và viết theo phong cách) chỉ giúp cải thiện ngôn ngữ trong cùng một tiếng, chứ không trực tiếp giúp giao tiếp giữa các ngôn ngữ khác nhau."
+  },
+  {
+    "id": "ro738uwyg9lo-wcbo75qa0tpu",
+    "number": 160,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Hai nhận định sai lầm phổ biến về AI tạo sinh? (Chọn hai)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "im50tnwszdoj-so6ukx1e1817",
+          "text": "AI sẽ thay thế sự giao tiếp giữa con người.",
+          "correct": true
+        },
+        {
+          "id": "oxt148hymdu4-tlon1g2472vr",
+          "text": "AI được mọi người trên thế giới sử dụng như nhau.",
+          "correct": true
+        },
+        {
+          "id": "qf8yylyqnw84-agtl79bz0pxd",
+          "text": "AI sẽ làm thay đổi thị trường việc làm.",
+          "correct": false
+        },
+        {
+          "id": "q9p6wn7lme2o-m00g6tpzprbj",
+          "text": "AI phân tích các mẫu dữ liệu và biến chúng thành cơ hội.",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Hiểu lầm 1: “AI sẽ thay thế con người trong giao tiếp.”\nAI có thể giúp con người giao tiếp tốt hơn, nhưng không thể thay thế cảm xúc và sự kết nối thật.\nHiểu lầm 2: “Ai cũng dùng được AI như nhau.”\nThực tế, không phải ai cũng có đủ thiết bị, internet hay kỹ năng để dùng AI, nên điều này cũng là hiểu lầm.\nHai lựa chọn còn lại (AI làm thay đổi công việc và AI phân tích dữ liệu) là đúng, không phải hiểu lầm."
+  },
+  {
+    "id": "lfynr4o3diqw-1dsrankvcm2",
+    "number": 161,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Những đặc điểm nào của dữ liệu có thể khiến mô hình AI tạo sinh bị thiên lệch (bias)? (Chọn 2)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "im50tnwszdoj-so6ukx1e1817",
+          "text": "Độ tuổi",
+          "correct": true
+        },
+        {
+          "id": "oxt148hymdu4-tlon1g2472vr",
+          "text": "Quốc tịch",
+          "correct": true
+        },
+        {
+          "id": "qf8yylyqnw84-agtl79bz0pxd",
+          "text": "Khả năng sử dụng công nghệ",
+          "correct": false
+        },
+        {
+          "id": "q9p6wn7lme2o-m00g6tpzprbj",
+          "text": "Dữ liệu không đầy đủ",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "Độ tuổi và quốc tịch là những yếu tố dễ làm AI bị “thiên lệch.”\nVí dụ: nếu AI được huấn luyện chủ yếu bằng dữ liệu từ người lớn tuổi hoặc chỉ từ một quốc gia, nó có thể hiểu sai hoặc đánh giá lệch khi gặp người trẻ hoặc đến từ quốc gia khác.\nKhả năng sử dụng công nghệ không phải là yếu tố gây thiên lệch dữ liệu.\nDữ liệu không đầy đủ không phải là yếu tố gây thiên lệch dữ liệu."
+  },
+  {
+    "id": "5xrp2ux66win-a0g4mvdxwjx6",
+    "number": 163,
+    "source": "Câu hỏi Ôn luyện Gmetrix",
+    "type": "MultipleResponse",
+    "prompt": "Trong các lựa chọn dưới đây, hai loại nào là dữ liệu đầu vào mà bạn có thể dùng với AI tạo sinh? (Chọn 2)",
+    "images": [],
+    "difficulty": "medium",
+    "topic": "methods",
+    "interaction": {
+      "kind": "multiple",
+      "options": [
+        {
+          "id": "im50tnwszdoj-so6ukx1e1817",
+          "text": "Văn bản",
+          "correct": true
+        },
+        {
+          "id": "oxt148hymdu4-tlon1g2472vr",
+          "text": "Âm thanh",
+          "correct": true
+        },
+        {
+          "id": "qf8yylyqnw84-agtl79bz0pxd",
+          "text": "Mạng nơ-ron",
+          "correct": false
+        },
+        {
+          "id": "4setdhaax8wa-t2l6cqn6i1mj",
+          "text": "Công thức thống kê",
+          "correct": false
+        }
+      ]
+    },
+    "explanation": "AI tạo sinh có thể nhận nhiều loại đầu vào khác nhau, như:\nVăn bản\nÂm thanh\nHình ảnh\nVideo"
+  }
+]
