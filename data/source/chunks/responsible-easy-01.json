@@ -33,7 +33,27 @@
         }
       ]
     },
-    "explanation": "Việc tạo và lan truyền hình ảnh AI mô tả một người thật đang làm điều phi pháp mà họ chưa từng làm, kèm caption ngụ ý điều đó là thật, có thể cấu thành hành vi phỉ báng (defamation) — làm tổn hại danh dự người khác bằng thông tin sai sự thật — bất kể nội dung do AI tạo ra hay do chính Sam vẽ tay. Dùng AI tạo sinh không miễn trừ trách nhiệm pháp lý của người tạo và chia sẻ nội dung."
+    "explanation": "Đáp án theo khóa IIG:\nC. Không, đây được xem là phỉ báng (defamation), và điều đó là bất hợp pháp (illegal).\n\nGiải thích ôn tập:\nPhương án cảnh báo về phỉ báng là phù hợp: ảnh giả về một người làm việc phi pháp kèm chú thích như sự thật có thể làm tổn hại danh tiếng. Dùng AI không tự miễn trách nhiệm cho người tạo hoặc phát tán. Kết luận một vụ cụ thể có bất hợp pháp hay không còn phụ thuộc luật áp dụng và các yếu tố của hành vi, nên không hiểu khóa như một phán quyết tự động cho mọi trường hợp.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 22,
+      "officialAnswerText": "C. Không, đây được xem là phỉ báng (defamation), và điều đó là bất hợp pháp (illegal).",
+      "validatedAnswer": "ens57n7caybj-83scf6t3f6hb",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "tz9n43zpc4v-30hknzb433a8",
@@ -69,7 +89,27 @@
         }
       ]
     },
-    "explanation": "Cách trực tiếp và hiệu quả nhất để tránh rò rỉ thông tin cá nhân là không nhập các dữ liệu định danh (họ tên, tuổi, địa điểm, tài khoản mạng xã hội) vào công cụ AI ngay từ đầu. Các lựa chọn khác mô tả những hành vi khác (làm phản hồi 'phù hợp hơn', suy đoán kết quả, tải tài liệu mật) không trực tiếp nhắm vào việc bảo vệ thông tin ĐỊNH DANH cá nhân như câu hỏi yêu cầu."
+    "explanation": "Đáp án theo khóa IIG:\nA. Tránh sử dụng thông tin nhận dạng cá nhân như họ tên, tuổi, vị trí, và tài khoản mạng xã hội.\n\nGiải thích ôn tập:\nA cụ thể hóa PII cần tránh, đủ đúng để chọn; B cũng đúng về nguyên tắc nhưng không cần giữ cờ tranh luận cho mục tiêu ôn tập.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 50,
+      "officialAnswerText": "A. Tránh sử dụng thông tin nhận dạng cá nhân như họ tên, tuổi, vị trí, và tài khoản mạng xã hội.",
+      "validatedAnswer": "rydq1lyx5wsx-jvws9n4v6qq2",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "rvqu8blja0qg-jtup8hk2vy95",
@@ -105,7 +145,27 @@
         }
       ]
     },
-    "explanation": "Để tránh các rủi ro liên quan đến đầu ra của AI, luôn xác thực thông tin bằng sự giám sát của con người. Việc kiểm tra tính xác thực (fact-checking) thường xuyên có thể giúp ngăn chặn việc phát tán thông tin sai lệch hoặc có hại, điều này sẽ khiến bạn hoặc công ty dễ bị tổn thương trước các hậu quả về tài chính và/hoặc vấn đề pháp lý."
+    "explanation": "Đáp án theo khóa IIG:\nA. Sự giám sát của con người.\n\nGiải thích ôn tập:\nA phù hợp khi mục tiêu là tiếp tục dùng AI và quản lý rủi ro bằng giám sát/quy trình phù hợp. C là tránh dùng AI, có thể loại rủi ro gắn với lần sử dụng đó nhưng không phải biện pháp quản lý trong quá trình dùng. Vì vậy khóa A nên được đọc theo mục tiêu giảm rủi ro khi vẫn khai thác công cụ, không phải khẳng định việc không sử dụng không thể tránh rủi ro.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 86,
+      "officialAnswerText": "A. Sự giám sát của con người.",
+      "validatedAnswer": "k8962cyv948a-c3y5nxdk8cyb",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "70768lxi1wfc-c2zteftx45k2",
@@ -141,7 +201,27 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: B. Bản mẫu (Template)\nGiải thích:\nBản mẫu (template) cho phép nhóm bán hàng giữ nguyên nội dung chính của email, nhưng chèn thông tin cá nhân hóa (như tên khách hàng, sản phẩm liên quan, vị trí, v.v.) cho từng người. Cách này giúp duy trì tính thống nhất trong thông điệp tiếp thị mà vẫn cá nhân hóa cho từng khách hàng.\nCác lựa chọn khác:\nA. API cho dữ liệu: cung cấp dữ liệu cho AI, không trực tiếp đảm bảo cá nhân hóa nội dung email.\nC. Hợp nhất thư (Mail merge): là kỹ thuật truyền thống, không phải tính năng cốt lõi của công cụ Generative AI.\nD. Kết nối với cơ sở dữ liệu: chỉ là nguồn dữ liệu, không kiểm soát hình thức và nội dung email."
+    "explanation": "Đáp án theo khóa IIG:\nB. Bản mẫu.\n\nGiải thích ôn tập:\nGiữ B — bản mẫu. Guide PDF 129 giải thích reusable template giữ cấu trúc ổn định cho email lặp lại. Mẫu chứa nội dung chung và các vị trí thay tên/thông tin riêng, đáp ứng mục tiêu cá nhân hóa với nội dung thống nhất. API/kết nối cơ sở dữ liệu chỉ cung cấp dữ liệu. Đề đã giới hạn “nghiêm ngặt trong một công cụ AI”; phản biện trước dựa vào mail merge như thao tác ngoài AI đã bỏ sót điều kiện này.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 140,
+      "officialAnswerText": "B. Bản mẫu.",
+      "validatedAnswer": "3mgdze2ooth4-uupgn4r8x6x3",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "mywhw75junji-345bov9k5zbl",
@@ -177,7 +257,27 @@
         }
       ]
     },
-    "explanation": "Deepfake là một dạng phương tiện tổng hợp (synthetic media) - tức là ảnh, âm thanh, hoặc video được tạo ra bằng AI để trông giống thật, nhưng không phải thật. Deepfake thường được dùng để ghép mặt hoặc giọng của ai đó vào video, khiến người xem tưởng rằng họ đã thật sự nói hoặc làm điều đó.\nVoice clone: chỉ là giả giọng, không có hình ảnh.\nFace swap: chỉ thay khuôn mặt này vào cơ thể khác.\nCòn deepfake là mức cao hơn: vừa có hình, vừa có chuyển động và lời nói giả."
+    "explanation": "Đáp án theo khóa IIG:\nA. Deepfake (Giả mạo sâu)\n\nGiải thích ôn tập:\nA. Deepfake là tên cụ thể nhất cho nội dung tổng hợp giả mạo hình ảnh/giọng nói một người thật theo tình huống. D. Synthetic media là nhóm rộng hơn, cũng bao gồm deepfake nên không phải một mô tả sai về bản chất. Nếu đề muốn thuật ngữ cụ thể nhất thì A hợp lý; không được giải thích hai nhóm là loại trừ hoặc mọi synthetic media đều nhằm lừa đảo.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 142,
+      "officialAnswerText": "A. Deepfake (Giả mạo sâu)",
+      "validatedAnswer": "mmxnsy8xo4a8-jfwvs3p0uul3",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "mexyi8n48awp-7idmocntxbgu",
@@ -213,7 +313,27 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: Thiết lập quy định nội bộ cấm chia sẻ dữ liệu với mô hình AI công khai.\nVì hiện nay chưa có một cơ quan chính thức nào đặt ra quy định chung cho việc xử lý dữ liệu AI, nên công ty phải tự xây dựng chính sách bảo mật nội bộ để nhân viên không được đưa dữ liệu quan trọng vào công cụ AI công khai như ChatGPT, Gemini, v.v.\nKhông cho dùng AI là không thực tế.\nẨn danh dữ liệu là kỹ thuật khác, chỉ dùng khi dữ liệu được huấn luyện trong mô hình nội bộ, chứ không áp dụng được khi người dùng đang nhập prompt vào AI công khai."
+    "explanation": "Đáp án theo khóa IIG:\nA. Thiết lập quy định nội bộ cấm chia sẻ dữ liệu với các mô hình AI công khai.\n\nGiải thích ôn tập:\nQuy định cấm gửi dữ liệu nghiên cứu nhạy cảm tới mô hình công khai là biện pháp tổ chức trực tiếp theo khóa. Quy định cần đi cùng kiểm soát kỹ thuật, quyền truy cập và thực thi; văn bản cấm đơn thuần không bảo đảm không rò rỉ. Xóa tên người không loại hết bí mật nghiên cứu. Không cần dựa vào khẳng định “chưa có cơ quan quản lý AI” để giải thích đáp án.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 155,
+      "officialAnswerText": "A. Thiết lập quy định nội bộ cấm chia sẻ dữ liệu với các mô hình AI công khai.",
+      "validatedAnswer": "k6v1a644t97a-y3nuutvillbc",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "1phd3qb8wcfz-aeycc9jozifj",
@@ -249,6 +369,26 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: B. Công ty nên xin phép sử dụng dữ liệu.\nGiải thích:\nNếu dữ liệu trên trang web có bản quyền, công ty không được tự ý sử dụng để huấn luyện mô hình AI.\nCách hợp pháp và đạo đức nhất là xin phép chủ sở hữu bản quyền trước khi sử dụng dữ liệu đó — điều này đảm bảo tuân thủ luật sở hữu trí tuệ và bản quyền.\nCác lựa chọn khác:\nA. Thay đổi dữ liệu → vẫn có thể vi phạm bản quyền, vì nội dung gốc vẫn được sử dụng.\nC. Thực hiện biện pháp bảo vệ dữ liệu → giúp bảo mật, không giải quyết vấn đề bản quyền.\nD. Tuân theo quy định ngành → cần thiết, nhưng không thay thế việc xin phép bản quyền cụ thể."
+    "explanation": "Đáp án theo khóa IIG:\nB. Công ty nên xin phép sử dụng dữ liệu.\n\nGiải thích ôn tập:\nXin phép hoặc kiểm tra giấy phép là lựa chọn thận trọng và phù hợp nhất trong các đáp án. Dữ liệu có bản quyền không mặc nhiên được phép dùng chỉ vì xem được công khai. Ngược lại, không phải mọi trường hợp đều cần xin phép mới: giấy phép sẵn có hoặc ngoại lệ luật định có thể áp dụng tùy pháp luật và mục đích. Câu này kiểm tra thực hành tôn trọng quyền, không xác định tính hợp pháp của một tập dữ liệu cụ thể.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 159,
+      "officialAnswerText": "B. Công ty nên xin phép sử dụng dữ liệu.",
+      "validatedAnswer": "dnh15ml1ck13-5bpsi6do090u",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   }
 ]

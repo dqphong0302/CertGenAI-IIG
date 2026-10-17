@@ -61,7 +61,31 @@
         }
       ]
     },
-    "explanation": "Chuyển đổi hình ảnh là khi AI thao tác hoặc biến đổi một hình ảnh có sẵn — biến bản phác thảo thành ảnh thực tế, hay chỉnh sửa siêu dữ liệu của ảnh, đều là các hình thức chuyển đổi ảnh. Ngược lại, chỉ hỏi thông tin về định dạng tệp của logo không làm thay đổi hay tạo ra hình ảnh nào, nên không phải là chuyển đổi hình ảnh."
+    "explanation": "Đáp án theo khóa IIG:\nKhám phá định dạng tập tin của logo. → Không; Chuyển đổi bản phác thảo ngôi nhà thành hình ảnh thực tế. → Có; Thay đổi siêu dữ liệu của ảnh kỳ nghỉ để thay đổi vị trí và ngày chụp. → Có\n\nGiải thích ôn tập:\nĐọc chuyển đổi ảnh theo nghĩa rộng gồm sửa metadata của tệp; giữ Không–Có–Có.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 3,
+      "officialAnswerText": "Khám phá định dạng tập tin của logo. → Không; Chuyển đổi bản phác thảo ngôi nhà thành hình ảnh thực tế. → Có; Thay đổi siêu dữ liệu của ảnh kỳ nghỉ để thay đổi vị trí và ngày chụp. → Có",
+      "validatedAnswer": {
+        "qmMultipleChoiceText1": "1",
+        "qmMultipleChoiceText2": "0",
+        "qmMultipleChoiceText3": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "nwo5u8ci4u6a-82ssriqau4h5",
@@ -125,7 +149,31 @@
         }
       ]
     },
-    "explanation": "Mục tiêu là một video ĐÁNH GIÁ TÍCH CỰC nhằm quảng bá sản phẩm, nên câu lệnh hiệu quả cần có cấu trúc rõ ràng (giới thiệu – nội dung cụ thể như dễ dùng/vệ sinh – kêu gọi mua hàng). Câu lệnh chỉ nói chung chung 'thảo luận công dụng' thiếu chi tiết định hướng nội dung, còn yêu cầu một đánh giá 'khách quan' lại đi ngược mục tiêu quảng cáo tích cực đã đề ra."
+    "explanation": "Đáp án theo khóa IIG:\nTạo video chi tiết dài 5 phút về máy đánh trứng Healthy Eats mới. Video nên bao gồm phần giới thiệu, đề cập đến tính dễ sử dụng và vệ sinh, và phần kết luận khuyến khích người xem mua thiết bị nhà bếp. → Đúng; Tạo video về máy đánh trứng mới. Video nên thảo luận về các công dụng tiềm năng và khuyến khích người mua tiềm năng mua máy đánh trứng. → Sai; Tạo video đánh giá khách quan về máy đánh trứng. → Sai\n\nGiải thích ôn tập:\nGiữ khóa Đúng–Sai–Sai theo tiêu chí “đáp ứng đầy đủ yêu cầu quảng bá Healthy Eats”. Dòng 1 chỉ rõ sản phẩm, thời lượng và cấu trúc. Dòng 2 chưa nêu thương hiệu và cấu trúc nên kém cụ thể, nhưng vẫn có thể sinh một video quảng bá dùng được. Dòng 3 yêu cầu đánh giá khách quan, không chỉ đạo quảng bá tích cực. Đánh giá khách quan vẫn có thể tích cực nếu sản phẩm xứng đáng; hai khái niệm này không mâu thuẫn tất yếu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 6,
+      "officialAnswerText": "Tạo video chi tiết dài 5 phút về máy đánh trứng Healthy Eats mới. Video nên bao gồm phần giới thiệu, đề cập đến tính dễ sử dụng và vệ sinh, và phần kết luận khuyến khích người xem mua thiết bị nhà bếp. → Đúng; Tạo video về máy đánh trứng mới. Video nên thảo luận về các công dụng tiềm năng và khuyến khích người mua tiềm năng mua máy đánh trứng. → Sai; Tạo video đánh giá khách quan về máy đánh trứng. → Sai",
+      "validatedAnswer": {
+        "qmMultipleChoiceText4": "0",
+        "qmMultipleChoiceText5": "1",
+        "qmMultipleChoiceText6": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "5wnr89bxao6y-w8xnxc5l70rq",
@@ -161,7 +209,30 @@
         }
       ]
     },
-    "explanation": "Yêu cầu là một bản tóm tắt ngắn gọn nhưng đầy đủ thông tin quan trọng — nên cần nêu mục đích cuộc họp và trích xuất đúng các quyết định/thông tin thiết yếu. Liệt kê mục hành động 'từ cuộc họp trước' là sai chủ thể (cuộc họp khác), còn 'định dạng biên bản' chỉ là trình bày hình thức, không đảm bảo nội dung được tóm tắt đầy đủ."
+    "explanation": "Đáp án theo khóa IIG:\nB. Tóm tắt ngắn gọn mục đích của cuộc họp.; C. Chỉ trích xuất thông tin và quyết định thiết yếu từ cuộc họp này.\n\nGiải thích ôn tập:\nYêu cầu là một bản tóm tắt ngắn gọn nhưng đầy đủ thông tin quan trọng — nên cần nêu mục đích cuộc họp và trích xuất đúng các quyết định/thông tin thiết yếu. Liệt kê mục hành động 'từ cuộc họp trước' là sai chủ thể (cuộc họp khác), còn 'định dạng biên bản' chỉ là trình bày hình thức, không đảm bảo nội dung được tóm tắt đầy đủ.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 8,
+      "officialAnswerText": "B. Tóm tắt ngắn gọn mục đích của cuộc họp.; C. Chỉ trích xuất thông tin và quyết định thiết yếu từ cuộc họp này.",
+      "validatedAnswer": [
+        "7nucx7xta8rf-nl2kx18s3a7w",
+        "5pdveuyniart-c74wj0ifn6yu"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "3jxlusm2fw33-96w4m9jpopoq",
@@ -230,7 +301,31 @@
         }
       ]
     },
-    "explanation": "ChatGPT chỉ ghi nhớ thông tin trong phạm vi một phiên trò chuyện và vẫn có thể liên kết dữ liệu đó với địa chỉ IP của bạn trong phiên — nghĩa là dữ liệu nhạy cảm (số tài khoản, mã PIN) vẫn tồn tại và có nguy cơ bị lộ suốt phiên làm việc, dù không được ghi nhớ vĩnh viễn. Quan trọng nhất: nếu xảy ra sự cố bảo mật với dữ liệu bạn chủ động tải lên, chính bạn và tổ chức của bạn phải chịu trách nhiệm — không phải nhà cung cấp công cụ AI."
+    "explanation": "Đáp án theo khóa IIG:\nChatGPT sẽ ghi nhớ tài khoản và mã PIN của thành viên trong bao lâu? → Nó ghi nhớ trong toàn bộ phiên của bạn.; ChatGPT có thể liên kết địa chỉ IP của bạn với dữ liệu này trong phiên sau không? → Có; Điều gì sẽ xảy ra nếu mã PIN của người dự thi bị xâm phạm do tấn công mạng trong phiên chatGPT? → Bạn và công ty của bạn phải chịu trách nhiệm.\n\nGiải thích ôn tập:\nLàm bài theo từng dòng của khóa IIG bên trên. Bài học thực hành là không đưa số tài khoản hoặc mã PIN vào công cụ chưa được phê duyệt. Thời hạn lưu dữ liệu, liên kết phiên và trách nhiệm khi xảy ra sự cố phải được kiểm tra trong chính sách áp dụng; không suy ra một quy định chung từ tình huống bài thi.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 14,
+      "officialAnswerText": "ChatGPT sẽ ghi nhớ tài khoản và mã PIN của thành viên trong bao lâu? → Nó ghi nhớ trong toàn bộ phiên của bạn.; ChatGPT có thể liên kết địa chỉ IP của bạn với dữ liệu này trong phiên sau không? → Có; Điều gì sẽ xảy ra nếu mã PIN của người dự thi bị xâm phạm do tấn công mạng trong phiên chatGPT? → Bạn và công ty của bạn phải chịu trách nhiệm.",
+      "validatedAnswer": {
+        "qmMultipleChoiceText7": "0",
+        "qmMultipleChoiceText8": "0",
+        "qmMultipleChoiceText9": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "sjcalyc7eoly-duni8u4h5qe1",
@@ -294,7 +389,31 @@
         }
       ]
     },
-    "explanation": "Xét tính khả thi của từng kết quả: AI hiểu 'loại bỏ màu đỏ' có thể suy diễn thành loại bỏ toàn bộ màu sắc (ra ảnh đen trắng) — có thể xảy ra. Việc AI tự tạo ra thông tin bí mật chưa từng công bố trong khi prompt chỉ chứa dữ liệu công khai là không khả thi về mặt logic (AI không có thông tin đó để đưa vào). Còn việc AI tạo hình ảnh mặt đồng hồ với giờ hiển thị không nhất quán giữa các lần chạy là hạn chế được biết đến của AI tạo sinh (khó tái tạo chính xác chi tiết như số/giờ) — hoàn toàn có thể xảy ra."
+    "explanation": "Đáp án theo khóa IIG:\nBạn đưa ra lời nhắc tạo hình ảnh bao gồm hướng dẫn loại bỏ màu đỏ. AI tạo ra một hình ảnh đen trắng. → Có thể; Bạn đưa ra lời nhắc có cấu trúc tốt, bao gồm thông tin công khai về sản phẩm, để tạo bài thuyết trình bán hàng. Kết quả bao gồm thông tin bí mật chưa được công bố của công ty. → Không thể; Bạn tạo lời nhắc để tạo mặt đồng hồ và chỉ định thời gian đồng hồ sẽ hiển thị. Bạn đưa ra lời nhắc nhiều lần, nhưng thời gian hiển thị trên đồng hồ không phải lúc nào cũng giống nhau. → Có thể\n\nGiải thích ôn tập:\nGiả định hệ thống chỉ có thông tin công khai đã nêu, không có truy cập dữ liệu mật; giữ Có thể–Không thể–Có thể. Không suy rộng ngoài giả định này.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 18,
+      "officialAnswerText": "Bạn đưa ra lời nhắc tạo hình ảnh bao gồm hướng dẫn loại bỏ màu đỏ. AI tạo ra một hình ảnh đen trắng. → Có thể; Bạn đưa ra lời nhắc có cấu trúc tốt, bao gồm thông tin công khai về sản phẩm, để tạo bài thuyết trình bán hàng. Kết quả bao gồm thông tin bí mật chưa được công bố của công ty. → Không thể; Bạn tạo lời nhắc để tạo mặt đồng hồ và chỉ định thời gian đồng hồ sẽ hiển thị. Bạn đưa ra lời nhắc nhiều lần, nhưng thời gian hiển thị trên đồng hồ không phải lúc nào cũng giống nhau. → Có thể",
+      "validatedAnswer": {
+        "qmMultipleChoiceText13": "0",
+        "qmMultipleChoiceText14": "1",
+        "qmMultipleChoiceText15": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "3ho6fqlok17q-d65etl5obx3b",
@@ -330,7 +449,30 @@
         }
       ]
     },
-    "explanation": "Bài đăng ĐẦU TIÊN cho một blog ẩm thực cần giới thiệu bản thân/blog hoặc cung cấp nội dung cốt lõi có giá trị như công thức nấu ăn chi tiết — hai lựa chọn này trực tiếp tạo ra nội dung bài viết hoàn chỉnh. 'Mẹo chụp ảnh món ăn' và 'ghi lại tour ẩm thực thành phố' là các ý tưởng chủ đề phụ, không phải yêu cầu tạo ra bài đăng cụ thể."
+    "explanation": "Đáp án theo khóa IIG:\nB. Viết một bài đăng giới thiệu cho blog mô tả niềm đam mê ẩm thực của tôi và điều đã truyền cảm hứng cho tôi bắt đầu blog này. Bao gồm món ăn và phong cách nấu ăn yêu thích của tôi.; C. Chia sẻ một công thức chi tiết với hướng dẫn từng bước và hình ảnh sinh động làm nổi bật bất kỳ nguyên liệu hoặc kỹ thuật nấu ăn độc đáo nào được sử dụng.\n\nGiải thích ôn tập:\nB/C sát mục tiêu bài mở đầu thể hiện kỹ năng nấu ăn hơn chụp ảnh hoặc du lịch ẩm thực.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 19,
+      "officialAnswerText": "B. Viết một bài đăng giới thiệu cho blog mô tả niềm đam mê ẩm thực của tôi và điều đã truyền cảm hứng cho tôi bắt đầu blog này. Bao gồm món ăn và phong cách nấu ăn yêu thích của tôi.; C. Chia sẻ một công thức chi tiết với hướng dẫn từng bước và hình ảnh sinh động làm nổi bật bất kỳ nguyên liệu hoặc kỹ thuật nấu ăn độc đáo nào được sử dụng.",
+      "validatedAnswer": [
+        "2qa68fghma84-oaslik7678b6",
+        "ekxdjd2d8lgl-8qezbfntgfyh"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "87la5flbly24-w4ovyq1plndv",
@@ -426,7 +568,33 @@
         }
       ]
     },
-    "explanation": "Một prompt chất lượng cao cần càng cụ thể càng tốt: mô tả đầy đủ cảnh/nhân vật, nêu rõ yêu cầu (đối tượng, loại video), cung cấp bối cảnh/giọng điệu/phong cách, và dùng ngôn ngữ đơn giản dễ hiểu — đây đều là thực hành NÊN làm. Ngược lại, giả định AI 'tự hiểu' bối cảnh mà không cần giải thích là một sai lầm phổ biến, dễ khiến kết quả lệch khỏi mong muốn — vì vậy đây là điều KHÔNG nên làm."
+    "explanation": "Đáp án theo khóa IIG:\nKhi cần đến các cảnh, nhân vật hoặc hành động cụ thể, hãy cung cấp mô tả toàn diện về cả mặt hình ảnh và nội dung tường thuật (narrative). → Có; Xác định rõ các yêu cầu (requirements) của bạn, chẳng hạn như loại video, đối tượng mục tiêu và các điểm chính (key points). → Có; Bao gồm thông tin nền chi tiết (background information), dữ liệu (data), giọng điệu (tone) và phong cách (style) liên quan đến video. → Có; Giả định rằng hệ thống AI hiểu được bối cảnh điển hình của dự án, từ đó giảm nhu cầu cung cấp lời giải thích chi tiết. → Không; Sử dụng ngôn ngữ đơn giản và rõ ràng để giảm thiểu hiểu nhầm. → Có\n\nGiải thích ôn tập:\nNên nêu rõ mục tiêu, đối tượng, bối cảnh và các chi tiết liên quan; không mặc định công cụ đã biết tình huống của trường. Dùng ngôn ngữ rõ ràng giúp giảm hiểu nhầm. Prompt cần đủ thông tin, không phải càng dài càng tốt: chi tiết thừa, mâu thuẫn hoặc không liên quan có thể làm chất lượng giảm. Khóa các thực hành nên/không nên có thể giữ theo cách hiểu này.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 27,
+      "officialAnswerText": "Khi cần đến các cảnh, nhân vật hoặc hành động cụ thể, hãy cung cấp mô tả toàn diện về cả mặt hình ảnh và nội dung tường thuật (narrative). → Có; Xác định rõ các yêu cầu (requirements) của bạn, chẳng hạn như loại video, đối tượng mục tiêu và các điểm chính (key points). → Có; Bao gồm thông tin nền chi tiết (background information), dữ liệu (data), giọng điệu (tone) và phong cách (style) liên quan đến video. → Có; Giả định rằng hệ thống AI hiểu được bối cảnh điển hình của dự án, từ đó giảm nhu cầu cung cấp lời giải thích chi tiết. → Không; Sử dụng ngôn ngữ đơn giản và rõ ràng để giảm thiểu hiểu nhầm. → Có",
+      "validatedAnswer": {
+        "qmMultipleChoiceText19": "0",
+        "qmMultipleChoiceText20": "0",
+        "qmMultipleChoiceText21": "0",
+        "qmMultipleChoiceText22": "1",
+        "qmMultipleChoiceText23": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "pblc49miu4c1-9o4kn9ci3woc",
@@ -462,7 +630,30 @@
         }
       ]
     },
-    "explanation": "Hai tác động thực tế được ghi nhận của AI tạo sinh là: giúp tạo ra nhiều ý tưởng đa dạng (tư duy phân kỳ) và giúp con người tiết kiệm thời gian, tăng năng suất công việc. Ngược lại, không có bằng chứng cho thấy AI tạo sinh làm giảm nhu cầu sáng tạo nghệ thuật của con người hay khiến thời gian dùng màn hình tăng thêm chính xác 5 giờ/ngày — đây là các phát biểu cường điệu, không có cơ sở."
+    "explanation": "Đáp án theo khóa IIG:\nA. AI tạo sinh hỗ trợ tư duy phân kỳ (divergent thinking — tức là giúp tạo ra nhiều ý tưởng mới, đa hướng).; B. AI tạo sinh giúp nhân viên tiết kiệm thời gian và tăng năng suất làm việc.\n\nGiải thích ôn tập:\nHai tác động thực tế được ghi nhận của AI tạo sinh là: giúp tạo ra nhiều ý tưởng đa dạng (tư duy phân kỳ) và giúp con người tiết kiệm thời gian, tăng năng suất công việc. Ngược lại, không có bằng chứng cho thấy AI tạo sinh làm giảm nhu cầu sáng tạo nghệ thuật của con người hay khiến thời gian dùng màn hình tăng thêm chính xác 5 giờ/ngày — đây là các phát biểu cường điệu, không có cơ sở.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 48,
+      "officialAnswerText": "A. AI tạo sinh hỗ trợ tư duy phân kỳ (divergent thinking — tức là giúp tạo ra nhiều ý tưởng mới, đa hướng).; B. AI tạo sinh giúp nhân viên tiết kiệm thời gian và tăng năng suất làm việc.",
+      "validatedAnswer": [
+        "mn1javow1eem-rr6wfeb11ogb",
+        "89ek90o77atp-wu8efa2zq5m2"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "522j61hdta48-19jc1vybcopy",
@@ -498,7 +689,30 @@
         }
       ]
     },
-    "explanation": "Tóm tắt cốt truyện 'Chúa tể những chiếc nhẫn' trong 500 từ là yêu cầu rút gọn một nội dung đã có sẵn — đúng nghĩa tóm tắt. Ngược lại, viết một bài thơ hay tạo chương trình Python đều là yêu cầu AI sáng tác nội dung hoàn toàn mới, không phải tóm tắt nội dung có sẵn."
+    "explanation": "Đáp án theo khóa IIG:\nA. Những điều thú vị nào bạn có thể làm trong kỳ nghỉ hai tuần ở Miami?; B. Tóm tắt cốt truyện của tác phẩm \"Chúa tể những chiếc nhẫn\" của Tolkien trong 500 từ.\n\nGiải thích ôn tập:\nKhóa IIG hướng đến yêu cầu rút gọn cốt truyện trong giới hạn 500 từ. Phân biệt tóm tắt nội dung có sẵn với yêu cầu viết thơ hay sinh mã mới. Khi ôn câu cố định, chọn đúng phương án đã ghi trong khóa.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 52,
+      "officialAnswerText": "A. Những điều thú vị nào bạn có thể làm trong kỳ nghỉ hai tuần ở Miami?; B. Tóm tắt cốt truyện của tác phẩm \"Chúa tể những chiếc nhẫn\" của Tolkien trong 500 từ.",
+      "validatedAnswer": [
+        "x2ss6wzavucu-cla9kxnjuycp",
+        "j6gojxh1ltqg-v6ezd0aot9yz"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "oubhw1wmxoq3-k56dt4ftsk9e",
@@ -562,7 +776,31 @@
         }
       ]
     },
-    "explanation": "Trên thực tế, không có gì đảm bảo thông tin mật bạn nhập vào công cụ AI (như GPT, Copilot) sẽ luôn được loại trừ khỏi dữ liệu huấn luyện — nên phát biểu ngược lại là Sai. Ngành công nghiệp cũng chưa có bộ tiêu chuẩn thống nhất, được công nhận rộng rãi về việc sử dụng đầu ra AI tạo sinh — nên phát biểu đó cũng Sai. Trong khi đó, AI tạo sinh có thể 'bịa' ra thông tin sai (hallucination) là hạn chế đã được ghi nhận rộng rãi, nên luôn cần kiểm tra lại kết quả — phát biểu này Đúng."
+    "explanation": "Đáp án theo khóa IIG:\nBạn có thể cho rằng mọi thông tin mật mà bạn nhập vào GPT hoặc Copilot sẽ được loại trừ khỏi dữ liệu huấn luyện. → Sai; Hiện đã có các tiêu chuẩn được công nhận về cách sử dụng đầu ra của AI tạo sinh trong ngành công nghiệp. → Sai; Kết quả do AI tạo sinh cung cấp cần được kiểm tra cẩn thận vì các công cụ này thường \"bịa ra\" thông tin. → Đúng\n\nGiải thích ôn tập:\nGiữ Sai–Sai–Đúng theo phạm vi bài học: không mặc định dữ liệu mật được loại khỏi huấn luyện; không có một chuẩn chung bao trùm cách dùng mọi công cụ; cần kiểm chứng đầu ra. Guide PDF 70–71 giải thích rõ ý “tiêu chuẩn chung”. Dòng 2 giữ Sai theo nghĩa đó; nguyên văn “các tiêu chuẩn được công nhận” rộng hơn, nên không dùng khóa để kết luận không tồn tại bất cứ tiêu chuẩn ngành nào. Kết luận này xác nhận ý định giảng dạy, có điều kiện về cách đọc dòng 2.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 58,
+      "officialAnswerText": "Bạn có thể cho rằng mọi thông tin mật mà bạn nhập vào GPT hoặc Copilot sẽ được loại trừ khỏi dữ liệu huấn luyện. → Sai; Hiện đã có các tiêu chuẩn được công nhận về cách sử dụng đầu ra của AI tạo sinh trong ngành công nghiệp. → Sai; Kết quả do AI tạo sinh cung cấp cần được kiểm tra cẩn thận vì các công cụ này thường \"bịa ra\" thông tin. → Đúng",
+      "validatedAnswer": {
+        "qmMultipleChoiceText47": "1",
+        "qmMultipleChoiceText48": "1",
+        "qmMultipleChoiceText49": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "zcjft5yuv06l-sbrbqjcwk50h",
@@ -626,7 +864,31 @@
         }
       ]
     },
-    "explanation": "Mục tiêu là tạo video có nhân vật khỉ hoạt hình trình bày ĐÚNG kịch bản đã được cung cấp sẵn. Hai lời nhắc đầu đều giữ nguyên bối cảnh và nội dung kịch bản, chỉ khác cách diễn đạt (giải thích khái niệm / đọc kịch bản) — đều đạt mục tiêu. Lời nhắc thứ ba lại thêm chi tiết mới không có trong kịch bản gốc (khỉ đóng vai phi hành gia), làm sai lệch nội dung ban đầu, nên không đạt mục tiêu."
+    "explanation": "Đáp án theo khóa IIG:\nTạo một video dài 45 giây, trong đó một con khỉ trong không gian giải thích một khái niệm về không gian phức tạp dựa trên kịch bản đã cho. → Có; Tạo một video dài 45 giây, sử dụng công nghệ hoạt hình để làm cho một con khỉ đọc kịch bản trong không gian. → Có; Tạo một video dài 45 giây, sử dụng phần mềm chuyển văn bản thành giọng nói tiên tiến để đọc một kịch bản về không gian, với những con khỉ đóng vai phi hành gia. → Không\n\nGiải thích ôn tập:\nGiữ Có–Có–Không khi yêu cầu là avatar khỉ hoạt hình thể hiện kịch bản đã cho. Dòng 1 gắn con khỉ giải thích theo kịch bản; dòng 2 nói hoạt hình làm khỉ đọc; dòng 3 chỉ yêu cầu TTS đọc kịch bản với khỉ là phi hành gia, chưa yêu cầu khỉ làm người đọc. Giọng đọc có thể là thuyết minh ngoài hình. Guide PDF 110–111 phân biệt nhân vật đọc script với việc có âm thanh. Không khẳng định TTS không thể kết hợp avatar; chỉ nói prompt thứ ba chưa mô tả đủ quan hệ cần có.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 61,
+      "officialAnswerText": "Tạo một video dài 45 giây, trong đó một con khỉ trong không gian giải thích một khái niệm về không gian phức tạp dựa trên kịch bản đã cho. → Có; Tạo một video dài 45 giây, sử dụng công nghệ hoạt hình để làm cho một con khỉ đọc kịch bản trong không gian. → Có; Tạo một video dài 45 giây, sử dụng phần mềm chuyển văn bản thành giọng nói tiên tiến để đọc một kịch bản về không gian, với những con khỉ đóng vai phi hành gia. → Không",
+      "validatedAnswer": {
+        "qmMultipleChoiceText50": "0",
+        "qmMultipleChoiceText51": "0",
+        "qmMultipleChoiceText52": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "oxqmrbdqdawf-xh5dwauz3t9w",
@@ -662,7 +924,30 @@
         }
       ]
     },
-    "explanation": "Hai hạn chế thực sự khi dùng công cụ AI để tìm kiếm thông tin là nguy cơ thông tin bị thiên vị (do dữ liệu huấn luyện) và thiếu độ tin cậy (do AI có thể tạo ra thông tin sai/bịa). Việc AI cung cấp 'nhiều thông tin' hay trình bày 'theo thứ tự thời gian' không phải là hạn chế — đó chỉ là đặc điểm trung tính của kết quả trả về."
+    "explanation": "Đáp án theo khóa IIG:\nC. Bạn nhận thấy một số thông tin có vẻ thiên vị.; D. Bạn nhận thấy thông tin không đáng tin cậy.\n\nGiải thích ôn tập:\nHai hạn chế thực sự khi dùng công cụ AI để tìm kiếm thông tin là nguy cơ thông tin bị thiên vị (do dữ liệu huấn luyện) và thiếu độ tin cậy (do AI có thể tạo ra thông tin sai/bịa). Việc AI cung cấp 'nhiều thông tin' hay trình bày 'theo thứ tự thời gian' không phải là hạn chế — đó chỉ là đặc điểm trung tính của kết quả trả về.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 74,
+      "officialAnswerText": "C. Bạn nhận thấy một số thông tin có vẻ thiên vị.; D. Bạn nhận thấy thông tin không đáng tin cậy.",
+      "validatedAnswer": [
+        "lzk2gcxdl0jn-mjqejzwpo9r6",
+        "ka3kk4g2ztw6-n3ae8xron0gz"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "7dta6ntb0y2z-uo863limsirc",
@@ -726,7 +1011,31 @@
         }
       ]
     },
-    "explanation": "AI tạo sinh khác công cụ tìm kiếm ở chỗ nó không chỉ liệt kê kết quả có sẵn mà tạo RA nội dung mới — nên phát biểu 'chỉ cung cấp danh sách kết quả' là Sai (đó là mô tả công cụ tìm kiếm). Về mặt kỹ thuật, AI tạo sinh vận hành dựa trên mạng nơ-ron (Đúng) và có khả năng tạo ra nhiều loại nội dung mới như văn bản, hình ảnh, âm thanh (Đúng)."
+    "explanation": "Đáp án theo khóa IIG:\nAI tạo sinh chỉ cung cấp danh sách kết quả dựa trên tiêu chí tìm kiếm. → Sai; AI tạo sinh sử dụng mạng nơ-ron để tạo ra đầu ra. → Đúng; AI tạo sinh tạo ra nội dung mới như văn bản, hình ảnh và âm thanh. → Đúng\n\nGiải thích ôn tập:\nAI tạo sinh khác công cụ tìm kiếm ở chỗ nó không chỉ liệt kê kết quả có sẵn mà tạo RA nội dung mới — nên phát biểu 'chỉ cung cấp danh sách kết quả' là Sai (đó là mô tả công cụ tìm kiếm). Về mặt kỹ thuật, AI tạo sinh vận hành dựa trên mạng nơ-ron (Đúng) và có khả năng tạo ra nhiều loại nội dung mới như văn bản, hình ảnh, âm thanh (Đúng).",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 75,
+      "officialAnswerText": "AI tạo sinh chỉ cung cấp danh sách kết quả dựa trên tiêu chí tìm kiếm. → Sai; AI tạo sinh sử dụng mạng nơ-ron để tạo ra đầu ra. → Đúng; AI tạo sinh tạo ra nội dung mới như văn bản, hình ảnh và âm thanh. → Đúng",
+      "validatedAnswer": {
+        "qmMultipleChoiceText62": "1",
+        "qmMultipleChoiceText63": "0",
+        "qmMultipleChoiceText64": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "vzybrxhhi7fv-fvbspk65m88",
@@ -806,7 +1115,32 @@
         }
       ]
     },
-    "explanation": "Đáp án và giải thích:\nAI tạo sinh Giải thích: AI tạo sinh (Generative AI) tạo một câu trả lời duy nhất, được sinh ra mới cho từng yêu cầu dựa trên dữ liệu học được.\nCông cụ tìm kiếm Giải thích: Người dùng đặt câu hỏi để nhận lại liên kết hoặc thông tin có sẵn từ các trang web.\nCông cụ tìm kiếm Giải thích: Công cụ tìm kiếm hoạt động dựa trên từ khóa/cụm từ, không phải sinh nội dung mới.\nAI tạo sinh Giải thích: AI tạo sinh có thể tạo ra nhiều phiên bản hoặc cách trả lời khác nhau cho cùng một yêu cầu."
+    "explanation": "Đáp án theo khóa IIG:\nMột câu trả lời được tạo cho mỗi yêu cầu. → AI tạo sinh; Mọi người đặt câu hỏi để có câu trả lời. → AI tạo sinh; Mọi người sử dụng cụm từ để có câu trả lời. → Công cụ tìm kiếm; Nhiều câu trả lời được tạo ra cho mỗi yêu cầu. → Công cụ tìm kiếm\n\nGiải thích ôn tập:\nChấp nhận khuôn giao diện truyền thống: AI tạo phản hồi hội thoại, tìm kiếm trả nhiều nguồn theo từ khóa. Đây là ví dụ điển hình, không phải giới hạn năng lực.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 87,
+      "officialAnswerText": "Một câu trả lời được tạo cho mỗi yêu cầu. → AI tạo sinh; Mọi người đặt câu hỏi để có câu trả lời. → AI tạo sinh; Mọi người sử dụng cụm từ để có câu trả lời. → Công cụ tìm kiếm; Nhiều câu trả lời được tạo ra cho mỗi yêu cầu. → Công cụ tìm kiếm",
+      "validatedAnswer": {
+        "qmMultipleChoiceText65": "0",
+        "qmMultipleChoiceText66": "0",
+        "qmMultipleChoiceText67": "1",
+        "qmMultipleChoiceText68": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "9jdllsmc4hx8-2hgdalgffh2g",
@@ -870,7 +1204,31 @@
         }
       ]
     },
-    "explanation": "Đúng:\nNhân vật nên được đồng bộ khẩu hình miệng với văn bản.\nNhân vật nên có cử chỉ theo kịch bản.\nSai:\nNhân vật nên thể hiện cảm xúc đa dạng trong suốt video.\nGiải thích:\nMột câu lệnh mô tả quá phức tạp hoặc quá mơ hồ sẽ không tạo ra một video tốt về hình đại diện đọc một kịch bản."
+    "explanation": "Đáp án theo khóa IIG:\nNhân vật nên được đồng bộ khẩu hình miệng với văn bản. → Yes; Nhân vật nên có cử chỉ theo kịch bản. → Yes; Nhân vật nên thể hiện cảm xúc đa dạng trong suốt video. → No\n\nGiải thích ôn tập:\nĐọc No là không bắt buộc thêm nhiều cảm xúc không theo script; giữ Yes–Yes–No, không hiểu rằng avatar phải vô cảm.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 89,
+      "officialAnswerText": "Nhân vật nên được đồng bộ khẩu hình miệng với văn bản. → Yes; Nhân vật nên có cử chỉ theo kịch bản. → Yes; Nhân vật nên thể hiện cảm xúc đa dạng trong suốt video. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText72": "0",
+        "qmMultipleChoiceText73": "0",
+        "qmMultipleChoiceText74": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "5zqzj0ixt64w-9jih3ywy1nqb",
@@ -934,7 +1292,31 @@
         }
       ]
     },
-    "explanation": "Đúng:\nCác mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ thủ công.\nSai:\nCác mô hình hình ảnh được đào tạo chỉ bằng cách sử dụng bộ dữ liệu lớn của các hình ảnh khác để tìm hiểu các quy tắc.\nCác mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ tự động bằng cách sử dụng máy học.\nGiải thích: Các mô hình hình ảnh được đào tạo bằng cách sử dụng các bộ dữ liệu lớn và văn bản liên quan để học các quy tắc."
+    "explanation": "Đáp án theo khóa IIG:\nCác mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ thủ công. → Yes; Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ tự động bằng cách sử dụng máy học. → No; Các mô hình hình ảnh được đào tạo chỉ bằng cách sử dụng bộ dữ liệu lớn của các hình ảnh khác để tìm hiểu các quy tắc. → No\n\nGiải thích ôn tập:\nTheo IIG, ba dòng là Yes–No–No. Ghi nhớ dòng 1 về gắn thẻ thủ công và dòng 3 về yêu cầu của dữ liệu huấn luyện trong ngữ cảnh đề. Phần lý thuyết phân biệt thao tác gán nhãn với huấn luyện: gán nhãn có thể có sự hỗ trợ tự động, và không phải mọi quy trình đều giống nhau.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 91,
+      "officialAnswerText": "Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ thủ công. → Yes; Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ tự động bằng cách sử dụng máy học. → No; Các mô hình hình ảnh được đào tạo chỉ bằng cách sử dụng bộ dữ liệu lớn của các hình ảnh khác để tìm hiểu các quy tắc. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText79": "0",
+        "qmMultipleChoiceText80": "1",
+        "qmMultipleChoiceText81": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "gvxxqs4nsv93-ukd9mq6yeddt",
@@ -970,6 +1352,29 @@
         }
       ]
     },
-    "explanation": "Một máy chủ đảm nhận vai trò chạy các mô hình AI tạo sinh hình ảnh cần phải có một bộ nguồn mạnh mẽ và một bộ xử lý đồ họa (GPU) mạnh mẽ vì hai thành phần máy tính này rất quan trọng để huấn luyện một mô hình. CPU và lượng RAM của máy chủ không quan trọng bằng, bởi vì với các mô hình hình ảnh, GPU đảm nhận hầu hết công việc mô hình hóa."
+    "explanation": "Đáp án theo khóa IIG:\nA. Một bộ nguồn mạnh mẽ.; C. Một bộ xử lý đồ họa (GPU) mạnh mẽ.\n\nGiải thích ôn tập:\nChấp nhận A/C cho máy chủ GPU cần nguồn điện đủ tải theo ý định học phần; RAM vẫn quan trọng, khóa không phải cấu hình tối ưu áp dụng cho mọi mô hình.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 104,
+      "officialAnswerText": "A. Một bộ nguồn mạnh mẽ.; C. Một bộ xử lý đồ họa (GPU) mạnh mẽ.",
+      "validatedAnswer": [
+        "2g6gzadwcx1w-f6nresx6s5at",
+        "w620ljti12mn-c30ioc3okchp"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   }
 ]

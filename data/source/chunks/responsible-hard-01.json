@@ -33,7 +33,30 @@
         }
       ]
     },
-    "explanation": "Đây là một cách phát hiện gian lận: nếu học sinh sao chép nguyên câu hỏi vào ChatGPT mà không đọc kỹ, AI có thể vô tình đưa các từ ẩn (Abraham Lincoln, pumpkin pie) vào câu trả lời — giúp giáo viên phát hiện ai đã dùng AI thay vì tự làm bài, qua đó khuyến khích tính chính trực học thuật. Đây không liên quan đến việc sửa lỗi chính tả hay khơi gợi sáng tạo."
+    "explanation": "Đáp án theo khóa IIG:\nA. Để đảm bảo học sinh có trách nhiệm tạo ra bài làm chân thực.; C. Để kiểm tra xem học sinh có sử dụng AI để tạo ra câu trả lời ngắn hay không, điều này sẽ dẫn đến gian lận.\n\nGiải thích ôn tập:\nCác từ ẩn có thể khiến đầu ra xuất hiện dấu hiệu giúp giáo viên nghi ngờ việc sao chép đề vào AI. Đây chỉ là một tín hiệu, không chứng minh chắc chắn học sinh gian lận: công cụ có thể bỏ qua từ ẩn và người học cũng có thể nhìn thấy/chèn chúng bằng cách khác. Giữ ý định đáp án về phát hiện việc dùng AI và khuyến khích trung thực; không xem đây là phép kiểm tra có độ chính xác tuyệt đối.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 17,
+      "officialAnswerText": "A. Để đảm bảo học sinh có trách nhiệm tạo ra bài làm chân thực.; C. Để kiểm tra xem học sinh có sử dụng AI để tạo ra câu trả lời ngắn hay không, điều này sẽ dẫn đến gian lận.",
+      "validatedAnswer": [
+        "349fupd2hsrl-35mz42l39ioh",
+        "qpdepumid9ta-kg6xfhql08tg"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "qcbiftgbesmn-d1bbpoplmk6m",
@@ -78,7 +101,31 @@
         }
       ]
     },
-    "explanation": "Mỗi loại vi phạm tương ứng với một loại tài sản trí tuệ khác nhau: bản quyền (copyright) bảo vệ tác phẩm sáng tạo như âm nhạc; bằng sáng chế (patent) bảo vệ quy trình/thiết kế kỹ thuật như bản vẽ máy ảnh; và nhãn hiệu (trademark) bảo vệ biểu tượng nhận diện thương hiệu như logo. AI tạo ra nội dung trùng lặp với các tài sản đã được bảo hộ này sẽ tương ứng vi phạm đúng loại quyền đó."
+    "explanation": "Đáp án theo khóa IIG:\nVi phạm bản quyền (Copyright infringement) → Một bản nhạc giống hệt với bản do một nhà soạn nhạc khác tạo ra.; Vi phạm quyền sáng chế (Patent right infringement) → Các bản vẽ chi tiết và quy trình cho một loại máy ảnh 3D mới, rất giống với những bản được nhóm Hiệp hội Máy ảnh tạo ra.; Vi phạm quyền nhãn hiệu (Trademark right infringement) → Một biểu tượng logo giống hệt với logo đã được đăng ký bởi Tập đoàn Thể thao Mùa Đông.\n\nGiải thích ôn tập:\nChấp nhận phép ghép loại quyền theo tình huống minh họa nền tảng; không coi đó là kết luận vi phạm pháp lý thực tế.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 24,
+      "officialAnswerText": "Vi phạm bản quyền (Copyright infringement) → Một bản nhạc giống hệt với bản do một nhà soạn nhạc khác tạo ra.; Vi phạm quyền sáng chế (Patent right infringement) → Các bản vẽ chi tiết và quy trình cho một loại máy ảnh 3D mới, rất giống với những bản được nhóm Hiệp hội Máy ảnh tạo ra.; Vi phạm quyền nhãn hiệu (Trademark right infringement) → Một biểu tượng logo giống hệt với logo đã được đăng ký bởi Tập đoàn Thể thao Mùa Đông.",
+      "validatedAnswer": {
+        "nzprklgiqzjf-9lsaykfhlpky": "7mrvqethm34k-1rnfqae58rw7",
+        "xy0y8a6j6f1n-byns07n7k6g": "fgr34o7zz9jv-jvm373s3m9u",
+        "19jillbtpyzg-xt2ejpz2hbep": "n0op0md9zb0e-mnlpy7880zkg"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "q3cka8nay5dh-6p5y19t6vw89",
@@ -142,7 +189,31 @@
         }
       ]
     },
-    "explanation": "Một prompt thiên kiến thường đã định hướng sẵn kết quả nghiêng về một phía ngay trong cách đặt câu hỏi. Câu lệnh 1 yêu cầu 'nhấn mạnh hiệu suất TỐT HƠN' của năng lượng tái tạo dù có thêm câu 'không ưu tiên' ở cuối — về bản chất vẫn đã định hướng kết quả. Câu lệnh 3 công khai nhấn mạnh lợi ích của năng lượng mặt trời trong khi chỉ nêu thách thức của năng lượng gió — rõ ràng thiên kiến. Chỉ câu lệnh 2, yêu cầu phân tích ưu/nhược điểm của tất cả các nguồn một cách khách quan mà không nhấn mạnh nguồn nào, mới thực sự trung lập."
+    "explanation": "Đáp án theo khóa IIG:\nNhấn mạnh hiệu suất (performance) và độ tin cậy (reliability) tốt hơn của các nguồn năng lượng tái tạo khác nhau (năng lượng mặt trời – Solar, gió – Wind, thủy điện – Hydro, và địa nhiệt – Geothermal) so với nhiên liệu hóa thạch (fossil fuels) trong môi trường đô thị. Cân nhắc các yếu tố như sản lượng năng lượng (energy output), tác động môi trường (environmental impact), và khả năng mở rộng (scalability). Cung cấp một bản phân tích cân bằng mà không ưu tiên bất kỳ nguồn năng lượng tái tạo cụ thể nào. → Thiên kiến; Phân tích các ưu điểm và nhược điểm của các nguồn năng lượng tái tạo khác nhau (mặt trời, gió, thủy điện và địa nhiệt) trong môi trường đô thị. Tập trung vào các chỉ số như sản lượng năng lượng, chi phí, tác động môi trường, và khả năng mở rộng. Trình bày kết quả một cách khách quan. → Không thiên kiến; So sánh tiềm năng của năng lượng mặt trời và năng lượng gió trong việc cách mạng hóa hệ thống cung cấp điện đô thị. Nhấn mạnh lợi ích môi trường vượt trội và tiết kiệm chi phí dài hạn của năng lượng mặt trời, đồng thời đề cập đến những thách thức mà các công trình năng lượng gió phải đối mặt trong các khu vực có mật độ dân cư cao. → Thiên kiến\n\nGiải thích ôn tập:\nMột prompt thiên kiến thường đã định hướng sẵn kết quả nghiêng về một phía ngay trong cách đặt câu hỏi. Câu lệnh 1 yêu cầu 'nhấn mạnh hiệu suất TỐT HƠN' của năng lượng tái tạo dù có thêm câu 'không ưu tiên' ở cuối — về bản chất vẫn đã định hướng kết quả. Câu lệnh 3 công khai nhấn mạnh lợi ích của năng lượng mặt trời trong khi chỉ nêu thách thức của năng lượng gió — rõ ràng thiên kiến. Chỉ câu lệnh 2, yêu cầu phân tích ưu/nhược điểm của tất cả các nguồn một cách khách quan mà không nhấn mạnh nguồn nào, mới thực sự trung lập.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 29,
+      "officialAnswerText": "Nhấn mạnh hiệu suất (performance) và độ tin cậy (reliability) tốt hơn của các nguồn năng lượng tái tạo khác nhau (năng lượng mặt trời – Solar, gió – Wind, thủy điện – Hydro, và địa nhiệt – Geothermal) so với nhiên liệu hóa thạch (fossil fuels) trong môi trường đô thị. Cân nhắc các yếu tố như sản lượng năng lượng (energy output), tác động môi trường (environmental impact), và khả năng mở rộng (scalability). Cung cấp một bản phân tích cân bằng mà không ưu tiên bất kỳ nguồn năng lượng tái tạo cụ thể nào. → Thiên kiến; Phân tích các ưu điểm và nhược điểm của các nguồn năng lượng tái tạo khác nhau (mặt trời, gió, thủy điện và địa nhiệt) trong môi trường đô thị. Tập trung vào các chỉ số như sản lượng năng lượng, chi phí, tác động môi trường, và khả năng mở rộng. Trình bày kết quả một cách khách quan. → Không thiên kiến; So sánh tiềm năng của năng lượng mặt trời và năng lượng gió trong việc cách mạng hóa hệ thống cung cấp điện đô thị. Nhấn mạnh lợi ích môi trường vượt trội và tiết kiệm chi phí dài hạn của năng lượng mặt trời, đồng thời đề cập đến những thách thức mà các công trình năng lượng gió phải đối mặt trong các khu vực có mật độ dân cư cao. → Thiên kiến",
+      "validatedAnswer": {
+        "qmMultipleChoiceText24": "0",
+        "qmMultipleChoiceText25": "1",
+        "qmMultipleChoiceText26": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "20uz6rlsk94z-dlrqhhiq14vf",
@@ -178,7 +249,31 @@
         }
       ]
     },
-    "explanation": "Khi dữ liệu cá nhân nhạy cảm (sức khoẻ, liên hệ) bị đưa vào huấn luyện AI mà không có biện pháp bảo vệ, hậu quả trực tiếp có thể là bị kiện vì vi phạm quyền riêng tư dữ liệu, khách hàng mất lòng tin vào công ty, và rủi ro thông tin bị rò rỉ dẫn đến trộm cắp danh tính. Rủi ro này liên quan đến dữ liệu KHÁCH HÀNG chứ không phải thông tin công khai của chính công ty."
+    "explanation": "Đáp án theo khóa IIG:\nA. Kiện tụng về quyền riêng tư dữ liệu; C. Sự mất lòng tin của khách hàng; D. Trộm cắp danh tính của khách hàng\n\nGiải thích ôn tập:\nKhi dữ liệu cá nhân nhạy cảm (sức khoẻ, liên hệ) bị đưa vào huấn luyện AI mà không có biện pháp bảo vệ, hậu quả trực tiếp có thể là bị kiện vì vi phạm quyền riêng tư dữ liệu, khách hàng mất lòng tin vào công ty, và rủi ro thông tin bị rò rỉ dẫn đến trộm cắp danh tính. Rủi ro này liên quan đến dữ liệu KHÁCH HÀNG chứ không phải thông tin công khai của chính công ty.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 31,
+      "officialAnswerText": "A. Kiện tụng về quyền riêng tư dữ liệu; C. Sự mất lòng tin của khách hàng; D. Trộm cắp danh tính của khách hàng",
+      "validatedAnswer": [
+        "ekmgzan9ahnr-psdrsg216ki6",
+        "sbt9i8rfhvyx-2iqgkxzeagis",
+        "xzmqpdpwj1pc-tk3kqxsljk91"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "hgiud7iv8xqx-2q796ktwm6qr",
@@ -214,7 +309,30 @@
         }
       ]
     },
-    "explanation": "Người dùng luôn chịu trách nhiệm pháp lý về nội dung mình tạo ra bằng AI tạo sinh, kể cả khi công cụ tự động sinh ra nội dung đó — nếu nội dung gây hại, người dùng có thể bị kiện dân sự hoặc truy tố hình sự. Hai phát biểu còn lại phóng đại khả năng của AI (tự phát hiện/chặn nội dung có hại, hoặc hoạt động chính xác mà không cần giám sát con người) — trên thực tế AI tạo sinh luôn cần sự giám sát của con người."
+    "explanation": "Đáp án theo khóa IIG:\nC. Bạn chịu trách nhiệm về nội dung mà bạn tạo ra bằng AI tạo sinh.; D. Việc tạo ra nội dung gây hại bằng AI tạo sinh có thể dẫn đến vụ kiện dân sự (civil actions) hoặc truy tố hình sự (criminal actions) chống lại bạn.\n\nGiải thích ôn tập:\nHai lựa chọn về trách nhiệm của người sử dụng và khả năng bị kiện/truy tố phản ánh rủi ro thực tế. Bộ lọc tự động không bảo đảm chặn hết nội dung gây hại, và đầu ra quan trọng cần được kiểm chứng phù hợp mức rủi ro. “Chịu trách nhiệm” không đồng nghĩa người dùng luôn có lỗi hoặc là bên duy nhất chịu trách nhiệm; việc quy trách nhiệm cụ thể còn phụ thuộc pháp luật và tình tiết.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 39,
+      "officialAnswerText": "C. Bạn chịu trách nhiệm về nội dung mà bạn tạo ra bằng AI tạo sinh.; D. Việc tạo ra nội dung gây hại bằng AI tạo sinh có thể dẫn đến vụ kiện dân sự (civil actions) hoặc truy tố hình sự (criminal actions) chống lại bạn.",
+      "validatedAnswer": [
+        "gdmcck7nzghy-u6cjed9yonsz",
+        "zging9d1qrdo-qk40d9gqrad9"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "2gkg0qepvj5v-2jods758tsaa",
@@ -250,7 +368,31 @@
         }
       ]
     },
-    "explanation": "Sử dụng AI tạo sinh trong quy trình tuyển dụng liên quan trực tiếp đến: luật sở hữu trí tuệ (dữ liệu/mô hình AI dùng để huấn luyện), luật bảo mật dữ liệu (thông tin cá nhân ứng viên), và luật lao động (quy định công bằng trong tuyển dụng, chống phân biệt đối xử). Luật bất động sản không liên quan đến quy trình tuyển dụng nhân sự."
+    "explanation": "Đáp án theo khóa IIG:\nB. Luật sở hữu trí tuệ (Intellectual property laws); C. Luật bảo mật dữ liệu (Data privacy laws); D. Luật lao động/việc làm (Employment laws)\n\nGiải thích ôn tập:\nSở hữu trí tuệ, bảo vệ dữ liệu và luật lao động đều có thể liên quan tới AI dùng trong tuyển dụng; luật bất động sản không trực tiếp gắn với tình huống. Dữ liệu ứng viên liên quan quyền riêng tư, tuyển chọn liên quan phân biệt đối xử, còn phần mềm/nội dung có thể liên quan quyền sở hữu trí tuệ. Đây là nhóm lĩnh vực cần xem xét, không phải danh mục tư vấn đầy đủ cho một doanh nghiệp tại San Francisco.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 42,
+      "officialAnswerText": "B. Luật sở hữu trí tuệ (Intellectual property laws); C. Luật bảo mật dữ liệu (Data privacy laws); D. Luật lao động/việc làm (Employment laws)",
+      "validatedAnswer": [
+        "2x2a71d8cvuy-myc0epvlgbhf",
+        "928q7ny3vtrj-q0z6bh75ujeb",
+        "nsugbl7p9c81-hen59455i8tq"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "e8vo8hokw8a0-k6d8rnmezhy8",
@@ -314,7 +456,31 @@
         }
       ]
     },
-    "explanation": "Một bản tóm tắt thiên kiến khi nó chỉ dựa vào quan điểm của MỘT bên có lợi ích liên quan — như 'công ty tiện ích' (đơn vị có thể hưởng lợi từ việc dỡ đập). Ngược lại, dựa trên nghiên cứu độc lập của bên thứ ba, hoặc chỉ tổng hợp phát hiện chính một cách trung lập mà không thiên về nguồn nào, đều là cách tiếp cận cân bằng, không thiên kiến."
+    "explanation": "Đáp án theo khóa IIG:\nHãy tạo bản tóm tắt về tác động của việc dỡ bỏ đập tiềm năng gần sông Smith và đề xuất phục hồi hệ sinh thái như đã nêu bởi công ty tiện ích (utility company). → Thiên kiến; Tạo bản tóm tắt về các khuyến nghị rút ra từ nghiên cứu độc lập của bên thứ ba về việc dỡ bỏ đập, nhấn mạnh các bước hành động và chiến lược khả thi có thể áp dụng cho sông Smith. → Không thiên kiến; Tạo bản tóm tắt dài 150 từ về các phát hiện chính liên quan đến việc dỡ bỏ đập, làm nổi bật các tác động đáng kể nhất đối với hệ sinh thái gần sông Smith. → Không thiên kiến\n\nGiải thích ôn tập:\nBản tóm tắt chỉ dựa vào bên có lợi ích trong dự án có nguy cơ thiên lệch do lựa chọn nguồn và cách trình bày. Nguồn công ty không tự động sai; nguồn độc lập cũng không tự động trung lập. Để giảm rủi ro cần kiểm tra dữ kiện, xung đột lợi ích và đưa các góc nhìn liên quan theo bằng chứng. Giữ khóa theo tiêu chí đa dạng và kiểm chứng nguồn, không theo nhãn nguồn đơn thuần.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 45,
+      "officialAnswerText": "Hãy tạo bản tóm tắt về tác động của việc dỡ bỏ đập tiềm năng gần sông Smith và đề xuất phục hồi hệ sinh thái như đã nêu bởi công ty tiện ích (utility company). → Thiên kiến; Tạo bản tóm tắt về các khuyến nghị rút ra từ nghiên cứu độc lập của bên thứ ba về việc dỡ bỏ đập, nhấn mạnh các bước hành động và chiến lược khả thi có thể áp dụng cho sông Smith. → Không thiên kiến; Tạo bản tóm tắt dài 150 từ về các phát hiện chính liên quan đến việc dỡ bỏ đập, làm nổi bật các tác động đáng kể nhất đối với hệ sinh thái gần sông Smith. → Không thiên kiến",
+      "validatedAnswer": {
+        "qmMultipleChoiceText31": "0",
+        "qmMultipleChoiceText32": "1",
+        "qmMultipleChoiceText33": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "u8lypka8ws0g-hddomcoqa1kz",
@@ -378,7 +544,31 @@
         }
       ]
     },
-    "explanation": "Thiên kiến trong dữ liệu huấn luyện sẽ phản ánh trực tiếp vào đầu ra của mô hình — đây là nguyên lý cơ bản của bias trong AI, nên phát biểu 1 Đúng. Không có mô hình AI nào (kể cả ChatGPT) loại bỏ HOÀN TOÀN thiên lệch, nên phát biểu 2 Sai. Vì vậy, con người luôn cần rà soát nội dung AI tạo ra để phát hiện thiên lệch — phát biểu 3 Đúng."
+    "explanation": "Đáp án theo khóa IIG:\nMô hình tạo hình ảnh bằng AI được huấn luyện trên dữ liệu có thiên lệch có thể tạo ra hình ảnh bị thiên lệch. → Đúng; ChatGPT luôn loại bỏ hoàn toàn thiên lệch trong các câu trả lời của mình. → Sai; Con người nên xem xét nội dung do AI tạo ra để phát hiện và kiểm tra thiên lệch. → Đúng\n\nGiải thích ôn tập:\nDữ liệu lệch có thể góp phần làm đầu ra thiên lệch; quy trình thu thập, gán nhãn, huấn luyện và triển khai cũng có thể tạo hoặc khuếch đại lệch. Không phải mọi thiên lệch trong dữ liệu đều truyền nguyên trạng vào từng đầu ra, và biện pháp giảm lệch không bảo đảm xóa sạch mọi thiên lệch. Đọc các dòng theo nghĩa rủi ro/cơ chế, tránh diễn giải thành quan hệ tất định.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 47,
+      "officialAnswerText": "Mô hình tạo hình ảnh bằng AI được huấn luyện trên dữ liệu có thiên lệch có thể tạo ra hình ảnh bị thiên lệch. → Đúng; ChatGPT luôn loại bỏ hoàn toàn thiên lệch trong các câu trả lời của mình. → Sai; Con người nên xem xét nội dung do AI tạo ra để phát hiện và kiểm tra thiên lệch. → Đúng",
+      "validatedAnswer": {
+        "qmMultipleChoiceText34": "0",
+        "qmMultipleChoiceText35": "1",
+        "qmMultipleChoiceText36": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "s728a3ex65f-yyzodgc2d5zv",
@@ -442,7 +632,31 @@
         }
       ]
     },
-    "explanation": "Tác động tích cực hay tiêu cực phụ thuộc vào MỤC ĐÍCH sử dụng AI: dùng AI để thấu hiểu người khác hoặc hỗ trợ lên ý tưởng sáng tạo là tích cực; nhưng dùng deepfake để tạo thông tin sai lệch nhằm thao túng nhận thức công chúng (như trong bầu cử) là tiêu cực, vì gây hại đến sự thật và niềm tin xã hội."
+    "explanation": "Đáp án theo khóa IIG:\nSara và bạn thân Jane cãi nhau ở trường. Về nhà, Sara dùng AI để hiểu rõ hơn về quan điểm của Jane. → Tích cực; Trong cuộc tranh cử, một ứng viên dùng deepfake để khiến đối thủ trông như đang nói những điều họ chưa từng nói. → Tiêu cực; Sara dùng AI tạo sinh để xem chủ đề đang thịnh hành và lên danh sách ý tưởng bài viết blog. → Tích cực\n\nGiải thích ôn tập:\nTác động tích cực hay tiêu cực phụ thuộc vào MỤC ĐÍCH sử dụng AI: dùng AI để thấu hiểu người khác hoặc hỗ trợ lên ý tưởng sáng tạo là tích cực; nhưng dùng deepfake để tạo thông tin sai lệch nhằm thao túng nhận thức công chúng (như trong bầu cử) là tiêu cực, vì gây hại đến sự thật và niềm tin xã hội.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 49,
+      "officialAnswerText": "Sara và bạn thân Jane cãi nhau ở trường. Về nhà, Sara dùng AI để hiểu rõ hơn về quan điểm của Jane. → Tích cực; Trong cuộc tranh cử, một ứng viên dùng deepfake để khiến đối thủ trông như đang nói những điều họ chưa từng nói. → Tiêu cực; Sara dùng AI tạo sinh để xem chủ đề đang thịnh hành và lên danh sách ý tưởng bài viết blog. → Tích cực",
+      "validatedAnswer": {
+        "qmMultipleChoiceText37": "0",
+        "qmMultipleChoiceText38": "1",
+        "qmMultipleChoiceText39": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "o25ejdeiwwra-poqgaxkkzo5x",
@@ -496,7 +710,32 @@
         }
       ]
     },
-    "explanation": "Mỗi giai đoạn của vòng đời AI có một dạng thiên kiến đặc trưng: thu thập dữ liệu thiếu đại diện (chỉ ghi hình ban ngày) xảy ra ở bước Thu thập dữ liệu; gán trọng số không công bằng cho người đi bộ xảy ra khi Gán nhãn dữ liệu; chỉ mã hoá một phần loại vật thể (biển báo, đèn) khiến mô hình thiếu toàn diện xảy ra ở bước Huấn luyện mô hình; và việc bán xe ở nơi chưa được thử nghiệm thực tế là rủi ro thiên kiến khi Triển khai."
+    "explanation": "Đáp án theo khóa IIG:\nGán nhãn dữ liệu (Data labeling) → Dữ liệu bao gồm người đi bộ được gán trọng số khác nhau dựa trên chiều cao.; Huấn luyện mô hình (Model training) → Chỉ hình ảnh biển báo dừng và đèn giao thông được mã hóa (tokenized).; Triển khai (Deployment) → Phương tiện được bán khắp nơi nhưng chỉ được thử nghiệm trong thành phố của bạn.; Thu thập dữ liệu (Data collection) → Camera và cảm biến chỉ ghi lại hình ảnh và âm thanh vào ban ngày.\n\nGiải thích ôn tập:\nChấp nhận bốn giai đoạn ở mức khái quát: thu thập, gán nhãn/trọng số, xử lý khi huấn luyện, triển khai; không học rằng gán nhãn và gán trọng số là một thao tác kỹ thuật.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 68,
+      "officialAnswerText": "Gán nhãn dữ liệu (Data labeling) → Dữ liệu bao gồm người đi bộ được gán trọng số khác nhau dựa trên chiều cao.; Huấn luyện mô hình (Model training) → Chỉ hình ảnh biển báo dừng và đèn giao thông được mã hóa (tokenized).; Triển khai (Deployment) → Phương tiện được bán khắp nơi nhưng chỉ được thử nghiệm trong thành phố của bạn.; Thu thập dữ liệu (Data collection) → Camera và cảm biến chỉ ghi lại hình ảnh và âm thanh vào ban ngày.",
+      "validatedAnswer": {
+        "2888q9g7tj8s-30dtq2qu696l": "rt4pz2gazfro-7ccmshkduwpd",
+        "9ffuo5uv58mn-kvlr2iai0gm": "oagc5sjm0u3h-cxpkyz9dgtbt",
+        "9y63yg2s93k0-3tnjbup6gxgw": "5qj0evt3nwcp-d1w2w7tht6lj",
+        "kmauryn4r7il-blcccnfg7j1r": "ptsno1cd5wzy-y30pg15e5nl"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "c62be993xope-2st8bc3r3q69",
@@ -532,7 +771,30 @@
         }
       ]
     },
-    "explanation": "Các hệ quả pháp lý của việc sử dụng nội dung được tạo một cách không phù hợp bao gồm các khiếu nại về tội xúc phạm danh dự và vi phạm bản quyền.\nSự thiên vị dẫn đến việc có thể sử dụng nội dung được tạo ra không phù hợp.\nMã hóa dữ liệu sẽ xóa thông tin cá nhân khỏi dữ liệu để không dẫn đến việc sử dụng dữ liệu được tạo ra không phù hợp."
+    "explanation": "Đáp án theo khóa IIG:\nA. Khiếu nại về tội xúc phạm danh dự.; B. Vi phạm bản quyền.\n\nGiải thích ôn tập:\nPhỉ báng/xâm phạm danh dự và vi phạm bản quyền là hai nhóm hệ quả pháp lý phù hợp trong các lựa chọn. Việc có chế tài và thuộc dân sự hay hình sự phụ thuộc luật cùng tình tiết, không chỉ việc dùng AI. Mã hóa bảo vệ cách truy cập dữ liệu, không xóa thông tin cá nhân hay tự loại bỏ mọi rủi ro nội dung. Giữ khóa nhưng bỏ cách giải thích đồng nhất mã hóa với xóa PII.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 107,
+      "officialAnswerText": "A. Khiếu nại về tội xúc phạm danh dự.; B. Vi phạm bản quyền.",
+      "validatedAnswer": [
+        "2g6gzadwcx1w-f6nresx6s5at",
+        "eauitj855v0p-ex3yj1qab995"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "zgop1jyhqgwy-b9c22y47fu9k",
@@ -573,7 +835,31 @@
         }
       ]
     },
-    "explanation": "Các tác động tích cực của Trí tuệ Nhân tạo Tạo sinh (Generative AI) mang lại cho xã hội:\nTrí tuệ Nhân tạo Tạo sinh có thể giúp chúng ta thực hiện công việc hiệu quả hơn.\nGiúp chúng ta giao tiếp tốt hơn, đặc biệt là qua các ngôn ngữ khác nhau.\nGiúp chúng ta học tập hiệu quả hơn.\nTạo ra các ý tưởng để khơi nguồn sáng tạo; động não.\nGiúp chúng ta thực hiện các nhiệm vụ cuộc sống hàng ngày hiệu quả hơn như: thực đơn, công thức nấu ăn, danh sách mua sắm, tóm tắt các tin nhắn dài từ bạn bè và gia đình.\nPhân tích các mô hình và trình bày chúng dưới dạng cơ hội.\nTạo ra việc làm - chúng chỉ là những công việc khác đi."
+    "explanation": "Đáp án theo khóa IIG:\nA. Giúp vượt qua rào cản ngôn ngữ.; B. Khơi nguồn sáng tạo.; C. Giúp thực hiện các nhiệm vụ cuộc sống hàng ngày hiệu quả hơn.\n\nGiải thích ôn tập:\nCác lựa chọn tích cực nêu cơ hội AI hỗ trợ học tập, hiệu quả công việc và xử lý vấn đề xã hội. Đọc chúng như khả năng hỗ trợ, không phải kết quả được bảo đảm. AI không tự bảo đảm an toàn tài chính hoặc bình đẳng tiếp cận giáo dục; hiệu quả phụ thuộc chất lượng triển khai và nguồn lực. Tác động xã hội có thể khác nhau giữa các nhóm.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 124,
+      "officialAnswerText": "A. Giúp vượt qua rào cản ngôn ngữ.; B. Khơi nguồn sáng tạo.; C. Giúp thực hiện các nhiệm vụ cuộc sống hàng ngày hiệu quả hơn.",
+      "validatedAnswer": [
+        "owau4emgvgec-4fbw21w24dn2",
+        "eej7cqg1g1by-whww1t75r19s",
+        "xakih27csgzg-4kzkxuxfxpez"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "wtkryqv862u9-g5berjhpahy6",
@@ -637,7 +923,31 @@
         }
       ]
     },
-    "explanation": "Đúng:\nChe dấu dữ liệu tĩnh (Static data masks) thay đổi vĩnh viễn dữ liệu được sử dụng trong một mô hình AI.\nDữ liệu định danh cá nhân (PII) bị để lại trong AI tạo sinh có thể gây ra hành vi trộm cắp danh tính.\nSai:\nMã hóa bằng token sử dụng tên giả để che giấu dữ liệu.\nGiải thích:\nMã hóa bằng token sử dụng ký hiệu để che giấu dữ liệu. Giả danh sử dụng tên giả để che giấu dữ liệu."
+    "explanation": "Đáp án theo khóa IIG:\nChe dấu dữ liệu tĩnh (Static data masks) thay đổi vĩnh viễn dữ liệu được sử dụng trong một mô hình AI. → Yes; Dữ liệu định danh cá nhân (PII) bị để lại trong AI tạo sinh có thể gây ra hành vi trộm cắp danh tính. → Yes; Mã hóa bằng token sử dụng tên giả để che giấu dữ liệu. → No\n\nGiải thích ôn tập:\nStatic masking thường tạo/thay đổi một bản dữ liệu đã che; không mặc nhiên sửa dữ liệu gốc hay trọng số mô hình. PII là dữ liệu có thể định danh trực tiếp hoặc qua kết hợp với dữ liệu khác. Tokenization trong bảo vệ dữ liệu là thay giá trị nhạy cảm bằng token thay thế, khác tokenization văn bản của LLM và khác mã hóa mật mã; khả năng khôi phục phụ thuộc cơ chế ánh xạ. Giữ khóa theo nghĩa khái quát, không coi mọi token đều là dữ liệu đã ẩn danh không thể đảo ngược.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 128,
+      "officialAnswerText": "Che dấu dữ liệu tĩnh (Static data masks) thay đổi vĩnh viễn dữ liệu được sử dụng trong một mô hình AI. → Yes; Dữ liệu định danh cá nhân (PII) bị để lại trong AI tạo sinh có thể gây ra hành vi trộm cắp danh tính. → Yes; Mã hóa bằng token sử dụng tên giả để che giấu dữ liệu. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText98": "0",
+        "qmMultipleChoiceText99": "0",
+        "qmMultipleChoiceText100": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "rt1idpqw1hss-8nxzjtxi72z6",
@@ -701,7 +1011,31 @@
         }
       ]
     },
-    "explanation": "Yes:\nNội dung do con người tạo có thể được sử dụng để đào tạo mô hình AI.\nMọi người có thể chọn không sử dụng dữ liệu của họ trong mô hình AI.\nNo:\nCác công cụ AI tạo sinh trả về dữ liệu cá nhân giống như các trang web có về mọi người.\nGiải thích:\nCác công cụ AI tạo sinh không trả về dữ liệu cá nhân của mọi người trừ khi dữ liệu đó được nhập vào mô hình AI."
+    "explanation": "Đáp án theo khóa IIG:\nNội dung do con người tạo có thể được sử dụng để đào tạo mô hình AI. → Yes; Mọi người có thể chọn không sử dụng dữ liệu của họ trong mô hình AI. → Yes; Các công cụ AI tạo sinh trả về dữ liệu cá nhân giống như các trang web có về mọi người. → No\n\nGiải thích ôn tập:\nGiữ Yes–Yes–No trong phạm vi công cụ cho phép kiểm soát dữ liệu: nội dung người tạo có thể dùng huấn luyện; người dùng có thể chọn không tham gia ở dịch vụ có tùy chọn đó; công cụ tạo sinh không hoạt động như trang tra cứu thông tin cá nhân đáng tin cậy. Guide PDF 173/176 nêu opt-out, Exercises PDF 41 yêu cầu kiểm tra tùy chọn nếu có. Không suy ra quyền opt-out giống nhau ở mọi mô hình, không đảm bảo gỡ triệt để dữ liệu đã học, và No ở dòng 3 không đảm bảo AI không rò rỉ PII.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 158,
+      "officialAnswerText": "Nội dung do con người tạo có thể được sử dụng để đào tạo mô hình AI. → Yes; Mọi người có thể chọn không sử dụng dữ liệu của họ trong mô hình AI. → Yes; Các công cụ AI tạo sinh trả về dữ liệu cá nhân giống như các trang web có về mọi người. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText144": "0",
+        "qmMultipleChoiceText145": "0",
+        "qmMultipleChoiceText146": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "fvnqlu9fe5dv-5anz1mqcruv3",
@@ -742,6 +1076,30 @@
         }
       ]
     },
-    "explanation": "Những yếu tố cần cân nhắc khi chọn công cụ bao gồm:\nMục đích và tính năng\nTính dễ sử dụng\nChi phí\nCập nhật và hỗ trợ\nQuyền riêng tư dữ liệu\nBảo mật\nChất lượng\nKhả năng tùy chỉnh\nCác tham số có sẵn để kiểm soát đầu ra."
+    "explanation": "Đáp án theo khóa IIG:\nA. Dễ sử dụng; B. Chi phí; C. Khả năng tùy chỉnh (Customizability)\n\nGiải thích ôn tập:\nA/B/C là ba tiêu chí chung nổi bật trong các lựa chọn; tốc độ/phong cách tùy tác vụ, không cần xem đó là lỗi khóa ở bài nền tảng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 175,
+      "officialAnswerText": "A. Dễ sử dụng; B. Chi phí; C. Khả năng tùy chỉnh (Customizability)",
+      "validatedAnswer": [
+        "im50tnwszdoj-so6ukx1e1817",
+        "oxt148hymdu4-tlon1g2472vr",
+        "qf8yylyqnw84-agtl79bz0pxd"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   }
 ]

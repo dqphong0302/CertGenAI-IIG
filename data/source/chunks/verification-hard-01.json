@@ -61,7 +61,31 @@
         }
       ]
     },
-    "explanation": "Cách xác minh đáng tin cậy nhất là đối chiếu với các nguồn có thẩm quyền, độc lập với AI — như tài liệu học thuật hoặc cơ sở dữ liệu lịch sử chuyên ngành. Dùng một công cụ AI tạo sinh KHÁC để 'xác minh' AI đầu tiên không đáng tin cậy, vì cả hai đều có thể mắc cùng loại lỗi hoặc 'ảo giác' (hallucination) — không phải là một nguồn xác minh độc lập thực sự."
+    "explanation": "Đáp án theo khóa IIG:\nHãy tìm kiếm trên internet để xác minh thông tin từ các nguồn học thuật. → Có; Tham khảo một cơ sở dữ liệu lịch sử đáng tin cậy để xác minh thông tin. → Có; Sử dụng một nền tảng AI khác để xác minh thông tin. → Không\n\nGiải thích ôn tập:\nCách xác minh đáng tin cậy nhất là đối chiếu với các nguồn có thẩm quyền, độc lập với AI — như tài liệu học thuật hoặc cơ sở dữ liệu lịch sử chuyên ngành. Dùng một công cụ AI tạo sinh KHÁC để 'xác minh' AI đầu tiên không đáng tin cậy, vì cả hai đều có thể mắc cùng loại lỗi hoặc 'ảo giác' (hallucination) — không phải là một nguồn xác minh độc lập thực sự.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 16,
+      "officialAnswerText": "Hãy tìm kiếm trên internet để xác minh thông tin từ các nguồn học thuật. → Có; Tham khảo một cơ sở dữ liệu lịch sử đáng tin cậy để xác minh thông tin. → Có; Sử dụng một nền tảng AI khác để xác minh thông tin. → Không",
+      "validatedAnswer": {
+        "qmMultipleChoiceText10": "0",
+        "qmMultipleChoiceText11": "0",
+        "qmMultipleChoiceText12": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "xk7s0l9sngk1-mri8gcoyw89w",
@@ -117,7 +141,32 @@
         }
       ]
     },
-    "explanation": "Dựa trên các cột dữ liệu thực tế trong bảng (ID, Loại vị trí, Giá, Phòng ngủ, Phòng tắm, Diện tích, Năm xây dựng, Loại khu dân cư): để tìm tương quan giữa kích thước-số phòng-vị trí cần Phòng ngủ/Phòng tắm/Diện tích/Vị trí; để tìm bất động sản mới nhất theo từng khu dân cư cần Năm xây dựng/Loại khu dân cư; để tính giá trung bình theo mỗi foot vuông cần Loại vị trí/Giá/Diện tích; và để dự đoán giá nhà 4 phòng ngủ ở trung tâm xây năm 2020 cần Loại vị trí/Giá/Phòng ngủ/Năm xây dựng. Mỗi nhiệm vụ chỉ cần đúng những cột dữ liệu liên quan trực tiếp đến câu hỏi đặt ra."
+    "explanation": "Đáp án theo khóa IIG:\nPhòng ngủ (Bedrooms), Phòng tắm (Bathrooms), Diện tích (Square footage), Vị trí (Location) → Xác định mối tương quan giữa kích thước, số lượng phòng và vị trí.; Năm xây dựng (Year built), Loại khu dân cư (Neighborhood type). → Xác định bất động sản mới nhất trong mỗi loại khu dân cư.; Loại vị trí (Location type), Giá (Price), Diện tích (Square Footage). → Tìm giá trung bình trên mỗi foot vuông cho từng loại vị trí.; Loại vị trí (Location type), Giá (Price), Phòng ngủ (Bedroom), Năm xây dựng (Year built). → Dự đoán giá của một ngôi nhà 4 phòng ngủ ở trung tâm thành phố nếu được xây dựng vào năm 2020.\n\nGiải thích ôn tập:\nKhóa ghép phản ánh các yếu tố bối cảnh, dữ liệu và yêu cầu dự báo trong prompt. Cần dùng đúng cột đang hiển thị: “Location Type” là loại địa điểm, không mặc nhiên là tọa độ hay tên địa điểm. Dữ liệu vài tháng có thể dùng minh họa thao tác phân tích, nhưng chưa đủ bảo đảm dự báo đáng tin hoặc chứng minh quan hệ nhân quả. Việc AI tạo được một bảng dự báo khác với việc bảng đó đã được kiểm định.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 20,
+      "officialAnswerText": "Phòng ngủ (Bedrooms), Phòng tắm (Bathrooms), Diện tích (Square footage), Vị trí (Location) → Xác định mối tương quan giữa kích thước, số lượng phòng và vị trí.; Năm xây dựng (Year built), Loại khu dân cư (Neighborhood type). → Xác định bất động sản mới nhất trong mỗi loại khu dân cư.; Loại vị trí (Location type), Giá (Price), Diện tích (Square Footage). → Tìm giá trung bình trên mỗi foot vuông cho từng loại vị trí.; Loại vị trí (Location type), Giá (Price), Phòng ngủ (Bedroom), Năm xây dựng (Year built). → Dự đoán giá của một ngôi nhà 4 phòng ngủ ở trung tâm thành phố nếu được xây dựng vào năm 2020.",
+      "validatedAnswer": {
+        "u851jqybb6bu-5rj16pqqswj5": "2q65r68aqaee-ou04p47poc8p",
+        "cg5cztqds5dy-9h52z58pkxrr": "loz7m7a1t7jg-l46to9bdfi5z",
+        "g4fujgqurb0b-nmlai0giu79t": "5k2908igzdnx-qvir1j5m74mg",
+        "38asainyv6xl-k4g9l7z7ujrm": "szsla7w2anpz-9nop1noitijt"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "pwzskqe3pntp-18rkciso5wr",
@@ -153,7 +202,32 @@
         }
       ]
     },
-    "explanation": "Quy trình mô hình khuếch tán (diffusion) tạo ảnh từ văn bản diễn ra theo thứ tự: đầu tiên token hoá từ khoá trong câu lệnh ('lamp', 'table') để mô hình hiểu yêu cầu; sau đó khởi tạo một hình ảnh nhiễu ngẫu nhiên hoàn toàn; tiếp theo mô hình khuếch tán dần loại bỏ nhiễu để hình thành các pixel theo hướng khớp với câu lệnh; và cuối cùng các thuật toán tinh chỉnh đã huấn luyện sẽ hoàn thiện chi tiết để ảnh khớp chính xác hơn với mô tả ban đầu."
+    "explanation": "Đáp án theo khóa IIG:\nSử dụng kĩ thuật Token hóa (tokenization) để phân tích các từ “lamp” và “table” thành tokens. → Sử dụng kĩ thuật sinh nhiễu (noise generation) để sinh ra các điểm ảnh ngẫu nhiên (random pixels). → Sử dụng mô hình khuếch tán (diffusion) để thay đổi các điểm ảnh (pixels) và bắt đầu tạo ra hình ảnh. → Sử dụng các thuật toán tinh chỉnh đã được huấn luyện để làm cho hình ảnh chính xác hơn với câu lệnh (prompt).\n\nGiải thích ôn tập:\nThứ tự các bước được cho có thể dùng mô tả việc nhập yêu cầu, sinh/khử nhiễu ảnh và điều chỉnh kết quả. Cần tách suy luận khỏi huấn luyện: diffusion sinh ảnh bằng các bước khử nhiễu với trọng số đã học; người dùng sửa prompt hoặc tạo lại ảnh không mặc nhiên fine-tune mô hình. Nếu đề gọi thao tác chỉnh ảnh này là “tinh chỉnh”, nên hiểu là sửa đầu ra, không tự động là cập nhật trọng số bằng dữ liệu huấn luyện.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 26,
+      "officialAnswerText": "Sử dụng kĩ thuật Token hóa (tokenization) để phân tích các từ “lamp” và “table” thành tokens. → Sử dụng kĩ thuật sinh nhiễu (noise generation) để sinh ra các điểm ảnh ngẫu nhiên (random pixels). → Sử dụng mô hình khuếch tán (diffusion) để thay đổi các điểm ảnh (pixels) và bắt đầu tạo ra hình ảnh. → Sử dụng các thuật toán tinh chỉnh đã được huấn luyện để làm cho hình ảnh chính xác hơn với câu lệnh (prompt).",
+      "validatedAnswer": {
+        "bhu4ivz18c0k-595epxsg4n6t": "1",
+        "p84d1wv83bdd-3h5ubkvatbpi": "2",
+        "os47nzc9li4b-eftsht5inijp": "3",
+        "wu64h14i0fpl-z99nq2jpkk39": "4"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "78svc3o06iwd-56qbiym4cao1",
@@ -198,7 +272,31 @@
         }
       ]
     },
-    "explanation": "Đáp án:\n1. Google Gems → B. Bạn có thể sử dụng để tạo bản tóm tắt cuộc họp trong Tài liệu Giải thích: Google Gems là trợ lý AI tích hợp trong hệ sinh thái Google, giúp tóm tắt, viết và hỗ trợ trong Google Docs, Gmail, Meet...\n2. Custom GPT → A. Có thể được tùy chỉnh với một bộ dữ liệu cụ thể về cách trả lời các truy vấn của khách hàng. Giải thích: Custom GPT cho phép tùy chỉnh mô hình ChatGPT để phản hồi theo dữ liệu hoặc phong cách riêng (ví dụ: hướng dẫn hỗ trợ khách hàng).\n3. Microsoft CoPilots → C. Sử dụng Power Automate để gửi bảng tính bán hàng được cập nhật hàng tuần. Giải thích: Microsoft CoPilot tích hợp trong Power Automate, Excel, Word, Outlook..., giúp tự động hóa quy trình công việc như gửi báo cáo định kỳ."
+    "explanation": "Đáp án theo khóa IIG:\nGoogle Gems → Bạn có thể sử dụng để tạo bản tóm tắt cuộc họp trong Tài liệu.; Custom GPT → Có thể được tùy chỉnh với một bộ dữ liệu cụ thể về cách trả lời các truy vấn của khách hàng.; Microsoft Copilot → Có thể được tùy chỉnh với một bộ dữ liệu cụ thể về cách trả lời các truy vấn của khách hàng.\n\nGiải thích ôn tập:\nKhóa hiện tại của dữ liệu local nối Gems với tóm tắt, Custom GPT với hướng dẫn/dữ liệu khách hàng và Copilot với quy trình Power Automate. Đây là ghép theo hệ sinh thái dự kiến; Gems không đồng nghĩa toàn bộ AI trong Google Docs, và nhiều công cụ đều có thể tùy biến hoặc tóm tắt. Bản local đã sửa sẵn lựa chọn Power Automate trước lần rà này, khác hai ô trùng chữ ở IIG. Lần này giữ nguyên văn bản local theo yêu cầu; không coi nó là bản chép nguyên trạng giao diện IIG.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 97,
+      "officialAnswerText": "Google Gems → Bạn có thể sử dụng để tạo bản tóm tắt cuộc họp trong Tài liệu.; Custom GPT → Có thể được tùy chỉnh với một bộ dữ liệu cụ thể về cách trả lời các truy vấn của khách hàng.; Microsoft Copilot → Có thể được tùy chỉnh với một bộ dữ liệu cụ thể về cách trả lời các truy vấn của khách hàng.",
+      "validatedAnswer": {
+        "vd2naldvqfd-z5wayk1dyqwp": "c518pngyeib3-uc7boy7fgo75",
+        "itf9a7h3ah21-hsf47tasi01c": "ngp7bc5t74wd-depmf3b0xy2n",
+        "m9b1e77sfy1w-39no86nfq27q": "p9wynn3b71t-jc345slboevm"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "2vtnhrs3hsk6-417eyb3p4aaj",
@@ -243,7 +341,31 @@
         }
       ]
     },
-    "explanation": "Đáp án khớp:\n1. Thiên vị (Bias) → A. Đầu ra có lợi cho những người có địa vị kinh tế xã hội nhất định. Giải thích: Thiên vị xảy ra khi mô hình tạo kết quả nghiêng về một nhóm hoặc quan điểm cụ thể do dữ liệu huấn luyện mất cân bằng.\n2. Thông tin sai lệch (Misinformation) → B. Đầu ra trình bày thông tin sai lệch là thực tế. Giải thích: Thông tin sai lệch là nội dung không đúng sự thật nhưng được mô tả như thể đúng.\n3. Ảo giác (Hallucination) → C. Đầu ra không dựa trên dữ liệu đào tạo hoặc kiến thức tương tự. Giải thích: Ảo giác là khi AI bịa ra nội dung mà không có cơ sở dữ liệu thực tế nào."
+    "explanation": "Đáp án theo khóa IIG:\nThiên vị (Bias) → Đầu ra có lợi cho những người có địa vị kinh tế xã hội nhất định.; Thông tin sai lệch (Misinformation) → Đầu ra trình bày thông tin sai lệch là thực tế.; Ảo giác (Hallucination) → Đầu ra không dựa trên dữ liệu đào tạo hoặc kiến thức tương tự.\n\nGiải thích ôn tập:\nHallucination là đầu ra bịa/không có căn cứ hoặc không trung thành với dữ kiện, nguồn hay yêu cầu được cung cấp. Nó không chỉ có nghĩa là “thông tin không có trong dữ liệu huấn luyện”: mô hình có thể dùng ngữ cảnh mới một cách đúng, hoặc bịa về chủ đề đã được học. Misinformation mô tả thông tin sai, có thể bao gồm một số hallucination; hai khái niệm có phần giao nhau nên việc ghép dựa trên dấu hiệu nổi bật của từng tình huống.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 113,
+      "officialAnswerText": "Thiên vị (Bias) → Đầu ra có lợi cho những người có địa vị kinh tế xã hội nhất định.; Thông tin sai lệch (Misinformation) → Đầu ra trình bày thông tin sai lệch là thực tế.; Ảo giác (Hallucination) → Đầu ra không dựa trên dữ liệu đào tạo hoặc kiến thức tương tự.",
+      "validatedAnswer": {
+        "qyy6udrkpxao-e2pj75d35qqg": "tf8i3dqhaoco-vvk4be19b9h6",
+        "cqma2wweqq0l-8qke1dt450d5": "oeqk2ry0m0ft-l775ph3go4nn",
+        "nfz37inljlqy-rxexcmktxvlt": "3suto64zhlhj-wexmioybbx1x"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "s7vnapjv22nr-b4dwnm7qqlxs",
@@ -288,6 +410,30 @@
         }
       ]
     },
-    "explanation": "Yêu cầu một tài liệu được định dạng kết quả đầu ra theo Hướng dẫn Phong cách AP là một ví dụ về chỉnh sửa và hiệu đính tài liệu.\nViệc hiển thị xu hướng dân số khu vực dưới dạng biểu đồ là một ví dụ về việc cung cấp hình ảnh trực quan hóa dữ liệu.\nBiến nội dung mô tả cảnh bãi biển thành một bức ảnh là một ví dụ về việc chuyển đổi nội dung thành một loại phương tiện truyền thông khác."
+    "explanation": "Đáp án theo khóa IIG:\nChỉnh sửa và hiệu đính tài liệu. → Định dạng kết quả đầu ra theo Hướng dẫn Phong cách AP; Cung cấp hình ảnh trực quan hóa dữ liệu → Hiển thị xu hướng dân số khu vực dưới dạng biểu đồ; Chuyển đổi nội dung thành một loại phương tiện truyền thông khác. → Biến nội dung mô tả cảnh bãi biển thành một bức ảnh.\n\nGiải thích ôn tập:\nYêu cầu một tài liệu được định dạng kết quả đầu ra theo Hướng dẫn Phong cách AP là một ví dụ về chỉnh sửa và hiệu đính tài liệu.\nViệc hiển thị xu hướng dân số khu vực dưới dạng biểu đồ là một ví dụ về việc cung cấp hình ảnh trực quan hóa dữ liệu.\nBiến nội dung mô tả cảnh bãi biển thành một bức ảnh là một ví dụ về việc chuyển đổi nội dung thành một loại phương tiện truyền thông khác.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 115,
+      "officialAnswerText": "Chỉnh sửa và hiệu đính tài liệu. → Định dạng kết quả đầu ra theo Hướng dẫn Phong cách AP; Cung cấp hình ảnh trực quan hóa dữ liệu → Hiển thị xu hướng dân số khu vực dưới dạng biểu đồ; Chuyển đổi nội dung thành một loại phương tiện truyền thông khác. → Biến nội dung mô tả cảnh bãi biển thành một bức ảnh.",
+      "validatedAnswer": {
+        "qyy6udrkpxao-e2pj75d35qqg": "tf8i3dqhaoco-vvk4be19b9h6",
+        "cqma2wweqq0l-8qke1dt450d5": "oeqk2ry0m0ft-l775ph3go4nn",
+        "nfz37inljlqy-rxexcmktxvlt": "3suto64zhlhj-wexmioybbx1x"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   }
 ]

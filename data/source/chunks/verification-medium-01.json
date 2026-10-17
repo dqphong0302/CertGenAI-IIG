@@ -35,7 +35,27 @@
         }
       ]
     },
-    "explanation": "Biểu đồ hiện tại là biểu đồ cột (cột kép theo từng năm), chỉ thể hiện các giá trị rời rạc theo từng mốc thời gian. Để thể hiện SỰ THAY ĐỔI LIÊN TỤC theo thời gian, cần chuyển sang biểu đồ đường (line chart) — loại biểu đồ chuyên dùng để thể hiện xu hướng liên tục. Dự đoán xu hướng tương lai hay đổi sang biểu đồ tròn không giải quyết đúng yêu cầu 'thể hiện thay đổi liên tục' của dữ liệu hiện có."
+    "explanation": "Đáp án theo khóa IIG:\nB. Tạo lại biểu diễn dữ liệu hiện có bằng cách thay đổi định dạng thành biểu đồ đường.\n\nGiải thích ôn tập:\nBiểu đồ hiện tại là biểu đồ cột (cột kép theo từng năm), chỉ thể hiện các giá trị rời rạc theo từng mốc thời gian. Để thể hiện SỰ THAY ĐỔI LIÊN TỤC theo thời gian, cần chuyển sang biểu đồ đường (line chart) — loại biểu đồ chuyên dùng để thể hiện xu hướng liên tục. Dự đoán xu hướng tương lai hay đổi sang biểu đồ tròn không giải quyết đúng yêu cầu 'thể hiện thay đổi liên tục' của dữ liệu hiện có.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 4,
+      "officialAnswerText": "B. Tạo lại biểu diễn dữ liệu hiện có bằng cách thay đổi định dạng thành biểu đồ đường.",
+      "validatedAnswer": "19ea2pyrzhnt-8cx7nr1wlyd4",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "x3oo2psk20yv-9ct3hjok01d5",
@@ -71,7 +91,30 @@
         }
       ]
     },
-    "explanation": "AI tạo sinh (như LLM) hoạt động bằng cách dự đoán xác suất cho từng từ/token tiếp theo trong chuỗi đầu ra, và các mô hình này có thể được huấn luyện lại/tinh chỉnh để phù hợp hơn với mục đích cụ thể — đây là hai đặc tính cốt lõi. 'Cây phân nhánh A/B cho thuật toán tìm kiếm' và 'huấn luyện bằng kỹ thuật đặc trưng' mô tả các kỹ thuật học máy truyền thống khác, không đặc trưng cho AI tạo sinh dựa trên mạng nơ-ron sâu."
+    "explanation": "Đáp án theo khóa IIG:\nC. Trí tuệ nhân tạo tạo sinh sử dụng dự đoán để đưa ra các lựa chọn dựa trên tỷ lệ phần trăm cho mỗi từ trong phản hồi khi nó tạo ra phản hồi.; D. Một mô hình có thể được huấn luyện lại để tạo ra các phản hồi phù hợp hơn với mục đích dự định.\n\nGiải thích ôn tập:\nGiữ hai lựa chọn về dự đoán nội dung và khả năng huấn luyện/tinh chỉnh theo ý định của đề về LLM. Dự đoán token kế tiếp mô tả LLM tự hồi quy; không phải định nghĩa đầy đủ cho mọi AI tạo sinh. Ví dụ diffusion thường sinh bằng quá trình khử nhiễu. Khả năng fine-tuning còn phụ thuộc mô hình, giấy phép, tài nguyên và giao diện nhà cung cấp.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 10,
+      "officialAnswerText": "C. Trí tuệ nhân tạo tạo sinh sử dụng dự đoán để đưa ra các lựa chọn dựa trên tỷ lệ phần trăm cho mỗi từ trong phản hồi khi nó tạo ra phản hồi.; D. Một mô hình có thể được huấn luyện lại để tạo ra các phản hồi phù hợp hơn với mục đích dự định.",
+      "validatedAnswer": [
+        "lfkx0r3xzhrn-hoeb9p8ehgpd",
+        "egjgseac8ucz-90c7kiox10fh"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "owkbnxxco6qg-w45k1t3lih71",
@@ -112,7 +155,30 @@
         }
       ]
     },
-    "explanation": "Hai hạn chế thực sự và phổ biến của AI tạo sinh là: kết quả có thể thiếu chính xác nếu không có con người giám sát/kiểm chứng, và có thể phản ánh thiên vị nếu dữ liệu huấn luyện vốn đã mang tính phân biệt đối xử. Các lựa chọn còn lại (kém hiệu quả do thiếu tự động hoá, đơn điệu do thiếu sáng tạo, đầy cảm xúc) không phải là các hạn chế được ghi nhận của AI tạo sinh."
+    "explanation": "Đáp án theo khóa IIG:\nC. Sự thiếu chính xác do thiếu giám sát của con người.; E. Thiên vị (Bias) do dữ liệu đầu vào mang tính phân biệt đối xử\n\nGiải thích ôn tập:\nHai hạn chế thực sự và phổ biến của AI tạo sinh là: kết quả có thể thiếu chính xác nếu không có con người giám sát/kiểm chứng, và có thể phản ánh thiên vị nếu dữ liệu huấn luyện vốn đã mang tính phân biệt đối xử. Các lựa chọn còn lại (kém hiệu quả do thiếu tự động hoá, đơn điệu do thiếu sáng tạo, đầy cảm xúc) không phải là các hạn chế được ghi nhận của AI tạo sinh.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 23,
+      "officialAnswerText": "C. Sự thiếu chính xác do thiếu giám sát của con người.; E. Thiên vị (Bias) do dữ liệu đầu vào mang tính phân biệt đối xử",
+      "validatedAnswer": [
+        "dt4e9ya7ksvy-j2kt914782bz",
+        "h59uoox12cfa-e3it0tpqthbj"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "vxu941rjewo1-gf7cy2ny0tgp",
@@ -176,7 +242,31 @@
         }
       ]
     },
-    "explanation": "AI tạo sinh tạo ra nội dung HOÀN TOÀN MỚI dựa trên câu lệnh — kể cả nội dung chưa từng tồn tại trên bất kỳ trang web nào — trong khi công cụ tìm kiếm chỉ truy xuất và dẫn nguồn đến các trang web có sẵn, luôn cho biết rõ nguồn thông tin. Đây là khác biệt cốt lõi: một bên SÁNG TẠO nội dung mới, một bên TÌM VÀ TRỎ ĐẾN nội dung đã tồn tại."
+    "explanation": "Đáp án theo khóa IIG:\nCó khả năng tạo ra nội dung mới lạ để phản hồi lại câu lệnh (prompts). → AI tạo sinh; Có khả năng tạo ra nội dung mà không thể tìm thấy trên trang web của tôi. → AI tạo sinh; Luôn làm rõ nơi có thể tìm thấy thông tin trên Web. → Công cụ tìm kiếm\n\nGiải thích ôn tập:\nChấp nhận khuôn so sánh tìm kiếm truyền thống với tạo nội dung mới; xem cách diễn đạt về trang web là giản lược trong bài học.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 25,
+      "officialAnswerText": "Có khả năng tạo ra nội dung mới lạ để phản hồi lại câu lệnh (prompts). → AI tạo sinh; Có khả năng tạo ra nội dung mà không thể tìm thấy trên trang web của tôi. → AI tạo sinh; Luôn làm rõ nơi có thể tìm thấy thông tin trên Web. → Công cụ tìm kiếm",
+      "validatedAnswer": {
+        "qmMultipleChoiceText16": "1",
+        "qmMultipleChoiceText17": "1",
+        "qmMultipleChoiceText18": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "ibjkb3ew5c3q-laqbuxcmy9ak",
@@ -217,7 +307,30 @@
         }
       ]
     },
-    "explanation": "Cách kiểm chứng đáng tin cậy nhất là đối chiếu với các nguồn dữ liệu chính thức, có thẩm quyền — số liệu tổng điều tra dân số của chính phủ và báo cáo của các tổ chức quốc tế uy tín (UN, World Bank). Bài báo phổ biến, dự đoán kinh tế hay dự báo nhân khẩu học chỉ là thông tin thứ cấp hoặc mang tính ước đoán, không phải nguồn xác thực trực tiếp cho số liệu thống kê dân số."
+    "explanation": "Đáp án theo khóa IIG:\nA. Đối chiếu với dữ liệu tổng điều tra dân số mới nhất được công bố bởi chính phủ.; E. Kiểm tra các báo cáo từ các tổ chức quốc tế như Liên Hợp Quốc hoặc Ngân hàng Thế giới.\n\nGiải thích ôn tập:\nNguồn thống kê chính phủ và tổ chức quốc tế có uy tín là hai lựa chọn mạnh để đối chiếu số dân. Cần so cùng năm, lãnh thổ và định nghĩa dân số; một nguồn có thể là ước tính chứ không phải tổng điều tra trực tiếp. Bài báo có thể hữu ích nếu dẫn về dữ liệu gốc, nên không coi mọi nguồn báo chí là sai. Sự khớp nhau giữa hai bản sao cùng một nguồn không phải xác minh độc lập.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 35,
+      "officialAnswerText": "A. Đối chiếu với dữ liệu tổng điều tra dân số mới nhất được công bố bởi chính phủ.; E. Kiểm tra các báo cáo từ các tổ chức quốc tế như Liên Hợp Quốc hoặc Ngân hàng Thế giới.",
+      "validatedAnswer": [
+        "4avforyq6e2k-lxbsrzz9bcq7",
+        "jutbjddccjvb-mslxepu8v2bg"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "t6bfjipe4cyu-iw69gbckjkbl",
@@ -258,7 +371,30 @@
         }
       ]
     },
-    "explanation": "Cách xác minh đáng tin cậy nhất là đối chiếu với nguồn độc lập, có thẩm quyền về lịch sử — tìm kiếm trên Internet để so khớp hoặc tra cứu trực tiếp trong sách lịch sử chuyên đề. Hỏi một chatbot AI khác hoặc chạy lại cùng một AI nhiều lần đều không phải nguồn xác minh độc lập đáng tin cậy (có thể mắc cùng lỗi), còn hỏi ý kiến bạn thân không đảm bảo tính chính xác lịch sử."
+    "explanation": "Đáp án theo khóa IIG:\nA. Tra cứu các sự kiện trên Google Search và kiểm tra xem các ngày tháng có trùng khớp hay không.; B. Kiểm tra các ngày tháng trong một cuốn sách lịch sử về cuộc Nội chiến Hoa Kỳ.\n\nGiải thích ôn tập:\nCó thể dùng tìm kiếm để tìm nguồn đối chiếu, nhưng trang kết quả Google không tự chứng minh dữ kiện AI là đúng. Cần mở nguồn gốc có thẩm quyền, đối chiếu cùng thời điểm và định nghĩa. Nhiều trang sao chép cùng một thông tin không tạo thành nhiều bằng chứng độc lập. Giữ khóa về kiểm chứng bằng nguồn khác theo điều kiện này.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 72,
+      "officialAnswerText": "A. Tra cứu các sự kiện trên Google Search và kiểm tra xem các ngày tháng có trùng khớp hay không.; B. Kiểm tra các ngày tháng trong một cuốn sách lịch sử về cuộc Nội chiến Hoa Kỳ.",
+      "validatedAnswer": [
+        "w8lk08jul043-wyexrhaa0dx3",
+        "3sibfivfwpez-yezkqxhzpy96"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "jveux1lr2mt4-fpl6582k8hhk",
@@ -322,7 +458,31 @@
         }
       ]
     },
-    "explanation": "Đáp án và giải thích:\nA. Yes: Giải thích: LLM có thể tự động hóa các quy trình lặp lại như tạo nội dung, tóm tắt văn bản, trả lời email,...\nB. Yes: Giải thích: LLM được huấn luyện trên các bộ dữ liệu rất lớn gồm văn bản, mã, và thông tin từ nhiều nguồn.\nC. No: Giải thích: LLM không hoàn toàn dựa trên thực tế — nó dự đoán từ ngữ dựa trên mẫu dữ liệu, nên đôi khi có thể tạo ra thông tin sai (hallucination)."
+    "explanation": "Đáp án theo khóa IIG:\nLLM có thể tự động hóa các quy trình nội bộ lặp đi lặp lại. → Yes; LLM được đào tạo trên các bộ dữ liệu khổng lồ. → Yes; LLM hoàn toàn dựa trên thực tế. → No\n\nGiải thích ôn tập:\nĐáp án và giải thích:\nA. Yes: Giải thích: LLM có thể tự động hóa các quy trình lặp lại như tạo nội dung, tóm tắt văn bản, trả lời email,...\nB. Yes: Giải thích: LLM được huấn luyện trên các bộ dữ liệu rất lớn gồm văn bản, mã, và thông tin từ nhiều nguồn.\nC. No: Giải thích: LLM không hoàn toàn dựa trên thực tế — nó dự đoán từ ngữ dựa trên mẫu dữ liệu, nên đôi khi có thể tạo ra thông tin sai (hallucination).",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 88,
+      "officialAnswerText": "LLM có thể tự động hóa các quy trình nội bộ lặp đi lặp lại. → Yes; LLM được đào tạo trên các bộ dữ liệu khổng lồ. → Yes; LLM hoàn toàn dựa trên thực tế. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText69": "0",
+        "qmMultipleChoiceText70": "0",
+        "qmMultipleChoiceText71": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "be06q4279qsi-hq2j878gbwh",
@@ -402,7 +562,32 @@
         }
       ]
     },
-    "explanation": "True:\nSoạn thảo một bản Chính sách cho phép sử dụng (AUP) cho một học khu.\nĐưa ra một số lời khuyên về sơ yếu lý lịch và các thủ thuật khi tham gia phỏng vấn cho một vị trí trong học khu.\nViết một câu chuyện về việc khai trương một ngôi trường mới.\nFalse: \nCho tôi xem chính sách AUP chính xác từ một học khu.\nGiải thích:\nAI tạo sinh sẽ không tiết lộ một tài liệu độc quyền (hoặc lưu hành nội bộ) từ một tổ chức."
+    "explanation": "Đáp án theo khóa IIG:\nSoạn thảo một bản Chính sách cho phép sử dụng (AUP) cho một học khu. → Yes; Đưa ra một số lời khuyên về sơ yếu lý lịch và các thủ thuật khi tham gia phỏng vấn cho một vị trí trong học khu. → Yes; Viết một câu chuyện về việc khai trương một ngôi trường mới. → Yes; Cho tôi xem chính sách AUP chính xác từ một học khu. → No\n\nGiải thích ôn tập:\nBa dòng đầu yêu cầu soạn nội dung mới nên Yes. Dòng cuối yêu cầu đúng chính sách AUP đang tồn tại: đó là truy xuất/trích dẫn tài liệu, không phải nhiệm vụ tự sáng tác nên No theo phân biệt của bài. Một hệ thống có truy xuất vẫn có thể hiển thị chính sách đó; No không có nghĩa AI không thể trả bất cứ văn bản nào. Không nên dùng văn bản AI tự bịa thay cho tài liệu chính thức.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 90,
+      "officialAnswerText": "Soạn thảo một bản Chính sách cho phép sử dụng (AUP) cho một học khu. → Yes; Đưa ra một số lời khuyên về sơ yếu lý lịch và các thủ thuật khi tham gia phỏng vấn cho một vị trí trong học khu. → Yes; Viết một câu chuyện về việc khai trương một ngôi trường mới. → Yes; Cho tôi xem chính sách AUP chính xác từ một học khu. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText75": "0",
+        "qmMultipleChoiceText76": "0",
+        "qmMultipleChoiceText77": "0",
+        "qmMultipleChoiceText78": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "s9kzx8upfho-d2omzc5u1o9l",
@@ -438,7 +623,30 @@
         }
       ]
     },
-    "explanation": "Tham khảo chéo dữ liệu và sử dụng các trang web kiểm tra thực tế là hai phương pháp hiệu quả mà người ta có thể sử dụng để xác minh các dữ kiện hiện tại trong đầu ra của AI tạo sinh.\nChạy lại câu lệnh sẽ không xác minh bất kỳ sự kiện nào.\nCác sự kiện, sự thật mà AI đưa ra cần được xác minh. AI không được thiết kế để trở thành một công cụ hoàn toàn chính xác khi truyền bá thông tin."
+    "explanation": "Đáp án theo khóa IIG:\nA. Tham chiếu chéo dữ liệu.; B. Sử dụng các trang web kiểm tra thực tế.\n\nGiải thích ôn tập:\nTham khảo chéo dữ liệu và sử dụng các trang web kiểm tra thực tế là hai phương pháp hiệu quả mà người ta có thể sử dụng để xác minh các dữ kiện hiện tại trong đầu ra của AI tạo sinh.\nChạy lại câu lệnh sẽ không xác minh bất kỳ sự kiện nào.\nCác sự kiện, sự thật mà AI đưa ra cần được xác minh. AI không được thiết kế để trở thành một công cụ hoàn toàn chính xác khi truyền bá thông tin.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 111,
+      "officialAnswerText": "A. Tham chiếu chéo dữ liệu.; B. Sử dụng các trang web kiểm tra thực tế.",
+      "validatedAnswer": [
+        "2g6gzadwcx1w-f6nresx6s5at",
+        "eauitj855v0p-ex3yj1qab995"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "7mk500jn1sf4-qlzooc3k7cgt",
@@ -502,7 +710,31 @@
         }
       ]
     },
-    "explanation": "Đáp án:\nA. Internet tốc độ cao → Yes Giải thích: Các mô hình Generative AI thường chạy trên nền tảng đám mây, nên kết nối Internet nhanh giúp gửi yêu cầu và nhận kết quả nhanh hơn.\nB. GPU cao cấp → Yes Giải thích: GPU mạnh giúp xử lý song song và tăng tốc quá trình tạo nội dung AI, đặc biệt khi mô hình chạy cục bộ hoặc nội bộ.\nC. Một lượng nhỏ dữ liệu → No Giải thích: Các mô hình Generative AI cần lượng dữ liệu lớn để huấn luyện và tạo ra kết quả chính xác, tự nhiên — dữ liệu ít sẽ không đủ để tạo đầu ra chất lượng."
+    "explanation": "Đáp án theo khóa IIG:\nInternet tốc độ cao. → Yes; GPU cao cấp. → Yes; Một lượng nhỏ dữ liệu. → No\n\nGiải thích ôn tập:\nChấp nhận Yes–Yes–No cho bối cảnh dịch vụ AI quy mô lớn cần tốc độ, theo hạ tầng mà bài học đang nói đến; không áp đặt internet/GPU máy khách là bắt buộc cho mọi triển khai.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 122,
+      "officialAnswerText": "Internet tốc độ cao. → Yes; GPU cao cấp. → Yes; Một lượng nhỏ dữ liệu. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText88": "0",
+        "qmMultipleChoiceText89": "0",
+        "qmMultipleChoiceText90": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "1evfa2qonpjp-cwp2zn4efp6w",
@@ -566,7 +798,31 @@
         }
       ]
     },
-    "explanation": "Đáp án:\nA. Cho biết thực phẩm nào trong nhà nên là một phần của lời nhắc → Yes Giải thích: Việc liệt kê nguyên liệu sẵn có giúp Generative AI tạo công thức phù hợp với thực phẩm hiện có.\nB. Có ý tưởng về bữa ăn nào được mong muốn nên là một phần của lời nhắc → Yes Giải thích: Nêu rõ loại bữa ăn mong muốn (ví dụ: bữa sáng, trưa, tối, ăn chay, tráng miệng, v.v.) giúp AI định hướng công thức chính xác hơn.\nC. Hỏi những gì cần thiết tại cửa hàng nên là một phần của lời nhắc → No Giải thích: Câu hỏi về những thứ cần mua thêm không phải là đầu vào chính để tạo công thức, mà là bước tiếp theo sau khi công thức đã được tạo."
+    "explanation": "Đáp án theo khóa IIG:\nCho biết thực phẩm nào trong nhà nên là một phần của lời nhắc. → Yes; Có ý tưởng về bữa ăn nào được mong muốn nên là một phần của lời nhắc. → Yes; Hỏi những gì cần thiết tại cửa hàng nên là một phần của lời nhắc → No\n\nGiải thích ôn tập:\nDanh sách thực phẩm đang có là dữ liệu hữu ích; cần hướng dẫn rõ mục tiêu và giới hạn nguyên liệu. Dòng hỏi mua thêm bị chấm No theo mục tiêu chỉ dùng đồ có sẵn trong bếp, không phải vì AI không thể lập danh sách mua sắm. Nếu mục tiêu đổi thành chuẩn bị món mới thì câu hỏi mua thêm có thể phù hợp. Khóa phụ thuộc yêu cầu cụ thể của tình huống.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 126,
+      "officialAnswerText": "Cho biết thực phẩm nào trong nhà nên là một phần của lời nhắc. → Yes; Có ý tưởng về bữa ăn nào được mong muốn nên là một phần của lời nhắc. → Yes; Hỏi những gì cần thiết tại cửa hàng nên là một phần của lời nhắc → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText91": "0",
+        "qmMultipleChoiceText92": "0",
+        "qmMultipleChoiceText93": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "l1qq3p5myee5-6sy8ykhlpvrn",
@@ -646,7 +902,32 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: ✅ A. Self-consistency\nGiải thích:\nSelf-consistency là kỹ thuật nhắc lại cùng một lời nhắc nhiều lần để AI tạo ra nhiều đầu ra khác nhau, sau đó so sánh và chọn câu trả lời hợp lý hoặc tốt nhất. Trong ví dụ này, người dùng chạy cùng một lời nhắc nhiều lần (“các nhà hàng giá tốt trong khu vực...”) để nhận nhiều gợi ý khác nhau → chính là self-consistency.\nCác lựa chọn khác:\nB. Zero-shot: chỉ gửi một lời nhắc không ví dụ, không lặp lại.\nC. Few-shot: cung cấp một vài ví dụ mẫu trong lời nhắc, không phải chạy nhiều lần.\nD. Generate knowledge: không phải là kỹ thuật nhắc nhở chuẩn trong Generative AI."
+    "explanation": "Đáp án theo khóa IIG:\nSelf-consistency → Yes; Zero-shot → No; Few-shot → No; Generate knowledge → No\n\nGiải thích ôn tập:\nChấp nhận người dùng lặp prompt để thu nhiều kết quả như tín hiệu nhận diện self-consistency theo ý định bài tập; hiểu ngầm còn bước đối chiếu/chọn, không coi lặp đơn thuần là định nghĩa đầy đủ.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 143,
+      "officialAnswerText": "Self-consistency → Yes; Zero-shot → No; Few-shot → No; Generate knowledge → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText107": "0",
+        "qmMultipleChoiceText108": "1",
+        "qmMultipleChoiceText109": "1",
+        "qmMultipleChoiceText110": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "pzninp1sr0gm-s6mpoqe4z4lv",
@@ -710,7 +991,31 @@
         }
       ]
     },
-    "explanation": "True (Có):\nSử dụng công cụ phân tích thống kê để xác minh dữ liệu.\nĐối chiếu chéo dữ liệu.\nFalse (Không):\nYêu cầu công cụ AI tự kiểm tra độ chính xác của các con số.\nGiải thích:\nMột công cụ Trí tuệ nhân tạo không thể xác minh điều mà chính nó không biết chắc chắn là đúng ngay từ đầu.\nVì vậy, không nên yêu cầu AI tự xác nhận độ chính xác của các con số mà nó tạo ra."
+    "explanation": "Đáp án theo khóa IIG:\nSử dụng công cụ phân tích thống kê để xác minh dữ liệu. → Yes; Đối chiếu chéo dữ liệu. → Yes; Yêu cầu công cụ AI tự kiểm tra độ chính xác của các con số. → No\n\nGiải thích ôn tập:\nCông cụ thống kê có thể kiểm tra phép tính nếu dùng đúng dữ liệu và phương pháp; đối chiếu nguồn độc lập có thể kiểm tra dữ kiện. Yêu cầu AI tự kiểm tra có thể giúp phát hiện lỗi nhưng không tạo bằng chứng độc lập, nên không đủ để xác nhận kết quả. Nếu AI gọi công cụ tính toán/truy xuất nguồn thật thì cần đánh giá chính kết quả công cụ đó, không chỉ tin câu khẳng định “đã kiểm tra”.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 152,
+      "officialAnswerText": "Sử dụng công cụ phân tích thống kê để xác minh dữ liệu. → Yes; Đối chiếu chéo dữ liệu. → Yes; Yêu cầu công cụ AI tự kiểm tra độ chính xác của các con số. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText133": "0",
+        "qmMultipleChoiceText134": "0",
+        "qmMultipleChoiceText135": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "1mbo26ucem62-tpvv9e3npys8",
@@ -746,7 +1051,30 @@
         }
       ]
     },
-    "explanation": "Câu lệnh để tạo phụ đề tự động nên bao gồm yêu cầu:\nPhông chữ dễ đọc, để người xem dễ theo dõi.\nBản chép lời chính xác, để đảm bảo nội dung được truyền tải đúng.\nKhông nên yêu cầu:\nViết lại câu cho đúng ngữ pháp hoặc\nThể hiện cảm xúc của người nói, vì những điều này có thể khiến phụ đề bị sai lệch so với nội dung thật của người thuyết trình."
+    "explanation": "Đáp án theo khóa IIG:\nA. Phông chữ dễ đọc.; B. Bản chép lời chính xác.\n\nGiải thích ôn tập:\nPhông chữ dễ đọc và bản chép lời chính xác là hai yêu cầu trực tiếp giúp phụ đề dễ theo dõi và đúng nội dung. Với người khác ngôn ngữ còn phải chỉ rõ ngôn ngữ đích và kiểm tra bản dịch. Cảm xúc/ngữ điệu hoặc âm thanh quan trọng có thể cần biểu đạt trong phụ đề tiếp cận, nên không phải lúc nào chúng cũng vô ích. Giữ A/B như hai tiêu chí cơ bản, không coi chúng đã đủ bảo đảm mọi nhu cầu người xem.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 166,
+      "officialAnswerText": "A. Phông chữ dễ đọc.; B. Bản chép lời chính xác.",
+      "validatedAnswer": [
+        "syo3fnkbo43c-gpdqy5uanijr",
+        "fmbs9l49n9vf-u1f12sdgwlx5"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "lu2ugry1sk0d-1fnvqqwdrvur",
@@ -782,6 +1110,29 @@
         }
       ]
     },
-    "explanation": "Việc tinh chỉnh và các kỹ thuật tiền xử lý dữ liệu có thể khiến các mô hình khác nhau có các mức độ thiên vị khác nhau, vì các phương pháp được sử dụng cho việc tinh chỉnh và tiền xử lý có sự khác biệt giữa các mô hình.\nCác mô hình sử dụng cùng một dữ liệu huấn luyện có xu hướng có cùng kiểu thiên lệch.\nQuá trình phân tách từ thành mã thường không khiến các mô hình có các thiên lệch khác nhau. Thực tế, quá trình này thậm chí có thể giúp giảm bớt sự thiên lệch."
+    "explanation": "Đáp án theo khóa IIG:\nA. Tinh chỉnh (Fine-tuning); B. Kỹ thuật tiền xử lý dữ liệu (Preprocessing techniques)\n\nGiải thích ôn tập:\nA/B là hai nhóm yếu tố thay đổi quá trình học; tokenization có thể nằm trong tiền xử lý B, nên không cần coi D là một nhóm độc lập bắt buộc chọn thêm.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 169,
+      "officialAnswerText": "A. Tinh chỉnh (Fine-tuning); B. Kỹ thuật tiền xử lý dữ liệu (Preprocessing techniques)",
+      "validatedAnswer": [
+        "im50tnwszdoj-so6ukx1e1817",
+        "oxt148hymdu4-tlon1g2472vr"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   }
 ]

@@ -9,6 +9,7 @@ import { NativeSelect } from '@/components/ui/native-select';
 import { decryptPayload } from '@/lib/crypto';
 import {
   correctAnswerText,
+  AnswerReview,
   Difficulty,
   difficultyLabel,
   Manifest,
@@ -24,6 +25,7 @@ export type ReviewKeybook = Record<
     correctAnswer: unknown;
     summaryText: string;
     explanation: string;
+    review?: AnswerReview;
   }
 >;
 
@@ -107,10 +109,16 @@ function ReviewChoices({
               className="rounded-lg border border-border px-3 py-2"
             >
               <span>{row.text}</span>
-              <span className="mt-1 flex items-start gap-2 font-semibold text-success">
-                <Check size={16} className="mt-1 shrink-0" />{' '}
-                {correctOption?.text}
-              </span>
+              {correctOption ? (
+                <span className="mt-1 flex items-start gap-2 font-semibold text-success">
+                  <Check size={16} className="mt-1 shrink-0" />{' '}
+                  {correctOption.text}
+                </span>
+              ) : (
+                <span className="mt-1 block text-muted-foreground">
+                  Lựa chọn: {options.map((option) => option.text).join(' / ')}
+                </span>
+              )}
             </li>
           );
         })}
@@ -246,8 +254,7 @@ export function QuestionReview({
         Lướt nhanh {manifest.total} câu
       </h2>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-        Cuộn để xem câu hỏi, đáp án đúng và giải thích ngay. Không cần chọn đáp
-        án hay nộp bài.
+        Xem nguyên văn câu hỏi, đáp án theo khóa IIG và giải thích để ôn tập.
       </p>
 
       {loading ? (
@@ -369,6 +376,7 @@ export function QuestionReview({
                     </b>
                     <span>{topicLabel[question.topic]}</span>
                     <span>· {difficultyLabel[question.difficulty]}</span>
+                    {entry?.review && <span>· {entry.review.label}</span>}
                   </div>
                   <h3
                     id={`review-title-${question.number}`}
@@ -389,14 +397,51 @@ export function QuestionReview({
                   ))}
                   <ReviewChoices
                     question={question}
-                    answer={entry?.correctAnswer}
+                    answer={
+                      entry?.review
+                        ? entry.review.validatedAnswer
+                        : entry?.correctAnswer
+                    }
                   />
                   <div className="mt-4 rounded-lg border border-success/25 bg-success/5 p-3 text-sm leading-relaxed">
-                    <b className="text-success">Đáp án đúng</b>
+                    <b className="text-foreground">
+                      {entry?.review?.validatedAnswer === null
+                        ? 'Kết luận: chưa thể chốt khóa đúng'
+                        : 'Đáp án IIG'}
+                    </b>
+                    {entry?.review?.validatedAnswer === null && (
+                      <p className="mt-1 whitespace-pre-line">
+                        {entry.review.conclusion}
+                      </p>
+                    )}
                     <p className="mt-1 whitespace-pre-line">
+                      {entry?.review?.validatedAnswer === null &&
+                        'Khóa tham khảo để luyện đối chiếu: '}
                       {correctAnswerText(question, entry?.summaryText)}
                     </p>
+                    {entry?.review?.status === 'corrected' && (
+                      <p className="mt-2 whitespace-pre-line">
+                        Khóa IIG trước đối chiếu:{' '}
+                        {entry.review.officialAnswerText}
+                      </p>
+                    )}
                   </div>
+                  {entry?.review && (
+                    <ul className="mt-3 space-y-1 text-xs text-muted-foreground">
+                      {entry.review.references.map((reference) => (
+                        <li key={reference.url}>
+                          <a
+                            href={reference.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="underline"
+                          >
+                            {reference.title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                   <div className="mt-3 text-sm leading-relaxed">
                     <b className="text-info">Giải thích</b>
                     <p className="mt-1 whitespace-pre-line text-foreground/80">

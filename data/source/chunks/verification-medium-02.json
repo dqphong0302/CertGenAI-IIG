@@ -33,6 +33,29 @@
         }
       ]
     },
-    "explanation": "Hai cách hiệu quả nhất để xác minh thông tin lịch sử là:\nĐối chiếu chéo kết quả đầu ra với các nguồn đáng tin cậy khác.\nHỏi ý kiến chuyên gia trong lĩnh vực liên quan để xác nhận độ chính xác.\nViệc chạy lại câu lệnh và thấy kết quả tương tự không chứng minh được tính chính xác của thông tin.\nTrí tuệ nhân tạo chỉ là công cụ hỗ trợ, không phải nguồn cung cấp sự thật tuyệt đối, nên luôn cần kiểm chứng lại các dữ liệu mà AI đưa ra."
+    "explanation": "Đáp án theo khóa IIG:\nA. Đối chiếu chéo kết quả đầu ra.; B. Hỏi ý kiến của chuyên gia về chủ đề đó.\n\nGiải thích ôn tập:\nĐối chiếu với tài liệu lịch sử có nguồn gốc rõ ràng và hỏi chuyên gia là hai cách kiểm chứng phù hợp. Chuyên gia vẫn cần căn cứ, và hai nguồn sao chép cùng tài liệu không độc lập. Chạy lại prompt hoặc tin vì lời văn tự tin không xác nhận được dữ kiện. Phải kiểm tra cả niên đại, bối cảnh và tài liệu gốc mà câu trả lời viện dẫn.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 170,
+      "officialAnswerText": "A. Đối chiếu chéo kết quả đầu ra.; B. Hỏi ý kiến của chuyên gia về chủ đề đó.",
+      "validatedAnswer": [
+        "im50tnwszdoj-so6ukx1e1817",
+        "oxt148hymdu4-tlon1g2472vr"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   }
 ]

@@ -107,7 +107,32 @@
         }
       ]
     },
-    "explanation": "Câu lệnh AI hoàn chỉnh được ghép từ 4 phần, mỗi phần bám sát đúng một dữ kiện đã cho: bạn ít kinh nghiệm leo núi (→ tuyến đường phù hợp cho người mới bắt đầu), mùa khô là thời điểm an toàn nhất (→ giới hạn kết quả trong mùa khô của châu Phi), và ngân sách nhỏ (→ tìm hướng dẫn viên giá rẻ, cụ thể tại Tanzania — nơi có Kilimanjaro — chứ không phải toàn châu Phi hay chỉ chuyên về Kilimanjaro nói chung). Ghép lại: 'Tôi muốn leo núi Kilimanjaro. Tìm kiếm tuyến đường phù hợp nhất cho người mới bắt đầu. Hạn chế kết quả trong mùa khô của châu Phi. Lựa chọn tất cả các hướng dẫn viên du lịch giá rẻ ở Tanzania.'"
+    "explanation": "Đáp án theo khóa IIG:\nTôi muốn → leo núi Kilimanjaro; Tìm kiếm →  tuyến đường phù hợp nhất cho người mới bắt đầu; Hạn chế đi đến → mùa khô của châu Phi; Lựa chọn → tất cả các hướng dẫn viên du lịch giá rẻ ở Tanzania\n\nGiải thích ôn tập:\nCác phần ghép theo ý định đề là tuyến phù hợp người ít kinh nghiệm, mùa khô, ngân sách và hướng dẫn viên ở Tanzania. “Mùa khô ở châu Phi” quá rộng để xác định điều kiện tại Kilimanjaro; hướng dẫn viên tiết kiệm ở Tanzania cũng không tự chứng minh đủ điều kiện dẫn đoàn leo núi. Khóa ghép chỉ minh họa cung cấp bối cảnh cho prompt, không phải kế hoạch leo núi đã được kiểm chứng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 51,
+      "officialAnswerText": "Tôi muốn → leo núi Kilimanjaro; Tìm kiếm →  tuyến đường phù hợp nhất cho người mới bắt đầu; Hạn chế đi đến → mùa khô của châu Phi; Lựa chọn → tất cả các hướng dẫn viên du lịch giá rẻ ở Tanzania",
+      "validatedAnswer": {
+        "qmMultipleChoiceText40": "2",
+        "qmMultipleChoiceText41": "1",
+        "qmMultipleChoiceText42": "2",
+        "qmMultipleChoiceText43": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "nbcgpvow2uyh-i781hyv2lzn",
@@ -171,7 +196,31 @@
         }
       ]
     },
-    "explanation": "Không có công cụ AI nào đảm bảo đầu ra hoàn toàn không thiên kiến, nên phát biểu 1 Sai. Với các chủ đề khoa học nhạy cảm như biến đổi khí hậu, luôn cần đối chiếu với nguồn khoa học đáng tin cậy — phát biểu 2 Đúng. Và bất kỳ ai, không riêng nhà khoa học, đều có thể đặt câu hỏi này cho AI — phát biểu 3 Sai."
+    "explanation": "Đáp án theo khóa IIG:\nBạn có thể tin tưởng rằng kết quả đầu ra không có thiên kiến. → Sai; Bạn nên xác minh thông tin từ các nguồn khoa học có thẩm quyền. → Đúng; Chỉ các nhà khoa học mới có khả năng nhập loại dữ liệu này. → Sai\n\nGiải thích ôn tập:\nKhông có công cụ AI nào đảm bảo đầu ra hoàn toàn không thiên kiến, nên phát biểu 1 Sai. Với các chủ đề khoa học nhạy cảm như biến đổi khí hậu, luôn cần đối chiếu với nguồn khoa học đáng tin cậy — phát biểu 2 Đúng. Và bất kỳ ai, không riêng nhà khoa học, đều có thể đặt câu hỏi này cho AI — phát biểu 3 Sai.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 53,
+      "officialAnswerText": "Bạn có thể tin tưởng rằng kết quả đầu ra không có thiên kiến. → Sai; Bạn nên xác minh thông tin từ các nguồn khoa học có thẩm quyền. → Đúng; Chỉ các nhà khoa học mới có khả năng nhập loại dữ liệu này. → Sai",
+      "validatedAnswer": {
+        "qmMultipleChoiceText44": "1",
+        "qmMultipleChoiceText45": "0",
+        "qmMultipleChoiceText46": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "73saqva3ddpm-3x2sbuisbyee",
@@ -212,7 +261,30 @@
         }
       ]
     },
-    "explanation": "Bắt nạt, tội ác thù ghét, gian lận, rình rập và gian lận đều có thể dẫn đến các hệ quả dân sự hoặc hình sự.\nCảm xúc tiêu cực không dẫn đến các hệ quả dân sự hoặc hình sự.\nLoại trừ và tin đồn, mặc dù có khả năng gây hại, nhưng không dẫn đến các hệ quả dân sự hoặc hình sự."
+    "explanation": "Đáp án theo khóa IIG:\nA. Bắt nạt; B. Rình rập\n\nGiải thích ôn tập:\nBắt nạt và rình rập là hai nhóm hành vi rõ nhất có thể dẫn tới kiện tụng hoặc truy tố trong các lựa chọn. Không phải mọi trường hợp đều thỏa yếu tố pháp lý của một vi phạm. “Nói chuyện phiếm” có thể trở thành phỉ báng nếu phát tán cáo buộc sai gây hại; cô lập cũng có thể liên quan phân biệt đối xử trong một số bối cảnh. Vì vậy không dùng lời giải cũ khẳng định các loại còn lại không bao giờ có hệ quả pháp lý.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 112,
+      "officialAnswerText": "A. Bắt nạt; B. Rình rập",
+      "validatedAnswer": [
+        "2g6gzadwcx1w-f6nresx6s5at",
+        "eauitj855v0p-ex3yj1qab995"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "d64db4npjiw4-an4j6ylpsvnb",
@@ -248,7 +320,30 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: A. Thiếu dữ liệu và D. Thiếu sự đa dạng\nGiải thích:\nA. Thiếu dữ liệu: Khi một nhóm, ngôn ngữ hoặc bối cảnh bị thiếu đại diện trong dữ liệu huấn luyện, mô hình sẽ thiên về các nhóm xuất hiện thường xuyên hơn → tạo ra bias.\nD. Thiếu sự đa dạng: Nếu dữ liệu chỉ phản ánh một quan điểm, vùng văn hóa, hoặc nhóm người nhất định, mô hình sẽ thiên vị trong phản hồi.\nB. Sự bất thường trong dữ liệu: Có thể gây lỗi, nhưng không phải nguyên nhân chính của bias.\nC. Tâm lý tiêu cực do một sự kiện: Là hiện tượng tạm thời, không phải đặc điểm cấu trúc gây thiên kiến dữ liệu."
+    "explanation": "Đáp án theo khóa IIG:\nA. Thiếu dữ liệu; D. Thiếu sự đa dạng\n\nGiải thích ôn tập:\nThiếu dữ liệu và thiếu đa dạng có thể làm các nhóm hoặc bối cảnh bị đại diện không đầy đủ nên là hai lựa chọn trực tiếp theo khóa A/D. Tuy nhiên có dữ liệu thiếu không đồng nghĩa luôn có bias; cần xem cơ chế thiếu có hệ thống và mục tiêu sử dụng. Ngoại lệ hoặc cảm xúc gắn với một sự kiện cũng có thể làm mẫu lệch nếu cách thu thập/lọc gây mất đại diện. Giữ khóa như hai vấn đề điển hình, không phủ nhận các cơ chế khác.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 120,
+      "officialAnswerText": "A. Thiếu dữ liệu; D. Thiếu sự đa dạng",
+      "validatedAnswer": [
+        "o9iec6y6ssy-1586nnfjslsq",
+        "uhn0fad428b2-lkvkomueen0"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "ewn8x8yy9gpq-z3lrvz6afejm",
@@ -284,7 +379,30 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: ✅ A. Thông tin cá nhân và ✅ C. Dữ liệu cá nhân của công ty\nGiải thích:\nA. Thông tin cá nhân: Bao gồm dữ liệu nhạy cảm như tên, địa chỉ, số CMND, thông tin tài chính, sức khỏe,... Việc sử dụng loại dữ liệu này vi phạm quyền riêng tư và các quy định như GDPR → phải tránh.\nC. Dữ liệu cá nhân của công ty: Bao gồm thông tin bảo mật nội bộ, chiến lược kinh doanh, dữ liệu khách hàng,... Nếu dùng để huấn luyện AI mà không bảo vệ đúng cách, có thể làm rò rỉ bí mật doanh nghiệp → cần tránh.\nB. Dữ liệu lịch sử: có thể dùng, miễn là được xử lý và ẩn danh phù hợp.\nD. KPI: là dữ liệu hiệu suất, không nhạy cảm nếu ẩn danh, nên có thể sử dụng."
+    "explanation": "Đáp án theo khóa IIG:\nA. Thông tin cá nhân; C. Dữ liệu cá nhân của công ty\n\nGiải thích ôn tập:\nThông tin cá nhân và dữ liệu nội bộ cần tránh đưa vào tập huấn luyện khi thiếu quyền sử dụng, mục đích phù hợp hoặc biện pháp bảo vệ. Đây là hướng phòng ngừa theo khóa A/C, không phải cấm tuyệt đối mọi dữ liệu cá nhân trong mọi mô hình. Một số trường hợp có thể xử lý hợp lệ với căn cứ thích hợp và kiểm soát truy cập. Dữ liệu công khai cũng không tự động được phép dùng cho mọi mục đích.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 123,
+      "officialAnswerText": "A. Thông tin cá nhân; C. Dữ liệu cá nhân của công ty",
+      "validatedAnswer": [
+        "owau4emgvgec-4fbw21w24dn2",
+        "xakih27csgzg-4kzkxuxfxpez"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "5d531rbykuvy-mgkn6xtg7qit",
@@ -348,7 +466,31 @@
         }
       ]
     },
-    "explanation": "Đáp án:\nA. Thêm ngữ cảnh vào lời nhắc AI sẽ giúp tạo ra đầu ra tốt hơn → Yes Giải thích: Khi bạn thêm chi tiết và ngữ cảnh, AI sẽ hiểu rõ mục tiêu hơn, từ đó tạo ra kết quả chính xác và phù hợp hơn.\nB. Có thể an toàn khi cho rằng một công cụ AI sẽ biết bạn đang nói về điều gì → No Giải thích: AI không có trí nhớ ngữ cảnh ngoài cuộc trò chuyện hiện tại (trừ khi được cung cấp rõ), nên không nên giả định rằng nó “biết” bạn đang nói đến điều gì.\nC. Cung cấp cho lời nhắc AI một tính cách không ảnh hưởng đến đầu ra → No Giải thích: Khi bạn gán tính cách hoặc phong cách (ví dụ: “hãy viết như một giáo viên”, “giọng thân thiện”), AI sẽ điều chỉnh cách diễn đạt và nội dung theo đó → ảnh hưởng trực tiếp đến đầu ra."
+    "explanation": "Đáp án theo khóa IIG:\nThêm ngữ cảnh vào lời nhắc AI sẽ giúp tạo ra đầu ra tốt hơn. → Yes; Có thể an toàn khi cho rằng một công cụ AI sẽ biết bạn đang nói về điều gì. → No; Cung cấp cho lời nhắc AI một tính cách không ảnh hưởng đến đầu ra. → No\n\nGiải thích ôn tập:\nBổ sung ngữ cảnh liên quan thường giúp đầu ra sát nhu cầu; thông tin thừa hoặc mâu thuẫn vẫn có thể làm kết quả xấu đi. Không nên mặc định AI biết tình huống riêng của người dùng, dù một số sản phẩm có tính năng nhớ hoặc truy xuất lịch sử. Vai trò/phong cách có thể thay đổi đầu ra. Giữ khóa Yes–No–No theo các nguyên tắc này, không khẳng định mọi AI hoàn toàn không có trí nhớ ngoài phiên.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 133,
+      "officialAnswerText": "Thêm ngữ cảnh vào lời nhắc AI sẽ giúp tạo ra đầu ra tốt hơn. → Yes; Có thể an toàn khi cho rằng một công cụ AI sẽ biết bạn đang nói về điều gì. → No; Cung cấp cho lời nhắc AI một tính cách không ảnh hưởng đến đầu ra. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText104": "0",
+        "qmMultipleChoiceText105": "1",
+        "qmMultipleChoiceText106": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "tcdw08fkvolv-smb9ylotxnp0",
@@ -412,7 +554,31 @@
         }
       ]
     },
-    "explanation": "Dữ liệu có bản quyền thường được dùng để huấn luyện các mô hình AI.\nNhiều mô hình AI hiện nay được huấn luyện từ dữ liệu thu thập trên Internet, trong đó có cả nội dung có bản quyền (như bài viết, hình ảnh, âm nhạc).\nQuy trình sử dụng AI trong môi trường chuyên nghiệp của công ty nên được ghi chép và minh bạch.\nCông ty cần minh bạch về cách sử dụng AI, để tránh rủi ro vi phạm bản quyền hoặc bị hiểu lầm về nguồn dữ liệu.\nCông ty nên tuân theo các quy định của cơ quan quản lý ngành về việc sử dụng dữ liệu có bản quyền trong AI.\nHiện chưa có cơ quan quản lý chính thức nào đặt ra quy định cụ thể về việc AI dùng dữ liệu có bản quyền. Vì vậy, công ty nên xin phép chủ sở hữu dữ liệu và tuân thủ quy trình đạo đức nội bộ thay vì dựa vào “quy định ngành”."
+    "explanation": "Đáp án theo khóa IIG:\nDữ liệu có bản quyền thường được dùng để huấn luyện các mô hình AI. → Yes; Quy trình sử dụng AI trong môi trường chuyên nghiệp của công ty nên được ghi chép và minh bạch. → Yes; Công ty nên tuân theo các quy định của cơ quan quản lý ngành về việc sử dụng dữ liệu có bản quyền trong AI. → Yes\n\nGiải thích ôn tập:\nGiữ Yes–Yes–Yes đúng như cờ đáp án local. Nội dung có bản quyền có thể xuất hiện trong tập huấn luyện; thực tế đó không tự quyết định quyền sử dụng hợp pháp cho từng trường hợp. Công ty nên ghi chép quy trình và tuân thủ các quy định áp dụng của cơ quan có thẩm quyền, bao gồm quy định ngành nếu có. Bỏ lời giải cũ suy từ “chưa có cơ quan quản lý AI” ra không cần tuân thủ: luật hiện hữu vẫn có thể áp dụng và đề không yêu cầu có một cơ quan chuyên trách AI.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 146,
+      "officialAnswerText": "Dữ liệu có bản quyền thường được dùng để huấn luyện các mô hình AI. → Yes; Quy trình sử dụng AI trong môi trường chuyên nghiệp của công ty nên được ghi chép và minh bạch. → Yes; Công ty nên tuân theo các quy định của cơ quan quản lý ngành về việc sử dụng dữ liệu có bản quyền trong AI. → Yes",
+      "validatedAnswer": {
+        "qmMultipleChoiceText117": "0",
+        "qmMultipleChoiceText118": "0",
+        "qmMultipleChoiceText119": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "2b7ftnio7zoz-1bwui54inr5e",
@@ -476,7 +642,31 @@
         }
       ]
     },
-    "explanation": "Đáp án:\nA. Có nỗi sợ rằng AI sẽ tiếp quản việc làm và nhân loại → Yes Giải thích: Đúng — có mối lo ngại xã hội phổ biến rằng AI có thể thay thế con người trong nhiều công việc, thậm chí đe dọa vai trò của con người trong tương lai.\nB. AI có thể đóng vai trò như một công cụ tạo việc làm → Yes Giải thích: Đúng — AI không chỉ thay thế mà còn tạo ra các công việc mới, như quản lý dữ liệu, huấn luyện mô hình, kỹ sư AI, chuyên viên đạo đức AI, v.v.\nC. Mọi công việc cuối cùng sẽ được điều hành bởi AI → No Giải thích: Sai — nhiều công việc vẫn cần con người, đặc biệt là các lĩnh vực sáng tạo, giao tiếp, lãnh đạo, và cảm xúc; AI chỉ hỗ trợ chứ không thể thay thế hoàn toàn."
+    "explanation": "Đáp án theo khóa IIG:\nCó nỗi sợ rằng AI sẽ tiếp quản việc làm và nhân loại. → Yes; AI có thể đóng vai trò như một công cụ tạo việc làm. → Yes; Mọi công việc cuối cùng sẽ được điều hành bởi AI. → No\n\nGiải thích ôn tập:\nCó tồn tại nỗi lo AI làm mất việc là một nhận định về mối lo xã hội, không phải bằng chứng AI sẽ kiểm soát nhân loại. AI có thể tạo một số vai trò/công việc mới, đồng thời thay đổi hoặc giảm nhu cầu ở vai trò khác. Không có dữ kiện để khẳng định mọi công việc cuối cùng sẽ do AI điều hành. Giữ Yes–Yes–No theo cách hiểu này; không dự đoán chắc chắn tương lai từ ví dụ hiện tại.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 150,
+      "officialAnswerText": "Có nỗi sợ rằng AI sẽ tiếp quản việc làm và nhân loại. → Yes; AI có thể đóng vai trò như một công cụ tạo việc làm. → Yes; Mọi công việc cuối cùng sẽ được điều hành bởi AI. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText127": "0",
+        "qmMultipleChoiceText128": "0",
+        "qmMultipleChoiceText129": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "7di53adbd7i-ysi4ogq00ke",
@@ -534,7 +724,30 @@
         }
       ]
     },
-    "explanation": "Trong một công ty, sự giám sát của con người (human oversight) là cần thiết để tránh lan truyền thông tin sai. Làm như vậy sẽ giúp công ty tránh được các hậu quả về tài chính và pháp lý (financial and legal repercussions)."
+    "explanation": "Đáp án theo khóa IIG:\nTrong một công ty, | → Sự giám sát của con người; | là cần thiết để tránh việc lan truyền thông tin sai lệch. Làm như vậy sẽ giúp công ty tránh được các hậu quả tài chính và | → Pháp lý\n\nGiải thích ôn tập:\nGiám sát của con người và kiểm chứng nguồn có thể giảm nguy cơ lan truyền thông tin sai và giảm rủi ro pháp lý cho công ty. Chúng không bảo đảm loại bỏ hoàn toàn sai sót hoặc miễn trách nhiệm. Khóa ghép diễn đạt mục tiêu giảm rủi ro; không nên hiểu “tránh” là lời cam kết mọi nội dung sau giám sát đều đúng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 157,
+      "officialAnswerText": "Trong một công ty, | → Sự giám sát của con người; | là cần thiết để tránh việc lan truyền thông tin sai lệch. Làm như vậy sẽ giúp công ty tránh được các hậu quả tài chính và | → Pháp lý",
+      "validatedAnswer": {
+        "qmMultipleChoiceText142": "0",
+        "qmMultipleChoiceText143": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   },
   {
     "id": "jfa18p7xv8xz-3ww9ramlygsf",
@@ -570,6 +783,29 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: B. Hình sự và C. Dân sự\nGiải thích:\nB. Hình sự (Criminal): Nếu mô hình AI vô tình hoặc cố ý tiết lộ hoặc lạm dụng dữ liệu cá nhân, dẫn đến trộm cắp danh tính, hành vi đó có thể bị truy tố hình sự theo luật bảo vệ dữ liệu và quyền riêng tư (ví dụ: GDPR, luật an ninh mạng, luật hình sự quốc gia).\nC. Dân sự (Civil): Nạn nhân của hành vi mất dữ liệu cá nhân hoặc bị đánh cắp danh tính có thể khởi kiện đòi bồi thường thiệt hại đối với công ty hoặc cá nhân chịu trách nhiệm về mô hình AI.\nCác lựa chọn sai:\nA. Ẩn danh (Anonymization): là biện pháp phòng ngừa, không phải hành động pháp lý sau khi vi phạm xảy ra.\nD. Thiên vị (Bias): liên quan đến đạo đức và công bằng trong dữ liệu, không liên quan đến trộm cắp danh tính."
+    "explanation": "Đáp án theo khóa IIG:\nB. Hình sự; C. Dân sự\n\nGiải thích ôn tập:\nHình sự và dân sự là hai nhóm hành động pháp lý trong các lựa chọn; “ẩn danh” là biện pháp xử lý dữ liệu, “thiên vị” là một vấn đề chứ không phải nhóm thủ tục pháp lý. Việc xảy ra trộm cắp danh tính không tự động làm nhà phát triển phạm tội. Trách nhiệm của bên nào, cần yếu tố lỗi gì và chế tài nào phụ thuộc luật áp dụng cùng tình tiết cụ thể.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 167,
+      "officialAnswerText": "B. Hình sự; C. Dân sự",
+      "validatedAnswer": [
+        "oxt148hymdu4-tlon1g2472vr",
+        "qf8yylyqnw84-agtl79bz0pxd"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=154"
+        }
+      ]
+    }
   }
 ]

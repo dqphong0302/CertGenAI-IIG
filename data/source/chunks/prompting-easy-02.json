@@ -33,7 +33,27 @@
         }
       ]
     },
-    "explanation": "Câu lệnh khai thác kiến thức yêu cầu kiến thức chung về một chủ đề và sau đó là một kiến thức cụ thể về chủ đề đó. Do đó, \"Định nghĩa về thổi thủy tinh. Sau đó cho tôi biết nó được sử dụng như thế nào để làm chai coca.\" là một ví dụ về câu lệnh khai thác kiến thức.\nChia nhỏ các bước là một ví dụ về câu lệnh Tư duy chuỗi (chain of thought prompting).\nChỉ cần yêu cầu một cái gì đó mà không có bất kỳ bối cảnh nào là một ví dụ về zero-shot prompting.\nYêu cầu nội dung với một số hướng dẫn là một ví dụ về few-shot prompting."
+    "explanation": "Đáp án theo khóa IIG:\nA. Định nghĩa về thổi thủy tinh. Sau đó cho tôi biết nó được sử dụng như thế nào để làm chai coca.\n\nGiải thích ôn tập:\nA gần kỹ thuật generated knowledge: yêu cầu sinh kiến thức nền về thổi thủy tinh rồi dùng kiến thức đó cho câu hỏi ứng dụng. Việc kiến thức trung gian thật sự được dùng cho lời giải mới là điểm quan trọng; chỉ có hai câu hỏi liên tiếp chưa bảo đảm quy trình chuẩn. Zero-shot là không có ví dụ mẫu, dù prompt vẫn có bối cảnh. D có ví dụ sedan/SUV nên gần học theo ví dụ/loại suy; few-shot không có nghĩa chỉ là “một số hướng dẫn”.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 80,
+      "officialAnswerText": "A. Định nghĩa về thổi thủy tinh. Sau đó cho tôi biết nó được sử dụng như thế nào để làm chai coca.",
+      "validatedAnswer": "k8962cyv948a-c3y5nxdk8cyb",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "t0r983lxh0nj-sm4bnigsg1v1",
@@ -69,7 +89,27 @@
         }
       ]
     },
-    "explanation": "Một câu lệnh yêu cầu một hình ảnh chuyển động hoặc tạo hoạt ảnh là phù hợp để biến một hình ảnh thành video.\nMột câu lệnh yêu cầu một công cụ AI tạo sinh tạo video không giống với việc biến một hình ảnh thành video.\nSử dụng hai hình ảnh để tạo video là một ví dụ về nội suy giữa các hình ảnh.\nThêm một đối tượng vào một video hiện có không giống với việc biến một hình ảnh thành video."
+    "explanation": "Đáp án theo khóa IIG:\nA. Tạo hoạt ảnh cho hình ảnh những ngọn núi từ trái sang phải.\n\nGiải thích ôn tập:\nGiữ A. Yêu cầu tạo hoạt ảnh cho hình ảnh có sẵn từ trái sang phải chỉ rõ nguồn là ảnh và thao tác thêm chuyển động. B mô tả video lia máy nhưng không chỉ ra phải dùng ảnh tĩnh; C dùng hai ảnh; D sửa video đã có. Guide PDF 109 có riêng mục thêm chuyển động cho ảnh. Vì đề hỏi “phù hợp nhất”, không cần chứng minh B bất khả thi. Đánh dấu mơ hồ trước đây là quá thận trọng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 81,
+      "officialAnswerText": "A. Tạo hoạt ảnh cho hình ảnh những ngọn núi từ trái sang phải.",
+      "validatedAnswer": "k8962cyv948a-c3y5nxdk8cyb",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "6ec1oklsdgyk-dc51ce3rmmgq",
@@ -105,7 +145,27 @@
         }
       ]
     },
-    "explanation": "Để chuyển đổi một video hướng dẫn thành nội dung có thể tiếp cận được với người xem không dùng được âm thanh, hãy ra lệnh cho AI thêm phụ đề vào video đã tải lên."
+    "explanation": "Đáp án theo khóa IIG:\nB. Thêm phụ đề vào video đã tải lên.\n\nGiải thích ôn tập:\nB đáp ứng trực tiếp việc xem không cần âm thanh và không yêu cầu xóa âm thanh; ưu tiên phương án đủ và ít thay đổi nhất.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 83,
+      "officialAnswerText": "B. Thêm phụ đề vào video đã tải lên.",
+      "validatedAnswer": "e6qpg3ly9015-2v3jb51tq5l6",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "n77j69ni9ra5-iruv0rh75eky",
@@ -141,7 +201,27 @@
         }
       ]
     },
-    "explanation": "Câu lệnh AI tốt nhất là:\nTạo một hình ảnh hoạt hình biến hình (animorphic) của một cơn lốc xoáy đang ôm quả bóng bầu dục và đội mũ bảo hiểm bóng bầu dục."
+    "explanation": "Đáp án theo khóa IIG:\nD. Tạo một hình ảnh hoạt hình biến hình (animorphic) của một cơn lốc xoáy đang ôm quả bóng bầu dục và đội mũ bảo hiểm bóng bầu dục\n\nGiải thích ôn tập:\nD nhân hóa cơn lốc xoáy thành nhân vật hoạt hình có hành động/trang phục, nên thể hiện linh vật rõ nhất trong danh sách. “Animorphic” ở đây được hiểu theo ý định nhân hóa, không phải một tên kỹ thuật tạo ảnh chuẩn. Tên Tornados tự nó không bắt buộc phải có bóng bầu dục hay mũ bảo hiểm; các chi tiết đó thuộc lựa chọn D chứ không phải dữ kiện được chứng minh về trường. Giữ khóa theo độ phù hợp hình tượng mascot, không thêm yêu cầu mới vào câu dẫn.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 84,
+      "officialAnswerText": "D. Tạo một hình ảnh hoạt hình biến hình (animorphic) của một cơn lốc xoáy đang ôm quả bóng bầu dục và đội mũ bảo hiểm bóng bầu dục",
+      "validatedAnswer": "dlneahkt7w6x-u9igtxx6cggl",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "k33ev5kgpqdd-rwlhw6r9uacf",
@@ -177,7 +257,27 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: D. Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Ví dụ bao gồm \"groom to bloom\" và \"doggie waggie\".\nGiải thích:\nFew-shot prompt = lời nhắc có một vài ví dụ mẫu giúp AI hiểu phong cách hoặc cách thể hiện mong muốn.\nCâu D cung cấp hai ví dụ (\"groom to bloom\", \"doggie waggie\"), nên mô hình có thể học theo phong cách đó để tạo nội dung mới.\nCác lựa chọn A, B, C:\nA/B: không có ví dụ → zero-shot.\nC: chỉ đưa ví dụ, không có yêu cầu tạo nội dung → không phải few-shot prompt hoàn chỉnh."
+    "explanation": "Đáp án theo khóa IIG:\nD. Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Ví dụ bao gồm \"groom to bloom\" và \"doggie waggie\"\n\nGiải thích ôn tập:\nD gồm yêu cầu tạo tờ rơi cùng các ví dụ khẩu hiệu, nên phù hợp học theo ví dụ hơn lệnh trống không. C chỉ đưa ví dụ mà thiếu nhiệm vụ đầu ra nên kém đầy đủ hơn. Những khẩu hiệu mẫu giúp định hướng phong cách; chúng không bảo đảm chất lượng và không biến thành quy tắc rằng càng nhiều câu chỉ dẫn thì càng nhiều shot.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 119,
+      "officialAnswerText": "D. Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Ví dụ bao gồm \"groom to bloom\" và \"doggie waggie\"",
+      "validatedAnswer": "bapxv2pdf520-fvv01a4urpfn",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "p7ohrmn9ukmj-iiqyfxmyqk4u",
@@ -213,7 +313,27 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: B. Lời nhắc cần bối cảnh.\nGiải thích: Lời nhắc “Hãy cho tôi biết về con báo.” quá chung chung — AI không biết bạn muốn nói đến:\nCon báo (động vật)\nHay Lamborghini Aventador (biệt danh: Báo)\nHoặc biểu tượng đội thể thao / thương hiệu có tên “Leopard”  → Do đó, thiếu bối cảnh khiến AI khó tạo ra câu trả lời phù hợp.\nA. Tính cách, C. Phong cách, và D. Vai trò chỉ giúp định hình cách diễn đạt, chứ không làm rõ nội dung mà AI cần nói."
+    "explanation": "Đáp án theo khóa IIG:\nB. Lời nhắc cần bối cảnh.\n\nGiải thích ôn tập:\nB. Bối cảnh là thông tin thiếu rõ nhất: muốn biết đặc điểm sinh học, môi trường sống hay thông tin ở mức độ nào về con báo? Prompt không sai cú pháp và AI vẫn có thể trả lời chung, nhưng thiếu mục tiêu nên dễ không đúng nhu cầu. Không cần tự thêm những cách hiểu thương hiệu/biệt danh không có căn cứ trong đề để chứng minh đáp án.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 135,
+      "officialAnswerText": "B. Lời nhắc cần bối cảnh.",
+      "validatedAnswer": "aqmb3x9rlax0-txutby4ki7g6",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "35bhrht7vh3n-z7fhogyyumy3",
@@ -249,7 +369,27 @@
         }
       ]
     },
-    "explanation": "Thêm một persona (tính cách nhân vật) nghĩa là đặt kết quả đầu ra trong góc nhìn của một người cụ thể, chẳng hạn như một huấn luyện viên võ thuật, và thêm cảm xúc hoặc phong cách đặc trưng của người đó vào câu lệnh.\nVì vậy, câu lệnh:\n“Là một huấn luyện viên võ thuật tràn đầy năng lượng, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.”\nlà ví dụ đúng nhất về việc thêm persona.\nCâu có cụm “huấn luyện viên võ thuật tràn đầy năng lượng” vừa xác định vai trò (role) vừa thể hiện cảm xúc và phong cách (energy), nên được xem là một persona hoàn chỉnh.\nCác câu khác chỉ thêm vai trò hoặc chỉ thêm cảm xúc, chưa đủ để hình thành persona."
+    "explanation": "Đáp án theo khóa IIG:\nA. Là một huấn luyện viên võ thuật tràn đầy năng lượng, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.\n\nGiải thích ôn tập:\nA có cả vai huấn luyện viên và tính cách giàu năng lượng, là persona cụ thể hơn; chấp nhận A dù B cũng có vai trò hợp lệ.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 138,
+      "officialAnswerText": "A. Là một huấn luyện viên võ thuật tràn đầy năng lượng, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.",
+      "validatedAnswer": "79373b10fre6-som7msidpf72",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "hib1ttrcc41f-lmb9rkt2rkhp",
@@ -285,7 +425,27 @@
         }
       ]
     },
-    "explanation": "“Hãy cho tôi biết tất cả những lợi ích của MySQL trong việc lưu trữ dữ liệu về tình trạng sức khỏe và thể lực\"\nCâu lệnh trên có thể gây ra sự thiên lệch (bias) trong kết quả vì:\nNgười dùng chỉ yêu cầu AI liệt kê các lợi ích (tức là mặt tích cực) của MySQL.\nKhông có yêu cầu về nhược điểm, hạn chế hoặc so sánh với các công cụ khác.\nĐiều này khiến câu trả lời của AI thiếu cân bằng, chỉ nghiêng về một chiều - chiều tích cực.\nKết quả tạo ra sẽ là thông tin thiên lệch, vì AI chỉ tập trung nói “MySQL tốt như thế nào” mà không đề cập đến “khi nào MySQL có thể không phù hợp”.\n “Hãy cho tôi biết các ưu điểm và nhược điểm của việc sử dụng MySQL…” Đây là câu lệnh cân bằng, vì yêu cầu cả mặt tích cực và mặt tiêu cực, nên không gây ra thiên lệch.\n “Hãy cho tôi thấy tất cả lợi ích của việc sử dụng RDBMS…” Mặc dù cũng yêu cầu nói về lợi ích, nhưng đề cập đến nhiều công cụ khác nhau, không chỉ MySQL, Vì vậy ít khả năng gây ra thiên lệch.\n “Hãy cho tôi biết giới hạn về kích thước của một cơ sở dữ liệu MySQL.” Đây là câu hỏi kỹ thuật, chỉ yêu cầu thông tin cụ thể, khách quan, không thiên về quan điểm hay cảm xúc. Không có thiên lệch"
+    "explanation": "Đáp án theo khóa IIG:\nA. Hãy cho tôi biết tất cả những lợi ích của MySQL trong việc lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.\n\nGiải thích ôn tập:\nA định hướng về lợi ích của một sản phẩm MySQL cụ thể; B mở sang cả loại RDBMS. Chấp nhận A như ví dụ thiên lệch lựa chọn công nghệ, không khẳng định B luôn cân bằng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 141,
+      "officialAnswerText": "A. Hãy cho tôi biết tất cả những lợi ích của MySQL trong việc lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.",
+      "validatedAnswer": "mmxnsy8xo4a8-jfwvs3p0uul3",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "4ntsei9j65hx-2ohsw96oqgad",
@@ -321,7 +481,27 @@
         }
       ]
     },
-    "explanation": "Câu lệnh này yêu cầu AI tạo ra một logo theo mô tả rõ ràng (có cây thông, chữ D và C, màu xanh dương và xanh lá cây)."
+    "explanation": "Đáp án theo khóa IIG:\nD. Tạo ra một hình ảnh phục vụ cho một mục đích cụ thể.\n\nGiải thích ôn tập:\nCâu lệnh này yêu cầu AI tạo ra một logo theo mô tả rõ ràng (có cây thông, chữ D và C, màu xanh dương và xanh lá cây).",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 160,
+      "officialAnswerText": "D. Tạo ra một hình ảnh phục vụ cho một mục đích cụ thể.",
+      "validatedAnswer": "aw5srd9smndw-s0cgsnp3ya5i",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "zeuu3jei0bow-cswtv5py5okp",
@@ -357,7 +537,27 @@
         }
       ]
     },
-    "explanation": "Vì bạn đã có sẵn ảnh mẫu, nên bạn sẽ tải các ảnh đó lên AI và yêu cầu AI chỉnh lại theo phong cách cổ điển. Từ “vintage” hay “sepia” (màu nâu đỏ ấm) thường được dùng để làm cho ảnh trông giống ảnh cũ xưa, như chụp bằng máy ảnh thời 1800s.\n→ Do đó, prompt đúng là: “Using the uploaded photos, create a vintage version.” (Dùng các ảnh đã tải lên, hãy tạo một phiên bản cổ điển.)"
+    "explanation": "Đáp án theo khóa IIG:\nA. Sử dụng các bức ảnh đã tải lên, hãy tạo một phiên bản cổ điển (vintage).\n\nGiải thích ôn tập:\nVì bạn đã có sẵn ảnh mẫu, nên bạn sẽ tải các ảnh đó lên AI và yêu cầu AI chỉnh lại theo phong cách cổ điển. Từ “vintage” hay “sepia” (màu nâu đỏ ấm) thường được dùng để làm cho ảnh trông giống ảnh cũ xưa, như chụp bằng máy ảnh thời 1800s.\n→ Do đó, prompt đúng là: “Using the uploaded photos, create a vintage version.” (Dùng các ảnh đã tải lên, hãy tạo một phiên bản cổ điển.)",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 161,
+      "officialAnswerText": "A. Sử dụng các bức ảnh đã tải lên, hãy tạo một phiên bản cổ điển (vintage).",
+      "validatedAnswer": "tomfo21znydv-38p7jzy9nazm",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "b2kc96snltur-qmpi8wojzrhz",
@@ -393,7 +593,27 @@
         }
       ]
     },
-    "explanation": "Reverse prompting (tạm dịch là “đặt câu hỏi ngược”) có nghĩa là dùng câu trả lời của AI để đoán ra xem ban đầu người ta đã hỏi AI điều gì."
+    "explanation": "Đáp án theo khóa IIG:\nD. Dùng kết quả AI tạo ra để đoán lại câu hỏi gốc ban đầu.\n\nGiải thích ôn tập:\nIIG chọn suy ngược câu lệnh ban đầu từ kết quả AI. Khi học cùng câu 38 và 144, ghi nhớ cách dùng thuật ngữ theo từng tình huống: suy ngược từ đầu ra, thiết kế từ mục tiêu hoặc để AI hỏi làm rõ trước khi viết.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 162,
+      "officialAnswerText": "D. Dùng kết quả AI tạo ra để đoán lại câu hỏi gốc ban đầu.",
+      "validatedAnswer": "aw5srd9smndw-s0cgsnp3ya5i",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "rnechcptm3n2-o9ny421axr46",
@@ -429,6 +649,26 @@
         }
       ]
     },
-    "explanation": "Khi muốn AI viết cho người nhỏ tuổi hãy nói rõ đối tượng, ví dụ:\n“Hãy viết lại sao cho học sinh tiểu học có thể hiểu.”"
+    "explanation": "Đáp án theo khóa IIG:\nD. Hãy viết lại sao cho học sinh tiểu học có thể hiểu.\n\nGiải thích ôn tập:\nD chỉ rõ học sinh tiểu học nên là cách trực tiếp nhất để điều chỉnh mức từ vựng, giải thích và ví dụ. A yêu cầu đơn giản hóa cũng có thể hữu ích nhưng không cụ thể bằng đối tượng đích. Khóa chọn phương án sát mục tiêu nhất, không khẳng định chỉ có đúng một cách viết prompt có tác dụng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 163,
+      "officialAnswerText": "D. Hãy viết lại sao cho học sinh tiểu học có thể hiểu.",
+      "validatedAnswer": "aw5srd9smndw-s0cgsnp3ya5i",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   }
 ]

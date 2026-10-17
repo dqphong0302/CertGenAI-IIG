@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-17",
+  "policy": "iig-key",
+  "total": 164,
+  "instruction": "Chấp nhận đáp án IIG; giữ nguyên đề và lựa chọn.",
+  "sourceRegister": "iig-source-key-register-2026-10-17.json",
+  "restoredQuestions": [
+    89,
+    126
+  ],
+  "historicalAudit": "before-accept-iig-2026-10-17.json"
+}

@@ -1,0 +1,1677 @@
+{
+  "metadata": {
+    "review_date": "2026-10-17",
+    "source_url": "https://mos.iigvietnam.edu.vn/GENAI_Question/",
+    "quiz_asset_url": "https://mos.iigvietnam.edu.vn/GENAI_Question/data/quiz1.js",
+    "quiz_asset_sha256": "4696cd985a6a5c00a8ca5b80b957cc6c51ab774f4a95c003e5390f1b9ede2697",
+    "official_count": 175,
+    "local_count": 164,
+    "core_finding_groups": 10,
+    "core_question_count": 13,
+    "total_finding_groups": 36,
+    "flagged_question_count": 42,
+    "numbering": "source order d.sl.g[].S[], NOT randomized display order"
+  },
+  "officialKeys": [
+    {
+      "source_number": 1,
+      "local_number": 1,
+      "question_id": "8d27ffarwd1f-nnoexkxfjhd",
+      "prompt_excerpt": "Bạn đưa ra câu lệnh (prompt) sau: một chú chó vui vẻ trong công viên.\n\"Kết quả đầu ra (output) là một chú chó hoạt hình.",
+      "iig_answer": "D. Tác phẩm nghệ thuật cổ điển về một chú chó vui vẻ trong công viên thành phố sử dụng màu sắc rực rỡ",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 2,
+      "local_number": 2,
+      "question_id": "a5r6ss2pnklc-15acris7wlz6",
+      "prompt_excerpt": "Bạn muốn tạo một bài giải thích về quang hợp cho một lớp học tiểu học. Bạn đưa ra câu lệnh sau vào trình tạo AI:\n\"giải t",
+      "iig_answer": "C. Viết lại cho đối tượng mục tiêu là trẻ nhỏ",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 3,
+      "local_number": 3,
+      "question_id": "ephrzp30jarb-lm26s52ivryw",
+      "prompt_excerpt": "Với mỗi câu lệnh được đưa ra cho AI tạo sinh, hãy chọn Có nếu AI đang thực hiện chuyển đổi hình ảnh hoặc Không nếu không",
+      "iig_answer": "Khám phá định dạng tập tin của logo. → Không; Chuyển đổi bản phác thảo ngôi nhà thành hình ảnh thực tế. → Có; Thay đổi siêu dữ liệu của ảnh kỳ nghỉ để thay đổi vị trí và ngày chụp. → Có",
+      "review_status": "B",
+      "findings": [
+        "F25"
+      ]
+    },
+    {
+      "source_number": 4,
+      "local_number": 4,
+      "question_id": "rxf770ru3cjg-vaybmzu8k9ec",
+      "prompt_excerpt": "Bạn nhập câu lệnh sau vào công cụ trí tuệ nhân tạo (AI):\n\"Vẽ biểu đồ thể hiện dân số của Tây Ban Nha và Nam Phi hàng năm",
+      "iig_answer": "B. Tạo lại biểu diễn dữ liệu hiện có bằng cách thay đổi định dạng thành biểu đồ đường.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 5,
+      "local_number": 5,
+      "question_id": "oubyau5vlvvh-lsorrmq6dq9v",
+      "prompt_excerpt": "Mỗi câu lệnh nhằm mục đích tạo hoặc chuyển đổi hình ảnh loại nào? Di chuyển mỗi gợi ý từ danh sách bên trái đến hiệu ứng",
+      "iig_answer": "Có gì trong ảnh đính kèm? → Tóm tắt nội dung của một hình ảnh; Vẽ một số hình ảnh về một con sói đang làm bài kiểm tra. → Khám phá một ý tưởng nghệ thuật; Biến bức tranh đính kèm thành một bức tranh theo phong cách Mona Lisa của Leonardo Davinci. → Biến đổi một hình ảnh; Tạo một logo bao gồm chữ P hoa màu cam với nền chuyển màu làm nổi bật màu xanh lá cây. → Tạo một hình ảnh cho một mục đích cụ thể.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 6,
+      "local_number": 6,
+      "question_id": "nwo5u8ci4u6a-82ssriqau4h5",
+      "prompt_excerpt": "Bạn cần sử dụng AI để tạo video đánh giá sản phẩm tích cực cho máy đánh trứng (kitchen mixer) Healthy Eats mới và đăng l",
+      "iig_answer": "Tạo video chi tiết dài 5 phút về máy đánh trứng Healthy Eats mới. Video nên bao gồm phần giới thiệu, đề cập đến tính dễ sử dụng và vệ sinh, và phần kết luận khuyến khích người xem mua thiết bị nhà bếp. → Đúng; Tạo video về máy đánh trứng mới. Video nên thảo luận về các công dụng tiềm năng và khuyến khích người mua tiềm năng mua máy đánh trứng. → Sai; Tạo video đánh giá khách quan về máy đánh trứng. → Sai",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 7,
+      "local_number": 7,
+      "question_id": "djyx2yuc06b0-vqvs96sznf4d",
+      "prompt_excerpt": "Bạn đang có kế hoạch tạo một phiên bản AI gia sư (a tutoring AI) từ ChatGPT (GPT). AI sẽ cần trả lời câu hỏi của học sin",
+      "iig_answer": "C. Mô hình dựa trên bộ chuyển đổi mặc định với những hướng dẫn cụ thể cho từng môn học.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 8,
+      "local_number": 8,
+      "question_id": "5wnr89bxao6y-w8xnxc5l70rq",
+      "prompt_excerpt": "Bạn vừa tham dự một cuộc họp tại nơi làm việc với nhóm của mình. Bây giờ bạn cần tạo một bản tóm tắt ngắn gọn, tóm tắt t",
+      "iig_answer": "B. Tóm tắt ngắn gọn mục đích của cuộc họp.; C. Chỉ trích xuất thông tin và quyết định thiết yếu từ cuộc họp này.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 9,
+      "local_number": 9,
+      "question_id": "9vmtd0smcsnu-c0nw7nesej9s",
+      "prompt_excerpt": "Thomas muốn cho phép khách hàng tạo ra các thiết kế áo phông mới dựa trên câu trả lời của họ cho 3 câu hỏi sau:\n1. Con v",
+      "iig_answer": "C. Tạo một GPT tùy chỉnh.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 10,
+      "local_number": 10,
+      "question_id": "x3oo2psk20yv-9ct3hjok01d5",
+      "prompt_excerpt": "Hai lựa chọn nào sau đây xác định chính xác các thuộc tính của trí tuệ nhân tạo tạo sinh? (Chọn 2)",
+      "iig_answer": "C. Trí tuệ nhân tạo tạo sinh sử dụng dự đoán để đưa ra các lựa chọn dựa trên tỷ lệ phần trăm cho mỗi từ trong phản hồi khi nó tạo ra phản hồi.; D. Một mô hình có thể được huấn luyện lại để tạo ra các phản hồi phù hợp hơn với mục đích dự định.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 11,
+      "local_number": 11,
+      "question_id": "oj5ilbb6tozv-qzgt1gd9a3k3",
+      "prompt_excerpt": "Bạn đang viết một tiểu thuyết khoa học viễn tưởng có tên Fierce và đã chọn một ví dụ minh họa mang tính sáng tạo để gửi ",
+      "iig_answer": "D. Tên sách, chủ đề, bối cảnh, phong cách nghệ thuật mong muốn và phác thảo nội dung bìa sách.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 12,
+      "local_number": 12,
+      "question_id": "hrletoewagdj-qxnyebbxafxe",
+      "prompt_excerpt": "Bạn muốn sử dụng trí tuệ nhân tạo (AI) để chuyển đổi sổ tay nhân viên mới thành bài thuyết trình. Câu lệnh nào có khả nă",
+      "iig_answer": "B. Tạo một bài thuyết trình chuyển đổi nội dung sang định dạng hấp dẫn và dễ hiểu.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 13,
+      "local_number": 13,
+      "question_id": "6w7lvumch3xi-bfw9a1f2nl3x",
+      "prompt_excerpt": "Bạn làm việc trong một nhóm phần mềm, đang triển khai một ứng dụng để tự động hóa quy trình đăng ký vay:\nSau khi thu thậ",
+      "iig_answer": "B. Microsoft Copilot",
+      "review_status": "B",
+      "findings": [
+        "F13"
+      ]
+    },
+    {
+      "source_number": 14,
+      "local_number": 14,
+      "question_id": "3jxlusm2fw33-96w4m9jpopoq",
+      "prompt_excerpt": "Với tư cách là quản trị viên trung tâm khảo thí, bạn đã được hỏi về những nguy hiểm khi tải cơ sở dữ liệu lên ChatGPT để",
+      "iig_answer": "ChatGPT sẽ ghi nhớ tài khoản và mã PIN của thành viên trong bao lâu? → Nó ghi nhớ trong toàn bộ phiên của bạn.; ChatGPT có thể liên kết địa chỉ IP của bạn với dữ liệu này trong phiên sau không? → Có; Điều gì sẽ xảy ra nếu mã PIN của người dự thi bị xâm phạm do tấn công mạng trong phiên chatGPT? → Bạn và công ty của bạn phải chịu trách nhiệm.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 15,
+      "local_number": 15,
+      "question_id": "9ng6hh9o2uze-ltu9a6otyx6q",
+      "prompt_excerpt": "Bạn đang sử dụng một hệ thống AI để tạo nội dung cho một blog công nghệ về cách các xu hướng mới nhất trong trí tuệ nhân",
+      "iig_answer": "D. Cung cấp các ví dụ chi tiết về những đột phá gần đây trong các thuật toán học máy và mô tả tác động của chúng đối với ngành công nghiệp ô tô và tài chính.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 16,
+      "local_number": 16,
+      "question_id": "e45177qp606k-ej22g3k6i8ua",
+      "prompt_excerpt": "Bạn đang ôn tập cho bài kiểm tra lịch sử thế giới bằng cách sử dụng AI để tra cứu thông tin cho tài liệu hướng dẫn học t",
+      "iig_answer": "Hãy tìm kiếm trên internet để xác minh thông tin từ các nguồn học thuật. → Có; Tham khảo một cơ sở dữ liệu lịch sử đáng tin cậy để xác minh thông tin. → Có; Sử dụng một nền tảng AI khác để xác minh thông tin. → Không",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 17,
+      "local_number": 17,
+      "question_id": "9kml14xnnna-74cb1ekjxtgn",
+      "prompt_excerpt": "Trong giờ khoa học, các em được yêu cầu viết một câu trả lời ngắn cho câu hỏi sau:\n\"Chức năng của hệ thần kinh là gì?\"\nC",
+      "iig_answer": "A. Để đảm bảo học sinh có trách nhiệm tạo ra bài làm chân thực.; C. Để kiểm tra xem học sinh có sử dụng AI để tạo ra câu trả lời ngắn hay không, điều này sẽ dẫn đến gian lận.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 18,
+      "local_number": 18,
+      "question_id": "sjcalyc7eoly-duni8u4h5qe1",
+      "prompt_excerpt": "Với mỗi kịch bản của câu lệnh, hãy chọn Có thể nếu kết quả khả thi hoặc Không thể nếu kết quả không khả thi.",
+      "iig_answer": "Bạn đưa ra lời nhắc tạo hình ảnh bao gồm hướng dẫn loại bỏ màu đỏ. AI tạo ra một hình ảnh đen trắng. → Có thể; Bạn đưa ra lời nhắc có cấu trúc tốt, bao gồm thông tin công khai về sản phẩm, để tạo bài thuyết trình bán hàng. Kết quả bao gồm thông tin bí mật chưa được công bố của công ty. → Không thể; Bạn tạo lời nhắc để tạo mặt đồng hồ và chỉ định thời gian đồng hồ sẽ hiển thị. Bạn đưa ra lời nhắc nhiều lần, nhưng thời gian hiển thị trên đồng hồ không phải lúc nào cũng giống nhau. → Có thể",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 19,
+      "local_number": 19,
+      "question_id": "3ho6fqlok17q-d65etl5obx3b",
+      "prompt_excerpt": "Bạn đang tạo một blog ẩm thực để giới thiệu kỹ năng nấu ăn của mình. Bạn muốn sử dụng AI để tạo bài đăng đầu tiên cho bl",
+      "iig_answer": "B. Viết một bài đăng giới thiệu cho blog mô tả niềm đam mê ẩm thực của tôi và điều đã truyền cảm hứng cho tôi bắt đầu blog này. Bao gồm món ăn và phong cách nấu ăn yêu thích của tôi.; C. Chia sẻ một công thức chi tiết với hướng dẫn từng bước và hình ảnh sinh động làm nổi bật bất kỳ nguyên liệu hoặc kỹ thuật nấu ăn độc đáo nào được sử dụng.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 20,
+      "local_number": 20,
+      "question_id": "xk7s0l9sngk1-mri8gcoyw89w",
+      "prompt_excerpt": "Một nhà xã hội học có một tập dữ liệu lớn về nhà ở được xây dựng trước năm 2020. Mỗi ngôi nhà nằm ở trung tâm thành phố,",
+      "iig_answer": "Phòng ngủ (Bedrooms), Phòng tắm (Bathrooms), Diện tích (Square footage), Vị trí (Location) → Xác định mối tương quan giữa kích thước, số lượng phòng và vị trí.; Năm xây dựng (Year built), Loại khu dân cư (Neighborhood type). → Xác định bất động sản mới nhất trong mỗi loại khu dân cư.; Loại vị trí (Location type), Giá (Price), Diện tích (Square Footage). → Tìm giá trung bình trên mỗi foot vuông cho từng loại vị trí.; Loại vị trí (Location type), Giá (Price), Phòng ngủ (Bedroom), Năm xây dựng (Year built). → Dự đoán giá của một ngôi nhà 4 phòng ngủ ở trung tâm thành phố nếu được xây dựng vào năm 2020.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 21,
+      "local_number": 21,
+      "question_id": "df3jaeskv5nh-4hymtznqc4wr",
+      "prompt_excerpt": "Bạn đang huấn luyện một mô hình AI (Artificial Intelligence – trí tuệ nhân tạo) sẽ được sử dụng để chọn người làm mẫu tạ",
+      "iig_answer": "B. Màu da (Skin color); D. Tuổi (Age); F. Dân tộc (Ethnicity)",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 22,
+      "local_number": 22,
+      "question_id": "xsem448jihzl-bzoaekkd8hco",
+      "prompt_excerpt": "Sam đã tạo một hình ảnh Generative AI (AI tạo sinh) mô tả Taylor đang thực hiện các hành vi phi pháp. Sam đã chia sẻ hìn",
+      "iig_answer": "C. Không, đây được xem là phỉ báng (defamation), và điều đó là bất hợp pháp (illegal).",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 23,
+      "local_number": 23,
+      "question_id": "owkbnxxco6qg-w45k1t3lih71",
+      "prompt_excerpt": "Bạn cần tạo một bài trình chiếu Microsoft PowerPoint cho đội ngũ quản lý của mình để giải thích ít nhất hai hạn chế của ",
+      "iig_answer": "C. Sự thiếu chính xác do thiếu giám sát của con người.; E. Thiên vị (Bias) do dữ liệu đầu vào mang tính phân biệt đối xử",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 24,
+      "local_number": 24,
+      "question_id": "qcbiftgbesmn-d1bbpoplmk6m",
+      "prompt_excerpt": "Hãy di chuyển từng loại hành vi vi phạm pháp lý (legal infringement) từ danh sách bên trái sang kết quả đầu ra do AI tạo",
+      "iig_answer": "Vi phạm bản quyền (Copyright infringement) → Một bản nhạc giống hệt với bản do một nhà soạn nhạc khác tạo ra.; Vi phạm quyền sáng chế (Patent right infringement) → Các bản vẽ chi tiết và quy trình cho một loại máy ảnh 3D mới, rất giống với những bản được nhóm Hiệp hội Máy ảnh tạo ra.; Vi phạm quyền nhãn hiệu (Trademark right infringement) → Một biểu tượng logo giống hệt với logo đã được đăng ký bởi Tập đoàn Thể thao Mùa Đông.",
+      "review_status": "B",
+      "findings": [
+        "F31"
+      ]
+    },
+    {
+      "source_number": 25,
+      "local_number": 25,
+      "question_id": "vxu941rjewo1-gf7cy2ny0tgp",
+      "prompt_excerpt": "Với mỗi phát biểu, hãy chọn xem nó nói về AI tạo sinh (Generative AI) hay Công cụ tìm kiếm (Search Engine) như Google Se",
+      "iig_answer": "Có khả năng tạo ra nội dung mới lạ để phản hồi lại câu lệnh (prompts). → AI tạo sinh; Có khả năng tạo ra nội dung mà không thể tìm thấy trên trang web của tôi. → AI tạo sinh; Luôn làm rõ nơi có thể tìm thấy thông tin trên Web. → Công cụ tìm kiếm",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 26,
+      "local_number": 26,
+      "question_id": "pwzskqe3pntp-18rkciso5wr",
+      "prompt_excerpt": "Bạn cần mô tả quá trình mà AI tạo sinh (Generative AI) sử dụng để tạo ra đầu ra cho câu lệnh (prompt) sau đây: \n“Tạo một",
+      "iig_answer": "Sử dụng kĩ thuật Token hóa (tokenization) để phân tích các từ “lamp” và “table” thành tokens. → Sử dụng kĩ thuật sinh nhiễu (noise generation) để sinh ra các điểm ảnh ngẫu nhiên (random pixels). → Sử dụng mô hình khuếch tán (diffusion) để thay đổi các điểm ảnh (pixels) và bắt đầu tạo ra hình ảnh. → Sử dụng các thuật toán tinh chỉnh đã được huấn luyện để làm cho hình ảnh chính xác hơn với câu lệnh (prompt).",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 27,
+      "local_number": 27,
+      "question_id": "87la5flbly24-w4ovyq1plndv",
+      "prompt_excerpt": "Bạn đang tạo một thông báo dịch vụ công cộng cho trường trung học của mình nhằm khuyến khích việc rửa tay thường xuyên.\n",
+      "iig_answer": "Khi cần đến các cảnh, nhân vật hoặc hành động cụ thể, hãy cung cấp mô tả toàn diện về cả mặt hình ảnh và nội dung tường thuật (narrative). → Có; Xác định rõ các yêu cầu (requirements) của bạn, chẳng hạn như loại video, đối tượng mục tiêu và các điểm chính (key points). → Có; Bao gồm thông tin nền chi tiết (background information), dữ liệu (data), giọng điệu (tone) và phong cách (style) liên quan đến video. → Có; Giả định rằng hệ thống AI hiểu được bối cảnh điển hình của dự án, từ đó giảm nhu cầu cung cấp lời giải thích chi tiết. → Không; Sử dụng ngôn ngữ đơn giản và rõ ràng để giảm thiểu hiểu nhầm. → Có",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 28,
+      "local_number": 28,
+      "question_id": "amtblyt7pg8u-x8mjp9zezls8",
+      "prompt_excerpt": "Bạn tạo ra câu lệnh (prompt) sau, bao gồm định dạng kiểu “Hỏi – Đáp”:\nHỏi (Q): Sử dụng lý thuyết màu sắc (color theory),",
+      "iig_answer": "D. Few-shot",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 29,
+      "local_number": 29,
+      "question_id": "q3cka8nay5dh-6p5y19t6vw89",
+      "prompt_excerpt": "Bạn đang đánh giá các câu lệnh (prompts) sau đây để xác định xem chúng có chứa thiên vị tiềm ẩn hay không. Đối với mỗi v",
+      "iig_answer": "Nhấn mạnh hiệu suất (performance) và độ tin cậy (reliability) tốt hơn của các nguồn năng lượng tái tạo khác nhau (năng lượng mặt trời – Solar, gió – Wind, thủy điện – Hydro, và địa nhiệt – Geothermal) so với nhiên liệu hóa thạch (fossil fuels) trong môi trường đô thị. Cân nhắc các yếu tố như sản lượng năng lượng (energy output), tác động môi trường (environmental impact), và khả năng mở rộng (scalability). Cung cấp một bản phân tích cân bằng mà không ưu tiên bất kỳ nguồn năng lượng tái tạo cụ thể nào. → Thiên kiến; Phân tích các ưu điểm và nhược điểm của các nguồn năng lượng tái tạo khác nhau (mặt trời, gió, thủy điện và địa nhiệt) trong môi trường đô thị. Tập trung vào các chỉ số như sản lượng năng lượng, chi phí, tác động môi trường, và khả năng mở rộng. Trình bày kết quả một cách khách quan. → Không thiên kiến; So sánh tiềm năng của năng lượng mặt trời và năng lượng gió trong việc cách mạng hóa hệ thống cung cấp điện đô thị. Nhấn mạnh lợi ích môi trường vượt trội và tiết kiệm chi phí dài hạn của năng lượng mặt trời, đồng thời đề cập đến những thách thức mà các công trình năng lượng gió phải đối mặt trong các khu vực có mật độ dân cư cao. → Thiên kiến",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 30,
+      "local_number": 30,
+      "question_id": "2ue45yi55je6-q2wnnxatvtn0",
+      "prompt_excerpt": "Việc sử dụng AI tạo sinh (Generative AI) có thể mang lại cả tác động tích cực và tiêu cực đối với xã hội. Ba phát biểu n",
+      "iig_answer": "B. AI tạo sinh có thể được sử dụng để truy cập khối lượng dữ liệu khổng lồ phục vụ nghiên cứu y học.; C. AI tạo sinh có thể được sử dụng để tạo điều kiện thuận lợi cho canh tác/sản xuất nông nghiệp hiệu suất cao.; E. AI tạo sinh có thể được sử dụng để tìm hiểu thêm về các nền văn hóa thế giới.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 31,
+      "local_number": 31,
+      "question_id": "20uz6rlsk94z-dlrqhhiq14vf",
+      "prompt_excerpt": "Công ty Healthy Eats sử dụng AI để thu thập tên, địa chỉ, số điện thoại và thông tin chi tiết về sức khỏe của khách hàng",
+      "iig_answer": "A. Kiện tụng về quyền riêng tư dữ liệu; C. Sự mất lòng tin của khách hàng; D. Trộm cắp danh tính của khách hàng",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 32,
+      "local_number": 32,
+      "question_id": "yhcwxxynnvjc-ifh76kxiffvk",
+      "prompt_excerpt": "Bạn đang bắt đầu một doanh nghiệp nhỏ có tên là Healthy Eats. Bạn muốn tạo một logo cho Healthy Eats bằng AI image gener",
+      "iig_answer": "A. Logo cho doanh nghiệp nhỏ có tên Healthy Eats. Dùng chữ màu hồng và xanh lá, có hình một quả dâu tây.; B. Tôi muốn tạo một logo cho một doanh nghiệp nhỏ. Doanh nghiệp có tên là Healthy Eats. Chữ nên có màu hồng và xanh lá, và nên bao gồm hình ảnh một quả dâu tây.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 33,
+      "local_number": 33,
+      "question_id": "z75x2pfrsyd-7r64vkpl3vc3",
+      "prompt_excerpt": "Biểu đồ phân tán (scatter plot) sau đây bao gồm một đường xu hướng (trend line) thể hiện lợi nhuận ròng hằng tuần của cử",
+      "iig_answer": "Chuyển đổi dữ liệu biểu đồ phân tán thành một hình thức trực quan thể hiện doanh thu hàng năm của công ty. → Không; Thiết kế một tờ rơi quảng cáo làm nổi bật những tuần có hiệu suất tốt nhất của công ty dựa trên dữ liệu lợi nhuận ròng. → Không; Phát triển một phần tường thuật âm thanh giải thích các xu hướng và mô hình được quan sát trong dữ liệu lợi nhuận ròng suốt cả năm. → Có; Định dạng lại dữ liệu lợi nhuận ròng hàng tuần thành một báo cáo theo quý, tóm tắt tổng lợi nhuận ròng và lợi nhuận ròng trung bình cho từng quý. → Có",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 34,
+      "local_number": 34,
+      "question_id": "vqp0g13lxkhs-a8zz4iium7cf",
+      "prompt_excerpt": "Bạn được yêu cầu tạo một bài trình chiếu bán hàng nhằm khám phá mối liên hệ giữa hai biến số. Một phần dữ liệu được hiển",
+      "iig_answer": "C. Tạo biểu đồ phân tán (scatter plot) để thể hiện mối quan hệ giữa doanh số của một sản phẩm cụ thể và độ tuổi người tiêu dùng.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 35,
+      "local_number": 35,
+      "question_id": "ibjkb3ew5c3q-laqbuxcmy9ak",
+      "prompt_excerpt": "Một hệ thống AI cung cấp thống kê quy mô dân số cho một quốc gia. Bạn có thể thực hiện hai bước nào để kiểm chứng độ tin",
+      "iig_answer": "A. Đối chiếu với dữ liệu tổng điều tra dân số mới nhất được công bố bởi chính phủ.; E. Kiểm tra các báo cáo từ các tổ chức quốc tế như Liên Hợp Quốc hoặc Ngân hàng Thế giới.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 36,
+      "local_number": 36,
+      "question_id": "8w1j1cpvrzql-7t3xt21d6vld",
+      "prompt_excerpt": "Ghép các công cụ AI đúng với nhiệm vụ cụ thể mà chúng thực hiện. Di chuyển từng chức năng công cụ từ danh sách bên trái ",
+      "iig_answer": "Có khả năng tương tác đối thoại, trả lời câu hỏi và cung cấp thông tin. → ChatGPT; Cho phép bạn kết nối một chuỗi các AI với nhau để thực hiện một nhiệm vụ kinh doanh. → Azure AI Studio; Cho phép bạn tạo hình ảnh và phông chữ được cách điệu (stylized fonts), đồng thời kết hợp/đưa chúng vào bài đăng trên phương tiện truyền thông mã hội mà có thể lên lịch đăng. → Adobe Express; Được sử dụng để tạo các thiết kế, bài trình chiếu và các tài liệu tiếp thị. → Canva",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 37,
+      "local_number": 37,
+      "question_id": "jatf1jfike0s-5xe9v4o0eze6",
+      "prompt_excerpt": "Bạn đang làm việc cho một công ty quảng cáo. Một khách hàng gọi điện và yêu cầu lời bài hát (lyrics) cho một bài hát tro",
+      "iig_answer": "B. Tài liệu, văn bản và hình ảnh.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 38,
+      "local_number": 38,
+      "question_id": "rlx7x8ok7jjc-amt01w4knrd0",
+      "prompt_excerpt": "Bạn muốn sử dụng reverse prompting để AI tạo sơ yếu lý lịch (resume) của bạn với mức độ chi tiết phù hợp. Câu lệnh (prom",
+      "iig_answer": "A. Hỏi tôi về từng chi tiết chính cần thiết cho resume của tôi, sau đó sử dụng thông tin đó để tạo resume.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 39,
+      "local_number": 39,
+      "question_id": "hgiud7iv8xqx-2q796ktwm6qr",
+      "prompt_excerpt": "Hai phát biểu nào xác định các rủi ro liên quan đến AI tạo sinh (Generative AI) và việc sử dụng nó? (Chọn 2)",
+      "iig_answer": "C. Bạn chịu trách nhiệm về nội dung mà bạn tạo ra bằng AI tạo sinh.; D. Việc tạo ra nội dung gây hại bằng AI tạo sinh có thể dẫn đến vụ kiện dân sự (civil actions) hoặc truy tố hình sự (criminal actions) chống lại bạn.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 40,
+      "local_number": 40,
+      "question_id": "wwhka9f534k9-3mtj2aqezw48",
+      "prompt_excerpt": "Bạn đang sử dụng AI tạo sinh (Generative AI) để chuyển đổi bản trình chiếu (slideshow) của mình thành một video.Bạn đã c",
+      "iig_answer": "C. Sử dụng các slide đã cung cấp, tạo một video dài 2 phút (2-minute video) về củ dền. Giọng điệu (tone) nên mang tính chuyên nghiệp / nghiêm túc. Các hiệu ứng hoạt hình (animations) nên được điều chỉnh sao cho người xem có đủ thời gian để đọc nội dung văn bản được cung cấp.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 41,
+      "local_number": 41,
+      "question_id": "7pfkjty4hto6-rx5i0iy0sxlg",
+      "prompt_excerpt": "Khái niệm nào sau đây mô tả chính xác kỹ thuật prompt chaining?",
+      "iig_answer": "A. Chia nhỏ một nhiệm vụ thành các nhiệm vụ con nhỏ hơn và sử dụng kết quả của một prompt làm đầu vào cho prompt tiếp theo.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 42,
+      "local_number": 42,
+      "question_id": "2gkg0qepvj5v-2jods758tsaa",
+      "prompt_excerpt": "Bạn là một thực tập sinh làm việc cho một hãng luật lớn tại khu tài chính ở San Francisco. Một đối tác giao cho bạn một ",
+      "iig_answer": "B. Luật sở hữu trí tuệ (Intellectual property laws); C. Luật bảo mật dữ liệu (Data privacy laws); D. Luật lao động/việc làm (Employment laws)",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 43,
+      "local_number": 43,
+      "question_id": "jb9cv7mnmkt3-ozviv1lj098c",
+      "prompt_excerpt": "Bạn cần tạo một bài tập rèn luyện sức mạnh kéo dài 30 phút.\nBạn đã gửi cho AI lời nhắc (prompt) sau:\n\"Hãy tạo một bài tậ",
+      "iig_answer": "A. Điều chỉnh để phù hợp với 30 phút tập rèn luyện sức mạnh",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 44,
+      "local_number": null,
+      "question_id": "isqutes6lb11-a6m0riuhhly",
+      "prompt_excerpt": "Hai phát biểu nào xác định đúng rủi ro liên quan đến việc sử dụng AI tạo sinh (Generative AI)? (Chọn 2)",
+      "iig_answer": "B. Tạo ra nội dung gây hại bằng AI tạo sinh có thể dẫn đến hành động dân sự hoặc hình sự chống lại bạn.; C. Bạn chịu trách nhiệm về nội dung mà bạn tạo ra bằng AI tạo sinh.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 45,
+      "local_number": 44,
+      "question_id": "e8vo8hokw8a0-k6d8rnmezhy8",
+      "prompt_excerpt": "Bạn cần tạo một bản tóm tắt không thiên kiến (unbiased) về dự án dỡ bỏ đập gần sông Smith.\nVới từng câu lệnh (prompt) dư",
+      "iig_answer": "Hãy tạo bản tóm tắt về tác động của việc dỡ bỏ đập tiềm năng gần sông Smith và đề xuất phục hồi hệ sinh thái như đã nêu bởi công ty tiện ích (utility company). → Thiên kiến; Tạo bản tóm tắt về các khuyến nghị rút ra từ nghiên cứu độc lập của bên thứ ba về việc dỡ bỏ đập, nhấn mạnh các bước hành động và chiến lược khả thi có thể áp dụng cho sông Smith. → Không thiên kiến; Tạo bản tóm tắt dài 150 từ về các phát hiện chính liên quan đến việc dỡ bỏ đập, làm nổi bật các tác động đáng kể nhất đối với hệ sinh thái gần sông Smith. → Không thiên kiến",
+      "review_status": "B",
+      "findings": [
+        "F35"
+      ]
+    },
+    {
+      "source_number": 46,
+      "local_number": 45,
+      "question_id": "362h223q9op2-nzsx5kmva45",
+      "prompt_excerpt": "Bạn đang thực hiện một chiến dịch marketing cho sản phẩm mới. Bạn có bảng tính chứa địa chỉ email, tên, và dữ liệu khác ",
+      "iig_answer": "Bạn là một quản lý marketing cấp cao có kinh nghiệm trong [lĩnh vực khách hàng mục tiêu]. → Vai trò mà AI cần nhập vai; Các thông điệp cần được cá nhân hóa và nên mô phỏng giọng điệu của một người bạn quan tâm đang chia sẻ tin vui. → Người gắn bó lâu dài và ví dụ; Hãy tạo một thông điệp gửi đến khách hàng dựa trên cách họ có thể yêu thích sản phẩm mới của chúng tôi. → Toàn bộ nội dung của prompt; Chúng ta cần tạo email cho từng cá nhân trong danh sách [liên kết đến bảng tính]. Mỗi người có hồ sơ quảng cáo riêng. → Dữ liệu đầu vào (danh sách khách hàng)",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 47,
+      "local_number": 46,
+      "question_id": "u8lypka8ws0g-hddomcoqa1kz",
+      "prompt_excerpt": "Với mỗi phát biểu sau đây về thiên kiến (bias) trong AI, hãy chọn Đúng hoặc Sai.",
+      "iig_answer": "Mô hình tạo hình ảnh bằng AI được huấn luyện trên dữ liệu có thiên lệch có thể tạo ra hình ảnh bị thiên lệch. → Đúng; ChatGPT luôn loại bỏ hoàn toàn thiên lệch trong các câu trả lời của mình. → Sai; Con người nên xem xét nội dung do AI tạo ra để phát hiện và kiểm tra thiên lệch. → Đúng",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 48,
+      "local_number": 47,
+      "question_id": "pblc49miu4c1-9o4kn9ci3woc",
+      "prompt_excerpt": "Hai phát biểu nào sau đây về tác động của AI tạo sinh (Generative AI) trong thực tế? (Chọn 2)",
+      "iig_answer": "A. AI tạo sinh hỗ trợ tư duy phân kỳ (divergent thinking — tức là giúp tạo ra nhiều ý tưởng mới, đa hướng).; B. AI tạo sinh giúp nhân viên tiết kiệm thời gian và tăng năng suất làm việc.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 49,
+      "local_number": 48,
+      "question_id": "s728a3ex65f-yyzodgc2d5zv",
+      "prompt_excerpt": "Lớp bạn đang thảo luận về AI và những đóng góp của nó cho thế giới.\nHơn một nửa lớp cho rằng AI có tác động tích cực, tr",
+      "iig_answer": "Sara và bạn thân Jane cãi nhau ở trường. Về nhà, Sara dùng AI để hiểu rõ hơn về quan điểm của Jane. → Tích cực; Trong cuộc tranh cử, một ứng viên dùng deepfake để khiến đối thủ trông như đang nói những điều họ chưa từng nói. → Tiêu cực; Sara dùng AI tạo sinh để xem chủ đề đang thịnh hành và lên danh sách ý tưởng bài viết blog. → Tích cực",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 50,
+      "local_number": 49,
+      "question_id": "tz9n43zpc4v-30hknzb433a8",
+      "prompt_excerpt": "Bạn nên làm gì để tránh rò rỉ thông tin cá nhân cho mô hình ngôn ngữ lớn (LLM) như ChatGPT?",
+      "iig_answer": "A. Tránh sử dụng thông tin nhận dạng cá nhân như họ tên, tuổi, vị trí, và tài khoản mạng xã hội.",
+      "review_status": "B",
+      "findings": [
+        "F36"
+      ]
+    },
+    {
+      "source_number": 51,
+      "local_number": 50,
+      "question_id": "n2gdhpbmkldi-l87upxf3be8t",
+      "prompt_excerpt": "Bạn muốn dùng công cụ AI để lên kế hoạch leo núi Kilimanjaro ở Tanzania, một trong những ngọn núi lớn nhất châu Phi.\nBạn",
+      "iig_answer": "Tôi muốn → leo núi Kilimanjaro; Tìm kiếm →  tuyến đường phù hợp nhất cho người mới bắt đầu; Hạn chế đi đến → mùa khô của châu Phi; Lựa chọn → tất cả các hướng dẫn viên du lịch giá rẻ ở Tanzania",
+      "review_status": "B",
+      "findings": [
+        "F32"
+      ]
+    },
+    {
+      "source_number": 52,
+      "local_number": 51,
+      "question_id": "522j61hdta48-19jc1vybcopy",
+      "prompt_excerpt": "Hai câu lệnh (prompts) nào sau đây yêu cầu AI tóm tắt nội dung có sẵn?",
+      "iig_answer": "A. Những điều thú vị nào bạn có thể làm trong kỳ nghỉ hai tuần ở Miami?; B. Tóm tắt cốt truyện của tác phẩm \"Chúa tể những chiếc nhẫn\" của Tolkien trong 500 từ.",
+      "review_status": "B",
+      "findings": [
+        "F20"
+      ]
+    },
+    {
+      "source_number": 53,
+      "local_number": 52,
+      "question_id": "nbcgpvow2uyh-i781hyv2lzn",
+      "prompt_excerpt": "Bạn nhập lời nhắc trong Microsoft Copilot:\n“Sư nóng lên toàn câu có thật không?\"\nVới mỗi nhận định về kết quả đầu ra, hã",
+      "iig_answer": "Bạn có thể tin tưởng rằng kết quả đầu ra không có thiên kiến. → Sai; Bạn nên xác minh thông tin từ các nguồn khoa học có thẩm quyền. → Đúng; Chỉ các nhà khoa học mới có khả năng nhập loại dữ liệu này. → Sai",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 54,
+      "local_number": null,
+      "question_id": "x876uokkyxw7-s8152wjviu79",
+      "prompt_excerpt": "(trùng câu 48) Hai phát biểu nào sau đây về tác động của AI tạo sinh (Generative AI) trong thực tế? (Chọn 2)",
+      "iig_answer": "A. AI tạo sinh hỗ trợ tư duy phân kỳ (divergent thinking — tức là giúp tạo ra nhiều ý tưởng mới, đa hướng).; B. AI tạo sinh giúp nhân viên tiết kiệm thời gian và tăng năng suất làm việc.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 55,
+      "local_number": 53,
+      "question_id": "4lyr3zwcb072-5xyu10mldvdz",
+      "prompt_excerpt": "Bạn muốn tạo logo doanh nghiệp, kế hoạch kinh doanh và tuyên bố sứ mệnh, và muốn dùng một giải pháp sẵn có (out-of-box s",
+      "iig_answer": "B. ChatGPT",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 56,
+      "local_number": 54,
+      "question_id": "jaad4hx3idzc-vdc86uo40kte",
+      "prompt_excerpt": "Tòa án Tối cao Vương quốc Anh đã phán quyết rằng AI không thể là người phát minh duy nhất trong các đơn xin cấp bằng sán",
+      "iig_answer": "B. Sử dụng AI để thiết kế lại sản phẩm hiện có nhằm tạo ra sản phẩm mới.",
+      "review_status": "B",
+      "findings": [
+        "F24"
+      ]
+    },
+    {
+      "source_number": 57,
+      "local_number": 55,
+      "question_id": "l8djielfb731-kmxrii9lzdy1",
+      "prompt_excerpt": "Bạn muốn tạo ra tác phẩm mới kết hợp phong cách của William Shakespeare và H. G. Wells. Bạn có quyền truy cập vào toàn b",
+      "iig_answer": "D. Tạo một mô hình GPT nhẹ dựa trên kiến trúc Transformer, được huấn luyện từ các tác phẩm của Shakespeare và H. G. Wells.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 58,
+      "local_number": 56,
+      "question_id": "oubhw1wmxoq3-k56dt4ftsk9e",
+      "prompt_excerpt": "Với mỗi phát biểu sau đây về hạn chế của AI tạo sinh (Generative AI), hãy chọn Đúng hoặc Sai",
+      "iig_answer": "Bạn có thể cho rằng mọi thông tin mật mà bạn nhập vào GPT hoặc Copilot sẽ được loại trừ khỏi dữ liệu huấn luyện. → Sai; Hiện đã có các tiêu chuẩn được công nhận về cách sử dụng đầu ra của AI tạo sinh trong ngành công nghiệp. → Sai; Kết quả do AI tạo sinh cung cấp cần được kiểm tra cẩn thận vì các công cụ này thường \"bịa ra\" thông tin. → Đúng",
+      "review_status": "B",
+      "findings": [
+        "F11"
+      ]
+    },
+    {
+      "source_number": 59,
+      "local_number": 57,
+      "question_id": "flkvqg28zxz7-4ub7dsqokr8n",
+      "prompt_excerpt": "Trong một đoạn clip dài 30 giây, có một học sinh mặc áo len màu xanh lá sáng đi ngang qua khung hình từ trái sang phải. ",
+      "iig_answer": "D. Thay thế học sinh mặc áo xanh lá trong đoạn phim bằng phần nền gốc của video.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 60,
+      "local_number": 58,
+      "question_id": "2rsbir24jbc6-uvzgrrbz0vmw",
+      "prompt_excerpt": "Kenneth muốn sử dụng AI tạo sinh (Generative AI) để lên kế hoạch cho kỳ nghỉ của mình.\nChuyến đi cần bao gồm:\n10 ngày ở ",
+      "iig_answer": "A. Tạo lịch trình du lịch 10 ngày bao gồm việc bay đến sân bay gần một trong các địa điểm tham quan và thuê xe để tham quan nhiều công viên quốc gia ở miền tây nước Mỹ.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 61,
+      "local_number": 59,
+      "question_id": "zcjft5yuv06l-sbrbqjcwk50h",
+      "prompt_excerpt": "Bạn cần tạo một video có hình đại diện khỉ hoạt hình thể hiện một kịch bản được cung cấp sẵn.\nĐối với mỗi phát biểu dưới",
+      "iig_answer": "Tạo một video dài 45 giây, trong đó một con khỉ trong không gian giải thích một khái niệm về không gian phức tạp dựa trên kịch bản đã cho. → Có; Tạo một video dài 45 giây, sử dụng công nghệ hoạt hình để làm cho một con khỉ đọc kịch bản trong không gian. → Có; Tạo một video dài 45 giây, sử dụng phần mềm chuyển văn bản thành giọng nói tiên tiến để đọc một kịch bản về không gian, với những con khỉ đóng vai phi hành gia. → Không",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 62,
+      "local_number": 60,
+      "question_id": "2bumvsowlxeh-vz6o2lqtbbui",
+      "prompt_excerpt": "Bạn sử dụng AI để tạo ra một hình ảnh của một chiếc xe, hình ảnh đó được hiển thị là (1). \n\nBây giờ, bạn cần tạo một câu",
+      "iig_answer": "Đảo ngược (invert) hình ảnh → Không; Phản chiếu (mirror) hình ảnh theo chiều ngang → Có; Xoay chiếc xe 180 độ → Không",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 63,
+      "local_number": 61,
+      "question_id": "bjjqfqywylib-cgyinkqxmikz",
+      "prompt_excerpt": "Bạn là quản lý tuân thủ tại một công ty tài chính mới thành lập. Công ty đang xem xét việc triển khai một chatbot AI tạo",
+      "iig_answer": "Chatbot xử lý sai dữ liệu tài chính nhạy cảm, dẫn đến khách hàng không hài lòng. → Đúng; Chatbot xử lý sai dữ liệu cá nhân nhạy cảm, dẫn đến khách hàng không hài lòng. → Đúng; Chatbot không thể cung cấp hỗ trợ cảm xúc, dẫn đến khách hàng không hài lòng. → Đúng",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 64,
+      "local_number": 62,
+      "question_id": "vayhr96nh7go-sdequb6y06ob",
+      "prompt_excerpt": "Bạn đang nghiên cứu một chuỗi dữ liệu và muốn ước tính nhiệt độ trung bình của trái đất vào năm 2200.",
+      "iig_answer": "B. AI dự đoán (Predictive AI)",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 65,
+      "local_number": 63,
+      "question_id": "jg9682hnyula-3l6g69kldmvh",
+      "prompt_excerpt": "Bạn đã quyết định tạo các áp phích “Nhớ bạn” (Missing you) để giúp những con vật ở trại cứu hộ địa phương tìm được mái ấ",
+      "iig_answer": "B. Hình ảnh (Image); C. Văn bản (Text)",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 66,
+      "local_number": 64,
+      "question_id": "blnr2kh4tu12-aq0slp4kolln",
+      "prompt_excerpt": "Bạn có một biểu đồ cột minh họa mối quan hệ giữa việc tăng tiêu thụ thực phẩm nhiều chất béo và việc tăng sử dụng thuốc.",
+      "iig_answer": "D. Tạo một tờ rơi đặt trong phòng chờ của bác sĩ, giải thích bằng ngôn ngữ đơn giản dữ liệu được trình bày trong biểu đồ cột, đồng thời cung cấp ví dụ minh họa.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 67,
+      "local_number": 65,
+      "question_id": "e1xbgscuuw53-rys8k6a1kgfm",
+      "prompt_excerpt": "Jasmine đang bắt đầu một công ty dịch vụ cắt cỏ thân thiện với môi trường và cô ấy cần một vài ý tưởng cho logo. Cô ấy đ",
+      "iig_answer": "C. Thêm một khu vườn với cỏ xanh, hoa đầy màu sắc và ong.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 68,
+      "local_number": 66,
+      "question_id": "o25ejdeiwwra-poqgaxkkzo5x",
+      "prompt_excerpt": "Công ty Pro phát triển các phương tiện tự hành. Công ty muốn những phương tiện này sử dụng AI tạo sinh để dẫn đường. Bạn",
+      "iig_answer": "Gán nhãn dữ liệu (Data labeling) → Dữ liệu bao gồm người đi bộ được gán trọng số khác nhau dựa trên chiều cao.; Huấn luyện mô hình (Model training) → Chỉ hình ảnh biển báo dừng và đèn giao thông được mã hóa (tokenized).; Triển khai (Deployment) → Phương tiện được bán khắp nơi nhưng chỉ được thử nghiệm trong thành phố của bạn.; Thu thập dữ liệu (Data collection) → Camera và cảm biến chỉ ghi lại hình ảnh và âm thanh vào ban ngày.",
+      "review_status": "B",
+      "findings": [
+        "F27"
+      ]
+    },
+    {
+      "source_number": 69,
+      "local_number": 67,
+      "question_id": "xfg6p81iqeb3-9wpc62krb8g4",
+      "prompt_excerpt": "Bạn đang sử dụng AI tạo sinh để tạo một bài đăng trên mạng xã hội. AI đã tạo ra một bài đăng, nhưng nó không đúng với đị",
+      "iig_answer": "A. Vui lòng chỉnh sửa bài đăng để nó trông giống với các bài đăng trên mạng xã hội đã tạo trước đó.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 70,
+      "local_number": 68,
+      "question_id": "ce7ppnrpwtjv-armhq2h11781",
+      "prompt_excerpt": "Bạn đang làm việc trên một hồ sơ cho mô hình ngôn ngữ cá nhân (personal LLM). Hồ sơ này cần bắt đầu mỗi tương tác bằng m",
+      "iig_answer": "Tạo một danh sách bài hát ngẫu nhiên. → Không; Dựa trên 40 bài hát hàng đầu hiện nay trong cả nước, tạo một loạt câu hỏi theo chủ đề cảm xúc. Các câu hỏi này nên có thang đo lựa chọn: “Tôi cảm thấy giống vậy”, “Tôi không cảm thấy giống vậy”, hoặc “Câu hỏi này không liên quan đến tôi.” → Có; Yêu cầu người dùng trả lời chỉ bằng 1, 2, 3, 4 hoặc 5 cho các câu hỏi sau: “Trên thang điểm từ 1 đến 5, trong đó 5 là cao nhất: Bạn cảm thấy hạnh phúc đến mức nào? Bạn thích nhạc pop đến mức nào? Bạn thích nhạc đồng quê kiểu miền Tây đến mức nào?” → Có",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 71,
+      "local_number": 69,
+      "question_id": "w602cpg69bwb-gbz489ltfmgv",
+      "prompt_excerpt": "Quy trình cơ bản được sử dụng để huấn luyện một mô hình ngôn ngữ lớn (LLM) là gì? Hãy sắp xếp tất cả các bước hành động ",
+      "iig_answer": "Thu thập tập dữ liệu → Tiền xử lý và làm sạch tập dữ liệu → Chuẩn bị dữ liệu để đưa vào mô hình → Điều chỉnh các siêu tham số",
+      "review_status": "B",
+      "findings": [
+        "F30"
+      ]
+    },
+    {
+      "source_number": 72,
+      "local_number": 70,
+      "question_id": "t6bfjipe4cyu-iw69gbckjkbl",
+      "prompt_excerpt": "Bạn yêu cầu một chatbot AI tạo sinh (Generative AI chatbot) liệt kê các sự kiện chính trong cuộc Nội chiến Hoa Kỳ (U.S. ",
+      "iig_answer": "A. Tra cứu các sự kiện trên Google Search và kiểm tra xem các ngày tháng có trùng khớp hay không.; B. Kiểm tra các ngày tháng trong một cuốn sách lịch sử về cuộc Nội chiến Hoa Kỳ.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 73,
+      "local_number": 71,
+      "question_id": "cf13tp5of95z-wz7fzawzm8l6",
+      "prompt_excerpt": "Bạn cần tạo một hình ảnh về linh vật của trường – chú chó bulldog – để sử dụng trong bản tin của trường. Bản tin tuần nà",
+      "iig_answer": "A. Minh họa chú bulldog thân thiện đang chơi một nhạc cụ, chẳng hạn như kèn trumpet hoặc saxophone, trong trang phục ban nhạc của trường.; D. Ăn mặc cho chú bulldog thân thiện trong bộ đồ của nhạc trưởng, đầy đủ mũ và gậy chỉ huy.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 74,
+      "local_number": 72,
+      "question_id": "oxqmrbdqdawf-xh5dwauz3t9w",
+      "prompt_excerpt": "Bạn đang sử dụng nhiều công cụ AI để thu thập thông tin về các ứng cử viên trong cuộc bầu cử sắp tới. Những hai hạn chế ",
+      "iig_answer": "C. Bạn nhận thấy một số thông tin có vẻ thiên vị.; D. Bạn nhận thấy thông tin không đáng tin cậy.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 75,
+      "local_number": 73,
+      "question_id": "7dta6ntb0y2z-uo863limsirc",
+      "prompt_excerpt": "Đối với mỗi phát biểu sau về AI tạo sinh (Generative AI), hãy chọn Đúng hoặc Sai.",
+      "iig_answer": "AI tạo sinh chỉ cung cấp danh sách kết quả dựa trên tiêu chí tìm kiếm. → Sai; AI tạo sinh sử dụng mạng nơ-ron để tạo ra đầu ra. → Đúng; AI tạo sinh tạo ra nội dung mới như văn bản, hình ảnh và âm thanh. → Đúng",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 76,
+      "local_number": 74,
+      "question_id": "7d4hjnn2d3ua-nymy6sphg2mt",
+      "prompt_excerpt": "Bạn cần tạo một phiên bản tùy chỉnh của Microsoft Copilot để thực hiện một nhiệm vụ cụ thể. Việc tùy chỉnh này được thực",
+      "iig_answer": "C. Bạn nhập vào chatbot một tập hợp các hướng dẫn và thông tin, giúp nó được định hướng cho một nhiệm vụ cụ thể.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 77,
+      "local_number": 75,
+      "question_id": "acsy948rl6hn-ri9aj5bedyw9",
+      "prompt_excerpt": "Brianna đang sử dụng AI tạo sinh (Generative AI) để tạo một lịch tập thể dục cá nhân hóa. Cô ấy nhập câu lệnh sau:\n“Tạo ",
+      "iig_answer": "B. Brianna nên cung cấp lịch trình và giới hạn thể chất của mình.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 78,
+      "local_number": 76,
+      "question_id": "tfz3ru3jxonn-2itnl761hip0",
+      "prompt_excerpt": "Bạn nhận được một kịch bản phim từ một nhà biên kịch. Bạn muốn khám phá cách đoạn hội thoại trong một cảnh cụ thể sẽ ngh",
+      "iig_answer": "A. Text-to-Audio",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 79,
+      "local_number": 77,
+      "question_id": "dfdx3z2eb3qh-os9bvpyhyaw",
+      "prompt_excerpt": "Nicole đã viết một bài luận tranh luận cho lớp tiếng Anh trung học của mình. Cô ấy hài lòng với nội dung, nhưng không ch",
+      "iig_answer": "D. Phân tích tài liệu đã tải lên. Đưa ra các đề xuất về ngữ pháp, dấu câu, chính tả và viết hoa.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 80,
+      "local_number": 78,
+      "question_id": "vkyw79s9lda4-pmh0iaynnstv",
+      "prompt_excerpt": "Câu lệnh AI tạo sinh nào đang sử dụng kỹ thuật khai thác kiến thức (generate knowledge prompt)?",
+      "iig_answer": "A. Định nghĩa về thổi thủy tinh. Sau đó cho tôi biết nó được sử dụng như thế nào để làm chai coca.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 81,
+      "local_number": 79,
+      "question_id": "t0r983lxh0nj-sm4bnigsg1v1",
+      "prompt_excerpt": "Câu lệnh AI tạo sinh nào là phù hợp nhất để biến một hình ảnh tĩnh thành video?",
+      "iig_answer": "A. Tạo hoạt ảnh cho hình ảnh những ngọn núi từ trái sang phải.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 82,
+      "local_number": 80,
+      "question_id": "gg7yvej444w5-4r8r2uu5xbq7",
+      "prompt_excerpt": "Một công ty tiếp thị chưa quen với AI và đang tìm hiểu về các loại AI khác nhau. Đầu ra nào là kết quả của AI tạo sinh?",
+      "iig_answer": "D. Một ngôi nhà được thêm vào một bức ảnh sau khi được mô tả.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 83,
+      "local_number": 81,
+      "question_id": "6ec1oklsdgyk-dc51ce3rmmgq",
+      "prompt_excerpt": "Bạn được giao nhiệm vụ chuyển đổi một video hướng dẫn sao cho người xem không thể sử dụng âm thanh vẫn có thể tiếp cận đ",
+      "iig_answer": "B. Thêm phụ đề vào video đã tải lên.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 84,
+      "local_number": 82,
+      "question_id": "n77j69ni9ra5-iruv0rh75eky",
+      "prompt_excerpt": "Các học sinh ở trường mới của bạn được mời nộp tác phẩm nghệ thuật về một linh vật. Tên linh vật là Tornados.\nBạn nên sử",
+      "iig_answer": "D. Tạo một hình ảnh hoạt hình biến hình (animorphic) của một cơn lốc xoáy đang ôm quả bóng bầu dục và đội mũ bảo hiểm bóng bầu dục",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 85,
+      "local_number": 83,
+      "question_id": "g4m8ak396i07-yyy9nl2s17da",
+      "prompt_excerpt": "Bạn là một giáo viên Sinh học tại một trường cao đẳng cộng đồng. Bạn muốn giới thiệu một công cụ AI cho sinh viên năm nh",
+      "iig_answer": "A. ChatGPT",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 86,
+      "local_number": 84,
+      "question_id": "rvqu8blja0qg-jtup8hk2vy95",
+      "prompt_excerpt": "Làm thế nào người dùng có thể tránh được những rủi ro liên quan đến việc sử dụng kết quả đầu ra của AI tạo sinh?",
+      "iig_answer": "A. Sự giám sát của con người.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 87,
+      "local_number": 85,
+      "question_id": "vzybrxhhi7fv-fvbspk65m88",
+      "prompt_excerpt": "Phân loại xem mỗi ví dụ sẽ được thực hiện bằng cách sử dụng AI tạo sinh hay Công cụ tìm kiếm.",
+      "iig_answer": "Một câu trả lời được tạo cho mỗi yêu cầu. → AI tạo sinh; Mọi người đặt câu hỏi để có câu trả lời. → AI tạo sinh; Mọi người sử dụng cụm từ để có câu trả lời. → Công cụ tìm kiếm; Nhiều câu trả lời được tạo ra cho mỗi yêu cầu. → Công cụ tìm kiếm",
+      "review_status": "B",
+      "findings": [
+        "F26"
+      ]
+    },
+    {
+      "source_number": 88,
+      "local_number": 86,
+      "question_id": "jveux1lr2mt4-fpl6582k8hhk",
+      "prompt_excerpt": "Đối với mỗi tuyên bố liên quan đến LLM, hãy cho biết Yes nếu tuyên bố đó đúng và No nếu nó sai.",
+      "iig_answer": "LLM có thể tự động hóa các quy trình nội bộ lặp đi lặp lại. → Yes; LLM được đào tạo trên các bộ dữ liệu khổng lồ. → Yes; LLM hoàn toàn dựa trên thực tế. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 89,
+      "local_number": 87,
+      "question_id": "9jdllsmc4hx8-2hgdalgffh2g",
+      "prompt_excerpt": "Đối với mỗi đặc điểm được liệt kê sau đây để xây dựng một câu lệnh AI tạo sinh nhằm tạo ra một hình đại diện đọc một kịc",
+      "iig_answer": "Nhân vật nên được đồng bộ khẩu hình miệng với văn bản. → Yes; Nhân vật nên có cử chỉ theo kịch bản. → Yes; Nhân vật nên thể hiện cảm xúc đa dạng trong suốt video. → No",
+      "review_status": "B",
+      "findings": [
+        "F23"
+      ]
+    },
+    {
+      "source_number": 90,
+      "local_number": 88,
+      "question_id": "be06q4279qsi-hq2j878gbwh",
+      "prompt_excerpt": "Với mỗi câu lệnh được sử dụng để cố gắng tạo nội dung bằng AI tạo sinh, hãy chỉ ra Yes nếu câu lệnh sẽ tạo ra nội dung, ",
+      "iig_answer": "Soạn thảo một bản Chính sách cho phép sử dụng (AUP) cho một học khu. → Yes; Đưa ra một số lời khuyên về sơ yếu lý lịch và các thủ thuật khi tham gia phỏng vấn cho một vị trí trong học khu. → Yes; Viết một câu chuyện về việc khai trương một ngôi trường mới. → Yes; Cho tôi xem chính sách AUP chính xác từ một học khu. → No",
+      "review_status": "B",
+      "findings": [
+        "F33"
+      ]
+    },
+    {
+      "source_number": 91,
+      "local_number": 89,
+      "question_id": "5zqzj0ixt64w-9jih3ywy1nqb",
+      "prompt_excerpt": "Đối với mỗi tuyên bố về cách các mô hình hình ảnh được đào tạo trong AI tạo sinh, hãy cho biết Yes nếu câu lệnh đó đúng ",
+      "iig_answer": "Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ thủ công. → Yes; Các mô hình hình ảnh được đào tạo trên các cặp văn bản-hình ảnh có thể được gắn thẻ tự động bằng cách sử dụng máy học. → No; Các mô hình hình ảnh được đào tạo chỉ bằng cách sử dụng bộ dữ liệu lớn của các hình ảnh khác để tìm hiểu các quy tắc. → No",
+      "review_status": "A",
+      "findings": [
+        "F02"
+      ]
+    },
+    {
+      "source_number": 92,
+      "local_number": 90,
+      "question_id": "wvm5z6rovthy-hizi73in40gy",
+      "prompt_excerpt": "Một chuyên gia tiếp thị đang tham dự một hội nghị quốc tế và muốn gọi một ly Latte nhưng không nói được ngôn ngữ mẹ đẻ c",
+      "iig_answer": "C. Chuyển văn bản thành văn bản",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 93,
+      "local_number": 91,
+      "question_id": "pq6c0chifdd4-t3ek1h9vi7kn",
+      "prompt_excerpt": "Một công ty nghiên cứu đang tìm hiểu về AI và các mô hình khác nhau của nó.\nMô hình nào sử dụng lượng lớn dữ liệu huấn l",
+      "iig_answer": "A. Mô hình Ngôn ngữ Lớn (LLM)",
+      "review_status": "B",
+      "findings": [
+        "F14"
+      ]
+    },
+    {
+      "source_number": 94,
+      "local_number": 92,
+      "question_id": "jiotm2r8a0db-gtnh3160urhu",
+      "prompt_excerpt": "Sử dụng kéo và thả, khớp từng lời nhắc ban đầu với loại mà nó đại diện.",
+      "iig_answer": "Zero-shot → Viết mã sẽ tạo ra một số ngẫu nhiên.; One-shot → Viết mã sẽ tạo ra một số ngẫu nhiên từ 1 đến 10.; Few-shot → Viết mã sẽ tạo ra một số ngẫu nhiên giữa hai số ngẫu nhiên được tạo trước đó.",
+      "review_status": "A",
+      "findings": [
+        "F01"
+      ]
+    },
+    {
+      "source_number": 95,
+      "local_number": 93,
+      "question_id": "j27tnq1x88-jz0mxczfsywj",
+      "prompt_excerpt": "Sử dụng danh sách thả xuống, cung cấp đầu vào cần thiết và đầu ra được tạo ra với từng loại dữ liệu.",
+      "iig_answer": "Nhận dạng ký tự quang học OCR: Đầu vào: Chọn một... → Hình ảnh; Đầu ra: Chọn một... → Văn bản; Khuôn mặt người đang nói Talking-head: Đầu vào: → Âm thanh; Đầu ra video: Chọn một... → Video",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 96,
+      "local_number": 94,
+      "question_id": "2tvhydreswab-cxbuxwq2j3nh",
+      "prompt_excerpt": "Sử dụng danh sách thả xuống để xác định các loại tóm tắt của một báo cáo hoặc một cuốn sách.",
+      "iig_answer": "Loại tóm tắt này lấy ra các câu quan trọng nhất từ một báo cáo hoặc một cuốn sách. → Extractive: Tóm tắt Trích xuất; Loại tóm tắt này diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt. → Abstractive: Tóm tắt Trừu tượng",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 97,
+      "local_number": 95,
+      "question_id": "78svc3o06iwd-56qbiym4cao1",
+      "prompt_excerpt": "Sử dụng kéo và thả, kết hợp từng công cụ AI với một tác vụ mà công cụ thực hiện cho người dùng công cụ đó.",
+      "iig_answer": "Google Gems → Bạn có thể sử dụng để tạo bản tóm tắt cuộc họp trong Tài liệu.; Custom GPT → Có thể được tùy chỉnh với một bộ dữ liệu cụ thể về cách trả lời các truy vấn của khách hàng.; Microsoft Copilot → Có thể được tùy chỉnh với một bộ dữ liệu cụ thể về cách trả lời các truy vấn của khách hàng.",
+      "review_status": "A",
+      "findings": [
+        "F05"
+      ]
+    },
+    {
+      "source_number": 98,
+      "local_number": 96,
+      "question_id": "w1gk19nm9rv4-uvj8qrfxgy52",
+      "prompt_excerpt": "Sử dụng thao tác kéo và thả để ghép mỗi công cụ AI với một nhiệm vụ mà công cụ đó thực hiện cho người dùng.",
+      "iig_answer": "Meta GPT → Tạo nhiều bài đăng trên mạng xã hội, dựa trên một số thông tin đầu vào.; Adobe Express → Tạo tài liệu thiết kế đồ họa, bao gồm tờ rơi, biểu ngữ và hình ảnh mạng xã hội.; Claude → Tạo tài liệu kỹ thuật dựa trên thông tin Giao diện Lập trình Ứng dụng (API).",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 99,
+      "local_number": 97,
+      "question_id": "vv19bhhgwpi6-tz1r5roakrpj",
+      "prompt_excerpt": "Một lập trình viên đã có kinh nghiệm đang học Python và muốn biết cách sử dụng nó để tạo ra một số ngẫu nhiên. Lời nhắc ",
+      "iig_answer": "D. Viết mã Python sẽ tạo ra một số ngẫu nhiên.",
+      "review_status": "B",
+      "findings": [
+        "F15"
+      ]
+    },
+    {
+      "source_number": 100,
+      "local_number": 98,
+      "question_id": "ssbwtnpqysu9-64i9vzlqfbde",
+      "prompt_excerpt": "Một công ty cung cấp dịch vụ ăn uống đang soạn thảo một bản đề xuất kinh doanh và cần AI hỗ trợ viết một bản tóm tắt vận",
+      "iig_answer": "A. Chain-of-thought - Câu lệnh theo Tư duy chuỗi",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 101,
+      "local_number": 99,
+      "question_id": "soh5r2udkukb-6chp44k4yu3c",
+      "prompt_excerpt": "Việc sử dụng dữ liệu thay đổi nhanh chóng để tạo ra đầu ra khi sử dụng AI tạo sinh có ảnh hưởng gì?",
+      "iig_answer": "A. Dữ liệu hiện tại trở nên lỗi thời",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 102,
+      "local_number": null,
+      "question_id": "cznpxk9y4317-hf2y5p6mckiv",
+      "prompt_excerpt": "Danh mục nào, khi được sử dụng để thu thập dữ liệu, có thể tạo ra sự thiên vị trong đầu ra của AI tạo sinh? (Chọn hai)",
+      "iig_answer": "A. Gender; B. Race",
+      "review_status": "B",
+      "findings": [
+        "F12"
+      ]
+    },
+    {
+      "source_number": 103,
+      "local_number": 100,
+      "question_id": "2pq8nx7gok6q-5wjrvjye2ws",
+      "prompt_excerpt": "Những tình huống nào là ví dụ về mô hình AI tạo sinh thực hiện các nhiệm vụ cho con người trong các ứng dụng độc lập? (C",
+      "iig_answer": "A. Gửi lời nhắc cho ai đó dựa trên lịch cá nhân trong Outlook.; B. Nhận được câu trả lời cho câu hỏi nghiên cứu bằng cách sử dụng Siri.",
+      "review_status": "B",
+      "findings": [
+        "F34"
+      ]
+    },
+    {
+      "source_number": 104,
+      "local_number": 101,
+      "question_id": "gvxxqs4nsv93-ukd9mq6yeddt",
+      "prompt_excerpt": "Một công ty đang chuyển sang sử dụng AI tạo sinh để tạo ra hình ảnh dùng trong các quảng cáo tạp chí.\nHai tính năng máy ",
+      "iig_answer": "A. Một bộ nguồn mạnh mẽ.; C. Một bộ xử lý đồ họa (GPU) mạnh mẽ.",
+      "review_status": "B",
+      "findings": [
+        "F16"
+      ]
+    },
+    {
+      "source_number": 105,
+      "local_number": 102,
+      "question_id": "av51q2djr5c8-eicnmvns5y3i",
+      "prompt_excerpt": "Một đội thể thao chuyên nghiệp đang tìm cách sử dụng AI tạo sinh cho mục đích tiếp thị muốn biết những hạn chế của AI tạ",
+      "iig_answer": "A. Đầu ra không phải lúc nào cũng đáng tin cậy.; B. Có sự thiếu hụt các tiêu chuẩn chung về cách thức sử dụng AI.",
+      "review_status": "A",
+      "findings": [
+        "F06"
+      ]
+    },
+    {
+      "source_number": 106,
+      "local_number": null,
+      "question_id": "hnjsxn87e7ag-7vgi9oq88g90",
+      "prompt_excerpt": "Một đội thể thao chuyên nghiệp đang tìm cách sử dụng AI tạo sinh cho mục đích tiếp thị muốn biết những hạn chế của AI tạ",
+      "iig_answer": "A. Đầu ra không phải lúc nào cũng đáng tin cậy.; B. Có sự thiếu hụt các tiêu chuẩn chung về cách thức sử dụng AI.",
+      "review_status": "A",
+      "findings": [
+        "F06"
+      ]
+    },
+    {
+      "source_number": 107,
+      "local_number": 103,
+      "question_id": "c62be993xope-2st8bc3r3q69",
+      "prompt_excerpt": "Một số hệ quả pháp lý khi sử dụng nội dung được tạo ra bởi AI tạo sinh một cách không phù hợp là gì? (Chọn hai)",
+      "iig_answer": "A. Khiếu nại về tội xúc phạm danh dự.; B. Vi phạm bản quyền.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 108,
+      "local_number": 104,
+      "question_id": "7g9asz2nem88-vjb1154oap24",
+      "prompt_excerpt": "Đối với những nhiệm vụ nào trong cuộc sống mà người ta có thể tận dụng AI tạo sinh để thực hiện chúng hiệu quả hơn? (Chọ",
+      "iig_answer": "A. Lập danh sách thực phẩm cần mua từ một công thức nấu ăn.; B. Tạo một bản tóm tắt của một lượng lớn văn bản.",
+      "review_status": "A",
+      "findings": [
+        "F04"
+      ]
+    },
+    {
+      "source_number": 109,
+      "local_number": 105,
+      "question_id": "a2vugq51snhy-h1ixawh85su5",
+      "prompt_excerpt": "Một học sinh lớp 9 quan tâm đến việc xây dựng nhà cửa muốn có một lời giải thích kỹ lưỡng về sự đối lập của cosin trong ",
+      "iig_answer": "B. Giải thích sự đối lập của cosin cho học sinh lớp 9.; D. Hiển thị một ví dụ liên quan đến xây dựng nhà ở.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 110,
+      "local_number": 106,
+      "question_id": "b3x1307nht2o-3zl545kiwck7",
+      "prompt_excerpt": "Sau khi một câu lệnh ban đầu tạo ra đầu ra, bạn có thể bổ sung thêm ba yếu tố đầu vào nào để gợi ra kết quả có mục tiêu ",
+      "iig_answer": "A. Biểu mẫu.; C. Tài liệu để sử dụng cho việc nghiên cứu.; E. Cuộc hội thoại trước đó trong cùng một chuỗi hội thoại.",
+      "review_status": "B",
+      "findings": [
+        "F19"
+      ]
+    },
+    {
+      "source_number": 111,
+      "local_number": 107,
+      "question_id": "s9kzx8upfho-d2omzc5u1o9l",
+      "prompt_excerpt": "Một nhà nghiên cứu đang sử dụng AI tạo sinh để kiểm tra tính chân thực của các sự kiện hiện tại có trong một bản tin.\nLà",
+      "iig_answer": "A. Tham chiếu chéo dữ liệu.; B. Sử dụng các trang web kiểm tra thực tế.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 112,
+      "local_number": 108,
+      "question_id": "73saqva3ddpm-3x2sbuisbyee",
+      "prompt_excerpt": "Những loại nội dung nào được tạo bằng AI tạo sinh có thể dẫn đến các hệ quả dân sự (bị kiện) hoặc hình sự (bị truy tố)? ",
+      "iig_answer": "A. Bắt nạt; B. Rình rập",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 113,
+      "local_number": 109,
+      "question_id": "2vtnhrs3hsk6-417eyb3p4aaj",
+      "prompt_excerpt": "Khớp từng vấn đề với đầu ra AI tạo sinh với một đặc điểm của vấn đề đó.",
+      "iig_answer": "Thiên vị (Bias) → Đầu ra có lợi cho những người có địa vị kinh tế xã hội nhất định.; Thông tin sai lệch (Misinformation) → Đầu ra trình bày thông tin sai lệch là thực tế.; Ảo giác (Hallucination) → Đầu ra không dựa trên dữ liệu đào tạo hoặc kiến thức tương tự.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 114,
+      "local_number": 110,
+      "question_id": "e3hb4crnhhgd-63eklis975hf",
+      "prompt_excerpt": "Sử dụng kéo và thả để nối mỗi loại AI với một tình huống mà loại AI đó được sử dụng.",
+      "iig_answer": "AI Tạo sinh → Tạo ra một nhân vật trong một trò chơi điện tử.; AI Dự đoán → Ước tính doanh số bán hàng năm tới dựa trên dữ liệu bán hàng hiện có.; AI Phân loại → Gán các vận động viên trượt tuyết vào các nhóm học theo khả năng của họ.; AI Phân tích → Giúp một cửa hàng quần áo xác định các mô hình bán hàng.; AI Thống kê → Giúp xác định đánh giá rủi ro cho các dự án đường bộ.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 115,
+      "local_number": 111,
+      "question_id": "s7vnapjv22nr-b4dwnm7qqlxs",
+      "prompt_excerpt": "Sử dụng phương pháp kéo và thả để ghép mỗi câu lệnh với sự biến đổi mà nó sẽ thực hiện đối với các nội dung được tạo ra ",
+      "iig_answer": "Chỉnh sửa và hiệu đính tài liệu. → Định dạng kết quả đầu ra theo Hướng dẫn Phong cách AP; Cung cấp hình ảnh trực quan hóa dữ liệu → Hiển thị xu hướng dân số khu vực dưới dạng biểu đồ; Chuyển đổi nội dung thành một loại phương tiện truyền thông khác. → Biến nội dung mô tả cảnh bãi biển thành một bức ảnh.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 116,
+      "local_number": 112,
+      "question_id": "zbtdngymruvo-mib4uxmc5eca",
+      "prompt_excerpt": "Sử dụng kéo và thả, hãy ghép mỗi kịch bản AI tạo sinh với loại AI đang được sử dụng.",
+      "iig_answer": "Một đoạn lời dẫn biến thành một nhân vật trên màn hình lồng tiếng cho lời dẫn đó. → Âm thanh sang video (audio-to-video); Nói vào một ứng dụng ngôn ngữ nước ngoài và nhìn thấy bản dịch. → Âm thanh sang văn bản (audio-to-text); Chuyển ngữ một video. → Video sang văn bản (video-to-text); Nhập một cụm từ và tạo ra một bức ảnh. → Văn bản sang hình ảnh (text-to-image)",
+      "review_status": "B",
+      "findings": [
+        "F28"
+      ]
+    },
+    {
+      "source_number": 117,
+      "local_number": 113,
+      "question_id": "x495p1m3u4bp-ihywvb6syc8h",
+      "prompt_excerpt": "Bạn cần cải thiện một câu lệnh AI ban đầu để nhận được kết quả đầu ra có mục tiêu cụ thể hơn. Có một vài cách để bạn hoà",
+      "iig_answer": "Nội dung → Hãy cụ thể, không viết tắt cũng như không mặc định rằng công cụ tạo AI sẽ hiểu rõ các tình huống.; Phong cách → Cung cấp ví dụ về tông giọng (tone) hoặc hướng dẫn thiết kế (design guide).; Vai trò → Gán cho AI một vai trò.; Bối cảnh → Hãy mô tả tình huống, không được mặc định rằng công cụ AI tạo sinh sẽ biết các điều kiện xung quanh.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 118,
+      "local_number": 114,
+      "question_id": "p3itpzreq298-hra8b517avzc",
+      "prompt_excerpt": "Một công ty giải trí đang tìm cách sử dụng AI tạo sinh để phát triển các chiến dịch tiếp thị. Những yếu tố nào là những ",
+      "iig_answer": "B. Chi phí; C. Dễ sử dụng",
+      "review_status": "B",
+      "findings": [
+        "F18"
+      ]
+    },
+    {
+      "source_number": 119,
+      "local_number": 115,
+      "question_id": "k33ev5kgpqdd-rwlhw6r9uacf",
+      "prompt_excerpt": "Hướng dẫn nào cho lời nhắc cho tờ rơi tiếp thị quảng cáo kinh doanh chải lông chó là một ví dụ về few-shot prompt?",
+      "iig_answer": "D. Xây dựng tờ rơi tiếp thị cho doanh nghiệp chải lông chó. Ví dụ bao gồm \"groom to bloom\" và \"doggie waggie\"",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 120,
+      "local_number": 116,
+      "question_id": "d64db4npjiw4-an4j6ylpsvnb",
+      "prompt_excerpt": "Những vấn đề nào với dữ liệu gây ra thiên lệch (bias) trong tập dữ liệu và trong đầu ra của AI tạo sinh? (Chọn hai)",
+      "iig_answer": "A. Thiếu dữ liệu; D. Thiếu sự đa dạng",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 121,
+      "local_number": 117,
+      "question_id": "88f102m5n4fl-3m5it1gtna4g",
+      "prompt_excerpt": "Danh mục nào sau đây khi được sử dụng để thu thập dữ liệu có thể tạo ra sự thiên lệch (hay thành kiến) trong đầu ra của ",
+      "iig_answer": "A. Giới tính; B. Chủng tộc",
+      "review_status": "B",
+      "findings": [
+        "F12"
+      ]
+    },
+    {
+      "source_number": 122,
+      "local_number": 118,
+      "question_id": "7mk500jn1sf4-qlzooc3k7cgt",
+      "prompt_excerpt": "Một công ty trượt tuyết đang tìm cách sử dụng AI tạo sinh muốn biết các yêu cầu cụ thể để có thể chạy các mô hình AI để ",
+      "iig_answer": "Internet tốc độ cao. → Yes; GPU cao cấp. → Yes; Một lượng nhỏ dữ liệu. → No",
+      "review_status": "B",
+      "findings": [
+        "F17"
+      ]
+    },
+    {
+      "source_number": 123,
+      "local_number": 119,
+      "question_id": "ewn8x8yy9gpq-z3lrvz6afejm",
+      "prompt_excerpt": "Những loại dữ liệu nào nên tránh sử dụng khi thu thập dữ liệu để đào tạo mô hình AI tạo sinh? (Chọn hai)",
+      "iig_answer": "A. Thông tin cá nhân; C. Dữ liệu cá nhân của công ty",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 124,
+      "local_number": 120,
+      "question_id": "zgop1jyhqgwy-b9c22y47fu9k",
+      "prompt_excerpt": "Ba tác động tích cực nào mà AI Tạo sinh mang lại cho xã hội? (chọn 3)",
+      "iig_answer": "A. Giúp vượt qua rào cản ngôn ngữ.; B. Khơi nguồn sáng tạo.; C. Giúp thực hiện các nhiệm vụ cuộc sống hàng ngày hiệu quả hơn.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 125,
+      "local_number": 121,
+      "question_id": "mlqx9i1ncm2l-q2069fm9dir3",
+      "prompt_excerpt": "Hãy xem xét hình ảnh sau đây.\nPhần nào của hình ảnh do AI tạo ra đã tạo ra sự không nhất quán với đầu ra của AI tạo sinh",
+      "iig_answer": "D. Đồng hồ hiển thị các thời gian khác nhau.",
+      "review_status": "B",
+      "findings": [
+        "F29"
+      ]
+    },
+    {
+      "source_number": 126,
+      "local_number": 122,
+      "question_id": "1evfa2qonpjp-cwp2zn4efp6w",
+      "prompt_excerpt": "Đối với mỗi tuyên bố liên quan đến việc thu thập nội dung để tạo lời nhắc đầu vào để tạo ra một công thức sử dụng thực p",
+      "iig_answer": "Cho biết thực phẩm nào trong nhà nên là một phần của lời nhắc. → Yes; Có ý tưởng về bữa ăn nào được mong muốn nên là một phần của lời nhắc. → Yes; Hỏi những gì cần thiết tại cửa hàng nên là một phần của lời nhắc → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 127,
+      "local_number": 123,
+      "question_id": "fen4hfr1yeej-eyai1yvk7hca",
+      "prompt_excerpt": "Một công ty tiếp thị đang tìm hiểu về các mô hình AI và cố gắng tìm ra mô hình AI nào nên sử dụng để nâng cao hoạt động ",
+      "iig_answer": "Open AI GPTx → Mô hình Văn bản; Google Gemini → Mô hình Văn bản; DALL-E → Mô hình Hình ảnh; Adobe Firefly → Mô hình Hình ảnh",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 128,
+      "local_number": 124,
+      "question_id": "wtkryqv862u9-g5berjhpahy6",
+      "prompt_excerpt": "Đối với mỗi nhận định liên quan đến Dữ liệu định danh cá nhân (PII) và quyền riêng tư dữ liệu trong AI tạo sinh, hãy chỉ",
+      "iig_answer": "Che dấu dữ liệu tĩnh (Static data masks) thay đổi vĩnh viễn dữ liệu được sử dụng trong một mô hình AI. → Yes; Dữ liệu định danh cá nhân (PII) bị để lại trong AI tạo sinh có thể gây ra hành vi trộm cắp danh tính. → Yes; Mã hóa bằng token sử dụng tên giả để che giấu dữ liệu. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 129,
+      "local_number": 125,
+      "question_id": "i5o67wx3gpqu-ummaky4hdij",
+      "prompt_excerpt": "Đầu ra AI tạo sinh về số lượng cây ở mỗi lục địa được trả về ở dạng đoạn văn. Lời nhắc nào sẽ tóm tắt dữ liệu, do đó làm",
+      "iig_answer": "A. Hiển thị số lượng cây trên mỗi lục địa ở định dạng biểu đồ.; B. Hiển thị số lượng cây trên mỗi lục địa ở định dạng bảng.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 130,
+      "local_number": null,
+      "question_id": "mpqy7ien1o5l-5nnf6h9i1nn7",
+      "prompt_excerpt": "Một học sinh lớp 9, quan tâm đến việc xây dựng nhà cửa, muốn có một lời giải thích kỹ lưỡng về sự đối lập của cosin tron",
+      "iig_answer": "B. Đưa ra một ví dụ liên quan đến việc xây nhà.; C. Giải thích điều ngược lại với cosin ở cấp lớp 9.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 131,
+      "local_number": 126,
+      "question_id": "4usnijdzhcrr-my2zs1hsca8p",
+      "prompt_excerpt": "Đối với mỗi lời nhắc AI tạo sinh, hãy cho biết Yes nếu lời nhắc có hiệu quả trong việc mô tả nội dung của hình ảnh và No",
+      "iig_answer": "Nền của hình ảnh này là gì? → No; Tạo nền màu xanh lá cây cho hình ảnh của máy ảnh. → Yes; Xây dựng một hình ảnh tương tự bằng cách sử dụng nền của hình ảnh này. → No",
+      "review_status": "A",
+      "findings": [
+        "F10"
+      ]
+    },
+    {
+      "source_number": 132,
+      "local_number": 127,
+      "question_id": "l3nyvdec86u1-k1t5r75560lb",
+      "prompt_excerpt": "Sử dụng kéo và thả, khớp từng lời nhắc AI tạo sinh với vai trò của nó trong việc tạo hoặc chuyển đổi video.",
+      "iig_answer": "Tạo video cho thấy bãi biển và bầu trời đầy nắng với những đám mây nhẹ. → Tạo video từ lời nhắc.; Tạo video chuyển đổi hình ảnh mặt trời mọc thành hình ảnh hoàng hôn. → Nội suy giữa các hình ảnh.; Xóa người lướt khỏi video hiện có. → Xóa đối tượng khỏi video.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 133,
+      "local_number": 128,
+      "question_id": "5d531rbykuvy-mgkn6xtg7qit",
+      "prompt_excerpt": "Đối với mỗi tuyên bố liên quan đến các giả định trong việc lấy nội dung từ đầu vào vào AI tạo sinh, hãy cho biết Yes nếu",
+      "iig_answer": "Thêm ngữ cảnh vào lời nhắc AI sẽ giúp tạo ra đầu ra tốt hơn. → Yes; Có thể an toàn khi cho rằng một công cụ AI sẽ biết bạn đang nói về điều gì. → No; Cung cấp cho lời nhắc AI một tính cách không ảnh hưởng đến đầu ra. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 134,
+      "local_number": 129,
+      "question_id": "hdy9fujw0dc8-ke6kq1884qvs",
+      "prompt_excerpt": "Một biên tập viên sao chép đang sử dụng ChatGPT để giúp chỉnh sửa ngữ pháp, chính tả và lựa chọn từ của các bài báo được",
+      "iig_answer": "C. Bản hướng dẫn sử dụng phong cách trình bày.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 135,
+      "local_number": 130,
+      "question_id": "p7ohrmn9ukmj-iiqyfxmyqk4u",
+      "prompt_excerpt": "Vấn đề gì với lời nhắc \"Hãy cho tôi biết về con báo.\"?",
+      "iig_answer": "B. Lời nhắc cần bối cảnh.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 136,
+      "local_number": null,
+      "question_id": "g5o5ueswdhml-7df9eaxb2630",
+      "prompt_excerpt": "Hãy xác định yếu tố không nhất quán trong bức hình sau đây (là kết quả đầu ra của AI tạo sinh)?",
+      "iig_answer": "A. Đồng hồ hiển thị các thời gian khác nhau.",
+      "review_status": "B",
+      "findings": [
+        "F29"
+      ]
+    },
+    {
+      "source_number": 137,
+      "local_number": 131,
+      "question_id": "7dme0nsnm2uw-xgxk10krp566",
+      "prompt_excerpt": "Một quản trị viên hệ thống quản lý học tập (LMS – Learning Management System) mới muốn tìm hiểu cách các tệp XML được sử",
+      "iig_answer": "A. Giải thích cách các tệp XML được sử dụng để cấu hình các hệ thống quản lý học tập.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 138,
+      "local_number": 132,
+      "question_id": "35bhrht7vh3n-z7fhogyyumy3",
+      "prompt_excerpt": "Một quản trị viên trang web không thành công khi cố gắng tạo ra phần mô tả cho một trung tâm võ thuật. Một đồng nghiệp g",
+      "iig_answer": "A. Là một huấn luyện viên võ thuật tràn đầy năng lượng, hãy mô tả những lợi ích của việc tham gia các khóa học võ thuật tại trung tâm của bạn.",
+      "review_status": "B",
+      "findings": [
+        "F21"
+      ]
+    },
+    {
+      "source_number": 139,
+      "local_number": 133,
+      "question_id": "q17g3rypneay-btjift7pwqpv",
+      "prompt_excerpt": "Một nhà xuất bản muốn sử dụng Trí tuệ nhân tạo tạo sinh (Generative AI) để dịch các bài viết trong bản tin của một tạp c",
+      "iig_answer": "A. Bảng thuật ngữ.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 140,
+      "local_number": 134,
+      "question_id": "70768lxi1wfc-c2zteftx45k2",
+      "prompt_excerpt": "Một nhóm bán hàng muốn sử dụng AI tạo sinh để cập nhật cho khách hàng của mình về các sản phẩm mới qua email. Đội ngũ bá",
+      "iig_answer": "B. Bản mẫu.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 141,
+      "local_number": 135,
+      "question_id": "hib1ttrcc41f-lmb9rkt2rkhp",
+      "prompt_excerpt": "Câu lệnh nào dưới đây có thể gây ra sự thiên lệch (bias) trong kết quả mà Trí tuệ nhân tạo tạo ra?",
+      "iig_answer": "A. Hãy cho tôi biết tất cả những lợi ích của MySQL trong việc lưu trữ dữ liệu về tình trạng sức khỏe và thể lực.",
+      "review_status": "B",
+      "findings": [
+        "F22"
+      ]
+    },
+    {
+      "source_number": 142,
+      "local_number": 136,
+      "question_id": "mywhw75junji-345bov9k5zbl",
+      "prompt_excerpt": "Một người dùng Generative AI để tạo ra một hình đại diện (avatar) của một người nổi tiếng, rồi khiến hình đó nói ra điều",
+      "iig_answer": "A. Deepfake (Giả mạo sâu)",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 143,
+      "local_number": 137,
+      "question_id": "l1qq3p5myee5-6sy8ykhlpvrn",
+      "prompt_excerpt": "Một người đang tìm kiếm kiến thức về các nhà hàng giá tốt trong khu vực mà người đó đang đi du lịch chạy cùng một lời nh",
+      "iig_answer": "Self-consistency → Yes; Zero-shot → No; Few-shot → No; Generate knowledge → No",
+      "review_status": "A",
+      "findings": [
+        "F08"
+      ]
+    },
+    {
+      "source_number": 144,
+      "local_number": null,
+      "question_id": "m857l63lmnbi-xi9ifuxoc1go",
+      "prompt_excerpt": "Đối với mỗi câu dưới đây liên quan đến việc thu thập nội dung để tạo một câu lệnh đầu vào nhằm tạo ra một công thức nấu ",
+      "iig_answer": "Cho biết thực phẩm nào trong nhà nên là một phần của câu lệnh. → Yes; Có ý tưởng về bữa ăn nào được mong muốn nên là một phần của câu lệnh. → Yes; Hỏi những gì cần thiết tại cửa hàng nên là một phần của câu lệnh. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 145,
+      "local_number": 138,
+      "question_id": "mxte1r8zhtbn-8856qxsyeed6",
+      "prompt_excerpt": "Với mỗi câu dưới đây, hãy chọn Yes (Đúng) nếu phát biểu đúng, và No (Sai) nếu phát biểu sai.",
+      "iig_answer": "Generative AI có thể được sử dụng để lan truyền sự thiên lệch (bias). → Yes; Không tính đến các ngày lễ tôn giáo khi lập lịch làm việc là một ví dụ về sự thiên lệch. → Yes; Tình trạng kinh tế có thể là một nguồn gây thiên lệch. → Yes",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 146,
+      "local_number": 139,
+      "question_id": "tcdw08fkvolv-smb9ylotxnp0",
+      "prompt_excerpt": "Với mỗi câu dưới đây, hãy chọn Yes (Đúng) nếu phát biểu đúng, và No (Sai) nếu phát biểu sai.",
+      "iig_answer": "Dữ liệu có bản quyền thường được dùng để huấn luyện các mô hình AI. → Yes; Quy trình sử dụng AI trong môi trường chuyên nghiệp của công ty nên được ghi chép và minh bạch. → Yes; Công ty nên tuân theo các quy định của cơ quan quản lý ngành về việc sử dụng dữ liệu có bản quyền trong AI. → Yes",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 147,
+      "local_number": 140,
+      "question_id": "q56pjb1hp4l8-ot2hsxkb2lwl",
+      "prompt_excerpt": "Phân loại từng câu lệnh dùng để tạo hình ảnh về sân bóng chày sau đây là câu lệnh zero-shot hay câu lệnh few-shot.",
+      "iig_answer": "Hãy tạo một hình ảnh về sân bóng chày. → Câu lệnh Zero-Shot; Hãy tạo một hình ảnh về sân vận động bóng chày. → Câu lệnh Zero-Shot; Hãy tạo một hình ảnh về những người đang chơi bóng rổ, sau đó tạo một hình ảnh về sân bóng chày nơi mọi người đang chơi bóng chày. → Câu lệnh Few-Shot; Sử dụng hình ảnh này của một sân vận động bóng chày hạng nhỏ làm điểm khởi đầu, hãy tạo một hình ảnh về sân vận động nơi mọi người đang chơi bóng chày. → Câu lệnh Few-Shot",
+      "review_status": "A",
+      "findings": [
+        "F09"
+      ]
+    },
+    {
+      "source_number": 148,
+      "local_number": null,
+      "question_id": "9ir1mgc7yt36-d4gmyhu8qcgt",
+      "prompt_excerpt": "Đối với mỗi lời nhắc AI tạo sinh, hãy cho biết Yes nếu lời nhắc sử dụng kỹ thuật nhắc ngược và No nếu không.",
+      "iig_answer": "Tôi đang phỏng vấn ai đó cho vị trí thiết kế đồ họa. Tôi nên bắt đầu với ba câu hỏi phỏng vấn nào? → No; Nếu tôi muốn cải thiện các cuộc họp nhóm của mình, bạn sẽ đưa ra những lời khuyên cụ thể nào? → No; Hệ thống cơ sở dữ liệu nào sẽ tốt nhất để sử dụng cho dữ liệu yêu cầu một lượng lớn phân tích thống kê? → Yes",
+      "review_status": "A",
+      "findings": [
+        "F03"
+      ]
+    },
+    {
+      "source_number": 149,
+      "local_number": null,
+      "question_id": "4d9tpljp77wm-7hil1znph6yx",
+      "prompt_excerpt": "Một nhà nghiên cứu đang sử dụng AI tạo sinh để tra cứu sự thật về các sự kiện hiện tại cho một bản tin. Làm thế nào nhà ",
+      "iig_answer": "A. Tham chiếu chéo dữ liệu.; D. Sử dụng các trang web kiểm tra thực tế.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 150,
+      "local_number": 141,
+      "question_id": "2b7ftnio7zoz-1bwui54inr5e",
+      "prompt_excerpt": "Đối với mỗi tuyên bố liên quan đến AI và tác động của AI tạo sinh đối với thị trường việc làm, hãy cho biết Yes nếu tuyê",
+      "iig_answer": "Có nỗi sợ rằng AI sẽ tiếp quản việc làm và nhân loại. → Yes; AI có thể đóng vai trò như một công cụ tạo việc làm. → Yes; Mọi công việc cuối cùng sẽ được điều hành bởi AI. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 151,
+      "local_number": 142,
+      "question_id": "ugl96la4unnp-mxq5kp5yn88d",
+      "prompt_excerpt": "Với mỗi loại dữ liệu bổ sung có thể được thêm vào trong một câu lệnh (prompt) của Trí tuệ nhân tạo tạo sinh (Generative ",
+      "iig_answer": "Thêm các tài liệu để AI sử dụng làm tư liệu nghiên cứu. → Yes; Tham chiếu đến một cuộc trò chuyện trước đó trong cùng một chuỗi hội thoại. → Yes; Yêu cầu AI tạo bản tóm tắt. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 152,
+      "local_number": 143,
+      "question_id": "pzninp1sr0gm-s6mpoqe4z4lv",
+      "prompt_excerpt": "Với mỗi phương pháp được sử dụng để kiểm tra độ chính xác của kết quả do Trí tuệ nhân tạo sinh ra, hãy chọn “Có” (Yes) n",
+      "iig_answer": "Sử dụng công cụ phân tích thống kê để xác minh dữ liệu. → Yes; Đối chiếu chéo dữ liệu. → Yes; Yêu cầu công cụ AI tự kiểm tra độ chính xác của các con số. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 153,
+      "local_number": 144,
+      "question_id": "rsfeiascu7va-d01x5w1hirdo",
+      "prompt_excerpt": "Đối với mỗi câu lệnh AI tạo sinh sau đây, hãy chọn Yes nếu câu lệnh sử dụng kỹ thuật đảo ngược kết quả (reverse promptin",
+      "iig_answer": "Tôi đang phỏng vấn ai đó cho vị trí thiết kế đồ họa. Tôi nên bắt đầu với ba câu hỏi phỏng vấn nào? → Yes; Nếu tôi muốn cải thiện các cuộc họp nhóm của mình, bạn sẽ đưa ra những lời khuyên cụ thể nào? → Yes; Hệ thống cơ sở dữ liệu nào sẽ tốt nhất để sử dụng cho dữ liệu yêu cầu một lượng lớn phân tích thống kê? → No",
+      "review_status": "A",
+      "findings": [
+        "F03"
+      ]
+    },
+    {
+      "source_number": 154,
+      "local_number": 145,
+      "question_id": "7jk6lytcadvr-uqmz7fkh12ox",
+      "prompt_excerpt": "Một nhà phát triển muốn xây dựng một mô hình AI và đang tìm cách sử dụng Azure Open AI để xây dựng mô hình. Nhà phát tri",
+      "iig_answer": "C. Một thực thể xác định nội dung nào là và không phải là nội dung có hại.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 155,
+      "local_number": 146,
+      "question_id": "mexyi8n48awp-7idmocntxbgu",
+      "prompt_excerpt": "Một công ty nghiên cứu khoa học muốn đảm bảo rằng dữ liệu của mình không bị rò rỉ ra các mô hình AI công khai.\nVậy công ",
+      "iig_answer": "A. Thiết lập quy định nội bộ cấm chia sẻ dữ liệu với các mô hình AI công khai.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 156,
+      "local_number": 147,
+      "question_id": "pm27cz1y31yc-hr1zbugy4gq0",
+      "prompt_excerpt": "Đối với mỗi tuyên bố liên quan đến tác động xã hội của AI tạo sinh, hãy cho biết Yes nếu tác động tích cực và No nếu khô",
+      "iig_answer": "AI tạo sinh giúp mọi người học tập hiệu quả hơn. → Yes; AI tạo sinh giúp mọi người thực hiện công việc của họ hiệu quả hơn. → Yes; AI tạo sinh có thể làm giảm tương tác của con người. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 157,
+      "local_number": 148,
+      "question_id": "7di53adbd7i-ysi4ogq00ke",
+      "prompt_excerpt": "Sử dụng các mũi tên thả xuống để hoàn thành câu nhận định về cách tránh lan truyền thông tin sai lệch qua AI tạo sinh và",
+      "iig_answer": "Trong một công ty, | → Sự giám sát của con người; | là cần thiết để tránh việc lan truyền thông tin sai lệch. Làm như vậy sẽ giúp công ty tránh được các hậu quả tài chính và | → Pháp lý",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 158,
+      "local_number": 149,
+      "question_id": "rt1idpqw1hss-8nxzjtxi72z6",
+      "prompt_excerpt": "Đối với mỗi tuyên bố sau đây liên quan đến quyền riêng tư dữ liệu và AI tạo sinh, hãy chọn Yes nếu tuyên bố đó đúng và N",
+      "iig_answer": "Nội dung do con người tạo có thể được sử dụng để đào tạo mô hình AI. → Yes; Mọi người có thể chọn không sử dụng dữ liệu của họ trong mô hình AI. → Yes; Các công cụ AI tạo sinh trả về dữ liệu cá nhân giống như các trang web có về mọi người. → No",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 159,
+      "local_number": 150,
+      "question_id": "1phd3qb8wcfz-aeycc9jozifj",
+      "prompt_excerpt": "Một công ty công nghệ muốn xây dựng một mô hình AI bằng cách sử dụng dữ liệu từ trang web của nhà sản xuất. Một số dữ li",
+      "iig_answer": "B. Công ty nên xin phép sử dụng dữ liệu.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 160,
+      "local_number": 151,
+      "question_id": "4ntsei9j65hx-2ohsw96oqgad",
+      "prompt_excerpt": "Nếu bạn nhập câu lệnh sau vào một AI tạo hình ảnh, thì bạn đang muốn AI tạo ra điều gì?\n“Hãy tạo một logo có hình cây th",
+      "iig_answer": "D. Tạo ra một hình ảnh phục vụ cho một mục đích cụ thể.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 161,
+      "local_number": 152,
+      "question_id": "zeuu3jei0bow-cswtv5py5okp",
+      "prompt_excerpt": "Bạn đang viết một câu chuyện về một căn nhà gỗ bên hồ nước. Bạn có sẵn vài bức ảnh về những căn nhà gỗ ven hồ, nhưng bạn",
+      "iig_answer": "A. Sử dụng các bức ảnh đã tải lên, hãy tạo một phiên bản cổ điển (vintage).",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 162,
+      "local_number": 153,
+      "question_id": "b2kc96snltur-qmpi8wojzrhz",
+      "prompt_excerpt": "Reverse Prompting là gì?",
+      "iig_answer": "D. Dùng kết quả AI tạo ra để đoán lại câu hỏi gốc ban đầu.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 163,
+      "local_number": 154,
+      "question_id": "rnechcptm3n2-o9ny421axr46",
+      "prompt_excerpt": "Bạn đang tạo một bài học khoa học cho học sinh tiểu học về phát minh ra ô tô. Bạn nhập vào AI câu lệnh:\n“Giải thích cách",
+      "iig_answer": "D. Hãy viết lại sao cho học sinh tiểu học có thể hiểu.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 164,
+      "local_number": null,
+      "question_id": "uzte1z4qvsoh-yyvybvjdtx0n",
+      "prompt_excerpt": "Đối với những nhiệm vụ nào trong cuộc sống, người ta có thể tranh thủ AI tạo sinh để thực hiện những nhiệm vụ đó hiệu qu",
+      "iig_answer": "A. Giúp tạo ra một tác phẩm nghệ thuật gốc.; B. Tạo một bản tóm tắt của một lượng lớn văn bản.",
+      "review_status": "A",
+      "findings": [
+        "F04"
+      ]
+    },
+    {
+      "source_number": 165,
+      "local_number": null,
+      "question_id": "6ynbkrm9uw69-s3xs2ya3ql9g",
+      "prompt_excerpt": "Một số tác động pháp lý của việc sử dụng nội dung được tạo không phù hợp khi sử dụng AI tạo sinh là gì? (Chọn hai)",
+      "iig_answer": "B. Khiếu nại về tội phỉ báng.; C. Vi phạm bản quyền.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 166,
+      "local_number": 155,
+      "question_id": "1mbo26ucem62-tpvv9e3npys8",
+      "prompt_excerpt": "Một video hướng dẫn sắp được trình chiếu cho những người không nói cùng ngôn ngữ với người thuyết trình.\nKhi viết câu lệ",
+      "iig_answer": "A. Phông chữ dễ đọc.; B. Bản chép lời chính xác.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 167,
+      "local_number": 156,
+      "question_id": "jfa18p7xv8xz-3ww9ramlygsf",
+      "prompt_excerpt": "Một công ty xây dựng mô hình AI để dự đoán nhu cầu nhân sự cho một trung tâm giải trí muốn đảm bảo dữ liệu cá nhân không",
+      "iig_answer": "B. Hình sự; C. Dân sự",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 168,
+      "local_number": 157,
+      "question_id": "cln1uvdqj7oh-o2epqkywfscq",
+      "prompt_excerpt": "AI tạo sinh giúp con người giao tiếp hiệu quả hơn giữa các ngôn ngữ khác nhau bằng cách nào? (Chọn hai)",
+      "iig_answer": "A. Dịch ngôn ngữ theo thời gian thực; B. Cung cấp các bài học để học ngôn ngữ",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 169,
+      "local_number": 158,
+      "question_id": "lu2ugry1sk0d-1fnvqqwdrvur",
+      "prompt_excerpt": "Những yếu tố nào trong Trí tuệ nhân tạo có thể khiến các mô hình AI khác nhau có mức độ thiên lệch (bias) khác nhau? (Ch",
+      "iig_answer": "A. Tinh chỉnh (Fine-tuning); B. Kỹ thuật tiền xử lý dữ liệu (Preprocessing techniques)",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 170,
+      "local_number": 159,
+      "question_id": "acxp4cv307ud-frlze1nk7mtc",
+      "prompt_excerpt": "Một trợ lý nghiên cứu đang thực hiện một số nghiên cứu lịch sử bằng cách sử dụng Trí tuệ nhân tạo tạo sinh (Generative A",
+      "iig_answer": "A. Đối chiếu chéo kết quả đầu ra.; B. Hỏi ý kiến của chuyên gia về chủ đề đó.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 171,
+      "local_number": 160,
+      "question_id": "ro738uwyg9lo-wcbo75qa0tpu",
+      "prompt_excerpt": "Hai nhận định sai lầm phổ biến về AI tạo sinh? (Chọn hai)",
+      "iig_answer": "A. AI sẽ thay thế sự giao tiếp giữa con người.; B. AI được mọi người trên thế giới sử dụng như nhau.",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 172,
+      "local_number": 161,
+      "question_id": "lfynr4o3diqw-1dsrankvcm2",
+      "prompt_excerpt": "Những đặc điểm nào của dữ liệu có thể khiến mô hình AI tạo sinh bị thiên lệch (bias)? (Chọn 2)",
+      "iig_answer": "A. Độ tuổi; B. Quốc tịch",
+      "review_status": "A",
+      "findings": [
+        "F07"
+      ]
+    },
+    {
+      "source_number": 173,
+      "local_number": 162,
+      "question_id": "1gd274n8k6be-jyd1bsidi5al",
+      "prompt_excerpt": "Đâu là ba trong số các mô hình của Trí tuệ nhân tạo tạo sinh (Generative AI). (Chọn 3 mô hình)",
+      "iig_answer": "A. Mô hình khuếch tán (Diffusion).; B. Mô hình biến đổi (Transformer).; D. Bộ mã hóa tự biến phân (Variational Autoencoders – VAEs).",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 174,
+      "local_number": 163,
+      "question_id": "5xrp2ux66win-a0g4mvdxwjx6",
+      "prompt_excerpt": "Trong các lựa chọn dưới đây, hai loại nào là dữ liệu đầu vào mà bạn có thể dùng với AI tạo sinh? (Chọn 2)",
+      "iig_answer": "A. Văn bản; B. Âm thanh",
+      "review_status": "Không thấy lỗi rõ ở lượt rà này",
+      "findings": []
+    },
+    {
+      "source_number": 175,
+      "local_number": 164,
+      "question_id": "fvnqlu9fe5dv-5anz1mqcruv3",
+      "prompt_excerpt": "Khi chọn một công cụ AI, bạn cần xem xét những yếu tố nào? (Chọn 3 yếu tố)",
+      "iig_answer": "A. Dễ sử dụng; B. Chi phí; C. Khả năng tùy chỉnh (Customizability)",
+      "review_status": "B",
+      "findings": [
+        "F18"
+      ]
+    }
+  ],
+  "scope": "Original question bank source keys; no corrected key is attributed to IIG."
+}

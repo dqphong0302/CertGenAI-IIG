@@ -42,7 +42,31 @@
         }
       ]
     },
-    "explanation": "Meta GPT - Tạo nhiều bài đăng trên mạng xã hội, dựa trên một số thông tin đầu vào.\nAdobe Express - Tạo tài liệu thiết kế đồ họa, bao gồm tờ rơi, biểu ngữ và hình ảnh mạng xã hội.\nClaude - Tạo tài liệu kỹ thuật dựa trên thông tin Giao diện Lập trình Ứng dụng (API)."
+    "explanation": "Đáp án theo khóa IIG:\nMeta GPT → Tạo nhiều bài đăng trên mạng xã hội, dựa trên một số thông tin đầu vào.; Adobe Express → Tạo tài liệu thiết kế đồ họa, bao gồm tờ rơi, biểu ngữ và hình ảnh mạng xã hội.; Claude → Tạo tài liệu kỹ thuật dựa trên thông tin Giao diện Lập trình Ứng dụng (API).\n\nGiải thích ôn tập:\nDùng các cặp công cụ–nhiệm vụ theo khóa IIG để ôn câu hỏi này. Ngoài bài thi, tên công cụ chưa đủ xác định tính năng: hãy kiểm tra phiên bản và khả năng tạo bài đăng, thiết kế đồ họa hoặc xử lý tài liệu kỹ thuật của sản phẩm đang dùng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 98,
+      "officialAnswerText": "Meta GPT → Tạo nhiều bài đăng trên mạng xã hội, dựa trên một số thông tin đầu vào.; Adobe Express → Tạo tài liệu thiết kế đồ họa, bao gồm tờ rơi, biểu ngữ và hình ảnh mạng xã hội.; Claude → Tạo tài liệu kỹ thuật dựa trên thông tin Giao diện Lập trình Ứng dụng (API).",
+      "validatedAnswer": {
+        "vd2naldvqfd-z5wayk1dyqwp": "c518pngyeib3-uc7boy7fgo75",
+        "itf9a7h3ah21-hsf47tasi01c": "ngp7bc5t74wd-depmf3b0xy2n",
+        "m9b1e77sfy1w-39no86nfq27q": "p9wynn3b71t-jc345slboevm"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "e3hb4crnhhgd-63eklis975hf",
@@ -105,7 +129,33 @@
         }
       ]
     },
-    "explanation": "AI Tạo sinh được sử dụng để tạo ra nội dung, chẳng hạn như việc tạo ra một nhân vật trong một trò chơi điện tử.\nAI Dự đoán được sử dụng để dự đoán dữ liệu, chẳng hạn như để ước tính doanh số bán hàng năm tới dựa trên dữ liệu bán hàng hiện có.\nAI Phân loại được sử dụng để phân loại dữ liệu, chẳng hạn như để gán các vận động viên trượt tuyết vào các nhóm học theo khả năng của họ.\nAI Phân tích được sử dụng để phân tích dữ liệu, chẳng hạn như để khám phá các mô hình mua hàng về quần áo, điều này có thể giúp cửa hàng quần áo quyết định nên thực hiện những chương trình khuyến mãi nào cho các mùa sắp tới.\nAI Thống kê được sử dụng để tìm hiểu dữ liệu, chẳng hạn như để xác định đánh giá rủi ro cho các dự án đường bộ."
+    "explanation": "Đáp án theo khóa IIG:\nAI Tạo sinh → Tạo ra một nhân vật trong một trò chơi điện tử.; AI Dự đoán → Ước tính doanh số bán hàng năm tới dựa trên dữ liệu bán hàng hiện có.; AI Phân loại → Gán các vận động viên trượt tuyết vào các nhóm học theo khả năng của họ.; AI Phân tích → Giúp một cửa hàng quần áo xác định các mô hình bán hàng.; AI Thống kê → Giúp xác định đánh giá rủi ro cho các dự án đường bộ.\n\nGiải thích ôn tập:\nKhóa ghép phân biệt theo mục tiêu chính: tạo nội dung, dự báo, phân lớp, phân tích hoặc áp dụng thống kê. Đây là các nhóm chức năng có thể giao nhau; mô hình tạo sinh cũng có thể được dùng để phân loại hoặc dự báo. Không nên học chúng như các họ kiến trúc loại trừ hoàn toàn. Xét tác vụ đầu ra được mô tả trong từng dòng để chọn nhãn phù hợp nhất.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 114,
+      "officialAnswerText": "AI Tạo sinh → Tạo ra một nhân vật trong một trò chơi điện tử.; AI Dự đoán → Ước tính doanh số bán hàng năm tới dựa trên dữ liệu bán hàng hiện có.; AI Phân loại → Gán các vận động viên trượt tuyết vào các nhóm học theo khả năng của họ.; AI Phân tích → Giúp một cửa hàng quần áo xác định các mô hình bán hàng.; AI Thống kê → Giúp xác định đánh giá rủi ro cho các dự án đường bộ.",
+      "validatedAnswer": {
+        "qyy6udrkpxao-e2pj75d35qqg": "tf8i3dqhaoco-vvk4be19b9h6",
+        "cqma2wweqq0l-8qke1dt450d5": "oeqk2ry0m0ft-l775ph3go4nn",
+        "nfz37inljlqy-rxexcmktxvlt": "3suto64zhlhj-wexmioybbx1x",
+        "uph07p220g4t-m7ia7g9y8u5o": "9mod4m4ufev1-jrv5kbtskmib",
+        "pqochypj8ykn-mya4ck77mvw5": "m99zhtuvyvvh-2gd91ppyvino"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "zbtdngymruvo-mib4uxmc5eca",
@@ -159,7 +209,32 @@
         }
       ]
     },
-    "explanation": "Một đoạn lời dẫn biến thành một nhân vật trên màn hình lồng tiếng cho lời dẫn đó là một ví dụ về âm thanh sang video (audio-to-video).\nNói vào một ứng dụng ngôn ngữ nước ngoài và nhìn thấy bản dịch là một ví dụ về âm thanh sang văn bản (audio-to-text).\nChuyển ngữ một video là một ví dụ về video sang văn bản (video-to-text).\nNhập một cụm từ và tạo ra một bức ảnh là một ví dụ về văn bản sang hình ảnh (text-to-image)."
+    "explanation": "Đáp án theo khóa IIG:\nMột đoạn lời dẫn biến thành một nhân vật trên màn hình lồng tiếng cho lời dẫn đó. → Âm thanh sang video (audio-to-video); Nói vào một ứng dụng ngôn ngữ nước ngoài và nhìn thấy bản dịch. → Âm thanh sang văn bản (audio-to-text); Chuyển ngữ một video. → Video sang văn bản (video-to-text); Nhập một cụm từ và tạo ra một bức ảnh. → Văn bản sang hình ảnh (text-to-image)\n\nGiải thích ôn tập:\nĐọc chuyển ngữ video là xuất bản chép lời/phụ đề dịch dạng văn bản; trong các nhãn cố định, giữ phép ghép theo ý định bài tập.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 116,
+      "officialAnswerText": "Một đoạn lời dẫn biến thành một nhân vật trên màn hình lồng tiếng cho lời dẫn đó. → Âm thanh sang video (audio-to-video); Nói vào một ứng dụng ngôn ngữ nước ngoài và nhìn thấy bản dịch. → Âm thanh sang văn bản (audio-to-text); Chuyển ngữ một video. → Video sang văn bản (video-to-text); Nhập một cụm từ và tạo ra một bức ảnh. → Văn bản sang hình ảnh (text-to-image)",
+      "validatedAnswer": {
+        "qyy6udrkpxao-e2pj75d35qqg": "tf8i3dqhaoco-vvk4be19b9h6",
+        "cqma2wweqq0l-8qke1dt450d5": "oeqk2ry0m0ft-l775ph3go4nn",
+        "nfz37inljlqy-rxexcmktxvlt": "3suto64zhlhj-wexmioybbx1x",
+        "fmerflfi5r3s-fxm146pgmcev": "fh6diiunt6qw-vhrgtgq42lri"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "1gd274n8k6be-jyd1bsidi5al",
@@ -200,6 +275,30 @@
         }
       ]
     },
-    "explanation": "Hiện nay có bốn mô hình phổ biến nhất được sử dụng trong Trí tuệ nhân tạo tạo sinh:\nMô hình khuếch tán (Diffusion):Thêm dần “nhiễu” (noise) vào dữ liệu, sau đó học cách loại bỏ nhiễu để tạo ra dữ liệu mới.\nMô hình biến đổi (Transformer):Rất hiệu quả khi xử lý chuỗi dữ liệu dài, như văn bản hoặc âm thanh, nhưng cần tập dữ liệu lớn để huấn luyện tốt.\nBộ mã hóa tự biến phân (Variational Autoencoders – VAEs):Có khả năng tạo ra nhiều mẫu dữ liệu đa dạng, thường được sử dụng trong các ứng dụng sáng tạo như hình ảnh hoặc âm nhạc.\nMạng đối nghịch sinh (Generative Adversarial Networks – GANs):Tạo ra dữ liệu mới rồi phân biệt giữa dữ liệu thật và dữ liệu giả để cải thiện chất lượng đầu ra."
+    "explanation": "Đáp án theo khóa IIG:\nA. Mô hình khuếch tán (Diffusion).; B. Mô hình biến đổi (Transformer).; D. Bộ mã hóa tự biến phân (Variational Autoencoders – VAEs).\n\nGiải thích ôn tập:\nDiffusion, Transformer và VAE đều là các họ kiến trúc được sử dụng trong mô hình tạo sinh nên A/B/D phù hợp. Diffusion học quá trình khử nhiễu, VAE dùng biến tiềm ẩn và bộ giải mã; Transformer có thể sinh chuỗi tùy thiết kế/huấn luyện. Không phải mọi Transformer đều là mô hình tạo sinh: các mô hình encoder như BERT thường được dùng cho biểu diễn/phân tích. Danh sách cũng không phải toàn bộ mọi họ mô hình tạo sinh.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 173,
+      "officialAnswerText": "A. Mô hình khuếch tán (Diffusion).; B. Mô hình biến đổi (Transformer).; D. Bộ mã hóa tự biến phân (Variational Autoencoders – VAEs).",
+      "validatedAnswer": [
+        "im50tnwszdoj-so6ukx1e1817",
+        "oxt148hymdu4-tlon1g2472vr",
+        "q9p6wn7lme2o-m00g6tpzprbj"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   }
 ]

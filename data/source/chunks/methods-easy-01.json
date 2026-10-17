@@ -33,7 +33,27 @@
         }
       ]
     },
-    "explanation": "Đáp án: C. Chuyển văn bản thành văn bản\nGiải thích:\nNgười chuyên gia nhập văn bản (\"A mocha latte, làm ơn.\") và nhận lại văn bản dịch (\"Einen Mokka Latte, bitte.\") → đây là chuyển đổi từ văn bản ở ngôn ngữ này sang văn bản ở ngôn ngữ khác.\nKhông có âm thanh được tạo ra hay nhận vào, nên các lựa chọn A, B, D đều không đúng."
+    "explanation": "Đáp án theo khóa IIG:\nC. Chuyển văn bản thành văn bản\n\nGiải thích ôn tập:\nĐáp án: C. Chuyển văn bản thành văn bản\nGiải thích:\nNgười chuyên gia nhập văn bản (\"A mocha latte, làm ơn.\") và nhận lại văn bản dịch (\"Einen Mokka Latte, bitte.\") → đây là chuyển đổi từ văn bản ở ngôn ngữ này sang văn bản ở ngôn ngữ khác.\nKhông có âm thanh được tạo ra hay nhận vào, nên các lựa chọn A, B, D đều không đúng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 92,
+      "officialAnswerText": "C. Chuyển văn bản thành văn bản",
+      "validatedAnswer": "skyitetl0c6r-9fm5nknlp6so",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "pq6c0chifdd4-t3ek1h9vi7kn",
@@ -69,7 +89,27 @@
         }
       ]
     },
-    "explanation": "Các Mô hình Ngôn ngữ Lớn (LLMs) sử dụng lượng lớn dữ liệu huấn luyện để hình thành nội dung do AI tạo ra.\nBiểu diễn Mã hóa Hai chiều từ Bộ biến đổi (BERT) được sử dụng để hiểu ngữ cảnh của từ trong chuỗi tìm kiếm.\nBộ biến đổi Chuyển đổi Văn bản sang Văn bản (T5) làm cho tất cả các nhiệm vụ xử lý ngôn ngữ tự nhiên (NLP) trở thành văn bản sang văn bản.\nOpenAI Codex được sử dụng để tạo ra mã lập trình."
+    "explanation": "Đáp án theo khóa IIG:\nA. Mô hình Ngôn ngữ Lớn (LLM)\n\nGiải thích ôn tập:\nLLM là tên nhóm tổng quát mà câu hỏi muốn nhận diện; không cần loại các mô hình chuyên biệt bằng tiêu chí mọi mô hình khác không dùng dữ liệu lớn.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 93,
+      "officialAnswerText": "A. Mô hình Ngôn ngữ Lớn (LLM)",
+      "validatedAnswer": "j53m74r825c-klutf84jqjjy",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "vv19bhhgwpi6-tz1r5roakrpj",
@@ -105,7 +145,27 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: D. Viết mã Python sẽ tạo ra một số ngẫu nhiên.\nGiải thích:\nCâu D yêu cầu rõ ràng: “Viết mã Python sẽ tạo ra một số ngẫu nhiên” → chỉ định ngôn ngữ lập trình (Python) và nhiệm vụ cụ thể (tạo số ngẫu nhiên) → phù hợp nhất để AI hiển thị mã nguồn cụ thể.\nCâu A quá chung chung — không chỉ rõ ngôn ngữ.\nCâu B có phạm vi cụ thể hơn nhưng chưa cần thiết nếu người học chỉ muốn biết cách tạo số ngẫu nhiên cơ bản.\nCâu C là câu hỏi lý thuyết, không yêu cầu mã."
+    "explanation": "Đáp án theo khóa IIG:\nD. Viết mã Python sẽ tạo ra một số ngẫu nhiên.\n\nGiải thích ôn tập:\nD yêu cầu đúng mã Python sinh số ngẫu nhiên và không tự thêm khoảng 1–10 như B; đủ sát yêu cầu để giữ.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 99,
+      "officialAnswerText": "D. Viết mã Python sẽ tạo ra một số ngẫu nhiên.",
+      "validatedAnswer": "6dg6lwppm6os-yk9h6ht86t42",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "soh5r2udkukb-6chp44k4yu3c",
@@ -141,7 +201,27 @@
         }
       ]
     },
-    "explanation": "Dữ liệu thay đổi nhanh chóng được sử dụng để tạo ra đầu ra bằng AI tạo sinh có thể làm cho dữ liệu hiện tại trở nên lỗi thời.\nDữ liệu thay đổi nhanh chóng không có nghĩa là dữ liệu đó luôn luôn mới nhất vì một Mô hình Ngôn ngữ Lớn (LLM) cần được huấn luyện lại trước khi tập dữ liệu được cập nhật.\nDữ liệu thay đổi nhanh chóng không làm thay đổi đầu ra đã được tạo ra trước đó.\nDữ liệu thay đổi nhanh chóng không nhất thiết làm chậm quá trình tạo ra đầu ra."
+    "explanation": "Đáp án theo khóa IIG:\nA. Dữ liệu hiện tại trở nên lỗi thời\n\nGiải thích ôn tập:\nMô hình có thể thiếu các sự kiện xảy ra sau dữ liệu huấn luyện hoặc không được học đầy đủ một lĩnh vực. Điều đó không có nghĩa phải huấn luyện lại mới có thể trả lời thông tin mới: người dùng có thể cung cấp tài liệu, hệ thống có thể tìm kiếm hoặc dùng RAG. Thay đổi ngữ cảnh khi trả lời khác với thay đổi trọng số của mô hình. Mọi dữ kiện lấy thêm vẫn cần kiểm chứng nguồn.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 101,
+      "officialAnswerText": "A. Dữ liệu hiện tại trở nên lỗi thời",
+      "validatedAnswer": "1kztmaoxgeu7-hcwpn0t3s941",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "mlqx9i1ncm2l-q2069fm9dir3",
@@ -179,7 +259,27 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: ✅ D. Đồng hồ hiển thị các thời gian khác nhau.\nGiải thích:\nTrong hình, hai chiếc đồng hồ treo tường hiển thị hai thời gian khác nhau, mặc dù chúng cùng nằm trong một căn phòng — điều này không nhất quán và thường là dấu hiệu của hình ảnh do Generative AI tạo ra.\nCác yếu tố khác như tủ hồ sơ, ghế, và màn hình trông đồng nhất và hợp lý, không có lỗi rõ ràng."
+    "explanation": "Đáp án theo khóa IIG:\nD. Đồng hồ hiển thị các thời gian khác nhau.\n\nGiải thích ôn tập:\nD là dấu hiệu đề muốn người học chú ý ở vùng đồng hồ. Tuy nhiên hai đồng hồ chỉ khác giờ có thể phản ánh hai múi giờ, không tự chứng minh ảnh vô lý. Các chữ số/mặt đồng hồ bị méo hoặc bố trí sai trong ảnh mới là dấu hiệu bất nhất mạnh hơn. Đây là kiểm tra lỗi thị giác của ảnh cụ thể, không phải quy tắc rằng ảnh có hai giờ khác nhau luôn do AI tạo sai.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 125,
+      "officialAnswerText": "D. Đồng hồ hiển thị các thời gian khác nhau.",
+      "validatedAnswer": "qcmj1oytru7l-ca58jdk78uoq",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "7jk6lytcadvr-uqmz7fkh12ox",
@@ -215,6 +315,26 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: C. Một thực thể xác định nội dung nào là và không phải là nội dung có hại.\nGiải thích:\nMicrosoft thiết lập các “rào chắn” (guardrails) trong Azure OpenAI để ngăn chặn việc sử dụng hoặc huấn luyện trên nội dung có hại, nhạy cảm hoặc không phù hợp. Tuy nhiên, việc một thực thể (ở đây là Microsoft) quyết định nội dung nào được xem là “có hại” hay “chấp nhận được” có thể tạo ra sự thiên lệch (bias), vì tiêu chuẩn này phản ánh quan điểm hoặc chính sách của tổ chức đó, chứ không phải luôn trung lập về mặt văn hóa hay xã hội.\nCác lựa chọn khác:\nA. Lượng dữ liệu trong mô hình bị hạn chế: đúng là bị hạn chế, nhưng không phải nguyên nhân trực tiếp của thiên lệch, mà chỉ giới hạn phạm vi huấn luyện.\nB. Lan can chỉ gây thiên vị nếu chúng bị tắt: sai — thiên vị có thể phát sinh ngay cả khi lan can được bật, do chính quy tắc lọc nội dung.\nD. Thiên vị được giới thiệu trong lời nhắc...: liên quan đến bias của người dùng, không phải do rào chắn hệ thống."
+    "explanation": "Đáp án theo khóa IIG:\nC. Một thực thể xác định nội dung nào là và không phải là nội dung có hại.\n\nGiải thích ôn tập:\nC là lựa chọn sát nhất: chính sách xác định nội dung có hại phản ánh quyết định và tiêu chí của tổ chức, có thể tạo khác biệt về phạm vi nội dung. Tuy nhiên guardrails không tự động tạo thiên lệch bất công; chúng còn nhằm giảm hại. Bộ lọc ở đầu vào/đầu ra khi suy luận không đồng nghĩa lọc dữ liệu huấn luyện hoặc sửa trọng số. Câu hỏi trộn các lớp này nên chỉ giữ kết luận ở mức chính sách có thể ảnh hưởng nội dung được cho phép.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 154,
+      "officialAnswerText": "C. Một thực thể xác định nội dung nào là và không phải là nội dung có hại.",
+      "validatedAnswer": "blfqpzq6fpjk-jnruh1eejvbo",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   }
 ]

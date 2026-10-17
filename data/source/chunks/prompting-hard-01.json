@@ -51,7 +51,32 @@
         }
       ]
     },
-    "explanation": "Mỗi câu lệnh tương ứng với một mục đích sử dụng hình ảnh khác nhau: hỏi về nội dung ảnh có sẵn = tóm tắt nội dung ảnh; vẽ ý tưởng mới từ mô tả = khám phá một ý tưởng nghệ thuật; biến ảnh có sẵn theo phong cách khác = biến đổi hình ảnh; tạo logo theo yêu cầu cụ thể = tạo hình ảnh cho một mục đích riêng. Phân biệt dựa vào việc câu lệnh có kèm ảnh đầu vào hay không, và mục tiêu là mô tả, sáng tạo mới, chỉnh sửa hay thiết kế theo yêu cầu."
+    "explanation": "Đáp án theo khóa IIG:\nCó gì trong ảnh đính kèm? → Tóm tắt nội dung của một hình ảnh; Vẽ một số hình ảnh về một con sói đang làm bài kiểm tra. → Khám phá một ý tưởng nghệ thuật; Biến bức tranh đính kèm thành một bức tranh theo phong cách Mona Lisa của Leonardo Davinci. → Biến đổi một hình ảnh; Tạo một logo bao gồm chữ P hoa màu cam với nền chuyển màu làm nổi bật màu xanh lá cây. → Tạo một hình ảnh cho một mục đích cụ thể.\n\nGiải thích ôn tập:\nMỗi câu lệnh tương ứng với một mục đích sử dụng hình ảnh khác nhau: hỏi về nội dung ảnh có sẵn = tóm tắt nội dung ảnh; vẽ ý tưởng mới từ mô tả = khám phá một ý tưởng nghệ thuật; biến ảnh có sẵn theo phong cách khác = biến đổi hình ảnh; tạo logo theo yêu cầu cụ thể = tạo hình ảnh cho một mục đích riêng. Phân biệt dựa vào việc câu lệnh có kèm ảnh đầu vào hay không, và mục tiêu là mô tả, sáng tạo mới, chỉnh sửa hay thiết kế theo yêu cầu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 5,
+      "officialAnswerText": "Có gì trong ảnh đính kèm? → Tóm tắt nội dung của một hình ảnh; Vẽ một số hình ảnh về một con sói đang làm bài kiểm tra. → Khám phá một ý tưởng nghệ thuật; Biến bức tranh đính kèm thành một bức tranh theo phong cách Mona Lisa của Leonardo Davinci. → Biến đổi một hình ảnh; Tạo một logo bao gồm chữ P hoa màu cam với nền chuyển màu làm nổi bật màu xanh lá cây. → Tạo một hình ảnh cho một mục đích cụ thể.",
+      "validatedAnswer": {
+        "hulk2c7g5le5-uercipdacd2e": "5v50yel0pzru-p24tonp5dpdq",
+        "uuy7cpn1w1g0-ilre5r8xrbav": "eap1oornyc8t-gwydtb9ju082",
+        "brhzn1df9w5g-imysqokcv095": "obg43louch65-xjy0rqoci445",
+        "mezumc96k6z5-2ppu81juqijt": "n7iuihdzkbt3-rgboiq89gc4c"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "df3jaeskv5nh-4hymtznqc4wr",
@@ -97,7 +122,31 @@
         }
       ]
     },
-    "explanation": "Chiều cao và cân nặng là các yêu cầu công việc hợp lý cho vai trò người mẫu đồ bơi, nhưng màu da, tuổi tác và dân tộc là các đặc điểm được pháp luật bảo vệ (protected characteristics) — dùng chúng làm tiêu chí huấn luyện mô hình chọn người mẫu sẽ tạo ra thiên vị bất hợp pháp. Thể hình và kinh nghiệm người mẫu là tiêu chí liên quan trực tiếp đến năng lực, không phải yếu tố thiên vị."
+    "explanation": "Đáp án theo khóa IIG:\nB. Màu da (Skin color); D. Tuổi (Age); F. Dân tộc (Ethnicity)\n\nGiải thích ôn tập:\nSử dụng tuổi để loại trừ hoặc đối xử bất lợi có thể tạo thiên lệch và rủi ro phân biệt đối xử. Tuy nhiên tuổi không bị cấm trong mọi bài toán: còn tùy luật, mục đích hợp lệ và cách dùng biến. Các ví dụ trong đề nên được đọc như dấu hiệu cần kiểm tra công bằng; không đủ để tự kết luận mọi trường hợp đều vi phạm pháp luật.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 21,
+      "officialAnswerText": "B. Màu da (Skin color); D. Tuổi (Age); F. Dân tộc (Ethnicity)",
+      "validatedAnswer": [
+        "a511q02xl7fn-6nhewbfmr9oq",
+        "h1nxpwqcyl1v-27dima92vsba",
+        "u35tbowmb4bg-192autgeh3xk"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "2ue45yi55je6-q2wnnxatvtn0",
@@ -138,7 +187,31 @@
         }
       ]
     },
-    "explanation": "Ba phát biểu được chọn đều mô tả việc AI tạo sinh hỗ trợ tích cực cho con người: mở rộng khả năng tiếp cận dữ liệu phục vụ nghiên cứu y học, tối ưu hoá sản xuất nông nghiệp, và giúp tìm hiểu văn hoá thế giới. Hai phát biểu còn lại mô tả việc lạm dụng AI để né tránh học tập hoặc né tránh tương tác giữa con người — đây là tác động tiêu cực, không phải tích cực."
+    "explanation": "Đáp án theo khóa IIG:\nB. AI tạo sinh có thể được sử dụng để truy cập khối lượng dữ liệu khổng lồ phục vụ nghiên cứu y học.; C. AI tạo sinh có thể được sử dụng để tạo điều kiện thuận lợi cho canh tác/sản xuất nông nghiệp hiệu suất cao.; E. AI tạo sinh có thể được sử dụng để tìm hiểu thêm về các nền văn hóa thế giới.\n\nGiải thích ôn tập:\nBa phát biểu được chọn đều mô tả việc AI tạo sinh hỗ trợ tích cực cho con người: mở rộng khả năng tiếp cận dữ liệu phục vụ nghiên cứu y học, tối ưu hoá sản xuất nông nghiệp, và giúp tìm hiểu văn hoá thế giới. Hai phát biểu còn lại mô tả việc lạm dụng AI để né tránh học tập hoặc né tránh tương tác giữa con người — đây là tác động tiêu cực, không phải tích cực.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 30,
+      "officialAnswerText": "B. AI tạo sinh có thể được sử dụng để truy cập khối lượng dữ liệu khổng lồ phục vụ nghiên cứu y học.; C. AI tạo sinh có thể được sử dụng để tạo điều kiện thuận lợi cho canh tác/sản xuất nông nghiệp hiệu suất cao.; E. AI tạo sinh có thể được sử dụng để tìm hiểu thêm về các nền văn hóa thế giới.",
+      "validatedAnswer": [
+        "x4nde83ay3h-nu34su25utwx",
+        "tp32k8241q31-xhzwujzec1zz",
+        "3i0996hgu7o8-x79r29mp12pq"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "yhcwxxynnvjc-ifh76kxiffvk",
@@ -179,7 +252,30 @@
         }
       ]
     },
-    "explanation": "Hai câu lệnh đúng liệt kê đầy đủ và rõ ràng cả 3 yêu cầu: tên công ty, hai màu chữ hồng/xanh lá, và hình quả dâu tây — không thêm yêu cầu mơ hồ nào khác. Các lựa chọn còn lại thêm những mô tả chủ quan, khó lượng hoá cho AI hình ảnh như 'thể hiện ăn uống lành mạnh', 'vui tươi/độc đáo', hay 'phản ánh giá trị kinh doanh' — dễ khiến kết quả lệch khỏi 3 tiêu chí cụ thể ban đầu."
+    "explanation": "Đáp án theo khóa IIG:\nA. Logo cho doanh nghiệp nhỏ có tên Healthy Eats. Dùng chữ màu hồng và xanh lá, có hình một quả dâu tây.; B. Tôi muốn tạo một logo cho một doanh nghiệp nhỏ. Doanh nghiệp có tên là Healthy Eats. Chữ nên có màu hồng và xanh lá, và nên bao gồm hình ảnh một quả dâu tây.\n\nGiải thích ôn tập:\nGiữ A/B: đây là hai prompt có khả năng đáp ứng đủ tiêu chí nhất. A và B nêu rõ tên Healthy Eats, chữ màu hồng và xanh lá, cùng quả dâu tây. C thiếu màu chữ; D nêu màu chung, thêm phong cách và giá trị chưa xác định; E thiếu tên công ty. Câu dẫn hỏi “nhiều khả năng nhất”, nên việc D vẫn có thể tạo logo phù hợp không làm khóa A/B sai. Nhận xét trước coi câu này không có đáp án duy nhất đã quá thận trọng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 32,
+      "officialAnswerText": "A. Logo cho doanh nghiệp nhỏ có tên Healthy Eats. Dùng chữ màu hồng và xanh lá, có hình một quả dâu tây.; B. Tôi muốn tạo một logo cho một doanh nghiệp nhỏ. Doanh nghiệp có tên là Healthy Eats. Chữ nên có màu hồng và xanh lá, và nên bao gồm hình ảnh một quả dâu tây.",
+      "validatedAnswer": [
+        "y8il60164kl7-oehqtweynhup",
+        "1d8yg7ti272-4xt8cp5du0au"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "z75x2pfrsyd-7r64vkpl3vc3",
@@ -261,7 +357,32 @@
         }
       ]
     },
-    "explanation": "Yêu cầu là tạo một 'báo cáo để đọc to trong cuộc họp', nên các câu lệnh tạo nội dung dạng lời nói/văn bản tóm tắt số liệu (tường thuật âm thanh giải thích xu hướng, hoặc báo cáo theo quý tóm tắt số liệu) mới đáp ứng đúng mục đích. Chuyển dữ liệu thành một 'hình thức trực quan' khác hay một 'tờ rơi quảng cáo' không phải là một bản báo cáo bằng lời để trình bày miệng."
+    "explanation": "Đáp án theo khóa IIG:\nChuyển đổi dữ liệu biểu đồ phân tán thành một hình thức trực quan thể hiện doanh thu hàng năm của công ty. → Không; Thiết kế một tờ rơi quảng cáo làm nổi bật những tuần có hiệu suất tốt nhất của công ty dựa trên dữ liệu lợi nhuận ròng. → Không; Phát triển một phần tường thuật âm thanh giải thích các xu hướng và mô hình được quan sát trong dữ liệu lợi nhuận ròng suốt cả năm. → Có; Định dạng lại dữ liệu lợi nhuận ròng hàng tuần thành một báo cáo theo quý, tóm tắt tổng lợi nhuận ròng và lợi nhuận ròng trung bình cho từng quý. → Có\n\nGiải thích ôn tập:\nYêu cầu là tạo một 'báo cáo để đọc to trong cuộc họp', nên các câu lệnh tạo nội dung dạng lời nói/văn bản tóm tắt số liệu (tường thuật âm thanh giải thích xu hướng, hoặc báo cáo theo quý tóm tắt số liệu) mới đáp ứng đúng mục đích. Chuyển dữ liệu thành một 'hình thức trực quan' khác hay một 'tờ rơi quảng cáo' không phải là một bản báo cáo bằng lời để trình bày miệng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 33,
+      "officialAnswerText": "Chuyển đổi dữ liệu biểu đồ phân tán thành một hình thức trực quan thể hiện doanh thu hàng năm của công ty. → Không; Thiết kế một tờ rơi quảng cáo làm nổi bật những tuần có hiệu suất tốt nhất của công ty dựa trên dữ liệu lợi nhuận ròng. → Không; Phát triển một phần tường thuật âm thanh giải thích các xu hướng và mô hình được quan sát trong dữ liệu lợi nhuận ròng suốt cả năm. → Có; Định dạng lại dữ liệu lợi nhuận ròng hàng tuần thành một báo cáo theo quý, tóm tắt tổng lợi nhuận ròng và lợi nhuận ròng trung bình cho từng quý. → Có",
+      "validatedAnswer": {
+        "qmMultipleChoiceText27": "1",
+        "qmMultipleChoiceText28": "1",
+        "qmMultipleChoiceText29": "0",
+        "qmMultipleChoiceText30": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "8w1j1cpvrzql-7t3xt21d6vld",
@@ -315,7 +436,32 @@
         }
       ]
     },
-    "explanation": "Mỗi công cụ AI được ghép với chức năng đặc trưng của nó: ChatGPT là chatbot hội thoại tổng quát, trả lời câu hỏi; Azure AI Studio là nền tảng cho phép kết nối chuỗi các AI để thực hiện một nhiệm vụ kinh doanh; Adobe Express chuyên tạo hình ảnh/phông chữ và lên lịch đăng nội dung mạng xã hội; Canva chuyên thiết kế trình bày, bài thuyết trình và tài liệu tiếp thị."
+    "explanation": "Đáp án theo khóa IIG:\nCó khả năng tương tác đối thoại, trả lời câu hỏi và cung cấp thông tin. → ChatGPT; Cho phép bạn kết nối một chuỗi các AI với nhau để thực hiện một nhiệm vụ kinh doanh. → Azure AI Studio; Cho phép bạn tạo hình ảnh và phông chữ được cách điệu (stylized fonts), đồng thời kết hợp/đưa chúng vào bài đăng trên phương tiện truyền thông mã hội mà có thể lên lịch đăng. → Adobe Express; Được sử dụng để tạo các thiết kế, bài trình chiếu và các tài liệu tiếp thị. → Canva\n\nGiải thích ôn tập:\nKhóa nối dựa trên công dụng nổi bật: ChatGPT hội thoại, nền tảng Azure xây dựng quy trình AI, Adobe Express sáng tạo nội dung và Canva thiết kế. Các công cụ có nhiều tính năng giao nhau và tên sản phẩm có thể thay đổi. Vì vậy đây là cách ghép phù hợp trong danh sách cho sẵn, không phải phát biểu mỗi công cụ chỉ thực hiện được đúng một loại nhiệm vụ.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 36,
+      "officialAnswerText": "Có khả năng tương tác đối thoại, trả lời câu hỏi và cung cấp thông tin. → ChatGPT; Cho phép bạn kết nối một chuỗi các AI với nhau để thực hiện một nhiệm vụ kinh doanh. → Azure AI Studio; Cho phép bạn tạo hình ảnh và phông chữ được cách điệu (stylized fonts), đồng thời kết hợp/đưa chúng vào bài đăng trên phương tiện truyền thông mã hội mà có thể lên lịch đăng. → Adobe Express; Được sử dụng để tạo các thiết kế, bài trình chiếu và các tài liệu tiếp thị. → Canva",
+      "validatedAnswer": {
+        "upgo1kwmy5ji-ee190375yox7": "u41do1mqycge-b193bl661d8p",
+        "bp491pe1rbi0-zrbrp2215c5": "64jnkblbr8h9-a8sg5kshoncl",
+        "9fdtieofjlhp-9cl9c8gt56ps": "gm6aitgd1qg1-6v0fmj5zaha9",
+        "mhvaaewao64b-5l3qlquaanpk": "ttlhn4a0ocq9-gpmth0opfrv"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "362h223q9op2-nzsx5kmva45",
@@ -369,7 +515,32 @@
         }
       ]
     },
-    "explanation": "Mỗi đoạn prompt tương ứng với một phần cấu trúc chuẩn của một câu lệnh chất lượng cao: 'Bạn là quản lý marketing...' là chỉ định vai trò AI cần đóng; đoạn về giọng điệu 'như bạn thân chia sẻ tin vui' là ví dụ minh hoạ phong cách/giọng điệu mong muốn; yêu cầu tạo thông điệp dựa trên sở thích khách hàng chính là toàn bộ nội dung cốt lõi của prompt; và việc liên kết tới bảng tính danh sách khách hàng chính là dữ liệu đầu vào cần đưa vào prompt."
+    "explanation": "Đáp án theo khóa IIG:\nBạn là một quản lý marketing cấp cao có kinh nghiệm trong [lĩnh vực khách hàng mục tiêu]. → Vai trò mà AI cần nhập vai; Các thông điệp cần được cá nhân hóa và nên mô phỏng giọng điệu của một người bạn quan tâm đang chia sẻ tin vui. → Người gắn bó lâu dài và ví dụ; Hãy tạo một thông điệp gửi đến khách hàng dựa trên cách họ có thể yêu thích sản phẩm mới của chúng tôi. → Toàn bộ nội dung của prompt; Chúng ta cần tạo email cho từng cá nhân trong danh sách [liên kết đến bảng tính]. Mỗi người có hồ sơ quảng cáo riêng. → Dữ liệu đầu vào (danh sách khách hàng)\n\nGiải thích ôn tập:\nGhép các đoạn đúng theo nhãn IIG: đoạn chỉ định quản lý marketing định hướng vai trò; đoạn giọng điệu minh họa phong cách; yêu cầu soạn thông điệp là nội dung nhiệm vụ; bảng tính cung cấp dữ liệu. Khi tự viết prompt, dùng các thành phần vai trò, nhiệm vụ, ngữ cảnh, dữ liệu và phong cách theo nhu cầu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 46,
+      "officialAnswerText": "Bạn là một quản lý marketing cấp cao có kinh nghiệm trong [lĩnh vực khách hàng mục tiêu]. → Vai trò mà AI cần nhập vai; Các thông điệp cần được cá nhân hóa và nên mô phỏng giọng điệu của một người bạn quan tâm đang chia sẻ tin vui. → Người gắn bó lâu dài và ví dụ; Hãy tạo một thông điệp gửi đến khách hàng dựa trên cách họ có thể yêu thích sản phẩm mới của chúng tôi. → Toàn bộ nội dung của prompt; Chúng ta cần tạo email cho từng cá nhân trong danh sách [liên kết đến bảng tính]. Mỗi người có hồ sơ quảng cáo riêng. → Dữ liệu đầu vào (danh sách khách hàng)",
+      "validatedAnswer": {
+        "9h8fkdivapzm-hhpexq1ivrpw": "j8pf9wz07bg7-4q8t3vxsb9gn",
+        "sert0i73ljrq-963i6kfrbbbr": "405b1ll18coc-ig73fh3li72f",
+        "qabsc8k36j4p-hs55j5k1hr5v": "fbbab6quqt3c-lri996z4k2ia",
+        "avrxildp0dc-tnvy5yrrolbn": "48sbycystg9y-2a5gpug5px6"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "2bumvsowlxeh-vz6o2lqtbbui",
@@ -436,7 +607,31 @@
         }
       ]
     },
-    "explanation": "Ảnh (2) là ảnh (1) được lật đối xứng theo chiều ngang — đầu xe chuyển từ bên trái sang bên phải khung hình, hình dạng và màu sắc giữ nguyên. Vì vậy chỉ câu lệnh 'phản chiếu hình ảnh theo chiều ngang' tạo đúng kết quả này. Đảo ngược màu sắc sẽ cho ra ảnh âm bản, còn xoay 180 độ sẽ lật cả trên-dưới lẫn trái-phải — không khớp với ảnh (2)."
+    "explanation": "Đáp án theo khóa IIG:\nĐảo ngược (invert) hình ảnh → Không; Phản chiếu (mirror) hình ảnh theo chiều ngang → Có; Xoay chiếc xe 180 độ → Không\n\nGiải thích ôn tập:\nẢnh (2) là ảnh (1) được lật đối xứng theo chiều ngang — đầu xe chuyển từ bên trái sang bên phải khung hình, hình dạng và màu sắc giữ nguyên. Vì vậy chỉ câu lệnh 'phản chiếu hình ảnh theo chiều ngang' tạo đúng kết quả này. Đảo ngược màu sắc sẽ cho ra ảnh âm bản, còn xoay 180 độ sẽ lật cả trên-dưới lẫn trái-phải — không khớp với ảnh (2).",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 62,
+      "officialAnswerText": "Đảo ngược (invert) hình ảnh → Không; Phản chiếu (mirror) hình ảnh theo chiều ngang → Có; Xoay chiếc xe 180 độ → Không",
+      "validatedAnswer": {
+        "qmMultipleChoiceText53": "1",
+        "qmMultipleChoiceText54": "0",
+        "qmMultipleChoiceText55": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "bjjqfqywylib-cgyinkqxmikz",
@@ -500,7 +695,31 @@
         }
       ]
     },
-    "explanation": "Cả ba rủi ro đều là mối lo thực tế khi triển khai chatbot AI tạo sinh cho hỗ trợ khách hàng tài chính: chatbot có thể xử lý sai dữ liệu tài chính hoặc cá nhân nhạy cảm (rò rỉ/nhầm lẫn thông tin), và không thể thay thế sự đồng cảm, hỗ trợ cảm xúc mà con người mang lại trong các tình huống nhạy cảm — cả ba phát biểu vì vậy đều Đúng."
+    "explanation": "Đáp án theo khóa IIG:\nChatbot xử lý sai dữ liệu tài chính nhạy cảm, dẫn đến khách hàng không hài lòng. → Đúng; Chatbot xử lý sai dữ liệu cá nhân nhạy cảm, dẫn đến khách hàng không hài lòng. → Đúng; Chatbot không thể cung cấp hỗ trợ cảm xúc, dẫn đến khách hàng không hài lòng. → Đúng\n\nGiải thích ôn tập:\nGiữ Đúng–Đúng–Đúng khi đọc trong bối cảnh báo cáo các rủi ro dịch vụ tài chính: xử lý sai dữ liệu tài chính, dữ liệu cá nhân, và không đáp ứng nhu cầu cảm xúc đều có thể làm khách hàng bất mãn. Dòng 3 được hiểu là hạn chế đáp ứng nhu cầu cảm xúc như nhân viên con người, không phải định luật AI không thể viết lời đồng cảm. Guide không xác nhận riêng phát biểu về cảm xúc; quyết định giữ khóa dựa thêm vào cách hỏi rủi ro, không gán điều này cho tài liệu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 63,
+      "officialAnswerText": "Chatbot xử lý sai dữ liệu tài chính nhạy cảm, dẫn đến khách hàng không hài lòng. → Đúng; Chatbot xử lý sai dữ liệu cá nhân nhạy cảm, dẫn đến khách hàng không hài lòng. → Đúng; Chatbot không thể cung cấp hỗ trợ cảm xúc, dẫn đến khách hàng không hài lòng. → Đúng",
+      "validatedAnswer": {
+        "qmMultipleChoiceText56": "0",
+        "qmMultipleChoiceText57": "0",
+        "qmMultipleChoiceText58": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "jg9682hnyula-3l6g69kldmvh",
@@ -536,7 +755,30 @@
         }
       ]
     },
-    "explanation": "Áp phích cần hình ảnh của thú cưng để nhận diện và văn bản (trích dẫn từ người nổi tiếng, thông tin liên hệ) để truyền tải thông điệp — đây là hai loại đầu ra trực tiếp phù hợp với một tấm áp phích in. Âm thanh và video không thể hiện được trên một áp phích tĩnh."
+    "explanation": "Đáp án theo khóa IIG:\nB. Hình ảnh (Image); C. Văn bản (Text)\n\nGiải thích ôn tập:\nÁp phích cần hình ảnh của thú cưng để nhận diện và văn bản (trích dẫn từ người nổi tiếng, thông tin liên hệ) để truyền tải thông điệp — đây là hai loại đầu ra trực tiếp phù hợp với một tấm áp phích in. Âm thanh và video không thể hiện được trên một áp phích tĩnh.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 65,
+      "officialAnswerText": "B. Hình ảnh (Image); C. Văn bản (Text)",
+      "validatedAnswer": [
+        "tifp2zkj1lmv-jwwgcgycav16",
+        "2fbz8dqeypy-y6rh1idprgld"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "ce7ppnrpwtjv-armhq2h11781",
@@ -600,7 +842,31 @@
         }
       ]
     },
-    "explanation": "Mục tiêu là hồ sơ LLM luôn bắt đầu bằng một loạt câu hỏi cố định về tâm trạng và sở thích âm nhạc, rồi tạo playlist dựa trên TOÀN BỘ câu trả lời đó — không chọn ngẫu nhiên và không phụ thuộc vào prompt tự do của người dùng. Hai hướng dẫn xây dựng bộ câu hỏi trắc nghiệm về cảm xúc/sở thích (thang đánh giá hoặc lựa chọn 1-5) đều đáp ứng đúng cơ chế 'hỏi trước, tạo playlist sau'; còn tạo danh sách ngẫu nhiên thì bỏ qua hoàn toàn bước thu thập câu trả lời."
+    "explanation": "Đáp án theo khóa IIG:\nTạo một danh sách bài hát ngẫu nhiên. → Không; Dựa trên 40 bài hát hàng đầu hiện nay trong cả nước, tạo một loạt câu hỏi theo chủ đề cảm xúc. Các câu hỏi này nên có thang đo lựa chọn: “Tôi cảm thấy giống vậy”, “Tôi không cảm thấy giống vậy”, hoặc “Câu hỏi này không liên quan đến tôi.” → Có; Yêu cầu người dùng trả lời chỉ bằng 1, 2, 3, 4 hoặc 5 cho các câu hỏi sau: “Trên thang điểm từ 1 đến 5, trong đó 5 là cao nhất: Bạn cảm thấy hạnh phúc đến mức nào? Bạn thích nhạc pop đến mức nào? Bạn thích nhạc đồng quê kiểu miền Tây đến mức nào?” → Có\n\nGiải thích ôn tập:\nCác câu hỏi làm rõ thể loại nhạc, tâm trạng và sở thích giúp thu thập bối cảnh để tạo playlist. Nhưng chỉ đặt vài câu hỏi không chứng minh đã thực hiện toàn bộ quy trình hỏi–tổng hợp–tạo danh sách, cũng không ngăn một prompt khác được sử dụng. Khóa nên được hiểu là lựa chọn bước thu thập yêu cầu phù hợp, không phải toàn bộ hệ thống tự động hoàn chỉnh.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 70,
+      "officialAnswerText": "Tạo một danh sách bài hát ngẫu nhiên. → Không; Dựa trên 40 bài hát hàng đầu hiện nay trong cả nước, tạo một loạt câu hỏi theo chủ đề cảm xúc. Các câu hỏi này nên có thang đo lựa chọn: “Tôi cảm thấy giống vậy”, “Tôi không cảm thấy giống vậy”, hoặc “Câu hỏi này không liên quan đến tôi.” → Có; Yêu cầu người dùng trả lời chỉ bằng 1, 2, 3, 4 hoặc 5 cho các câu hỏi sau: “Trên thang điểm từ 1 đến 5, trong đó 5 là cao nhất: Bạn cảm thấy hạnh phúc đến mức nào? Bạn thích nhạc pop đến mức nào? Bạn thích nhạc đồng quê kiểu miền Tây đến mức nào?” → Có",
+      "validatedAnswer": {
+        "qmMultipleChoiceText59": "1",
+        "qmMultipleChoiceText60": "0",
+        "qmMultipleChoiceText61": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "w602cpg69bwb-gbz489ltfmgv",
@@ -636,7 +902,32 @@
         }
       ]
     },
-    "explanation": "Quy trình huấn luyện một LLM luôn bắt đầu từ việc thu thập dữ liệu thô, sau đó tiền xử lý/làm sạch dữ liệu, tiếp theo chuẩn bị dữ liệu ở định dạng phù hợp để đưa vào mô hình, và cuối cùng mới điều chỉnh các siêu tham số trong quá trình huấn luyện để tối ưu mô hình — dữ liệu phải sẵn sàng trước khi có thể tinh chỉnh siêu tham số."
+    "explanation": "Đáp án theo khóa IIG:\nThu thập tập dữ liệu → Tiền xử lý và làm sạch tập dữ liệu → Chuẩn bị dữ liệu để đưa vào mô hình → Điều chỉnh các siêu tham số\n\nGiải thích ôn tập:\nTrình tự trong danh sách là cách sắp xếp hợp lý các công việc chuẩn bị: xác định mục tiêu/dữ liệu, chuẩn bị dữ liệu, lựa chọn hoặc cấu hình mô hình. Đây chưa phải quy trình huấn luyện hoàn chỉnh nếu thiếu tối ưu trọng số và đánh giá. Siêu tham số thường được đặt trước rồi điều chỉnh qua các vòng thử nghiệm; không có một vị trí cố định duy nhất cho mọi dự án.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 71,
+      "officialAnswerText": "Thu thập tập dữ liệu → Tiền xử lý và làm sạch tập dữ liệu → Chuẩn bị dữ liệu để đưa vào mô hình → Điều chỉnh các siêu tham số",
+      "validatedAnswer": {
+        "qvfxdgbt0kzj-ik60dvhxxj9r": "1",
+        "zgindl5v1u1-a7qggsa8dq4a": "2",
+        "c5w2nn60hll0-rkzk423a31u": "3",
+        "uv3ed6oqfsqu-e0gngqc32ep9": "4"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "cf13tp5of95z-wz7fzawzm8l6",
@@ -674,7 +965,30 @@
         }
       ]
     },
-    "explanation": "Bản tin cần hình ảnh thể hiện linh vật trong vai trò 'nghệ sĩ biểu diễn trong ban nhạc' — hai câu lệnh đúng đều mô tả cụ thể một hành động biểu diễn âm nhạc (chơi nhạc cụ, chỉ huy dàn nhạc) kèm trang phục ban nhạc. Các lựa chọn còn lại chỉ đặt chú chó làm khán giả hoặc mặc đồng phục trường đứng trước toà nhà — không thể hiện vai trò biểu diễn trong ban nhạc như yêu cầu."
+    "explanation": "Đáp án theo khóa IIG:\nA. Minh họa chú bulldog thân thiện đang chơi một nhạc cụ, chẳng hạn như kèn trumpet hoặc saxophone, trong trang phục ban nhạc của trường.; D. Ăn mặc cho chú bulldog thân thiện trong bộ đồ của nhạc trưởng, đầy đủ mũ và gậy chỉ huy.\n\nGiải thích ôn tập:\nBản tin cần hình ảnh thể hiện linh vật trong vai trò 'nghệ sĩ biểu diễn trong ban nhạc' — hai câu lệnh đúng đều mô tả cụ thể một hành động biểu diễn âm nhạc (chơi nhạc cụ, chỉ huy dàn nhạc) kèm trang phục ban nhạc. Các lựa chọn còn lại chỉ đặt chú chó làm khán giả hoặc mặc đồng phục trường đứng trước toà nhà — không thể hiện vai trò biểu diễn trong ban nhạc như yêu cầu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 73,
+      "officialAnswerText": "A. Minh họa chú bulldog thân thiện đang chơi một nhạc cụ, chẳng hạn như kèn trumpet hoặc saxophone, trong trang phục ban nhạc của trường.; D. Ăn mặc cho chú bulldog thân thiện trong bộ đồ của nhạc trưởng, đầy đủ mũ và gậy chỉ huy.",
+      "validatedAnswer": [
+        "yimirbst10v3-ohx2t8jm05yq",
+        "4y6moh77pn14-bgnq663z4pl"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "jiotm2r8a0db-gtnh3160urhu",
@@ -719,7 +1033,31 @@
         }
       ]
     },
-    "explanation": "Đáp án:\n1. Zero-shot → A. Viết mã sẽ tạo ra một số ngẫu nhiên. Giải thích: Zero-shot = không có ví dụ hoặc ngữ cảnh trước; chỉ là yêu cầu tổng quát.\n2. One-shot → B. Viết mã sẽ tạo ra một số ngẫu nhiên từ 1 đến 10. Giải thích: One-shot = có một ví dụ hoặc hướng dẫn cụ thể, giúp mô hình hiểu phạm vi rõ hơn.\n3. Few-shot → C. Viết mã sẽ tạo ra một số ngẫu nhiên giữa hai số ngẫu nhiên được tạo trước đó. Giải thích: Few-shot = có vài ví dụ hoặc bước trước đó để mô hình dựa vào, yêu cầu phức tạp hơn."
+    "explanation": "Đáp án theo khóa IIG:\nZero-shot → Viết mã sẽ tạo ra một số ngẫu nhiên.; One-shot → Viết mã sẽ tạo ra một số ngẫu nhiên từ 1 đến 10.; Few-shot → Viết mã sẽ tạo ra một số ngẫu nhiên giữa hai số ngẫu nhiên được tạo trước đó.\n\nGiải thích ôn tập:\nĐể làm câu ghép cố định này, dùng đúng các cặp trong khóa IIG bên trên. Khi tự viết prompt, nhận diện zero-shot/one-shot/few-shot theo số ví dụ mẫu minh họa nhiệm vụ; số ràng buộc, phạm vi số hoặc số bước xử lý không phải số shot.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 94,
+      "officialAnswerText": "Zero-shot → Viết mã sẽ tạo ra một số ngẫu nhiên.; One-shot → Viết mã sẽ tạo ra một số ngẫu nhiên từ 1 đến 10.; Few-shot → Viết mã sẽ tạo ra một số ngẫu nhiên giữa hai số ngẫu nhiên được tạo trước đó.",
+      "validatedAnswer": {
+        "iervp0nwlup5-8vhvrgdenznu": "nxw3hdxeeew3-wtcj5r84k7xn",
+        "w1u8te8r30t4-wwz0xjur0mtk": "mognc16qgrvf-aayxebx5yt9w",
+        "r71wk53crojg-19j2qzhjefnf": "3nc4rpbym422-cbpxa8j6vizs"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "b3x1307nht2o-3zl545kiwck7",
@@ -760,7 +1098,31 @@
         }
       ]
     },
-    "explanation": "Sau khi một câu lệnh ban đầu tạo ra đầu ra, thường có năm yếu tố đầu vào bổ sung mà bạn có thể sử dụng để gợi ra kết quả có mục tiêu rõ hơn:\nVí dụ minh họa (kỹ thuật few-shot prompting).\nBảng thuật ngữ để dịch.\nBiểu mẫu (Templates).\nTài liệu để sử dụng cho việc nghiên cứu.\nCuộc hội thoại trước đó trong cùng một chuỗi hội thoại."
+    "explanation": "Đáp án theo khóa IIG:\nA. Biểu mẫu.; C. Tài liệu để sử dụng cho việc nghiên cứu.; E. Cuộc hội thoại trước đó trong cùng một chuỗi hội thoại.\n\nGiải thích ôn tập:\nA/C/E là ba loại đầu vào bổ sung được nêu trực tiếp trong bài học; chấp nhận phạm vi giáo trình thay vì mở rộng sang mọi công cụ đa phương thức.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 110,
+      "officialAnswerText": "A. Biểu mẫu.; C. Tài liệu để sử dụng cho việc nghiên cứu.; E. Cuộc hội thoại trước đó trong cùng một chuỗi hội thoại.",
+      "validatedAnswer": [
+        "2g6gzadwcx1w-f6nresx6s5at",
+        "w620ljti12mn-c30ioc3okchp",
+        "oltreq2kxr99-zdc14eu6tfq8"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "x495p1m3u4bp-ihywvb6syc8h",
@@ -814,7 +1176,32 @@
         }
       ]
     },
-    "explanation": "Dựa trên việc đưa ra một câu lệnh ban đầu và kết quả đầu ra của nó, hãy đánh giá cách câu lệnh có thể được cải thiện để tạo ra đầu ra có mục tiêu cụ thể hơn.\nNội dung - Hãy cụ thể, không viết tắt cũng như không mặc định rằng công cụ tạo AI sẽ biết các tình huống.\nPhong cách - Cung cấp các ví dụ về tông giọng, hoặc một hướng dẫn thiết kế.\nVai trò - Gán cho AI một vai trò\nBối cảnh - Mô tả tình huống, không được mặc định rằng công cụ tạo AI sẽ biết các điều kiện xung quanh."
+    "explanation": "Đáp án theo khóa IIG:\nNội dung → Hãy cụ thể, không viết tắt cũng như không mặc định rằng công cụ tạo AI sẽ hiểu rõ các tình huống.; Phong cách → Cung cấp ví dụ về tông giọng (tone) hoặc hướng dẫn thiết kế (design guide).; Vai trò → Gán cho AI một vai trò.; Bối cảnh → Hãy mô tả tình huống, không được mặc định rằng công cụ AI tạo sinh sẽ biết các điều kiện xung quanh.\n\nGiải thích ôn tập:\nDựa trên việc đưa ra một câu lệnh ban đầu và kết quả đầu ra của nó, hãy đánh giá cách câu lệnh có thể được cải thiện để tạo ra đầu ra có mục tiêu cụ thể hơn.\nNội dung - Hãy cụ thể, không viết tắt cũng như không mặc định rằng công cụ tạo AI sẽ biết các tình huống.\nPhong cách - Cung cấp các ví dụ về tông giọng, hoặc một hướng dẫn thiết kế.\nVai trò - Gán cho AI một vai trò\nBối cảnh - Mô tả tình huống, không được mặc định rằng công cụ tạo AI sẽ biết các điều kiện xung quanh.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 117,
+      "officialAnswerText": "Nội dung → Hãy cụ thể, không viết tắt cũng như không mặc định rằng công cụ tạo AI sẽ hiểu rõ các tình huống.; Phong cách → Cung cấp ví dụ về tông giọng (tone) hoặc hướng dẫn thiết kế (design guide).; Vai trò → Gán cho AI một vai trò.; Bối cảnh → Hãy mô tả tình huống, không được mặc định rằng công cụ AI tạo sinh sẽ biết các điều kiện xung quanh.",
+      "validatedAnswer": {
+        "qyy6udrkpxao-e2pj75d35qqg": "tf8i3dqhaoco-vvk4be19b9h6",
+        "cqma2wweqq0l-8qke1dt450d5": "oeqk2ry0m0ft-l775ph3go4nn",
+        "nfz37inljlqy-rxexcmktxvlt": "3suto64zhlhj-wexmioybbx1x",
+        "w5sv8psei0vc-j04he8aq3aj7": "kjgzu27gko0j-ch2iz0r99325"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "l3nyvdec86u1-k1t5r75560lb",
@@ -859,6 +1246,30 @@
         }
       ]
     },
-    "explanation": "Đáp án khớp:\n1 → B. Tạo video từ lời nhắc Giải thích: Lời nhắc mô tả cảnh bãi biển, bầu trời đầy nắng và mây nhẹ, nên AI tạo video mới hoàn toàn từ mô tả văn bản.\n2 → A. Nội suy giữa các hình ảnh Giải thích: Việc chuyển đổi từ hình ảnh mặt trời mọc sang hoàng hôn là quá trình nội suy (interpolation) giữa hai khung hình để tạo video mượt mà.\n3 → C. Xóa đối tượng khỏi video Giải thích: “Xóa người lướt khỏi video hiện có” là thao tác loại bỏ đối tượng khỏi nội dung video gốc, đúng với chức năng này."
+    "explanation": "Đáp án theo khóa IIG:\nTạo video cho thấy bãi biển và bầu trời đầy nắng với những đám mây nhẹ. → Tạo video từ lời nhắc.; Tạo video chuyển đổi hình ảnh mặt trời mọc thành hình ảnh hoàng hôn. → Nội suy giữa các hình ảnh.; Xóa người lướt khỏi video hiện có. → Xóa đối tượng khỏi video.\n\nGiải thích ôn tập:\nGiữ phép ghép: bãi biển nắng → tạo video từ prompt; bình minh chuyển sang hoàng hôn → nội suy giữa ảnh; xóa người lướt → xóa đối tượng. Guide PDF 109–110 giải thích khung hình trung gian lấp khoảng chuyển tiếp. Trong ba vai trò đã cho, nội suy là nhãn khớp nhất cho chuyển tiếp giữa hai hình ảnh. Đây là suy luận từ định nghĩa, không phải một đáp án mẫu trùng nguyên văn trong tài liệu. Không cần giả định video là timelapse quay thực tế.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 132,
+      "officialAnswerText": "Tạo video cho thấy bãi biển và bầu trời đầy nắng với những đám mây nhẹ. → Tạo video từ lời nhắc.; Tạo video chuyển đổi hình ảnh mặt trời mọc thành hình ảnh hoàng hôn. → Nội suy giữa các hình ảnh.; Xóa người lướt khỏi video hiện có. → Xóa đối tượng khỏi video.",
+      "validatedAnswer": {
+        "qgc7dbxz59g2-w51eycjo5w74": "vooboff7g631-z6cke43dga9",
+        "1c2rfmo7zocd-tnd40daf3udi": "xpx33sl91o37-fukr6ggnpxjr",
+        "l873na1weil0-esi9wh6uemb7": "dgw8qyfxwklc-osldds3gtplj"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   }
 ]

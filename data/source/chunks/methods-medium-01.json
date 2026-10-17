@@ -107,7 +107,32 @@
         }
       ]
     },
-    "explanation": "Đáp án:\nA. OCR – Đầu vào:  Hình ảnh Giải thích: OCR (Optical Character Recognition) nhận hình ảnh chứa chữ để nhận dạng ký tự.\nB. OCR – Đầu ra: Văn bản Giải thích: Kết quả của OCR là chữ được trích xuất từ hình ảnh.\nC. Talking-head – Đầu vào: Âm thanh hoặc Văn bản (thông thường là Âm thanh nếu dùng giọng nói) Giải thích: Mô hình Talking-head sử dụng âm thanh hoặc lời nói (đôi khi cả văn bản được chuyển thành giọng) để điều khiển khuôn mặt nhân vật.\nD. Talking-head – Đầu ra: Video Giải thích: Kết quả là video có khuôn mặt nhân vật chuyển động, nói chuyện theo giọng hoặc nội dung đầu vào."
+    "explanation": "Đáp án theo khóa IIG:\nNhận dạng ký tự quang học OCR: Đầu vào: Chọn một... → Hình ảnh; Đầu ra: Chọn một... → Văn bản; Khuôn mặt người đang nói Talking-head: Đầu vào: → Âm thanh; Đầu ra video: Chọn một... → Video\n\nGiải thích ôn tập:\nÂm thanh sang video phù hợp nếu “lời dẫn” là tệp giọng nói dùng để điều khiển nhân vật và đồng bộ khẩu hình. Nếu lời dẫn là văn bản thì đầu vào lại là text-to-video; nhiều hệ thống còn cần ảnh chân dung. Khóa dùng giả định đầu vào đã là âm thanh, không khẳng định talking head chỉ có thể dùng một loại đầu vào.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 95,
+      "officialAnswerText": "Nhận dạng ký tự quang học OCR: Đầu vào: Chọn một... → Hình ảnh; Đầu ra: Chọn một... → Văn bản; Khuôn mặt người đang nói Talking-head: Đầu vào: → Âm thanh; Đầu ra video: Chọn một... → Video",
+      "validatedAnswer": {
+        "qmMultipleChoiceText82": "0",
+        "qmMultipleChoiceText83": "2",
+        "qmMultipleChoiceText84": "1",
+        "qmMultipleChoiceText85": "3"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "2tvhydreswab-cxbuxwq2j3nh",
@@ -165,7 +190,30 @@
         }
       ]
     },
-    "explanation": "Tóm tắt Trích xuất kéo các câu quan trọng nhất trực tiếp từ một báo cáo hoặc một cuốn sách.\nTóm tắt Trừu tượng diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt.\nTóm tắt Dựa trên Truy vấn cung cấp câu trả lời cho các câu hỏi cụ thể về một báo cáo hoặc một cuốn sách."
+    "explanation": "Đáp án theo khóa IIG:\nLoại tóm tắt này lấy ra các câu quan trọng nhất từ một báo cáo hoặc một cuốn sách. → Extractive: Tóm tắt Trích xuất; Loại tóm tắt này diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt. → Abstractive: Tóm tắt Trừu tượng\n\nGiải thích ôn tập:\nTóm tắt Trích xuất kéo các câu quan trọng nhất trực tiếp từ một báo cáo hoặc một cuốn sách.\nTóm tắt Trừu tượng diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt.\nTóm tắt Dựa trên Truy vấn cung cấp câu trả lời cho các câu hỏi cụ thể về một báo cáo hoặc một cuốn sách.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 96,
+      "officialAnswerText": "Loại tóm tắt này lấy ra các câu quan trọng nhất từ một báo cáo hoặc một cuốn sách. → Extractive: Tóm tắt Trích xuất; Loại tóm tắt này diễn giải lại văn bản từ một báo cáo hoặc một cuốn sách thành một bản tóm tắt. → Abstractive: Tóm tắt Trừu tượng",
+      "validatedAnswer": {
+        "qmMultipleChoiceText86": "1",
+        "qmMultipleChoiceText87": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "2pq8nx7gok6q-5wjrvjye2ws",
@@ -201,7 +249,30 @@
         }
       ]
     },
-    "explanation": "Gửi lời nhắc cho ai đó dựa trên lịch cá nhân trong Outlook là một ví dụ về AI tạo sinh.\nNhận được câu trả lời cho câu hỏi nghiên cứu bằng cách sử dụng Siri là một ví dụ về AI tạo sinh.\nHiển thị nhu cầu nhân sự dựa trên xu hướng lưu lượng khách ghé thăm một cửa hàng là một ví dụ về AI dự đoán.\nĐề xuất một đơn thuốc cho ai đó dựa trên kết quả xét nghiệm là một ví dụ về AI đề xuất."
+    "explanation": "Đáp án theo khóa IIG:\nA. Gửi lời nhắc cho ai đó dựa trên lịch cá nhân trong Outlook.; B. Nhận được câu trả lời cho câu hỏi nghiên cứu bằng cách sử dụng Siri.\n\nGiải thích ôn tập:\nIIG phân loại các tình huống theo khóa bên trên. Mục tiêu ôn tập là phân biệt tạo phản hồi/nội dung, dự đoán nhu cầu và đề xuất phương án. Trong thực tế một trợ lý có thể phối hợp truy xuất, dự báo và tạo sinh; tên ứng dụng không tự xác định toàn bộ kiến trúc.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 103,
+      "officialAnswerText": "A. Gửi lời nhắc cho ai đó dựa trên lịch cá nhân trong Outlook.; B. Nhận được câu trả lời cho câu hỏi nghiên cứu bằng cách sử dụng Siri.",
+      "validatedAnswer": [
+        "2g6gzadwcx1w-f6nresx6s5at",
+        "eauitj855v0p-ex3yj1qab995"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "av51q2djr5c8-eicnmvns5y3i",
@@ -237,7 +308,30 @@
         }
       ]
     },
-    "explanation": "Các hạn chế của AI tạo sinh bao gồm việc đầu ra không đáng tin cậy và việc không có các tiêu chuẩn chung về cách thức sử dụng AI.\nLượng dữ liệu được nhập vào một mô hình AI và lượng dữ liệu được tạo ra bởi một mô hình AI không bị giới hạn ở bất kỳ số lượng bản ghi nào."
+    "explanation": "Đáp án theo khóa IIG:\nA. Đầu ra không phải lúc nào cũng đáng tin cậy.; B. Có sự thiếu hụt các tiêu chuẩn chung về cách thức sử dụng AI.\n\nGiải thích ôn tập:\nIIG chọn tính không đáng tin cậy của đầu ra và việc chưa có tiêu chuẩn chung là hai hạn chế trọng tâm trong câu này. Lý thuyết sử dụng thực tế vẫn cần xem giới hạn ngữ cảnh, độ dài đầu ra và hạn mức của công cụ; không suy ra mô hình có dung lượng vô hạn.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 105,
+      "officialAnswerText": "A. Đầu ra không phải lúc nào cũng đáng tin cậy.; B. Có sự thiếu hụt các tiêu chuẩn chung về cách thức sử dụng AI.",
+      "validatedAnswer": [
+        "2g6gzadwcx1w-f6nresx6s5at",
+        "eauitj855v0p-ex3yj1qab995"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "7g9asz2nem88-vjb1154oap24",
@@ -273,7 +367,30 @@
         }
       ]
     },
-    "explanation": "AI tạo sinh có thể giúp thực hiện các nhiệm vụ trong cuộc sống như lập danh sách thực phẩm cần mua từ một công thức nấu ăn hoặc tạo bản tóm tắt một lượng lớn văn bản.\nAI tạo sinh không giúp tạo nội dung gốc, chẳng hạn như một dự án nghệ thuật sáng tạo, vì kết quả luôn đến từ dữ liệu hiện có.\nAI tạo sinh cũng không nhằm hỗ trợ tinh thần."
+    "explanation": "Đáp án theo khóa IIG:\nA. Lập danh sách thực phẩm cần mua từ một công thức nấu ăn.; B. Tạo một bản tóm tắt của một lượng lớn văn bản.\n\nGiải thích ôn tập:\nIIG chọn lập danh sách thực phẩm từ công thức và tóm tắt văn bản là hai ví dụ cần nhớ cho câu hỏi này. Đây là hai ứng dụng rõ ràng để ôn tập. Lý thuyết tổng quát vẫn bao gồm khả năng tạo nội dung sáng tạo và yêu cầu con người kiểm tra đầu ra.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 108,
+      "officialAnswerText": "A. Lập danh sách thực phẩm cần mua từ một công thức nấu ăn.; B. Tạo một bản tóm tắt của một lượng lớn văn bản.",
+      "validatedAnswer": [
+        "2g6gzadwcx1w-f6nresx6s5at",
+        "eauitj855v0p-ex3yj1qab995"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "p3itpzreq298-hra8b517avzc",
@@ -309,7 +426,30 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: ✅ B. Chi phí và ✅ C. Dễ sử dụng\nGiải thích:\nChi phí (B): Là yếu tố quan trọng khi chọn công cụ AI — công ty cần đảm bảo ngân sách phù hợp với quy mô chiến dịch và lợi nhuận kỳ vọng.\nDễ sử dụng (C): Công cụ AI phải thân thiện, dễ triển khai và tích hợp để đội ngũ tiếp thị có thể sử dụng hiệu quả mà không cần chuyên môn kỹ thuật cao.\nPhân tích cạnh tranh (A): Là một ứng dụng của AI, không phải yếu tố để lựa chọn công cụ.\nNhu cầu tiếp thị (D): Là mục tiêu kinh doanh, chứ không phải tiêu chí đánh giá công cụ."
+    "explanation": "Đáp án theo khóa IIG:\nB. Chi phí; C. Dễ sử dụng\n\nGiải thích ôn tập:\nChấp nhận B/C là hai tiêu chí vận hành chung khi chọn công cụ; nhu cầu tiếp thị được hiểu là mục tiêu đã xác định trong tình huống.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 118,
+      "officialAnswerText": "B. Chi phí; C. Dễ sử dụng",
+      "validatedAnswer": [
+        "uvzjo4iz698n-owodq3ry9w4j",
+        "inb5lbpyj0rx-iii39svftjs6"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "88f102m5n4fl-3m5it1gtna4g",
@@ -345,7 +485,30 @@
         }
       ]
     },
-    "explanation": "Thiên lệch trong AI tạo sinh tập trung vào thành kiến cá nhân, chẳng hạn như giới tính hoặc chủng tộc của một người.\nVị trí địa lý không gây ra sự thiên lệch.\nDữ liệu thống kê không phải là nguồn gây ra sự thiên lệch."
+    "explanation": "Đáp án theo khóa IIG:\nA. Giới tính; B. Chủng tộc\n\nGiải thích ôn tập:\nKhóa IIG chọn hai yếu tố nhân khẩu học nêu ở trên. Học ví dụ về sự đại diện của các nhóm trong dữ liệu. Khi thực hành, cần kiểm tra thêm địa lý, ngôn ngữ và chất lượng dữ liệu vì các yếu tố này cũng có thể ảnh hưởng độ công bằng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 121,
+      "officialAnswerText": "A. Giới tính; B. Chủng tộc",
+      "validatedAnswer": [
+        "o9iec6y6ssy-1586nnfjslsq",
+        "djblosugreos-v0779d91flmb"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "fen4hfr1yeej-eyai1yvk7hca",
@@ -425,7 +588,32 @@
         }
       ]
     },
-    "explanation": "Mô hình Văn bản\nOpen AI GPTx\nGoogle Gemini\nMô hình Hình ảnh\nDALL-E\nAdobe Firefly"
+    "explanation": "Đáp án theo khóa IIG:\nOpen AI GPTx → Mô hình Văn bản; Google Gemini → Mô hình Văn bản; DALL-E → Mô hình Hình ảnh; Adobe Firefly → Mô hình Hình ảnh\n\nGiải thích ôn tập:\nPhân loại theo công dụng tiêu biểu: GPT/Gemini cho văn bản, DALL-E/Firefly cho ảnh; không coi hai nhóm là năng lực độc quyền của mọi phiên bản.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 127,
+      "officialAnswerText": "Open AI GPTx → Mô hình Văn bản; Google Gemini → Mô hình Văn bản; DALL-E → Mô hình Hình ảnh; Adobe Firefly → Mô hình Hình ảnh",
+      "validatedAnswer": {
+        "qmMultipleChoiceText94": "0",
+        "qmMultipleChoiceText95": "0",
+        "qmMultipleChoiceText96": "1",
+        "qmMultipleChoiceText97": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "4usnijdzhcrr-my2zs1hsca8p",
@@ -489,7 +677,31 @@
         }
       ]
     },
-    "explanation": "Đáp án:\nA. Nền của hình ảnh này là gì? → No  Giải thích: Đây là câu hỏi phân tích hình ảnh, không mô tả nội dung hình ảnh trong lời nhắc cho Generative AI.\nB. Tạo nền màu xanh lá cây cho hình ảnh của máy ảnh. → Yes Giải thích: Câu này mô tả rõ nội dung cần tạo (một hình ảnh có máy ảnh với nền màu xanh lá cây) → là lời nhắc hiệu quả cho Generative AI.\nC. Xây dựng một hình ảnh tương tự bằng cách sử dụng nền của hình ảnh này. → No Giải thích: Câu này không mô tả cụ thể nội dung hình ảnh — chỉ nói “tương tự” và “nền của hình này” mà không nêu chi tiết, nên không đủ hiệu quả."
+    "explanation": "Đáp án theo khóa IIG:\nNền của hình ảnh này là gì? → No; Tạo nền màu xanh lá cây cho hình ảnh của máy ảnh. → Yes; Xây dựng một hình ảnh tương tự bằng cách sử dụng nền của hình ảnh này. → No\n\nGiải thích ôn tập:\nTheo IIG, ba dòng là No–Yes–No. Trong cách dùng của câu ôn này, ghi nhớ prompt mô tả cụ thể hình muốn tạo: máy ảnh có nền xanh. Ở bài học xử lý ảnh, vẫn phân biệt hỏi nội dung ảnh hiện có, chỉnh sửa ảnh và tạo ảnh mới để chọn công cụ đúng mục tiêu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 131,
+      "officialAnswerText": "Nền của hình ảnh này là gì? → No; Tạo nền màu xanh lá cây cho hình ảnh của máy ảnh. → Yes; Xây dựng một hình ảnh tương tự bằng cách sử dụng nền của hình ảnh này. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText101": "1",
+        "qmMultipleChoiceText102": "0",
+        "qmMultipleChoiceText103": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "mxte1r8zhtbn-8856qxsyeed6",
@@ -553,7 +765,31 @@
         }
       ]
     },
-    "explanation": "True (Đúng):\nGenerative AI có thể được sử dụng để lan truyền sự thiên lệch (bias): AI học từ dữ liệu con người tạo ra, nên nếu dữ liệu có thành kiến (ví dụ về giới tính, chủng tộc, tôn giáo…), thì AI cũng có thể tái tạo hoặc khuếch đại những thành kiến đó.\nKhông tính đến các ngày lễ tôn giáo khi lập lịch làm việc là một ví dụ về sự thiên lệch: Nếu bỏ qua ngày lễ của một nhóm tôn giáo, điều đó có thể khiến hệ thống hoặc tổ chức thiên vị và không công bằng với họ.\nTình trạng kinh tế có thể là một nguồn gây thiên lệch: Nếu dữ liệu huấn luyện chủ yếu đến từ người có cùng mức thu nhập hoặc tầng lớp xã hội, AI có thể thiên vị về cách hiểu, ngôn ngữ, hoặc cách gợi ý nội dung."
+    "explanation": "Đáp án theo khóa IIG:\nGenerative AI có thể được sử dụng để lan truyền sự thiên lệch (bias). → Yes; Không tính đến các ngày lễ tôn giáo khi lập lịch làm việc là một ví dụ về sự thiên lệch. → Yes; Tình trạng kinh tế có thể là một nguồn gây thiên lệch. → Yes\n\nGiải thích ôn tập:\nAI có thể lan truyền thiên lệch, điều kiện kinh tế có thể ảnh hưởng tính đại diện, nên hai dòng đó là Yes. Bỏ qua ngày lễ tôn giáo khi lập lịch có thể gây bất lợi có hệ thống cho một nhóm nên là dấu hiệu bias theo ý định đề. Tuy nhiên không phải mọi lần không ghi một ngày lễ đều chứng minh phân biệt đối xử bất hợp pháp; cần xem bối cảnh, tác động và cơ chế điều chỉnh.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 145,
+      "officialAnswerText": "Generative AI có thể được sử dụng để lan truyền sự thiên lệch (bias). → Yes; Không tính đến các ngày lễ tôn giáo khi lập lịch làm việc là một ví dụ về sự thiên lệch. → Yes; Tình trạng kinh tế có thể là một nguồn gây thiên lệch. → Yes",
+      "validatedAnswer": {
+        "qmMultipleChoiceText114": "0",
+        "qmMultipleChoiceText115": "0",
+        "qmMultipleChoiceText116": "0"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "pm27cz1y31yc-hr1zbugy4gq0",
@@ -617,7 +853,31 @@
         }
       ]
     },
-    "explanation": "Đáp án:\nA. Generative AI giúp mọi người học tập hiệu quả hơn → Yes Giải thích: AI có thể cá nhân hóa việc học, giải thích khái niệm phức tạp, và hỗ trợ luyện tập, giúp người học tiếp thu nhanh và hiệu quả hơn.\nB. AI tổng quát giúp mọi người thực hiện công việc của họ hiệu quả hơn → Yes Giải thích: Generative AI hỗ trợ tự động hóa, viết, phân tích dữ liệu, sáng tạo nội dung, giúp tăng năng suất và giảm thời gian làm việc.\nC. AI tổng quát có thể làm giảm tương tác của con người → No Giải thích: Đây là tác động tiêu cực, vì việc phụ thuộc vào AI quá mức có thể khiến giảm giao tiếp và hợp tác giữa con người."
+    "explanation": "Đáp án theo khóa IIG:\nAI tạo sinh giúp mọi người học tập hiệu quả hơn. → Yes; AI tạo sinh giúp mọi người thực hiện công việc của họ hiệu quả hơn. → Yes; AI tạo sinh có thể làm giảm tương tác của con người. → No\n\nGiải thích ôn tập:\nHỗ trợ học tập và hiệu quả công việc là các tác động tích cực tiềm năng nên Yes trong cách phân loại đề. Giảm tương tác con người có thể là tác động tiêu cực khi do lệ thuộc AI, nên No theo câu hỏi “có tích cực không”, không phải “có thể xảy ra không”. Hiệu quả học tập/công việc phụ thuộc cách dùng và chất lượng đầu ra, không được bảo đảm cho mọi người dùng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 156,
+      "officialAnswerText": "AI tạo sinh giúp mọi người học tập hiệu quả hơn. → Yes; AI tạo sinh giúp mọi người thực hiện công việc của họ hiệu quả hơn. → Yes; AI tạo sinh có thể làm giảm tương tác của con người. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText139": "0",
+        "qmMultipleChoiceText140": "0",
+        "qmMultipleChoiceText141": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "cln1uvdqj7oh-o2epqkywfscq",
@@ -653,7 +913,30 @@
         }
       ]
     },
-    "explanation": "Dịch ngôn ngữ theo thời gian thực: AI có thể dịch tức thì khi bạn nói hoặc gõ, giúp hai người nói hai ngôn ngữ khác nhau hiểu nhau dễ dàng hơn (ví dụ như Google Translate hoặc ChatGPT với tính năng dịch song ngữ).\nCung cấp các bài học để học ngôn ngữ: Một số công cụ AI có thể hướng dẫn học ngôn ngữ mới, gợi ý cách phát âm, ngữ pháp, hoặc hội thoại mẫu.\nHai lựa chọn còn lại (sửa ngữ pháp và viết theo phong cách) chỉ giúp cải thiện ngôn ngữ trong cùng một tiếng, chứ không trực tiếp giúp giao tiếp giữa các ngôn ngữ khác nhau."
+    "explanation": "Đáp án theo khóa IIG:\nA. Dịch ngôn ngữ theo thời gian thực; B. Cung cấp các bài học để học ngôn ngữ\n\nGiải thích ôn tập:\nA/B tác động trực tiếp đến giao tiếp giữa các ngôn ngữ; sửa ngữ pháp/phong cách là hỗ trợ biên tập gián tiếp.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 168,
+      "officialAnswerText": "A. Dịch ngôn ngữ theo thời gian thực; B. Cung cấp các bài học để học ngôn ngữ",
+      "validatedAnswer": [
+        "im50tnwszdoj-so6ukx1e1817",
+        "oxt148hymdu4-tlon1g2472vr"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "ro738uwyg9lo-wcbo75qa0tpu",
@@ -689,7 +972,30 @@
         }
       ]
     },
-    "explanation": "Hiểu lầm 1: “AI sẽ thay thế con người trong giao tiếp.”\nAI có thể giúp con người giao tiếp tốt hơn, nhưng không thể thay thế cảm xúc và sự kết nối thật.\nHiểu lầm 2: “Ai cũng dùng được AI như nhau.”\nThực tế, không phải ai cũng có đủ thiết bị, internet hay kỹ năng để dùng AI, nên điều này cũng là hiểu lầm.\nHai lựa chọn còn lại (AI làm thay đổi công việc và AI phân tích dữ liệu) là đúng, không phải hiểu lầm."
+    "explanation": "Đáp án theo khóa IIG:\nA. AI sẽ thay thế sự giao tiếp giữa con người.; B. AI được mọi người trên thế giới sử dụng như nhau.\n\nGiải thích ôn tập:\nKhông có cơ sở khẳng định AI sẽ thay thế toàn bộ giao tiếp con người hoặc mọi người trên thế giới sử dụng AI như nhau, nên A/B là hai nhận định sai theo khóa. AI có thể hỗ trợ giao tiếp và thay đổi thị trường lao động; mức tiếp cận phụ thuộc hạ tầng, ngôn ngữ, chi phí và kỹ năng. Không cần khẳng định một giới hạn tương lai tuyệt đối để bác bỏ hai phát biểu quá rộng đó.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 171,
+      "officialAnswerText": "A. AI sẽ thay thế sự giao tiếp giữa con người.; B. AI được mọi người trên thế giới sử dụng như nhau.",
+      "validatedAnswer": [
+        "im50tnwszdoj-so6ukx1e1817",
+        "oxt148hymdu4-tlon1g2472vr"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "lfynr4o3diqw-1dsrankvcm2",
@@ -725,7 +1031,30 @@
         }
       ]
     },
-    "explanation": "Độ tuổi và quốc tịch là những yếu tố dễ làm AI bị “thiên lệch.”\nVí dụ: nếu AI được huấn luyện chủ yếu bằng dữ liệu từ người lớn tuổi hoặc chỉ từ một quốc gia, nó có thể hiểu sai hoặc đánh giá lệch khi gặp người trẻ hoặc đến từ quốc gia khác.\nKhả năng sử dụng công nghệ không phải là yếu tố gây thiên lệch dữ liệu.\nDữ liệu không đầy đủ không phải là yếu tố gây thiên lệch dữ liệu."
+    "explanation": "Đáp án theo khóa IIG:\nA. Độ tuổi; B. Quốc tịch\n\nGiải thích ôn tập:\nKhóa IIG chọn độ tuổi và quốc tịch. Hai ví dụ giúp nhận diện dữ liệu thiếu đại diện giữa các nhóm. Khi xây dựng hoặc đánh giá hệ thống thực tế, vẫn cần kiểm tra dữ liệu thiếu, địa lý, ngôn ngữ và khả năng tiếp cận công nghệ.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 172,
+      "officialAnswerText": "A. Độ tuổi; B. Quốc tịch",
+      "validatedAnswer": [
+        "im50tnwszdoj-so6ukx1e1817",
+        "oxt148hymdu4-tlon1g2472vr"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   },
   {
     "id": "5xrp2ux66win-a0g4mvdxwjx6",
@@ -761,6 +1090,29 @@
         }
       ]
     },
-    "explanation": "AI tạo sinh có thể nhận nhiều loại đầu vào khác nhau, như:\nVăn bản\nÂm thanh\nHình ảnh\nVideo"
+    "explanation": "Đáp án theo khóa IIG:\nA. Văn bản; B. Âm thanh\n\nGiải thích ôn tập:\nVăn bản và âm thanh là hai phương thức đầu vào theo khóa A/B, với điều kiện công cụ hỗ trợ. Công thức thống kê cũng có thể nhập dưới dạng văn bản, ảnh hoặc cấu trúc khác; nó là loại nội dung chứ không phải phương thức tách biệt. Vì vậy không nên nói công thức không thể dùng làm đầu vào AI. Phân biệt định dạng/phương thức đầu vào với nội dung được biểu đạt trong đó.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 174,
+      "officialAnswerText": "A. Văn bản; B. Âm thanh",
+      "validatedAnswer": [
+        "im50tnwszdoj-so6ukx1e1817",
+        "oxt148hymdu4-tlon1g2472vr"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=27"
+        }
+      ]
+    }
   }
 ]

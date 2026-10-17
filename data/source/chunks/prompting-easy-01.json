@@ -33,7 +33,27 @@
         }
       ]
     },
-    "explanation": "Một GPT tùy chỉnh (Custom GPT) có thể được cấu hình sẵn để tự động hỏi khách hàng 3 câu (con vật, màu sắc, cỡ áo), tạo thiết kế dựa trên câu trả lời và gửi kết quả cho Thomas mà không cần viết code — đúng quy trình lặp lại, tự động hoá cần thiết. Đăng liên kết đến DALL-E/Adobe chỉ là chia sẻ công cụ, không tạo ra luồng hỏi-đáp tự động; còn 'trang web không tương tác' thì không thể thu thập câu trả lời của khách hàng."
+    "explanation": "Đáp án theo khóa IIG:\nC. Tạo một GPT tùy chỉnh.\n\nGiải thích ôn tập:\nCustom GPT phù hợp để đặt ba câu hỏi và hướng dẫn tạo thiết kế. Tuy nhiên, chỉ cấu hình hướng dẫn không tự tạo khả năng gửi thiết kế ra ngoài cho Thomas: cần Actions/API hoặc quy trình tích hợp được cấp quyền để chuyển kết quả. Khóa là lựa chọn thiết kế giải pháp gần nhất trong các phương án, không phải cam kết tự động hóa toàn bộ chỉ bằng một prompt và không cần cấu hình kỹ thuật.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 9,
+      "officialAnswerText": "C. Tạo một GPT tùy chỉnh.",
+      "validatedAnswer": "78980lbj04x0-a2763u8ke09b",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "oj5ilbb6tozv-qzgt1gd9a3k3",
@@ -69,7 +89,27 @@
         }
       ]
     },
-    "explanation": "Để họa sĩ vẽ một tác phẩm mới lấy cảm hứng từ sách (không sao chép nguyên hình ảnh cũ), câu lệnh cần mô tả nội dung sáng tạo: tên sách, chủ đề, bối cảnh, phong cách nghệ thuật mong muốn và phác thảo bìa. Các lựa chọn khác chỉ liệt kê thông tin hành chính (tên tác giả, họa sĩ, số trang, kích thước) — không giúp ích cho việc hình dung ra một tác phẩm nghệ thuật mới."
+    "explanation": "Đáp án theo khóa IIG:\nD. Tên sách, chủ đề, bối cảnh, phong cách nghệ thuật mong muốn và phác thảo nội dung bìa sách.\n\nGiải thích ôn tập:\nD nêu chủ đề, bối cảnh, phong cách và ý tưởng bìa nên là lựa chọn trực tiếp nhất cho một minh họa sáng tạo theo nội dung sách. C cũng có nội dung sách và kích thước nên không phải chỉ gồm thông tin hành chính, nhưng thiếu định hướng chủ đề/phong cách rõ như D. Khóa chọn bộ dữ kiện hữu ích nhất trong các phương án, không có nghĩa tên họa sĩ hoặc thông số kích thước luôn vô ích.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 11,
+      "officialAnswerText": "D. Tên sách, chủ đề, bối cảnh, phong cách nghệ thuật mong muốn và phác thảo nội dung bìa sách.",
+      "validatedAnswer": "4idmyi3wjn7x-h9278p7qax9i",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "hrletoewagdj-qxnyebbxafxe",
@@ -105,7 +145,27 @@
         }
       ]
     },
-    "explanation": "Mục tiêu là 'khuyến khích học tập', nên câu lệnh cần yêu cầu chuyển nội dung sổ tay sang một định dạng hấp dẫn và dễ hiểu — đúng trọng tâm sư phạm. Các lựa chọn khác chỉ tập trung vào hình ảnh minh họa, giá trị công ty hay bố cục slide, không nhắm thẳng vào việc giúp người học dễ tiếp thu."
+    "explanation": "Đáp án theo khóa IIG:\nB. Tạo một bài thuyết trình chuyển đổi nội dung sang định dạng hấp dẫn và dễ hiểu.\n\nGiải thích ôn tập:\nMục tiêu là 'khuyến khích học tập', nên câu lệnh cần yêu cầu chuyển nội dung sổ tay sang một định dạng hấp dẫn và dễ hiểu — đúng trọng tâm sư phạm. Các lựa chọn khác chỉ tập trung vào hình ảnh minh họa, giá trị công ty hay bố cục slide, không nhắm thẳng vào việc giúp người học dễ tiếp thu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 12,
+      "officialAnswerText": "B. Tạo một bài thuyết trình chuyển đổi nội dung sang định dạng hấp dẫn và dễ hiểu.",
+      "validatedAnswer": "voitv2qvj168-9lcl6j31eip4",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "6w7lvumch3xi-bfw9a1f2nl3x",
@@ -141,7 +201,27 @@
         }
       ]
     },
-    "explanation": "Microsoft Copilot là trợ lý AI được tích hợp sẵn trong các công cụ phát triển và làm việc (Visual Studio, Teams, Office), có thể hỗ trợ nhóm thực hiện từng bước của quy trình (nhập dữ liệu, tính điểm, gửi tin nhắn) và cộng tác cùng con người theo vai trò trong dự án thực tế. Stable Diffusion và Adobe Firefly là công cụ tạo hình ảnh, không phù hợp cho việc phát triển ứng dụng phần mềm."
+    "explanation": "Đáp án theo khóa IIG:\nB. Microsoft Copilot\n\nGiải thích ôn tập:\nTrong tình huống đề, IIG chọn Microsoft Copilot để hỗ trợ cộng tác phát triển ứng dụng. Ghi nhớ lựa chọn này cho câu hỏi cố định. Khi chọn công cụ thực tế, cần kiểm tra chức năng và khả năng tích hợp của từng sản phẩm.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 13,
+      "officialAnswerText": "B. Microsoft Copilot",
+      "validatedAnswer": "qrl6vjbexeox-86lzq1ny0wu",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "vqp0g13lxkhs-a8zz4iium7cf",
@@ -179,7 +259,27 @@
         }
       ]
     },
-    "explanation": "Dữ liệu đính kèm thể hiện hai biến số liên tục: độ tuổi khách hàng và số sản phẩm đã mua. Biểu đồ phân tán (scatter plot) là loại biểu đồ phù hợp nhất để khám phá mối quan hệ/tương quan giữa hai biến số liên tục như vậy. Biểu đồ cột, biểu đồ tròn hay Histogram phù hợp hơn để so sánh tổng hay tỉ lệ giữa các nhóm, không thể hiện rõ mối tương quan giữa hai biến."
+    "explanation": "Đáp án theo khóa IIG:\nC. Tạo biểu đồ phân tán (scatter plot) để thể hiện mối quan hệ giữa doanh số của một sản phẩm cụ thể và độ tuổi người tiêu dùng.\n\nGiải thích ôn tập:\nBiểu đồ phân tán phù hợp để xem mối liên hệ giữa từng cặp tuổi khách hàng và số sản phẩm mua. Tuổi và số lượng đều là biến định lượng; số sản phẩm là số đếm rời rạc, không cần gọi cả hai là liên tục. Biểu đồ này giúp xem xu hướng/tương quan, không tự chứng minh tuổi gây ra thay đổi hành vi mua hàng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 34,
+      "officialAnswerText": "C. Tạo biểu đồ phân tán (scatter plot) để thể hiện mối quan hệ giữa doanh số của một sản phẩm cụ thể và độ tuổi người tiêu dùng.",
+      "validatedAnswer": "atpg8gb5tua1-475r3t4vieoa",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "jatf1jfike0s-5xe9v4o0eze6",
@@ -215,7 +315,27 @@
         }
       ]
     },
-    "explanation": "ChatGPT hỗ trợ đầu vào đa phương thức (multimodal): người dùng có thể gõ văn bản, đồng thời tải lên tài liệu (thông số sản phẩm) và hình ảnh (ảnh sản phẩm) trong cùng một cuộc trò chuyện để AI tham khảo khi sáng tác lời bài hát. Các lựa chọn khác chỉ liệt kê một phần trong số các loại đầu vào mà khách hàng đã thực sự cung cấp."
+    "explanation": "Đáp án theo khóa IIG:\nB. Tài liệu, văn bản và hình ảnh.\n\nGiải thích ôn tập:\nChatGPT hỗ trợ đầu vào đa phương thức (multimodal): người dùng có thể gõ văn bản, đồng thời tải lên tài liệu (thông số sản phẩm) và hình ảnh (ảnh sản phẩm) trong cùng một cuộc trò chuyện để AI tham khảo khi sáng tác lời bài hát. Các lựa chọn khác chỉ liệt kê một phần trong số các loại đầu vào mà khách hàng đã thực sự cung cấp.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 37,
+      "officialAnswerText": "B. Tài liệu, văn bản và hình ảnh.",
+      "validatedAnswer": "uxjgidptlo3d-xcj7eohlhmfn",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "rlx7x8ok7jjc-amt01w4knrd0",
@@ -251,7 +371,27 @@
         }
       ]
     },
-    "explanation": "Reverse prompting là kỹ thuật để AI chủ động đặt câu hỏi ngược lại nhằm thu thập thông tin còn thiếu, trước khi tạo kết quả. Yêu cầu AI 'hỏi tôi về từng chi tiết chính' chính là áp dụng đúng kỹ thuật này để đảm bảo resume có đủ mức độ chi tiết cần thiết. Các lựa chọn khác đều là AI tự soạn resume ngay lập tức dựa trên thông tin có sẵn hoặc mẫu chuẩn, không có bước hỏi ngược để làm rõ."
+    "explanation": "Đáp án theo khóa IIG:\nA. Hỏi tôi về từng chi tiết chính cần thiết cho resume của tôi, sau đó sử dụng thông tin đó để tạo resume.\n\nGiải thích ôn tập:\nTrong câu này, reverse prompting được dùng theo nghĩa để AI đặt câu hỏi làm rõ nhu cầu trước khi trả lời. Đây là một cách dùng thuật ngữ trong thực hành prompt. Câu 153 lại dùng nghĩa suy ngược prompt từ đầu ra; cần phân biệt hai nghĩa này khi học. Không thể lấy một định nghĩa duy nhất áp máy móc cho tất cả câu trong bộ nếu đề chưa nêu rõ.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 38,
+      "officialAnswerText": "A. Hỏi tôi về từng chi tiết chính cần thiết cho resume của tôi, sau đó sử dụng thông tin đó để tạo resume.",
+      "validatedAnswer": "9phpz5t30kvz-4jzsavu92rpa",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "wwhka9f534k9-3mtj2aqezw48",
@@ -287,7 +427,27 @@
         }
       ]
     },
-    "explanation": "Yêu cầu ban đầu nêu rõ video cần 'mang tính chuyên nghiệp và giáo dục', nên câu lệnh cần chỉ định rõ tông giọng nghiêm túc và thời gian đọc phù hợp — đây là câu lệnh duy nhất bám sát cả hai tiêu chí đó. Các lựa chọn khác hoặc chỉ tạo hình ảnh tĩnh (không phải video), hoặc dùng giọng điệu vui nhộn/phi chính thức (GIF, emoji, phát thanh viên tin tức) — trái với yêu cầu 'chuyên nghiệp'."
+    "explanation": "Đáp án theo khóa IIG:\nC. Sử dụng các slide đã cung cấp, tạo một video dài 2 phút (2-minute video) về củ dền. Giọng điệu (tone) nên mang tính chuyên nghiệp / nghiêm túc. Các hiệu ứng hoạt hình (animations) nên được điều chỉnh sao cho người xem có đủ thời gian để đọc nội dung văn bản được cung cấp.\n\nGiải thích ôn tập:\nYêu cầu ban đầu nêu rõ video cần 'mang tính chuyên nghiệp và giáo dục', nên câu lệnh cần chỉ định rõ tông giọng nghiêm túc và thời gian đọc phù hợp — đây là câu lệnh duy nhất bám sát cả hai tiêu chí đó. Các lựa chọn khác hoặc chỉ tạo hình ảnh tĩnh (không phải video), hoặc dùng giọng điệu vui nhộn/phi chính thức (GIF, emoji, phát thanh viên tin tức) — trái với yêu cầu 'chuyên nghiệp'.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 40,
+      "officialAnswerText": "C. Sử dụng các slide đã cung cấp, tạo một video dài 2 phút (2-minute video) về củ dền. Giọng điệu (tone) nên mang tính chuyên nghiệp / nghiêm túc. Các hiệu ứng hoạt hình (animations) nên được điều chỉnh sao cho người xem có đủ thời gian để đọc nội dung văn bản được cung cấp.",
+      "validatedAnswer": "du5ihl64roz9-w11geofsxxru",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "jb9cv7mnmkt3-ozviv1lj098c",
@@ -323,7 +483,27 @@
         }
       ]
     },
-    "explanation": "Bài tập ban đầu quá ngắn và thiên về cardio hơn là rèn sức mạnh, nên cách hiệu quả nhất là tinh chỉnh trực tiếp câu lệnh trước đó — yêu cầu AI điều chỉnh lại đúng mục tiêu ban đầu (30 phút, rèn sức mạnh). Các lựa chọn khác (thêm đầu ra, làm hoành tráng hơn, giải thích lợi ích) không sửa được vấn đề cốt lõi về thời lượng và trọng tâm bài tập."
+    "explanation": "Đáp án theo khóa IIG:\nA. Điều chỉnh để phù hợp với 30 phút tập rèn luyện sức mạnh\n\nGiải thích ôn tập:\nBài tập ban đầu quá ngắn và thiên về cardio hơn là rèn sức mạnh, nên cách hiệu quả nhất là tinh chỉnh trực tiếp câu lệnh trước đó — yêu cầu AI điều chỉnh lại đúng mục tiêu ban đầu (30 phút, rèn sức mạnh). Các lựa chọn khác (thêm đầu ra, làm hoành tráng hơn, giải thích lợi ích) không sửa được vấn đề cốt lõi về thời lượng và trọng tâm bài tập.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 43,
+      "officialAnswerText": "A. Điều chỉnh để phù hợp với 30 phút tập rèn luyện sức mạnh",
+      "validatedAnswer": "nu6l7crelg2-98m8g4yshq7l",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "4lyr3zwcb072-5xyu10mldvdz",
@@ -359,7 +539,27 @@
         }
       ]
     },
-    "explanation": "ChatGPT là giải pháp AI đa năng, có sẵn (out-of-box), có thể tạo cả văn bản (kế hoạch kinh doanh, tuyên bố sứ mệnh) lẫn hỗ trợ ý tưởng logo trong cùng một nền tảng hội thoại — phù hợp với yêu cầu 'giải pháp sẵn có' hơn các công cụ chuyên biệt chỉ tạo hình ảnh (Stable Diffusion, Adobe Firefly) hay nền tảng cần cấu hình kỹ thuật (Azure AI Studio)."
+    "explanation": "Đáp án theo khóa IIG:\nB. ChatGPT\n\nGiải thích ôn tập:\nChatGPT là giải pháp AI đa năng, có sẵn (out-of-box), có thể tạo cả văn bản (kế hoạch kinh doanh, tuyên bố sứ mệnh) lẫn hỗ trợ ý tưởng logo trong cùng một nền tảng hội thoại — phù hợp với yêu cầu 'giải pháp sẵn có' hơn các công cụ chuyên biệt chỉ tạo hình ảnh (Stable Diffusion, Adobe Firefly) hay nền tảng cần cấu hình kỹ thuật (Azure AI Studio).",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 55,
+      "officialAnswerText": "B. ChatGPT",
+      "validatedAnswer": "60xoamud4hva-trr1jpr3y8v6",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "jaad4hx3idzc-vdc86uo40kte",
@@ -395,7 +595,27 @@
         }
       ]
     },
-    "explanation": "Theo phán quyết, AI không được công nhận là người phát minh duy nhất — để nộp đơn sáng chế hợp lệ, cần có sự đóng góp trí tuệ của con người. Dùng AI để thiết kế lại (cải tiến) một sản phẩm đã có nghĩa là con người đưa ra ý tưởng nền tảng, AI chỉ là công cụ hỗ trợ — con người vẫn có thể được công nhận là nhà phát minh. Ngược lại, để AI tự tạo toàn bộ ý tưởng từ mẫu trống hoặc từ một sản phẩm chưa từng có nghĩa là AI là nguồn phát minh chính, không đáp ứng yêu cầu về người phát minh là con người."
+    "explanation": "Đáp án theo khóa IIG:\nB. Sử dụng AI để thiết kế lại sản phẩm hiện có nhằm tạo ra sản phẩm mới.\n\nGiải thích ôn tập:\nIIG chọn tình huống dùng AI hỗ trợ cải tiến thiết kế sản phẩm có sẵn, nhấn mạnh đóng góp của con người. Trong thực tế, khả năng nộp đơn hoặc được cấp bằng còn phụ thuộc đóng góp phát minh, tính mới và các điều kiện pháp luật; dùng AI cải tiến sản phẩm không tự bảo đảm đủ điều kiện.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 56,
+      "officialAnswerText": "B. Sử dụng AI để thiết kế lại sản phẩm hiện có nhằm tạo ra sản phẩm mới.",
+      "validatedAnswer": "tojok7m773gq-kqcxjhan5kv1",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "flkvqg28zxz7-4ub7dsqokr8n",
@@ -431,7 +651,27 @@
         }
       ]
     },
-    "explanation": "Để loại bỏ hoàn toàn một đối tượng khỏi khung hình mà vẫn giữ nguyên nội dung gốc, cách đúng là dùng AI 'lấp đầy' vùng đó bằng chính nền gốc phía sau (inpainting) — kỹ thuật loại bỏ đối tượng và tái tạo nền. Thêm chữ đè lên, đổi màu nền, hay cắt hai bên khung hình đều làm mất/biến dạng nội dung gốc thay vì chỉ xóa đúng đối tượng cần loại bỏ."
+    "explanation": "Đáp án theo khóa IIG:\nD. Thay thế học sinh mặc áo xanh lá trong đoạn phim bằng phần nền gốc của video.\n\nGiải thích ôn tập:\nĐể loại bỏ hoàn toàn một đối tượng khỏi khung hình mà vẫn giữ nguyên nội dung gốc, cách đúng là dùng AI 'lấp đầy' vùng đó bằng chính nền gốc phía sau (inpainting) — kỹ thuật loại bỏ đối tượng và tái tạo nền. Thêm chữ đè lên, đổi màu nền, hay cắt hai bên khung hình đều làm mất/biến dạng nội dung gốc thay vì chỉ xóa đúng đối tượng cần loại bỏ.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 59,
+      "officialAnswerText": "D. Thay thế học sinh mặc áo xanh lá trong đoạn phim bằng phần nền gốc của video.",
+      "validatedAnswer": "tgswckg7jga0-s5dctaa1mx6",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "2rsbir24jbc6-uvzgrrbz0vmw",
@@ -467,7 +707,27 @@
         }
       ]
     },
-    "explanation": "Câu lệnh đúng cụ thể hoá đầy đủ các yêu cầu đã nêu: bay đến sân bay trung tâm gần điểm tham quan, thuê xe, và tập trung vào các công viên quốc gia (địa điểm thiên nhiên ngoài trời) ở miền tây nước Mỹ trong 10 ngày. Các lựa chọn khác thiếu chi tiết cụ thể hoặc thêm điều kiện không được yêu cầu, khiến AI khó tạo đúng lịch trình mong muốn."
+    "explanation": "Đáp án theo khóa IIG:\nA. Tạo lịch trình du lịch 10 ngày bao gồm việc bay đến sân bay gần một trong các địa điểm tham quan và thuê xe để tham quan nhiều công viên quốc gia ở miền tây nước Mỹ.\n\nGiải thích ôn tập:\nCâu lệnh đúng cụ thể hoá đầy đủ các yêu cầu đã nêu: bay đến sân bay trung tâm gần điểm tham quan, thuê xe, và tập trung vào các công viên quốc gia (địa điểm thiên nhiên ngoài trời) ở miền tây nước Mỹ trong 10 ngày. Các lựa chọn khác thiếu chi tiết cụ thể hoặc thêm điều kiện không được yêu cầu, khiến AI khó tạo đúng lịch trình mong muốn.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 60,
+      "officialAnswerText": "A. Tạo lịch trình du lịch 10 ngày bao gồm việc bay đến sân bay gần một trong các địa điểm tham quan và thuê xe để tham quan nhiều công viên quốc gia ở miền tây nước Mỹ.",
+      "validatedAnswer": "1pqdyb1y6knz-dn1ycrjag8j",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "vayhr96nh7go-sdequb6y06ob",
@@ -503,7 +763,27 @@
         }
       ]
     },
-    "explanation": "Ước tính một giá trị số trong tương lai (nhiệt độ trung bình năm 2200) dựa trên chuỗi dữ liệu lịch sử là bài toán dự báo — đúng chức năng của AI dự đoán (Predictive AI). AI phân biệt dùng để phân loại, còn VAE và AI khuếch tán dùng để tạo sinh nội dung mới (hình ảnh...), không phải để dự báo xu hướng số liệu."
+    "explanation": "Đáp án theo khóa IIG:\nB. AI dự đoán (Predictive AI)\n\nGiải thích ôn tập:\nƯớc tính một giá trị số trong tương lai (nhiệt độ trung bình năm 2200) dựa trên chuỗi dữ liệu lịch sử là bài toán dự báo — đúng chức năng của AI dự đoán (Predictive AI). AI phân biệt dùng để phân loại, còn VAE và AI khuếch tán dùng để tạo sinh nội dung mới (hình ảnh...), không phải để dự báo xu hướng số liệu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 64,
+      "officialAnswerText": "B. AI dự đoán (Predictive AI)",
+      "validatedAnswer": "lvynpdeg7ypd-c1ukvc3fqy6i",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "blnr2kh4tu12-aq0slp4kolln",
@@ -539,7 +819,27 @@
         }
       ]
     },
-    "explanation": "Yêu cầu là 'giữ được bản chất dữ liệu gốc' nhưng vẫn hấp dẫn — tờ rơi dùng ngôn ngữ đơn giản kèm ví dụ minh họa vừa truyền tải đúng thông điệp dữ liệu (mối liên hệ chất béo–thuốc) vừa dễ tiếp cận với đúng đối tượng (bệnh nhân ở phòng chờ). Các lựa chọn khác (bài rap, câu chuyện hư cấu, bản tóm tắt đầy thuật ngữ kỹ thuật) làm sai lệch hoặc che khuất bản chất dữ liệu."
+    "explanation": "Đáp án theo khóa IIG:\nD. Tạo một tờ rơi đặt trong phòng chờ của bác sĩ, giải thích bằng ngôn ngữ đơn giản dữ liệu được trình bày trong biểu đồ cột, đồng thời cung cấp ví dụ minh họa.\n\nGiải thích ôn tập:\nD chuyển dữ liệu thành nội dung dễ hiểu và hạn chế suy diễn; đủ phù hợp mục tiêu truyền thông dữ liệu, dù B cũng có thể dùng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 66,
+      "officialAnswerText": "D. Tạo một tờ rơi đặt trong phòng chờ của bác sĩ, giải thích bằng ngôn ngữ đơn giản dữ liệu được trình bày trong biểu đồ cột, đồng thời cung cấp ví dụ minh họa.",
+      "validatedAnswer": "jnsq5wflargc-1z10qmbz91ye",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "7d4hjnn2d3ua-nymy6sphg2mt",
@@ -575,7 +875,27 @@
         }
       ]
     },
-    "explanation": "Tùy chỉnh một chatbot như Copilot (tương tự tạo GPT tùy chỉnh) được thực hiện bằng cách cung cấp hướng dẫn, ngữ cảnh và dữ liệu bổ sung qua giao diện trò chuyện — không cần huấn luyện lại toàn bộ mô hình ngôn ngữ lớn hay viết chương trình riêng, và việc này không bị giới hạn chỉ dành cho nhà phát triển gốc."
+    "explanation": "Đáp án theo khóa IIG:\nC. Bạn nhập vào chatbot một tập hợp các hướng dẫn và thông tin, giúp nó được định hướng cho một nhiệm vụ cụ thể.\n\nGiải thích ôn tập:\nCó thể tùy biến Copilot/agent bằng hướng dẫn và ngữ cảnh phù hợp với nhiệm vụ, thay vì nhất thiết huấn luyện lại toàn bộ mô hình. Tùy sản phẩm, còn cần cấu hình knowledge, tools, quyền truy cập hoặc Copilot Studio. Nhập chỉ dẫn trong một cuộc trò chuyện chỉ điều chỉnh cuộc trò chuyện đó; không tự bảo đảm một agent bền vững có đầy đủ tích hợp.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 76,
+      "officialAnswerText": "C. Bạn nhập vào chatbot một tập hợp các hướng dẫn và thông tin, giúp nó được định hướng cho một nhiệm vụ cụ thể.",
+      "validatedAnswer": "x7l7ukbkjp7n-ufsmwjgdc3o3",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "acsy948rl6hn-ri9aj5bedyw9",
@@ -611,7 +931,27 @@
         }
       ]
     },
-    "explanation": "Vấn đề là AI không biết giới hạn thể chất và lịch làm việc của Brianna, nên câu lệnh ban đầu thiếu ngữ cảnh cá nhân hoá. Bổ sung thông tin đó trực tiếp vào câu lệnh sẽ giúp AI tạo lịch tập phù hợp — trong khi cố dùng lịch cũ, yêu cầu tạo lại ngẫu nhiên, hay hỏi thêm về chế độ ăn đều không giải quyết đúng nguyên nhân gốc (thiếu thông tin cá nhân)."
+    "explanation": "Đáp án theo khóa IIG:\nB. Brianna nên cung cấp lịch trình và giới hạn thể chất của mình.\n\nGiải thích ôn tập:\nVấn đề là AI không biết giới hạn thể chất và lịch làm việc của Brianna, nên câu lệnh ban đầu thiếu ngữ cảnh cá nhân hoá. Bổ sung thông tin đó trực tiếp vào câu lệnh sẽ giúp AI tạo lịch tập phù hợp — trong khi cố dùng lịch cũ, yêu cầu tạo lại ngẫu nhiên, hay hỏi thêm về chế độ ăn đều không giải quyết đúng nguyên nhân gốc (thiếu thông tin cá nhân).",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 77,
+      "officialAnswerText": "B. Brianna nên cung cấp lịch trình và giới hạn thể chất của mình.",
+      "validatedAnswer": "ar14o525s628-rxe1xn23ku8s",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "tfz3ru3jxonn-2itnl761hip0",
@@ -647,6 +987,26 @@
         }
       ]
     },
-    "explanation": "Chuyển văn bản (kịch bản) thành âm thanh (giọng đọc thoại) là chức năng của AI Text-to-Audio. Audio-to-Text làm ngược lại (phiên âm giọng nói thành chữ), còn Audio-to-Video và Text-to-Text không tạo ra âm thanh giọng nói từ văn bản."
+    "explanation": "Đáp án theo khóa IIG:\nA. Text-to-Audio\n\nGiải thích ôn tập:\nChuyển văn bản (kịch bản) thành âm thanh (giọng đọc thoại) là chức năng của AI Text-to-Audio. Audio-to-Text làm ngược lại (phiên âm giọng nói thành chữ), còn Audio-to-Video và Text-to-Text không tạo ra âm thanh giọng nói từ văn bản.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 78,
+      "officialAnswerText": "A. Text-to-Audio",
+      "validatedAnswer": "y6dvjk6iz2m4-asf2b7wme4rw",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   }
 ]

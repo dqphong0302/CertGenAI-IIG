@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-17",
+  "total": 85,
+  "rewrittenSlides": [
+    {
+      "topic": "methods",
+      "slide": 1,
+      "title": "AI tạo sinh tạo ra điều gì?"
+    },
+    {
+      "topic": "methods",
+      "slide": 3,
+      "title": "AI tạo sinh và công cụ tìm kiếm"
+    },
+    {
+      "topic": "methods",
+      "slide": 8,
+      "title": "Thu thập, tiền xử lý và gán nhãn"
+    },
+    {
+      "topic": "methods",
+      "slide": 9,
+      "title": "Huấn luyện và suy luận"
+    },
+    {
+      "topic": "methods",
+      "slide": 15,
+      "title": "Token và tokenization trong mô hình ngôn ngữ"
+    },
+    {
+      "topic": "methods",
+      "slide": 18,
+      "title": "GPU, bộ nhớ và tài nguyên chạy mô hình"
+    },
+    {
+      "topic": "methods",
+      "slide": 19,
+      "title": "Internet, dữ liệu và tùy biến"
+    },
+    {
+      "topic": "methods",
+      "slide": 22,
+      "title": "Công cụ hỗ trợ doanh nghiệp và quy trình"
+    },
+    {
+      "topic": "methods",
+      "slide": 24,
+      "title": "Chọn công cụ theo nhiệm vụ"
+    },
+    {
+      "topic": "prompting",
+      "slide": 1,
+      "title": "Cấu trúc prompt: vai trò, nhiệm vụ và ngữ cảnh"
+    },
+    {
+      "topic": "prompting",
+      "slide": 5,
+      "title": "One-shot và few-shot: đếm ví dụ mẫu"
+    },
+    {
+      "topic": "prompting",
+      "slide": 7,
+      "title": "Quy trình dàn ý, rà soát rồi viết"
+    },
+    {
+      "topic": "prompting",
+      "slide": 10,
+      "title": "Reverse prompting: hai cách dùng trong tài liệu"
+    },
+    {
+      "topic": "prompting",
+      "slide": 12,
+      "title": "Self-consistency: nhiều lần tạo và đối chiếu"
+    },
+    {
+      "topic": "prompting",
+      "slide": 13,
+      "title": "Knowledge generation: mở nền rồi áp dụng"
+    },
+    {
+      "topic": "prompting",
+      "slide": 17,
+      "title": "Grounding và cách xử lý thiếu dữ liệu"
+    },
+    {
+      "topic": "prompting",
+      "slide": 21,
+      "title": "Tạo, sửa và mô tả ảnh"
+    },
+    {
+      "topic": "prompting",
+      "slide": 22,
+      "title": "Video: chuyển động, nội suy, avatar và phụ đề"
+    },
+    {
+      "topic": "verification",
+      "slide": 1,
+      "title": "Xác minh bằng chứng độc lập"
+    },
+    {
+      "topic": "verification",
+      "slide": 8,
+      "title": "Bám nguồn và kiểm tra trích dẫn"
+    },
+    {
+      "topic": "verification",
+      "slide": 9,
+      "title": "Giảm tính ngẫu nhiên và nêu điều chưa biết"
+    },
+    {
+      "topic": "verification",
+      "slide": 16,
+      "title": "Dữ liệu, tiền xử lý và mức thiên lệch"
+    },
+    {
+      "topic": "verification",
+      "slide": 17,
+      "title": "Tinh chỉnh và guardrails"
+    },
+    {
+      "topic": "verification",
+      "slide": 18,
+      "title": "Checklist trước khi dùng nội dung AI"
+    },
+    {
+      "topic": "responsible",
+      "slide": 1,
+      "title": "Thiên lệch là gì?"
+    },
+    {
+      "topic": "responsible",
+      "slide": 2,
+      "title": "Dữ liệu thiếu và tính đại diện"
+    },
+    {
+      "topic": "responsible",
+      "slide": 3,
+      "title": "Thiên lệch lịch sử"
+    },
+    {
+      "topic": "responsible",
+      "slide": 4,
+      "title": "Bias qua các giai đoạn"
+    },
+    {
+      "topic": "responsible",
+      "slide": 5,
+      "title": "Prompt có thể dẫn dắt đầu ra"
+    },
+    {
+      "topic": "responsible",
+      "slide": 6,
+      "title": "Viết prompt cân bằng"
+    },
+    {
+      "topic": "responsible",
+      "slide": 7,
+      "title": "Dữ liệu định danh cá nhân — PII"
+    },
+    {
+      "topic": "responsible",
+      "slide": 8,
+      "title": "Dữ liệu nhạy cảm và dữ liệu nội bộ"
+    },
+    {
+      "topic": "responsible",
+      "slide": 9,
+      "title": "Che dữ liệu trước khi chia sẻ"
+    },
+    {
+      "topic": "responsible",
+      "slide": 10,
+      "title": "Token bảo mật khác token ngôn ngữ"
+    },
+    {
+      "topic": "responsible",
+      "slide": 11,
+      "title": "Opt-out và chính sách dữ liệu"
+    },
+    {
+      "topic": "responsible",
+      "slide": 12,
+      "title": "Quyền sử dụng nội dung"
+    },
+    {
+      "topic": "responsible",
+      "slide": 13,
+      "title": "Nhãn hiệu và khả năng gây nhầm lẫn"
+    },
+    {
+      "topic": "responsible",
+      "slide": 14,
+      "title": "Sáng chế: tách người phát minh, đơn nộp và bảo hộ"
+    },
+    {
+      "topic": "responsible",
+      "slide": 15,
+      "title": "Kiểm tra rủi ro theo bối cảnh"
+    },
+    {
+      "topic": "responsible",
+      "slide": 16,
+      "title": "Thu thập nguồn và ghi nhận quy trình"
+    },
+    {
+      "topic": "responsible",
+      "slide": 17,
+      "title": "Thông tin sai có thể gây hại danh dự"
+    },
+    {
+      "topic": "responsible",
+      "slide": 18,
+      "title": "Mạo danh, bắt nạt và rủi ro danh tính"
+    },
+    {
+      "topic": "responsible",
+      "slide": 19,
+      "title": "Deepfake, minh bạch và gắn nhãn"
+    },
+    {
+      "topic": "responsible",
+      "slide": 20,
+      "title": "Con người rà soát và phê duyệt"
+    },
+    {
+      "topic": "responsible",
+      "slide": 21,
+      "title": "Tác động xã hội và khoảng cách số"
+    }
+  ],
+  "sourceNote": "Source links identify related curriculum sections, not an official erratum. Stable positions retained."
+}

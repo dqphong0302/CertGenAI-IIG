@@ -33,7 +33,27 @@
         }
       ]
     },
-    "explanation": "Yêu cầu cụ thể là phong cách 'cổ điển' và màu sắc 'đậm nét/rực rỡ' — chỉ câu lệnh này trực tiếp chỉ định cả hai yếu tố phong cách nghệ thuật đó. Các lựa chọn khác chỉ thêm chi tiết về giống chó, kích thước ảnh, hoặc lặp lại mô tả ban đầu mà không đề cập đến phong cách hay màu sắc mong muốn."
+    "explanation": "Đáp án theo khóa IIG:\nD. Tác phẩm nghệ thuật cổ điển về một chú chó vui vẻ trong công viên thành phố sử dụng màu sắc rực rỡ\n\nGiải thích ôn tập:\nD là lựa chọn sát nhất vì nêu phong cách cổ điển và màu rực rỡ, hai yếu tố thiếu trong kết quả ban đầu. Tuy nhiên không lựa chọn nào nêu rõ toàn bộ yêu cầu về ánh sáng; không được khẳng định D bảo đảm đủ mọi chi tiết. Các phương án còn lại thêm màu sắc, kích thước hoặc giống chó nhưng không kết hợp phong cách yêu cầu. Giữ D như phương án tốt nhất trong danh sách cố định.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 1,
+      "officialAnswerText": "D. Tác phẩm nghệ thuật cổ điển về một chú chó vui vẻ trong công viên thành phố sử dụng màu sắc rực rỡ",
+      "validatedAnswer": "rjyrjeozdktn-rvhieo913mpa",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "a5r6ss2pnklc-15acris7wlz6",
@@ -69,7 +89,27 @@
         }
       ]
     },
-    "explanation": "Vấn đề cốt lõi là kết quả 'quá phức tạp' so với ĐỐI TƯỢNG học sinh tiểu học, nên cách tinh chỉnh trực tiếp và hiệu quả nhất là chỉ rõ đối tượng mục tiêu (trẻ nhỏ) để AI tự điều chỉnh từ vựng, độ dài và cách diễn đạt phù hợp. 'Đơn giản hoá', 'ngắn gọn hơn' hay 'tránh ngôn ngữ phức tạp' đều mơ hồ hơn — không chỉ rõ AI nên đơn giản hoá theo chuẩn nào."
+    "explanation": "Đáp án theo khóa IIG:\nC. Viết lại cho đối tượng mục tiêu là trẻ nhỏ\n\nGiải thích ôn tập:\nVấn đề cốt lõi là kết quả 'quá phức tạp' so với ĐỐI TƯỢNG học sinh tiểu học, nên cách tinh chỉnh trực tiếp và hiệu quả nhất là chỉ rõ đối tượng mục tiêu (trẻ nhỏ) để AI tự điều chỉnh từ vựng, độ dài và cách diễn đạt phù hợp. 'Đơn giản hoá', 'ngắn gọn hơn' hay 'tránh ngôn ngữ phức tạp' đều mơ hồ hơn — không chỉ rõ AI nên đơn giản hoá theo chuẩn nào.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 2,
+      "officialAnswerText": "C. Viết lại cho đối tượng mục tiêu là trẻ nhỏ",
+      "validatedAnswer": "y3mk7mqif1at-w6cba1j7xz6o",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "djyx2yuc06b0-vqvs96sznf4d",
@@ -105,7 +145,27 @@
         }
       ]
     },
-    "explanation": "ChatGPT vốn được xây dựng trên kiến trúc Transformer mặc định (không phải khuếch tán/diffusion — kỹ thuật đó dùng cho tạo hình ảnh). Để tuỳ biến hành vi theo từng môn học mà không cần huấn luyện lại từ đầu, cách hiệu quả nhất là giữ nguyên mô hình nền tảng và bổ sung hướng dẫn cụ thể cho từng môn."
+    "explanation": "Đáp án theo khóa IIG:\nC. Mô hình dựa trên bộ chuyển đổi mặc định với những hướng dẫn cụ thể cho từng môn học.\n\nGiải thích ôn tập:\nPhương án dùng mô hình Transformer có sẵn cùng hướng dẫn theo môn học phù hợp mục tiêu tùy biến gia sư. Chỉ dẫn, tài liệu tham khảo và truy xuất kiến thức có thể thay đổi hành vi mà không cần cập nhật trọng số. Fine-tuning là một lựa chọn khác khi có nhu cầu và dữ liệu phù hợp. Không suy ra rằng diffusion chỉ có thể tạo ảnh hoặc mọi kiểu tùy biến đều là huấn luyện lại.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 7,
+      "officialAnswerText": "C. Mô hình dựa trên bộ chuyển đổi mặc định với những hướng dẫn cụ thể cho từng môn học.",
+      "validatedAnswer": "1rnn3lj0q1r7-s2cbxcf881b",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "9ng6hh9o2uze-ltu9a6otyx6q",
@@ -141,7 +201,27 @@
         }
       ]
     },
-    "explanation": "Câu trả lời ban đầu đã khá chung chung (nói về xu hướng AI nói chung); để có phản hồi 'chi tiết và có mục tiêu hơn', prompt tiếp theo cần thu hẹp phạm vi vào các ví dụ cụ thể và ngành cụ thể — đúng như lựa chọn này yêu cầu. Các lựa chọn khác lại mở RỘNG phạm vi hơn (dự đoán 10 năm tới, tóm tắt lịch sử từ đầu, yêu cầu thông số phần cứng không liên quan), đi ngược lại mục tiêu thu hẹp và làm rõ chi tiết."
+    "explanation": "Đáp án theo khóa IIG:\nD. Cung cấp các ví dụ chi tiết về những đột phá gần đây trong các thuật toán học máy và mô tả tác động của chúng đối với ngành công nghiệp ô tô và tài chính.\n\nGiải thích ôn tập:\nCâu trả lời ban đầu đã khá chung chung (nói về xu hướng AI nói chung); để có phản hồi 'chi tiết và có mục tiêu hơn', prompt tiếp theo cần thu hẹp phạm vi vào các ví dụ cụ thể và ngành cụ thể — đúng như lựa chọn này yêu cầu. Các lựa chọn khác lại mở RỘNG phạm vi hơn (dự đoán 10 năm tới, tóm tắt lịch sử từ đầu, yêu cầu thông số phần cứng không liên quan), đi ngược lại mục tiêu thu hẹp và làm rõ chi tiết.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 15,
+      "officialAnswerText": "D. Cung cấp các ví dụ chi tiết về những đột phá gần đây trong các thuật toán học máy và mô tả tác động của chúng đối với ngành công nghiệp ô tô và tài chính.",
+      "validatedAnswer": "8ah1lhgz90ty-58p83ygwlwov",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "amtblyt7pg8u-x8mjp9zezls8",
@@ -177,7 +257,27 @@
         }
       ]
     },
-    "explanation": "Câu lệnh cung cấp một ví dụ mẫu hoàn chỉnh (câu hỏi + câu trả lời về pha trộn màu) trước khi đưa ra câu hỏi mới cần AI trả lời theo đúng mẫu đó — đây chính là đặc trưng của few-shot prompting (học từ vài ví dụ mẫu). Zero-shot không có ví dụ nào, chain-of-thought yêu cầu AI trình bày từng bước suy luận, còn self-consistency là kỹ thuật đối chiếu nhiều lần trả lời để chọn kết quả nhất quán nhất — không khớp với cấu trúc câu lệnh này."
+    "explanation": "Đáp án theo khóa IIG:\nD. Few-shot\n\nGiải thích ôn tập:\nĐề cung cấp một cặp câu hỏi–trả lời mẫu nên tên chính xác theo số ví dụ là one-shot. Trong các lựa chọn không có one-shot, few-shot có thể được dùng theo nghĩa nhóm rộng “có ví dụ mẫu” và là đáp án gần nhất. Không được giải thích rằng nhiều từ hoặc nhiều yêu cầu tự biến prompt thành few-shot; số shot được xác định bằng demonstration, không phải độ dài prompt.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 28,
+      "officialAnswerText": "D. Few-shot",
+      "validatedAnswer": "jcio0fkwc2ya-qebfl4w2m85q",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "7pfkjty4hto6-rx5i0iy0sxlg",
@@ -213,7 +313,27 @@
         }
       ]
     },
-    "explanation": "Đây chính là định nghĩa của prompt chaining: chia nhỏ nhiệm vụ lớn thành các bước, và đầu ra của bước này trở thành đầu vào của bước kế tiếp. Các lựa chọn khác mô tả những kỹ thuật khác — chuyển chủ đề tuần tự không liên quan, chain-of-thought (minh hoạ cách tính rồi yêu cầu áp dụng tương tự), hoặc few-shot (đưa ví dụ mẫu để AI làm theo)."
+    "explanation": "Đáp án theo khóa IIG:\nA. Chia nhỏ một nhiệm vụ thành các nhiệm vụ con nhỏ hơn và sử dụng kết quả của một prompt làm đầu vào cho prompt tiếp theo.\n\nGiải thích ôn tập:\nĐây chính là định nghĩa của prompt chaining: chia nhỏ nhiệm vụ lớn thành các bước, và đầu ra của bước này trở thành đầu vào của bước kế tiếp. Các lựa chọn khác mô tả những kỹ thuật khác — chuyển chủ đề tuần tự không liên quan, chain-of-thought (minh hoạ cách tính rồi yêu cầu áp dụng tương tự), hoặc few-shot (đưa ví dụ mẫu để AI làm theo).",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 41,
+      "officialAnswerText": "A. Chia nhỏ một nhiệm vụ thành các nhiệm vụ con nhỏ hơn và sử dụng kết quả của một prompt làm đầu vào cho prompt tiếp theo.",
+      "validatedAnswer": "6fax15139vbb-13013sl4w4rd",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "l8djielfb731-kmxrii9lzdy1",
@@ -249,7 +369,27 @@
         }
       ]
     },
-    "explanation": "Vì đã có quyền truy cập TOÀN BỘ tác phẩm của cả hai tác giả, cách phù hợp nhất là huấn luyện một mô hình ngôn ngữ (kiến trúc Transformer — nền tảng của các mô hình GPT) trực tiếp trên dữ liệu văn bản đó để học phong cách viết. Mạng CNN dùng cho ảnh, mô hình khuếch tán dùng để tạo hình ảnh, còn một chương trình xác định theo tần suất từ quá đơn giản để tái hiện được phong cách văn chương phức tạp."
+    "explanation": "Đáp án theo khóa IIG:\nD. Tạo một mô hình GPT nhẹ dựa trên kiến trúc Transformer, được huấn luyện từ các tác phẩm của Shakespeare và H. G. Wells.\n\nGiải thích ôn tập:\nVì đã có quyền truy cập TOÀN BỘ tác phẩm của cả hai tác giả, cách phù hợp nhất là huấn luyện một mô hình ngôn ngữ (kiến trúc Transformer — nền tảng của các mô hình GPT) trực tiếp trên dữ liệu văn bản đó để học phong cách viết. Mạng CNN dùng cho ảnh, mô hình khuếch tán dùng để tạo hình ảnh, còn một chương trình xác định theo tần suất từ quá đơn giản để tái hiện được phong cách văn chương phức tạp.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 57,
+      "officialAnswerText": "D. Tạo một mô hình GPT nhẹ dựa trên kiến trúc Transformer, được huấn luyện từ các tác phẩm của Shakespeare và H. G. Wells.",
+      "validatedAnswer": "x0m3o6ymkyd4-g8n4yhad26gj",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "e1xbgscuuw53-rys8k6a1kgfm",
@@ -285,7 +425,27 @@
         }
       ]
     },
-    "explanation": "Để logo hấp dẫn hơn với nhóm khách hàng quan tâm đến MÔI TRƯỜNG SINH THÁI, câu lệnh cần bổ sung các yếu tố hình ảnh cụ thể gợi liên tưởng đến hệ sinh thái tự nhiên (vườn xanh, hoa, ong) — đúng hướng nhắm đối tượng. Các lựa chọn khác chỉ yêu cầu 'chi tiết hơn' hoặc 'hấp dẫn hơn' một cách mơ hồ, không cho AI biết cụ thể cần thêm yếu tố nào."
+    "explanation": "Đáp án theo khóa IIG:\nC. Thêm một khu vườn với cỏ xanh, hoa đầy màu sắc và ong.\n\nGiải thích ôn tập:\nĐể logo hấp dẫn hơn với nhóm khách hàng quan tâm đến MÔI TRƯỜNG SINH THÁI, câu lệnh cần bổ sung các yếu tố hình ảnh cụ thể gợi liên tưởng đến hệ sinh thái tự nhiên (vườn xanh, hoa, ong) — đúng hướng nhắm đối tượng. Các lựa chọn khác chỉ yêu cầu 'chi tiết hơn' hoặc 'hấp dẫn hơn' một cách mơ hồ, không cho AI biết cụ thể cần thêm yếu tố nào.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 67,
+      "officialAnswerText": "C. Thêm một khu vườn với cỏ xanh, hoa đầy màu sắc và ong.",
+      "validatedAnswer": "41ersb2yrp8i-8o6e91ppfz9u",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "xfg6p81iqeb3-9wpc62krb8g4",
@@ -321,7 +481,27 @@
         }
       ]
     },
-    "explanation": "Vì đang dùng CÙNG một luồng trò chuyện đã tạo các bài đăng trước, AI đã có sẵn ngữ cảnh về định dạng cũ trong bộ nhớ hội thoại — chỉ cần yêu cầu trực tiếp 'làm giống các bài trước' là đủ. Các lựa chọn khác hoặc đi lệch mục tiêu (tối ưu hashtag), hoặc yêu cầu thêm ảnh chụp màn hình/bài viết của người khác một cách không cần thiết khi AI đã có sẵn ngữ cảnh cần thiết."
+    "explanation": "Đáp án theo khóa IIG:\nA. Vui lòng chỉnh sửa bài đăng để nó trông giống với các bài đăng trên mạng xã hội đã tạo trước đó.\n\nGiải thích ôn tập:\nA tham chiếu định dạng các bài trước trong cùng luồng hội thoại nên trực tiếp giải quyết vấn đề định dạng. Hiệu quả phụ thuộc các bài trước còn nằm trong ngữ cảnh hoặc được hệ thống truy xuất; cùng luồng chat không bảo đảm AI còn dùng được mọi chi tiết vô hạn. Các lựa chọn khác tập trung hashtag, phản hồi hoặc bài người khác, không sửa đúng định dạng đã dùng. Nếu hệ thống không còn thấy mẫu, cần cung cấp lại mẫu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 69,
+      "officialAnswerText": "A. Vui lòng chỉnh sửa bài đăng để nó trông giống với các bài đăng trên mạng xã hội đã tạo trước đó.",
+      "validatedAnswer": "hx86i9ui55be-o73a4h3rt6fu",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "dfdx3z2eb3qh-os9bvpyhyaw",
@@ -357,7 +537,27 @@
         }
       ]
     },
-    "explanation": "Nicole đã hài lòng với NỘI DUNG, chỉ cần kiểm tra các YẾU TỐ KỸ THUẬT VIẾT (ngữ pháp, chính tả, dấu câu, viết hoa) — câu lệnh này nhắm đúng vào yêu cầu đó. Các lựa chọn khác lại yêu cầu AI đánh giá/viết lại NỘI DUNG hoặc tạo bài luận mới, không phải mục tiêu Nicole đang cần."
+    "explanation": "Đáp án theo khóa IIG:\nD. Phân tích tài liệu đã tải lên. Đưa ra các đề xuất về ngữ pháp, dấu câu, chính tả và viết hoa.\n\nGiải thích ôn tập:\nNicole đã hài lòng với NỘI DUNG, chỉ cần kiểm tra các YẾU TỐ KỸ THUẬT VIẾT (ngữ pháp, chính tả, dấu câu, viết hoa) — câu lệnh này nhắm đúng vào yêu cầu đó. Các lựa chọn khác lại yêu cầu AI đánh giá/viết lại NỘI DUNG hoặc tạo bài luận mới, không phải mục tiêu Nicole đang cần.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 79,
+      "officialAnswerText": "D. Phân tích tài liệu đã tải lên. Đưa ra các đề xuất về ngữ pháp, dấu câu, chính tả và viết hoa.",
+      "validatedAnswer": "vmr14n5ybjmu-3ytg00smjgt5",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "gg7yvej444w5-4r8r2uu5xbq7",
@@ -393,7 +593,27 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: D. Một ngôi nhà được thêm vào một bức ảnh sau khi được mô tả.\nGiải thích: Generative AI là trí tuệ nhân tạo tạo ra nội dung mới (văn bản, hình ảnh, âm thanh, video, mã, v.v.) dựa trên mô tả hoặc dữ liệu đầu vào.\nA → Phân tích dữ liệu (AI phân tích, không phải generative).\nB → Phân loại cảm xúc (AI phân tích hoặc machine learning).\nC → Dự đoán số lượng (AI dự báo, không sinh nội dung).\nD → Tạo hình ảnh mới từ mô tả → đây là đặc trưng của Generative AI."
+    "explanation": "Đáp án theo khóa IIG:\nD. Một ngôi nhà được thêm vào một bức ảnh sau khi được mô tả.\n\nGiải thích ôn tập:\nD trực tiếp thể hiện việc sinh nội dung ảnh mới từ mô tả nên là ví dụ rõ nhất về đầu ra tạo sinh. Các lựa chọn khác mô tả phát hiện bất thường, phân lớp cảm xúc và dự báo nhân sự: đó là các mục tiêu phân tích/dự báo theo cách phân nhóm của bài. Một LLM tạo sinh vẫn có thể được dùng cho các tác vụ đó; không thể suy ra kiến trúc mô hình chỉ từ tên nhiệm vụ. Giữ D vì dấu hiệu tạo ảnh rõ nhất, không vì AI tạo sinh không thể phân loại.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 82,
+      "officialAnswerText": "D. Một ngôi nhà được thêm vào một bức ảnh sau khi được mô tả.",
+      "validatedAnswer": "dlneahkt7w6x-u9igtxx6cggl",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "g4m8ak396i07-yyy9nl2s17da",
@@ -429,7 +649,27 @@
         }
       ]
     },
-    "explanation": "ChatGPT là công cụ tốt nhất trong việc tạo ra các cuộc hội thoại giống con người, trả lời câu hỏi và cung cấp thông tin về nhiều chủ đề khác nhau.\nAzure AI Studio là một nền tảng mạnh mẽ dành cho các doanh nghiệp để phát triển, triển khai và quản lý các giải pháp AI tùy chỉnh.\nStable Diffusion là một công cụ mạnh mẽ, có khả năng tùy chỉnh cao để tạo và chỉnh sửa hình ảnh.\nAdobe Firefly chuyên biệt cho quy trình làm việc sáng tạo, cung cấp tính năng tạo hình ảnh và video được tích hợp với bộ công cụ của Adobe."
+    "explanation": "Đáp án theo khóa IIG:\nA. ChatGPT\n\nGiải thích ôn tập:\nChatGPT là công cụ tốt nhất trong việc tạo ra các cuộc hội thoại giống con người, trả lời câu hỏi và cung cấp thông tin về nhiều chủ đề khác nhau.\nAzure AI Studio là một nền tảng mạnh mẽ dành cho các doanh nghiệp để phát triển, triển khai và quản lý các giải pháp AI tùy chỉnh.\nStable Diffusion là một công cụ mạnh mẽ, có khả năng tùy chỉnh cao để tạo và chỉnh sửa hình ảnh.\nAdobe Firefly chuyên biệt cho quy trình làm việc sáng tạo, cung cấp tính năng tạo hình ảnh và video được tích hợp với bộ công cụ của Adobe.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 85,
+      "officialAnswerText": "A. ChatGPT",
+      "validatedAnswer": "k8962cyv948a-c3y5nxdk8cyb",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "ssbwtnpqysu9-64i9vzlqfbde",
@@ -465,7 +705,27 @@
         }
       ]
     },
-    "explanation": "Câu lệnh theo Tư duy chuỗi (Chain-of-thought prompting) bao gồm việc khái niệm hóa một dàn ý, xem lại dàn ý đó, và sau đó xem lại một đoạn văn.\nTinh chỉnh lặp lại (Iterative refinement) tạo ra một phản hồi ban đầu và sau đó tinh chỉnh nó thông qua một loạt các câu lệnh khiến đầu ra trở nên chi tiết hơn.\nCâu lệnh đệ quy (Recursive prompting) sử dụng một đầu ra làm đầu vào cho các câu lệnh tiếp theo.\nCâu lệnh phân tách (Decomposition prompting) chia nhỏ một nhiệm vụ thành các nhiệm vụ nhỏ hơn."
+    "explanation": "Đáp án theo khóa IIG:\nA. Chain-of-thought - Câu lệnh theo Tư duy chuỗi\n\nGiải thích ôn tập:\nChấp nhận A theo cách dạy nền tảng: yêu cầu xử lý có các bước dàn ý, rà soát, viết. Chưa mô tả rõ nhiều lượt nên không cần đổi thành kỹ thuật khác.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 100,
+      "officialAnswerText": "A. Chain-of-thought - Câu lệnh theo Tư duy chuỗi",
+      "validatedAnswer": "1kztmaoxgeu7-hcwpn0t3s941",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "hdy9fujw0dc8-ke6kq1884qvs",
@@ -501,7 +761,27 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: ✅ C. Tham khảo hướng dẫn phong cách\nGiải thích:\nTham khảo hướng dẫn phong cách (style guide) giúp ChatGPT tuân thủ cùng một bộ quy tắc về: Ngữ pháp (grammar) Chính tả (spelling) Cách dùng từ (word choice) → đảm bảo tính nhất quán giữa các bài viết.\nA. Đối với người → không liên quan đến yêu cầu chỉnh sửa.\nB. Bảng thuật ngữ chỉ hữu ích cho từ vựng chuyên ngành, không đủ để đảm bảo thống nhất toàn bài.\nD. Một vai trò (ví dụ “đóng vai biên tập viên”) giúp điều chỉnh giọng điệu, nhưng không đảm bảo tính nhất quán ngôn ngữ giữa nhiều bài."
+    "explanation": "Đáp án theo khóa IIG:\nC. Bản hướng dẫn sử dụng phong cách trình bày.\n\nGiải thích ôn tập:\nC. Tham khảo hướng dẫn phong cách là lựa chọn trực tiếp nhất để thống nhất ngữ pháp, cách viết và quy ước biên tập. “Biên tập viên sao chép” là cách dịch không tự nhiên của copyeditor, tức biên tập/người hiệu đính nội dung. Hướng dẫn phong cách giúp định hướng nhưng vẫn cần soát lại lỗi; không bảo đảm AI tuân thủ đúng mọi quy tắc chỉ sau một lần nhập.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 134,
+      "officialAnswerText": "C. Bản hướng dẫn sử dụng phong cách trình bày.",
+      "validatedAnswer": "8lcu0t3i8m3o-9g1se6ycmtpd",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "7dme0nsnm2uw-xgxk10krp566",
@@ -537,7 +817,27 @@
         }
       ]
     },
-    "explanation": "Câu lệnh tốt nhất trong tình huống này là câu không sử dụng từ viết tắt hoặc ký hiệu có thể bị hiểu theo nhiều nghĩa khác nhau.\nDo đó, câu lệnh “Giải thích cách các tệp XML được sử dụng để cấu hình các hệ thống quản lý học tập” là lựa chọn chính xác nhất.\nCụm viết tắt LMS không nên dùng ở đây, vì LMS có thể mang nhiều nghĩa khác nhau, ví dụ như Lightning Message Service, cũng là một hệ thống sử dụng tệp XML để cấu hình.\nNgoài ra, các từ như configure (cấu hình) cũng không nên viết tắt, nên sử dụng từ đầy đủ bất cứ khi nào có thể.\nKhông nên yêu cầu AI cấu hình một hệ thống LMS cụ thể, trừ khi hệ thống đó sử dụng định dạng đã được tiêu chuẩn hóa, ví dụ như SCORM, để cấu trúc dữ liệu."
+    "explanation": "Đáp án theo khóa IIG:\nA. Giải thích cách các tệp XML được sử dụng để cấu hình các hệ thống quản lý học tập.\n\nGiải thích ôn tập:\nGiữ A là prompt phù hợp nhất cho người quản trị mới: yêu cầu giải thích rõ cách XML được dùng để cấu hình, và viết đầy đủ tên hệ thống. B có thể trả lời đúng khi AI hiểu LMS, nhưng dùng viết tắt kém minh bạch hơn trong bối cảnh người mới; C diễn đạt mơ hồ hơn; D chưa nêu hệ thống cụ thể. Từ “phù hợp nhất” cho phép ưu tiên độ rõ, không cần coi B là vô hiệu. Guide PDF 120 hỗ trợ nguyên tắc ngữ cảnh, không có quy tắc cấm viết tắt.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 137,
+      "officialAnswerText": "A. Giải thích cách các tệp XML được sử dụng để cấu hình các hệ thống quản lý học tập.",
+      "validatedAnswer": "79373b10fre6-som7msidpf72",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   },
   {
     "id": "q17g3rypneay-btjift7pwqpv",
@@ -573,6 +873,26 @@
         }
       ]
     },
-    "explanation": "Một bảng thuật ngữ (glossary) có thể giúp đảm bảo rằng các từ và cụm từ chuyên ngành được dịch chính xác theo đúng ngữ cảnh trong từng ngôn ngữ.\nHướng dẫn về phong cách viết (style guide) chỉ giúp thống nhất cách trình bày nội dung, không ảnh hưởng đến độ chính xác của bản dịch.\nGán vai trò (role) cho AI không giúp ích cho việc dịch chính xác hơn.\nCung cấp mẫu (template) cũng không giúp cải thiện độ chính xác khi dịch thuật."
+    "explanation": "Đáp án theo khóa IIG:\nA. Bảng thuật ngữ.\n\nGiải thích ôn tập:\nBảng thuật ngữ là bổ sung trực tiếp nhất khi rủi ro là dịch sai thuật ngữ chuyên ngành, vì nó cung cấp cặp từ và nghĩa mong muốn. Hướng dẫn phong cách, vai trò dịch giả và ví dụ dịch vẫn có thể giúp chất lượng; không nên nói chúng hoàn toàn không ảnh hưởng độ chính xác. Không phương pháp nào tự bảo đảm bản dịch đúng tất cả trường hợp nên vẫn cần kiểm tra thuật ngữ trong ngữ cảnh.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 139,
+      "officialAnswerText": "A. Bảng thuật ngữ.",
+      "validatedAnswer": "79373b10fre6-som7msidpf72",
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=145"
+        }
+      ]
+    }
   }
 ]

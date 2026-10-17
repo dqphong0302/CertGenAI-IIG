@@ -33,7 +33,30 @@
         }
       ]
     },
-    "explanation": "Điều chỉnh nội dung cho phù hợp với cấp lớp là một phương pháp phổ biến được sử dụng để làm cho các khái niệm dễ hiểu, chẳng hạn như \"Giải thích sự đối lập của cosin cho học sinh lớp 9.\"\nCung cấp một ví dụ thực tế về một khái niệm cũng làm cho nó dễ hiểu như \"Hiển thị một ví dụ liên quan đến xây dựng nhà ở.\"\nChỉ đơn thuần đặt một câu hỏi không cung cấp bối cảnh cho cá nhân hóa hoặc thích ứng.\nChỉ yêu cầu một ví dụ có thể không cung cấp đủ cá nhân hóa hoặc thích ứng."
+    "explanation": "Đáp án theo khóa IIG:\nB. Giải thích sự đối lập của cosin cho học sinh lớp 9.; D. Hiển thị một ví dụ liên quan đến xây dựng nhà ở.\n\nGiải thích ôn tập:\nKhóa ưu tiên cung cấp bối cảnh chương trình/lớp học để điều chỉnh độ khó của lời giải. Cụm “sự đối lập của cosin” trong nguyên văn không xác định một khái niệm toán học chuẩn; không nên tự khẳng định nó là một phép toán cụ thể. Muốn trả lời bài toán thực tế cần làm rõ đang hỏi hàm nghịch đảo, giá trị đối, hay khái niệm nào khác. Giữ đề và lựa chọn, chỉ đánh giá cách bổ sung ngữ cảnh mà chúng mô tả.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 109,
+      "officialAnswerText": "B. Giải thích sự đối lập của cosin cho học sinh lớp 9.; D. Hiển thị một ví dụ liên quan đến xây dựng nhà ở.",
+      "validatedAnswer": [
+        "eauitj855v0p-ex3yj1qab995",
+        "qyhqjs4l6bct-ql8c3gcdebh5"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "i5o67wx3gpqu-ummaky4hdij",
@@ -69,7 +92,30 @@
         }
       ]
     },
-    "explanation": "Đáp án đúng: A. Hiển thị số lượng cây trên mỗi lục địa ở định dạng biểu đồ B. Hiển thị số lượng cây trên mỗi lục địa ở định dạng bảng\nGiải thích:\nA. Biểu đồ: Giúp tóm tắt trực quan dữ liệu — dễ nhận thấy sự so sánh giữa các lục địa.\nB. Bảng: Giúp trình bày dữ liệu có cấu trúc rõ ràng, dễ đọc và đối chiếu.\nC. Đánh số và D. Gạch đầu dòng chỉ liệt kê thông tin, không giúp tóm tắt hoặc trực quan hóa dữ liệu một cách hiệu quả."
+    "explanation": "Đáp án theo khóa IIG:\nA. Hiển thị số lượng cây trên mỗi lục địa ở định dạng biểu đồ.; B. Hiển thị số lượng cây trên mỗi lục địa ở định dạng bảng.\n\nGiải thích ôn tập:\nA/B phù hợp nhất để tóm lược và so sánh số lượng theo lục địa; danh sách vẫn dễ đọc nhưng kém trực quan cho mục tiêu định lượng.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 129,
+      "officialAnswerText": "A. Hiển thị số lượng cây trên mỗi lục địa ở định dạng biểu đồ.; B. Hiển thị số lượng cây trên mỗi lục địa ở định dạng bảng.",
+      "validatedAnswer": [
+        "qzq2mhnxpssk-42uq8ojgcxz7",
+        "qxct9zi549fr-xibm1vtxircv"
+      ],
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "q56pjb1hp4l8-ot2hsxkb2lwl",
@@ -149,7 +195,32 @@
         }
       ]
     },
-    "explanation": "Câu lệnh Zero-Shot (Zero-Shot Prompts):\nHãy tạo một hình ảnh về sân bóng chày.\nHãy tạo một hình ảnh về sân vận động bóng chày.\n(Zero-shot nghĩa là AI được yêu cầu tạo ra nội dung mà không có ví dụ hoặc hướng dẫn cụ thể nào trước đó.)\nCâu lệnh Few-Shot (Few-Shot Prompts):\nHãy tạo một hình ảnh về những người đang chơi bóng rổ, sau đó tạo một hình ảnh về sân bóng chày nơi mọi người đang chơi bóng chày.\nSử dụng hình ảnh này của một sân vận động bóng chày hạng nhỏ làm điểm khởi đầu, hãy tạo một hình ảnh về sân vận động nơi mọi người đang chơi bóng chày.\n(Few-shot nghĩa là AI được cung cấp một hoặc vài ví dụ, hoặc được hướng dẫn dựa trên ngữ cảnh có sẵn, để tạo ra kết quả mới.)"
+    "explanation": "Đáp án theo khóa IIG:\nHãy tạo một hình ảnh về sân bóng chày. → Câu lệnh Zero-Shot; Hãy tạo một hình ảnh về sân vận động bóng chày. → Câu lệnh Zero-Shot; Hãy tạo một hình ảnh về những người đang chơi bóng rổ, sau đó tạo một hình ảnh về sân bóng chày nơi mọi người đang chơi bóng chày. → Câu lệnh Few-Shot; Sử dụng hình ảnh này của một sân vận động bóng chày hạng nhỏ làm điểm khởi đầu, hãy tạo một hình ảnh về sân vận động nơi mọi người đang chơi bóng chày. → Câu lệnh Few-Shot\n\nGiải thích ôn tập:\nGhi nhớ các dòng zero-shot/few-shot đúng theo khóa IIG cho câu cố định. Trong bài học kỹ thuật, ví dụ mẫu phải thể hiện cách thực hiện nhiệm vụ; ảnh tham chiếu hoặc nhiều yêu cầu liên tiếp cần được xét theo ngữ cảnh thay vì chỉ đếm số câu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 147,
+      "officialAnswerText": "Hãy tạo một hình ảnh về sân bóng chày. → Câu lệnh Zero-Shot; Hãy tạo một hình ảnh về sân vận động bóng chày. → Câu lệnh Zero-Shot; Hãy tạo một hình ảnh về những người đang chơi bóng rổ, sau đó tạo một hình ảnh về sân bóng chày nơi mọi người đang chơi bóng chày. → Câu lệnh Few-Shot; Sử dụng hình ảnh này của một sân vận động bóng chày hạng nhỏ làm điểm khởi đầu, hãy tạo một hình ảnh về sân vận động nơi mọi người đang chơi bóng chày. → Câu lệnh Few-Shot",
+      "validatedAnswer": {
+        "qmMultipleChoiceText120": "0",
+        "qmMultipleChoiceText121": "0",
+        "qmMultipleChoiceText122": "1",
+        "qmMultipleChoiceText123": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "ugl96la4unnp-mxq5kp5yn88d",
@@ -213,7 +284,31 @@
         }
       ]
     },
-    "explanation": "True (Đúng):\nThêm tài liệu để sử dụng cho nghiên cứu.\nTham chiếu đến một cuộc hội thoại trước đó trong cùng một chuỗi hội thoại.\nFalse (Sai):\nYêu cầu AI tạo bản tóm tắt.\nGiải thích:\nViệc thêm tài liệu nghiên cứu hoặc tham chiếu đến cuộc trò chuyện trước đó giúp AI hiểu rõ hơn về ngữ cảnh và mục tiêu, từ đó tạo ra kết quả cụ thể và phù hợp hơn.\nNgược lại, yêu cầu tạo bản tóm tắt chỉ làm thu hẹp phạm vi nội dung, chứ không giúp đầu ra có mục tiêu cụ thể hơn."
+    "explanation": "Đáp án theo khóa IIG:\nThêm các tài liệu để AI sử dụng làm tư liệu nghiên cứu. → Yes; Tham chiếu đến một cuộc trò chuyện trước đó trong cùng một chuỗi hội thoại. → Yes; Yêu cầu AI tạo bản tóm tắt. → No\n\nGiải thích ôn tập:\nTài liệu nghiên cứu và thông tin cuộc hội thoại trước là dữ liệu/ngữ cảnh bổ sung nếu hệ thống thực sự truy cập được chúng. Yêu cầu “tóm tắt nội dung sau đây” tự nó là chỉ dẫn tác vụ, không phải nguồn dữ liệu bổ sung nên bị chấm No theo phân biệt trong đề. Nếu kèm nội dung cần tóm tắt thì phần nội dung đó lại là dữ liệu. Không đồng nhất chỉ nhắc tới tài liệu với đã cung cấp tài liệu cho AI.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 151,
+      "officialAnswerText": "Thêm các tài liệu để AI sử dụng làm tư liệu nghiên cứu. → Yes; Tham chiếu đến một cuộc trò chuyện trước đó trong cùng một chuỗi hội thoại. → Yes; Yêu cầu AI tạo bản tóm tắt. → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText130": "0",
+        "qmMultipleChoiceText131": "0",
+        "qmMultipleChoiceText132": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   },
   {
     "id": "rsfeiascu7va-d01x5w1hirdo",
@@ -277,6 +372,30 @@
         }
       ]
     },
-    "explanation": "Yes:\nTôi đang phỏng vấn ai đó cho một vị trí thiết kế đồ họa. Tôi nên bắt đầu với ba câu hỏi phỏng vấn nào?\nNếu tôi muốn cải thiện các cuộc họp nhóm của mình, bạn sẽ đưa ra những lời khuyên cụ thể nào?\nNo:\nHệ thống cơ sở dữ liệu nào sẽ tốt nhất để sử dụng cho dữ liệu đòi hỏi một lượng lớn phân tích thống kê?\nGiải thích:\nTrong câu lệnh đảo ngược, câu lệnh bắt đầu với kết quả mong muốn và yêu cầu AI liệt kê các bước, công cụ hoặc yếu tố cần thiết để đạt được kết quả đó. Ví dụ về việc hỏi hệ thống cơ sở dữ liệu nào để sử dụng không phải là một ví dụ về kết quả cuối cùng đã biết, do đó đây không phải là câu lệnh đảo ngược."
+    "explanation": "Đáp án theo khóa IIG:\nTôi đang phỏng vấn ai đó cho vị trí thiết kế đồ họa. Tôi nên bắt đầu với ba câu hỏi phỏng vấn nào? → Yes; Nếu tôi muốn cải thiện các cuộc họp nhóm của mình, bạn sẽ đưa ra những lời khuyên cụ thể nào? → Yes; Hệ thống cơ sở dữ liệu nào sẽ tốt nhất để sử dụng cho dữ liệu yêu cầu một lượng lớn phân tích thống kê? → No\n\nGiải thích ôn tập:\nTheo IIG, câu này dùng Yes–Yes–No. Cách học trong bài là bắt đầu từ mục tiêu muốn đạt rồi yêu cầu AI đề xuất cách thực hiện. Các tài liệu thực hành còn dùng reverse prompting để AI hỏi người dùng nhằm làm rõ yêu cầu; hãy đọc mô tả kỹ thuật trong từng tài liệu.",
+    "review": {
+      "date": "2026-10-17",
+      "status": "accepted-iig",
+      "label": "Đáp án IIG",
+      "conclusion": "Dùng khóa IIG để chấm theo lựa chọn của người học.",
+      "officialSourceNumber": 153,
+      "officialAnswerText": "Tôi đang phỏng vấn ai đó cho vị trí thiết kế đồ họa. Tôi nên bắt đầu với ba câu hỏi phỏng vấn nào? → Yes; Nếu tôi muốn cải thiện các cuộc họp nhóm của mình, bạn sẽ đưa ra những lời khuyên cụ thể nào? → Yes; Hệ thống cơ sở dữ liệu nào sẽ tốt nhất để sử dụng cho dữ liệu yêu cầu một lượng lớn phân tích thống kê? → No",
+      "validatedAnswer": {
+        "qmMultipleChoiceText136": "0",
+        "qmMultipleChoiceText137": "0",
+        "qmMultipleChoiceText138": "1"
+      },
+      "gradingBasis": "iig-key",
+      "references": [
+        {
+          "title": "Bộ câu hỏi IIG",
+          "url": "https://mos.iigvietnam.edu.vn/GENAI_Question/"
+        },
+        {
+          "title": "Đọc lý thuyết trong Teacher Guide",
+          "url": "/references/teacher-guide.pdf#page=116"
+        }
+      ]
+    }
   }
 ]

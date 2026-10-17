@@ -10,10 +10,12 @@
     "build": "node scripts/encrypt-question-bank.mjs && vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "deploy": "pnpm build && wrangler deploy --config dist/server/wrangler.json",
-    "data": "node scripts/generate-question-bank.mjs && node scripts/encrypt-question-bank.mjs",
+    "data": "node scripts/encrypt-question-bank.mjs",
     "encrypt": "node scripts/encrypt-question-bank.mjs",
+    "verify:data": "node scripts/verify-question-bank.mjs",
     "lint": "oxlint app components hooks lib scripts",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "verify:learning": "node scripts/verify-learning.mjs"
   },
   "dependencies": {
     "react": "19.2.6",
@@ -55,6 +57,10 @@
   },
   "type": "module",
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild", "sharp", "workerd"]
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
   }
 }

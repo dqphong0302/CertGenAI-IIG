@@ -1,13 +1,21 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { BookOpenCheck, BookOpenText, ChevronRight, Clock3, RotateCcw, Sparkles, Zap } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Progress as ProgressBar } from "@/components/ui/progress";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { useState } from 'react';
+import {
+  BookOpenCheck,
+  BookOpenText,
+  ChevronRight,
+  Clock3,
+  RotateCcw,
+  Sparkles,
+  Zap,
+} from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Progress as ProgressBar } from '@/components/ui/progress';
+import { ThemeToggle } from '@/components/theme-toggle';
 import {
   ActiveSession,
   Attempt,
@@ -17,18 +25,24 @@ import {
   Manifest,
   Topic,
   topicLabel,
-} from "@/lib/quiz";
-import { THEORY_TOTAL } from "@/lib/theory";
-import { PracticePanel } from "@/components/quiz/practice-panel";
-import { ExamPanel } from "@/components/quiz/exam-panel";
-import { TheoryWorkspace } from "@/components/quiz/theory-workspace";
-import { QuestionReview, ReviewKeybook } from "@/components/quiz/question-review";
-import { TheoryCramSheet } from "@/components/quiz/theory-cram-sheet";
-import { SidebarPanels } from "@/components/quiz/sidebar-panels";
-import { HistoryPanel } from "@/components/quiz/history-panel";
+} from '@/lib/quiz';
+import { THEORY_TOTAL } from '@/lib/theory';
+import { PracticePanel } from '@/components/quiz/practice-panel';
+import { ExamPanel } from '@/components/quiz/exam-panel';
+import { TheoryWorkspace } from '@/components/quiz/theory-workspace';
+import {
+  QuestionReview,
+  ReviewKeybook,
+} from '@/components/quiz/question-review';
+import { TheoryCramSheet } from '@/components/quiz/theory-cram-sheet';
+import { SidebarPanels } from '@/components/quiz/sidebar-panels';
+import { HistoryPanel } from '@/components/quiz/history-panel';
+import { ReferenceLibrary } from '@/components/quiz/reference-library';
 
-type HomeMode = "practice" | "exam" | "theory";
-type TheoryLearningProgress = Partial<Record<Topic, { visited: number[]; last: number }>>;
+type HomeMode = 'practice' | 'exam' | 'theory';
+type TheoryLearningProgress = Partial<
+  Record<Topic, { visited: number[]; last: number }>
+>;
 
 export function HomeScreen({
   manifest,
@@ -56,6 +70,11 @@ export function HomeScreen({
   onTheorySlide,
   onTheoryPractice,
   attempts,
+  initialTheoryView,
+  pendingCount,
+  onOpenPaper,
+  onRetryIds,
+  onRetryAll,
   onExport,
   onImportClick,
   onReset,
@@ -69,12 +88,12 @@ export function HomeScreen({
   onHomeMode: (mode: HomeMode) => void;
   savedSession: ActiveSession | null;
   onResume: () => void;
-  topic: Topic | "all";
-  onTopic: (topic: Topic | "all") => void;
-  difficulty: Difficulty | "all";
-  onDifficulty: (difficulty: Difficulty | "all") => void;
-  topicCount: (topic: Topic | "all") => number;
-  difficultyCount: (difficulty: Difficulty | "all") => number;
+  topic: Topic | 'all';
+  onTopic: (topic: Topic | 'all') => void;
+  difficulty: Difficulty | 'all';
+  onDifficulty: (difficulty: Difficulty | 'all') => void;
+  topicCount: (topic: Topic | 'all') => number;
+  difficultyCount: (difficulty: Difficulty | 'all') => number;
   practiceTotal: number;
   error: string;
   loading: boolean;
@@ -87,18 +106,29 @@ export function HomeScreen({
   onTheorySlide: (slide: number) => void;
   onTheoryPractice: () => void;
   attempts: Attempt[];
+  initialTheoryView: 'cram' | 'slides';
+  pendingCount: number;
+  onOpenPaper: (id: string) => void;
+  onRetryIds: (ids: string[]) => void;
+  onRetryAll: () => void;
   onExport: () => void;
   onImportClick: () => void;
   onReset: () => void;
   importRef: React.RefObject<HTMLInputElement | null>;
   onImportFile: (file?: File) => void;
 }) {
-  const [theoryView, setTheoryView] = useState<"cram" | "questions" | "slides">("cram");
+  const [theoryView, setTheoryView] = useState<
+    'cram' | 'questions' | 'slides' | 'references'
+  >(initialTheoryView);
 
   return (
     <main className="mx-auto w-[min(1180px,calc(100%-2.25rem))] pb-14">
       <header className="sticky top-0 z-40 -mx-4.5 flex h-20 items-center justify-between border-b border-border/70 bg-background/85 px-4.5 backdrop-blur-md">
-        <a className="flex items-center gap-3 text-xl font-extrabold tracking-tight text-foreground no-underline" href="#top" aria-label="CertGenAI - Trang chủ">
+        <a
+          className="flex items-center gap-3 text-xl font-extrabold tracking-tight text-foreground no-underline"
+          href="#top"
+          aria-label="CertGenAI - Trang chủ"
+        >
           <span className="grid size-10 place-items-center rounded-xl bg-gradient-to-br from-teal-400 to-teal-700 text-white shadow-lg shadow-primary/25 dark:from-teal-300 dark:to-teal-600">
             <Sparkles size={20} />
           </span>
@@ -118,38 +148,81 @@ export function HomeScreen({
         </div>
       </header>
 
-      <section className="relative grid grid-cols-1 items-center gap-9 py-9 lg:grid-cols-[1fr_260px]" id="top">
-        <div aria-hidden="true" className="bg-hero-grid pointer-events-none absolute inset-0 -z-10" />
+      <section
+        className="relative grid grid-cols-1 items-center gap-9 py-9 lg:grid-cols-[1fr_260px]"
+        id="top"
+      >
+        <div
+          aria-hidden="true"
+          className="bg-hero-grid pointer-events-none absolute inset-0 -z-10"
+        />
         <div>
-          <Badge variant="outline" className="border-primary/20 bg-primary/10 text-primary">
+          <Badge
+            variant="outline"
+            className="border-primary/20 bg-primary/10 text-primary"
+          >
             <Sparkles size={12} /> CERTIPORT · GENERATIVE AI FOUNDATIONS
           </Badge>
           <h1 className="mt-3.5 mb-2.5 text-[clamp(32px,4.5vw,48px)] leading-[1.08] font-extrabold tracking-tight text-foreground">
-            Ôn đúng cách. Thi{" "}
-            <span className="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent">đúng chuẩn.</span>
+            Ôn đúng cách. Thi{' '}
+            <span className="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent">
+              đúng chuẩn.
+            </span>
           </h1>
           <p className="max-w-[620px] text-[15px] leading-relaxed text-muted-foreground">
-            Lướt nhanh {manifest.total} câu hỏi kèm đáp án và giải thích, cẩm nang tóm tắt 1 trang học cấp tốc,
-            {THEORY_TOTAL} slide lý thuyết vi mô, hoặc thi thử trong 50 phút.
+            Lướt nhanh {manifest.total} câu hỏi kèm đáp án và giải thích, cẩm
+            nang tóm tắt 1 trang học cấp tốc,
+            {THEORY_TOTAL} bài lý thuyết theo tài liệu tham khảo. Thi thử, lưu
+            bài làm và ôn lại câu sai.
           </p>
           <div className="mt-4 flex flex-wrap gap-2.5">
             <Button
               size="sm"
               variant="outline"
               onClick={() => {
-                onHomeMode("theory");
-                setTheoryView("cram");
+                onHomeMode('theory');
+                setTheoryView('cram');
               }}
               className="border-amber-500/30 bg-amber-500/10 text-amber-700 hover:bg-amber-500/20 dark:text-amber-300 font-semibold text-xs shadow-xs"
             >
-              <Zap size={13} className="mr-1 fill-amber-500 text-amber-500" />
-              ⚡ Học cấp tốc 1 trang trước giờ thi
+              <Zap size={13} className="mr-1 fill-amber-500 text-amber-500" />⚡
+              Học cấp tốc 1 trang trước giờ thi
+            </Button>
+            <Button
+              id="jump-to-references"
+              size="sm"
+              variant="outline"
+              onClick={() => {
+                onHomeMode('theory');
+                setTheoryView('references');
+                document
+                  .getElementById('learning-content')
+                  ?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              <BookOpenText size={14} /> Tài liệu tham khảo
+            </Button>
+            <Button
+              id="jump-to-saved-papers"
+              size="sm"
+              variant="outline"
+              onClick={() =>
+                document
+                  .getElementById('saved-papers')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }
+            >
+              Bài làm đã lưu · {pendingCount} câu cần ôn
             </Button>
           </div>
         </div>
         <Card className="p-5.5 text-left shadow-md">
-          <span className="block text-[11px] font-bold tracking-wide text-muted-foreground uppercase">MỨC SẴN SÀNG THI</span>
-          <b className="my-1.5 block text-[34px] font-extrabold tracking-tight text-primary">{stats.accuracy}%</b>
+          <span className="block text-[11px] font-bold tracking-wide text-muted-foreground uppercase">
+            MỨC SẴN SÀNG THI
+          </span>
+          <b className="my-1.5 block text-[34px] font-extrabold tracking-tight text-primary">
+            {stats.accuracy}%
+          </b>
           <ProgressBar value={stats.accuracy} />
           <small className="mt-2.5 block text-[11px] font-medium text-muted-foreground">
             Dựa trên {stats.seen}/{manifest.total} câu đã luyện tập
@@ -157,38 +230,53 @@ export function HomeScreen({
         </Card>
       </section>
 
-      <nav className="mb-6 grid grid-cols-1 gap-3 rounded-2xl border border-border bg-muted/60 p-1.5 sm:grid-cols-3" aria-label="Chọn hình thức học">
+      <nav
+        className="mb-6 grid grid-cols-1 gap-3 rounded-2xl border border-border bg-muted/60 p-1.5 sm:grid-cols-3"
+        aria-label="Chọn hình thức học"
+      >
         <button
           id="home-practice-tab"
-          onClick={() => onHomeMode("practice")}
+          onClick={() => onHomeMode('practice')}
           className={cn(
-            "flex min-h-[74px] items-center gap-3.5 rounded-xl border border-transparent px-5 py-3.5 text-left text-muted-foreground transition-all",
-            homeMode === "practice"
-              ? "border-border/80 bg-card text-primary shadow-sm"
-              : "hover:bg-card/60 hover:text-foreground",
+            'flex min-h-[74px] items-center gap-3.5 rounded-xl border border-transparent px-5 py-3.5 text-left text-muted-foreground transition-all',
+            homeMode === 'practice'
+              ? 'border-border/80 bg-card text-primary shadow-sm'
+              : 'hover:bg-card/60 hover:text-foreground',
           )}
         >
           <BookOpenCheck className="size-6.5 shrink-0" />
           <span>
-            <b className={cn("block text-[15px] font-bold tracking-tight", homeMode === "practice" ? "text-primary" : "text-foreground")}>
+            <b
+              className={cn(
+                'block text-[15px] font-bold tracking-tight',
+                homeMode === 'practice' ? 'text-primary' : 'text-foreground',
+              )}
+            >
               Tập luyện
             </b>
-            <small className="mt-0.5 block text-[11px] text-muted-foreground">Học từng câu, giải thích tức thì</small>
+            <small className="mt-0.5 block text-[11px] text-muted-foreground">
+              Học từng câu, giải thích tức thì
+            </small>
           </span>
         </button>
         <button
           id="home-exam-tab"
-          onClick={() => onHomeMode("exam")}
+          onClick={() => onHomeMode('exam')}
           className={cn(
-            "flex min-h-[74px] items-center gap-3.5 rounded-xl border border-transparent px-5 py-3.5 text-left text-muted-foreground transition-all",
-            homeMode === "exam"
-              ? "border-border/80 bg-card text-warning shadow-sm"
-              : "hover:bg-card/60 hover:text-foreground",
+            'flex min-h-[74px] items-center gap-3.5 rounded-xl border border-transparent px-5 py-3.5 text-left text-muted-foreground transition-all',
+            homeMode === 'exam'
+              ? 'border-border/80 bg-card text-warning shadow-sm'
+              : 'hover:bg-card/60 hover:text-foreground',
           )}
         >
           <Clock3 className="size-6.5 shrink-0" />
           <span>
-            <b className={cn("block text-[15px] font-bold tracking-tight", homeMode === "exam" ? "text-warning" : "text-foreground")}>
+            <b
+              className={cn(
+                'block text-[15px] font-bold tracking-tight',
+                homeMode === 'exam' ? 'text-warning' : 'text-foreground',
+              )}
+            >
               Kiểm tra mô phỏng
             </b>
             <small className="mt-0.5 block text-[11px] text-muted-foreground">
@@ -198,20 +286,27 @@ export function HomeScreen({
         </button>
         <button
           id="home-theory-tab"
-          onClick={() => onHomeMode("theory")}
+          onClick={() => onHomeMode('theory')}
           className={cn(
-            "flex min-h-[74px] items-center gap-3.5 rounded-xl border border-transparent px-5 py-3.5 text-left text-muted-foreground transition-all",
-            homeMode === "theory"
-              ? "border-border/80 bg-card text-info shadow-sm"
-              : "hover:bg-card/60 hover:text-foreground",
+            'flex min-h-[74px] items-center gap-3.5 rounded-xl border border-transparent px-5 py-3.5 text-left text-muted-foreground transition-all',
+            homeMode === 'theory'
+              ? 'border-border/80 bg-card text-info shadow-sm'
+              : 'hover:bg-card/60 hover:text-foreground',
           )}
         >
           <BookOpenText className="size-6.5 shrink-0" />
           <span>
-            <b className={cn("block text-[15px] font-bold tracking-tight", homeMode === "theory" ? "text-info" : "text-foreground")}>
+            <b
+              className={cn(
+                'block text-[15px] font-bold tracking-tight',
+                homeMode === 'theory' ? 'text-info' : 'text-foreground',
+              )}
+            >
               Lý thuyết tự học
             </b>
-            <small className="mt-0.5 block text-[11px] text-muted-foreground">Cấp tốc 1 trang · Lướt {manifest.total} câu · 85 slide</small>
+            <small className="mt-0.5 block text-[11px] text-muted-foreground">
+              Cấp tốc 1 trang · Lướt {manifest.total} câu · {THEORY_TOTAL} slide
+            </small>
           </span>
         </button>
       </nav>
@@ -224,23 +319,33 @@ export function HomeScreen({
             </span>
             <p className="m-0">
               <b className="text-sm font-bold text-foreground">
-                Tiếp tục {savedSession.mode === "exam" ? "bài kiểm tra mô phỏng" : "phiên tập luyện"}
+                Tiếp tục{' '}
+                {savedSession.mode === 'exam'
+                  ? 'bài kiểm tra mô phỏng'
+                  : 'phiên tập luyện'}
               </b>
               <small className="mt-0.5 block text-[11px] text-muted-foreground">
-                Đang ở câu {savedSession.index + 1}/{savedSession.count} · {difficultyLabel[savedSession.difficulty]}
-                {savedSession.topic && savedSession.topic !== "all" ? ` · ${topicLabel[savedSession.topic]}` : ""}
+                Đang ở câu {savedSession.index + 1}/{savedSession.count} ·{' '}
+                {difficultyLabel[savedSession.difficulty]}
+                {savedSession.topic && savedSession.topic !== 'all'
+                  ? ` · ${topicLabel[savedSession.topic]}`
+                  : ''}
               </small>
             </p>
           </div>
-          <Button id="resume-session" className="w-full sm:w-auto" onClick={onResume}>
+          <Button
+            id="resume-session"
+            className="w-full sm:w-auto"
+            onClick={onResume}
+          >
             Tiếp tục làm bài <ChevronRight size={16} />
           </Button>
         </section>
       )}
 
       <section className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(300px,0.8fr)]">
-        <Card className="p-6 sm:p-8.5">
-          {homeMode === "practice" ? (
+        <Card id="learning-content" className="scroll-mt-24 p-6 sm:p-8.5">
+          {homeMode === 'practice' ? (
             <PracticePanel
               topic={topic}
               onTopic={onTopic}
@@ -253,35 +358,64 @@ export function HomeScreen({
               loading={loading}
               onStart={onStartPractice}
             />
-          ) : homeMode === "exam" ? (
+          ) : homeMode === 'exam' ? (
             <ExamPanel error={error} loading={loading} onStart={onStartExam} />
           ) : (
             <>
-              <nav className="mb-6 flex flex-wrap gap-2" aria-label="Chọn nội dung tự học">
+              <nav
+                className="mb-6 flex flex-wrap gap-2"
+                aria-label="Chọn nội dung tự học"
+              >
                 <Button
                   id="theory-cram-tab"
-                  variant={theoryView === "cram" ? "default" : "outline"}
-                  aria-pressed={theoryView === "cram"}
-                  onClick={() => setTheoryView("cram")}
+                  variant={theoryView === 'cram' ? 'default' : 'outline'}
+                  aria-pressed={theoryView === 'cram'}
+                  onClick={() => setTheoryView('cram')}
                   className={cn(
-                    theoryView === "cram" &&
-                      "bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-stone-950 font-bold shadow-xs",
+                    theoryView === 'cram' &&
+                      'bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-stone-950 font-bold shadow-xs',
                   )}
                 >
                   <Zap size={14} className="mr-1.5" />
                   Học cấp tốc 1 trang
                 </Button>
-                <Button id="theory-questions-tab" variant={theoryView === "questions" ? "default" : "outline"} aria-pressed={theoryView === "questions"} onClick={() => setTheoryView("questions")}>
+                <Button
+                  id="theory-questions-tab"
+                  variant={theoryView === 'questions' ? 'default' : 'outline'}
+                  aria-pressed={theoryView === 'questions'}
+                  onClick={() => setTheoryView('questions')}
+                >
                   Lướt {manifest.total} câu
                 </Button>
-                <Button id="theory-slides-tab" variant={theoryView === "slides" ? "default" : "outline"} aria-pressed={theoryView === "slides"} onClick={() => { setTheoryView("slides"); onTheorySlide(theorySlide); }}>
+                <Button
+                  id="theory-references-tab"
+                  variant={theoryView === 'references' ? 'default' : 'outline'}
+                  aria-pressed={theoryView === 'references'}
+                  onClick={() => setTheoryView('references')}
+                >
+                  Tài liệu tham khảo
+                </Button>
+                <Button
+                  id="theory-slides-tab"
+                  variant={theoryView === 'slides' ? 'default' : 'outline'}
+                  aria-pressed={theoryView === 'slides'}
+                  onClick={() => {
+                    setTheoryView('slides');
+                    onTheorySlide(theorySlide);
+                  }}
+                >
                   {THEORY_TOTAL} slide khái niệm
                 </Button>
               </nav>
-              {theoryView === "cram" ? (
-                <TheoryCramSheet onStartExam={onStartExam} onStartPractice={onTheoryPractice} />
-              ) : theoryView === "questions" ? (
+              {theoryView === 'cram' ? (
+                <TheoryCramSheet
+                  onStartExam={onStartExam}
+                  onStartPractice={onTheoryPractice}
+                />
+              ) : theoryView === 'questions' ? (
                 <QuestionReview manifest={manifest} keybook={keybook} />
+              ) : theoryView === 'references' ? (
+                <ReferenceLibrary />
               ) : (
                 <TheoryWorkspace
                   key={`${theoryTopic}-${theorySlide}`}
@@ -310,10 +444,18 @@ export function HomeScreen({
         />
       </section>
 
-      <HistoryPanel attempts={attempts} />
+      <HistoryPanel
+        attempts={attempts}
+        pendingCount={pendingCount}
+        loading={loading}
+        onOpen={onOpenPaper}
+        onRetry={onRetryIds}
+        onRetryAll={onRetryAll}
+      />
 
       <footer className="mt-10 text-center text-xs text-muted-foreground">
-        Hệ thống ôn thi GenAI Foundations · Chuẩn quốc tế IIG Certiport / Gmetrix · Dữ liệu lưu cục bộ
+        Hệ thống ôn thi GenAI Foundations · Chuẩn quốc tế IIG Certiport /
+        Gmetrix · Dữ liệu lưu cục bộ
       </footer>
     </main>
   );
