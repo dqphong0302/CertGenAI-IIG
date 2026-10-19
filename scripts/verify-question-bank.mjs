@@ -13,15 +13,32 @@ const compile = (source) =>
       module: ts.ModuleKind.ES2022,
     },
   }).outputText;
-const cryptoUrl = moduleUrl(
-  compile(await fs.readFile('lib/crypto.ts', 'utf8')),
-);
-const { decryptPayload } = await import(cryptoUrl);
-const quizSource = (await fs.readFile('lib/quiz.ts', 'utf8')).replace(
-  /['"]@\/lib\/crypto['"]/,
-  JSON.stringify(cryptoUrl),
-);
-const { isCorrect } = await import(moduleUrl(compile(quizSource)));
+// Node không hiểu alias `@/`, nên nạp từng tệp nguồn rồi thay specifier
+// `@/...` bằng data URL của tệp đã biên dịch (đệ quy theo chuỗi phụ thuộc).
+// Chỉ bắt specifier thật sau `from`: một đường dẫn `@/...` nằm trong chú thích
+// không phải là phụ thuộc.
+const SPECIFIER = /\bfrom\s+['"]@\/([\w./-]+)['"]/g;
+const compiledModules = new Map();
+const loadModule = async (specifier) => {
+  const cached = compiledModules.get(specifier);
+  if (cached) return cached;
+
+  let source = await fs.readFile(`${specifier}.ts`, 'utf8');
+  for (const dependency of new Set(
+    [...source.matchAll(SPECIFIER)].map((match) => match[1]),
+  )) {
+    const url = await loadModule(dependency);
+    source = source.replaceAll(`@/${dependency}'`, `${url}'`);
+    source = source.replaceAll(`@/${dependency}"`, `${url}"`);
+  }
+
+  const url = moduleUrl(compile(source));
+  compiledModules.set(specifier, url);
+  return url;
+};
+
+const { decryptPayload } = await import(await loadModule('lib/crypto'));
+const { isCorrect } = await import(await loadModule('lib/quiz'));
 const readJson = async (file) => JSON.parse(await fs.readFile(file, 'utf8'));
 const before = await readJson('data/review/before-2026-10-17.json');
 const manifest = await readJson('public/data/manifest.json');

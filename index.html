@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>CertGenAI — Luyện thi IIG Certiport GenAI Foundations</title>
+    <meta
+      name="description"
+      content="Luyện tập 164 câu hỏi GenAI chuẩn hóa, xem giải thích và theo dõi tiến độ ngay trên thiết bị."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400..800&family=Geist+Mono:wght@400..600&display=swap"
+    />
+    <script>
+      // Đặt theme trước khi React chạy để không nháy sáng/tối.
+      // Giữ đồng bộ với lib/theme.ts.
+      (function () {
+        try {
+          var k = 'certgenai:v1:theme';
+          var s = localStorage.getItem(k);
+          var d = s
+            ? s === 'dark'
+            : matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.classList.toggle('dark', d);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/app/main.tsx"></script>
+  </body>
+</html>

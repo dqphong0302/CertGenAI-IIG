@@ -1,7 +1,17 @@
 import { computeAnswerSignatureSync } from '@/lib/crypto';
 
-export type Difficulty = 'easy' | 'medium' | 'hard';
-export type Topic = 'methods' | 'prompting' | 'verification' | 'responsible';
+// Phân loại nội dung dùng chung với Worker — khai báo ở shared/domain.ts.
+// Giữ lại chỗ xuất này để mọi màn hình vẫn nhập từ '@/lib/quiz' như trước.
+export {
+  difficultyLabel,
+  isTopic,
+  TOPICS,
+  topicLabel,
+  type Difficulty,
+  type Topic,
+} from '@/shared/domain';
+import type { Difficulty, Topic } from '@/shared/domain';
+
 export type Answer = string | string[] | Record<string, string>;
 
 export type Option = { id: string; text: string; correct?: boolean };
@@ -76,6 +86,8 @@ export type Attempt = {
   percent: number;
   duration: number;
   wrongIds: string[];
+  partialIds?: string[];
+  questionCredits?: Record<string, number>;
   questionIds?: string[];
   unansweredIds?: string[];
   hasPaper?: boolean;
@@ -84,10 +96,13 @@ export type Attempt = {
   strikes?: number;
 };
 
-export const EXAM_QUESTION_COUNT = 50;
-export const EXAM_POINTS_PER_QUESTION = 20;
+export const EXAM_QUESTION_COUNT = 45;
+export const EXAM_DURATION_SECONDS = 50 * 60; // 50 phút = 3000 giây
 export const EXAM_MAX_SCORE = 1000;
 export const EXAM_PASS_SCORE = 700;
+export const EXAM_POINTS_PER_QUESTION = Number(
+  (EXAM_MAX_SCORE / EXAM_QUESTION_COUNT).toFixed(2),
+);
 
 export type Progress = Record<
   string,
@@ -144,51 +159,176 @@ export function isAnswered(question: Question, answer: Answer | undefined) {
   );
 }
 
+export function calculateQuestionCredit(
+  question: Question,
+  userAnswer: Answer | undefined,
+  savedKey?: { correctAnswer?: Answer } | null,
+): number {
+  if (userAnswer === undefined || userAnswer === null) return 0;
+
+  // Zero-Cleartext fast path: if the whole answer signature matches, it is 100% correct.
+  if (question.answerSignature) {
+    const computedSig = computeAnswerSignatureSync(question.id, userAnswer);
+    if (computedSig === question.answerSignature) return 1;
+  }
+
+  const correctRef = savedKey?.correctAnswer;
+  const interaction = question.interaction;
+
+  if (interaction.kind === 'single') {
+    if (typeof userAnswer !== 'string' || !userAnswer) return 0;
+    if (correctRef && typeof correctRef === 'string') {
+      return userAnswer === correctRef ? 1 : 0;
+    }
+    const correctOpt = interaction.options.find((item) => item.correct);
+    return correctOpt && userAnswer === correctOpt.id ? 1 : 0;
+  }
+
+  if (interaction.kind === 'multiple') {
+    if (!Array.isArray(userAnswer) || userAnswer.length === 0) return 0;
+    let expectedIds: string[] = [];
+    if (correctRef && Array.isArray(correctRef)) {
+      expectedIds = correctRef;
+    } else {
+      expectedIds = interaction.options
+        .filter((item) => item.correct)
+        .map((item) => item.id);
+    }
+    if (expectedIds.length === 0) return 0;
+
+    const uniqueSelected = Array.from(new Set(userAnswer));
+    const expectedSet = new Set(expectedIds);
+    let correctCount = 0;
+    let wrongCount = 0;
+    for (const id of uniqueSelected) {
+      if (expectedSet.has(id)) {
+        correctCount++;
+      } else {
+        wrongCount++;
+      }
+    }
+    const score = Math.max(0, (correctCount - wrongCount) / expectedIds.length);
+    return Math.round(score * 100) / 100;
+  }
+
+  if (interaction.kind === 'matrix') {
+    const response = (
+      typeof userAnswer === 'object' && !Array.isArray(userAnswer)
+        ? userAnswer
+        : {}
+    ) as Record<string, string>;
+    const rows = interaction.rows;
+    if (!rows || rows.length === 0) return 0;
+
+    let correctRows = 0;
+    if (
+      correctRef &&
+      typeof correctRef === 'object' &&
+      !Array.isArray(correctRef)
+    ) {
+      const refMap = correctRef as Record<string, string>;
+      for (const row of rows) {
+        if (response[row.id] && response[row.id] === refMap[row.id]) {
+          correctRows++;
+        }
+      }
+    } else {
+      for (const row of rows) {
+        const correctOpt = row.options.find((item) => item.correct);
+        if (correctOpt && response[row.id] === correctOpt.id) {
+          correctRows++;
+        }
+      }
+    }
+    return Math.round((correctRows / rows.length) * 100) / 100;
+  }
+
+  if (interaction.kind === 'matching') {
+    const response = (
+      typeof userAnswer === 'object' && !Array.isArray(userAnswer)
+        ? userAnswer
+        : {}
+    ) as Record<string, string>;
+    const rows = interaction.rows;
+    if (!rows || rows.length === 0) return 0;
+
+    let correctRows = 0;
+    if (
+      correctRef &&
+      typeof correctRef === 'object' &&
+      !Array.isArray(correctRef)
+    ) {
+      const refMap = correctRef as Record<string, string>;
+      for (const row of rows) {
+        if (response[row.id] && response[row.id] === refMap[row.id]) {
+          correctRows++;
+        }
+      }
+    } else {
+      for (const row of rows) {
+        if (row.answerId && response[row.id] === row.answerId) {
+          correctRows++;
+        }
+      }
+    }
+    return Math.round((correctRows / rows.length) * 100) / 100;
+  }
+
+  if (interaction.kind === 'sequence') {
+    const response = (
+      typeof userAnswer === 'object' && !Array.isArray(userAnswer)
+        ? userAnswer
+        : {}
+    ) as Record<string, string>;
+    const items = interaction.items;
+    if (!items || items.length === 0) return 0;
+
+    let correctItems = 0;
+    if (
+      correctRef &&
+      typeof correctRef === 'object' &&
+      !Array.isArray(correctRef)
+    ) {
+      const refMap = correctRef as Record<string, string>;
+      for (const item of items) {
+        if (
+          response[item.id] &&
+          String(response[item.id]) === String(refMap[item.id])
+        ) {
+          correctItems++;
+        }
+      }
+    } else {
+      for (const item of items) {
+        if (item.order != null && Number(response[item.id]) === item.order) {
+          correctItems++;
+        }
+      }
+    }
+    return Math.round((correctItems / items.length) * 100) / 100;
+  }
+
+  return 0;
+}
+
 export function isCorrect(
   question: Question,
   answer: Answer | undefined,
+  savedKey?: { correctAnswer?: Answer } | null,
 ): boolean {
   if (!isAnswered(question, answer)) return false;
 
   // Zero-Cleartext Cryptographic Verification
   if (question.answerSignature) {
     const computedSig = computeAnswerSignatureSync(question.id, answer);
-    return computedSig === question.answerSignature;
+    if (computedSig === question.answerSignature) return true;
+    if (savedKey?.correctAnswer) {
+      return calculateQuestionCredit(question, answer, savedKey) === 1;
+    }
+    return false;
   }
 
-  // Legacy fallback if unencrypted question object is provided
-  const interaction = question.interaction;
-  if (interaction.kind === 'single') {
-    return answer === interaction.options.find((item) => item.correct)?.id;
-  }
-  if (interaction.kind === 'multiple') {
-    const expected = interaction.options
-      .filter((item) => item.correct)
-      .map((item) => item.id)
-      .sort();
-    return (
-      JSON.stringify([...(answer as string[])].sort()) ===
-      JSON.stringify(expected)
-    );
-  }
-  if (interaction.kind === 'matrix') {
-    const response = answer as Record<string, string>;
-    return interaction.rows.every(
-      (row) =>
-        response[row.id] === row.options.find((item) => item.correct)?.id,
-    );
-  }
-  if (interaction.kind === 'matching') {
-    const response = answer as Record<string, string>;
-    return interaction.rows.every((row) => response[row.id] === row.answerId);
-  }
-  if (interaction.kind === 'sequence') {
-    const response = answer as Record<string, string>;
-    return interaction.items.every(
-      (item) => Number(response[item.id]) === item.order,
-    );
-  }
-  return false;
+  return calculateQuestionCredit(question, answer, savedKey) === 1;
 }
 
 export function correctAnswerText(
@@ -234,18 +374,3 @@ export function correctAnswerText(
   }
   return '';
 }
-
-export const difficultyLabel: Record<Difficulty | 'all', string> = {
-  all: 'Tổng hợp',
-  easy: 'Dễ',
-  medium: 'Trung bình',
-  hard: 'Khó',
-};
-
-export const topicLabel: Record<Topic | 'all', string> = {
-  all: 'Tất cả nội dung',
-  methods: 'Phương pháp AI tạo sinh',
-  prompting: 'Kỹ thuật tạo câu lệnh',
-  verification: 'Tinh chỉnh và xác minh',
-  responsible: 'Đạo đức, xã hội và pháp lý',
-};

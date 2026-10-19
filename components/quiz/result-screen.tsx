@@ -1,7 +1,6 @@
 'use client';
 
-import Image from 'next/image';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import {
   BookOpenText,
   Check,
@@ -15,11 +14,11 @@ import { Button } from '@/components/ui/button';
 import {
   Answer,
   Attempt,
+  calculateQuestionCredit,
   EXAM_MAX_SCORE,
   EXAM_PASS_SCORE,
   EXAM_POINTS_PER_QUESTION,
   isAnswered,
-  isCorrect,
   Question,
   Topic,
   topicLabel,
@@ -46,24 +45,49 @@ export function ResultScreen({
   onTheory: (topic: Topic) => void;
 }) {
   const [filter, setFilter] = useState<
-    'all' | 'wrong' | 'right' | 'unanswered'
+    'all' | 'wrong' | 'partial' | 'right' | 'unanswered'
   >('all');
   const [expanded, setExpanded] = useState<string | null>(null);
+
+  const credits = useMemo(() => {
+    const map: Record<string, number> = {};
+    for (const q of questions) {
+      map[q.id] =
+        result.questionCredits?.[q.id] ??
+        calculateQuestionCredit(q, answers[q.id], keys[q.id]);
+    }
+    return map;
+  }, [questions, result.questionCredits, answers, keys]);
+
   const score =
-    result.estimatedScore ?? result.correct * EXAM_POINTS_PER_QUESTION;
+    result.estimatedScore ??
+    Math.min(
+      EXAM_MAX_SCORE,
+      Math.round((result.correct / result.total) * EXAM_MAX_SCORE),
+    );
   const wrong = new Set(result.wrongIds);
   const unanswered = questions.filter(
     (q) => !isAnswered(q, answers[q.id]),
   ).length;
-  const visible = questions.filter(
-    (q) =>
-      filter === 'all' ||
-      (filter === 'wrong'
-        ? wrong.has(q.id)
-        : filter === 'right'
-          ? !wrong.has(q.id)
-          : !isAnswered(q, answers[q.id])),
-  );
+
+  const fullCount = questions.filter((q) => (credits[q.id] || 0) >= 1).length;
+  const partialCount = questions.filter(
+    (q) => (credits[q.id] || 0) > 0 && (credits[q.id] || 0) < 1,
+  ).length;
+  const zeroCount = questions.filter(
+    (q) => (credits[q.id] || 0) === 0,
+  ).length;
+
+  const visible = questions.filter((q) => {
+    const c = credits[q.id] || 0;
+    if (filter === 'all') return true;
+    if (filter === 'wrong') return c === 0;
+    if (filter === 'partial') return c > 0 && c < 1;
+    if (filter === 'right') return c >= 1;
+    if (filter === 'unanswered') return !isAnswered(q, answers[q.id]);
+    return true;
+  });
+
   return (
     <main className="mx-auto my-8 w-[min(1000px,calc(100%-2.25rem))] pb-12">
       <section className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-9">
@@ -90,12 +114,17 @@ export function ResultScreen({
                 : `${result.percent}%`,
               result.mode === 'exam'
                 ? score >= EXAM_PASS_SCORE
-                  ? 'Đạt mốc mô phỏng'
-                  : 'Cần củng cố thêm'
+                  ? 'Đạt mốc mô phỏng (≥ 700)'
+                  : 'Cần củng cố thêm (< 700)'
                 : 'Khớp khóa luyện tập',
             ],
-            [`${result.correct}/${result.total}`, 'Câu khớp khóa'],
-            [String(wrong.size), 'Câu cần ôn, gồm bỏ trống'],
+            [
+              `${result.correct}/${result.total}`,
+              result.mode === 'exam'
+                ? 'Câu quy đổi (tính điểm lẻ)'
+                : 'Câu khớp khóa',
+            ],
+            [String(wrong.size), 'Câu cần ôn (gồm điểm lẻ)'],
             [String(unanswered), 'Câu chưa trả lời'],
           ].map(([value, label]) => (
             <div key={label} className="rounded-xl bg-muted/50 p-4">
@@ -122,9 +151,7 @@ export function ResultScreen({
               : 'Chưa lưu được bài vào trình duyệt. Hãy xuất bản sao ở trang chủ trước khi đóng trang.'}
         </output>
         <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-          Điểm theo khóa đã lưu tại lúc nộp. Bài mới dùng đáp án IIG; bài lưu
-          trước khi đổi khóa giữ nguyên kết quả cũ. Bài lưu trên trình duyệt
-          này; xuất bản sao để giữ khi đổi thiết bị.
+          Điểm theo khóa đã lưu tại lúc nộp. Bài kiểm tra mô phỏng tính điểm lẻ từng câu nhỏ (ma trận, ghép nối, nhiều lựa chọn).
         </p>
         {!!result.strikes && (
           <p className="mt-2 text-xs text-muted-foreground">
@@ -163,21 +190,22 @@ export function ResultScreen({
       >
         <h2 className="text-lg font-bold">Bài làm chi tiết</h2>
         <div className="my-4 flex flex-wrap gap-2" aria-label="Lọc kết quả">
-          {(
-            [
-              ['all', `Tất cả (${result.total})`],
-              ['wrong', `Cần ôn (${wrong.size})`],
-              ['right', `Khớp khóa (${result.correct})`],
-              ['unanswered', `Bỏ trống (${unanswered})`],
-            ] as const
-          ).map(([value, label]) => (
+          {[
+            ['all', `Tất cả (${result.total})`],
+            ['right', `Đúng trọn vẹn (${fullCount})`],
+            ...(partialCount > 0
+              ? ([['partial', `Điểm lẻ (${partialCount})`]] as const)
+              : []),
+            ['wrong', `Sai hoàn toàn (${zeroCount})`],
+            ['unanswered', `Bỏ trống (${unanswered})`],
+          ].map(([value, label]) => (
             <Button
               key={value}
               id={`result-filter-${value}`}
               size="sm"
               variant={filter === value ? 'default' : 'outline'}
               aria-pressed={filter === value}
-              onClick={() => setFilter(value)}
+              onClick={() => setFilter(value as typeof filter)}
             >
               {label}
             </Button>
@@ -191,7 +219,9 @@ export function ResultScreen({
         {visible.map((q) => {
           const k = keys[q.id];
           const unresolved = k?.review?.validatedAnswer === null;
-          const right = isCorrect(q, answers[q.id]);
+          const credit = credits[q.id] || 0;
+          const isFull = credit >= 1;
+          const isPartial = credit > 0 && credit < 1;
           const open = expanded === q.id;
           return (
             <article key={q.id} className="border-t border-border py-3">
@@ -205,15 +235,25 @@ export function ResultScreen({
               >
                 <span
                   className={cn(
-                    'mt-1 grid size-7 place-items-center rounded-lg',
+                    'mt-1 grid size-7 place-items-center rounded-lg text-xs font-bold',
                     unresolved
                       ? 'bg-warning/10 text-warning'
-                      : right
+                      : isFull
                         ? 'bg-success/10 text-success'
-                        : 'bg-destructive/10 text-destructive',
+                        : isPartial
+                          ? 'bg-amber-500/15 text-amber-600 dark:text-amber-400 font-extrabold'
+                          : 'bg-destructive/10 text-destructive',
                   )}
                 >
-                  {right ? <Check size={16} /> : <X size={16} />}
+                  {unresolved ? (
+                    '?'
+                  ) : isFull ? (
+                    <Check size={16} />
+                  ) : isPartial ? (
+                    `+${credit}`
+                  ) : (
+                    <X size={16} />
+                  )}
                 </span>
                 <span>
                   <span className="mb-1 block text-xs font-semibold text-muted-foreground">
@@ -222,10 +262,12 @@ export function ResultScreen({
                     {unresolved
                       ? 'Khóa cần đối chiếu'
                       : !isAnswered(q, answers[q.id])
-                        ? 'Bỏ trống'
-                        : right
-                          ? 'Khớp khóa'
-                          : 'Chưa khớp khóa'}
+                        ? 'Bỏ trống (0đ)'
+                        : isFull
+                          ? 'Khớp khóa trọn vẹn (+1.0)'
+                          : isPartial
+                            ? `Đúng một phần (+${credit} câu · ~${Math.round(credit * (result.mode === 'exam' ? EXAM_POINTS_PER_QUESTION : 20))} điểm)`
+                            : 'Chưa khớp khóa (0đ)'}
                   </span>
                   <span className="block whitespace-pre-line text-sm leading-relaxed">
                     {q.prompt}
@@ -244,8 +286,13 @@ export function ResultScreen({
                   id={`paper-detail-${q.number}`}
                   className="mt-4 space-y-4 sm:ml-10"
                 >
+                  {isPartial && (
+                    <div className="rounded-xl border border-amber-500/30 bg-amber-500/10 p-3 text-xs text-amber-800 dark:text-amber-300">
+                      💡 <b>Đạt điểm lẻ (+{credit} câu)</b>: Câu hỏi dạng ma trận/ghép nối/chọn nhiều đã được tính điểm theo tỷ lệ số ý con trả lời đúng.
+                    </div>
+                  )}
                   {q.images.map((src, index) => (
-                    <Image
+                    <img
                       width={900}
                       height={600}
                       key={src}

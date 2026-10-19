@@ -218,12 +218,14 @@ export function isAttempt(value: unknown): value is Attempt {
     ['practice', 'exam'].includes(value.mode) &&
     Number.isInteger(value.total) &&
     value.total > 0 &&
-    Number.isInteger(value.correct) &&
+    Number.isFinite(value.correct) &&
     value.correct >= 0 &&
     value.correct <= value.total &&
     Number.isFinite(value.percent) &&
     Number.isFinite(value.duration) &&
     ids(value.wrongIds) &&
+    (value.partialIds === undefined || ids(value.partialIds)) &&
+    (value.questionCredits === undefined || record(value.questionCredits)) &&
     (value.questionIds === undefined || ids(value.questionIds)) &&
     (value.unansweredIds === undefined || ids(value.unansweredIds))
   );

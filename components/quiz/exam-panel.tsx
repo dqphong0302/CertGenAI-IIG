@@ -78,21 +78,23 @@ export function ExamPanel({
         </h3>
         <ul className="m-0 grid list-disc gap-1.5 pl-5 text-xs leading-relaxed text-foreground/80">
           <li>
-            Mỗi câu trả lời đúng được tính{' '}
+            Mỗi câu trọn vẹn tương đương{' '}
             <b>{EXAM_POINTS_PER_QUESTION} điểm</b>; điểm tối đa là{' '}
             {EXAM_MAX_SCORE} điểm.
           </li>
           <li>
-            Cần làm đúng ít nhất{' '}
+            <b>Tính điểm lẻ từng câu nhỏ</b>: Các câu ma trận, ghép nối, chọn nhiều đáp án được cộng điểm tỷ lệ theo từng ý/dòng trả lời đúng.
+          </li>
+          <li>
+            Cần đạt tối thiểu{' '}
             <b>
-              {EXAM_PASS_SCORE / EXAM_POINTS_PER_QUESTION}/{EXAM_QUESTION_COUNT}{' '}
-              câu
+              {EXAM_PASS_SCORE}/{EXAM_MAX_SCORE} điểm
             </b>{' '}
-            để đạt mốc {EXAM_PASS_SCORE} điểm.
+            (tương đương quy đổi <b>31.5/{EXAM_QUESTION_COUNT} câu đúng</b>) để đạt mốc {EXAM_PASS_SCORE} điểm.
           </li>
           <li>
             Bài đang làm được lưu trên trình duyệt; sau khi nộp, bạn mở lại được
-            lựa chọn từng câu và luyện lại các câu chưa khớp khóa.
+            lựa chọn từng câu, xem điểm lẻ từng ý nhỏ và giải thích chi tiết.
           </li>
           <li>
             Bạn có thể đánh dấu cờ (Flag) để xem lại và thay đổi đáp án trước
@@ -119,8 +121,7 @@ export function ExamPanel({
         )}
       </Button>
       <p className="mt-3 text-center text-[11px] text-muted-foreground">
-        Quy ước mô phỏng 20 điểm/câu để học sinh tự đánh giá; kết quả chính thức
-        do hệ thống Certiport chấm.
+        Mô phỏng chuẩn Certiport Generative AI: 45 câu / 50 phút, tính điểm lẻ từng câu nhỏ; kết quả chính thức do hệ thống Certiport chấm.
       </p>
     </>
   );

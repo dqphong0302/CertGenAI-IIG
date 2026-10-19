@@ -79,7 +79,7 @@ export function HistoryPanel({
               </div>
               <b className="rounded-lg bg-primary/10 px-3 py-2 text-sm text-primary">
                 {a.mode === 'exam'
-                  ? `${a.estimatedScore ?? a.correct * 20}/1000`
+                  ? `${a.estimatedScore ?? Math.round((a.correct / a.total) * 1000)}/1000`
                   : `${a.percent}%`}
               </b>
             </div>

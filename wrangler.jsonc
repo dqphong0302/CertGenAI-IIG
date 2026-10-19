@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "certgenai",
+  "main": "./server/index.ts",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+
+  // Ngân hàng câu hỏi đã mã hóa, audio bài giảng, ảnh đề và PDF tham khảo là
+  // blob bất biến — để tầng asset của Cloudflare phục vụ trực tiếp từ CDN.
+  // Chỉ `/api/*` mới chạy qua Worker Hono; mọi đường dẫn còn lại rơi về
+  // index.html cho SPA.
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  }
+}

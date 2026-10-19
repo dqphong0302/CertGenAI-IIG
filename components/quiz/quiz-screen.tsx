@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import {
   ArrowLeft,
   ArrowRight,
@@ -21,6 +20,7 @@ import {
   AnswerReview,
   correctAnswerText,
   difficultyLabel,
+  EXAM_DURATION_SECONDS,
   isAnswered,
   isCorrect,
   Learned,
@@ -93,7 +93,8 @@ export function QuizScreen({
   const correctSummary = kbEntry?.summaryText || correctAnswerText(question);
   const unresolved = kbEntry?.review?.validatedAnswer === null;
 
-  const shownSeconds = mode === 'exam' ? Math.max(0, 3000 - elapsed) : elapsed;
+  const shownSeconds =
+    mode === 'exam' ? Math.max(0, EXAM_DURATION_SECONDS - elapsed) : elapsed;
   const isTimeLow = mode === 'exam' && shownSeconds < 300;
 
   const answeredCount = questions.filter((item) =>
@@ -371,7 +372,7 @@ export function QuizScreen({
           </h1>
 
           {question.images.map((src) => (
-            <Image
+            <img
               key={src}
               src={src}
               alt="Hình minh họa cho câu hỏi"

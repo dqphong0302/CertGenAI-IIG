@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import Image from 'next/image';
 import { Check, LoaderCircle, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -17,6 +16,8 @@ import {
   Topic,
   topicLabel,
 } from '@/lib/quiz';
+import { fetchTraps } from '@/lib/api/client';
+import { useResource } from '@/lib/api/use-resource';
 import { cn } from '@/lib/utils';
 
 export type ReviewKeybook = Record<
@@ -155,6 +156,7 @@ export function QuestionReview({
   const [search, setSearch] = useState('');
   const [topic, setTopic] = useState<Topic | 'all'>('all');
   const [difficulty, setDifficulty] = useState<Difficulty | 'all'>('all');
+  const [onlyTraps, setOnlyTraps] = useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -209,9 +211,17 @@ export function QuestionReview({
     return () => controller.abort();
   }, [manifest, keybook, retry]);
 
+  // Danh sách câu dễ nhầm lấy từ Worker, dùng chung cache với phần học tập.
+  const traps = useResource('traps', () => fetchTraps());
+  const trapIds = useMemo(
+    () => new Set(traps.data?.questionIds ?? []),
+    [traps.data],
+  );
+
   const filtered = useMemo(() => {
     const query = normalize(search.trim());
     return questions.filter((question) => {
+      if (onlyTraps && !trapIds.has(question.id)) return false;
       if (topic !== 'all' && question.topic !== topic) return false;
       if (difficulty !== 'all' && question.difficulty !== difficulty)
         return false;
@@ -243,7 +253,7 @@ export function QuestionReview({
         ).includes(query)
       );
     });
-  }, [questions, answers, search, topic, difficulty]);
+  }, [questions, answers, search, topic, difficulty, onlyTraps, trapIds]);
 
   return (
     <section aria-labelledby="question-review-heading">
@@ -330,13 +340,29 @@ export function QuestionReview({
               </NativeSelect>
             </div>
             <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
-              <output className="text-xs text-muted-foreground">
-                Hiển thị{' '}
-                <b className="text-foreground">
-                  {filtered.length}/{manifest.total}
-                </b>{' '}
-                câu
-              </output>
+              <div className="flex flex-wrap items-center gap-2">
+                <output className="text-xs text-muted-foreground">
+                  Hiển thị{' '}
+                  <b className="text-foreground">
+                    {filtered.length}/{manifest.total}
+                  </b>{' '}
+                  câu
+                </output>
+                <Button
+                  id="review-filter-traps-btn"
+                  size="sm"
+                  variant={onlyTraps ? 'default' : 'outline'}
+                  onClick={() => setOnlyTraps((prev) => !prev)}
+                  className={cn(
+                    'h-7 px-2.5 text-xs font-bold transition-all',
+                    onlyTraps
+                      ? 'bg-destructive text-white hover:bg-destructive/90 shadow-xs'
+                      : 'border-amber-500/40 bg-amber-500/10 text-amber-800 hover:bg-amber-500/20 dark:text-amber-300',
+                  )}
+                >
+                  ⚡ {onlyTraps ? 'Đang lọc 16 câu bẫy đề (Bấm để hủy)' : 'Lọc 16 câu bẫy đề'}
+                </Button>
+              </div>
               <NativeSelect
                 id="review-jump"
                 aria-label="Đi tới câu hỏi"
@@ -363,11 +389,17 @@ export function QuestionReview({
           <div className="mt-5 grid gap-5">
             {filtered.map((question) => {
               const entry = answers[question.id];
+              const isTrap = trapIds.has(question.id);
               return (
                 <article
                   id={`review-question-${question.number}`}
                   key={question.id}
-                  className="scroll-mt-80 rounded-xl border border-border p-4 sm:scroll-mt-64 sm:p-5"
+                  className={cn(
+                    'scroll-mt-80 rounded-xl border p-4 sm:scroll-mt-64 sm:p-5 transition-shadow',
+                    isTrap
+                      ? 'border-amber-500/50 bg-amber-500/[0.02] shadow-xs'
+                      : 'border-border',
+                  )}
                   aria-labelledby={`review-title-${question.number}`}
                 >
                   <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
@@ -377,6 +409,11 @@ export function QuestionReview({
                     <span>{topicLabel[question.topic]}</span>
                     <span>· {difficultyLabel[question.difficulty]}</span>
                     {entry?.review && <span>· {entry.review.label}</span>}
+                    {isTrap && (
+                      <span className="rounded-md border border-amber-500/40 bg-amber-500/15 px-2 py-0.5 font-bold text-amber-800 dark:text-amber-300">
+                        ⚡ Bẫy đề thi / Cần lưu ý
+                      </span>
+                    )}
                   </div>
                   <h3
                     id={`review-title-${question.number}`}
@@ -385,7 +422,7 @@ export function QuestionReview({
                     {question.prompt}
                   </h3>
                   {question.images.map((src, index) => (
-                    <Image
+                    <img
                       key={src}
                       src={src}
                       alt={`Hình minh họa câu ${question.number}${question.images.length > 1 ? ` (${index + 1})` : ''}`}

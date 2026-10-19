@@ -11,10 +11,13 @@
 # testing
 /coverage
 
-# next.js
+# build output
+/out/
+
+# thư mục build còn lại của vinext; không còn công cụ nào sinh ra chúng nữa,
+# xóa đi được
 /.next/
 /.vinext/
-/out/
 
 # misc
 .DS_Store
@@ -31,7 +34,6 @@ yarn-error.log*
 
 # deployment and generated files
 .vercel
-next-env.d.ts
 /dist/
 /.wrangler/
 /outputs/
@@ -41,3 +43,6 @@ next-env.d.ts
 
 # claude code local preview config
 .claude/
+
+# intermediate extraction artefact, not served or imported by the app
+/public/theory_extracted.json

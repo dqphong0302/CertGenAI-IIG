@@ -13,6 +13,5 @@ export function applyTheme(theme: Theme) {
   document.documentElement.classList.toggle("dark", theme === "dark");
 }
 
-// Inlined into a blocking <script> in app/layout.tsx to avoid a flash of the
-// wrong theme before hydration runs. Keep in sync with getInitialTheme above.
-export const THEME_BOOT_SCRIPT = `(function(){try{var k=${JSON.stringify(THEME_STORAGE_KEY)};var s=localStorage.getItem(k);var d=s?s==="dark":matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d);}catch(e){}})();`;
+// Bản sao chạy chặn của hàm trên nằm trong <script> ở index.html để không
+// nháy sai theme trước khi React mount. Sửa ở đây thì sửa cả index.html.

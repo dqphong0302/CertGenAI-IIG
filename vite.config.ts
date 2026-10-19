@@ -1,14 +1,10 @@
 import tailwindcss from '@tailwindcss/postcss';
-import vinext from 'vinext';
+import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+import { fileURLToPath } from 'node:url';
 
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === 'seatbelt';
-
-const localBindingConfig = {
-  main: 'vinext/server/fetch-handler',
-  compatibility_flags: ['nodejs_compat'],
-};
 
 export default defineConfig(async () => {
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
@@ -21,16 +17,21 @@ export default defineConfig(async () => {
   const { cloudflare } = await import('@cloudflare/vite-plugin');
 
   return {
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('.', import.meta.url)),
+      },
+    },
     css: { postcss: { plugins: [tailwindcss()] } },
-    server: isCodexSeatbeltSandbox
-      ? { watch: { useFsEvents: false, usePolling: true } }
-      : undefined,
-    plugins: [
-      vinext(),
-      cloudflare({
-        viteEnvironment: { name: 'rsc', childEnvironments: ['ssr'] },
-        config: localBindingConfig,
-      }),
-    ],
+    server: {
+      // Giữ cổng 3000 như bản vinext trước đây: .claude/launch.json và các
+      // ghi chú trong README đều trỏ vào đây.
+      port: 3000,
+      strictPort: true,
+      ...(isCodexSeatbeltSandbox
+        ? { watch: { useFsEvents: false, usePolling: true } }
+        : {}),
+    },
+    plugins: [react(), cloudflare()],
   };
 });

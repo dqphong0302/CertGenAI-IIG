@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpenCheck, Check, ChevronRight, LoaderCircle } from "lucide-react";
+import { BookOpenCheck, Check, ChevronRight, LoaderCircle, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Difficulty, difficultyLabel, Topic, topicLabel } from "@/lib/quiz";
@@ -19,6 +19,8 @@ export function PracticePanel({
   error,
   loading,
   onStart,
+  onStartTrapPractice,
+  onOpenCurriculum,
 }: {
   topic: Topic | "all";
   onTopic: (topic: Topic | "all") => void;
@@ -30,6 +32,8 @@ export function PracticePanel({
   error: string;
   loading: boolean;
   onStart: () => void;
+  onStartTrapPractice?: () => void;
+  onOpenCurriculum?: () => void;
 }) {
   return (
     <>
@@ -46,6 +50,54 @@ export function PracticePanel({
             Không giới hạn thời gian. Kiểm tra đáp án, đọc phân tích và lưu câu đã thành thạo ngay sau mỗi câu.
           </p>
         </div>
+      </div>
+
+      {/* Quick shortcuts banner grid */}
+      <div className="mb-6 grid gap-3 sm:grid-cols-2">
+        {onOpenCurriculum && (
+          <div className="rounded-2xl border border-sky-500/30 bg-gradient-to-r from-sky-500/10 via-sky-500/5 to-transparent p-4 flex flex-col justify-between gap-3 shadow-xs">
+            <div className="space-y-1">
+              <b className="text-[13px] font-bold text-sky-800 dark:text-sky-300 flex items-center gap-1.5">
+                <BookOpenCheck size={15} className="text-sky-600 dark:text-sky-400" />
+                Sổ tay 19 Bài học Pearson
+              </b>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Xem lý thuyết chi tiết, bẫy câu hỏi nhiễu và luyện tập theo từng bài học cụ thể.
+              </p>
+            </div>
+            <Button
+              id="open-curriculum-quick-btn"
+              size="sm"
+              variant="outline"
+              onClick={onOpenCurriculum}
+              className="border-sky-500/40 text-sky-700 hover:bg-sky-500/10 dark:text-sky-300 font-bold self-start text-xs h-7.5"
+            >
+              Mở 19 bài học
+            </Button>
+          </div>
+        )}
+
+        {onStartTrapPractice && (
+          <div className="rounded-2xl border border-amber-500/30 bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent p-4 flex flex-col justify-between gap-3 shadow-xs">
+            <div className="space-y-1">
+              <b className="text-[13px] font-bold text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
+                <Zap size={15} className="fill-amber-500 text-amber-500" />
+                Luyện 16 câu bẫy IIG
+              </b>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Tập trung ôn các câu gây bẫy nhiều nhất (Shot, Reverse prompting, PII, Bias...).
+              </p>
+            </div>
+            <Button
+              id="start-trap-quick-btn"
+              size="sm"
+              onClick={onStartTrapPractice}
+              className="border-amber-500/40 bg-amber-600 hover:bg-amber-700 text-white font-bold self-start text-xs h-7.5 shadow-sm dark:bg-amber-500 dark:text-stone-950 dark:hover:bg-amber-600"
+            >
+              Luyện 16 câu bẫy
+            </Button>
+          </div>
+        )}
       </div>
 
       <fieldset className="m-0 mb-6 border-0 p-0">

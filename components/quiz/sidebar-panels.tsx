@@ -4,15 +4,9 @@ import { Download, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Progress as ProgressBar } from '@/components/ui/progress';
-import { Topic, topicLabel } from '@/lib/quiz';
-import { THEORY_MODULES } from '@/lib/theory';
-
-const TOPIC_ORDER: Topic[] = [
-  'methods',
-  'prompting',
-  'verification',
-  'responsible',
-];
+import { TOPICS, topicLabel } from '@/shared/domain';
+import { fetchCourseOutline } from '@/lib/api/client';
+import { useResource } from '@/lib/api/use-resource';
 
 export function SidebarPanels({
   seen,
@@ -35,6 +29,13 @@ export function SidebarPanels({
   importRef: React.RefObject<HTMLInputElement | null>;
   onImportFile: (file?: File) => void;
 }) {
+  // Dùng chung bản mục lục đã nằm trong cache với phần học tập, nên thẻ này
+  // không phát thêm một lượt gọi mạng nào.
+  const outline = useResource('outline', () => fetchCourseOutline());
+  const slideCount = (topic: (typeof TOPICS)[number]) =>
+    outline.data?.concept.topics.find((entry) => entry.topic === topic)?.slides
+      .length;
+
   return (
     <aside className="grid gap-4.5">
       <Card className="p-6">
@@ -73,7 +74,7 @@ export function SidebarPanels({
           4 KHỐI KIẾN THỨC CỐT LÕI
         </span>
         <ol className="m-0 mt-4 grid list-none gap-0 p-0">
-          {TOPIC_ORDER.map((topic, index) => (
+          {TOPICS.map((topic, index) => (
             <li
               key={topic}
               className="grid grid-cols-[28px_1fr] items-center gap-2.5 border-t border-border py-2.5 text-xs font-semibold text-foreground/85 first:border-t-0"
@@ -81,7 +82,8 @@ export function SidebarPanels({
               <span className="grid size-7 place-items-center rounded-lg bg-primary/10 text-[11px] font-extrabold text-primary">
                 {index + 1}
               </span>
-              {topicLabel[topic]} ({THEORY_MODULES[topic].slides.length} slide)
+              {topicLabel[topic]}
+              {slideCount(topic) ? ` (${slideCount(topic)} slide)` : ''}
             </li>
           ))}
         </ol>

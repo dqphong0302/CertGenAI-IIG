@@ -87,6 +87,17 @@ assert.equal(isSavedPaper({ ...paper, keys: {} }), false);
 assert.equal(isSavedPaper({ ...paper, answers: { a: null } }), false);
 assert.equal(isAttempt({ ...first, total: -1 }), false);
 assert.equal(isAttempt({ ...first, date: 'bad date' }), false);
+assert.equal(
+  isAttempt({
+    ...first,
+    total: 45,
+    correct: 41.25,
+    partialIds: ['a'],
+    questionCredits: { a: 0.75 },
+  }),
+  true,
+  'Partial credit attempts with fractional correct pass isAttempt validation',
+);
 assert.equal(mergeAttempts([paper.attempt, first], [paper]).length, 2);
 assert.equal(mergeAttempts([first], [paper])[0].id, 'paper');
 assert.equal(answerText(q, 'yes'), 'A. Yes');

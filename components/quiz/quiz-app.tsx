@@ -6,7 +6,9 @@ import {
   ActiveSession,
   Answer,
   Attempt,
+  calculateQuestionCredit,
   Difficulty,
+  EXAM_MAX_SCORE,
   EXAM_POINTS_PER_QUESTION,
   EXAM_QUESTION_COUNT,
   isCorrect,
@@ -20,6 +22,15 @@ import {
   Topic,
 } from '@/lib/quiz';
 import { decryptPayload } from '@/lib/crypto';
+import { fetchTraps } from '@/lib/api/client';
+import {
+  emptyLearningProgress,
+  migrateLearningProgress,
+  readLearningProgress,
+  withConceptSlideSeen,
+  writeLearningProgress,
+  type LearningProgress,
+} from '@/lib/learning-progress';
 import { useAntiCheat } from '@/hooks/use-anticheat';
 import { AntiCheatModal } from '@/components/quiz/anticheat-modal';
 import { HomeScreen } from '@/components/quiz/home-screen';
@@ -36,11 +47,9 @@ import {
   SavedPaper,
 } from '@/lib/learning-store';
 import { LoadingScreen } from '@/components/quiz/loading-screen';
+import type { LearningSectionId } from '@/components/learning/location';
 
 type Screen = 'home' | 'quiz' | 'result';
-type TheoryLearningProgress = Partial<
-  Record<Topic, { visited: number[]; last: number }>
->;
 type KeybookEntry = SavedKey;
 
 const safeRead = <T,>(key: string, fallback: T): T => {
@@ -69,15 +78,15 @@ export function QuizApp() {
   );
   const [screen, setScreen] = useState<Screen>('home');
   const [mode, setMode] = useState<'practice' | 'exam'>('practice');
+  // Mở thẳng phần lý thuyết: học trước rồi mới luyện là thứ tự đúng, và đó
+  // cũng là phần người học quay lại nhiều nhất giữa hai lần thi thử.
   const [homeMode, setHomeMode] = useState<'practice' | 'exam' | 'theory'>(
-    'practice',
+    'theory',
   );
   const [difficulty, setDifficulty] = useState<Difficulty | 'all'>('all');
   const [topic, setTopic] = useState<Topic | 'all'>('all');
-  const [theoryTopic, setTheoryTopic] = useState<Topic>('methods');
-  const [theorySlide, setTheorySlide] = useState(0);
-  const [theoryProgress, setTheoryProgress] = useState<TheoryLearningProgress>(
-    {},
+  const [learningProgress, setLearningProgress] = useState<LearningProgress>(
+    emptyLearningProgress,
   );
   const [count, setCount] = useState(10);
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -101,9 +110,8 @@ export function QuizApp() {
   );
   const [storageError, setStorageError] = useState('');
   const [reviewFlags, setReviewFlags] = useState<Record<string, boolean>>({});
-  const [initialTheoryView, setInitialTheoryView] = useState<'cram' | 'slides'>(
-    'cram',
-  );
+  const [initialSection, setInitialSection] =
+    useState<LearningSectionId>('lecture');
   const submitting = useRef(false);
   const unsavedPaperIds = useRef(new Set<string>());
   const importRef = useRef<HTMLInputElement>(null);
@@ -165,7 +173,7 @@ export function QuizApp() {
         }
         setProgress(safeRead(STORAGE.progress, {}));
         setLearned(safeRead(STORAGE.learned, {}));
-        setTheoryProgress(safeRead(STORAGE.theory, {}));
+        setLearningProgress(readLearningProgress());
         const storedSession = safeRead<ActiveSession | null>(
           STORAGE.active,
           null,
@@ -191,32 +199,9 @@ export function QuizApp() {
       .finally(() => setLoading(false));
   }, []);
 
-  function recordTheoryView(selectedTopic: Topic, selectedSlide: number) {
-    setTheoryProgress((current) => {
-      const previous = current[selectedTopic] || { visited: [], last: 0 };
-      if (
-        previous.last === selectedSlide &&
-        previous.visited.includes(selectedSlide)
-      )
-        return current;
-      const next = {
-        ...current,
-        [selectedTopic]: {
-          last: selectedSlide,
-          visited: [...new Set([...previous.visited, selectedSlide])].sort(
-            (a, b) => a - b,
-          ),
-        },
-      };
-      localStorage.setItem(STORAGE.theory, JSON.stringify(next));
-      return next;
-    });
-  }
-
-  function openTheorySlide(selectedTopic: Topic, selectedSlide: number) {
-    setTheoryTopic(selectedTopic);
-    setTheorySlide(selectedSlide);
-    recordTheoryView(selectedTopic, selectedSlide);
+  function updateLearningProgress(next: LearningProgress) {
+    setLearningProgress(next);
+    writeLearningProgress(next);
   }
 
   function selectHomeMode(nextMode: 'practice' | 'exam' | 'theory') {
@@ -303,6 +288,7 @@ export function QuizApp() {
     topic?: Topic | 'all';
     count?: number;
     specificQuestionIds?: string[];
+    specificQuestionNumbers?: number[];
   }) {
     if (!manifest) return;
     const quizMode = overrides?.mode ?? mode;
@@ -310,6 +296,7 @@ export function QuizApp() {
     const quizTopic = overrides?.topic ?? topic;
     const quizCount = overrides?.count ?? count;
     const specificIds = overrides?.specificQuestionIds;
+    const specificNumbers = overrides?.specificQuestionNumbers;
 
     setLoading(true);
     setError('');
@@ -319,7 +306,18 @@ export function QuizApp() {
       let selected: Question[] = [];
       let chunkFiles: string[] = [];
 
-      if (specificIds && specificIds.length > 0) {
+      if (specificNumbers && specificNumbers.length > 0) {
+        const allChunkFiles = manifest.chunks.map((c) => c.file);
+        const loaded = (
+          await Promise.all(
+            allChunkFiles.map((file) => loadChunkQuestions(file)),
+          )
+        ).flat();
+        const numSet = new Set(specificNumbers);
+        selected = loaded.filter((q) => numSet.has(q.number));
+        selected.sort((a, b) => a.number - b.number);
+        chunkFiles = allChunkFiles;
+      } else if (specificIds && specificIds.length > 0) {
         const allChunkFiles = manifest.chunks.map((c) => c.file);
         const loaded = (
           await Promise.all(
@@ -341,11 +339,7 @@ export function QuizApp() {
         );
         const picked =
           quizMode === 'exam'
-            ? levels.flatMap((level) =>
-                shuffle(
-                  eligible.filter((chunk) => chunk.difficulty === level),
-                ).slice(0, 1),
-              )
+            ? [...eligible]
             : [];
         let totalAvailable = picked.reduce((sum, item) => sum + item.count, 0);
         const rest = shuffle(
@@ -527,12 +521,32 @@ export function QuizApp() {
       setQuestions(finalQuestions);
     }
 
-    const correct = finalQuestions.filter((question) =>
-      isCorrect(question, answers[question.id]),
-    ).length;
-    const wrongQuestions = finalQuestions.filter(
-      (question) => !isCorrect(question, answers[question.id]),
+    const credits: Record<string, number> = {};
+    finalQuestions.forEach((question) => {
+      credits[question.id] = calculateQuestionCredit(
+        question,
+        answers[question.id],
+        keybook?.[question.id],
+      );
+    });
+
+    const totalEarnedCredits = finalQuestions.reduce(
+      (sum, q) => sum + (credits[q.id] || 0),
+      0,
     );
+    const correct = Math.round(totalEarnedCredits * 100) / 100;
+    const wrongQuestions = finalQuestions.filter(
+      (question) => (credits[question.id] || 0) < 1,
+    );
+    const partialQuestions = finalQuestions.filter(
+      (question) =>
+        (credits[question.id] || 0) > 0 && (credits[question.id] || 0) < 1,
+    );
+    const estimatedScore = Math.min(
+      EXAM_MAX_SCORE,
+      Math.round((totalEarnedCredits / finalQuestions.length) * EXAM_MAX_SCORE),
+    );
+
     const finished: Attempt = {
       id: crypto.randomUUID(),
       date: new Date().toISOString(),
@@ -541,9 +555,11 @@ export function QuizApp() {
       topic,
       total: finalQuestions.length,
       correct,
-      percent: Math.round((correct / finalQuestions.length) * 100),
+      percent: Math.round((totalEarnedCredits / finalQuestions.length) * 100),
       duration: Math.max(1, Math.floor((Date.now() - startedAt) / 1000)),
       wrongIds: wrongQuestions.map((question) => question.id),
+      partialIds: partialQuestions.map((question) => question.id),
+      questionCredits: credits,
       questionIds: finalQuestions.map((question) => question.id),
       unansweredIds: finalQuestions
         .filter((question) => !isAnswered(question, answers[question.id]))
@@ -553,12 +569,13 @@ export function QuizApp() {
       ...(mode === 'exam'
         ? {
             pointsPerQuestion: EXAM_POINTS_PER_QUESTION,
-            estimatedScore: correct * EXAM_POINTS_PER_QUESTION,
+            estimatedScore,
           }
         : {}),
     };
     const nextProgress = { ...progress };
     finalQuestions.forEach((question) => {
+      const qCredit = credits[question.id] || 0;
       const previous = nextProgress[question.id] || {
         seen: 0,
         correct: 0,
@@ -566,9 +583,7 @@ export function QuizApp() {
       };
       nextProgress[question.id] = {
         seen: previous.seen + 1,
-        correct:
-          previous.correct +
-          (isCorrect(question, answers[question.id]) ? 1 : 0),
+        correct: previous.correct + (qCredit >= 1 ? 1 : 0),
         lastAt: finished.date,
       };
     });
@@ -646,7 +661,7 @@ export function QuizApp() {
     setAttempts([]);
     setProgress({});
     setLearned({});
-    setTheoryProgress({});
+    updateLearningProgress(emptyLearningProgress());
     setSavedSession(null);
     setResult(null);
   }
@@ -663,7 +678,9 @@ export function QuizApp() {
             attempts,
             progress,
             learned,
-            theoryProgress,
+            learningProgress,
+            // Giữ khóa cũ để bản sao này vẫn mở được bằng phiên bản trước.
+            theoryProgress: learningProgress.concept,
           },
           null,
           2,
@@ -707,12 +724,12 @@ export function QuizApp() {
       localStorage.setItem(STORAGE.progress, JSON.stringify(data.progress));
       const importedLearned =
         typeof data.learned === 'object' && data.learned ? data.learned : {};
-      const importedTheory =
-        typeof data.theoryProgress === 'object' && data.theoryProgress
-          ? data.theoryProgress
-          : {};
+      // Bản sao v2 mới mang `learningProgress`; bản cũ chỉ có tiến độ khái niệm.
+      const importedLearning = migrateLearningProgress(
+        data.learningProgress ?? data.theoryProgress,
+      );
       localStorage.setItem(STORAGE.learned, JSON.stringify(importedLearned));
-      localStorage.setItem(STORAGE.theory, JSON.stringify(importedTheory));
+      writeLearningProgress(importedLearning);
       setPapers(importedPapers);
       setAttempts(importedAttempts);
       setSavedSession(data.activeSession ?? null);
@@ -725,7 +742,7 @@ export function QuizApp() {
       setStorageError('');
       setProgress(data.progress);
       setLearned(importedLearned);
-      setTheoryProgress(importedTheory);
+      setLearningProgress(importedLearning);
     } catch {
       setStorageError(
         'Không nhập được bản sao: tệp không hợp lệ hoặc trình duyệt không lưu được dữ liệu.',
@@ -813,8 +830,10 @@ export function QuizApp() {
           keys={resultPaper.keys}
           saveStatus={saveStatus}
           onTheory={(selectedTopic) => {
-            openTheorySlide(selectedTopic, 0);
-            setInitialTheoryView('slides');
+            updateLearningProgress(
+              withConceptSlideSeen(learningProgress, selectedTopic, 0),
+            );
+            setInitialSection('concept');
             setHomeMode('theory');
             setScreen('home');
             window.scrollTo(0, 0);
@@ -862,20 +881,29 @@ export function QuizApp() {
               count: EXAM_QUESTION_COUNT,
             });
           }}
-          theoryTopic={theoryTopic}
-          theorySlide={theorySlide}
-          theoryProgress={theoryProgress}
-          onTheoryTopic={(nextTopic) =>
-            openTheorySlide(nextTopic, theoryProgress[nextTopic]?.last || 0)
-          }
-          onTheorySlide={(nextSlide) => openTheorySlide(theoryTopic, nextSlide)}
-          onTheoryPractice={() => {
-            setTopic(theoryTopic);
+          learningProgress={learningProgress}
+          onLearningProgress={updateLearningProgress}
+          onPracticeTopic={(nextTopic) => {
+            setTopic(nextTopic);
             setDifficulty('all');
             setHomeMode('practice');
           }}
+          onStartTrapPractice={() => {
+            void fetchTraps().then((traps) =>
+              startQuiz({
+                mode: 'practice',
+                specificQuestionIds: traps.questionIds,
+              }),
+            );
+          }}
+          onStartLessonPractice={(numbers) =>
+            void startQuiz({
+              mode: 'practice',
+              specificQuestionNumbers: numbers,
+            })
+          }
           attempts={attempts}
-          initialTheoryView={initialTheoryView}
+          initialSection={initialSection}
           pendingCount={mistakeIds(attempts, learned).length}
           onOpenPaper={openPaper}
           onRetryIds={(ids) =>
