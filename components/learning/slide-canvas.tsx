@@ -153,7 +153,7 @@ export function SlideCanvas({
   return (
     <section
       aria-label={`Slide ${position} trên ${total}: ${title}`}
-      className="flex min-h-[30rem] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+      className="slide-canvas flex min-h-[30rem] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
     >
       {/* Thanh tiến độ vị trí trong phần */}
       <div className="h-1 w-full bg-muted" aria-hidden="true">
@@ -166,7 +166,7 @@ export function SlideCanvas({
         />
       </div>
 
-      <div className="flex flex-1 flex-col gap-6 p-6 sm:p-9">
+      <div className="slide-canvas-body flex flex-1 flex-col gap-6 p-6 sm:p-9">
         <header>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <p

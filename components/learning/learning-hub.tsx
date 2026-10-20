@@ -1,7 +1,12 @@
 'use client';
 
 import { useCallback, useMemo, useState } from 'react';
-import { GraduationCap, PanelLeftClose, PanelLeftOpen, Play } from 'lucide-react';
+import {
+  GraduationCap,
+  PanelLeftClose,
+  PanelLeftOpen,
+  Play,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import type { Topic } from '@/shared/domain';
@@ -25,7 +30,7 @@ import type { Manifest } from '@/lib/quiz';
 import { CourseOutline as CourseOutlineNav } from '@/components/learning/course-outline';
 import { ConceptStage } from '@/components/learning/concept-stage';
 import { CramStage } from '@/components/learning/cram-stage';
-import { LectureStage } from '@/components/learning/lecture-stage';
+import { LectureReader } from '@/components/learning/lecture-reader';
 import { LessonStage } from '@/components/learning/lesson-stage';
 import { ReferenceStage } from '@/components/learning/reference-stage';
 import { TrapStage } from '@/components/learning/trap-stage';
@@ -165,6 +170,21 @@ export function LearningHub({
 
   const course = outline.data;
 
+  if (location.kind === 'lecture') {
+    return (
+      <LectureReader
+        course={course}
+        slideId={location.slideId}
+        progress={progress}
+        onNavigate={navigate}
+        onComplete={(slideId, done) =>
+          onProgress(withLectureSlideDone(progress, slideId, done))
+        }
+        onPractice={onPracticeQuestionNumbers}
+      />
+    );
+  }
+
   return (
     <div className="space-y-5">
       <header className="flex flex-col gap-4 border-b border-border/70 pb-5 lg:flex-row lg:items-center lg:justify-between">
@@ -177,10 +197,9 @@ export function LearningHub({
               Lộ trình tự học
             </h2>
             <p className="mt-0.5 text-[13px] leading-relaxed text-muted-foreground">
-              {course.lecture.totalSlides} bài giảng ·{' '}
-              {course.concept.total} slide khái niệm ·{' '}
-              {course.lessons.entries.length} bài chuyên sâu · cập nhật{' '}
-              {course.concept.updated}
+              {course.lecture.totalSlides} bài giảng · {course.concept.total}{' '}
+              slide khái niệm · {course.lessons.entries.length} bài chuyên sâu ·
+              cập nhật {course.concept.updated}
             </p>
           </div>
         </div>
@@ -203,7 +222,7 @@ export function LearningHub({
             </div>
           </div>
 
-          {progress.lecture.last && location.kind !== 'lecture' && (
+          {progress.lecture.last && (
             <Button
               size="sm"
               variant="outline"
@@ -261,19 +280,6 @@ export function LearningHub({
         )}
 
         <div id="learning-stage" className="min-w-0 scroll-mt-24">
-          {location.kind === 'lecture' && (
-            <LectureStage
-              outline={course}
-              slideId={location.slideId}
-              completed={progress.lecture.completed.includes(location.slideId)}
-              onNavigate={(slideId) => navigate({ kind: 'lecture', slideId })}
-              onToggleComplete={(slideId, done) =>
-                onProgress(withLectureSlideDone(progress, slideId, done))
-              }
-              onPractice={onPracticeQuestionNumbers}
-            />
-          )}
-
           {location.kind === 'concept' && (
             <ConceptStage
               key={`${location.topic}:${location.index}`}

@@ -36,7 +36,9 @@ export function LectureStage({
   onNavigate,
   onToggleComplete,
   onPractice,
+  reading = false,
 }: {
+  reading?: boolean;
   outline: CourseOutline;
   slideId: string;
   completed: boolean;
@@ -55,7 +57,9 @@ export function LectureStage({
       ? entries[position + 1].id
       : undefined;
 
-  const slide = useResource(slideKey(slideId), () => fetchLectureSlide(slideId));
+  const slide = useResource(slideKey(slideId), () =>
+    fetchLectureSlide(slideId),
+  );
 
   // Tải sẵn bài kế tiếp: nghe xong là chuyển ngay, không chờ mạng.
   useEffect(() => {
@@ -117,7 +121,11 @@ export function LectureStage({
   }, [current]);
 
   const controls = useBeats(slideId, beats);
-  const { atEnd, revealNext, revealAll } = controls;
+  const { atEnd, revealNext, revealAll, setShowAll } = controls;
+
+  useEffect(() => {
+    setShowAll(reading);
+  }, [reading, setShowAll]);
 
   // → mở nhịp tiếp theo, hết nhịp thì sang bài sau.
   useSlideKeys({
@@ -148,7 +156,7 @@ export function LectureStage({
   const relatedCount = current.relatedQuestions.length;
 
   return (
-    <article className="space-y-4">
+    <article className="lecture-stage space-y-4">
       <SlideCanvas
         position={current.slideNumber}
         total={outline.lecture.totalSlides}
@@ -180,7 +188,7 @@ export function LectureStage({
         }
       />
 
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="lecture-actions flex flex-wrap items-center gap-2">
         <Button
           id="lecture-mark-done"
           size="sm"
@@ -220,7 +228,7 @@ export function LectureStage({
       </div>
 
       {/* Lời giảng đầy đủ: để đọc hoặc dò lại, không chen vào mạch slide. */}
-      <div className="overflow-hidden rounded-2xl border border-border bg-card/70">
+      <div className="lecture-script overflow-hidden rounded-2xl border border-border bg-card/70">
         <button
           type="button"
           id="lecture-toggle-script"
