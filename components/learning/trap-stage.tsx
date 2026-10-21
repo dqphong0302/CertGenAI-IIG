@@ -4,17 +4,17 @@ import { useMemo, useState } from 'react';
 import { AlertTriangle, BookOpenText, Check, ListChecks, X } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
 import type { TrapQuestion } from '@/shared/learning';
 import { fetchTraps } from '@/lib/api/client';
 import { useResource } from '@/lib/api/use-resource';
 import {
   Callout,
+  FilterChip,
   StageError,
   StageEyebrow,
   StageHeading,
   StageSkeleton,
-} from '@/components/learning/stage-parts';
+} from '@/components/shared/section-parts';
 
 type Category = TrapQuestion['category'];
 
@@ -78,23 +78,16 @@ export function TrapStage({
               : traps.data?.questions.filter((q) => q.category === item.id)
                   .length;
           if (!count) return null;
-          const active = category === item.id;
           return (
-            <button
+            <FilterChip
               key={item.id}
-              type="button"
+              active={category === item.id}
+              tone="destructive"
+              count={count}
               onClick={() => setCategory(item.id)}
-              aria-pressed={active}
-              className={cn(
-                'rounded-lg border px-3 py-1.5 text-[12.5px] font-bold transition-colors',
-                active
-                  ? 'border-destructive/40 bg-destructive/10 text-destructive'
-                  : 'border-border text-muted-foreground hover:bg-muted/50',
-              )}
             >
               {item.label}
-              <span className="ml-1.5 tabular-nums opacity-70">{count}</span>
-            </button>
+            </FilterChip>
           );
         })}
       </fieldset>

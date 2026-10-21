@@ -1,10 +1,18 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { Check, LoaderCircle, Search } from 'lucide-react';
+import { Check, Search, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { NativeSelect } from '@/components/ui/native-select';
+import {
+  Callout,
+  EmptyNote,
+  FilterChip,
+  StageEyebrow,
+  StageError,
+  StageSkeleton,
+} from '@/components/shared/section-parts';
 import { decryptPayload } from '@/lib/crypto';
 import {
   correctAnswerText,
@@ -64,9 +72,9 @@ function ReviewChoices({
             <li
               key={option.id}
               className={cn(
-                'flex items-start gap-2 rounded-lg border px-3 py-2 text-sm leading-relaxed',
+                'flex items-start gap-2 rounded-xl border px-3.5 py-2.5 text-[14.5px] leading-relaxed',
                 correct
-                  ? 'border-success/30 bg-success/5 font-semibold text-success'
+                  ? 'border-success/30 bg-success/[0.06] font-semibold text-success'
                   : 'border-border text-muted-foreground',
               )}
             >
@@ -90,7 +98,7 @@ function ReviewChoices({
 
   if (interaction.kind === 'matrix' || interaction.kind === 'matching') {
     return (
-      <ul className="mt-4 grid gap-2 text-sm leading-relaxed">
+      <ul className="mt-4 grid gap-2 text-[14.5px] leading-relaxed">
         {interaction.rows.map((row) => {
           const options =
             'options' in row
@@ -107,7 +115,7 @@ function ReviewChoices({
           return (
             <li
               key={row.id}
-              className="rounded-lg border border-border px-3 py-2"
+              className="rounded-xl border border-border px-3.5 py-2.5"
             >
               <span>{row.text}</span>
               {correctOption ? (
@@ -133,7 +141,7 @@ function ReviewChoices({
       Number(mappedAnswer[b.id] ?? b.order),
   );
   return (
-    <ol className="mt-4 grid list-inside list-decimal gap-2 rounded-lg border border-success/30 bg-success/5 p-3 text-sm font-semibold leading-relaxed text-success">
+    <ol className="mt-4 grid list-inside list-decimal gap-2 rounded-xl border border-success/30 bg-success/[0.06] p-3.5 text-[14.5px] leading-relaxed font-semibold text-success">
       {orderedItems.map((item) => (
         <li key={item.id}>{item.text}</li>
       ))}
@@ -256,40 +264,18 @@ export function QuestionReview({
   }, [questions, answers, search, topic, difficulty, onlyTraps, trapIds]);
 
   return (
-    <section aria-labelledby="question-review-heading">
-      <h2
-        id="question-review-heading"
-        className="text-2xl font-extrabold tracking-tight"
-      >
-        Lướt nhanh {manifest.total} câu
-      </h2>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-        Xem nguyên văn câu hỏi, đáp án theo khóa IIG và giải thích để ôn tập.
-      </p>
-
+    // Tiêu đề của mục đã do mục lục phần học tập đặt, ở đây chỉ còn phần tra cứu.
+    <section aria-label={`Tra cứu ${manifest.total} câu hỏi`}>
       {loading ? (
-        <output className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
-          <LoaderCircle size={18} className="animate-spin" /> Đang tải{' '}
-          {manifest.total} câu và đáp án…
-        </output>
+        <StageSkeleton lines={4} />
       ) : error ? (
-        <div
-          role="alert"
-          className="mt-6 rounded-xl border border-destructive/30 bg-destructive/5 p-4"
-        >
-          <p className="text-sm text-destructive">{error}</p>
-          <Button
-            id="review-retry"
-            variant="outline"
-            className="mt-3"
-            onClick={() => setRetry((value) => value + 1)}
-          >
-            Thử lại
-          </Button>
-        </div>
+        <StageError
+          message={error}
+          onRetry={() => setRetry((value) => value + 1)}
+        />
       ) : (
         <>
-          <div className="sticky top-20 z-20 mt-5 rounded-xl border border-border bg-card/95 p-3 shadow-sm backdrop-blur-md">
+          <div className="sticky top-20 z-20 rounded-xl border border-border bg-card/95 p-3 shadow-sm backdrop-blur-md">
             <label htmlFor="review-search" className="sr-only">
               Tìm câu hỏi, đáp án hoặc giải thích
             </label>
@@ -341,27 +327,22 @@ export function QuestionReview({
             </div>
             <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
               <div className="flex flex-wrap items-center gap-2">
-                <output className="text-xs text-muted-foreground">
+                <output className="text-[12.5px] text-muted-foreground">
                   Hiển thị{' '}
                   <b className="text-foreground">
                     {filtered.length}/{manifest.total}
                   </b>{' '}
                   câu
                 </output>
-                <Button
+                <FilterChip
                   id="review-filter-traps-btn"
-                  size="sm"
-                  variant={onlyTraps ? 'default' : 'outline'}
+                  active={onlyTraps}
+                  tone="warning"
                   onClick={() => setOnlyTraps((prev) => !prev)}
-                  className={cn(
-                    'h-7 px-2.5 text-xs font-bold transition-all',
-                    onlyTraps
-                      ? 'bg-destructive text-white hover:bg-destructive/90 shadow-xs'
-                      : 'border-amber-500/40 bg-amber-500/10 text-amber-800 hover:bg-amber-500/20 dark:text-amber-300',
-                  )}
                 >
-                  ⚡ {onlyTraps ? 'Đang lọc 16 câu bẫy đề (Bấm để hủy)' : 'Lọc 16 câu bẫy đề'}
-                </Button>
+                  <Zap size={14} />
+                  {onlyTraps ? 'Đang lọc câu bẫy đề' : 'Lọc câu bẫy đề'}
+                </FilterChip>
               </div>
               <NativeSelect
                 id="review-jump"
@@ -395,29 +376,28 @@ export function QuestionReview({
                   id={`review-question-${question.number}`}
                   key={question.id}
                   className={cn(
-                    'scroll-mt-80 rounded-xl border p-4 sm:scroll-mt-64 sm:p-5 transition-shadow',
-                    isTrap
-                      ? 'border-amber-500/50 bg-amber-500/[0.02] shadow-xs'
-                      : 'border-border',
+                    'scroll-mt-80 rounded-2xl border bg-card p-4 transition-colors sm:scroll-mt-64 sm:p-5',
+                    isTrap ? 'border-warning/40 bg-warning/[0.03]' : 'border-border',
                   )}
                   aria-labelledby={`review-title-${question.number}`}
                 >
-                  <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-                    <b className="rounded-md bg-info/10 px-2 py-1 text-info">
+                  <div className="mb-3 flex flex-wrap items-center gap-2 text-[12.5px] text-muted-foreground">
+                    <b className="rounded-md bg-info/10 px-2 py-1 font-bold text-info tabular-nums">
                       Câu {question.number}
                     </b>
                     <span>{topicLabel[question.topic]}</span>
                     <span>· {difficultyLabel[question.difficulty]}</span>
                     {entry?.review && <span>· {entry.review.label}</span>}
                     {isTrap && (
-                      <span className="rounded-md border border-amber-500/40 bg-amber-500/15 px-2 py-0.5 font-bold text-amber-800 dark:text-amber-300">
-                        ⚡ Bẫy đề thi / Cần lưu ý
+                      <span className="flex items-center gap-1 rounded-md border border-warning/40 bg-warning/10 px-2 py-0.5 font-bold text-warning">
+                        <Zap size={12} />
+                        Bẫy đề thi / Cần lưu ý
                       </span>
                     )}
                   </div>
                   <h3
                     id={`review-title-${question.number}`}
-                    className="text-sm font-bold leading-relaxed whitespace-pre-line"
+                    className="text-[15px] leading-relaxed font-bold whitespace-pre-line text-foreground text-pretty"
                   >
                     {question.prompt}
                   </h3>
@@ -429,7 +409,7 @@ export function QuestionReview({
                       loading="lazy"
                       width={900}
                       height={600}
-                      className="mt-3 h-auto max-w-full rounded-lg border border-border"
+                      className="mt-3 h-auto max-w-full rounded-xl border border-border"
                     />
                   ))}
                   <ReviewChoices
@@ -440,14 +420,21 @@ export function QuestionReview({
                         : entry?.correctAnswer
                     }
                   />
-                  <div className="mt-4 rounded-lg border border-success/25 bg-success/5 p-3 text-sm leading-relaxed">
-                    <b className="text-foreground">
-                      {entry?.review?.validatedAnswer === null
-                        ? 'Kết luận: chưa thể chốt khóa đúng'
-                        : 'Đáp án IIG'}
-                    </b>
+                  <Callout
+                    tone={
+                      entry?.review?.validatedAnswer === null
+                        ? 'caution'
+                        : 'success'
+                    }
+                    title={
+                      entry?.review?.validatedAnswer === null
+                        ? 'Chưa thể chốt khóa đúng'
+                        : 'Đáp án IIG'
+                    }
+                    className="mt-4"
+                  >
                     {entry?.review?.validatedAnswer === null && (
-                      <p className="mt-1 whitespace-pre-line">
+                      <p className="whitespace-pre-line">
                         {entry.review.conclusion}
                       </p>
                     )}
@@ -462,9 +449,9 @@ export function QuestionReview({
                         {entry.review.officialAnswerText}
                       </p>
                     )}
-                  </div>
+                  </Callout>
                   {entry?.review && (
-                    <ul className="mt-3 space-y-1 text-xs text-muted-foreground">
+                    <ul className="mt-3 space-y-1 text-[12.5px] text-muted-foreground">
                       {entry.review.references.map((reference) => (
                         <li key={reference.url}>
                           <a
@@ -479,9 +466,9 @@ export function QuestionReview({
                       ))}
                     </ul>
                   )}
-                  <div className="mt-3 text-sm leading-relaxed">
-                    <b className="text-info">Giải thích</b>
-                    <p className="mt-1 whitespace-pre-line text-foreground/80">
+                  <div className="mt-3.5 rounded-xl border border-border/70 bg-background/60 p-4">
+                    <StageEyebrow className="text-info">Giải thích</StageEyebrow>
+                    <p className="mt-2 text-[14px] leading-relaxed whitespace-pre-line text-foreground/85">
                       {entry?.explanation || question.explanation}
                     </p>
                   </div>
@@ -490,21 +477,25 @@ export function QuestionReview({
             })}
           </div>
           {!filtered.length && (
-            <div className="py-8 text-center text-sm text-muted-foreground">
-              <p>Không tìm thấy câu phù hợp.</p>
-              <Button
-                id="review-clear-filters"
-                variant="outline"
-                className="mt-3"
-                onClick={() => {
-                  setSearch('');
-                  setTopic('all');
-                  setDifficulty('all');
-                }}
-              >
-                Xóa bộ lọc
-              </Button>
-            </div>
+            <EmptyNote
+              action={
+                <Button
+                  id="review-clear-filters"
+                  size="sm"
+                  variant="outline"
+                  onClick={() => {
+                    setSearch('');
+                    setTopic('all');
+                    setDifficulty('all');
+                    setOnlyTraps(false);
+                  }}
+                >
+                  Xóa bộ lọc
+                </Button>
+              }
+            >
+              Không tìm thấy câu phù hợp với từ khóa và bộ lọc hiện tại.
+            </EmptyNote>
           )}
         </>
       )}

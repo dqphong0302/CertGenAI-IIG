@@ -1,20 +1,16 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import {
-  ArrowLeft,
-  ArrowRight,
-  Check,
-  Clock3,
-  Flag,
-  ShieldCheck,
-  X,
-} from 'lucide-react';
+import { ArrowLeft, ArrowRight, Flag, ShieldCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Progress as ProgressBar } from '@/components/ui/progress';
 import { ThemeToggle } from '@/components/theme-toggle';
+import {
+  Callout,
+  StageEyebrow,
+} from '@/components/shared/section-parts';
+import { QuizTopBar, TimerPill } from '@/components/quiz/quiz-chrome';
 import {
   Answer,
   AnswerReview,
@@ -184,116 +180,79 @@ export function QuizScreen({
 
   return (
     <main className="min-h-screen bg-background select-none">
-      <header className="sticky top-0 z-50 grid h-16 grid-cols-[auto_1fr_auto] items-center gap-3 border-b border-border bg-background/90 px-4 shadow-sm backdrop-blur-md sm:h-19 sm:gap-6 sm:px-[max(1.5rem,calc((100vw-1180px)/2))]">
-        <button
-          id="exit-quiz"
-          onClick={onExit}
-          className="flex items-center gap-2 rounded-lg px-2 py-2 text-[13px] font-bold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground sm:px-3"
+      <QuizTopBar
+        exitId="exit-quiz"
+        onExit={onExit}
+        title={`Câu ${index + 1} / ${questions.length} · ${
+          mode === 'practice' ? 'Tập luyện có giải thích' : 'Mô phỏng 50 phút'
+        }`}
+        shortTitle={`Câu ${index + 1}/${questions.length}`}
+        progress={(answeredCount / questions.length) * 100}
+      >
+        {/* Huy hiệu chống gian lận: cho biết lớp bảo vệ đang bật và số cảnh báo. */}
+        <div
+          title={
+            mode === 'exam'
+              ? `Hệ thống Anti-Cheat đang bảo vệ bài thi (${strikes} cảnh báo)`
+              : 'Dữ liệu được mã hóa Zero-Cleartext'
+          }
+          className={cn(
+            'hidden items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12px] font-bold transition-colors md:flex',
+            mode === 'exam'
+              ? strikes > 0
+                ? 'animate-pulse border-destructive/30 bg-destructive/10 text-destructive'
+                : 'border-primary/30 bg-primary/10 text-primary'
+              : 'border-border bg-muted/60 text-muted-foreground',
+          )}
         >
-          <ArrowLeft size={16} />{' '}
-          <span className="hidden sm:inline">Thoát</span>
-        </button>
-
-        <div className="hidden min-w-0 grid-cols-[auto_1fr] items-center gap-3.5 text-xs font-bold text-foreground sm:grid">
-          <span className="truncate">
-            Câu {index + 1} / {questions.length} ·{' '}
-            {mode === 'practice'
-              ? 'Tập luyện có giải thích'
-              : 'Mô phỏng 50 phút'}
+          <ShieldCheck
+            size={14}
+            className={strikes > 0 ? 'text-destructive' : 'text-primary'}
+          />
+          <span>
+            {mode === 'exam'
+              ? strikes > 0
+                ? `Cảnh báo: ${strikes}/3`
+                : 'Anti-Cheat Bật'
+              : 'Bảo vệ'}
           </span>
-          <ProgressBar value={(answeredCount / questions.length) * 100} />
         </div>
 
-        <span className="min-w-0 truncate text-xs font-bold text-foreground sm:hidden">
-          Câu {index + 1}/{questions.length}
-        </span>
-
-        <div className="flex items-center gap-2">
-          {/* Anti-cheat shield badge */}
-          <div
-            title={
-              mode === 'exam'
-                ? `Hệ thống Anti-Cheat đang bảo vệ bài thi (${strikes} cảnh báo)`
-                : 'Dữ liệu được mã hóa Zero-Cleartext'
-            }
-            className={cn(
-              'hidden md:flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-bold border transition-colors',
-              mode === 'exam'
-                ? strikes > 0
-                  ? 'border-destructive/30 bg-destructive/10 text-destructive animate-pulse'
-                  : 'border-primary/30 bg-primary/10 text-primary'
-                : 'border-border bg-muted/60 text-muted-foreground',
-            )}
-          >
-            <ShieldCheck
-              size={14}
-              className={strikes > 0 ? 'text-destructive' : 'text-primary'}
-            />
-            <span>
-              {mode === 'exam'
-                ? strikes > 0
-                  ? `Cảnh báo: ${strikes}/3`
-                  : 'Anti-Cheat Bật'
-                : 'Bảo vệ'}
-            </span>
-          </div>
-
-          <div
-            className={cn(
-              'flex items-center gap-2 rounded-full px-3 py-1.5 font-mono text-sm font-extrabold tabular-nums sm:px-3.5',
-              isTimeLow
-                ? 'animate-pulse border border-destructive/20 bg-destructive/10 text-destructive'
-                : 'bg-muted text-foreground',
-            )}
-          >
-            <Clock3 size={16} />
-            {mode === 'exam' && (
-              <span className="hidden font-sans sm:inline">Còn </span>
-            )}
-            {Math.floor(shownSeconds / 60)
-              .toString()
-              .padStart(2, '0')}
-            :{(shownSeconds % 60).toString().padStart(2, '0')}
-          </div>
-          <ThemeToggle />
-        </div>
-      </header>
+        <TimerPill
+          seconds={shownSeconds}
+          low={isTimeLow}
+          prefix={mode === 'exam' ? 'Còn' : undefined}
+        />
+        <ThemeToggle />
+      </QuizTopBar>
 
       <section className="mx-auto my-7 grid w-[min(1180px,calc(100%-2.25rem))] grid-cols-1 items-start gap-6 lg:grid-cols-[220px_minmax(0,1fr)]">
         <aside className="rounded-2xl border border-border bg-card p-5 shadow-sm lg:sticky lg:top-25 lg:max-h-[calc(100vh-7.5rem)]">
-          <span className="text-[11px] font-extrabold tracking-widest text-primary uppercase">
-            BẢN ĐỒ CÂU HỎI
-          </span>
+          <StageEyebrow className="text-primary">Bản đồ câu hỏi</StageEyebrow>
 
-          <div className="mt-2.5 flex gap-1 rounded-lg bg-muted p-0.5">
-            <button
-              onClick={() => setFilterMode('all')}
-              className={cn(
-                'flex-1 rounded-md px-1.5 py-1 text-[10px] font-bold text-muted-foreground transition-colors',
-                filterMode === 'all' && 'bg-card text-foreground shadow-sm',
-              )}
-            >
-              Tất cả ({questions.length})
-            </button>
-            <button
-              onClick={() => setFilterMode('open')}
-              className={cn(
-                'flex-1 rounded-md px-1.5 py-1 text-[10px] font-bold text-muted-foreground transition-colors',
-                filterMode === 'open' && 'bg-card text-foreground shadow-sm',
-              )}
-            >
-              Chưa làm ({questions.length - answeredCount})
-            </button>
-            <button
-              onClick={() => setFilterMode('flagged')}
-              className={cn(
-                'flex-1 rounded-md px-1.5 py-1 text-[10px] font-bold text-muted-foreground transition-colors',
-                filterMode === 'flagged' && 'bg-card text-foreground shadow-sm',
-              )}
-            >
-              Cờ ({flaggedCount})
-            </button>
-          </div>
+          <fieldset className="m-0 mt-2.5 flex gap-1 rounded-lg border-0 bg-muted p-0.5">
+            <legend className="sr-only">Lọc câu hỏi trong bản đồ</legend>
+            {(
+              [
+                ['all', 'Tất cả', questions.length],
+                ['open', 'Chưa làm', questions.length - answeredCount],
+                ['flagged', 'Cờ', flaggedCount],
+              ] as const
+            ).map(([value, label, count]) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={filterMode === value}
+                onClick={() => setFilterMode(value)}
+                className={cn(
+                  'flex-1 rounded-md px-1.5 py-1.5 text-[11.5px] font-bold text-muted-foreground transition-colors',
+                  filterMode === value && 'bg-card text-foreground shadow-sm',
+                )}
+              >
+                {label} <span className="tabular-nums">({count})</span>
+              </button>
+            ))}
+          </fieldset>
 
           <div className="my-3.5 flex gap-2 overflow-x-auto pb-1.5 lg:grid lg:max-h-[calc(100vh-17.5rem)] lg:grid-cols-4 lg:overflow-x-visible lg:overflow-y-auto lg:pr-0.5 lg:pb-0">
             {filteredQuestions.map(({ item, qIdx }) => (
@@ -303,7 +262,7 @@ export function QuizScreen({
                 aria-label={`Câu ${qIdx + 1}${learned[item.id] ? ' đã thành thạo' : ''}`}
                 onClick={() => onIndex(qIdx)}
                 className={cn(
-                  'relative aspect-square size-9 shrink-0 rounded-lg border text-[11px] font-bold transition-all lg:size-auto',
+                  'relative aspect-square size-9 shrink-0 rounded-lg border text-[12px] font-bold tabular-nums transition-colors lg:size-auto',
                   qIdx === index
                     ? 'border-primary bg-primary text-primary-foreground shadow-md shadow-primary/30'
                     : isAnswered(item, answers[item.id])
@@ -321,7 +280,7 @@ export function QuizScreen({
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center gap-2 border-t border-border pt-2.5 text-[10px] text-muted-foreground">
+          <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 border-t border-border/70 pt-2.5 text-[12px] text-muted-foreground">
             <span className="flex items-center gap-1">
               <i className="inline-block size-2 rounded-sm bg-primary" /> Đang
               xem
@@ -337,11 +296,11 @@ export function QuizScreen({
         </aside>
 
         <article className="rounded-2xl border border-border bg-card p-6 shadow-md sm:p-9.5">
-          <div className="flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground sm:gap-2.5">
+          <div className="flex flex-wrap items-center gap-2 text-[12.5px] text-muted-foreground sm:gap-2.5">
             <Badge variant="outline" className="whitespace-nowrap">
               {difficultyLabel[question.difficulty]}
             </Badge>
-            <span className="whitespace-nowrap rounded-md bg-primary/10 px-2 py-1 font-bold text-primary">
+            <span className="rounded-md bg-primary/10 px-2 py-1 font-bold whitespace-nowrap text-primary">
               {topicLabel[question.topic]}
             </span>
             <span className="hidden whitespace-nowrap sm:inline">
@@ -356,7 +315,7 @@ export function QuizScreen({
                 }))
               }
               className={cn(
-                'ml-auto flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg border px-2.5 py-1.5 text-[11px] font-semibold transition-colors',
+                'ml-auto flex h-9 shrink-0 items-center gap-1.5 rounded-lg border px-3 text-[12.5px] font-bold whitespace-nowrap transition-colors',
                 reviewFlags[question.id]
                   ? 'border-warning/30 bg-warning/10 text-warning'
                   : 'border-border bg-transparent text-muted-foreground hover:bg-muted',
@@ -367,7 +326,7 @@ export function QuizScreen({
             </button>
           </div>
 
-          <h1 className="my-5.5 text-[clamp(20px,2.2vw,26px)] leading-[1.45] font-bold tracking-tight whitespace-pre-line text-foreground select-none">
+          <h1 className="my-5.5 text-[clamp(1.2rem,2.2vw,1.6rem)] leading-[1.4] font-extrabold tracking-tight whitespace-pre-line text-foreground text-pretty select-none">
             {question.prompt}
           </h1>
 
@@ -392,50 +351,43 @@ export function QuizScreen({
           />
 
           {unresolved && (
-            <p className="mt-4 rounded-lg border border-warning/30 bg-warning/10 p-3 text-sm">
-              {kbEntry?.review?.label}. Câu này được đối chiếu với khóa tham
-              khảo khi tính điểm; xem giải thích để biết các đáp án hợp lý hoặc
-              dữ kiện còn thiếu.
-            </p>
+            <Callout
+              tone="caution"
+              title={kbEntry?.review?.label ?? 'Khóa cần đối chiếu'}
+              className="mt-4"
+            >
+              Câu này được đối chiếu với khóa tham khảo khi tính điểm; xem giải
+              thích để biết các đáp án hợp lý hoặc dữ kiện còn thiếu.
+            </Callout>
           )}
 
           {revealed && (
-            <div
-              className={cn(
-                'mt-6 animate-in fade-in rounded-xl border p-5 text-[13px] leading-relaxed whitespace-pre-line',
+            <Callout
+              tone={correct ? 'success' : 'trap'}
+              title={
                 correct
-                  ? 'border-success/25 bg-success/10 text-success'
-                  : 'border-destructive/25 bg-destructive/10 text-destructive',
-              )}
+                  ? unresolved
+                    ? 'Khớp khóa tham khảo'
+                    : 'Đúng theo khóa IIG'
+                  : unresolved
+                    ? 'Chưa khớp khóa tham khảo'
+                    : 'Chưa đúng theo khóa IIG'
+              }
+              className="mt-6 animate-in fade-in"
             >
-              <div className="flex items-center gap-2 text-[15px] font-extrabold">
-                {correct ? (
-                  <>
-                    <Check size={18} />{' '}
-                    {unresolved ? 'Khớp khóa tham khảo' : 'Đúng theo khóa IIG'}
-                  </>
-                ) : (
-                  <>
-                    <X size={18} />{' '}
-                    {unresolved
-                      ? 'Chưa khớp khóa tham khảo'
-                      : 'Chưa đúng theo khóa IIG'}
-                  </>
-                )}
-              </div>
               {!correct && correctSummary && (
-                <p className="mt-2.5">
+                <p className="whitespace-pre-line">
                   <b>{unresolved ? 'Khóa tham khảo:' : 'Đáp án IIG:'}</b>{' '}
                   {correctSummary}
                 </p>
               )}
               {explanationText && (
-                <p className="mt-2.5 text-foreground/80">{explanationText}</p>
+                <p className="mt-2 whitespace-pre-line">{explanationText}</p>
               )}
-            </div>
+            </Callout>
           )}
 
-          <div className="mt-7.5 flex flex-col gap-3.5 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mt-7.5 flex flex-col gap-2.5 border-t border-border/70 pt-6 sm:flex-row sm:items-center sm:justify-between">
             <Button
               id="previous-question"
               variant="outline"
@@ -444,7 +396,7 @@ export function QuizScreen({
             >
               <ArrowLeft size={16} /> Câu trước
             </Button>
-            <div className="flex gap-2.5">
+            <div className="flex flex-wrap gap-2.5">
               {mode === 'exam' && (
                 <Button
                   id="exam-summary"

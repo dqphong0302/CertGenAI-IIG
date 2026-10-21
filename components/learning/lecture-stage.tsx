@@ -25,7 +25,10 @@ import {
   useSlideKeys,
   type Beat,
 } from '@/components/learning/slide-canvas';
-import { StageError, StageSkeleton } from '@/components/learning/stage-parts';
+import {
+  StageError,
+  StageSkeleton,
+} from '@/components/shared/section-parts';
 
 const slideKey = (id: string) => `lecture:${id}`;
 

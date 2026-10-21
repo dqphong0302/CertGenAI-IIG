@@ -22,13 +22,15 @@ import { fetchCurriculumLesson } from '@/lib/api/client';
 import { prefetchResource, useResource } from '@/lib/api/use-resource';
 import { accentOf } from '@/components/learning/location';
 import {
-  Callout,
   KeyPointList,
+  TermGrid,
+} from '@/components/learning/stage-parts';
+import {
+  Callout,
   StageError,
   StageEyebrow,
   StageSkeleton,
-  TermGrid,
-} from '@/components/learning/stage-parts';
+} from '@/components/shared/section-parts';
 
 const lessonKey = (id: string) => `lesson:${id}`;
 

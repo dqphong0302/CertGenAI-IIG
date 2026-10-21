@@ -4,6 +4,10 @@ import { Download, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Progress as ProgressBar } from '@/components/ui/progress';
+import {
+  StageEyebrow,
+  StatTile,
+} from '@/components/shared/section-parts';
 import { TOPICS, topicLabel } from '@/shared/domain';
 import { fetchCourseOutline } from '@/lib/api/client';
 import { useResource } from '@/lib/api/use-resource';
@@ -39,47 +43,33 @@ export function SidebarPanels({
   return (
     <aside className="grid gap-4.5">
       <Card className="p-6">
-        <span className="text-[11px] font-extrabold tracking-widest text-primary uppercase">
-          TIẾN ĐỘ TỔNG THỂ
-        </span>
+        <StageEyebrow className="text-primary">Tiến độ tổng thể</StageEyebrow>
         <div className="my-3 flex items-baseline gap-1.5">
-          <b className="text-[32px] font-extrabold tracking-tight text-foreground">
+          <b className="text-[clamp(1.75rem,3.5vw,2rem)] leading-none font-extrabold tracking-tight text-foreground tabular-nums">
             {seen}
           </b>
-          <span className="text-[13px] text-muted-foreground">
+          <span className="text-[13.5px] text-muted-foreground tabular-nums">
             / {total} câu đã gặp
           </span>
         </div>
         <ProgressBar value={(seen / total) * 100} />
-        <div className="mt-5 grid grid-cols-2 border-t border-border pt-4.5">
-          <div>
-            <b className="text-xl font-extrabold text-foreground">
-              {accuracy}%
-            </b>
-            <span className="mt-0.5 block text-[11px] text-muted-foreground">
-              Tỷ lệ chính xác
-            </span>
-          </div>
-          <div className="border-l border-border pl-4.5">
-            <b className="text-xl font-extrabold text-foreground">{sessions}</b>
-            <span className="mt-0.5 block text-[11px] text-muted-foreground">
-              Phiên hoàn thành
-            </span>
-          </div>
+        <div className="mt-4.5 grid grid-cols-2 gap-3">
+          <StatTile value={`${accuracy}%`} label="Tỷ lệ chính xác" />
+          <StatTile value={sessions} label="Phiên hoàn thành" />
         </div>
       </Card>
 
       <Card className="p-6">
-        <span className="text-[11px] font-extrabold tracking-widest text-primary uppercase">
-          4 KHỐI KIẾN THỨC CỐT LÕI
-        </span>
+        <StageEyebrow className="text-primary">
+          4 khối kiến thức cốt lõi
+        </StageEyebrow>
         <ol className="m-0 mt-4 grid list-none gap-0 p-0">
           {TOPICS.map((topic, index) => (
             <li
               key={topic}
-              className="grid grid-cols-[28px_1fr] items-center gap-2.5 border-t border-border py-2.5 text-xs font-semibold text-foreground/85 first:border-t-0"
+              className="grid grid-cols-[1.75rem_1fr] items-center gap-2.5 border-t border-border/70 py-2.5 text-[13.5px] font-semibold text-foreground/85 first:border-t-0"
             >
-              <span className="grid size-7 place-items-center rounded-lg bg-primary/10 text-[11px] font-extrabold text-primary">
+              <span className="grid size-7 place-items-center rounded-lg bg-primary/10 text-[12px] font-extrabold text-primary tabular-nums">
                 {index + 1}
               </span>
               {topicLabel[topic]}
@@ -94,10 +84,10 @@ export function SidebarPanels({
           <span className="row-span-2 grid size-[46px] place-items-center rounded-xl bg-primary/10 text-primary">
             <Download size={22} />
           </span>
-          <h3 className="mt-0.5 text-base font-bold text-foreground">
+          <h3 className="mt-0.5 text-[16px] font-extrabold tracking-tight text-foreground">
             Dữ liệu trên máy
           </h3>
-          <p className="text-xs leading-relaxed text-muted-foreground">
+          <p className="text-[13.5px] leading-relaxed text-muted-foreground">
             Tiến độ và bài làm lưu trên trình duyệt này. Xuất bản sao để giữ đáp
             án từng câu khi đổi máy hoặc xóa dữ liệu trình duyệt.
           </p>
@@ -111,7 +101,7 @@ export function SidebarPanels({
           </Button>
           <button
             id="reset-data"
-            className="col-span-2 rounded-md p-2 text-xs font-semibold text-destructive transition-opacity hover:opacity-80 hover:underline"
+            className="col-span-2 rounded-md p-2 text-[13px] font-semibold text-destructive transition-opacity hover:opacity-80 hover:underline"
             onClick={onReset}
           >
             Xóa lịch sử học tập

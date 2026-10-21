@@ -43,7 +43,7 @@ import {
   StageError,
   StageHeading,
   StageSkeleton,
-} from '@/components/learning/stage-parts';
+} from '@/components/shared/section-parts';
 
 /**
  * Phần học tập hợp nhất.

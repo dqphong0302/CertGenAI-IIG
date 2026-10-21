@@ -28,10 +28,12 @@ import {
 } from '@/components/learning/slide-canvas';
 import {
   SourceList,
+} from '@/components/learning/stage-parts';
+import {
   StageError,
   StageEyebrow,
   StageSkeleton,
-} from '@/components/learning/stage-parts';
+} from '@/components/shared/section-parts';
 
 export function ConceptStage({
   outline,

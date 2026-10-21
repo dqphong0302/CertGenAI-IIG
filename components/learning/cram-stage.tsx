@@ -21,7 +21,7 @@ import {
   StageEyebrow,
   StageHeading,
   StageSkeleton,
-} from '@/components/learning/stage-parts';
+} from '@/components/shared/section-parts';
 
 export function CramStage({
   onStartPractice,

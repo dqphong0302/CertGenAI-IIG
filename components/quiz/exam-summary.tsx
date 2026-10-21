@@ -1,8 +1,12 @@
-import { ArrowLeft, Check, Clock3, Flag, X } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Progress as ProgressBar } from "@/components/ui/progress";
-import { Answer, isAnswered, Question } from "@/lib/quiz";
+import { ArrowLeft, Check, Flag, X } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import {
+  StageHeading,
+  StatTile,
+} from '@/components/shared/section-parts';
+import { QuizTopBar, TimerPill } from '@/components/quiz/quiz-chrome';
+import { Answer, isAnswered, Question } from '@/lib/quiz';
 
 export function ExamSummary({
   questions,
@@ -31,83 +35,77 @@ export function ExamSummary({
 }) {
   return (
     <main className="min-h-screen bg-background select-none">
-      <header className="sticky top-0 z-50 grid h-16 grid-cols-[auto_1fr_auto] items-center gap-3 border-b border-border bg-background/90 px-4 shadow-sm backdrop-blur-md sm:h-19 sm:gap-6 sm:px-6">
-        <button
-          id="summary-back-home"
-          onClick={onExit}
-          className="flex items-center gap-2 rounded-lg px-2 py-2 text-[13px] font-bold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground sm:px-3"
-        >
-          <ArrowLeft size={16} /> <span className="hidden sm:inline">Thoát</span>
-        </button>
-        <div className="hidden min-w-0 grid-cols-[auto_1fr] items-center gap-3.5 text-xs font-bold text-foreground sm:grid">
-          <span className="truncate">
-            Tổng quan bài kiểm tra ({answeredCount}/{questions.length} câu)
-          </span>
-          <ProgressBar value={(answeredCount / questions.length) * 100} />
-        </div>
-        <span className="min-w-0 truncate text-xs font-bold text-foreground sm:hidden">
-          Tổng quan ({answeredCount}/{questions.length})
-        </span>
-        <div
-          className={cn(
-            "flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-extrabold tabular-nums sm:px-3.5",
-            isTimeLow ? "animate-pulse border border-destructive/20 bg-destructive/10 text-destructive" : "bg-muted text-foreground",
-          )}
-        >
-          <Clock3 size={16} />
-          Còn {Math.floor(shownSeconds / 60).toString().padStart(2, "0")}:{(shownSeconds % 60).toString().padStart(2, "0")}
-        </div>
-      </header>
+      <QuizTopBar
+        exitId="summary-back-home"
+        onExit={onExit}
+        title={`Tổng quan bài kiểm tra (${answeredCount}/${questions.length} câu)`}
+        shortTitle={`Tổng quan (${answeredCount}/${questions.length})`}
+        progress={(answeredCount / questions.length) * 100}
+      >
+        <TimerPill seconds={shownSeconds} low={isTimeLow} prefix="Còn" />
+      </QuizTopBar>
 
-      <section className="mx-auto my-9 w-[min(800px,calc(100%-2.25rem))] rounded-2xl border border-border bg-card p-6 shadow-lg sm:p-9.5">
-        <span className="text-[11px] font-extrabold tracking-widest text-primary uppercase">BẢNG TỔNG QUAN TRƯỚC KHI NỘP</span>
-        <h1 className="mt-1.5 mb-2 text-[28px] font-extrabold tracking-tight text-foreground">Rà soát bài làm</h1>
-        <p className="text-sm text-muted-foreground">
-          Nhấp vào bất kỳ câu hỏi nào bên dưới để kiểm tra và thay đổi đáp án trước khi nộp bài.
-        </p>
+      <section className="mx-auto my-9 w-[min(800px,calc(100%-2.25rem))] space-y-5 rounded-2xl border border-border bg-card p-6 shadow-lg sm:p-9">
+        <StageHeading
+          level={1}
+          eyebrow="Bảng tổng quan trước khi nộp"
+          eyebrowClassName="text-primary"
+          title="Rà soát bài làm"
+          lead="Nhấp vào bất kỳ câu hỏi nào bên dưới để kiểm tra và thay đổi đáp án trước khi nộp bài."
+        />
 
-        <div className="my-6.5 grid grid-cols-1 gap-3 sm:grid-cols-3">
-          <div className="grid grid-cols-[34px_1fr] items-center gap-x-2.5 rounded-xl border border-border p-4">
-            <Check size={22} className="row-span-2 text-success" />
-            <b className="text-[22px] font-extrabold text-foreground">{answeredCount}</b>
-            <span className="text-[11px] text-muted-foreground">Đã trả lời</span>
-          </div>
-          <div className="grid grid-cols-[34px_1fr] items-center gap-x-2.5 rounded-xl border border-border p-4">
-            <X size={22} className="row-span-2 text-destructive" />
-            <b className="text-[22px] font-extrabold text-foreground">{questions.length - answeredCount}</b>
-            <span className="text-[11px] text-muted-foreground">Chưa làm</span>
-          </div>
-          <div className="grid grid-cols-[34px_1fr] items-center gap-x-2.5 rounded-xl border border-border p-4">
-            <Flag size={22} className="row-span-2 text-warning" />
-            <b className="text-[22px] font-extrabold text-foreground">{flaggedCount}</b>
-            <span className="text-[11px] text-muted-foreground">Đã đánh dấu</span>
-          </div>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <StatTile
+            icon={<Check size={20} />}
+            value={answeredCount}
+            label="Đã trả lời"
+            toneClassName="text-success"
+          />
+          <StatTile
+            icon={<X size={20} />}
+            value={questions.length - answeredCount}
+            label="Chưa làm"
+            toneClassName="text-destructive"
+          />
+          <StatTile
+            icon={<Flag size={20} />}
+            value={flaggedCount}
+            label="Đã đánh dấu"
+            toneClassName="text-warning"
+          />
         </div>
 
-        <div className="grid grid-cols-6 gap-2 rounded-xl border border-border bg-muted/40 p-5 sm:grid-cols-10">
+        <div className="grid grid-cols-6 gap-2 rounded-xl border border-border/70 bg-muted/35 p-5 sm:grid-cols-10">
           {questions.map((item, itemIndex) => (
             <button
               id={`summary-question-${itemIndex + 1}`}
               key={item.id}
+              type="button"
+              aria-label={`Câu ${itemIndex + 1}${reviewFlags[item.id] ? ' đã gắn cờ' : ''}`}
               onClick={() => {
                 onJump(itemIndex);
                 onBack();
               }}
               className={cn(
-                "relative aspect-square rounded-lg border text-[11px] font-bold transition-all",
+                'relative aspect-square rounded-lg border text-[12px] font-bold tabular-nums transition-colors',
                 isAnswered(item, answers[item.id])
-                  ? "border-primary/30 bg-primary/10 text-primary"
-                  : "border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-primary",
-                reviewFlags[item.id] && "border-warning/40",
+                  ? 'border-primary/30 bg-primary/10 text-primary'
+                  : 'border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-primary',
+                reviewFlags[item.id] && 'border-warning/40',
               )}
             >
               {itemIndex + 1}
-              {reviewFlags[item.id] && <Flag size={9} className="absolute top-0.5 right-0.5 text-warning" />}
+              {reviewFlags[item.id] && (
+                <Flag
+                  size={9}
+                  className="absolute top-0.5 right-0.5 text-warning"
+                />
+              )}
             </button>
           ))}
         </div>
 
-        <div className="mt-6.5 flex justify-end gap-3">
+        <div className="flex flex-col gap-2.5 border-t border-border/70 pt-5 sm:flex-row sm:justify-end">
           <Button id="return-to-exam" variant="outline" onClick={onBack}>
             <ArrowLeft size={16} /> Quay lại làm bài
           </Button>

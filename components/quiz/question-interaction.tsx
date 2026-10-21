@@ -28,13 +28,15 @@ export function QuestionInteraction({
           return (
             <button
               id={`answer-${optionIndex + 1}`}
+              type="button"
+              aria-pressed={selected}
               disabled={disabled}
               key={option.id}
               className={cn(
-                "flex min-h-[60px] w-full items-center gap-3.5 rounded-xl border px-4 py-3 text-left text-sm leading-relaxed transition-all",
+                "flex min-h-15 w-full items-center gap-3.5 rounded-xl border px-4 py-3 text-left text-[15px] leading-relaxed transition-colors",
                 selected
                   ? "border-primary bg-primary/[0.06] font-medium text-foreground ring-1 ring-primary"
-                  : "border-border bg-card text-foreground/85 hover:border-primary/40 hover:bg-primary/[0.03]",
+                  : "border-border bg-card text-foreground/85 hover:border-primary/40 hover:bg-primary/[0.04]",
                 disabled && "cursor-not-allowed",
               )}
               onClick={() =>
@@ -49,7 +51,7 @@ export function QuestionInteraction({
             >
               <span
                 className={cn(
-                  "grid size-8 shrink-0 place-items-center rounded-lg text-xs font-bold transition-colors",
+                  "grid size-8 shrink-0 place-items-center rounded-lg text-[13px] font-extrabold transition-colors",
                   selected ? "bg-primary text-primary-foreground" : "bg-muted text-foreground",
                 )}
               >
@@ -71,10 +73,12 @@ export function QuestionInteraction({
     );
   }
 
+  // Ô chọn và dòng ghép nối dùng chung một cỡ chữ với các lựa chọn ở trên,
+  // để câu ma trận không đọc nhỏ hơn câu một đáp án.
   const selectClass =
-    "w-full rounded-lg border border-input bg-card px-3 py-2.5 text-sm font-medium text-foreground shadow-sm outline-none transition-colors focus:border-ring focus:ring-2 focus:ring-ring/30";
+    "h-11 w-full rounded-xl border border-input bg-card px-3 text-[14px] font-medium text-foreground shadow-sm outline-none transition-colors focus:border-ring focus:ring-2 focus:ring-ring/30";
   const rowClass =
-    "grid grid-cols-1 items-center gap-3 rounded-xl border border-border bg-muted/30 p-4 text-sm leading-relaxed sm:grid-cols-[1fr_minmax(180px,35%)] sm:gap-4";
+    "grid grid-cols-1 items-center gap-3 rounded-xl border border-border/70 bg-muted/35 p-4 text-[14.5px] leading-relaxed sm:grid-cols-[1fr_minmax(180px,35%)] sm:gap-4";
 
   if (interaction.kind === "matrix") {
     return (
@@ -141,11 +145,13 @@ export function QuestionInteraction({
   if (interaction.kind === "sequence") {
     return (
       <div className="grid gap-3">
-        <p className="text-sm text-muted-foreground">Chọn thứ tự vị trí đúng (1, 2, 3, ...) cho từng bước:</p>
+        <p className="text-[14px] leading-relaxed text-muted-foreground">
+          Chọn thứ tự vị trí đúng (1, 2, 3, …) cho từng bước:
+        </p>
         {interaction.items.map((item) => (
           <label
             key={item.id}
-            className="grid grid-cols-[85px_1fr] items-center gap-3 rounded-xl border border-border bg-muted/30 p-4 text-sm leading-relaxed"
+            className="grid grid-cols-[7rem_1fr] items-center gap-3 rounded-xl border border-border/70 bg-muted/35 p-4 text-[14.5px] leading-relaxed"
           >
             <select
               id={`sequence-${item.id}`}
